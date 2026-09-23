@@ -642,3 +642,6 @@ footer.foot .brush { font-size: 22px; color: var(--red); }
   .vocab-t td.py { width: 27%; white-space: normal; font-size: 15px; }
   .vocab-t td:last-child { width: 26px; }
 }
+
+footer.foot .home-link { display: inline-block; margin-bottom: 10px; font-weight: 800; text-decoration: none; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--red); }
+footer.foot .home-link:hover { border-color: var(--red); }

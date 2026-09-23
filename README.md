@@ -3,7 +3,7 @@
 App web para repasar todo el curso **HSK 2** (las 15 lecciones del *HSK Standard
 Course 2*). Está pensada para hispanohablantes: la gramática, las preguntas y
 las traducciones están en español. Es la continuación de
-[HSK1 · Repaso](https://github.com/nuriacalvo-teacher/hsk1-repaso): funciona
+[HSK1 · Repaso](https://nuriacalvo-teacher.github.io/hsk1/): funciona
 igual, pero el diseño es de porcelana azul y blanca y la música es distinta.
 
 | Sección | Qué hay | Cuántos |
