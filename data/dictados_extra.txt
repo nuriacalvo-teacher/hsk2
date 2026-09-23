@@ -1,0 +1,59 @@
+# numeros | 数字 | Números grandes: 百, 千 y 两
+我们学校有两百个学生。 | Wǒmen xuéxiào yǒu liǎngbǎi ge xuésheng. | En nuestra escuela hay doscientos estudiantes. / Nuestro colegio tiene doscientos alumnos.
+这个饭店有一百多个房间。 | Zhège fàndiàn yǒu yìbǎi duō ge fángjiān. | Este hotel tiene más de cien habitaciones. / Este hotel tiene ciento y pico habitaciones.
+他有两千块钱。 | Tā yǒu liǎngqiān kuài qián. | Tiene dos mil yuanes.
+我家有两个孩子。 | Wǒ jiā yǒu liǎng ge háizi. | En mi casa hay dos niños. / Tenemos dos hijos.
+这个商店有一千零五十件衣服。 | Zhège shāngdiàn yǒu yìqiān líng wǔshí jiàn yīfu. | Esta tienda tiene mil cincuenta prendas de ropa.
+我们班有二十二个同学。 | Wǒmen bān yǒu èrshí'èr ge tóngxué. | En nuestra clase hay veintidós compañeros. / Somos veintidós en clase.
+今天来了三百多个人。 | Jīntiān lái le sānbǎi duō ge rén. | Hoy han venido más de trescientas personas. / Hoy han venido trescientas y pico personas.
+这个大学有五千多个学生。 | Zhège dàxué yǒu wǔqiān duō ge xuésheng. | Esta universidad tiene más de cinco mil estudiantes.
+我买了两本书和两个杯子。 | Wǒ mǎi le liǎng běn shū hé liǎng ge bēizi. | He comprado dos libros y dos tazas. / Compré dos libros y dos vasos.
+这个公司有九百九十九个人。 | Zhège gōngsī yǒu jiǔbǎi jiǔshíjiǔ ge rén. | Esta empresa tiene novecientas noventa y nueve personas. / En esta empresa trabajan novecientas noventa y nueve personas.
+
+# precios | 多少钱 | Precios
+苹果多少钱一斤？ | Píngguǒ duōshao qián yì jīn? | ¿A cuánto está el jin de manzanas? / ¿Cuánto cuesta medio kilo de manzanas?
+苹果五块钱一斤。 | Píngguǒ wǔ kuài qián yì jīn. | Las manzanas están a cinco yuanes el jin. / Medio kilo de manzanas cuesta cinco yuanes.
+这件衣服三百五十块。 | Zhè jiàn yīfu sānbǎi wǔshí kuài. | Esta prenda cuesta trescientos cincuenta yuanes. / Esta ropa cuesta trescientos cincuenta yuanes.
+这个手表三千五百块，太贵了。 | Zhège shǒubiǎo sānqiān wǔbǎi kuài, tài guì le. | Este reloj cuesta tres mil quinientos yuanes; es demasiado caro.
+有没有便宜一点儿的？ | Yǒu méiyǒu piányi yìdiǎnr de? | ¿Hay alguno un poco más barato? / ¿Tiene algo un poco más barato?
+那个两千块，比这个便宜。 | Nàge liǎngqiān kuài, bǐ zhège piányi. | Ese cuesta dos mil yuanes, es más barato que este.
+一杯咖啡二十八块钱。 | Yì bēi kāfēi èrshíbā kuài qián. | Un café cuesta veintiocho yuanes. / Una taza de café vale veintiocho yuanes.
+西瓜多少钱一斤？ | Xīguā duōshao qián yì jīn? | ¿A cuánto está el jin de sandía? / ¿Cuánto cuesta medio kilo de sandía?
+我的电脑是六千多块买的。 | Wǒ de diànnǎo shì liùqiān duō kuài mǎi de. | Mi ordenador me costó más de seis mil yuanes. / Compré mi ordenador por seis mil y pico yuanes.
+去北京的火车票多少钱？ | Qù Běijīng de huǒchē piào duōshao qián? | ¿Cuánto cuesta el billete de tren a Pekín? / ¿Cuánto vale el billete de tren para Pekín?
+
+# horas | 时间 | Horas y duración (小时, 分钟, 多)
+现在几点？ | Xiànzài jǐ diǎn? | ¿Qué hora es?
+现在下午两点十分。 | Xiànzài xiàwǔ liǎng diǎn shí fēn. | Son las dos y diez de la tarde.
+我每天早上七点半起床。 | Wǒ měi tiān zǎoshang qī diǎn bàn qǐ chuáng. | Me levanto todos los días a las siete y media. / Cada mañana me levanto a las siete y media.
+我们八点上课，现在已经八点多了。 | Wǒmen bā diǎn shàng kè, xiànzài yǐjīng bā diǎn duō le. | Tenemos clase a las ocho y ya son las ocho y pico. / La clase empieza a las ocho y ya son más de las ocho.
+坐飞机去北京要两个小时。 | Zuò fēijī qù Běijīng yào liǎng ge xiǎoshí. | En avión se tardan dos horas en ir a Pekín. / Ir a Pekín en avión lleva dos horas.
+我等了你一个多小时。 | Wǒ děng le nǐ yí ge duō xiǎoshí. | Te he esperado más de una hora. / Te estuve esperando una hora y pico.
+从我家到公司要四十分钟。 | Cóng wǒ jiā dào gōngsī yào sìshí fēnzhōng. | De mi casa a la empresa se tardan cuarenta minutos. / De casa a la oficina tardo cuarenta minutos.
+他每天睡七个小时。 | Tā měi tiān shuì qī ge xiǎoshí. | Duerme siete horas al día. / Cada día duerme siete horas.
+电影晚上九点开始。 | Diànyǐng wǎnshang jiǔ diǎn kāishǐ. | La película empieza a las nueve de la noche.
+你每天学习几个小时汉语？ | Nǐ měi tiān xuéxí jǐ ge xiǎoshí Hànyǔ? | ¿Cuántas horas estudias chino al día? / ¿Cuántas horas al día estudia usted chino?
+
+# fechas | 日期 | Fechas y cumpleaños
+今天几月几号？ | Jīntiān jǐ yuè jǐ hào? | ¿Qué fecha es hoy? / ¿A qué día estamos hoy?
+今天九月二十三号，星期三。 | Jīntiān jiǔ yuè èrshísān hào, xīngqīsān. | Hoy es miércoles, veintitrés de septiembre. / Hoy estamos a veintitrés de septiembre, miércoles.
+你的生日是几月几号？ | Nǐ de shēngrì shì jǐ yuè jǐ hào? | ¿Cuándo es tu cumpleaños? / ¿Qué día es tu cumpleaños?
+我的生日是十二月十一号。 | Wǒ de shēngrì shì shí'èr yuè shíyī hào. | Mi cumpleaños es el once de diciembre.
+明天是我妈妈的生日。 | Míngtiān shì wǒ māma de shēngrì. | Mañana es el cumpleaños de mi madre. / Mañana es el cumpleaños de mi mamá.
+我们下个星期六给他过生日。 | Wǒmen xià ge xīngqīliù gěi tā guò shēngrì. | El sábado que viene le celebramos el cumpleaños. / El próximo sábado celebramos su cumpleaños.
+离新年还有十多天。 | Lí xīnnián hái yǒu shí duō tiān. | Faltan diez y pico días para Año Nuevo. / Quedan más de diez días para el Año Nuevo.
+我是去年十月来中国的。 | Wǒ shì qùnián shí yuè lái Zhōngguó de. | Vine a China en octubre del año pasado. / Llegué a China el pasado octubre.
+我是二零零五年去北京的。 | Wǒ shì èr líng líng wǔ nián qù Běijīng de. | Fui a Pekín en dos mil cinco. / Fue en dos mil cinco cuando fui a Pekín.
+一月一号是新年。 | Yī yuè yī hào shì xīnnián. | El uno de enero es Año Nuevo. / El primero de enero es Año Nuevo.
+
+# medidas | 多高多远 | Alturas, pesos, temperaturas y distancias
+你多高？ | Nǐ duō gāo? | ¿Cuánto mides? / ¿Cuánto mide usted?
+我一米七五。 | Wǒ yì mǐ qī wǔ. | Mido uno setenta y cinco.
+我哥哥一米八，比我高。 | Wǒ gēge yì mǐ bā, bǐ wǒ gāo. | Mi hermano mayor mide uno ochenta; es más alto que yo.
+他六十五公斤。 | Tā liùshíwǔ gōngjīn. | Pesa sesenta y cinco kilos.
+今天多少度？ | Jīntiān duōshao dù? | ¿A cuántos grados estamos hoy? / ¿Qué temperatura hace hoy?
+今天三十五度，太热了。 | Jīntiān sānshíwǔ dù, tài rè le. | Hoy estamos a treinta y cinco grados; hace demasiado calor.
+北京一月很冷，零下十度。 | Běijīng yī yuè hěn lěng, líng xià shí dù. | En enero hace mucho frío en Pekín: diez grados bajo cero. / Pekín en enero es muy frío, está a diez bajo cero.
+你家离学校多远？ | Nǐ jiā lí xuéxiào duō yuǎn? | ¿A qué distancia está tu casa de la escuela? / ¿Cómo de lejos está tu casa del colegio?
+我家离学校八百米。 | Wǒ jiā lí xuéxiào bābǎi mǐ. | Mi casa está a ochocientos metros de la escuela. / Vivo a ochocientos metros del colegio.
+我买了两斤苹果。 | Wǒ mǎi le liǎng jīn píngguǒ. | He comprado dos jin de manzanas. / He comprado un kilo de manzanas.

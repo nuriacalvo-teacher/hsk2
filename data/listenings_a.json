@@ -1,0 +1,2101 @@
+[
+ {
+  "id": "L01a",
+  "tema": 1,
+  "titulo": "Un viaje a Pekín",
+  "escena": "David quiere ir de viaje a Pekín y le pide consejo a Wang Fang.",
+  "personajes": {
+   "大卫": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "王方，我想去北京旅游，你觉得几月去最好？",
+    "py": "Wáng Fāng, wǒ xiǎng qù Běijīng lǚyóu, nǐ juéde jǐ yuè qù zuì hǎo?",
+    "es": "Wang Fang, quiero ir de viaje a Pekín. ¿Qué mes crees que es el mejor para ir?"
+   },
+   {
+    "sp": "王方",
+    "zh": "我觉得九月去北京旅游最好。",
+    "py": "Wǒ juéde jiǔ yuè qù Běijīng lǚyóu zuì hǎo.",
+    "es": "Creo que septiembre es el mejor mes para viajar a Pekín."
+   },
+   {
+    "sp": "大卫",
+    "zh": "为什么九月最好？",
+    "py": "Wèi shénme jiǔ yuè zuì hǎo?",
+    "es": "¿Por qué septiembre es el mejor?"
+   },
+   {
+    "sp": "王方",
+    "zh": "九月的北京天气不冷也不热，很多人都去那儿旅游。",
+    "py": "Jiǔ yuè de Běijīng tiānqì bù lěng yě bú rè, hěn duō rén dōu qù nàr lǚyóu.",
+    "es": "En septiembre en Pekín no hace ni frío ni calor; mucha gente va allí de viaje."
+   },
+   {
+    "sp": "大卫",
+    "zh": "七月呢？我七月有时间。",
+    "py": "Qī yuè ne? Wǒ qī yuè yǒu shíjiān.",
+    "es": "¿Y julio? En julio tengo tiempo."
+   },
+   {
+    "sp": "王方",
+    "zh": "七月北京太热了，你不会喜欢的。",
+    "py": "Qī yuè Běijīng tài rè le, nǐ bú huì xǐhuan de.",
+    "es": "En julio Pekín es demasiado caluroso; no te gustará."
+   },
+   {
+    "sp": "大卫",
+    "zh": "那我九月去。你九月要做什么？和我一起去北京吧！",
+    "py": "Nà wǒ jiǔ yuè qù. Nǐ jiǔ yuè yào zuò shénme? Hé wǒ yìqǐ qù Běijīng ba!",
+    "es": "Entonces iré en septiembre. ¿Qué vas a hacer tú en septiembre? ¡Vente conmigo a Pekín!"
+   },
+   {
+    "sp": "王方",
+    "zh": "好啊！九月我有十几天不工作。",
+    "py": "Hǎo a! Jiǔ yuè wǒ yǒu shí jǐ tiān bù gōngzuò.",
+    "es": "¡Vale! En septiembre tengo más de diez días sin trabajar."
+   },
+   {
+    "sp": "大卫",
+    "zh": "太好了！我们坐飞机去吧。",
+    "py": "Tài hǎo le! Wǒmen zuò fēijī qù ba.",
+    "es": "¡Genial! Vamos en avión."
+   },
+   {
+    "sp": "王方",
+    "zh": "好。我们要在北京住几天？",
+    "py": "Hǎo. Wǒmen yào zài Běijīng zhù jǐ tiān?",
+    "es": "Vale. ¿Cuántos días vamos a quedarnos en Pekín?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "住一个多星期吧。我们住我朋友家，他家在北京大学前面。",
+    "py": "Zhù yí ge duō xīngqī ba. Wǒmen zhù wǒ péngyou jiā, tā jiā zài Běijīng Dàxué qiánmiàn.",
+    "es": "Algo más de una semana. Nos quedaremos en casa de un amigo mío; su casa está delante de la Universidad de Pekín."
+   },
+   {
+    "sp": "王方",
+    "zh": "太好了。你朋友是中国人吗？",
+    "py": "Tài hǎo le. Nǐ péngyou shì Zhōngguórén ma?",
+    "es": "Estupendo. ¿Tu amigo es chino?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "是，他叫李朋，今年二十多岁，也很喜欢运动。我们要和他一起去踢足球！",
+    "py": "Shì, tā jiào Lǐ Péng, jīnnián èrshí duō suì, yě hěn xǐhuan yùndòng. Wǒmen yào hé tā yìqǐ qù tī zúqiú!",
+    "es": "Sí, se llama Li Peng, tiene veintitantos años y también le encanta el deporte. ¡Vamos a ir a jugar al fútbol con él!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué mes es el mejor para viajar a Pekín, según Wang Fang?",
+    "lang": "es",
+    "a": [
+     "septiembre",
+     "9"
+    ],
+    "r": "Septiembre (九月)."
+   },
+   {
+    "q": "¿Qué tiempo hace en Pekín en ese mes?",
+    "lang": "es",
+    "a": [
+     "ni frio ni calor",
+     "no hace frio ni calor",
+     "templado",
+     "agradable"
+    ],
+    "r": "No hace ni frío ni calor (不冷也不热)."
+   },
+   {
+    "q": "¿Cómo van a ir a Pekín?",
+    "lang": "py",
+    "a": [
+     "fēijī"
+    ],
+    "r": "Zuò fēijī · 坐飞机 (en avión)."
+   },
+   {
+    "q": "¿Cuánto tiempo se van a quedar en Pekín?",
+    "lang": "es",
+    "a": [
+     "una semana",
+     "1 semana",
+     "semana"
+    ],
+    "r": "Algo más de una semana (一个多星期)."
+   },
+   {
+    "q": "¿Qué van a hacer con Li Peng?",
+    "lang": "py",
+    "a": [
+     "tī zúqiú"
+    ],
+    "r": "Tī zúqiú · 踢足球 (jugar al fútbol)."
+   }
+  ]
+ },
+ {
+  "id": "L01b",
+  "tema": 1,
+  "titulo": "Huahua y el fútbol",
+  "escena": "Xie Peng está en casa de Wang Fang y ve un gato debajo de la mesa.",
+  "personajes": {
+   "谢朋": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "谢朋",
+    "zh": "王方，桌子下面那个小猫是你的吗？",
+    "py": "Wáng Fāng, zhuōzi xiàmiàn nàge xiǎo māo shì nǐ de ma?",
+    "es": "Wang Fang, ¿ese gatito de debajo de la mesa es tuyo?"
+   },
+   {
+    "sp": "王方",
+    "zh": "是我的，它叫花花。你看，它的眼睛多漂亮！",
+    "py": "Shì wǒ de, tā jiào Huāhua. Nǐ kàn, tā de yǎnjing duō piàoliang!",
+    "es": "Sí, es mío; se llama Huahua. ¡Mira qué ojos tan bonitos tiene!"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "它的眼睛很大！花花多大了？",
+    "py": "Tā de yǎnjing hěn dà! Huāhua duō dà le?",
+    "es": "¡Tiene los ojos muy grandes! ¿Cuánto tiempo tiene Huahua?"
+   },
+   {
+    "sp": "王方",
+    "zh": "它六个多月了。",
+    "py": "Tā liù ge duō yuè le.",
+    "es": "Tiene seis meses y pico."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "它喜欢吃什么？",
+    "py": "Tā xǐhuan chī shénme?",
+    "es": "¿Qué le gusta comer?"
+   },
+   {
+    "sp": "王方",
+    "zh": "它最喜欢吃米饭，也喜欢在椅子上睡觉。",
+    "py": "Tā zuì xǐhuan chī mǐfàn, yě xǐhuan zài yǐzi shang shuì jiào.",
+    "es": "Lo que más le gusta es el arroz, y también le gusta dormir en la silla."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "王方，下午你要做什么？",
+    "py": "Wáng Fāng, xiàwǔ nǐ yào zuò shénme?",
+    "es": "Wang Fang, ¿qué vas a hacer esta tarde?"
+   },
+   {
+    "sp": "王方",
+    "zh": "我要去商店买几个新杯子，家里的杯子太少了。",
+    "py": "Wǒ yào qù shāngdiàn mǎi jǐ ge xīn bēizi, jiā li de bēizi tài shǎo le.",
+    "es": "Voy a ir a la tienda a comprar unos cuantos vasos nuevos; en casa hay muy pocos."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "买杯子明天去吧。今天下午我们要去踢足球，你和我们一起去吧！",
+    "py": "Mǎi bēizi míngtiān qù ba. Jīntiān xiàwǔ wǒmen yào qù tī zúqiú, nǐ hé wǒmen yìqǐ qù ba!",
+    "es": "Los vasos cómpralos mañana. Esta tarde vamos a jugar al fútbol, ¡vente con nosotros!"
+   },
+   {
+    "sp": "王方",
+    "zh": "我不会踢足球。你们几个人去？",
+    "py": "Wǒ bú huì tī zúqiú. Nǐmen jǐ ge rén qù?",
+    "es": "Yo no sé jugar al fútbol. ¿Cuántos vais?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "十几个人，都是我的同学。你不踢，看我们踢也很好。你也要多运动！",
+    "py": "Shí jǐ ge rén, dōu shì wǒ de tóngxué. Nǐ bù tī, kàn wǒmen tī yě hěn hǎo. Nǐ yě yào duō yùndòng!",
+    "es": "Más de diez personas, todos compañeros de clase. Si no juegas, puedes vernos jugar. ¡Tú también tienes que hacer más deporte!"
+   },
+   {
+    "sp": "王方",
+    "zh": "好吧，我们几点去？",
+    "py": "Hǎo ba, wǒmen jǐ diǎn qù?",
+    "es": "Bueno, ¿a qué hora vamos?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "三点。我来你家叫你。",
+    "py": "Sān diǎn. Wǒ lái nǐ jiā jiào nǐ.",
+    "es": "A las tres. Vengo a tu casa a buscarte."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cómo se llama el gato?",
+    "lang": "py",
+    "a": [
+     "Huāhua"
+    ],
+    "r": "Huāhua · 花花."
+   },
+   {
+    "q": "¿Cuántos meses tiene el gato?",
+    "lang": "es",
+    "a": [
+     "seis",
+     "6"
+    ],
+    "r": "Seis meses y pico (六个多月)."
+   },
+   {
+    "q": "¿Qué quiere comprar Wang Fang esta tarde?",
+    "lang": "es",
+    "a": [
+     "vasos",
+     "tazas"
+    ],
+    "r": "Unos cuantos vasos nuevos (几个新杯子)."
+   },
+   {
+    "q": "¿Qué van a hacer Xie Peng y sus compañeros esta tarde?",
+    "lang": "py",
+    "a": [
+     "tī zúqiú"
+    ],
+    "r": "Tī zúqiú · 踢足球 (jugar al fútbol)."
+   },
+   {
+    "q": "¿A qué hora van a ir?",
+    "lang": "es",
+    "a": [
+     "tres",
+     "3"
+    ],
+    "r": "A las tres (三点)."
+   }
+  ]
+ },
+ {
+  "id": "L02a",
+  "tema": 2,
+  "titulo": "La rutina de David",
+  "escena": "Wang Fang se encuentra con David en el parque por la mañana.",
+  "personajes": {
+   "王方": "f",
+   "大卫": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王方",
+    "zh": "大卫，你每天早上都来跑步吗？",
+    "py": "Dàwèi, nǐ měi tiān zǎoshang dōu lái pǎo bù ma?",
+    "es": "David, ¿vienes a correr todas las mañanas?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "是啊。我每天六点起床，六点二十来这儿跑步。",
+    "py": "Shì a. Wǒ měi tiān liù diǎn qǐ chuáng, liù diǎn èrshí lái zhèr pǎo bù.",
+    "es": "Sí. Me levanto todos los días a las seis y a las seis y veinte vengo aquí a correr."
+   },
+   {
+    "sp": "王方",
+    "zh": "你每天跑多少分钟？",
+    "py": "Nǐ měi tiān pǎo duōshao fēnzhōng?",
+    "es": "¿Cuántos minutos corres cada día?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "四十分钟。七点二十我回家吃饭，八点去学校。",
+    "py": "Sìshí fēnzhōng. Qī diǎn èrshí wǒ huí jiā chī fàn, bā diǎn qù xuéxiào.",
+    "es": "Cuarenta minutos. A las siete y veinte vuelvo a casa a desayunar y a las ocho voy a la escuela."
+   },
+   {
+    "sp": "王方",
+    "zh": "我听说你很少生病。",
+    "py": "Wǒ tīngshuō nǐ hěn shǎo shēng bìng.",
+    "es": "He oído que casi nunca te pones enfermo."
+   },
+   {
+    "sp": "大卫",
+    "zh": "是啊，我身体很好，很少吃药。王方，你呢？你每天几点起床？",
+    "py": "Shì a, wǒ shēntǐ hěn hǎo, hěn shǎo chī yào. Wáng Fāng, nǐ ne? Nǐ měi tiān jǐ diǎn qǐ chuáng?",
+    "es": "Sí, tengo muy buena salud y casi nunca tomo medicinas. ¿Y tú, Wang Fang? ¿A qué hora te levantas cada día?"
+   },
+   {
+    "sp": "王方",
+    "zh": "我工作很忙，每天晚上十二点睡觉，早上八点起床。",
+    "py": "Wǒ gōngzuò hěn máng, měi tiān wǎnshang shí'èr diǎn shuì jiào, zǎoshang bā diǎn qǐ chuáng.",
+    "es": "Estoy muy ocupada con el trabajo: cada noche me acuesto a las doce y me levanto a las ocho."
+   },
+   {
+    "sp": "大卫",
+    "zh": "你太累了，要多休息，也要多运动。",
+    "py": "Nǐ tài lèi le, yào duō xiūxi, yě yào duō yùndòng.",
+    "es": "Estás demasiado cansada; tienes que descansar más y también hacer más deporte."
+   },
+   {
+    "sp": "王方",
+    "zh": "我知道。明天我和你一起跑步，好吗？",
+    "py": "Wǒ zhīdao. Míngtiān wǒ hé nǐ yìqǐ pǎo bù, hǎo ma?",
+    "es": "Ya lo sé. ¿Mañana corro contigo, vale?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "好啊！明天早上六点二十，我来这儿跑步，你也来吧。",
+    "py": "Hǎo a! Míngtiān zǎoshang liù diǎn èrshí, wǒ lái zhèr pǎo bù, nǐ yě lái ba.",
+    "es": "¡Claro! Mañana a las seis y veinte vengo aquí a correr; ven tú también."
+   },
+   {
+    "sp": "王方",
+    "zh": "好，我明天六点起床！",
+    "py": "Hǎo, wǒ míngtiān liù diǎn qǐ chuáng!",
+    "es": "¡Vale, mañana me levanto a las seis!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿A qué hora se levanta David?",
+    "lang": "es",
+    "a": [
+     "seis",
+     "6"
+    ],
+    "r": "A las seis (六点)."
+   },
+   {
+    "q": "¿Cuántos minutos corre David cada día?",
+    "lang": "es",
+    "a": [
+     "cuarenta",
+     "40"
+    ],
+    "r": "Cuarenta minutos (四十分钟)."
+   },
+   {
+    "q": "¿A qué hora va David a la escuela?",
+    "lang": "py",
+    "a": [
+     "bā diǎn"
+    ],
+    "r": "Bā diǎn · 八点 (a las ocho)."
+   },
+   {
+    "q": "¿A qué hora se acuesta Wang Fang?",
+    "lang": "es",
+    "a": [
+     "doce",
+     "12"
+    ],
+    "r": "A las doce de la noche (晚上十二点)."
+   },
+   {
+    "q": "¿Qué van a hacer juntos mañana?",
+    "lang": "py",
+    "a": [
+     "pǎo bù"
+    ],
+    "r": "Pǎo bù · 跑步 (correr)."
+   }
+  ]
+ },
+ {
+  "id": "L02b",
+  "tema": 2,
+  "titulo": "Xiao Li ha salido del hospital",
+  "escena": "Xiao Zhang y Wang Fang hablan de su compañera Xiao Li, que ha estado enferma.",
+  "personajes": {
+   "小张": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "小张",
+    "zh": "王方，我听说小李生病了，你知道吗？",
+    "py": "Wáng Fāng, wǒ tīngshuō Xiǎo Lǐ shēng bìng le, nǐ zhīdao ma?",
+    "es": "Wang Fang, he oído que Xiao Li se ha puesto enferma, ¿lo sabías?"
+   },
+   {
+    "sp": "王方",
+    "zh": "知道。她上个星期在医院住了五天，昨天出院了。",
+    "py": "Zhīdao. Tā shàng ge xīngqī zài yīyuàn zhù le wǔ tiān, zuótiān chū yuàn le.",
+    "es": "Sí. La semana pasada estuvo cinco días en el hospital y ayer le dieron el alta."
+   },
+   {
+    "sp": "小张",
+    "zh": "她现在身体怎么样？",
+    "py": "Tā xiànzài shēntǐ zěnmeyàng?",
+    "es": "¿Y cómo está ahora?"
+   },
+   {
+    "sp": "王方",
+    "zh": "好多了。医生说她每天早上和晚上都要吃药，也要多休息。",
+    "py": "Hǎo duō le. Yīshēng shuō tā měi tiān zǎoshang hé wǎnshang dōu yào chī yào, yě yào duō xiūxi.",
+    "es": "Mucho mejor. El médico dice que tiene que tomar medicinas cada mañana y cada noche, y descansar mucho."
+   },
+   {
+    "sp": "小张",
+    "zh": "她工作太忙了，每天都很累。",
+    "py": "Tā gōngzuò tài máng le, měi tiān dōu hěn lèi.",
+    "es": "Trabaja demasiado; todos los días está muy cansada."
+   },
+   {
+    "sp": "王方",
+    "zh": "是啊。明天星期六，我们一起去她家看看她吧。",
+    "py": "Shì a. Míngtiān xīngqīliù, wǒmen yìqǐ qù tā jiā kànkan tā ba.",
+    "es": "Sí. Mañana es sábado; vamos juntos a su casa a verla."
+   },
+   {
+    "sp": "小张",
+    "zh": "好。我听说她有一个儿子，他多大了？",
+    "py": "Hǎo. Wǒ tīngshuō tā yǒu yí ge érzi, tā duō dà le?",
+    "es": "Vale. He oído que tiene un hijo. ¿Cuántos años tiene?"
+   },
+   {
+    "sp": "王方",
+    "zh": "他八岁多了，很高，一米四几。",
+    "py": "Tā bā suì duō le, hěn gāo, yì mǐ sì jǐ.",
+    "es": "Tiene ocho años y pico, y es muy alto: mide un metro cuarenta y tantos."
+   },
+   {
+    "sp": "小张",
+    "zh": "太高了！他爸爸多高？",
+    "py": "Tài gāo le! Tā bàba duō gāo?",
+    "es": "¡Qué alto! ¿Cuánto mide su padre?"
+   },
+   {
+    "sp": "王方",
+    "zh": "他爸爸一米八几。小张，你多高？",
+    "py": "Tā bàba yì mǐ bā jǐ. Xiǎo Zhāng, nǐ duō gāo?",
+    "es": "Su padre mide un metro ochenta y tantos. Xiao Zhang, ¿cuánto mides tú?"
+   },
+   {
+    "sp": "小张",
+    "zh": "我一米七五。我们明天几点去？",
+    "py": "Wǒ yì mǐ qī wǔ. Wǒmen míngtiān jǐ diǎn qù?",
+    "es": "Yo mido un metro setenta y cinco. ¿A qué hora vamos mañana?"
+   },
+   {
+    "sp": "王方",
+    "zh": "上午十点吧。我们给她买些水果。",
+    "py": "Shàngwǔ shí diǎn ba. Wǒmen gěi tā mǎi xiē shuǐguǒ.",
+    "es": "A las diez de la mañana. Le compramos un poco de fruta."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cuántos días estuvo Xiao Li en el hospital?",
+    "lang": "es",
+    "a": [
+     "cinco",
+     "5"
+    ],
+    "r": "Cinco días (五天)."
+   },
+   {
+    "q": "¿Cuándo salió del hospital?",
+    "lang": "es",
+    "a": [
+     "ayer"
+    ],
+    "r": "Ayer (昨天)."
+   },
+   {
+    "q": "¿Qué tiene que hacer Xiao Li cada mañana y cada noche?",
+    "lang": "py",
+    "a": [
+     "chī yào"
+    ],
+    "r": "Chī yào · 吃药 (tomar medicinas)."
+   },
+   {
+    "q": "¿Cuánto mide el hijo de Xiao Li?",
+    "lang": "es",
+    "a": [
+     "cuarenta",
+     "40",
+     "1,4",
+     "1.4",
+     "140"
+    ],
+    "r": "Un metro cuarenta y tantos (一米四几)."
+   },
+   {
+    "q": "¿Qué le van a comprar a Xiao Li?",
+    "lang": "py",
+    "a": [
+     "shuǐguǒ"
+    ],
+    "r": "Shuǐguǒ · 水果 (fruta)."
+   }
+  ]
+ },
+ {
+  "id": "L03a",
+  "tema": 3,
+  "titulo": "La casa de la profesora Li",
+  "escena": "Xie Peng visita la casa nueva de la profesora Li.",
+  "personajes": {
+   "李老师": "f",
+   "谢朋": "m"
+  },
+  "lineas": [
+   {
+    "sp": "李老师",
+    "zh": "谢朋，你来了！请坐。",
+    "py": "Xiè Péng, nǐ lái le! Qǐng zuò.",
+    "es": "¡Xie Peng, ya estás aquí! Siéntate."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "李老师，您家真漂亮！这个房间真大！",
+    "py": "Lǐ lǎoshī, nín jiā zhēn piàoliang! Zhège fángjiān zhēn dà!",
+    "es": "Profesora Li, ¡qué casa tan bonita! ¡Qué grande es esta habitación!"
+   },
+   {
+    "sp": "李老师",
+    "zh": "这是我和我丈夫的房间。旁边那个小的是我女儿的。",
+    "py": "Zhè shì wǒ hé wǒ zhàngfu de fángjiān. Pángbiān nàge xiǎo de shì wǒ nǚ'ér de.",
+    "es": "Esta es la habitación de mi marido y mía. La pequeña de al lado es la de mi hija."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我能看一下吗？",
+    "py": "Wǒ néng kàn yíxià ma?",
+    "es": "¿Puedo echar un vistazo?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "看吧。她的房间都是红色的，她最喜欢红色。",
+    "py": "Kàn ba. Tā de fángjiān dōu shì hóngsè de, tā zuì xǐhuan hóngsè.",
+    "es": "Mira. Su habitación es toda roja; el rojo es su color favorito."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "桌子上那个手表真漂亮，是您女儿的吗？",
+    "py": "Zhuōzi shang nàge shǒubiǎo zhēn piàoliang, shì nín nǚ'ér de ma?",
+    "es": "Ese reloj de la mesa es muy bonito. ¿Es de su hija?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "不是，是我丈夫的，三千多块。",
+    "py": "Bú shì, shì wǒ zhàngfu de, sān qiān duō kuài.",
+    "es": "No, es de mi marido. Costó más de tres mil yuanes."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "桌子左边那个红色的杯子也是他的吗？",
+    "py": "Zhuōzi zuǒbian nàge hóngsè de bēizi yě shì tā de ma?",
+    "es": "¿Y ese vaso rojo a la izquierda de la mesa también es suyo?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "不是，红色的是我女儿的，右边那个小的是我的。",
+    "py": "Bú shì, hóngsè de shì wǒ nǚ'ér de, yòubian nàge xiǎo de shì wǒ de.",
+    "es": "No, el rojo es de mi hija; el pequeño de la derecha es el mío."
+   },
+   {
+    "sp": "李老师",
+    "zh": "有人来了，我去看一下。",
+    "py": "Yǒu rén lái le, wǒ qù kàn yíxià.",
+    "es": "Viene alguien; voy a ver un momento."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "是谁？",
+    "py": "Shì shéi?",
+    "es": "¿Quién es?"
+   },
+   {
+    "sp": "李老师",
+    "zh": "是送牛奶的。送报纸的没来。",
+    "py": "Shì sòng niúnǎi de. Sòng bàozhǐ de méi lái.",
+    "es": "Es el de la leche. El del periódico no ha venido."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿De quién es la habitación pequeña de al lado?",
+    "lang": "es",
+    "a": [
+     "hija"
+    ],
+    "r": "De la hija de la profesora Li (她女儿的)."
+   },
+   {
+    "q": "¿Cuál es el color favorito de la hija?",
+    "lang": "es",
+    "a": [
+     "rojo"
+    ],
+    "r": "El rojo (红色)."
+   },
+   {
+    "q": "¿Cuánto costó el reloj del marido?",
+    "lang": "py",
+    "a": [
+     "sān qiān"
+    ],
+    "r": "Sān qiān duō kuài · 三千多块 (más de tres mil yuanes)."
+   },
+   {
+    "q": "¿De quién es el vaso pequeño de la derecha?",
+    "lang": "es",
+    "a": [
+     "profesora",
+     "li"
+    ],
+    "r": "De la profesora Li (是我的)."
+   },
+   {
+    "q": "¿Quién ha venido a la puerta?",
+    "lang": "py",
+    "a": [
+     "sòng niúnǎi"
+    ],
+    "r": "Sòng niúnǎi de · 送牛奶的 (el repartidor de leche)."
+   }
+  ]
+ },
+ {
+  "id": "L03b",
+  "tema": 3,
+  "titulo": "Cena en el restaurante",
+  "escena": "David y Wang Fang cenan en un restaurante chino.",
+  "personajes": {
+   "大卫": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "大卫",
+    "zh": "王方，这个饭店真大！人也真多。",
+    "py": "Wáng Fāng, zhège fàndiàn zhēn dà! Rén yě zhēn duō.",
+    "es": "Wang Fang, ¡qué grande es este restaurante! Y cuánta gente hay."
+   },
+   {
+    "sp": "王方",
+    "zh": "是啊，这儿的中国菜很好吃。我们坐右边那个桌子吧，那儿人少。",
+    "py": "Shì a, zhèr de Zhōngguó cài hěn hǎochī. Wǒmen zuò yòubian nàge zhuōzi ba, nàr rén shǎo.",
+    "es": "Sí, aquí la comida china está muy rica. Sentémonos en esa mesa de la derecha, que allí hay poca gente."
+   },
+   {
+    "sp": "大卫",
+    "zh": "好。旁边那个人是你的同学吗？他在看我们。",
+    "py": "Hǎo. Pángbiān nàge rén shì nǐ de tóngxué ma? Tā zài kàn wǒmen.",
+    "es": "Vale. ¿Ese de al lado es compañero tuyo? Nos está mirando."
+   },
+   {
+    "sp": "王方",
+    "zh": "不是，他是我家前面商店的，我每天在他那儿买牛奶。",
+    "py": "Bú shì, tā shì wǒ jiā qiánmiàn shāngdiàn de, wǒ měi tiān zài tā nàr mǎi niúnǎi.",
+    "es": "No, es el de la tienda de delante de mi casa; todos los días le compro leche."
+   },
+   {
+    "sp": "大卫",
+    "zh": "他旁边那个孩子呢？",
+    "py": "Tā pángbiān nàge háizi ne?",
+    "es": "¿Y el niño que está a su lado?"
+   },
+   {
+    "sp": "王方",
+    "zh": "是他儿子，今年六岁。",
+    "py": "Shì tā érzi, jīnnián liù suì.",
+    "es": "Es su hijo; tiene seis años."
+   },
+   {
+    "sp": "大卫",
+    "zh": "我们吃什么？你看一下吧。",
+    "py": "Wǒmen chī shénme? Nǐ kàn yíxià ba.",
+    "es": "¿Qué comemos? Echa un vistazo tú."
+   },
+   {
+    "sp": "王方",
+    "zh": "这个菜八十八块，那个一百多块。我们吃八十八块的吧。",
+    "py": "Zhège cài bāshíbā kuài, nàge yì bǎi duō kuài. Wǒmen chī bāshíbā kuài de ba.",
+    "es": "Este plato cuesta ochenta y ocho yuanes y aquel, más de cien. Pidamos el de ochenta y ocho."
+   },
+   {
+    "sp": "大卫",
+    "zh": "好，我们也要米饭和茶。",
+    "py": "Hǎo, wǒmen yě yào mǐfàn hé chá.",
+    "es": "Vale, y también queremos arroz y té."
+   },
+   {
+    "sp": "王方",
+    "zh": "大卫，你的手表真漂亮！是新的吗？",
+    "py": "Dàwèi, nǐ de shǒubiǎo zhēn piàoliang! Shì xīn de ma?",
+    "es": "David, ¡qué reloj tan bonito! ¿Es nuevo?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "是新的。这是我爸爸在中国买的，一千多块。",
+    "py": "Shì xīn de. Zhè shì wǒ bàba zài Zhōngguó mǎi de, yì qiān duō kuài.",
+    "es": "Sí, es nuevo. Lo compró mi padre en China; costó más de mil yuanes."
+   },
+   {
+    "sp": "王方",
+    "zh": "一千多块！颜色也很漂亮！",
+    "py": "Yì qiān duō kuài! Yánsè yě hěn piàoliang!",
+    "es": "¡Más de mil yuanes! ¡Y el color también es muy bonito!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿En qué mesa se sientan?",
+    "lang": "es",
+    "a": [
+     "derecha"
+    ],
+    "r": "En la mesa de la derecha (右边那个桌子)."
+   },
+   {
+    "q": "¿Qué compra Wang Fang cada día en la tienda de ese hombre?",
+    "lang": "es",
+    "a": [
+     "leche"
+    ],
+    "r": "Leche (牛奶)."
+   },
+   {
+    "q": "¿Cuántos años tiene el niño?",
+    "lang": "py",
+    "a": [
+     "liù suì"
+    ],
+    "r": "Liù suì · 六岁 (seis años)."
+   },
+   {
+    "q": "¿Cuánto cuesta el plato que eligen?",
+    "lang": "es",
+    "a": [
+     "ochenta y ocho",
+     "88"
+    ],
+    "r": "Ochenta y ocho yuanes (八十八块)."
+   },
+   {
+    "q": "¿Cuánto costó el reloj de David?",
+    "lang": "py",
+    "a": [
+     "yì qiān",
+     "yī qiān"
+    ],
+    "r": "Yì qiān duō kuài · 一千多块 (más de mil yuanes)."
+   }
+  ]
+ },
+ {
+  "id": "L04a",
+  "tema": 4,
+  "titulo": "El trabajo nuevo de Xiao Wang",
+  "escena": "Wang Fang se encuentra con Xiao Wang, que ha empezado a trabajar en un hotel.",
+  "personajes": {
+   "王方": "f",
+   "小王": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王方",
+    "zh": "小王，听说你现在在北京饭店工作？",
+    "py": "Xiǎo Wáng, tīngshuō nǐ xiànzài zài Běijīng Fàndiàn gōngzuò?",
+    "es": "Xiao Wang, he oído que ahora trabajas en el hotel Pekín, ¿no?"
+   },
+   {
+    "sp": "小王",
+    "zh": "是啊，我已经在那儿工作三个多月了。",
+    "py": "Shì a, wǒ yǐjīng zài nàr gōngzuò sān ge duō yuè le.",
+    "es": "Sí, ya llevo más de tres meses trabajando allí."
+   },
+   {
+    "sp": "王方",
+    "zh": "这个工作是谁帮你介绍的？",
+    "py": "Zhège gōngzuò shì shéi bāng nǐ jièshào de?",
+    "es": "¿Quién te consiguió este trabajo?"
+   },
+   {
+    "sp": "小王",
+    "zh": "是我大学同学谢朋帮我介绍的。他去年开始在那儿工作。",
+    "py": "Shì wǒ dàxué tóngxué Xiè Péng bāng wǒ jièshào de. Tā qùnián kāishǐ zài nàr gōngzuò.",
+    "es": "Me lo consiguió Xie Peng, un compañero de la universidad. Él empezó a trabajar allí el año pasado."
+   },
+   {
+    "sp": "王方",
+    "zh": "你是什么时候认识谢朋的？",
+    "py": "Nǐ shì shénme shíhou rènshi Xiè Péng de?",
+    "es": "¿Cuándo conociste a Xie Peng?"
+   },
+   {
+    "sp": "小王",
+    "zh": "我是十八岁的时候认识他的，我们一起在大学打篮球。",
+    "py": "Wǒ shì shíbā suì de shíhou rènshi tā de, wǒmen yìqǐ zài dàxué dǎ lánqiú.",
+    "es": "Lo conocí cuando tenía dieciocho años; jugábamos juntos al baloncesto en la universidad."
+   },
+   {
+    "sp": "王方",
+    "zh": "你们认识多长时间了？",
+    "py": "Nǐmen rènshi duō cháng shíjiān le?",
+    "es": "¿Cuánto tiempo hace que os conocéis?"
+   },
+   {
+    "sp": "小王",
+    "zh": "已经五年多了。他非常喜欢帮助朋友。",
+    "py": "Yǐjīng wǔ nián duō le. Tā fēicháng xǐhuan bāngzhù péngyou.",
+    "es": "Ya hace más de cinco años. Le encanta ayudar a sus amigos."
+   },
+   {
+    "sp": "王方",
+    "zh": "你每天几点开始工作？",
+    "py": "Nǐ měi tiān jǐ diǎn kāishǐ gōngzuò?",
+    "es": "¿A qué hora empiezas a trabajar cada día?"
+   },
+   {
+    "sp": "小王",
+    "zh": "早上九点。我的工作是接电话，每天都很忙。",
+    "py": "Zǎoshang jiǔ diǎn. Wǒ de gōngzuò shì jiē diànhuà, měi tiān dōu hěn máng.",
+    "es": "A las nueve de la mañana. Mi trabajo es atender el teléfono; todos los días estoy muy ocupado."
+   },
+   {
+    "sp": "王方",
+    "zh": "下个月是谢朋的生日，我们一起给他买个东西吧。",
+    "py": "Xià ge yuè shì Xiè Péng de shēngrì, wǒmen yìqǐ gěi tā mǎi ge dōngxi ba.",
+    "es": "El mes que viene es el cumpleaños de Xie Peng; comprémosle algo entre los dos."
+   },
+   {
+    "sp": "小王",
+    "zh": "好啊！我知道他很喜欢打篮球，我们送他一个新篮球吧。",
+    "py": "Hǎo a! Wǒ zhīdao tā hěn xǐhuan dǎ lánqiú, wǒmen sòng tā yí ge xīn lánqiú ba.",
+    "es": "¡Buena idea! Sé que le encanta jugar al baloncesto; regalémosle un balón de baloncesto nuevo."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cuánto tiempo lleva Xiao Wang trabajando en el hotel?",
+    "lang": "es",
+    "a": [
+     "tres",
+     "3"
+    ],
+    "r": "Más de tres meses (三个多月)."
+   },
+   {
+    "q": "¿Quién le consiguió el trabajo?",
+    "lang": "py",
+    "a": [
+     "Xiè Péng"
+    ],
+    "r": "Xiè Péng · 谢朋, un compañero de la universidad."
+   },
+   {
+    "q": "¿A qué edad conoció Xiao Wang a Xie Peng?",
+    "lang": "es",
+    "a": [
+     "dieciocho",
+     "18"
+    ],
+    "r": "A los dieciocho años (十八岁的时候)."
+   },
+   {
+    "q": "¿En qué consiste el trabajo de Xiao Wang?",
+    "lang": "es",
+    "a": [
+     "telefono"
+    ],
+    "r": "En atender el teléfono (接电话)."
+   },
+   {
+    "q": "¿Qué le quieren regalar a Xie Peng?",
+    "lang": "py",
+    "a": [
+     "lánqiú"
+    ],
+    "r": "Yí ge xīn lánqiú · 一个新篮球 (un balón de baloncesto nuevo)."
+   }
+  ]
+ },
+ {
+  "id": "L04b",
+  "tema": 4,
+  "titulo": "El cumpleaños de David",
+  "escena": "Annie va a casa de David el día de su cumpleaños.",
+  "personajes": {
+   "安妮": "f",
+   "大卫": "m"
+  },
+  "lineas": [
+   {
+    "sp": "安妮",
+    "zh": "大卫，生日快乐！这是给你的。",
+    "py": "Dàwèi, shēngrì kuàilè! Zhè shì gěi nǐ de.",
+    "es": "¡Feliz cumpleaños, David! Esto es para ti."
+   },
+   {
+    "sp": "大卫",
+    "zh": "谢谢你，安妮！是什么？",
+    "py": "Xièxie nǐ, Ānnī! Shì shénme?",
+    "es": "¡Gracias, Annie! ¿Qué es?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "是一本汉语书，我是在北京买的。",
+    "py": "Shì yì běn Hànyǔ shū, wǒ shì zài Běijīng mǎi de.",
+    "es": "Es un libro de chino; lo compré en Pekín."
+   },
+   {
+    "sp": "大卫",
+    "zh": "你是什么时候去北京的？",
+    "py": "Nǐ shì shénme shíhou qù Běijīng de?",
+    "es": "¿Cuándo fuiste a Pekín?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "我是去年九月去的，在那儿住了两个多月。",
+    "py": "Wǒ shì qùnián jiǔ yuè qù de, zài nàr zhù le liǎng ge duō yuè.",
+    "es": "Fui en septiembre del año pasado y viví allí más de dos meses."
+   },
+   {
+    "sp": "大卫",
+    "zh": "你是坐飞机去的吗？",
+    "py": "Nǐ shì zuò fēijī qù de ma?",
+    "es": "¿Fuiste en avión?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "是，是坐飞机去的。你爸爸妈妈今天来吗？",
+    "py": "Shì, shì zuò fēijī qù de. Nǐ bàba māma jīntiān lái ma?",
+    "es": "Sí, fui en avión. ¿Tus padres vienen hoy?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "他们已经来了，是昨天晚上开车来的。",
+    "py": "Tāmen yǐjīng lái le, shì zuótiān wǎnshang kāi chē lái de.",
+    "es": "Ya han llegado; vinieron ayer por la noche en coche."
+   },
+   {
+    "sp": "安妮",
+    "zh": "太好了！你是几岁开始学汉语的？",
+    "py": "Tài hǎo le! Nǐ shì jǐ suì kāishǐ xué Hànyǔ de?",
+    "es": "¡Qué bien! ¿A qué edad empezaste a estudiar chino?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "我是二十岁的时候开始学的，已经学了三年多了。",
+    "py": "Wǒ shì èrshí suì de shíhou kāishǐ xué de, yǐjīng xué le sān nián duō le.",
+    "es": "Empecé a los veinte años; ya llevo más de tres años estudiando."
+   },
+   {
+    "sp": "安妮",
+    "zh": "你的汉语非常好！大卫，你的电话，我帮你接吧？",
+    "py": "Nǐ de Hànyǔ fēicháng hǎo! Dàwèi, nǐ de diànhuà, wǒ bāng nǐ jiē ba?",
+    "es": "¡Hablas chino muy bien! David, te llaman. ¿Lo cojo yo?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "好，谢谢你。",
+    "py": "Hǎo, xièxie nǐ.",
+    "es": "Sí, gracias."
+   },
+   {
+    "sp": "安妮",
+    "zh": "是你妈妈打的。她问你，我们几点回家吃饭。",
+    "py": "Shì nǐ māma dǎ de. Tā wèn nǐ, wǒmen jǐ diǎn huí jiā chī fàn.",
+    "es": "Era tu madre. Te pregunta a qué hora volvemos a casa a cenar."
+   },
+   {
+    "sp": "大卫",
+    "zh": "你说七点吧。",
+    "py": "Nǐ shuō qī diǎn ba.",
+    "es": "Dile que a las siete."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué le regala Annie a David?",
+    "lang": "es",
+    "a": [
+     "libro"
+    ],
+    "r": "Un libro de chino (一本汉语书)."
+   },
+   {
+    "q": "¿Cuándo fue Annie a Pekín?",
+    "lang": "es",
+    "a": [
+     "septiembre"
+    ],
+    "r": "En septiembre del año pasado (去年九月)."
+   },
+   {
+    "q": "¿Cómo llegaron a la ciudad los padres de David?",
+    "lang": "py",
+    "a": [
+     "kāi chē"
+    ],
+    "r": "Kāi chē lái de · 开车来的 (en coche)."
+   },
+   {
+    "q": "¿Cuántos años lleva David estudiando chino?",
+    "lang": "es",
+    "a": [
+     "tres",
+     "3"
+    ],
+    "r": "Más de tres años (三年多)."
+   },
+   {
+    "q": "¿A qué hora van a volver a casa a cenar?",
+    "lang": "py",
+    "a": [
+     "qī diǎn"
+    ],
+    "r": "Qī diǎn · 七点 (a las siete)."
+   }
+  ]
+ },
+ {
+  "id": "L05a",
+  "tema": 5,
+  "titulo": "Me quedo con esta",
+  "escena": "Wang Fang y Xie Peng están en una tienda de ropa.",
+  "personajes": {
+   "王方": "f",
+   "谢朋": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王方",
+    "zh": "谢朋，你看这件衣服怎么样？",
+    "py": "Xiè Péng, nǐ kàn zhè jiàn yīfu zěnmeyàng?",
+    "es": "Xie Peng, ¿qué te parece esta prenda?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "颜色还可以，就是有点儿大。",
+    "py": "Yánsè hái kěyǐ, jiùshì yǒudiǎnr dà.",
+    "es": "El color no está mal, pero es un poco grande."
+   },
+   {
+    "sp": "王方",
+    "zh": "那件红色的呢？",
+    "py": "Nà jiàn hóngsè de ne?",
+    "es": "¿Y aquella roja?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "那件不错，不大也不小。多少钱？",
+    "py": "Nà jiàn búcuò, bú dà yě bù xiǎo. Duōshao qián?",
+    "es": "Esa está bastante bien: ni grande ni pequeña. ¿Cuánto cuesta?"
+   },
+   {
+    "sp": "王方",
+    "zh": "三百八十块。这件两百多块。",
+    "py": "Sān bǎi bāshí kuài. Zhè jiàn liǎng bǎi duō kuài.",
+    "es": "Trescientos ochenta yuanes. Esta cuesta doscientos y pico."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "红色的颜色好，我觉得三百八十块也还可以。就买红色的吧！",
+    "py": "Hóngsè de yánsè hǎo, wǒ juéde sān bǎi bāshí kuài yě hái kěyǐ. Jiù mǎi hóngsè de ba!",
+    "es": "La roja tiene buen color, y creo que trescientos ochenta yuanes está bien. ¡Cómprate la roja!"
+   },
+   {
+    "sp": "王方",
+    "zh": "好，就买这件。外面下雨了，我们去喝杯咖啡吧。",
+    "py": "Hǎo, jiù mǎi zhè jiàn. Wàimiàn xià yǔ le, wǒmen qù hē bēi kāfēi ba.",
+    "es": "Vale, me quedo con esta. Fuera ha empezado a llover; vamos a tomar un café."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我今天已经喝了三杯咖啡了。咖啡喝多了对身体不好。",
+    "py": "Wǒ jīntiān yǐjīng hē le sān bēi kāfēi le. Kāfēi hē duō le duì shēntǐ bù hǎo.",
+    "es": "Hoy ya me he tomado tres cafés. Beber mucho café no es bueno para la salud."
+   },
+   {
+    "sp": "王方",
+    "zh": "那我们不去了。明天的考试你准备了吗？",
+    "py": "Nà wǒmen bú qù le. Míngtiān de kǎoshì nǐ zhǔnbèi le ma?",
+    "es": "Entonces no vamos. ¿Has preparado el examen de mañana?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "准备了。听和说还可以，写不好，很多字我都不知道是什么意思。",
+    "py": "Zhǔnbèi le. Tīng hé shuō hái kěyǐ, xiě bù hǎo, hěn duō zì wǒ dōu bù zhīdao shì shénme yìsi.",
+    "es": "Sí. La comprensión oral y la expresión oral no están mal, pero la escritura va mal: no sé qué significan muchos caracteres."
+   },
+   {
+    "sp": "王方",
+    "zh": "今天晚上来我家吃晚饭吧，我帮你准备考试。",
+    "py": "Jīntiān wǎnshang lái wǒ jiā chī wǎnfàn ba, wǒ bāng nǐ zhǔnbèi kǎoshì.",
+    "es": "Ven a cenar a mi casa esta noche y te ayudo a preparar el examen."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "太好了！我们吃什么？",
+    "py": "Tài hǎo le! Wǒmen chī shénme?",
+    "es": "¡Genial! ¿Qué vamos a comer?"
+   },
+   {
+    "sp": "王方",
+    "zh": "我做鱼吧，吃鱼对身体好。我们现在就回家！",
+    "py": "Wǒ zuò yú ba, chī yú duì shēntǐ hǎo. Wǒmen xiànzài jiù huí jiā!",
+    "es": "Haré pescado, que es bueno para la salud. ¡Vamos a casa ahora mismo!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué problema tiene la primera prenda?",
+    "lang": "es",
+    "a": [
+     "grande"
+    ],
+    "r": "Es un poco grande (有点儿大)."
+   },
+   {
+    "q": "¿Cuánto cuesta la prenda roja?",
+    "lang": "es",
+    "a": [
+     "trescientos ochenta",
+     "380"
+    ],
+    "r": "Trescientos ochenta yuanes (三百八十块)."
+   },
+   {
+    "q": "¿Qué bebida no es buena para la salud si se toma mucho, según Xie Peng?",
+    "lang": "py",
+    "a": [
+     "kāfēi"
+    ],
+    "r": "Kāfēi · 咖啡 (el café)."
+   },
+   {
+    "q": "¿Qué parte del examen le va mal a Xie Peng?",
+    "lang": "es",
+    "a": [
+     "escribir",
+     "escritura"
+    ],
+    "r": "La escritura (写不好)."
+   },
+   {
+    "q": "¿Qué va a cocinar Wang Fang esta noche?",
+    "lang": "py",
+    "a": [
+     "yú"
+    ],
+    "r": "Yú · 鱼 (pescado)."
+   }
+  ]
+ },
+ {
+  "id": "L05b",
+  "tema": 5,
+  "titulo": "Cenamos en casa",
+  "escena": "Es por la tarde. Los padres hablan de la cena.",
+  "personajes": {
+   "爸爸": "m",
+   "妈妈": "f"
+  },
+  "lineas": [
+   {
+    "sp": "爸爸",
+    "zh": "今天晚上我们去外面吃饭吧？",
+    "py": "Jīntiān wǎnshang wǒmen qù wàimiàn chī fàn ba?",
+    "es": "¿Esta noche cenamos fuera?"
+   },
+   {
+    "sp": "妈妈",
+    "zh": "我今天有点儿累，不想去外面吃。我们在家吃吧。",
+    "py": "Wǒ jīntiān yǒudiǎnr lèi, bù xiǎng qù wàimiàn chī. Wǒmen zài jiā chī ba.",
+    "es": "Hoy estoy un poco cansada y no me apetece comer fuera. Cenemos en casa."
+   },
+   {
+    "sp": "爸爸",
+    "zh": "好，那我现在就准备晚饭。",
+    "py": "Hǎo, nà wǒ xiànzài jiù zhǔnbèi wǎnfàn.",
+    "es": "Vale, entonces preparo la cena ahora mismo."
+   },
+   {
+    "sp": "妈妈",
+    "zh": "家里还有鱼吗？",
+    "py": "Jiā li hái yǒu yú ma?",
+    "es": "¿Queda pescado en casa?"
+   },
+   {
+    "sp": "爸爸",
+    "zh": "没有了。我去前面的商店买吧。",
+    "py": "Méiyǒu le. Wǒ qù qiánmiàn de shāngdiàn mǎi ba.",
+    "es": "No, ya no queda. Voy a comprarlo a la tienda de aquí delante."
+   },
+   {
+    "sp": "妈妈",
+    "zh": "那个商店的鱼还可以。你也买些水果吧。",
+    "py": "Nàge shāngdiàn de yú hái kěyǐ. Nǐ yě mǎi xiē shuǐguǒ ba.",
+    "es": "El pescado de esa tienda no está mal. Compra también un poco de fruta."
+   },
+   {
+    "sp": "爸爸",
+    "zh": "好。儿子今天回来吃饭吗？",
+    "py": "Hǎo. Érzi jīntiān huílai chī fàn ma?",
+    "es": "Vale. ¿Nuestro hijo viene hoy a cenar?"
+   },
+   {
+    "sp": "妈妈",
+    "zh": "他明天有考试，现在还在学校。",
+    "py": "Tā míngtiān yǒu kǎoshì, xiànzài hái zài xuéxiào.",
+    "es": "Mañana tiene un examen; todavía está en la escuela."
+   },
+   {
+    "sp": "爸爸",
+    "zh": "那他九点以后回家吧。",
+    "py": "Nà tā jiǔ diǎn yǐhòu huí jiā ba.",
+    "es": "Entonces supongo que volverá después de las nueve."
+   },
+   {
+    "sp": "妈妈",
+    "zh": "他回家以后要吃东西，你多买一点儿。",
+    "py": "Tā huí jiā yǐhòu yào chī dōngxi, nǐ duō mǎi yìdiǎnr.",
+    "es": "Cuando vuelva querrá comer algo; compra un poco más."
+   },
+   {
+    "sp": "爸爸",
+    "zh": "好的。你要喝咖啡吗？我给你买一杯。",
+    "py": "Hǎo de. Nǐ yào hē kāfēi ma? Wǒ gěi nǐ mǎi yì bēi.",
+    "es": "De acuerdo. ¿Quieres un café? Te compro uno."
+   },
+   {
+    "sp": "妈妈",
+    "zh": "不要，晚上喝咖啡对睡觉不好。给我买牛奶吧。",
+    "py": "Bú yào, wǎnshang hē kāfēi duì shuì jiào bù hǎo. Gěi wǒ mǎi niúnǎi ba.",
+    "es": "No, tomar café por la noche no es bueno para dormir. Cómprame leche."
+   },
+   {
+    "sp": "爸爸",
+    "zh": "好，我现在就去！",
+    "py": "Hǎo, wǒ xiànzài jiù qù!",
+    "es": "¡Vale, voy ahora mismo!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Por qué no quiere la madre cenar fuera?",
+    "lang": "es",
+    "a": [
+     "cansada"
+    ],
+    "r": "Porque está un poco cansada (有点儿累)."
+   },
+   {
+    "q": "¿Qué ya no queda en casa?",
+    "lang": "py",
+    "a": [
+     "yú"
+    ],
+    "r": "Yú · 鱼 (pescado)."
+   },
+   {
+    "q": "¿Por qué el hijo sigue en la escuela?",
+    "lang": "es",
+    "a": [
+     "examen"
+    ],
+    "r": "Porque mañana tiene un examen (明天有考试)."
+   },
+   {
+    "q": "¿A partir de qué hora cree el padre que volverá el hijo?",
+    "lang": "es",
+    "a": [
+     "nueve",
+     "9"
+    ],
+    "r": "Después de las nueve (九点以后)."
+   },
+   {
+    "q": "¿Qué le pide la madre que le compre para beber?",
+    "lang": "py",
+    "a": [
+     "niúnǎi"
+    ],
+    "r": "Niúnǎi · 牛奶 (leche)."
+   }
+  ]
+ },
+ {
+  "id": "L06a",
+  "tema": 6,
+  "titulo": "¿Cómo es que ya no comes?",
+  "escena": "Wang Fang y Xiao Zhang comen juntos en un restaurante.",
+  "personajes": {
+   "王方": "f",
+   "小张": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王方",
+    "zh": "小张，你怎么不吃了？",
+    "py": "Xiǎo Zhāng, nǐ zěnme bù chī le?",
+    "es": "Xiao Zhang, ¿cómo es que ya no comes?"
+   },
+   {
+    "sp": "小张",
+    "zh": "我这个星期天天都吃羊肉，不想吃了。",
+    "py": "Wǒ zhège xīngqī tiāntiān dōu chī yángròu, bù xiǎng chī le.",
+    "es": "Esta semana he comido cordero todos los días; ya no me apetece."
+   },
+   {
+    "sp": "王方",
+    "zh": "那你吃面条吧，这儿的面条也很好吃。",
+    "py": "Nà nǐ chī miàntiáo ba, zhèr de miàntiáo yě hěn hǎochī.",
+    "es": "Pues come fideos; aquí los fideos también están muy ricos."
+   },
+   {
+    "sp": "小张",
+    "zh": "不要了。我现在七十五公斤，我要少吃一点儿。",
+    "py": "Bú yào le. Wǒ xiànzài qīshíwǔ gōngjīn, wǒ yào shǎo chī yìdiǎnr.",
+    "es": "No, gracias. Ahora peso setenta y cinco kilos; tengo que comer un poco menos."
+   },
+   {
+    "sp": "王方",
+    "zh": "你去年多少公斤？",
+    "py": "Nǐ qùnián duōshao gōngjīn?",
+    "es": "¿Cuánto pesabas el año pasado?"
+   },
+   {
+    "sp": "小张",
+    "zh": "七十公斤。因为我经常在外面吃饭，所以现在多了五公斤。",
+    "py": "Qīshí gōngjīn. Yīnwèi wǒ jīngcháng zài wàimiàn chī fàn, suǒyǐ xiànzài duō le wǔ gōngjīn.",
+    "es": "Setenta kilos. Como a menudo como fuera, ahora tengo cinco kilos más."
+   },
+   {
+    "sp": "王方",
+    "zh": "你可以去游泳。我哥哥天天游泳，身体非常好。",
+    "py": "Nǐ kěyǐ qù yóu yǒng. Wǒ gēge tiāntiān yóu yǒng, shēntǐ fēicháng hǎo.",
+    "es": "Podrías ir a nadar. Mi hermano mayor nada todos los días y tiene una salud estupenda."
+   },
+   {
+    "sp": "小张",
+    "zh": "我不会游泳。昨天你们去打篮球了没有？",
+    "py": "Wǒ bú huì yóu yǒng. Zuótiān nǐmen qù dǎ lánqiú le méiyǒu?",
+    "es": "Yo no sé nadar. ¿Fuisteis ayer a jugar al baloncesto?"
+   },
+   {
+    "sp": "王方",
+    "zh": "没有。因为昨天下雨，所以我们都没去。",
+    "py": "Méiyǒu. Yīnwèi zuótiān xià yǔ, suǒyǐ wǒmen dōu méi qù.",
+    "es": "No. Como ayer llovió, no fue nadie."
+   },
+   {
+    "sp": "小张",
+    "zh": "今天天气不错，我们下午去吧。",
+    "py": "Jīntiān tiānqì búcuò, wǒmen xiàwǔ qù ba.",
+    "es": "Hoy hace bastante buen tiempo; vamos esta tarde."
+   },
+   {
+    "sp": "王方",
+    "zh": "好。我姐姐和她的同学也去，她们个个都很高。",
+    "py": "Hǎo. Wǒ jiějie hé tā de tóngxué yě qù, tāmen gègè dōu hěn gāo.",
+    "es": "Vale. Mi hermana mayor y sus compañeras también vienen; son altísimas, todas y cada una."
+   },
+   {
+    "sp": "小张",
+    "zh": "太好了！那我们三点去学校吧。",
+    "py": "Tài hǎo le! Nà wǒmen sān diǎn qù xuéxiào ba.",
+    "es": "¡Genial! Entonces vamos a la escuela a las tres."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Por qué ya no quiere comer cordero Xiao Zhang?",
+    "lang": "es",
+    "a": [
+     "todos los dias",
+     "cada dia"
+    ],
+    "r": "Porque esta semana lo ha comido todos los días (天天)."
+   },
+   {
+    "q": "¿Cuántos kilos pesa ahora Xiao Zhang?",
+    "lang": "es",
+    "a": [
+     "setenta y cinco",
+     "75"
+    ],
+    "r": "Setenta y cinco kilos (七十五公斤)."
+   },
+   {
+    "q": "¿Qué hace cada día el hermano mayor de Wang Fang?",
+    "lang": "py",
+    "a": [
+     "yóu yǒng"
+    ],
+    "r": "Yóu yǒng · 游泳 (nadar)."
+   },
+   {
+    "q": "¿Por qué no fueron ayer a jugar al baloncesto?",
+    "lang": "es",
+    "a": [
+     "llovio",
+     "llovia",
+     "lluvia"
+    ],
+    "r": "Porque llovió (因为昨天下雨)."
+   },
+   {
+    "q": "¿A qué hora van a ir a la escuela?",
+    "lang": "py",
+    "a": [
+     "sān diǎn"
+    ],
+    "r": "Sān diǎn · 三点 (a las tres)."
+   }
+  ]
+ },
+ {
+  "id": "L06b",
+  "tema": 6,
+  "titulo": "La bicicleta de Martin",
+  "escena": "Annie ve a Martin llegar a clase en bicicleta.",
+  "personajes": {
+   "安妮": "f",
+   "马丁": "m"
+  },
+  "lineas": [
+   {
+    "sp": "安妮",
+    "zh": "马丁，你怎么不坐出租车了？",
+    "py": "Mǎdīng, nǐ zěnme bú zuò chūzūchē le?",
+    "es": "Martin, ¿cómo es que ya no vienes en taxi?"
+   },
+   {
+    "sp": "马丁",
+    "zh": "因为坐出租车要很多钱，所以我买了一个自行车。",
+    "py": "Yīnwèi zuò chūzūchē yào hěn duō qián, suǒyǐ wǒ mǎi le yí ge zìxíngchē.",
+    "es": "Como el taxi cuesta mucho dinero, me he comprado una bicicleta."
+   },
+   {
+    "sp": "安妮",
+    "zh": "你的自行车在哪儿？我看一下。",
+    "py": "Nǐ de zìxíngchē zài nǎr? Wǒ kàn yíxià.",
+    "es": "¿Dónde está tu bicicleta? Déjame verla."
+   },
+   {
+    "sp": "马丁",
+    "zh": "在门外，红色的那个就是我的。",
+    "py": "Zài mén wài, hóngsè de nàge jiù shì wǒ de.",
+    "es": "Fuera, junto a la puerta; la roja es la mía."
+   },
+   {
+    "sp": "安妮",
+    "zh": "真漂亮！多少钱？",
+    "py": "Zhēn piàoliang! Duōshao qián?",
+    "es": "¡Qué bonita! ¿Cuánto te costó?"
+   },
+   {
+    "sp": "马丁",
+    "zh": "四百五十块。安妮，你今天怎么不高兴了？",
+    "py": "Sì bǎi wǔshí kuài. Ānnī, nǐ jīntiān zěnme bù gāoxìng le?",
+    "es": "Cuatrocientos cincuenta yuanes. Annie, ¿cómo es que hoy estás triste?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "我姐姐生病了，在医院。",
+    "py": "Wǒ jiějie shēng bìng le, zài yīyuàn.",
+    "es": "Mi hermana mayor se ha puesto enferma y está en el hospital."
+   },
+   {
+    "sp": "马丁",
+    "zh": "她怎么了？",
+    "py": "Tā zěnme le?",
+    "es": "¿Qué le ha pasado?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "因为她昨天去游泳，外面很冷，所以她生病了。",
+    "py": "Yīnwèi tā zuótiān qù yóu yǒng, wàimiàn hěn lěng, suǒyǐ tā shēng bìng le.",
+    "es": "Ayer fue a nadar y fuera hacía mucho frío, así que se puso enferma."
+   },
+   {
+    "sp": "马丁",
+    "zh": "你去医院看她了没有？",
+    "py": "Nǐ qù yīyuàn kàn tā le méiyǒu?",
+    "es": "¿Has ido al hospital a verla?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "还没有，今天下午去。",
+    "py": "Hái méiyǒu, jīntiān xiàwǔ qù.",
+    "es": "Todavía no; voy esta tarde."
+   },
+   {
+    "sp": "马丁",
+    "zh": "我和你一起去吧。我们给她买些苹果，那个商店的苹果个个都很大。",
+    "py": "Wǒ hé nǐ yìqǐ qù ba. Wǒmen gěi tā mǎi xiē píngguǒ, nàge shāngdiàn de píngguǒ gègè dōu hěn dà.",
+    "es": "Voy contigo. Le compramos unas manzanas; en esa tienda todas las manzanas son muy grandes."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué se ha comprado Martin?",
+    "lang": "es",
+    "a": [
+     "bicicleta"
+    ],
+    "r": "Una bicicleta (自行车)."
+   },
+   {
+    "q": "¿Dónde está la bicicleta de Martin?",
+    "lang": "py",
+    "a": [
+     "mén wài"
+    ],
+    "r": "Zài mén wài · 在门外 (fuera, junto a la puerta)."
+   },
+   {
+    "q": "¿Cuánto le costó?",
+    "lang": "es",
+    "a": [
+     "cuatrocientos cincuenta",
+     "450"
+    ],
+    "r": "Cuatrocientos cincuenta yuanes (四百五十块)."
+   },
+   {
+    "q": "¿Qué hizo ayer la hermana de Annie para ponerse enferma?",
+    "lang": "es",
+    "a": [
+     "nadar"
+    ],
+    "r": "Fue a nadar con mucho frío (去游泳)."
+   },
+   {
+    "q": "¿Qué fruta le van a comprar?",
+    "lang": "py",
+    "a": [
+     "píngguǒ"
+    ],
+    "r": "Píngguǒ · 苹果 (manzanas)."
+   }
+  ]
+ },
+ {
+  "id": "L07a",
+  "tema": 7,
+  "titulo": "¿Vives lejos de la empresa?",
+  "escena": "Son más de las siete de la tarde. Wang Fang y Xie Peng siguen en la oficina.",
+  "personajes": {
+   "谢朋": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "谢朋",
+    "zh": "王方，你家离公司远吗？",
+    "py": "Wáng Fāng, nǐ jiā lí gōngsī yuǎn ma?",
+    "es": "Wang Fang, ¿tu casa está lejos de la empresa?"
+   },
+   {
+    "sp": "王方",
+    "zh": "很远。坐公共汽车要一个多小时呢。",
+    "py": "Hěn yuǎn. Zuò gōnggòng qìchē yào yí ge duō xiǎoshí ne.",
+    "es": "Muy lejos. ¡En autobús tardo más de una hora!"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "你为什么不开车？",
+    "py": "Nǐ wèi shénme bù kāi chē?",
+    "es": "¿Por qué no vas en coche?"
+   },
+   {
+    "sp": "王方",
+    "zh": "开车也不快，早上路上车太多了。你家呢？",
+    "py": "Kāi chē yě bú kuài, zǎoshang lù shang chē tài duō le. Nǐ jiā ne?",
+    "es": "En coche tampoco es más rápido: por la mañana hay demasiados coches en la calle. ¿Y tu casa?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我家离公司很近，走十分钟就到了。",
+    "py": "Wǒ jiā lí gōngsī hěn jìn, zǒu shí fēnzhōng jiù dào le.",
+    "es": "Mi casa está muy cerca de la empresa; andando llego en diez minutos."
+   },
+   {
+    "sp": "王方",
+    "zh": "真好！现在已经七点多了，你怎么还在公司？",
+    "py": "Zhēn hǎo! Xiànzài yǐjīng qī diǎn duō le, nǐ zěnme hái zài gōngsī?",
+    "es": "¡Qué suerte! Ya son más de las siete, ¿cómo es que todavía estás en la empresa?"
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我还有很多工作呢。明天上午十点我要去机场接张先生。",
+    "py": "Wǒ hái yǒu hěn duō gōngzuò ne. Míngtiān shàngwǔ shí diǎn wǒ yào qù jīchǎng jiē Zhāng xiānsheng.",
+    "es": "Todavía tengo mucho trabajo. Mañana a las diez de la mañana tengo que ir al aeropuerto a recoger al señor Zhang."
+   },
+   {
+    "sp": "王方",
+    "zh": "机场离这儿很远，你九点就要走。",
+    "py": "Jīchǎng lí zhèr hěn yuǎn, nǐ jiǔ diǎn jiù yào zǒu.",
+    "es": "El aeropuerto está muy lejos de aquí; tendrás que salir ya a las nueve."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "我知道，坐出租车要四十多分钟。这个星期六是小李的生日，你知道吗？",
+    "py": "Wǒ zhīdao, zuò chūzūchē yào sìshí duō fēnzhōng. Zhège xīngqīliù shì Xiǎo Lǐ de shēngrì, nǐ zhīdao ma?",
+    "es": "Lo sé; en taxi se tarda más de cuarenta minutos. Este sábado es el cumpleaños de Xiao Li, ¿lo sabías?"
+   },
+   {
+    "sp": "王方",
+    "zh": "知道，我们星期五晚上给她过生日。",
+    "py": "Zhīdao, wǒmen xīngqīwǔ wǎnshang gěi tā guò shēngrì.",
+    "es": "Sí, lo celebraremos el viernes por la noche."
+   },
+   {
+    "sp": "谢朋",
+    "zh": "为什么星期五过？",
+    "py": "Wèi shénme xīngqīwǔ guò?",
+    "es": "¿Por qué el viernes?"
+   },
+   {
+    "sp": "王方",
+    "zh": "因为星期六她要去北京。离星期五还有三天呢，我们好好准备一下吧。",
+    "py": "Yīnwèi xīngqīliù tā yào qù Běijīng. Lí xīngqīwǔ hái yǒu sān tiān ne, wǒmen hǎohāo zhǔnbèi yíxià ba.",
+    "es": "Porque el sábado se va a Pekín. Todavía quedan tres días para el viernes; preparémoslo bien."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cuánto tarda Wang Fang en autobús?",
+    "lang": "es",
+    "a": [
+     "una hora",
+     "1 hora"
+    ],
+    "r": "Más de una hora (一个多小时)."
+   },
+   {
+    "q": "¿Por qué no va en coche?",
+    "lang": "es",
+    "a": [
+     "coches",
+     "trafico",
+     "atasco"
+    ],
+    "r": "Porque por la mañana hay demasiados coches en la calle (路上车太多了)."
+   },
+   {
+    "q": "¿Cuánto tarda Xie Peng en llegar andando?",
+    "lang": "py",
+    "a": [
+     "shí fēnzhōng"
+    ],
+    "r": "Shí fēnzhōng · 十分钟 (diez minutos)."
+   },
+   {
+    "q": "¿Adónde tiene que ir Xie Peng mañana a las diez?",
+    "lang": "py",
+    "a": [
+     "jīchǎng"
+    ],
+    "r": "Qù jīchǎng · 去机场 (al aeropuerto)."
+   },
+   {
+    "q": "¿Qué día van a celebrar el cumpleaños de Xiao Li?",
+    "lang": "es",
+    "a": [
+     "viernes"
+    ],
+    "r": "El viernes por la noche (星期五晚上)."
+   }
+  ]
+ },
+ {
+  "id": "L07b",
+  "tema": 7,
+  "titulo": "Todavía en el aula",
+  "escena": "Son más de las nueve de la noche. La profesora Wang ve a David en el aula.",
+  "personajes": {
+   "王老师": "f",
+   "大卫": "m"
+  },
+  "lineas": [
+   {
+    "sp": "王老师",
+    "zh": "大卫，已经九点多了，你怎么还在教室？",
+    "py": "Dàwèi, yǐjīng jiǔ diǎn duō le, nǐ zěnme hái zài jiàoshì?",
+    "es": "David, ya son más de las nueve. ¿Cómo es que todavía estás en el aula?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "王老师，明天有考试，我要好好准备。",
+    "py": "Wáng lǎoshī, míngtiān yǒu kǎoshì, wǒ yào hǎohāo zhǔnbèi.",
+    "es": "Profesora Wang, mañana tengo examen y quiero prepararlo bien."
+   },
+   {
+    "sp": "王老师",
+    "zh": "明天上午的考试吗？离考试还有十二个多小时呢。",
+    "py": "Míngtiān shàngwǔ de kǎoshì ma? Lí kǎoshì hái yǒu shí'èr ge duō xiǎoshí ne.",
+    "es": "¿El examen de mañana por la mañana? ¡Todavía quedan más de doce horas!"
+   },
+   {
+    "sp": "大卫",
+    "zh": "是，明天上午十点开始。很多汉字我还不会写呢。",
+    "py": "Shì, míngtiān shàngwǔ shí diǎn kāishǐ. Hěn duō Hànzì wǒ hái bú huì xiě ne.",
+    "es": "Sí, empieza mañana a las diez. ¡Todavía no sé escribir muchos caracteres!"
+   },
+   {
+    "sp": "王老师",
+    "zh": "你家离学校远吗？",
+    "py": "Nǐ jiā lí xuéxiào yuǎn ma?",
+    "es": "¿Tu casa está lejos de la escuela?"
+   },
+   {
+    "sp": "大卫",
+    "zh": "不太远。坐公共汽车二十分钟就到了。",
+    "py": "Bú tài yuǎn. Zuò gōnggòng qìchē èrshí fēnzhōng jiù dào le.",
+    "es": "No mucho. En autobús llego en veinte minutos."
+   },
+   {
+    "sp": "王老师",
+    "zh": "晚上公共汽车很慢，你现在就回家吧。",
+    "py": "Wǎnshang gōnggòng qìchē hěn màn, nǐ xiànzài jiù huí jiā ba.",
+    "es": "Por la noche los autobuses van muy lentos; vete a casa ya."
+   },
+   {
+    "sp": "大卫",
+    "zh": "好。王老师，您怎么也还没回家？",
+    "py": "Hǎo. Wáng lǎoshī, nín zěnme yě hái méi huí jiā?",
+    "es": "Vale. Profesora Wang, ¿y usted cómo es que tampoco se ha ido todavía a casa?"
+   },
+   {
+    "sp": "王老师",
+    "zh": "我今天晚上七点到九点上课，现在下课了。",
+    "py": "Wǒ jīntiān wǎnshang qī diǎn dào jiǔ diǎn shàng kè, xiànzài xià kè le.",
+    "es": "Hoy tenía clase de siete a nueve de la noche; ahora acabo de terminar."
+   },
+   {
+    "sp": "大卫",
+    "zh": "您家离学校近吗？",
+    "py": "Nín jiā lí xuéxiào jìn ma?",
+    "es": "¿Su casa está cerca de la escuela?"
+   },
+   {
+    "sp": "王老师",
+    "zh": "很近，走五分钟就到了。我们一起走吧。",
+    "py": "Hěn jìn, zǒu wǔ fēnzhōng jiù dào le. Wǒmen yìqǐ zǒu ba.",
+    "es": "Muy cerca; andando llego en cinco minutos. Vámonos juntos."
+   },
+   {
+    "sp": "大卫",
+    "zh": "好的，老师。",
+    "py": "Hǎo de, lǎoshī.",
+    "es": "De acuerdo, profesora."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Por qué sigue David en el aula?",
+    "lang": "es",
+    "a": [
+     "examen"
+    ],
+    "r": "Porque mañana tiene un examen (明天有考试)."
+   },
+   {
+    "q": "¿A qué hora empieza el examen?",
+    "lang": "es",
+    "a": [
+     "diez",
+     "10"
+    ],
+    "r": "A las diez de la mañana (上午十点)."
+   },
+   {
+    "q": "¿Cuánto tarda David en llegar a casa en autobús?",
+    "lang": "py",
+    "a": [
+     "èrshí fēnzhōng"
+    ],
+    "r": "Èrshí fēnzhōng · 二十分钟 (veinte minutos)."
+   },
+   {
+    "q": "¿Hasta qué hora ha dado clase la profesora Wang?",
+    "lang": "es",
+    "a": [
+     "nueve",
+     "9"
+    ],
+    "r": "Hasta las nueve de la noche (七点到九点)."
+   },
+   {
+    "q": "¿Cuánto tarda la profesora en llegar a casa andando?",
+    "lang": "py",
+    "a": [
+     "wǔ fēnzhōng"
+    ],
+    "r": "Wǔ fēnzhōng · 五分钟 (cinco minutos)."
+   }
+  ]
+ },
+ {
+  "id": "L08a",
+  "tema": 8,
+  "titulo": "Déjame pensarlo",
+  "escena": "Xiao Wang invita a Wang Fang al cine.",
+  "personajes": {
+   "小王": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "小王",
+    "zh": "王方，今天下午我们一起去看电影，好吗？",
+    "py": "Wáng Fāng, jīntiān xiàwǔ wǒmen yìqǐ qù kàn diànyǐng, hǎo ma?",
+    "es": "Wang Fang, ¿vamos juntos al cine esta tarde?"
+   },
+   {
+    "sp": "王方",
+    "zh": "今天下午我可能没有时间，我有很多事情。",
+    "py": "Jīntiān xiàwǔ wǒ kěnéng méiyǒu shíjiān, wǒ yǒu hěn duō shìqing.",
+    "es": "Esta tarde a lo mejor no tengo tiempo; tengo muchas cosas que hacer."
+   },
+   {
+    "sp": "小王",
+    "zh": "那明天呢？明天是星期六。",
+    "py": "Nà míngtiān ne? Míngtiān shì xīngqīliù.",
+    "es": "¿Y mañana? Mañana es sábado."
+   },
+   {
+    "sp": "王方",
+    "zh": "让我想想再告诉你。",
+    "py": "Ràng wǒ xiǎngxiang zài gàosu nǐ.",
+    "es": "Déjame pensarlo y luego te digo."
+   },
+   {
+    "sp": "小王",
+    "zh": "好，你想想吧。晚上再给我打电话。",
+    "py": "Hǎo, nǐ xiǎngxiang ba. Wǎnshang zài gěi wǒ dǎ diànhuà.",
+    "es": "Vale, piénsatelo. Llámame luego por la noche."
+   },
+   {
+    "sp": "王方",
+    "zh": "好的。你想看什么电影？",
+    "py": "Hǎo de. Nǐ xiǎng kàn shénme diànyǐng?",
+    "es": "De acuerdo. ¿Qué película quieres ver?"
+   },
+   {
+    "sp": "小王",
+    "zh": "一个中国电影，电影里的人都很喜欢唱歌。",
+    "py": "Yí ge Zhōngguó diànyǐng, diànyǐng li de rén dōu hěn xǐhuan chàng gē.",
+    "es": "Una película china; a todos los personajes les encanta cantar."
+   },
+   {
+    "sp": "王方",
+    "zh": "看电影贵吗？",
+    "py": "Kàn diànyǐng guì ma?",
+    "es": "¿Es caro el cine?"
+   },
+   {
+    "sp": "小王",
+    "zh": "不贵，一个人四十块。",
+    "py": "Bú guì, yí ge rén sìshí kuài.",
+    "es": "No, cuarenta yuanes por persona."
+   },
+   {
+    "sp": "王方",
+    "zh": "我可以让我同学小李也来吗？她也非常喜欢唱歌。",
+    "py": "Wǒ kěyǐ ràng wǒ tóngxué Xiǎo Lǐ yě lái ma? Tā yě fēicháng xǐhuan chàng gē.",
+    "es": "¿Puedo decirle a mi compañera Xiao Li que venga también? A ella también le encanta cantar."
+   },
+   {
+    "sp": "小王",
+    "zh": "可以啊！看电影以后，我们三个人再去吃饭吧。",
+    "py": "Kěyǐ a! Kàn diànyǐng yǐhòu, wǒmen sān ge rén zài qù chī fàn ba.",
+    "es": "¡Claro! Después de la película vamos los tres a comer."
+   },
+   {
+    "sp": "王方",
+    "zh": "好。我找小李问问，晚上再告诉你。",
+    "py": "Hǎo. Wǒ zhǎo Xiǎo Lǐ wènwen, wǎnshang zài gàosu nǐ.",
+    "es": "Vale. Voy a preguntarle a Xiao Li y esta noche te digo."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Por qué no puede ir Wang Fang esta tarde?",
+    "lang": "es",
+    "a": [
+     "cosas",
+     "tiempo",
+     "ocupada"
+    ],
+    "r": "Porque a lo mejor no tiene tiempo: tiene muchas cosas que hacer (有很多事情)."
+   },
+   {
+    "q": "¿Qué día de la semana es mañana?",
+    "lang": "es",
+    "a": [
+     "sabado"
+    ],
+    "r": "Sábado (星期六)."
+   },
+   {
+    "q": "¿Qué les gusta hacer a los personajes de la película?",
+    "lang": "py",
+    "a": [
+     "chàng gē"
+    ],
+    "r": "Chàng gē · 唱歌 (cantar)."
+   },
+   {
+    "q": "¿Cuánto cuesta el cine por persona?",
+    "lang": "es",
+    "a": [
+     "cuarenta",
+     "40"
+    ],
+    "r": "Cuarenta yuanes (四十块)."
+   },
+   {
+    "q": "¿Qué van a hacer después de la película?",
+    "lang": "py",
+    "a": [
+     "chī fàn"
+    ],
+    "r": "Qù chī fàn · 去吃饭 (ir a comer)."
+   }
+  ]
+ },
+ {
+  "id": "L08b",
+  "tema": 8,
+  "titulo": "La puerta no se abre",
+  "escena": "Annie baja a la recepción del hotel. Poco después llega su amiga Wang Fang.",
+  "personajes": {
+   "安妮": "f",
+   "服务员": "m",
+   "王方": "f"
+  },
+  "lineas": [
+   {
+    "sp": "安妮",
+    "zh": "服务员，你好！我房间的门打不开了。",
+    "py": "Fúwùyuán, nǐ hǎo! Wǒ fángjiān de mén dǎ bù kāi le.",
+    "es": "¡Hola! La puerta de mi habitación no se abre."
+   },
+   {
+    "sp": "服务员",
+    "zh": "您住几号房间？",
+    "py": "Nín zhù jǐ hào fángjiān?",
+    "es": "¿En qué habitación se aloja?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "三百一十八号。",
+    "py": "Sān bǎi yīshíbā hào.",
+    "es": "En la trescientos dieciocho."
+   },
+   {
+    "sp": "服务员",
+    "zh": "请您等一下，我让人去看看。",
+    "py": "Qǐng nín děng yíxià, wǒ ràng rén qù kànkan.",
+    "es": "Espere un momento, por favor; mando a alguien a mirarlo."
+   },
+   {
+    "sp": "安妮",
+    "zh": "谢谢。我朋友十分钟以后来找我。",
+    "py": "Xièxie. Wǒ péngyou shí fēnzhōng yǐhòu lái zhǎo wǒ.",
+    "es": "Gracias. Una amiga viene a buscarme dentro de diez minutos."
+   },
+   {
+    "sp": "服务员",
+    "zh": "好的。门开了以后，我再告诉您。",
+    "py": "Hǎo de. Mén kāi le yǐhòu, wǒ zài gàosu nín.",
+    "es": "De acuerdo. Cuando esté abierta la puerta, se lo diré."
+   },
+   {
+    "sp": "王方",
+    "zh": "安妮，你怎么在这儿？",
+    "py": "Ānnī, nǐ zěnme zài zhèr?",
+    "es": "Annie, ¿qué haces aquí?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "我房间的门打不开了，服务员让我在这儿等一下。",
+    "py": "Wǒ fángjiān de mén dǎ bù kāi le, fúwùyuán ràng wǒ zài zhèr děng yíxià.",
+    "es": "La puerta de mi habitación no se abre y el recepcionista me ha dicho que espere aquí un momento."
+   },
+   {
+    "sp": "王方",
+    "zh": "那我们在这儿等等吧。你昨天买衣服了吗？",
+    "py": "Nà wǒmen zài zhèr děngdeng ba. Nǐ zuótiān mǎi yīfu le ma?",
+    "es": "Pues esperamos aquí un rato. ¿Te compraste ropa ayer?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "没买。那件黑的有点儿贵，两千多块。",
+    "py": "Méi mǎi. Nà jiàn hēi de yǒudiǎnr guì, liǎng qiān duō kuài.",
+    "es": "No. La negra era un poco cara: más de dos mil yuanes."
+   },
+   {
+    "sp": "王方",
+    "zh": "白的呢？",
+    "py": "Bái de ne?",
+    "es": "¿Y la blanca?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "白的不贵，就是有点儿小。",
+    "py": "Bái de bú guì, jiùshì yǒudiǎnr xiǎo.",
+    "es": "La blanca no era cara, pero me quedaba un poco pequeña."
+   },
+   {
+    "sp": "王方",
+    "zh": "下午我们再去找找吧，那儿的衣服很多。",
+    "py": "Xiàwǔ wǒmen zài qù zhǎozhao ba, nàr de yīfu hěn duō.",
+    "es": "Esta tarde volvemos a buscar; allí hay mucha ropa."
+   },
+   {
+    "sp": "服务员",
+    "zh": "安妮小姐，您房间的门已经开了！",
+    "py": "Ānnī xiǎojiě, nín fángjiān de mén yǐjīng kāi le!",
+    "es": "Señorita Annie, ¡ya está abierta la puerta de su habitación!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué problema tiene Annie?",
+    "lang": "es",
+    "a": [
+     "puerta"
+    ],
+    "r": "No se abre la puerta de su habitación (门打不开了)."
+   },
+   {
+    "q": "¿Qué número tiene su habitación?",
+    "lang": "es",
+    "a": [
+     "trescientos dieciocho",
+     "318"
+    ],
+    "r": "La trescientos dieciocho (三百一十八号)."
+   },
+   {
+    "q": "¿Qué le pide el empleado que haga?",
+    "lang": "py",
+    "a": [
+     "děng"
+    ],
+    "r": "Děng yíxià · 等一下 (esperar un momento)."
+   },
+   {
+    "q": "¿Por qué no compró Annie la ropa negra?",
+    "lang": "es",
+    "a": [
+     "cara"
+    ],
+    "r": "Porque era un poco cara: más de dos mil yuanes (有点儿贵)."
+   },
+   {
+    "q": "¿De qué color es la ropa que le quedaba pequeña?",
+    "lang": "py",
+    "a": [
+     "bái"
+    ],
+    "r": "Bái de · 白的 (la blanca)."
+   }
+  ]
+ }
+]

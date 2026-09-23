@@ -1,0 +1,812 @@
+[
+ {
+  "id": "R2-01",
+  "nivel": 2,
+  "tema": 1,
+  "titulo": "Septiembre, el mejor mes para Pekín",
+  "titulo_zh": "九 月 去 北京 旅游 最 好",
+  "texto": "我 叫 大卫 ， 是 美国人 。 我 在 北京 学习 汉语 ， 来 中国 六 个 多 月 了 。 我 有 一个 中国 朋友 ， 他 叫 谢朋 。 谢朋 很 喜欢 运动 ， 他 最 喜欢 踢足球 。 明天 下午 我们 要 和 几 个 同学 一起 去 踢足球 。 ¶ 昨天 妈妈 给 我 打电话 ， 她 说 她 和 爸爸 也 想 来 北京 旅游 。 什么时候 来 最 好 呢 ？ 我 觉得 九 月 来 最 好 。 为什么 ？ 九 月 的 北京 天气 不 冷 也 不 热 ， 很 好 。 ¶ 花花 是 我 的 小猫 ， 它 三 岁 多 了 。 它 的 眼睛 很 大 ， 很 漂亮 。 花花 不 喜欢 运动 ， 它 最 喜欢 在 桌子 下面 睡觉 。 今天 下午 我 要 去 商店 买 几 个 新 杯子 ， 也 想 给 花花 买 一点儿 东西 。",
+  "es": "Me llamo David y soy estadounidense. Estudio chino en Pekín y llevo más de seis meses en China. Tengo un amigo chino que se llama Xie Peng. A Xie Peng le gusta mucho el deporte; lo que más le gusta es jugar al fútbol. Mañana por la tarde vamos a ir a jugar al fútbol con unos cuantos compañeros de clase.\n\nAyer mi madre me llamó por teléfono y me dijo que ella y mi padre también quieren venir a Pekín de viaje. ¿Cuándo es mejor venir? Yo creo que lo mejor es venir en septiembre. ¿Por qué? Porque en septiembre en Pekín no hace ni frío ni calor; se está muy bien.\n\nHuahua es mi gatito; tiene tres años y pico. Tiene los ojos muy grandes y muy bonitos. A Huahua no le gusta hacer ejercicio: lo que más le gusta es dormir debajo de la mesa. Esta tarde voy a ir a la tienda a comprar unos cuantos vasos nuevos y también quiero comprarle alguna cosita a Huahua.",
+  "preguntas": [
+   {
+    "q": "¿Cuánto tiempo lleva David en China?",
+    "lang": "es",
+    "a": [
+     "seis meses",
+     "6 meses"
+    ],
+    "r": "Más de seis meses (六个多月)."
+   },
+   {
+    "q": "¿Qué es lo que más le gusta a Xie Peng?",
+    "lang": "py",
+    "a": [
+     "tī zúqiú",
+     "zúqiú"
+    ],
+    "r": "Tī zúqiú · 踢足球 (jugar al fútbol)."
+   },
+   {
+    "q": "¿Quiénes quieren venir a Pekín de viaje?",
+    "lang": "es",
+    "a": [
+     "padres",
+     "madre padre"
+    ],
+    "r": "Sus padres (妈妈和爸爸)."
+   },
+   {
+    "q": "Según David, ¿en qué mes es mejor ir a Pekín?",
+    "lang": "py",
+    "a": [
+     "jiǔyuè",
+     "jiǔ yuè"
+    ],
+    "r": "Jiǔyuè · 九月 (en septiembre)."
+   },
+   {
+    "q": "¿Dónde le gusta más dormir a Huahua?",
+    "lang": "es",
+    "a": [
+     "mesa"
+    ],
+    "r": "Debajo de la mesa (桌子下面)."
+   }
+  ]
+ },
+ {
+  "id": "R2-02",
+  "nivel": 2,
+  "tema": 2,
+  "titulo": "La rutina de una médica",
+  "titulo_zh": "我 每 天 六 点 起床",
+  "texto": "我 叫 王方 ， 在 一 家|jiā 医院 工作 ， 是 医生 。 我 每 天 都 很 忙 ， 也 很 累 。 我 每 天 早上 六 点 起床 ， 起床 后 去 跑步 。 我 每 天 早上 都 跑步 ， 身体 很 好 ， 很 少 生病 。 ¶ 上 个 星期 ， 我 的 朋友 李月 生病 了 ， 在 我们 医院 住 了 五 天 。 她 每 天 都 要 吃药 ， 也 要 多 休息 。 今天 上午 她 出院 了 ， 现在 身体 好 多 了 。 ¶ 晚上 回家 后 ， 我 要 给 儿子 做 饭 。 我 儿子 今年 十二 岁 。 他 多 高 ？ 一|yì 米 六 多 ！ 他 爸爸 也 很 高 ， 一|yì 米 八 几 。 儿子 每 天 下午 都 和 同学 一起 踢足球 。 晚上 十 点 我 睡觉 。 我 星期六 不 休息 ， 星期天 休息 。",
+  "es": "Me llamo Wang Fang, trabajo en un hospital y soy médica. Todos los días estoy muy ocupada y muy cansada. Me levanto cada día a las seis de la mañana y, después de levantarme, salgo a correr. Corro todas las mañanas, así que tengo muy buena salud y casi nunca me pongo enferma.\n\nLa semana pasada mi amiga Li Yue se puso enferma y estuvo cinco días ingresada en nuestro hospital. Todos los días tenía que tomarse las medicinas y también descansar mucho. Esta mañana le han dado el alta y ahora está mucho mejor.\n\nPor la noche, al volver a casa, le hago la cena a mi hijo. Mi hijo tiene doce años. ¿Cuánto mide? ¡Más de un metro sesenta! Su padre también es muy alto: mide un metro ochenta y tantos. Mi hijo juega al fútbol con sus compañeros todas las tardes. Me acuesto a las diez de la noche. Los sábados no descanso; descanso los domingos.",
+  "preguntas": [
+   {
+    "q": "¿A qué hora se levanta Wang Fang?",
+    "lang": "py",
+    "a": [
+     "liù diǎn"
+    ],
+    "r": "Liù diǎn · 六点 (a las seis)."
+   },
+   {
+    "q": "¿Qué hace después de levantarse?",
+    "lang": "es",
+    "a": [
+     "correr",
+     "corre"
+    ],
+    "r": "Sale a correr (去跑步)."
+   },
+   {
+    "q": "¿Cuántos días estuvo Li Yue en el hospital?",
+    "lang": "es",
+    "a": [
+     "cinco",
+     "5"
+    ],
+    "r": "Cinco días (五天)."
+   },
+   {
+    "q": "¿Qué le pasó esta mañana a Li Yue?",
+    "lang": "py",
+    "a": [
+     "chū yuàn",
+     "chūyuàn"
+    ],
+    "r": "Chū yuàn · 出院 (le dieron el alta)."
+   },
+   {
+    "q": "¿Qué día descansa Wang Fang?",
+    "lang": "es",
+    "a": [
+     "domingo"
+    ],
+    "r": "El domingo (星期天)."
+   }
+  ]
+ },
+ {
+  "id": "R2-03",
+  "nivel": 2,
+  "tema": 3,
+  "titulo": "Nuestra casa nueva",
+  "titulo_zh": "左边 那个 大 的 是 我们 的",
+  "texto": "这 是 我们 的 新 家 ， 我 给 你们 看 一下 。 我们 的 新 家 有 三 个 房间 。 左边 那个 大 的 是 我 和 我 丈夫 的 ， 右边 那个 小 的 是 我 女儿 的 。 我 女儿 最 喜欢 红色 ， 她 的 房间 都 是 红色 的 ， 真 好看 ！ 旁边 那个 房间 是 我 丈夫 的 ， 他 喜欢 在 那儿 看书 。 ¶ 昨天 我 送 了 我 丈夫 一个 新 手表 ， 三 千 多 块 钱 。 手表 的 颜色 很 漂亮 ， 他 真 喜欢 。 ¶ 每 天 早上 ， 送 牛奶 的 和 送 报纸 的 都 来 我们 家 。 今天 送 牛奶 的 来 了 ， 送 报纸 的 没 来 。 桌子 上|shang 有 三 个 杯子 ： 红色 的 是 孩子 的 ， 左边 那个 大 的 是 我 丈夫 的 ， 右边 那个 小 的 是 我 的 。",
+  "es": "Esta es nuestra casa nueva; os la enseño un momento. Nuestra casa nueva tiene tres habitaciones. La grande de la izquierda es la de mi marido y mía, y la pequeña de la derecha es la de mi hija. A mi hija lo que más le gusta es el rojo: su habitación es toda roja, ¡qué bonita! La habitación de al lado es la de mi marido; le gusta leer allí.\n\nAyer le regalé a mi marido un reloj nuevo; costó más de tres mil yuanes. El color del reloj es muy bonito y le gusta muchísimo.\n\nTodas las mañanas vienen a casa el repartidor de la leche y el del periódico. Hoy ha venido el de la leche, pero el del periódico no. Encima de la mesa hay tres vasos: el rojo es de la niña, el grande de la izquierda es de mi marido y el pequeño de la derecha es mío.",
+  "preguntas": [
+   {
+    "q": "¿Cuántas habitaciones tiene la casa nueva?",
+    "lang": "es",
+    "a": [
+     "tres",
+     "3"
+    ],
+    "r": "Tres (三个房间)."
+   },
+   {
+    "q": "¿De qué color es la habitación de la hija?",
+    "lang": "es",
+    "a": [
+     "roja",
+     "rojo"
+    ],
+    "r": "Roja (红色的)."
+   },
+   {
+    "q": "¿Qué le regaló ayer a su marido?",
+    "lang": "py",
+    "a": [
+     "shǒubiǎo"
+    ],
+    "r": "Shǒubiǎo · 手表 (un reloj)."
+   },
+   {
+    "q": "¿Quién no ha venido hoy?",
+    "lang": "py",
+    "a": [
+     "sòng bàozhǐ",
+     "bàozhǐ"
+    ],
+    "r": "Sòng bàozhǐ de · 送报纸的 (el repartidor del periódico)."
+   },
+   {
+    "q": "¿De quién es el vaso rojo?",
+    "lang": "es",
+    "a": [
+     "niña",
+     "hija"
+    ],
+    "r": "De la niña (孩子的)."
+   }
+  ]
+ },
+ {
+  "id": "R2-04",
+  "nivel": 2,
+  "tema": 4,
+  "titulo": "Un trabajo que me consiguió un amigo",
+  "titulo_zh": "这个 工作 是 谢朋 帮 我 介绍 的",
+  "texto": "我 叫 大卫 。 我 是 去年 三 月 来 北京 的 ， 是 坐 飞机 来 的 。 那 天 是 我 的 大学 同学 谢朋 来 接 我 的 。 ¶ 我 现在 在 一 家|jiā 饭店 工作 ， 这个 工作 是 谢朋 帮 我 介绍 的 。 我 已经 在 那儿 工作 一|yì 年 多 了 ， 我 非常 喜欢 这个 工作 。 饭店 里|li 的 人 都 很 好 ， 他们 给 了 我 很 多 帮助 。 ¶ 谢朋 很 喜欢 打篮球 。 我 问 他 ： “ 你 是 什么时候 开始 打篮球 的 ？ ” 他 说 ： “ 我 是 十 岁 的 时候 开始 打 的 ， 已经 打 了 十五 年 了 。 ” 今天 是 谢朋 的 生日 ， 早上 我 给 他 打电话 ， 想 说 “ 生日 快乐 ” 。 电话 是 他 妈妈 接 的 ， 她 说 谢朋 去 打篮球 了 。",
+  "es": "Me llamo David. Llegué a Pekín en marzo del año pasado; vine en avión. Aquel día fue mi compañero de universidad Xie Peng quien vino a recogerme.\n\nAhora trabajo en un restaurante; este trabajo me lo consiguió Xie Peng. Ya llevo más de un año trabajando allí y me gusta muchísimo. La gente del restaurante es muy maja: me han ayudado mucho.\n\nA Xie Peng le encanta jugar al baloncesto. Le pregunté: «¿Cuándo empezaste a jugar al baloncesto?». Me dijo: «Empecé a los diez años; ya llevo quince años jugando». Hoy es el cumpleaños de Xie Peng. Esta mañana lo he llamado por teléfono para decirle «¡Feliz cumpleaños!». Ha contestado al teléfono su madre, que me ha dicho que Xie Peng se había ido a jugar al baloncesto.",
+  "preguntas": [
+   {
+    "q": "¿En qué mes llegó David a Pekín?",
+    "lang": "es",
+    "a": [
+     "marzo"
+    ],
+    "r": "En marzo del año pasado (去年三月)."
+   },
+   {
+    "q": "¿Cómo vino a Pekín?",
+    "lang": "py",
+    "a": [
+     "zuò fēijī",
+     "fēijī"
+    ],
+    "r": "Zuò fēijī · 坐飞机 (en avión)."
+   },
+   {
+    "q": "¿Quién le consiguió el trabajo en el restaurante?",
+    "lang": "es",
+    "a": [
+     "xie peng"
+    ],
+    "r": "Xie Peng, su compañero de universidad (谢朋)."
+   },
+   {
+    "q": "¿A qué edad empezó Xie Peng a jugar al baloncesto?",
+    "lang": "py",
+    "a": [
+     "shí suì"
+    ],
+    "r": "Shí suì · 十岁 (a los diez años)."
+   },
+   {
+    "q": "¿Quién contestó al teléfono?",
+    "lang": "es",
+    "a": [
+     "madre"
+    ],
+    "r": "La madre de Xie Peng (他妈妈)."
+   }
+  ]
+ },
+ {
+  "id": "R2-05",
+  "nivel": 2,
+  "tema": 5,
+  "titulo": "Me quedo con esta",
+  "titulo_zh": "就 买 这 件 吧",
+  "texto": "今天 下午 ， 我 和 李月 一起 去 商店 买 衣服 。 我 看见 一|yí 件 红色 的 衣服 ， 颜色 不错 ， 只 是 有点儿 大 。 李月 说 ： “ 旁边 那 件 小 一点儿 ， 你 看 一下 吧 。 ” 我 觉得 那 件 还可以 ， 三 百 多 块 钱 。 我 说 ： “ 好 ， 就 买 这 件 吧 ！ ” ¶ 晚上 我们 没 去 外面 吃饭 。 李月 说 ： “ 我 现在 就 准备 晚饭 ， 我们 吃 鱼 吧 。 ” 李月 做 的 鱼 非常 好吃 。 ¶ 吃 晚饭 的 时候 ， 李月 问 我 昨天 的 考试 怎么样 。 我 说 ： “ 听 和 说 还可以 ， 读 和 写 不 好 ， 很 多 字 我 都 不 知道 是 什么 意思 。 ” 吃 了 饭 ， 我 想 喝 咖啡 。 李月 说 ： “ 你 今天 已经 喝 了 三 杯 了 ， 咖啡 喝 多 了 对 身体 不 好 。 ” 我 想 ， 以后 我 每 天 只 喝 一|yì 杯 吧 。",
+  "es": "Esta tarde he ido con Li Yue a una tienda a comprar ropa. He visto una prenda roja; el color estaba bien, solo que me quedaba un poco grande. Li Yue me ha dicho: «La de al lado es un poco más pequeña, échale un vistazo». Me ha parecido que estaba bastante bien, y costaba trescientos y pico yuanes. He dicho: «Vale, ¡me quedo con esta!».\n\nPor la noche no hemos salido a cenar fuera. Li Yue ha dicho: «Ahora mismo preparo la cena; comamos pescado». El pescado que ha hecho Li Yue estaba buenísimo.\n\nDurante la cena, Li Yue me ha preguntado qué tal el examen de ayer. Le he dicho: «La comprensión oral y la expresión oral, bastante bien; la lectura y la escritura, mal: había muchos caracteres que no sabía qué significaban». Después de cenar me apetecía un café. Li Yue me ha dicho: «Hoy ya te has tomado tres tazas; tomar demasiado café es malo para la salud». He pensado que, a partir de ahora, me tomaré solo una taza al día.",
+  "preguntas": [
+   {
+    "q": "¿Qué fueron a comprar por la tarde?",
+    "lang": "es",
+    "a": [
+     "ropa"
+    ],
+    "r": "Ropa (衣服)."
+   },
+   {
+    "q": "¿Qué problema tenía la prenda roja?",
+    "lang": "es",
+    "a": [
+     "grande"
+    ],
+    "r": "Le quedaba un poco grande (有点儿大)."
+   },
+   {
+    "q": "¿Qué cenaron?",
+    "lang": "py",
+    "a": [
+     "yú"
+    ],
+    "r": "Yú · 鱼 (pescado)."
+   },
+   {
+    "q": "¿Cuántas tazas de café se había tomado ya ese día?",
+    "lang": "py",
+    "a": [
+     "sān bēi"
+    ],
+    "r": "Sān bēi · 三杯 (tres tazas)."
+   },
+   {
+    "q": "¿Cuántas tazas de café quiere tomar al día a partir de ahora?",
+    "lang": "es",
+    "a": [
+     "una",
+     "1"
+    ],
+    "r": "Solo una (每天只喝一杯)."
+   }
+  ]
+ },
+ {
+  "id": "R2-06",
+  "nivel": 2,
+  "tema": 6,
+  "titulo": "¿Por qué ya no comes?",
+  "titulo_zh": "你 怎么 不 吃 了",
+  "texto": "晚上 吃饭 的 时候 ， 妈妈 问 我 ： “ 你 怎么 不 吃 了 ？ 今天 的 羊肉 不 好吃 吗 ？ ” 我 说 ： “ 很 好吃 。 这个 星期 我 天天 都 吃 羊肉 ， 我 不 想 吃 了 。 ” 妈妈 说 ： “ 那 明天 我们 吃 面条 吧 。 ” ¶ 我 哥哥 非常 喜欢 游泳 ， 他 经常 和 朋友 一起 去 游泳 。 去年 他 九十 公斤 ， 现在 七十五 公斤 了 。 因为 他 天天 运动 ， 所以 身体 非常 好 。 门 外 那个 红色 的 自行车 也 是 哥哥 的 。 ¶ 昨天 下雨 了 。 因为 下雨 ， 所以 我们 都 没 去 打篮球 ， 小王 也 没 来 学校 。 今天 姐姐 问 我 ： “ 你 今天 看见 小王 了 没有 ？ ” 我 说 ： “ 没有 ， 我 没 看见 他 。 ”",
+  "es": "Por la noche, durante la cena, mi madre me preguntó: «¿Cómo es que ya no comes? ¿No está bueno el cordero de hoy?». Le dije: «Está muy bueno. Es que esta semana he comido cordero todos los días y ya no me apetece». Mi madre dijo: «Entonces mañana comemos fideos».\n\nA mi hermano mayor le encanta nadar; va a menudo a nadar con sus amigos. El año pasado pesaba noventa kilos y ahora pesa setenta y cinco. Como hace deporte todos los días, está en muy buena forma. La bicicleta roja que hay en la puerta también es suya.\n\nAyer llovió. Como llovía, ninguno de nosotros fue a jugar al baloncesto, y Xiao Wang tampoco vino a clase. Hoy mi hermana mayor me ha preguntado: «¿Has visto hoy a Xiao Wang?». Le he dicho: «No, no lo he visto».",
+  "preguntas": [
+   {
+    "q": "¿Por qué ya no quiere comer cordero?",
+    "lang": "es",
+    "a": [
+     "todos los dias"
+    ],
+    "r": "Porque esta semana lo ha comido todos los días (天天都吃羊肉)."
+   },
+   {
+    "q": "¿Qué van a comer mañana?",
+    "lang": "py",
+    "a": [
+     "miàntiáo"
+    ],
+    "r": "Miàntiáo · 面条 (fideos)."
+   },
+   {
+    "q": "¿Qué le encanta hacer al hermano mayor?",
+    "lang": "py",
+    "a": [
+     "yóu yǒng",
+     "yóuyǒng"
+    ],
+    "r": "Yóu yǒng · 游泳 (nadar)."
+   },
+   {
+    "q": "¿Cuánto pesa ahora el hermano mayor?",
+    "lang": "es",
+    "a": [
+     "setenta y cinco",
+     "75"
+    ],
+    "r": "Setenta y cinco kilos (七十五公斤)."
+   },
+   {
+    "q": "¿Por qué no fueron ayer a jugar al baloncesto?",
+    "lang": "es",
+    "a": [
+     "llovia",
+     "lluvia",
+     "llovio"
+    ],
+    "r": "Porque llovía (因为下雨)."
+   }
+  ]
+ },
+ {
+  "id": "R2-07",
+  "nivel": 2,
+  "tema": 7,
+  "titulo": "Lejos de la oficina",
+  "titulo_zh": "我 家 离 公司 很 远",
+  "texto": "我 叫 王方 ， 我 在 一 家|jiā 公司 工作 。 我 家 离 公司 很 远 ， 坐 公共汽车 要 一个 多 小时 。 公共汽车 很 慢 ， 开车 快 一点儿 。 因为 我 没有 车 ， 所以 每 天 都 坐 公共汽车 。 早上 七 点 我 就 去 坐 车 ， 八 点 半 到 公司 。 ¶ 我 的 同学 谢朋 也 在 这个 公司 工作 。 他 家 离 公司 很 近 ， 走 路 十 分钟 就 到 了 。 ¶ 明天 是 谢朋 的 生日 ， 他 要 在 家 过 生日 。 他 问 我 ： “ 你 明天 来 我 家 吗 ？ 我 家 离 你 家 不 远 。 ” 我 说 ： “ 好 啊 ， 我 晚上 七 点 到 。 ” 现在 已经 十 点 了 ， 我 还 没 想 好 送 他 什么 呢 ！",
+  "es": "Me llamo Wang Fang y trabajo en una empresa. Mi casa está muy lejos de la empresa: en autobús tardo más de una hora. El autobús es muy lento; en coche se va un poco más rápido. Como no tengo coche, voy en autobús todos los días. A las siete de la mañana ya voy a coger el autobús y llego a la empresa a las ocho y media.\n\nMi compañero de clase Xie Peng también trabaja en esta empresa. Su casa está muy cerca de la empresa: andando llega en diez minutos.\n\nMañana es el cumpleaños de Xie Peng y lo va a celebrar en casa. Me ha preguntado: «¿Vienes mañana a mi casa? Mi casa no está lejos de la tuya». Le he dicho: «Vale, llego a las siete de la tarde». Ya son las diez y todavía no he decidido qué regalarle.",
+  "preguntas": [
+   {
+    "q": "¿Cuánto tarda Wang Fang en llegar a la empresa?",
+    "lang": "es",
+    "a": [
+     "una hora",
+     "1 hora"
+    ],
+    "r": "Más de una hora (一个多小时)."
+   },
+   {
+    "q": "¿En qué va al trabajo?",
+    "lang": "py",
+    "a": [
+     "gōnggòng qìchē"
+    ],
+    "r": "Zuò gōnggòng qìchē · 坐公共汽车 (en autobús)."
+   },
+   {
+    "q": "¿A qué hora llega a la empresa?",
+    "lang": "es",
+    "a": [
+     "ocho y media",
+     "8:30",
+     "8 y media"
+    ],
+    "r": "A las ocho y media (八点半)."
+   },
+   {
+    "q": "¿Cuánto tarda Xie Peng andando?",
+    "lang": "py",
+    "a": [
+     "shí fēnzhōng"
+    ],
+    "r": "Shí fēnzhōng · 十分钟 (diez minutos)."
+   },
+   {
+    "q": "¿Qué no ha decidido todavía Wang Fang?",
+    "lang": "es",
+    "a": [
+     "regalo",
+     "regalar",
+     "regalarle"
+    ],
+    "r": "Qué regalarle a Xie Peng (送他什么)."
+   }
+  ]
+ },
+ {
+  "id": "R2-08",
+  "nivel": 2,
+  "tema": 8,
+  "titulo": "Déjame pensarlo",
+  "titulo_zh": "让 我 想 想|xiang 再 告诉 你",
+  "texto": "星期五 下午 ， 小王 给 我 打电话 ： “ 明天 晚上 我们 去 唱歌 ， 你 去 吗 ？ ” 我 说 ： “ 明天 我 可能 有 事情 ， 让 我 想 想|xiang ， 晚上 再 告诉 你 吧 。 ” ¶ 晚上 我 和 妈妈 去 商店 买 衣服 。 我 看见 一|yí 件 白 衣服 和 一|yí 件 黑 衣服 ， 白 的 很 贵 ， 黑 的 不 贵 。 服务员 说 ： “ 您 可以 都 看 看|kan 。 ” 我 问 她 ： “ 有 没有 小 一点儿 的 ？ ” 服务员 说 ： “ 请 等 一下 ， 我 去 找 找|zhao 。 ” 妈妈 说 白 的 太 贵 了 ， 让 我 买 黑 的 。 ¶ 回家 以后 ， 我 休息 了 一会儿 ， 想 了 想|xiang ： 明天 没有 什么 事情 。 我 就 给 小王 打电话 说 ： “ 明天 晚上 我 去 ！ ”",
+  "es": "El viernes por la tarde Xiao Wang me llamó: «Mañana por la noche vamos a cantar, ¿vienes?». Le dije: «Puede que mañana tenga algo que hacer; déjame pensarlo y esta noche te digo».\n\nPor la noche fui con mi madre a una tienda a comprar ropa. Vi una prenda blanca y otra negra: la blanca era muy cara y la negra no. La dependienta dijo: «Puede mirar las dos». Le pregunté: «¿Tiene alguna un poco más pequeña?». La dependienta respondió: «Espere un momento, voy a buscar». Mi madre dijo que la blanca era demasiado cara y me dijo que comprara la negra.\n\nAl volver a casa descansé un rato y lo pensé un poco: mañana no tengo nada que hacer. Así que llamé a Xiao Wang y le dije: «¡Mañana por la noche voy!».",
+  "preguntas": [
+   {
+    "q": "¿Qué propone hacer Xiao Wang?",
+    "lang": "py",
+    "a": [
+     "chàng gē",
+     "chànggē"
+    ],
+    "r": "Chàng gē · 唱歌 (ir a cantar)."
+   },
+   {
+    "q": "¿Qué día de la semana es el plan de Xiao Wang?",
+    "lang": "es",
+    "a": [
+     "sabado"
+    ],
+    "r": "El sábado por la noche (llama el viernes y dice 明天晚上)."
+   },
+   {
+    "q": "¿Qué prenda era muy cara?",
+    "lang": "es",
+    "a": [
+     "blanca",
+     "blanco"
+    ],
+    "r": "La blanca (白的很贵)."
+   },
+   {
+    "q": "¿De qué color es la prenda que su madre le dice que compre?",
+    "lang": "py",
+    "a": [
+     "hēi"
+    ],
+    "r": "Hēi de · 黑的 (la negra)."
+   },
+   {
+    "q": "¿Qué le dice al final a Xiao Wang?",
+    "lang": "es",
+    "a": [
+     "va",
+     "voy",
+     "si"
+    ],
+    "r": "Que sí va (明天晚上我去！)."
+   }
+  ]
+ },
+ {
+  "id": "R2-09",
+  "nivel": 2,
+  "tema": 9,
+  "titulo": "Demasiadas preguntas",
+  "titulo_zh": "题 太 多 ， 我 没 做 完",
+  "texto": "今天 上午 我们 有 汉语 考试 ， 从 九 点 到 十一 点 。 这 是 我 第一次 在 中国 考试 。 题 太 多 了 ， 我 没 做 完 ， 还 写 错 了 两 个 字 。 ¶ 下午 王老师 给 我们 上课 。 王老师 教 我们 汉语 ， 她 说 的 我 都 听 懂 了 。 下课 以后 ， 我 有 一个 问题 想 问 她 ， 我 找 了 她 很 长 时间 ， 没 找 到 。 ¶ 晚上 我 从 七 点 开始 做 作业 ， 十 点 做 完 。 明天 我 的 美国 朋友 安妮 要 来 北京 ， 从 明天 开始 ， 她 也 在 我们 学校 学习 汉语 。 我们 都 很 欢迎 她 ， 我 希望 她 喜欢 北京 。",
+  "es": "Esta mañana hemos tenido examen de chino, de nueve a once. Es la primera vez que hago un examen en China. Había demasiadas preguntas y no lo he terminado; además, he escrito mal dos caracteres.\n\nPor la tarde la profesora Wang nos ha dado clase. La profesora Wang nos enseña chino y he entendido todo lo que ha dicho. Después de clase tenía una pregunta que hacerle; la he buscado mucho rato, pero no la he encontrado.\n\nPor la noche he empezado a hacer los deberes a las siete y los he terminado a las diez. Mañana llega a Pekín mi amiga estadounidense Annie; a partir de mañana también estudiará chino en nuestra escuela. Todos le damos la bienvenida y espero que le guste Pekín.",
+  "preguntas": [
+   {
+    "q": "¿De qué hora a qué hora fue el examen?",
+    "lang": "es",
+    "a": [
+     "nueve once",
+     "9 11"
+    ],
+    "r": "De nueve a once (从九点到十一点)."
+   },
+   {
+    "q": "¿Cuántos caracteres escribió mal?",
+    "lang": "es",
+    "a": [
+     "dos",
+     "2"
+    ],
+    "r": "Dos (写错了两个字)."
+   },
+   {
+    "q": "¿A quién buscó después de clase sin encontrarla?",
+    "lang": "py",
+    "a": [
+     "lǎoshī"
+    ],
+    "r": "Wáng lǎoshī · 王老师 (a la profesora Wang)."
+   },
+   {
+    "q": "¿A qué hora terminó los deberes?",
+    "lang": "py",
+    "a": [
+     "shí diǎn"
+    ],
+    "r": "Shí diǎn · 十点 (a las diez)."
+   },
+   {
+    "q": "¿Cómo se llama la amiga que llega mañana?",
+    "lang": "es",
+    "a": [
+     "annie",
+     "anni"
+    ],
+    "r": "Annie (安妮)."
+   }
+  ]
+ },
+ {
+  "id": "R2-10",
+  "nivel": 2,
+  "tema": 10,
+  "titulo": "El móvil está en la mesa",
+  "titulo_zh": "别 找 了 ， 手机 在 桌子 上|shang 呢",
+  "texto": "今天 早上 七 点 ， 我 正在 找 我 的 手机 。 我 找 了 十 分钟 ， 还 没 找 到 。 妈妈 说 ： “ 别 找 了 ， 手机 在 桌子 上|shang 呢 。 ” ¶ 妈妈 在 做 饭 呢 ， 她 做 了 鸡蛋 ， 桌子 上|shang 还 有 西瓜 。 我 说 ： “ 我 要 去 上课 ， 没有 时间 吃 了 。 ” 妈妈 说 ： “ 别 走 这么 快 ， 吃 一点儿 鸡蛋 再 走 吧 。 ” 我 吃 了 两 个 鸡蛋 ， 就 去 上课 了 。 ¶ 下午 我 回家 的 时候 ， 哥哥 正在 玩儿 手机 呢 。 我 说 ： “ 别 玩儿 了 ， 我们 一起 读 英语 课文 吧 。 ” 我们 每 天 都 读 半 个 小时 英语 课文 ， 读 课文 对 学习 英语 很 有 帮助 。",
+  "es": "Esta mañana a las siete estaba buscando mi móvil. Lo he buscado diez minutos y no lo encontraba. Mi madre me ha dicho: «Deja de buscarlo, el móvil está encima de la mesa».\n\nMi madre estaba cocinando: había hecho huevos y en la mesa también había sandía. Le he dicho: «Me voy a clase, no me da tiempo a comer». Mi madre me ha dicho: «No te vayas tan deprisa; cómete un poco de huevo y luego te vas». Me he comido dos huevos y me he ido a clase.\n\nPor la tarde, cuando he vuelto a casa, mi hermano mayor estaba jugando con el móvil. Le he dicho: «Deja de jugar, vamos a leer juntos los textos de inglés». Todos los días leemos media hora de textos de inglés; leer los textos ayuda mucho a aprender inglés.",
+  "preguntas": [
+   {
+    "q": "¿Cuánto tiempo estuvo buscando el móvil?",
+    "lang": "es",
+    "a": [
+     "diez minutos",
+     "10 minutos"
+    ],
+    "r": "Diez minutos (十分钟)."
+   },
+   {
+    "q": "¿Dónde estaba el móvil?",
+    "lang": "py",
+    "a": [
+     "zhuōzi"
+    ],
+    "r": "Zài zhuōzi shang · 在桌子上 (encima de la mesa)."
+   },
+   {
+    "q": "¿Qué fruta había en la mesa?",
+    "lang": "py",
+    "a": [
+     "xīguā"
+    ],
+    "r": "Xīguā · 西瓜 (sandía)."
+   },
+   {
+    "q": "¿Qué estaba haciendo el hermano por la tarde?",
+    "lang": "es",
+    "a": [
+     "movil"
+    ],
+    "r": "Estaba jugando con el móvil (玩儿手机)."
+   },
+   {
+    "q": "¿Cuánto tiempo leen cada día?",
+    "lang": "es",
+    "a": [
+     "media hora"
+    ],
+    "r": "Media hora (半个小时)."
+   }
+  ]
+ },
+ {
+  "id": "R2-11",
+  "nivel": 2,
+  "tema": 11,
+  "titulo": "Tres años mayor que yo",
+  "titulo_zh": "他 比 我 大 三 岁",
+  "texto": "我 有 一个 哥哥 ， 他 比 我 大 三 岁 ， 也 比 我 高 。 哥哥 今年 二十五 岁 ， 我 二十二 岁 。 他 一|yì 米 八 ， 我 一|yì 米 七 五 。 哥哥 说话 很 快 ， 我 说话 没有 他 快 。 ¶ 今天 我们 一起 去 买 水果 。 这个 商店 的 苹果 比 那个 商店 的 便宜 ， 一|yì 斤 五 块 ， 那个 商店 一|yì 斤 七 块 。 卖 水果 的 是 一个 女孩子 ， 她 姓 王 。 她 说 ： “ 西瓜 比 苹果 还 便宜 ， 一|yì 斤 两 块 。 ” 我们 买 了 五 斤 苹果 和 一个 西瓜 。 ¶ 回家 的 时候 ， 哥哥 说 ： “ 明天 可能 会 下雨 ， 可能 比 今天 冷 。 ” 我 说 ： “ 那 我们 明天 在 家 休息 吧 。 ”",
+  "es": "Tengo un hermano mayor; es tres años mayor que yo y también más alto. Este año él tiene veinticinco años y yo veintidós. Él mide un metro ochenta y yo un metro setenta y cinco. Mi hermano habla muy rápido; yo no hablo tan rápido como él.\n\nHoy hemos ido juntos a comprar fruta. Las manzanas de esta tienda son más baratas que las de la otra: el jin (medio kilo) cuesta cinco yuanes, y en la otra tienda, siete. La que vende la fruta es una chica que se apellida Wang. Nos ha dicho: «La sandía es todavía más barata que las manzanas: dos yuanes el jin». Hemos comprado cinco jin de manzanas y una sandía.\n\nDe vuelta a casa, mi hermano ha dicho: «Puede que mañana llueva, y puede que haga más frío que hoy». Le he dicho: «Entonces mañana nos quedamos en casa descansando».",
+  "preguntas": [
+   {
+    "q": "¿Cuántos años mayor es el hermano?",
+    "lang": "es",
+    "a": [
+     "tres",
+     "3"
+    ],
+    "r": "Tres años (比我大三岁)."
+   },
+   {
+    "q": "¿Cuánto mide el hermano?",
+    "lang": "py",
+    "a": [
+     "mǐ bā"
+    ],
+    "r": "Yì mǐ bā · 一米八 (un metro ochenta)."
+   },
+   {
+    "q": "¿Cuánto cuesta un jin de manzanas en esta tienda?",
+    "lang": "es",
+    "a": [
+     "cinco",
+     "5"
+    ],
+    "r": "Cinco yuanes (一斤五块)."
+   },
+   {
+    "q": "¿Cómo se apellida la vendedora?",
+    "lang": "py",
+    "a": [
+     "wáng"
+    ],
+    "r": "Wáng · 王."
+   },
+   {
+    "q": "¿Qué tiempo puede hacer mañana?",
+    "lang": "es",
+    "a": [
+     "lluvia",
+     "llover",
+     "llueva"
+    ],
+    "r": "Puede que llueva y haga más frío (可能会下雨，比今天冷)."
+   }
+  ]
+ },
+ {
+  "id": "R2-12",
+  "nivel": 2,
+  "tema": 12,
+  "titulo": "Llevas muy poca ropa",
+  "titulo_zh": "你 穿 得 太 少 了",
+  "texto": "今天 北京 下雪 了 ， 外面 很 冷 ， 零 度 。 早上 弟弟 要 去 跑步 ， 我 说 ： “ 你 穿 得 太 少 了 ！ 外面 在 下雪 呢 。 ” 弟弟 说 ： “ 没关系 ， 我 跑 得 很 快 ， 不 冷 。 ” ¶ 我 的 朋友 谢朋 和 他 妻子 住 在 我们 家 旁边 。 他们 的 房子 很 大 ， 也 很 漂亮 。 谢朋 做 饭 做 得 非常 好 ， 他 妻子 汉字 写 得 很 漂亮 ， 唱歌 也 唱 得 很 好听 。 ¶ 晚上 我们 去 他们 家 吃饭 。 我们 来 得 有点儿 晚 ， 进 门 的 时候 ， 菜 已经 做 好 了 。 谢朋 说 ： “ 你们 来 得 不 晚 ， 是 我 做 得 太 早 了 。 ” 我 觉得 谢朋 做 的 菜 比 饭店 的 还 好吃 。",
+  "es": "Hoy ha nevado en Pekín; fuera hace mucho frío, cero grados. Por la mañana mi hermano pequeño quería salir a correr y le he dicho: «¡Llevas muy poca ropa! Fuera está nevando». Mi hermano me ha dicho: «No pasa nada, corro muy rápido y no tengo frío».\n\nMi amigo Xie Peng y su mujer viven al lado de nuestra casa. Su casa es muy grande y también muy bonita. Xie Peng cocina muy bien, y su mujer escribe los caracteres muy bonitos y además canta muy bien.\n\nPor la noche hemos ido a cenar a su casa. Hemos llegado un poco tarde y, al entrar, la comida ya estaba hecha. Xie Peng ha dicho: «No habéis llegado tarde; soy yo el que ha cocinado demasiado pronto». Me parece que la comida de Xie Peng está aún más buena que la de un restaurante.",
+  "preguntas": [
+   {
+    "q": "¿Qué tiempo hace hoy en Pekín?",
+    "lang": "es",
+    "a": [
+     "nieva",
+     "nieve",
+     "nevado",
+     "nevando"
+    ],
+    "r": "Ha nevado y hace mucho frío, cero grados (下雪了，零度)."
+   },
+   {
+    "q": "¿Qué quería hacer el hermano pequeño por la mañana?",
+    "lang": "py",
+    "a": [
+     "pǎo bù",
+     "pǎobù"
+    ],
+    "r": "Qù pǎo bù · 去跑步 (ir a correr)."
+   },
+   {
+    "q": "¿Qué hace muy bien Xie Peng?",
+    "lang": "py",
+    "a": [
+     "zuò fàn"
+    ],
+    "r": "Zuò fàn · 做饭 (cocinar)."
+   },
+   {
+    "q": "Además de cantar, ¿qué hace muy bien su mujer?",
+    "lang": "es",
+    "a": [
+     "caracteres"
+    ],
+    "r": "Escribe muy bonitos los caracteres (汉字写得很漂亮)."
+   },
+   {
+    "q": "¿Cómo llegaron a la cena?",
+    "lang": "es",
+    "a": [
+     "tarde"
+    ],
+    "r": "Un poco tarde (来得有点儿晚)."
+   }
+  ]
+ },
+ {
+  "id": "R2-13",
+  "nivel": 2,
+  "tema": 13,
+  "titulo": "La puerta está abierta",
+  "titulo_zh": "门 开 着 呢",
+  "texto": "今天 我 和 妹妹 要 去 一 家|jiā 宾馆 ， 我们 不 知道 怎么 走 ， 就 问 了 一个 学生 。 他 笑 着 说 ： “ 你们 一直 往 前 走 ， 到 了 第一 个 路口 往 右 走 ， 宾馆 就 在 路口 旁边 。 ” ¶ 我们 到 宾馆 的 时候 ， 门 开 着 ， 一个 服务员 在 门 外 等 着 我们 。 她 笑 着 说 ： “ 欢迎 ！ 请 进 。 ” 我们 的 房间 很 大 ， 也 很 漂亮 。 ¶ 晚上 ， 妹妹 在 房间 里|li 坐 着 写 作业 ， 手 里|li 拿 着 铅笔 。 妹妹 今年 十五 岁 ， 学习 很 好 ， 在 班 里|li 是 第一 。 我 说 ： “ 我们 出去 吃饭 吧 ！ ” 她 看 着 书 回答 ： “ 你 去 吧 ， 我 还 没 写 完 呢 。 ”",
+  "es": "Hoy mi hermana pequeña y yo teníamos que ir a un hotel, pero no sabíamos cómo llegar, así que le preguntamos a un estudiante. Nos dijo sonriendo: «Seguid todo recto; en el primer cruce, girad a la derecha: el hotel está justo al lado del cruce».\n\nCuando llegamos al hotel, la puerta estaba abierta y una recepcionista nos esperaba fuera. Nos dijo sonriendo: «¡Bienvenidas! Pasen, por favor». Nuestra habitación era muy grande y muy bonita.\n\nPor la noche, mi hermana estaba sentada en la habitación haciendo los deberes, con un lápiz en la mano. Mi hermana tiene quince años y es muy buena estudiante: es la primera de su clase. Le dije: «¡Vamos a salir a cenar!». Ella, mirando el libro, respondió: «Ve tú, yo todavía no he terminado».",
+  "preguntas": [
+   {
+    "q": "¿Adónde tenían que ir las dos hermanas?",
+    "lang": "py",
+    "a": [
+     "bīnguǎn"
+    ],
+    "r": "Bīnguǎn · 宾馆 (a un hotel)."
+   },
+   {
+    "q": "¿Cómo les habló el estudiante?",
+    "lang": "es",
+    "a": [
+     "sonriendo",
+     "sonrisa"
+    ],
+    "r": "Sonriendo (笑着说)."
+   },
+   {
+    "q": "¿Hacia dónde tenían que girar en el primer cruce?",
+    "lang": "es",
+    "a": [
+     "derecha"
+    ],
+    "r": "A la derecha (往右走)."
+   },
+   {
+    "q": "¿Cómo estaba la puerta del hotel?",
+    "lang": "py",
+    "a": [
+     "kāi zhe"
+    ],
+    "r": "Kāi zhe · 开着 (abierta)."
+   },
+   {
+    "q": "¿Qué tiene la hermana en la mano?",
+    "lang": "py",
+    "a": [
+     "qiānbǐ"
+    ],
+    "r": "Qiānbǐ · 铅笔 (un lápiz)."
+   }
+  ]
+ },
+ {
+  "id": "R2-14",
+  "nivel": 2,
+  "tema": 14,
+  "titulo": "¿Has visto esa película?",
+  "titulo_zh": "你 看 过|guo 那个 电影 吗",
+  "texto": "星期六 下午 ， 小张 问 我 ： “ 你 看 过|guo 那个 新 电影 吗 ？ ” 我 说 ： “ 我 听说 过|guo ， 但是 没 看 过|guo 。 ” 小张 说 他 已经 看 过|guo 两 次 了 ， 他 觉得 非常 好看 。 ¶ 我们 就 一起 去 看 电影 。 那 天 是 阴 天 ， 虽然 不 冷 ， 但是 可能 会 下雨 ， 所以 我们 坐 出租车 去 。 电影 是 下午 三 点 开始 的 ， 我们 两 点 半 就 到 了 。 ¶ 电影 里|li 的 那个 女孩子 ， 我 以前 见 过|guo 一|yí 次 ， 她 是 我 大学 同学 的 姐姐 。 这 种 电影 我 以前 没 看 过|guo 。 看 完 电影 ， 我 觉得 这 是 我 看 过|guo 的 最 有 意思 的 电影 。",
+  "es": "El sábado por la tarde Xiao Zhang me preguntó: «¿Has visto esa película nueva?». Le dije: «He oído hablar de ella, pero no la he visto». Xiao Zhang me dijo que él ya la había visto dos veces y que le parecía buenísima.\n\nAsí que fuimos juntos a ver la película. Aquel día estaba nublado; aunque no hacía frío, podía llover, así que fuimos en taxi. La película empezaba a las tres de la tarde y llegamos ya a las dos y media.\n\nA la chica de la película yo ya la había visto una vez: es la hermana mayor de un compañero mío de la universidad. Nunca había visto una película de este tipo. Después de verla, me pareció que es la película más interesante que he visto.",
+  "preguntas": [
+   {
+    "q": "¿Cuántas veces había visto Xiao Zhang la película?",
+    "lang": "es",
+    "a": [
+     "dos",
+     "2"
+    ],
+    "r": "Dos veces (两次)."
+   },
+   {
+    "q": "¿Qué tiempo hacía aquel día?",
+    "lang": "py",
+    "a": [
+     "yīn tiān",
+     "yīntiān",
+     "yīn"
+    ],
+    "r": "Yīn tiān · 阴天 (estaba nublado)."
+   },
+   {
+    "q": "¿En qué fueron al cine?",
+    "lang": "py",
+    "a": [
+     "chūzūchē"
+    ],
+    "r": "Zuò chūzūchē · 坐出租车 (en taxi)."
+   },
+   {
+    "q": "¿Quién es la chica de la película?",
+    "lang": "es",
+    "a": [
+     "hermana"
+    ],
+    "r": "La hermana mayor de un compañero de universidad (大学同学的姐姐)."
+   },
+   {
+    "q": "¿Qué le pareció la película al final?",
+    "lang": "es",
+    "a": [
+     "interesante"
+    ],
+    "r": "La más interesante que ha visto (最有意思的电影)."
+   }
+  ]
+ },
+ {
+  "id": "R2-15",
+  "nivel": 2,
+  "tema": 15,
+  "titulo": "Ya llega el Año Nuevo",
+  "titulo_zh": "新年 就要 到 了",
+  "texto": "今天 是 十二 月 三十 日 ， 新年 就要 到 了 。 我 的 美国 同学 大卫 快要 回国 了 ， 他 买 了 一 月 二 号 的 飞机 票 。 ¶ 我 要 坐 火车 回家 过 新年 。 火车站 的 人 非常 多 ， 大家 都 要 回家 。 我 买 票 的 时候 ， 今天 的 票 已经 没有 了 ， 我 买 到 了 明天 早上 的 票 。 ¶ 晚上 八 点 ， 商店 快 关门 了 ， 我 还 没 给 爸爸 妈妈 买 东西 呢 。 我 就 去 商店 给 他们 买 了 一|yì 些 水果 。 我 都 三 年 没 回家 了 ， 我 非常 想 他们 。 明天 到 家 的 时候 ， 我 要 向 大家 说 ： “ 新年 快乐 ！ ”",
+  "es": "Hoy es treinta de diciembre y ya llega el Año Nuevo. Mi compañero de clase estadounidense, David, está a punto de volver a su país: ha comprado un billete de avión para el dos de enero.\n\nYo voy a volver a casa en tren para pasar el Año Nuevo. En la estación de tren hay muchísima gente: todo el mundo quiere volver a casa. Cuando fui a comprar el billete, ya no quedaban billetes para hoy; conseguí uno para mañana por la mañana.\n\nA las ocho de la tarde las tiendas estaban a punto de cerrar y yo todavía no les había comprado nada a mis padres. Así que fui a una tienda y les compré algo de fruta. Hace ya tres años que no vuelvo a casa y los echo mucho de menos. Mañana, cuando llegue a casa, les diré a todos: «¡Feliz Año Nuevo!».",
+  "preguntas": [
+   {
+    "q": "¿Qué fecha es hoy?",
+    "lang": "es",
+    "a": [
+     "treinta diciembre",
+     "30 diciembre"
+    ],
+    "r": "El treinta de diciembre (十二月三十日)."
+   },
+   {
+    "q": "¿Para qué día es el billete de avión de David?",
+    "lang": "py",
+    "a": [
+     "yī yuè èr hào",
+     "yīyuè èr hào"
+    ],
+    "r": "Yīyuè èr hào · 一月二号 (el dos de enero)."
+   },
+   {
+    "q": "¿En qué va a volver a casa el narrador?",
+    "lang": "es",
+    "a": [
+     "tren"
+    ],
+    "r": "En tren (坐火车)."
+   },
+   {
+    "q": "¿Qué les compra a sus padres?",
+    "lang": "py",
+    "a": [
+     "shuǐguǒ"
+    ],
+    "r": "Shuǐguǒ · 水果 (fruta)."
+   },
+   {
+    "q": "¿Cuánto tiempo hace que no vuelve a casa?",
+    "lang": "es",
+    "a": [
+     "tres años",
+     "3 años"
+    ],
+    "r": "Tres años (都三年没回家了)."
+   }
+  ]
+ }
+]

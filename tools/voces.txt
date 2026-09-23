@@ -1,0 +1,25 @@
+# Voces con las que se graban los audios (dictados, listenings y lecturas).
+#
+# Para cambiarlas:
+#   1. Doble clic en COMPARAR-VOCES.command (o, en GitHub, Actions → Run
+#      workflow marcando "comparativa") y escucha todas las voces chinas.
+#   2. Escribe aquí los nombres completos de las que más te gusten.
+#   3. Doble clic en GRABAR-AUDIOS.command. Solo se regraban los audios
+#      afectados por el cambio.
+#
+# f1 / m1 = voz principal femenina / masculina (los dictados alternan f1, m1, f2, m2)
+# f2 / m2 = segunda voz femenina / masculina (segundo personaje de un diálogo)
+# f3 / m3 = tercer personaje del mismo género (poco frecuente)
+# Se puede subir o bajar el tono de una voz con @, por ejemplo @+15Hz.
+
+f1 = zh-CN-XiaoxiaoNeural
+m1 = zh-CN-YunxiNeural
+f2 = zh-CN-XiaoyiNeural
+m2 = zh-CN-YunjianNeural
+f3 = zh-CN-XiaoxiaoNeural@+15Hz
+m3 = zh-CN-YunyangNeural
+
+# Velocidades de las tres versiones de cada audio (sobre la velocidad natural).
+velocidad_lento  = -40%
+velocidad_medio  = -20%
+velocidad_normal = +0%
