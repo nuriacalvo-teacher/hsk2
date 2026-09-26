@@ -28,6 +28,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hsk  # noqa: E402
 
 WORDS = hsk.load_dict()
+NOT_NAMES = {"中国", "美国", "中国人", "美国人", "汉语", "汉字", "中国菜", "北京", "英语"}
 CHARS = set("".join(WORDS.keys()))
 errors, warnings = [], []
 
@@ -191,8 +192,122 @@ def check_gramatica():
                         err(w, "'ok' debe ser el índice de la opción correcta")
 
 
+# ---------------------------------------------------------------- ejercicios
+def uncovered(zh):
+    """Caracteres que no forman parte de ninguna palabra del diccionario."""
+    return sorted(set(tok for tok, ok in hsk.segment(zh, WORDS) if not ok and "一" <= tok <= "鿿"))
+
+
+def check_zh_py(where, zh, py, strict=True):
+    bad = uncovered(zh)
+    if bad:
+        (err if strict else warn)(where, "caracteres fuera del diccionario: %s (en %s)" % ("".join(bad), zh))
+    if py is not None:
+        if not hsk.has_tones(py):
+            err(where, "pinyin sin tonos: %r" % py)
+        if re.search(r"[一-鿿]", py):
+            err(where, "hanzi dentro del pinyin: %r" % py)
+        if not re.search(r"\d", zh):
+            a, b = hsk.hanzi_syllable_count(zh), len(hsk.syllables(py))
+            if a != b:
+                err(where, "%d hanzi pero %d sílabas en el pinyin: %s | %s" % (a, b, zh, py))
+
+
+def check_choice(where, q, need_es=False):
+    if not q.get("q") or not isinstance(q.get("opciones"), list) or not 2 <= len(q["opciones"]) <= 4:
+        err(where, "hace falta 'q' y entre 2 y 4 'opciones'")
+        return
+    if len(set(q["opciones"])) != len(q["opciones"]):
+        err(where, "opciones repetidas")
+    if not isinstance(q.get("ok"), int) or not 0 <= q["ok"] < len(q["opciones"]):
+        err(where, "'ok' debe ser el índice de la opción correcta")
+    for x in [q["q"]] + q["opciones"]:
+        for run in re.findall(r"[一-鿿]+", x):
+            bad = uncovered(run)
+            if bad:
+                err(where, "caracteres fuera del diccionario: %s" % "".join(bad))
+    if need_es and not q.get("exp"):
+        err(where, "falta 'exp' (explicación en español)")
+
+
+def check_frase(where, f, min_es=4):
+    for k in ("zh", "py", "es"):
+        if not f.get(k):
+            err(where, "falta %r" % k)
+            return
+    if not isinstance(f["es"], list) or len(f["es"]) < min_es:
+        err(where, "'es' debe ser una lista con al menos %d traducciones válidas" % min_es)
+    check_zh_py(where, f["zh"], f["py"])
+    for i, z in enumerate(f.get("altzh", [])):
+        check_zh_py(where + " altzh %d" % (i + 1), z, None)
+    for p in f.get("altpy", []):
+        if not hsk.has_tones(p):
+            err(where, "altpy sin tonos: %r" % p)
+
+
+def check_ejercicios():
+    gram = {}
+    for path in sorted(glob.glob(os.path.join(hsk.DATA, "gramatica*.json"))):
+        for t in json.load(io.open(path, encoding="utf-8")):
+            gram[t["tema"]] = [p["id"] for p in t["puntos"]]
+    vocab = {}
+    for zh, w in WORDS.items():
+        if 1 <= w["t"] < 90 and not (w["p"][:1].isupper() and zh not in NOT_NAMES):
+            vocab.setdefault(w["t"], []).append(zh)
+    seen = set()
+    for path in sorted(glob.glob(os.path.join(hsk.DATA, "ejercicios*.json"))):
+        name = os.path.basename(path)
+        try:
+            temas = json.load(io.open(path, encoding="utf-8"))
+        except ValueError as e:
+            err(name, "JSON mal formado: %s" % e)
+            continue
+        for t in temas:
+            n = t.get("tema")
+            seen.add(n)
+            ids = [p.get("id") for p in t.get("puntos", [])]
+            for pid in gram.get(n, []):
+                if pid not in ids:
+                    err("%s lección %s" % (name, n), "falta el punto de gramática %s" % pid)
+            for pto in t.get("puntos", []):
+                where = "%s %s" % (name, pto.get("id", "?"))
+                el = pto.get("elige", [])
+                if len(el) < 6:
+                    err(where, "hacen falta al menos 6 preguntas 'elige' (hay %d)" % len(el))
+                for i, q in enumerate(el, 1):
+                    check_choice("%s elige %d" % (where, i), q, need_es=True)
+                fr = pto.get("frases", [])
+                if len(fr) < 8:
+                    err(where, "hacen falta al menos 8 'frases' (hay %d)" % len(fr))
+                for i, f in enumerate(fr, 1):
+                    check_frase("%s frase %d" % (where, i), f)
+                lec = pto.get("lectura") or {}
+                for k in ("titulo", "zh", "py", "es", "preguntas"):
+                    if not lec.get(k):
+                        err(where + " lectura", "falta %r" % k)
+                if lec.get("zh") and lec.get("py"):
+                    check_zh_py(where + " lectura", lec["zh"], lec["py"])
+                pq = lec.get("preguntas", [])
+                if len(pq) < 3:
+                    err(where + " lectura", "hacen falta 3 preguntas")
+                for i, q in enumerate(pq, 1):
+                    check_choice("%s lectura pregunta %d" % (where, i), q)
+            words = t.get("vocab", [])
+            covered = set(v.get("w") for v in words)
+            for w in vocab.get(n, []):
+                if w not in covered:
+                    err("%s lección %s" % (name, n), "falta una frase de vocabulario para %s" % w)
+            for i, v in enumerate(words, 1):
+                where = "%s lección %s vocab %s" % (name, n, v.get("w"))
+                check_frase(where, v, min_es=3)
+                if v.get("w") and v.get("zh") and v["w"] not in v["zh"]:
+                    err(where, "la frase no contiene la palabra")
+                if v.get("w") and v.get("zh") and v["w"] not in [tok for tok, ok in hsk.segment(v["zh"], WORDS)]:
+                    warn(where, "al trocear la frase, %s no sale como palabra suelta: %s" % (v["w"], v["zh"]))
+
+
 def main():
-    what = sys.argv[1:] or ["listenings", "lecturas", "frases", "gramatica"]
+    what = sys.argv[1:] or ["listenings", "lecturas", "frases", "gramatica", "ejercicios"]
     if "frases" in what:
         check_frases()
     if "gramatica" in what:
@@ -201,6 +316,8 @@ def main():
         check_listenings()
     if "lecturas" in what:
         check_lecturas()
+    if "ejercicios" in what:
+        check_ejercicios()
     for w in warnings:
         print("AVISO  " + w)
     for e in errors:

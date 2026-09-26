@@ -163,7 +163,7 @@ def main():
 
     vocab_by_tema = {}
     for zh, w in words.items():
-        if not w["t"]:          # tema 0 = vocabulario de HSK 1 (ya conocido)
+        if not w["t"] or w["t"] >= 90:   # 0 = HSK 1 (ya conocido) · 99 = caracteres sueltos
             continue
         if w["p"][:1].isupper() and zh not in NOT_NAMES:
             continue
@@ -175,7 +175,7 @@ def main():
         for zh in lst:
             vid = "v-" + zh
             vocab_items[vid] = {"id": vid, "zh": zh, "py": words[zh]["p"], "es": [words[zh]["es"]],
-                                "au": audio_id("w-", zh)}
+                                "au": audio_id("w-", zh), "t": n}
             add_audio(vocab_items[vid]["au"], zh, "palabra")
             ids.append(vid)
         parts = max(1, -(-len(ids) // 14))
@@ -234,8 +234,55 @@ def main():
                 ej["au"] = audio_id("d-", ej.get("tts", ej["zh"]))
                 add_audio(ej["au"], ej.get("tts", ej["zh"]), "frase")
 
+    # ------------------------------------------------------------ ejercicios
+    ejercicios = sorted(load_json_files("ejercicios*.json"), key=lambda t: t["tema"])
+    # Todas las traducciones conocidas de una misma frase china valen en todas partes.
+    es_by_zh = {}
+
+    def remember(zh, es_list):
+        lst = es_by_zh.setdefault(zh, [])
+        for e in es_list:
+            if e not in lst:
+                lst.append(e)
+    for t in temas:
+        for f in t["frases"]:
+            remember(f["zh"], f["es"])
+    for g in gramatica:
+        for pto in g["puntos"]:
+            for ej in pto.get("ejemplos", []):
+                remember(ej["zh"], [ej["es"]])
+    for t in ejercicios:
+        for pto in t["puntos"]:
+            for f in pto["frases"]:
+                remember(f["zh"], f["es"])
+        for f in t.get("vocab", []):
+            remember(f["zh"], f["es"])
+    for t in temas:
+        for f in t["frases"]:
+            f["es"] = es_by_zh[f["zh"]]
+    for t in ejercicios:
+        for pto in t["puntos"]:
+            for f in pto["frases"]:
+                f["es"] = es_by_zh[f["zh"]]
+                f["au"] = audio_id("d-", f.get("tts", f["zh"]))
+                add_audio(f["au"], f.get("tts", f["zh"]), "frase")
+            lec = pto.get("lectura")
+            if lec:
+                lec["au"] = audio_id("e-", lec["zh"])
+                audios[lec["au"]] = {"tipo": "lectura", "lineas": [{"v": "f2", "zh": lec["zh"]}]}
+        for f in t.get("vocab", []):
+            f["es"] = es_by_zh[f["zh"]]
+            f["au"] = audio_id("d-", f.get("tts", f["zh"]))
+            add_audio(f["au"], f.get("tts", f["zh"]), "frase")
+
     # ------------------------------------------------------------ diccionario
     dic = {zh: [w["p"], w["es"], w["t"]] for zh, w in words.items()}
+    # audio de TODAS las palabras (también las de HSK 1): se oyen al tocarlas
+    word_audio = {}
+    for zh in words:
+        if re.search(r"[一-鿿]", zh):
+            word_audio[zh] = audio_id("w-", zh)
+            add_audio(word_audio[zh], zh, "palabra")
 
     payload = {
         "version": 1,
@@ -247,6 +294,8 @@ def main():
         "listenings": listenings,
         "lecturas": lecturas,
         "gramatica": gramatica,
+        "ejercicios": ejercicios,
+        "wau": word_audio,
     }
     os.makedirs(os.path.dirname(OUT_JS), exist_ok=True)
     with io.open(OUT_JS, "w", encoding="utf-8") as f:
@@ -262,6 +311,9 @@ def main():
     print("  %d palabras · %d frases en %d temas" % (len(dic), n_fr, len(temas)))
     print("  %d dictados · %d listenings · %d lecturas" % (len(dictados), len(listenings), len(lecturas)))
     print("  %d puntos de gramática" % sum(len(g["puntos"]) for g in gramatica))
+    print("  ejercicios: %d lecciones, %d puntos, %d frases, %d frases de vocabulario" % (
+        len(ejercicios), sum(len(t["puntos"]) for t in ejercicios),
+        sum(len(p["frases"]) for t in ejercicios for p in t["puntos"]), sum(len(t.get("vocab", [])) for t in ejercicios)))
     print("  %d audios distintos para grabar (x3 velocidades)" % len(audios))
 
 

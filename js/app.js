@@ -31,6 +31,7 @@
     return e;
   }
   function add(e, c) {
+    if (arguments.length > 2) { for (var i = 1; i < arguments.length; i++) add(e, arguments[i]); return; }
     if (c === null || c === undefined || c === false) return;
     if (Array.isArray(c)) { c.forEach(function (x) { add(e, x); }); return; }
     e.appendChild(c.nodeType ? c : document.createTextNode(String(c)));
@@ -385,7 +386,7 @@
     u.rate = Math.max(0.55, speedObj(S.settings.speed).tts);
     speechSynthesis.speak(u);
   }
-  function wordAudioId(zh) { var v = D.vocab["v-" + zh]; return v ? v.au : null; }
+  function wordAudioId(zh) { if (D.wau && D.wau[zh]) return D.wau[zh]; var v = D.vocab["v-" + zh]; return v ? v.au : null; }
 
   // ======================================================================
   // ventanita de palabra
@@ -398,7 +399,7 @@
   function showPop(anchor, info, mode) {
     closePop();
     anchor.classList.add("sel");
-    var temaTxt = info.t ? "Lección " + info.t : info.t === 0 ? "HSK 1" : (info.num ? "Número" : "");
+    var temaTxt = info.t && info.t < 90 ? "Lección " + info.t : info.t === 0 ? "HSK 1" : (info.num ? "Número" : "");
     POP = h("div", { class: "pop", role: "dialog" },
       h("button", { class: "icon-btn", type: "button", "aria-label": "Escuchar", onclick: function (e) { e.stopPropagation(); speakOnce(info.w, wordAudioId(info.w)); } }, icon("speaker", 18)),
       mode === "py" ? h("div", { class: "pp", style: "font-size:24px", text: info.py }) : null,
@@ -421,8 +422,9 @@
    * Pinta palabras clicables.
    * mode "zh": hanzi (ventanita con pinyin + español) · "py": pinyin (ventanita con hanzi)
    * ruby: añade encima el pinyin (zh) o el hanzi (py)
+   * opts.onReveal(t): se llama la primera vez que se abre cada palabra (ayudas que restan puntos)
    */
-  function renderWords(tokens, mode, ruby) {
+  function renderWords(tokens, mode, ruby, opts) {
     var frag = [], sentenceStart = true;
     tokens.forEach(function (t, i) {
       if (t.p) {
@@ -439,8 +441,12 @@
       var clickable = !!(t.es || t.py) && !t.plain;
       var span = h("span", { class: "w" + (clickable ? "" : " plain"), tabindex: clickable ? "0" : null }, inner);
       if (clickable) {
-        span.addEventListener("click", function (e) { e.stopPropagation(); showPop(span, t, mode); });
-        span.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showPop(span, t, mode); } });
+        var open = function () {
+          if (opts && opts.onReveal && !span.classList.contains("seen")) { span.classList.add("seen"); opts.onReveal(t); }
+          showPop(span, t, mode);
+        };
+        span.addEventListener("click", function (e) { e.stopPropagation(); open(); });
+        span.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
       }
       frag.push(span);
       if (mode === "py") {
@@ -449,6 +455,41 @@
       }
     });
     return frag;
+  }
+
+  /**
+   * Todo el chino de la app se puede tocar: busca los hanzi que haya en los
+   * textos (explicaciones, preguntas, títulos…) y los convierte en palabras
+   * clicables con pinyin, traducción y audio.
+   */
+  var CJK_RUN = /([\u3400-\u9fff]+)/;
+  var ZH_SKIP = "a,button,input,textarea,select,option,label.opt,.w,.pop,rt,.brush,.big-zh,.stamp,.big-stamp,.ime,.tile,.tiles-bank,.tiles-answer,.no-zh,svg,script,style";
+  var ZH_BIG = ".zh,.tr-zh,.g-big,.g-f,.text-body,.big";
+  function zhify(root) {
+    if (!root) return;
+    if (root.nodeType === 3) root = root.parentNode;
+    if (!root || root.nodeType !== 1 || (root.closest && root.closest(ZH_SKIP))) return;
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), list = [];
+    while (walker.nextNode()) {
+      var n = walker.currentNode;
+      if (CJK_RUN.test(n.nodeValue) && n.parentNode && !n.parentNode.closest(ZH_SKIP)) list.push(n);
+    }
+    list.forEach(function (n) {
+      var parent = n.parentNode; if (!parent) return;
+      var big = !!parent.closest(ZH_BIG);
+      var frag = document.createDocumentFragment();
+      n.nodeValue.split(CJK_RUN).forEach(function (part, i) {
+        if (!part) return;
+        if (i % 2) add(frag, h("span", { class: "zi" + (big ? "" : " inl"), lang: "zh-CN" }, renderWords(segment(part), "zh")));
+        else frag.appendChild(document.createTextNode(part));
+      });
+      parent.replaceChild(frag, n);
+    });
+  }
+  if (window.MutationObserver) {
+    new MutationObserver(function (muts) {
+      muts.forEach(function (m) { m.addedNodes.forEach(function (n) { if (n.nodeType === 1 || n.nodeType === 3) zhify(n); }); });
+    }).observe(APP, { childList: true, subtree: true });
   }
 
   // ======================================================================
@@ -566,6 +607,25 @@
     return { el: el, value: function () { return outText + (letters() ? "" : ""); }, focus: function () { inp.focus(); } };
   }
 
+  /** Ayudas que restan: cada palabra que se abre quita un 10 % de la nota de esa frase. */
+  var HELP_COST = 0.1;
+  function helpCounter() {
+    var n = 0, locked = false;
+    var el = h("div", { class: "help-note" }, "Toca una palabra si no la sabes · cada ayuda resta un 10 %");
+    function paint() {
+      el.textContent = n ? "Ayudas usadas: " + n + " (−" + Math.round(n * HELP_COST * 100) + " %)" : "Toca una palabra si no la sabes · cada ayuda resta un 10 %";
+      el.classList.toggle("used", n > 0);
+    }
+    return {
+      el: el,
+      reveal: function () { if (locked) return; n++; SND.sfx("tick"); paint(); },
+      lock: function () { locked = true; },
+      count: function () { return n; },
+      apply: function (score) { return Math.max(0, Math.round((score - n * HELP_COST) * 100) / 100); },
+      note: function () { return n ? " · " + n + (n === 1 ? " ayuda" : " ayudas") + " (−" + Math.round(n * HELP_COST * 100) + " %)" : ""; }
+    };
+  }
+
   function marksView(marks, ign) {
     return marks.map(function (m) {
       var st = m.st === "tone" && ign ? "ok" : m.st;
@@ -631,6 +691,7 @@
     if (kind === "D") return avg(D.dictados.map(function (d) { return "D:" + d.id; }));
     if (kind === "L") return avg(D.listenings.map(function (l) { return "L:" + l.id; }));
     if (kind === "R") return avg(D.lecturas.map(function (r) { return "R:" + r.id; }));
+    if (kind === "E") { var ek = []; D.temas.forEach(function (t) { ek = ek.concat(ejKeys(t.n)); }); return avg(ek); }
     if (kind === "G") { var gk = []; D.gramatica.forEach(function (g) { g.puntos.forEach(function (p) { gk.push("G:" + p.id); }); }); return avg(gk); }
     var ks = []; D.temas.forEach(function (t) { [1, 2, 3, 4].forEach(function (n) { ks.push("T:" + t.n + ":" + n); }); });
     return avg(ks);
@@ -654,10 +715,11 @@
     var rec = manifest() ? Object.keys(manifest()).length : 0;
     var mods = [
       { href: "#/gramatica", ico: "bulb", t: "Gramática", zh: "语法", wm: "法", p: "Las reglas de cada lección explicadas en español, con ejemplos que puedes escuchar y minitests.", k: "G", n: D.gramatica.reduce(function (s, g) { return s + g.puntos.length; }, 0) + " puntos" },
+      { href: "#/ejercicios", ico: "list", t: "Ejercicios", zh: "练习", wm: "练", p: "Práctica de cada punto de gramática y de todo el vocabulario: elegir, ordenar, traducir, escuchar y leer. Con examen por lección.", k: "E", n: (D.ejercicios || []).reduce(function (s, t) { return s + t.puntos.length; }, 0) + " puntos · 15 exámenes" },
       { href: "#/dictado", ico: "pen", t: "Dictado", zh: "听写", wm: "听写", p: "Escucha frases y palabras y escríbelas en pinyin, con corrección sílaba a sílaba y de tonos.", k: "D", n: D.dictados.length + " dictados" },
       { href: "#/listening", ico: "ear", t: "Listening", zh: "听力", wm: "听", p: "Diálogos con voces nativas a 4 velocidades y 5 preguntas en pinyin o español.", k: "L", n: D.listenings.length + " diálogos" },
-      { href: "#/lectura", ico: "book", t: "Lectura", zh: "阅读", wm: "读", p: "Textos en pinyin (nivel 1) y en hanzi (nivel 2). Toca cada palabra para ver su significado.", k: "R", n: D.lecturas.length + " lecturas" },
-      { href: "#/traduccion", ico: "swap", t: "Traducción", zh: "翻译", wm: "译", p: "Cuatro niveles: pinyin→español, español→pinyin, hanzi→español y español→hanzi.", k: "T", n: "15 lecciones × 4 niveles" }
+      { href: "#/lectura", ico: "book", t: "Lectura", zh: "阅读", wm: "读", p: "Textos en hanzi, con pinyin encima (nivel 1) o sin él (nivel 2). Toca cada palabra para ver su pinyin y significado.", k: "R", n: D.lecturas.length + " lecturas" },
+      { href: "#/traduccion", ico: "swap", t: "Traducción", zh: "翻译", wm: "译", p: "Cuatro niveles: hanzi con pinyin→español, español→pinyin, hanzi→español y español→hanzi.", k: "T", n: "15 lecciones × 4 niveles" }
     ];
     var decor = [h("div", { class: "bamboo", "aria-hidden": "true", html: BAMBOO }),
       h("div", { class: "koi", "aria-hidden": "true", style: "top:52%", html: KOI }),
@@ -711,12 +773,16 @@
       pageHead(CN_NUM[n], "Lección " + n + " · " + t.es, '<span class="zh" style="font-size:20px">' + t.zh + "</span>"),
       h("div", { class: "group-h", text: "Gramática · 语法" }),
       h("div", { class: "grid g3" }, (GRAM[n] ? GRAM[n].puntos : []).map(function (p) { return exRow("#/gramatica/" + n + "/" + p.id, "法", p.titulo, p.zh, "G:" + p.id); })),
+      EJ[n] ? [h("div", { class: "group-h", text: "Ejercicios · 练习" }),
+        h("div", { class: "grid g3" },
+          exRowAvg("#/ejercicios/" + n, "练", "Zona de ejercicios", EJ[n].puntos.length + " puntos de gramática · vocabulario · examen", ejKeys(n)),
+          exRow("#/ejercicios/" + n + "/examen", "考", "Examen de la lección " + n, "Todo mezclado", "E:" + n + ":examen"))] : null,
       h("div", { class: "group-h", text: "Dictado · 听写" }),
       h("div", { class: "grid g3" }, dic.map(function (d) { return exRow("#/dictado/" + d.id, d.grupo === "vocabulario" ? "词" : "句", d.titulo, d.items.length + (d.grupo === "vocabulario" ? " palabras" : " frases"), "D:" + d.id); })),
       h("div", { class: "group-h", text: "Listening · 听力" }),
       h("div", { class: "grid g3" }, ls.map(function (l) { return exRow("#/listening/" + l.id, "听", l.titulo, l.lineas.length + " líneas · 5 preguntas", "L:" + l.id); })),
       h("div", { class: "group-h", text: "Lectura · 阅读" }),
-      h("div", { class: "grid g3" }, rs.map(function (r) { return exRow("#/lectura/" + r.id, r.nivel === 1 ? "拼" : "汉", r.titulo, "Nivel " + r.nivel + (r.nivel === 1 ? " · pinyin" : " · hanzi"), "R:" + r.id); })),
+      h("div", { class: "grid g3" }, rs.map(function (r) { return exRow("#/lectura/" + r.id, r.nivel === 1 ? "拼" : "汉", r.titulo, "Nivel " + r.nivel + (r.nivel === 1 ? " · hanzi con pinyin" : " · solo hanzi"), "R:" + r.id); })),
       h("div", { class: "group-h", text: "Traducción · 翻译" }),
       h("div", { class: "grid g3" }, TR.map(function (L) { return exRow("#/traduccion/" + n + "/" + L.n, L.icon, "Nivel " + L.n + " · " + L.t, t.frases.length + " frases del tema", "T:" + n + ":" + L.n); }))
     ));
@@ -966,11 +1032,11 @@
     var tabs = h("div", { class: "tabs" }, [1, 2].map(function (n) {
       return h("button", { type: "button", class: "tab" + (readLevel === n ? " on" : ""), onclick: function () { viewLecturas(n); } },
         h("span", { class: "brush", style: "font-size:30px;color:var(--red)", text: n === 1 ? "拼" : "汉" }),
-        h("span", null, "Nivel " + n, h("small", { text: n === 1 ? "Texto en pinyin" : "Texto en hanzi" })));
+        h("span", null, "Nivel " + n, h("small", { text: n === 1 ? "Hanzi con pinyin encima" : "Solo hanzi" })));
     }));
     var list = D.lecturas.filter(function (r) { return r.nivel === readLevel; });
     view("lectura", h("div", null,
-      pageHead("阅读", "Comprensión lectora", "Lee el texto y toca (o haz clic en) cualquier palabra para ver su " + (readLevel === 1 ? "<b>hanzi</b>" : "<b>pinyin</b>") + " y su traducción. Luego responde a las <b>5 preguntas</b>."),
+      pageHead("阅读", "Comprensión lectora", "Lee el texto en hanzi " + (readLevel === 1 ? "(con el <b>pinyin encima</b> como ayuda)" : "(sin pinyin: toca una palabra si la necesitas)") + " y toca cualquier palabra para ver su pinyin, su traducción y escucharla. Luego responde a las <b>5 preguntas</b>."),
       tabs,
       h("div", { class: "grid g3" }, list.map(function (r) {
         return exRow("#/lectura/" + r.id, CN_NUM[r.tema], r.titulo, "Lección " + r.tema + " · " + TEMA[r.tema].es, "R:" + r.id);
@@ -980,11 +1046,11 @@
   function runLectura(id) {
     var R = READ[id]; if (!R) return viewLecturas();
     readLevel = R.nivel;
-    var mode = R.nivel === 1 ? "py" : "zh";
+    var mode = "zh";
     var paras = tokensFromText(R.texto);
     var titleTok = tokensFromText(R.titulo_zh)[0] || [];
-    var ruby = false;
-    var body = h("div", { class: "text-body lv" + R.nivel });
+    var ruby = R.nivel === 1;
+    var body = h("div", { class: "text-body lv2" });
     function paint() {
       body.innerHTML = "";
       paras.forEach(function (p) { add(body, h("p", null, renderWords(p, mode, ruby))); });
@@ -1001,12 +1067,12 @@
     var nx = same[same.indexOf(R) + 1];
     view("lectura", h("div", { class: "ex-wrap" },
       h("div", { class: "ex-head" }, backLink("#/lectura", "Lecturas"),
-        h("span", { class: "lang " + (R.nivel === 1 ? "py" : "es"), text: "Nivel " + R.nivel + (R.nivel === 1 ? " · pinyin" : " · hanzi") })),
+        h("span", { class: "lang " + (R.nivel === 1 ? "py" : "es"), text: "Nivel " + R.nivel + (R.nivel === 1 ? " · hanzi + pinyin" : " · hanzi") })),
       h("article", { class: "card reading" },
         h("h2", { text: R.titulo }),
         h("div", { class: "ttl-zh " + (mode === "py" ? "py" : "zh"), style: "font-size:20px;color:var(--red)" }, renderWords(titleTok, mode)),
-        h("label", { class: "toggle", style: "margin-bottom:14px" }, h("input", { type: "checkbox", onchange: function (e) { ruby = e.target.checked; paint(); } }),
-          R.nivel === 1 ? "Mostrar hanzi encima" : "Mostrar pinyin encima"),
+        h("label", { class: "toggle", style: "margin-bottom:14px" }, h("input", { type: "checkbox", checked: ruby, onchange: function (e) { ruby = e.target.checked; paint(); } }),
+          "Mostrar el pinyin encima de los hanzi"),
         body, listen),
       qb.el, trBox,
       nx ? h("div", { class: "btn-row", style: "margin-top:20px;justify-content:flex-end" }, h("a", { class: "btn ghost", href: "#/lectura/" + nx.id }, "Siguiente lectura →")) : null));
@@ -1015,9 +1081,9 @@
   // ------------------------------------------------------------- traducción
   function trLevels() {
     return [
-      { n: 1, t: "Pinyin → español", icon: "拼", from: "py", to: "es", d: "Lee la frase en pinyin y escríbela en español." },
+      { n: 1, t: "Hanzi + pinyin → español", icon: "拼", from: "py", to: "es", d: "Lee la frase en hanzi, con su pinyin debajo, y escríbela en español." },
       { n: 2, t: "Español → pinyin", icon: "音", from: "es", to: "py", d: "Traduce al chino escribiendo en pinyin con tonos." },
-      { n: 3, t: "Hanzi → español", icon: "汉", from: "zh", to: "es", d: "Lee los caracteres y tradúcelos al español." },
+      { n: 3, t: "Hanzi → español", icon: "汉", from: "zh", to: "es", d: "Solo hanzi. Puedes tocar una palabra para verla, pero cada ayuda resta un 10 %." },
       { n: 4, t: "Español → hanzi", icon: "字", from: "es", to: "zh", d: "Construye la frase en hanzi con fichas o con el teclado chino." }
     ];
   }
@@ -1052,6 +1118,60 @@
     return segment(zh).filter(function (t) { return !t.p; }).map(function (t) { return t.w; });
   }
 
+  /**
+   * Respuesta en hanzi de tres maneras: fichas, teclado de la app (pinyin → hanzi)
+   * o teclado chino del dispositivo. words: fichas correctas; distract: fichas de más.
+   */
+  function hanziAnswer(words, distract, onSubmit) {
+    var locked = false;
+    var bankWords = shuffle(words.concat(distract || []));
+    var chosen = [];
+    var ansLine = h("div", { class: "tiles-answer", "aria-label": "Tu frase" });
+    var bank = h("div", { class: "tiles-bank" });
+    var ime = hanziIME({ onEnter: onSubmit });
+    var kbInput = h("input", { class: "inp zh", type: "text", lang: "zh-CN", placeholder: "Escribe con el teclado chino de tu dispositivo", "aria-label": "Respuesta en hanzi" });
+    kbInput.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.isComposing) { e.preventDefault(); onSubmit(); } });
+    function paintTiles() {
+      ansLine.innerHTML = ""; bank.innerHTML = "";
+      if (!chosen.length) add(ansLine, h("span", { class: "muted", style: "font-size:14px", text: "Toca las fichas en orden para formar la frase" }));
+      chosen.forEach(function (bi, k) {
+        add(ansLine, h("button", { type: "button", class: "tile", onclick: function () { if (locked) return; chosen.splice(k, 1); paintTiles(); } }, bankWords[bi]));
+      });
+      bankWords.forEach(function (w, bi) {
+        add(bank, h("button", { type: "button", class: "tile" + (chosen.indexOf(bi) >= 0 ? " used" : ""), onclick: function () { if (locked || chosen.indexOf(bi) >= 0) return; chosen.push(bi); SND.sfx("tick"); paintTiles(); } }, w));
+      });
+    }
+    paintTiles();
+    var modes = {
+      fichas: h("div", null, ansLine, bank),
+      app: ime.el,
+      sistema: h("div", null, kbInput, h("p", { class: "muted", style: "font-size:13px;margin:6px 0 0" }, "Necesitas tener instalado el teclado chino (pinyin). ", h("a", { href: "#/teclado" }, "Cómo instalarlo")))
+    };
+    var mode = S.settings.hanziMode || "fichas";
+    var modeChips = h("div", { class: "chips", style: "margin-bottom:12px" });
+    function paintMode() {
+      modeChips.innerHTML = "";
+      [["fichas", "Fichas"], ["app", "Pinyin → hanzi (teclado de la app)"], ["sistema", "Teclado chino del dispositivo"]].forEach(function (m) {
+        add(modeChips, h("button", { type: "button", class: "chip" + (mode === m[0] ? " on" : ""), onclick: function () {
+          if (locked) return;
+          mode = m[0]; S.settings.hanziMode = mode; persist(); paintMode();
+        } }, m[1]));
+      });
+      Object.keys(modes).forEach(function (k) { modes[k].classList.toggle("hidden", k !== mode); });
+      if (mode === "app") ime.focus(); else if (mode === "sistema") kbInput.focus();
+    }
+    setTimeout(paintMode, 0);
+    return {
+      el: h("div", null, modeChips, modes.fichas, modes.app, modes.sistema),
+      get: function () {
+        if (mode === "app") return ime.value();
+        if (mode === "sistema") return kbInput.value;
+        return chosen.map(function (bi) { return bankWords[bi]; }).join("");
+      },
+      lock: function () { locked = true; kbInput.disabled = true; }
+    };
+  }
+
   function runTraduccion(tema, nivel, onlyIds) {
     var L = trLevels()[nivel - 1]; if (!L) return viewTraduccion();
     var pool = tema ? (TEMA[tema] ? TEMA[tema].frases : []) : [].concat.apply([], D.temas.map(function (t) { return t.frases; }));
@@ -1065,9 +1185,11 @@
 
     function renderItem() {
       var f = items[idx], checked = false, hinted = false;
-      var promptText = L.from === "py" ? f.py : L.from === "zh" ? f.zh : f.es[0];
-      var promptEl = h("div", { class: "big " + (L.from === "zh" ? "zh" : L.from === "py" ? "py" : "") });
-      if (L.from === "zh") add(promptEl, renderWords(segment(f.zh), "zh")); else promptEl.textContent = promptText;
+      var helps = helpCounter(), ha = null;
+      var promptEl = h("div", { class: "big " + (L.from === "es" ? "" : "zh") });
+      if (L.from === "zh") add(promptEl, renderWords(segment(f.zh), "zh", false, { onReveal: helps.reveal }), helps.el);
+      else if (L.from === "py") add(promptEl, renderWords(segment(f.zh), "zh"), h("div", { class: "py", style: "font-size:clamp(18px,2.6vw,22px);color:var(--ink-2);margin-top:6px", text: f.py }));
+      else promptEl.textContent = f.es[0];
       var hintBox = h("div", { class: "muted", style: "min-height:1.4em;margin-top:8px;text-align:center" });
       var getAnswer, answerEl, focusEl;
       if (L.to === "es") {
@@ -1078,61 +1200,17 @@
         var pin = pinyinInput({ onEnter: function () { checked ? next() : check(); } });
         answerEl = pin.el; focusEl = pin.input; getAnswer = function () { return pin.input.value; };
       } else {
-        // tres formas de escribir hanzi: fichas, teclado de la app o teclado del sistema
         var words = tileWords(f.zh);
         var distract = shuffle(uniq([].concat.apply([], (TEMA[f.tema].frases).map(function (o) { return tileWords(o.zh); }))).filter(function (w) { return words.indexOf(w) < 0; })).slice(0, 3);
-        var bankWords = shuffle(words.concat(distract));
-        var chosen = [];
-        var ansLine = h("div", { class: "tiles-answer", "aria-label": "Tu frase" });
-        var bank = h("div", { class: "tiles-bank" });
-        var submit = function () { checked ? next() : check(); };
-        var ime = hanziIME({ onEnter: submit });
-        var kbInput = h("input", { class: "inp zh", type: "text", lang: "zh-CN", placeholder: "Escribe con el teclado chino de tu dispositivo", "aria-label": "Respuesta en hanzi" });
-        kbInput.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.isComposing) { e.preventDefault(); submit(); } });
-        var paintTiles = function () {
-          ansLine.innerHTML = ""; bank.innerHTML = "";
-          if (!chosen.length) add(ansLine, h("span", { class: "muted", style: "font-size:14px", text: "Toca las fichas en orden para formar la frase" }));
-          chosen.forEach(function (bi, k) {
-            add(ansLine, h("button", { type: "button", class: "tile", onclick: function () { if (checked) return; chosen.splice(k, 1); paintTiles(); } }, bankWords[bi]));
-          });
-          bankWords.forEach(function (w, bi) {
-            add(bank, h("button", { type: "button", class: "tile" + (chosen.indexOf(bi) >= 0 ? " used" : ""), onclick: function () { if (checked) return; chosen.push(bi); SND.sfx("tick"); paintTiles(); } }, w));
-          });
-        };
-        paintTiles();
-        var modes = {
-          fichas: h("div", null, ansLine, bank),
-          app: ime.el,
-          sistema: h("div", null, kbInput, h("p", { class: "muted", style: "font-size:13px;margin:6px 0 0" }, "Necesitas tener instalado el teclado chino (pinyin). ", h("a", { href: "#/teclado" }, "Cómo instalarlo")))
-        };
-        var mode = S.settings.hanziMode || "fichas";
-        var modeChips = h("div", { class: "chips", style: "margin-bottom:12px" });
-        var paintMode = function () {
-          modeChips.innerHTML = "";
-          [["fichas", "Fichas"], ["app", "Pinyin → hanzi (teclado de la app)"], ["sistema", "Teclado chino del dispositivo"]].forEach(function (m) {
-            add(modeChips, h("button", { type: "button", class: "chip" + (mode === m[0] ? " on" : ""), onclick: function () {
-              if (checked) return;
-              mode = m[0]; S.settings.hanziMode = mode; persist(); paintMode();
-            } }, m[1]));
-          });
-          Object.keys(modes).forEach(function (k) { modes[k].classList.toggle("hidden", k !== mode); });
-          if (mode === "app") ime.focus(); else if (mode === "sistema") kbInput.focus();
-        };
-        answerEl = h("div", null, modeChips, modes.fichas, modes.app, modes.sistema);
-        focusEl = null;
-        setTimeout(paintMode, 0);
-        getAnswer = function () {
-          if (mode === "app") return ime.value();
-          if (mode === "sistema") return kbInput.value;
-          return chosen.map(function (bi) { return bankWords[bi]; }).join("");
-        };
+        var ha = hanziAnswer(words, distract, function () { checked ? next() : check(); });
+        answerEl = ha.el; focusEl = null; getAnswer = ha.get;
       }
       var fbBox = h("div");
       var checkBtn = h("button", { class: "btn", type: "button", onclick: function () { check(); } }, "Comprobar");
       var hintBtn = h("button", { class: "btn soft sm", type: "button", onclick: function () {
         hinted = true; hintBox.innerHTML = "";
         if (L.from === "zh") add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py }));
-        else if (L.from === "py") add(hintBox, h("span", { class: "zh", style: "font-size:24px;color:var(--ink)" }, renderWords(segment(f.zh), "zh")), h("div", { style: "font-size:13px", text: "Toca cada hanzi para ver su significado" }));
+        else if (L.from === "py") add(hintBox, h("span", { style: "font-size:17px;color:var(--ink)", text: "Empieza así: «" + f.es[0].split(" ").slice(0, 2).join(" ") + "…»" }));
         else if (L.to === "py") add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py.split(/\s+/).map(function (w) { return w.charAt(0) + "…"; }).join(" ") }));
         else add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py }));
         add(hintBox, h("div", { style: "font-size:13px", text: "(con pista, la respuesta cuenta como media)" }));
@@ -1151,9 +1229,11 @@
           opts.forEach(function (o) { var x = C.comparePinyin(o, ans, ignoreTones()); if (!bestR || x.score > bestR.score) { bestR = x; bestR.exp = o; } });
           r = bestR; marks = bestR.marks;
         } else r = C.compareHanzi(ans, [f.zh].concat(f.altzh || []));
-        var score = hinted ? Math.min(r.score, 0.5) : r.score;
+        var score = helps.apply(hinted ? Math.min(r.score, 0.5) : r.score);
         var level = levelOf(score);
         results[idx] = { level: level, score: score, f: f, answer: ans };
+        helps.lock();
+        if (ha) ha.lock();
         SND.sfx(level);
         var titles = {
           es: { ok: "¡Bien traducido!", mid: "Parecido. Compara con la traducción y decide.", ko: "No coincide. Compara con la traducción." },
@@ -1163,13 +1243,13 @@
         fbBox.innerHTML = "";
         add(fbBox, h("div", { class: "fb " + level },
           h("span", { class: "stamp", text: stampText(level) }),
-          h("h4", { text: titles[L.to][level] + (hinted ? " (con pista)" : "") }),
+          h("h4", { text: titles[L.to][level] + (hinted ? " (con pista)" : "") + helps.note() }),
           h("div", { class: "row" }, h("span", { class: "k", text: "Hanzi" }), h("div", { class: "v zh" }, renderWords(segment(f.zh), "zh"),
             " ", h("button", { class: "icon-btn", style: "vertical-align:middle", type: "button", "aria-label": "Escuchar", onclick: function () { speakOnce(f.tts || f.zh, f.au); } }, icon("speaker", 16)))),
           h("div", { class: "row" }, h("span", { class: "k", text: "Pinyin" }), h("div", { class: "v py" }, marks ? marksView(marks, ignoreTones()) : f.py)),
           h("div", { class: "row" }, h("span", { class: "k", text: "Español" }), h("div", { class: "v", style: "font-size:17px", text: f.es.join("  /  ") })),
           h("div", { class: "row" }, h("span", { class: "k", text: "Tu respuesta" }), h("div", { class: "v " + (L.to === "zh" ? "zh" : L.to === "py" ? "py" : ""), style: "font-size:16px", text: ans })),
-          level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () { results[idx].level = "ok"; results[idx].score = 1; SND.sfx("ok"); this.textContent = "Marcada como correcta"; this.disabled = true; } }, "Mi respuesta también es correcta") : null));
+          level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () { results[idx].level = "ok"; results[idx].score = helps.apply(1); SND.sfx("ok"); this.textContent = "Marcada como correcta"; this.disabled = true; } }, "Mi respuesta también es correcta") : null));
         checkBtn.textContent = idx + 1 < items.length ? "Siguiente →" : "Ver resultado";
         checkBtn.onclick = next;
         checkBtn.focus();
@@ -1310,7 +1390,7 @@
         } }, h("span", { class: "zh", text: o }));
       });
       var card = h("div", { class: "card qq" },
-        h("div", { class: "qh" }, h("span", { class: "qn", text: qi + 1 }), h("div", { class: "qt zh", style: "font-size:20px" }, renderWords(segment(q.q.replace(/_{2,}/g, "＿＿")), "zh"))),
+        h("div", { class: "qh" }, h("span", { class: "qn", text: qi + 1 }), h("div", { class: "qt", style: "font-size:19px" }, q.q.replace(/_{2,}/g, "＿＿"))),
         h("div", { class: "chips", style: "margin-top:12px" }, btns), res);
       return card;
     }));
@@ -1325,9 +1405,472 @@
         ejemplos,
         p.ojo ? h("div", { class: "note", style: "margin-top:16px" }, h("b", { text: "¡Ojo! " }), h("span", { html: p.ojo })) : null),
       p.practica && p.practica.length ? [h("div", { class: "sec-h" }, h("span", { class: "brush", text: "练习" }), h("h2", { text: "Comprueba que lo has entendido" })), practica] : null,
+      ejPoint(p.id) ? h("a", { class: "note ej-cta", href: "#/ejercicios/" + tema + "/" + p.id },
+        h("b", { text: "¿Quieres practicarlo a fondo? " }), "Ejercicios de este punto: elegir, ordenar fichas, traducir (hanzi ↔ español ↔ pinyin), escuchar y una lectura →") : null,
       h("div", { class: "btn-row", style: "margin-top:22px;justify-content:space-between" },
         prev ? h("a", { class: "btn soft", href: "#/gramatica/" + temaOf(prev) + "/" + prev.id }, "← " + prev.titulo.slice(0, 28) + (prev.titulo.length > 28 ? "…" : "")) : h("span"),
         nx ? h("a", { class: "btn ghost", href: "#/gramatica/" + temaOf(nx) + "/" + nx.id }, nx.titulo.slice(0, 28) + (nx.titulo.length > 28 ? "…" : "") + " →") : null)));
+  }
+
+  // -------------------------------------------------------------- ejercicios
+  var EJ = {}; (D.ejercicios || []).forEach(function (t) { EJ[t.tema] = t; });
+  var VDRILLS = [
+    { k: "sig", zh: "义", t: "Significado", d: "Ves el hanzi y eliges qué significa." },
+    { k: "han", zh: "字", t: "Reconoce el hanzi", d: "Lees la palabra en español y eliges su hanzi." },
+    { k: "esc", zh: "听", t: "Escucha y elige", d: "Oyes la palabra y eliges el hanzi." },
+    { k: "py", zh: "拼", t: "Pinyin y tonos", d: "Ves el hanzi y escribes el pinyin con tonos." },
+    { k: "es", zh: "译", t: "Tradúcela al español", d: "Ves el hanzi y escribes lo que significa." },
+    { k: "espy", zh: "音", t: "Del español al pinyin", d: "Lees la palabra en español y la escribes en pinyin." },
+    { k: "ctx", zh: "句", t: "Completa la frase", d: "Eliges la palabra que falta en cada frase." },
+    { k: "fr", zh: "翻", t: "Frases con el vocabulario", d: "Traduces frases con las palabras nuevas: hanzi, pinyin y español." }
+  ];
+  var KIND_LBL = {
+    choice: "Elige la opción correcta", order: "Ordena las fichas para formar la frase",
+    zh_es: "Traduce al español", es_py: "Tradúcelo al chino en pinyin", es_zh: "Tradúcelo al chino en hanzi",
+    listen_py: "Escucha y escribe en pinyin", listen_choice: "Escucha y elige qué significa",
+    word_py: "Escribe el pinyin con tonos", word_es: "¿Qué significa?", espy: "Escríbelo en pinyin", lectura: "Lectura · 阅读"
+  };
+  function ejPoint(pid) {
+    var r = null;
+    (D.ejercicios || []).forEach(function (t) { t.puntos.forEach(function (p) { if (p.id === pid) r = p; }); });
+    return r;
+  }
+  function gramPoint(pid) {
+    var r = null;
+    D.gramatica.forEach(function (g) { g.puntos.forEach(function (p) { if (p.id === pid) r = p; }); });
+    return r;
+  }
+  function lessonWords(n) {
+    return Object.keys(D.vocab).map(function (k) { return D.vocab[k]; }).filter(function (v) { return v.t === n; });
+  }
+  /** "creer, parecer (opinión)" → ["creer", "parecer", "creer, parecer"] */
+  function glossVariants(es) {
+    var clean = es.replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim();
+    var parts = clean.split(/[,;/]| o /).map(function (x) { return x.trim(); }).filter(Boolean);
+    return uniq(parts.concat([clean, es]));
+  }
+  function glossShort(es) { return es.replace(/\s*\([^)]*\)/g, "").split(/[;]/)[0].trim(); }
+  function hasZh(s) { return /[㐀-鿿]/.test(s); }
+  function interleave(a, b) {
+    var out = [], i = 0, j = 0;
+    while (i < a.length || j < b.length) {
+      if (i < a.length) out.push(a[i++]);
+      if (i < a.length && i % 2 === 0) out.push(a[i++]);
+      if (j < b.length) out.push(b[j++]);
+    }
+    return out;
+  }
+  function pickOthers(list, not, n, key) {
+    key = key || function (x) { return x; };
+    var seen = {}; seen[key(not)] = 1;
+    return shuffle(list).filter(function (x) { var k = key(x); if (seen[k]) return false; seen[k] = 1; return true; }).slice(0, n);
+  }
+  /** Opciones barajadas: devuelve {opts, ok} */
+  function mkChoice(right, wrongs) {
+    var opts = shuffle([right].concat(wrongs));
+    return { opts: opts, ok: opts.indexOf(right) };
+  }
+  var FRASE_KINDS = ["order", "zh_es", "es_py", "es_zh", "listen_py", "zh_es", "listen_choice", "order", "es_zh", "es_py", "listen_choice", "zh_es"];
+  function fraseItems(frases, pool, kinds) {
+    kinds = kinds || FRASE_KINDS;
+    var off = Math.floor(Math.random() * kinds.length);
+    return shuffle(frases).map(function (f, i) { return { kind: kinds[(i + off) % kinds.length], f: f, pool: pool }; });
+  }
+  function eligeItems(list) {
+    return shuffle(list).map(function (q) {
+      var c = mkChoice(q.opciones[q.ok], q.opciones.filter(function (_, i) { return i !== q.ok; }));
+      return { kind: "choice", q: q.q.replace(/_{2,}/g, "＿＿"), opts: c.opts, ok: c.ok, exp: q.exp, tag: "Gramática" };
+    });
+  }
+  function pointItems(pid) {
+    var ej = ejPoint(pid); if (!ej) return [];
+    var items = interleave(eligeItems(ej.elige), fraseItems(ej.frases, ej.frases));
+    if (ej.lectura) items.push({ kind: "lectura", lec: ej.lectura });
+    return items;
+  }
+  function allLessonWords() { return Object.keys(D.vocab).map(function (k) { return D.vocab[k]; }); }
+  function vocabItem(k, v, words, n) {
+    var others = words.length >= 4 ? words : allLessonWords();
+    if (k === "sig") {
+      var c = mkChoice(glossShort(v.es[0]), pickOthers(others, v, 3, function (x) { return x.zh; }).map(function (x) { return glossShort(x.es[0]); }).filter(function (g) { return g !== glossShort(v.es[0]); }));
+      return { kind: "choice", tag: "Vocabulario", word: v, promptWord: true, opts: c.opts, ok: c.ok };
+    }
+    if (k === "han" || k === "esc") {
+      var c2 = mkChoice(v.zh, pickOthers(others, v, 3, function (x) { return x.zh; }).map(function (x) { return x.zh; }));
+      return { kind: k === "esc" ? "listen_word" : "choice", tag: "Vocabulario", word: v, q: k === "han" ? "¿Cómo se escribe «" + glossShort(v.es[0]) + "»?" : null, opts: c2.opts, ok: c2.ok, zhOpts: true };
+    }
+    if (k === "py") return { kind: "word_py", w: v };
+    if (k === "es") return { kind: "word_es", w: v };
+    if (k === "espy") return { kind: "espy", w: v };
+    return null;
+  }
+  function ctxItems(n) {
+    var t = EJ[n]; if (!t) return [];
+    var words = lessonWords(n);
+    return shuffle(t.vocab).map(function (s) {
+      var wrongs = pickOthers(words, { zh: s.w }, 5, function (x) { return x.zh; }).map(function (x) { return x.zh; })
+        .filter(function (w) { return s.zh.indexOf(w) < 0; }).slice(0, 3);
+      var c = mkChoice(s.w, wrongs);
+      return { kind: "choice", tag: "Vocabulario en contexto", q: s.zh.replace(s.w, "＿＿"), opts: c.opts, ok: c.ok, zhOpts: true, sent: s };
+    });
+  }
+  function vocabDrill(n, k) {
+    var words = lessonWords(n);
+    if (k === "ctx") return ctxItems(n);
+    if (k === "fr") return EJ[n] ? fraseItems(EJ[n].vocab, EJ[n].vocab, ["zh_es", "es_py", "es_zh", "listen_py", "order", "listen_choice"]) : [];
+    return shuffle(words).map(function (v) { return vocabItem(k, v, words, n); }).filter(Boolean);
+  }
+  function examItems(n) {
+    var items = [];
+    var t = EJ[n]; if (!t) return items;
+    t.puntos.forEach(function (p) {
+      items = items.concat(eligeItems(p.elige).slice(0, 2), fraseItems(p.frases, p.frases).slice(0, 2));
+    });
+    var words = lessonWords(n);
+    shuffle(words).slice(0, 6).forEach(function (v, i) { items.push(vocabItem(["sig", "han", "esc", "py", "es", "espy"][i % 6], v, words, n)); });
+    items = shuffle(items.concat(ctxItems(n).slice(0, 2)));
+    var lec = shuffle(t.puntos.filter(function (p) { return p.lectura; }))[0];
+    if (lec) items.push({ kind: "lectura", lec: lec.lectura });
+    return items;
+  }
+  function ejKeys(n) {
+    var ks = [];
+    var t = EJ[n]; if (!t) return ks;
+    t.puntos.forEach(function (p) { ks.push("E:" + p.id); });
+    VDRILLS.forEach(function (d) { ks.push("E:" + n + ":" + d.k); });
+    ks.push("E:" + n + ":examen");
+    return ks;
+  }
+  function exRowAvg(href, num, title, sub, keys) {
+    var done = keys.filter(function (k) { return best(k) !== undefined; }).length;
+    var a = avg(keys);
+    return h("a", { class: "card ex", href: href },
+      h("div", { class: "num", text: num }),
+      h("div", { class: "t" }, h("b", { text: title }), h("span", { text: sub })),
+      h("span", { class: "score " + (done ? scoreClass(a) : ""), text: done ? a + "%" : "Nuevo" }));
+  }
+
+  function viewEjercicios() {
+    view("ejercicios", h("div", null,
+      pageHead("练习", "Ejercicios", "Una zona de práctica para cada lección: <b>ejercicios de cada punto de gramática</b> (elegir, ordenar, traducir, escuchar y leer), <b>ocho ejercicios de vocabulario</b> con todas las palabras nuevas y un <b>examen de la lección</b> que lo mezcla todo."),
+      h("div", { class: "note", style: "margin-bottom:18px" }, h("b", { text: "Todo el chino se puede tocar. " }),
+        "Toca cualquier hanzi para ver su pinyin, su traducción y escucharlo. En las traducciones de hanzi al español, cada palabra que abras resta un 10 % de esa frase: úsalo solo si lo necesitas."),
+      h("div", { class: "temas" }, D.temas.map(function (t) {
+        var ks = ejKeys(t.n), done = ks.filter(function (k) { return best(k) !== undefined; }).length;
+        return h("a", { class: "tema", href: "#/ejercicios/" + t.n },
+          h("span", { class: "n", text: CN_NUM[t.n] }),
+          h("div", null, h("b", { text: t.es }), h("span", { class: "zh", text: t.zh }),
+            h("span", { class: "ej-prog", text: done ? done + "/" + ks.length + " hechos · " + avg(ks) + "%" : ks.length + " ejercicios" })));
+      }))));
+  }
+
+  function viewEjTema(n) {
+    var t = TEMA[n], e = EJ[n]; if (!t || !e) return viewEjercicios();
+    var words = lessonWords(n);
+    view("ejercicios", h("div", null,
+      backLink("#/ejercicios", "Ejercicios"),
+      pageHead(CN_NUM[n], "Ejercicios · Lección " + n, t.es + ' · <span class="zh">' + t.zh + "</span>"),
+      h("div", { class: "group-h", text: "Gramática · 语法" }),
+      h("div", { class: "grid g3" }, e.puntos.map(function (p) {
+        var g = gramPoint(p.id), cnt = p.elige.length + p.frases.length + (p.lectura ? 1 : 0);
+        return exRow("#/ejercicios/" + n + "/" + p.id, "法", g ? g.titulo : p.id, cnt + " ejercicios · gramática, traducción, listening y lectura", "E:" + p.id);
+      })),
+      h("div", { class: "group-h", text: "Vocabulario · 词语 (" + words.length + " palabras)" }),
+      h("div", { class: "grid g3" }, VDRILLS.map(function (d) {
+        var cnt = d.k === "ctx" || d.k === "fr" ? e.vocab.length + " frases" : words.length + " palabras";
+        return exRow("#/ejercicios/" + n + "/v-" + d.k, d.zh, d.t, d.d + " · " + cnt, "E:" + n + ":" + d.k);
+      })),
+      h("div", { class: "group-h", text: "Examen de la lección · 考试" }),
+      h("div", { class: "grid g3" }, exRow("#/ejercicios/" + n + "/examen", "考", "Examen de la lección " + n, "Gramática, vocabulario, traducción, listening y lectura mezclados", "E:" + n + ":examen"))));
+  }
+
+  function runEj(n, id) {
+    var t = TEMA[n], e = EJ[n]; if (!t || !e) return viewEjercicios();
+    var items, title, key;
+    if (id === "examen") { items = examItems(n); title = "Examen de la lección " + n; key = "E:" + n + ":examen"; }
+    else if (/^v-/.test(id)) {
+      var d = VDRILLS.filter(function (x) { return "v-" + x.k === id; })[0]; if (!d) return viewEjTema(n);
+      items = vocabDrill(n, d.k); title = d.t; key = "E:" + n + ":" + d.k;
+    } else {
+      var g = gramPoint(id); if (!ejPoint(id)) return viewEjTema(n);
+      items = pointItems(id); title = g ? g.titulo : id; key = "E:" + id;
+    }
+    runSession({ items: items, title: title, sub: "Lección " + n + " · " + t.zh, key: key, back: "#/ejercicios/" + n, backTxt: "Lección " + n, next: nextEj(n, id) });
+  }
+  function nextEj(n, id) {
+    var e = EJ[n], list = e.puntos.map(function (p) { return p.id; }).concat(VDRILLS.map(function (d) { return "v-" + d.k; }), ["examen"]);
+    var i = list.indexOf(id);
+    return i >= 0 && i + 1 < list.length ? "#/ejercicios/" + n + "/" + list[i + 1] : (TEMA[n + 1] && EJ[n + 1] ? "#/ejercicios/" + (n + 1) : null);
+  }
+
+  /** Motor común de los ejercicios. o: {items, title, sub, key, back, backTxt, next} */
+  function runSession(o, retry) {
+    var items = o.items.filter(Boolean);
+    if (!items.length) return viewEjercicios();
+    var idx = 0, results = [];
+    var wrap = h("div", { class: "ex-wrap" });
+    view("ejercicios", wrap);
+
+    function head(withDots) {
+      return h("div", { class: "ex-head" }, backLink(o.back, o.backTxt),
+        withDots ? h("div", { class: "dots" }, items.map(function (_, i) { var r = results[i]; return h("i", { class: i === idx ? "cur" : r ? r.level : "" }); })) : null,
+        h("h1", null, o.title, h("span", { class: "h1-sub", text: o.sub })));
+    }
+    function speakBtn(zh, au) {
+      return h("button", { class: "icon-btn", style: "vertical-align:middle", type: "button", "aria-label": "Escuchar", onclick: function () { speakOnce(zh, au); } }, icon("speaker", 16));
+    }
+    function sentenceRows(f, marks, ans, ansCls) {
+      return [
+        h("div", { class: "row" }, h("span", { class: "k", text: "Hanzi" }), h("div", { class: "v zh" }, renderWords(segment(f.zh), "zh"), " ", speakBtn(f.tts || f.zh, f.au))),
+        h("div", { class: "row" }, h("span", { class: "k", text: "Pinyin" }), h("div", { class: "v py" }, marks ? marksView(marks, ignoreTones()) : f.py)),
+        h("div", { class: "row" }, h("span", { class: "k", text: "Español" }), h("div", { class: "v", style: "font-size:17px", text: f.es.slice(0, 3).join("  /  ") })),
+        ans !== undefined ? h("div", { class: "row" }, h("span", { class: "k", text: "Tu respuesta" }), h("div", { class: "v " + (ansCls || ""), style: "font-size:16px", text: ans })) : null
+      ];
+    }
+    function wordRows(v, ans, ansCls) {
+      return [
+        h("div", { class: "row" }, h("span", { class: "k", text: "Palabra" }), h("div", { class: "v zh" }, renderWords(segment(v.zh), "zh"), " ", speakBtn(v.zh, v.au))),
+        h("div", { class: "row" }, h("span", { class: "k", text: "Pinyin" }), h("div", { class: "v py", text: v.py })),
+        h("div", { class: "row" }, h("span", { class: "k", text: "Español" }), h("div", { class: "v", style: "font-size:17px", text: v.es[0] })),
+        ans !== undefined ? h("div", { class: "row" }, h("span", { class: "k", text: "Tu respuesta" }), h("div", { class: "v " + (ansCls || ""), style: "font-size:16px", text: ans })) : null
+      ];
+    }
+
+    function renderItem() {
+      var it = items[idx], checked = false, hinted = false;
+      var helps = helpCounter();
+      var fbBox = h("div"), hintBox = h("div", { class: "muted", style: "min-height:1.4em;margin-top:8px;text-align:center" });
+      var promptEl = h("div"), answerEl = null, getAnswer = null, focusEl = null, player = null, ha = null, hintFn = null;
+      var checkBtn = h("button", { class: "btn", type: "button", onclick: function () { check(); } }, "Comprobar");
+      var nextBtn = h("button", { class: "btn hidden", type: "button", onclick: function () { next(); } }, idx + 1 < items.length ? "Siguiente →" : "Ver resultado");
+      var lbl = KIND_LBL[it.kind] || "";
+      var f = it.f, v = it.w || it.word;
+
+      function done(level, score, extra) {
+        checked = true;
+        results[idx] = { level: level, score: score, it: it, answer: extra && extra.answer };
+        SND.sfx(level);
+        checkBtn.classList.add("hidden"); if (hintBtnEl) hintBtnEl.classList.add("hidden");
+        nextBtn.classList.remove("hidden");
+        helps.lock(); if (ha) ha.lock();
+        setTimeout(function () { nextBtn.focus(); }, 30);
+      }
+      function fb(level, title, rows, allowOverride) {
+        fbBox.innerHTML = "";
+        add(fbBox, h("div", { class: "fb " + level },
+          h("span", { class: "stamp", text: stampText(level) }),
+          h("h4", { text: title }),
+          rows,
+          allowOverride && level !== "ok" ? h("button", { class: "link-btn", type: "button", onclick: function () {
+            results[idx].level = "ok"; results[idx].score = helps.apply(1); SND.sfx("ok"); this.textContent = "Marcada como correcta"; this.disabled = true;
+          } }, "Mi respuesta también es correcta") : null));
+      }
+
+      // ---- opción múltiple (gramática, vocabulario, contexto, escucha)
+      function choiceUI(opts, ok, zhOpts, after) {
+        var res = h("div");
+        var btns = opts.map(function (op, oi) {
+          return h("button", { type: "button", class: "chip g-op" + (zhOpts || hasZh(op) ? " zh-op" : ""), onclick: function () {
+            if (checked) return;
+            var good = oi === ok;
+            btns.forEach(function (b, bi) { b.classList.add(bi === ok ? "g-ok" : bi === oi ? "g-ko" : "g-dim"); });
+            done(good ? "ok" : "ko", good ? 1 : 0, { answer: op });
+            res.className = "res " + (good ? "ok" : "ko");
+            add(res, [h("b", { text: good ? "✓ ¡Bien! " : "✗ La correcta es «" + opts[ok] + "». " })]);
+            if (after) add(res, after(good));
+          } }, zhOpts || hasZh(op) ? h("span", { class: "zh", text: op }) : op);
+        });
+        return h("div", null, h("div", { class: "chips ej-opts" }, btns), res);
+      }
+
+      if (it.kind === "choice" || it.kind === "listen_word") {
+        if (it.promptWord) {
+          lbl = "¿Qué significa esta palabra?";
+          add(promptEl, h("div", { class: "big zh no-zh" }, v.zh));
+        } else if (it.kind === "listen_word") {
+          lbl = "Escucha la palabra y elige su hanzi";
+          player = new Player({ id: v.au, lines: [{ zh: v.zh, v: "f1" }], label: "Palabra", compact: true });
+          add(promptEl, player.el);
+        } else {
+          if (it.tag) lbl = it.tag === "Gramática" ? "Gramática · elige la opción correcta" : it.tag === "Vocabulario en contexto" ? "Completa la frase con la palabra que falta" : "Elige la opción correcta";
+          add(promptEl, h("div", { class: "big" + (hasZh(it.q) && !/[a-záéíóúñ¿]{3}/i.test(it.q) ? " zh" : "") }, it.q));
+        }
+        answerEl = choiceUI(it.opts, it.ok, it.zhOpts, function () {
+          var out = [];
+          if (it.exp) out.push(h("span", { text: it.exp }));
+          if (v) out.push(h("div", { class: "fb-mini" }, h("span", { class: "zh", style: "font-size:22px" }, renderWords(segment(v.zh), "zh")), "  ", h("span", { class: "py", text: v.py }), " · ", v.es[0], " ", speakBtn(v.zh, v.au)));
+          if (it.sent) out.push(h("div", { class: "fb-mini" }, h("div", { class: "zh", style: "font-size:22px" }, renderWords(segment(it.sent.zh), "zh"), " ", speakBtn(it.sent.zh, it.sent.au)),
+            h("div", { class: "py", text: it.sent.py }), h("div", { text: it.sent.es[0] })));
+          return out;
+        });
+        checkBtn.classList.add("hidden");
+      } else if (it.kind === "listen_choice") {
+        player = new Player({ id: f.au, lines: [{ zh: f.tts || f.zh, v: "f1" }], label: "Escucha la frase", compact: true });
+        add(promptEl, player.el);
+        var others = pickOthers(it.pool, f, 3, function (x) { return x.es[0]; }).map(function (x) { return x.es[0]; });
+        var c = mkChoice(f.es[0], others);
+        answerEl = choiceUI(c.opts, c.ok, false, function () { return h("div", { class: "fb-mini" }, h("div", { class: "zh", style: "font-size:22px" }, renderWords(segment(f.zh), "zh")), h("div", { class: "py", text: f.py })); });
+        checkBtn.classList.add("hidden");
+      } else if (it.kind === "order") {
+        add(promptEl, h("div", { class: "big", text: f.es[0] }));
+        var words = tileWords(f.zh), sh = shuffle(words), guard = 0;
+        while (words.length > 1 && sh.join("") === words.join("") && guard++ < 10) sh = shuffle(words);
+        ha = hanziAnswer(sh, [], function () { checked ? next() : check(); });
+        answerEl = ha.el; getAnswer = ha.get;
+        hintFn = function () { add(hintBox, h("span", { class: "zh", style: "font-size:22px;color:var(--ink)", text: words[0] + " …" }), h("div", { style: "font-size:13px", text: "La frase empieza así (con pista cuenta la mitad)" })); };
+      } else if (it.kind === "zh_es") {
+        add(promptEl, h("div", { class: "big zh" }, renderWords(segment(f.zh), "zh", false, { onReveal: helps.reveal })), helps.el);
+        var ta = h("textarea", { class: "inp", placeholder: "Escribe la traducción en español", "aria-label": "Traducción" });
+        ta.addEventListener("keydown", function (ev) { if (ev.key === "Enter" && !ev.shiftKey) { ev.preventDefault(); checked ? next() : check(); } });
+        answerEl = ta; focusEl = ta; getAnswer = function () { return ta.value; };
+        hintFn = function () { add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py })); };
+      } else if (it.kind === "es_py" || it.kind === "espy" || it.kind === "listen_py" || it.kind === "word_py") {
+        if (it.kind === "listen_py") {
+          player = new Player({ id: f.au, lines: [{ zh: f.tts || f.zh, v: "f1" }], label: "Escucha la frase", compact: true });
+          add(promptEl, player.el);
+          hintFn = function () { add(hintBox, h("span", { class: "zh no-zh", style: "font-size:24px;color:var(--ink)", text: f.zh })); };
+        } else if (it.kind === "es_py") {
+          add(promptEl, h("div", { class: "big", text: f.es[0] }));
+          hintFn = function () { add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py.split(/\s+/).map(function (x) { return x.charAt(0) + "…"; }).join(" ") })); };
+        } else if (it.kind === "espy") {
+          add(promptEl, h("div", { class: "big", text: glossShort(v.es[0]) }));
+          hintFn = function () { add(hintBox, h("span", { class: "zh no-zh", style: "font-size:26px;color:var(--ink)", text: v.zh })); };
+        } else {
+          add(promptEl, h("div", { class: "big zh no-zh", style: "font-size:clamp(40px,7vw,60px)" }, v.zh));
+          hintFn = function () { add(hintBox, h("span", { style: "font-size:17px;color:var(--ink)", text: v.es[0] })); };
+        }
+        var pin = pinyinInput({ onEnter: function () { checked ? next() : check(); } });
+        answerEl = pin.el; focusEl = pin.input; getAnswer = function () { return pin.input.value; };
+      } else if (it.kind === "word_es") {
+        add(promptEl, h("div", { class: "big zh no-zh", style: "font-size:clamp(40px,7vw,60px)" }, v.zh), speakBtn(v.zh, v.au));
+        var inp = h("input", { class: "inp", type: "text", autocomplete: "off", placeholder: "Significado en español", "aria-label": "Significado" });
+        inp.addEventListener("keydown", function (ev) { if (ev.key === "Enter") { ev.preventDefault(); checked ? next() : check(); } });
+        answerEl = inp; focusEl = inp; getAnswer = function () { return inp.value; };
+        hintFn = function () { add(hintBox, h("span", { class: "py", style: "font-size:20px;color:var(--ink)", text: v.py })); };
+      } else if (it.kind === "es_zh") {
+        add(promptEl, h("div", { class: "big", text: f.es[0] }));
+        var tw = tileWords(f.zh);
+        var dis = shuffle(uniq([].concat.apply([], it.pool.map(function (o) { return tileWords(o.zh); }))).filter(function (w) { return tw.indexOf(w) < 0; })).slice(0, 3);
+        ha = hanziAnswer(tw, dis, function () { checked ? next() : check(); });
+        answerEl = ha.el; getAnswer = ha.get;
+        hintFn = function () { add(hintBox, h("span", { class: "py", style: "font-size:18px;color:var(--ink)", text: f.py })); };
+      } else if (it.kind === "lectura") {
+        answerEl = lecturaUI(it.lec);
+        checkBtn.classList.add("hidden");
+      }
+
+      function check() {
+        if (checked || !getAnswer) return;
+        var ans = getAnswer();
+        if (!ans.trim()) { if (focusEl) { focusEl.focus(); focusEl.classList.add("shake"); setTimeout(function () { focusEl.classList.remove("shake"); }, 400); } return; }
+        var r, marks = null, rows, cls = "";
+        if (it.kind === "zh_es") { r = C.compareSpanish(ans, f.es); rows = sentenceRows(f, null, ans); }
+        else if (it.kind === "word_es") {
+          r = C.compareSpanish(ans, glossVariants(v.es[0]));
+          if (r.level !== "ok" && C.matchKeywords(ans, glossVariants(v.es[0])).level === "ok") r = { level: "ok", score: 1 };
+          rows = wordRows(v, ans);
+        } else if (it.kind === "es_py" || it.kind === "listen_py") {
+          var best0 = null;
+          [f.py].concat(f.altpy || []).forEach(function (o) { var x = C.comparePinyin(o, ans, ignoreTones()); if (!best0 || x.score > best0.score) best0 = x; });
+          r = best0; marks = r.marks; rows = sentenceRows(f, marks, ans, "py");
+        } else if (it.kind === "word_py" || it.kind === "espy") {
+          r = C.comparePinyin(v.py, ans, ignoreTones()); rows = wordRows(v, ans, "py");
+          rows[1] = h("div", { class: "row" }, h("span", { class: "k", text: "Pinyin" }), h("div", { class: "v py" }, marksView(r.marks, ignoreTones())));
+        } else { r = C.compareHanzi(ans, [f.zh].concat(f.altzh || [])); rows = sentenceRows(f, null, ans, "zh"); }
+        var score = helps.apply(hinted ? Math.min(r.score, 0.5) : r.score);
+        var level = levelOf(score);
+        done(level, score, { answer: ans });
+        if (pin) pin.input.disabled = true;
+        if (answerEl && answerEl.tagName === "TEXTAREA" || answerEl && answerEl.tagName === "INPUT") answerEl.disabled = true;
+        var tt = level === "ok" ? "¡Correcto! 很好！" : level === "mid" ? (r.lettersOk ? "Las sílabas están bien, revisa los tonos." : "¡Casi! Compara con la respuesta.") : "No es correcto. Mira la respuesta.";
+        fb(level, tt + (hinted ? " (con pista)" : "") + helps.note(), rows, it.kind === "zh_es" || it.kind === "word_es" || it.kind === "es_zh" || it.kind === "order");
+      }
+      function next() { if (player) player.stop(); stopAll(); idx++; if (idx < items.length) renderItem(); else finish(); }
+
+      var hintBtnEl = hintFn ? h("button", { class: "btn soft sm", type: "button", onclick: function () {
+        if (checked || hinted) return; hinted = true; hintBox.innerHTML = ""; hintFn();
+        add(hintBox, h("div", { style: "font-size:13px", text: "(con pista, la respuesta cuenta como media)" }));
+      } }, icon("bulb", 16), "Pista") : null;
+
+      wrap.innerHTML = "";
+      add(wrap, [head(true),
+        h("div", { class: "card q-card" + (it.kind === "lectura" ? " reading" : "") },
+          h("div", { class: "prompt" }, h("div", { class: "lbl", text: (it.tag && it.kind === "choice" ? "" : "") + lbl }), promptEl, hintBox),
+          answerEl,
+          h("div", { class: "btn-row", style: "margin-top:16px" }, checkBtn, hintBtnEl, nextBtn),
+          fbBox)]);
+      if (focusEl) focusEl.focus();
+      if (player) setTimeout(function () { player.play(true); }, 250);
+
+      // ---- lectura con 3 preguntas
+      function lecturaUI(lec) {
+        var ruby = false, body = h("div", { class: "text-body lv2" });
+        var paras = lec.zh.split(/\n+/);
+        function paint() { body.innerHTML = ""; paras.forEach(function (p) { add(body, h("p", null, renderWords(segment(p), "zh", ruby))); }); }
+        paint();
+        var lp = new Player({ id: lec.au, label: "Texto", compact: true, lines: (lec.zh.match(/[^。！？]+[。！？]?/g) || [lec.zh]).map(function (x) { return { zh: x, v: "f2" }; }) });
+        player = null;
+        var answered = 0, good = 0, trBox = h("div", { class: "hidden" });
+        var qs = lec.preguntas.map(function (q, qi) {
+          var c = mkChoice(q.opciones[q.ok], q.opciones.filter(function (_, i) { return i !== q.ok; }));
+          var res = h("div"), card, dn = false;
+          var btns = c.opts.map(function (op, oi) {
+            return h("button", { type: "button", class: "chip g-op" + (hasZh(op) ? " zh-op" : ""), onclick: function () {
+              if (dn) return; dn = true;
+              var ok = oi === c.ok; answered++; if (ok) good++;
+              btns.forEach(function (b, bi) { b.classList.add(bi === c.ok ? "g-ok" : bi === oi ? "g-ko" : "g-dim"); });
+              SND.sfx(ok ? "ok" : "ko");
+              res.className = "res " + (ok ? "ok" : "ko");
+              add(res, h("b", { text: ok ? "✓ ¡Bien!" : "✗ La correcta es «" + c.opts[c.ok] + "»." }));
+              if (answered === lec.preguntas.length) {
+                var sc = good / answered;
+                trBox.classList.remove("hidden");
+                done(levelOf(sc === 1 ? 1 : sc >= 0.5 ? 0.5 : 0), sc, { answer: good + "/" + answered });
+              }
+            } }, hasZh(op) ? h("span", { class: "zh", text: op }) : op);
+          });
+          card = h("div", { class: "card qq" }, h("div", { class: "qh" }, h("span", { class: "qn", text: qi + 1 }), h("div", { class: "qt" }, q.q)),
+            h("div", { class: "chips", style: "margin-top:12px" }, btns), res);
+          return card;
+        });
+        add(trBox, h("div", { class: "fb-mini", style: "margin-top:14px" }, h("div", { class: "py", style: "margin-bottom:6px", text: lec.py }), h("div", { text: lec.es })));
+        return h("div", null,
+          h("h2", { style: "margin:0 0 8px;font-size:21px", text: lec.titulo }),
+          h("label", { class: "toggle", style: "margin-bottom:10px" }, h("input", { type: "checkbox", onchange: function (ev) { ruby = ev.target.checked; paint(); } }), "Mostrar el pinyin encima de los hanzi"),
+          body, lp.el, trBox,
+          h("div", { class: "qs", style: "margin-top:16px" }, qs));
+      }
+    }
+
+    function finish() {
+      var total = results.reduce(function (s, r) { return s + (r ? r.score : 0); }, 0);
+      var p = pct(total / items.length);
+      if (!retry) saveResult(o.key, p);
+      resultSound(p);
+      if (p >= 80) burst();
+      var wrong = results.map(function (r, i) { return r && r.level !== "ok" ? items[i] : null; }).filter(Boolean);
+      wrap.innerHTML = "";
+      add(wrap, [head(false),
+        h("div", { class: "card result" },
+          h("div", { class: "big-stamp", text: resultStamp(p) }),
+          h("div", { class: "pct", text: p + "%" }),
+          h("div", { class: "sub", text: resultMsg(p) }),
+          h("div", { class: "btn-row", style: "justify-content:center;margin-top:18px" },
+            wrong.length ? h("button", { class: "btn", type: "button", onclick: function () { runSession(Object.assign({}, o, { items: wrong }), true); } }, "Repetir los " + wrong.length + " fallos") : null,
+            h("button", { class: "btn ghost", type: "button", onclick: function () { route(); } }, "Empezar de nuevo"),
+            o.next ? h("a", { class: "btn soft", href: o.next }, "Siguiente ejercicio →") : null),
+          h("div", { class: "review" }, results.map(function (r) {
+            if (!r) return null;
+            var it = r.it, f = it.f || it.sent, v = it.w || it.word;
+            var main = f ? [h("div", { class: "zh", text: f.zh }), h("div", { class: "py", text: f.py }), h("div", { class: "muted", style: "font-size:14px", text: f.es[0] })]
+              : v ? [h("div", { class: "zh", text: v.zh }), h("div", { class: "py", text: v.py }), h("div", { class: "muted", style: "font-size:14px", text: v.es[0] })]
+              : it.lec ? [h("div", { style: "font-weight:700", text: "Lectura: " + it.lec.titulo })]
+              : [h("div", { text: it.q }), h("div", { class: "muted", style: "font-size:14px", text: "Respuesta: " + it.opts[it.ok] })];
+            return h("div", { class: "it" }, h("span", { class: "m " + r.level, text: r.level === "ok" ? "✓" : r.level === "mid" ? "~" : "✗" }),
+              h("div", null, main, r.level !== "ok" && r.answer ? h("div", { class: "muted", style: "font-size:14px", text: "Tú: " + r.answer }) : null));
+          })))]);
+    }
+    renderItem();
   }
 
   // --------------------------------------------------------- cómo escribir
@@ -1432,7 +1975,7 @@
   function route() {
     var parts = (location.hash.replace(/^#\/?/, "") || "").split("/");
     var r = parts[0];
-    var exercise = (/^(dictado|listening|lectura|gramatica)$/.test(r) && parts[1]) || (r === "traduccion" && parts[1] !== undefined && parts[2]);
+    var exercise = (/^(dictado|listening|lectura|gramatica)$/.test(r) && parts[1]) || (/^(traduccion|ejercicios)$/.test(r) && parts[1] !== undefined && parts[2]);
     SND.setMode(exercise ? "exercise" : "menu");
     if (r === "temas" || location.hash === "#temas") { viewHome(); var el = document.getElementById("temas"); if (el) el.scrollIntoView(); return; }
     if (r === "dictado") return parts[1] ? runDictado(parts[1]) : viewDictados();
@@ -1444,6 +1987,7 @@
     if (r === "ajustes") return viewAjustes();
     if (r === "teclado") return viewTeclado();
     if (r === "gramatica") return parts[1] ? runGramatica(+parts[1], parts[2]) : viewGramatica();
+    if (r === "ejercicios") return parts[2] ? runEj(+parts[1], parts[2]) : parts[1] ? viewEjTema(+parts[1]) : viewEjercicios();
     viewHome();
   }
   window.addEventListener("hashchange", route);

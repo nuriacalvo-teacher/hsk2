@@ -1,0 +1,2660 @@
+[
+ {
+  "tema": 13,
+  "puntos": [
+   {
+    "id": "G13-1",
+    "elige": [
+     {
+      "q": "门开___呢，请进！",
+      "opciones": [
+       "过",
+       "着",
+       "完"
+      ],
+      "ok": 1,
+      "exp": "Verbo + 着 indica un estado que se mantiene: «La puerta está abierta, ¡pasa!»."
+     },
+     {
+      "q": "¿Qué frase está bien?",
+      "opciones": [
+       "他穿一件着红色的衣服。",
+       "他着穿一件红色的衣服。",
+       "他穿着一件红色的衣服。"
+      ],
+      "ok": 2,
+      "exp": "着 va justo detrás del verbo y antes del objeto: 穿着 + ropa. «Lleva una prenda roja»."
+     },
+     {
+      "q": "Elige la negación correcta de 电视开着：",
+      "opciones": [
+       "电视不开着。",
+       "电视开没着。",
+       "电视没开着。"
+      ],
+      "ok": 2,
+      "exp": "El estado con 着 se niega con 没 delante del verbo: 电视没开着 «La tele no está encendida»."
+     },
+     {
+      "q": "¿Qué significa 妹妹手里拿着一个苹果？",
+      "opciones": [
+       "Mi hermana pequeña está comprando una manzana.",
+       "Mi hermana pequeña lleva una manzana en la mano.",
+       "Mi hermana pequeña se ha comido una manzana."
+      ],
+      "ok": 1,
+      "exp": "拿着 = tener cogido, llevar en la mano: «Mi hermana pequeña lleva una manzana en la mano»."
+     },
+     {
+      "q": "¿Cómo se dice «La tele está encendida»?",
+      "opciones": [
+       "电视开着呢。",
+       "电视开过了。",
+       "电视快要开了。"
+      ],
+      "ok": 0,
+      "exp": "开着(呢) = está encendida y sigue así. 开过 = se ha encendido alguna vez; 快要开了 = está a punto de encenderse."
+     },
+     {
+      "q": "他___着黑色的衣服，很好看。",
+      "opciones": [
+       "笑",
+       "回答",
+       "穿"
+      ],
+      "ok": 2,
+      "exp": "穿着 + ropa = llevar puesto: «Lleva ropa negra y le queda muy bien»."
+     },
+     {
+      "q": "你手里拿___什么？",
+      "opciones": [
+       "着",
+       "得",
+       "完"
+      ],
+      "ok": 0,
+      "exp": "拿着 = tener en la mano: «¿Qué llevas en la mano?»."
+     },
+     {
+      "q": "¿Qué frase tiene un error?",
+      "opciones": [
+       "门开着呢。",
+       "门不开着。",
+       "电视没开着。"
+      ],
+      "ok": 1,
+      "exp": "着 no se niega con 不 sino con 没: 门没开着 «La puerta no está abierta»."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "门开着呢，请进！",
+      "py": "Mén kāi zhe ne, qǐng jìn!",
+      "es": [
+       "La puerta está abierta, ¡pasa!",
+       "La puerta está abierta, ¡adelante!",
+       "La puerta está abierta, pase.",
+       "La puerta está abierta, entra.",
+       "Está abierta la puerta, ¡pasa!",
+       "La puerta está abierta, ¡entre!"
+      ],
+      "altzh": [
+       "门开着，请进！"
+      ],
+      "altpy": [
+       "Mén kāi zhe, qǐng jìn!"
+      ]
+     },
+     {
+      "zh": "电视开着呢。",
+      "py": "Diànshì kāi zhe ne.",
+      "es": [
+       "La tele está encendida.",
+       "La televisión está encendida.",
+       "La tele está puesta.",
+       "La televisión está puesta.",
+       "La tele sigue encendida."
+      ],
+      "altzh": [
+       "电视开着。"
+      ],
+      "altpy": [
+       "Diànshì kāi zhe."
+      ]
+     },
+     {
+      "zh": "他手里拿着铅笔。",
+      "py": "Tā shǒu lǐ ná zhe qiānbǐ.",
+      "es": [
+       "Tiene un lápiz en la mano.",
+       "Lleva un lápiz en la mano.",
+       "Él tiene un lápiz en la mano.",
+       "Él lleva un lápiz en la mano.",
+       "Sostiene un lápiz en la mano."
+      ]
+     },
+     {
+      "zh": "妹妹穿着红色的衣服。",
+      "py": "Mèimei chuān zhe hóngsè de yīfu.",
+      "es": [
+       "Mi hermana pequeña lleva ropa roja.",
+       "Mi hermana pequeña va vestida de rojo.",
+       "Mi hermana menor lleva ropa roja.",
+       "Mi hermana menor va vestida de rojo.",
+       "Mi hermanita lleva ropa roja."
+      ]
+     },
+     {
+      "zh": "门没开着，他可能出去了。",
+      "py": "Mén méi kāi zhe, tā kěnéng chūqu le.",
+      "es": [
+       "La puerta no está abierta; puede que haya salido.",
+       "La puerta no está abierta, quizá haya salido.",
+       "La puerta está cerrada; a lo mejor ha salido.",
+       "La puerta no está abierta, puede que él haya salido.",
+       "La puerta está cerrada, puede que haya salido."
+      ]
+     },
+     {
+      "zh": "你手里拿着什么？",
+      "py": "Nǐ shǒu lǐ ná zhe shénme?",
+      "es": [
+       "¿Qué llevas en la mano?",
+       "¿Qué tienes en la mano?",
+       "¿Qué es lo que llevas en la mano?",
+       "¿Qué sostienes en la mano?",
+       "¿Qué tiene usted en la mano?"
+      ]
+     },
+     {
+      "zh": "教室的门开着呢。",
+      "py": "Jiàoshì de mén kāi zhe ne.",
+      "es": [
+       "La puerta del aula está abierta.",
+       "La puerta de la clase está abierta.",
+       "La puerta del aula sigue abierta.",
+       "Está abierta la puerta del aula.",
+       "La puerta del salón de clase está abierta."
+      ],
+      "altzh": [
+       "教室的门开着。"
+      ],
+      "altpy": [
+       "Jiàoshì de mén kāi zhe."
+      ]
+     },
+     {
+      "zh": "她穿着一件白色的衣服。",
+      "py": "Tā chuān zhe yí jiàn báisè de yīfu.",
+      "es": [
+       "Lleva una prenda blanca.",
+       "Va vestida de blanco.",
+       "Ella lleva ropa blanca.",
+       "Ella va vestida de blanco.",
+       "Lleva puesta una prenda blanca."
+      ]
+     },
+     {
+      "zh": "他们在外面等着你呢。",
+      "py": "Tāmen zài wàimiàn děng zhe nǐ ne.",
+      "es": [
+       "Te están esperando fuera.",
+       "Ellos te están esperando fuera.",
+       "Te esperan fuera.",
+       "Están esperándote fuera.",
+       "Te están esperando afuera."
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "Mi hermana en casa",
+     "zh": "我回家的时候，门开着呢。妹妹坐在椅子上，手里拿着铅笔写作业。电视也开着呢。她穿着红色的衣服，笑着说：“你回来了！”",
+     "py": "Wǒ huí jiā de shíhou, mén kāi zhe ne. Mèimei zuò zài yǐzi shang, shǒu lǐ ná zhe qiānbǐ xiě zuòyè. Diànshì yě kāi zhe ne. Tā chuān zhe hóngsè de yīfu, xiào zhe shuō: “Nǐ huílai le!”",
+     "es": "Cuando volví a casa, la puerta estaba abierta. Mi hermana pequeña estaba sentada en una silla haciendo los deberes con un lápiz en la mano. La tele también estaba encendida. Llevaba ropa roja y me dijo sonriendo: «¡Ya has vuelto!».",
+     "preguntas": [
+      {
+       "q": "¿Cómo estaba la puerta?",
+       "opciones": [
+        "Cerrada",
+        "Abierta",
+        "Rota"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "妹妹手里拿着什么？",
+       "opciones": [
+        "苹果",
+        "手机",
+        "铅笔"
+       ],
+       "ok": 2
+      },
+      {
+       "q": "¿De qué color era la ropa de la hermana?",
+       "opciones": [
+        "Roja",
+        "Negra",
+        "Blanca"
+       ],
+       "ok": 0
+      }
+     ]
+    }
+   },
+   {
+    "id": "G13-2",
+    "elige": [
+     {
+      "q": "老师笑___回答了我的问题。",
+      "opciones": [
+       "了",
+       "着",
+       "过"
+      ],
+      "ok": 1,
+      "exp": "V1 着 + V2: la primera acción dice cómo se hace la segunda. «El profesor respondió a mi pregunta sonriendo»."
+     },
+     {
+      "q": "Elige el orden correcto:",
+      "opciones": [
+       "我们坐着说吧。",
+       "我们说吧坐着。",
+       "我们着坐说吧。"
+      ],
+      "ok": 0,
+      "exp": "V1 着 va delante de V2: 坐着说 «Hablemos sentados»."
+     },
+     {
+      "q": "¿Qué significa 他拿着手机出去了？",
+      "opciones": [
+       "Salió a comprar un móvil.",
+       "Salió sin el móvil.",
+       "Salió con el móvil en la mano."
+      ],
+      "ok": 2,
+      "exp": "拿着手机 describe cómo salió: «Salió con el móvil en la mano»."
+     },
+     {
+      "q": "¿Cómo se dice «No comas viendo la tele»?",
+      "opciones": [
+       "别吃饭看着电视。",
+       "别看着电视吃饭。",
+       "别看电视着吃饭。"
+      ],
+      "ok": 1,
+      "exp": "Primero la manera (看着电视) y luego la acción principal (吃饭): 别看着电视吃饭."
+     },
+     {
+      "q": "我们走___去吧，不远。",
+      "opciones": [
+       "着",
+       "过",
+       "得"
+      ],
+      "ok": 0,
+      "exp": "走着去 = ir andando: «Vamos andando, no está lejos»."
+     },
+     {
+      "q": "En 妹妹听着歌写作业, ¿cuál es la acción principal?",
+      "opciones": [
+       "听歌",
+       "写作业",
+       "都不是"
+      ],
+      "ok": 1,
+      "exp": "La acción principal es V2 (写作业); 听着歌 es cómo la hace: «Mi hermana hace los deberes escuchando música»."
+     },
+     {
+      "q": "Elige la frase correcta:",
+      "opciones": [
+       "她说着笑：“欢迎！”",
+       "她笑说着：“欢迎！”",
+       "她笑着说：“欢迎！”"
+      ],
+      "ok": 2,
+      "exp": "笑着说 = decir sonriendo: «Dijo sonriendo: ¡Bienvenido!»."
+     },
+     {
+      "q": "¿Qué significa 我们坐着等吧？",
+      "opciones": [
+       "Esperemos sentados.",
+       "Sentémonos después de esperar.",
+       "Esperemos de pie."
+      ],
+      "ok": 0,
+      "exp": "坐着等 = esperar sentado: «Esperemos sentados»."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "老师笑着回答了我的问题。",
+      "py": "Lǎoshī xiào zhe huídá le wǒ de wèntí.",
+      "es": [
+       "El profesor respondió a mi pregunta sonriendo.",
+       "La profesora respondió a mi pregunta sonriendo.",
+       "El profesor contestó a mi pregunta con una sonrisa.",
+       "La profesora contestó mi pregunta sonriendo.",
+       "El profesor respondió sonriendo a mi pregunta.",
+       "La profesora me contestó a la pregunta sonriendo."
+      ]
+     },
+     {
+      "zh": "我们坐着说吧。",
+      "py": "Wǒmen zuò zhe shuō ba.",
+      "es": [
+       "Hablemos sentados.",
+       "Sentémonos a hablar.",
+       "Vamos a hablar sentados.",
+       "Mejor hablamos sentados.",
+       "Hablemos sentados, ¿vale?"
+      ]
+     },
+     {
+      "zh": "别看着电视吃饭。",
+      "py": "Bié kàn zhe diànshì chī fàn.",
+      "es": [
+       "No comas viendo la tele.",
+       "No comas mirando la tele.",
+       "No comas viendo la televisión.",
+       "No comáis viendo la tele.",
+       "No coma viendo la televisión."
+      ]
+     },
+     {
+      "zh": "他拿着手机出去了。",
+      "py": "Tā ná zhe shǒujī chūqu le.",
+      "es": [
+       "Salió con el móvil en la mano.",
+       "Ha salido con el móvil en la mano.",
+       "Salió con el celular en la mano.",
+       "Salió con el teléfono en la mano.",
+       "Él ha salido con el móvil en la mano."
+      ]
+     },
+     {
+      "zh": "妹妹喜欢听着歌写作业。",
+      "py": "Mèimei xǐhuan tīng zhe gē xiě zuòyè.",
+      "es": [
+       "A mi hermana pequeña le gusta hacer los deberes escuchando música.",
+       "A mi hermana menor le gusta hacer los deberes oyendo canciones.",
+       "A mi hermana pequeña le gusta hacer la tarea escuchando canciones.",
+       "A mi hermanita le gusta hacer los deberes escuchando música.",
+       "A mi hermana menor le gusta hacer la tarea escuchando música."
+      ]
+     },
+     {
+      "zh": "我们走着去吧。",
+      "py": "Wǒmen zǒu zhe qù ba.",
+      "es": [
+       "Vamos andando.",
+       "Vamos a pie.",
+       "Vayamos andando.",
+       "Vamos caminando.",
+       "Vayamos a pie."
+      ]
+     },
+     {
+      "zh": "她笑着说：“欢迎你！”",
+      "py": "Tā xiào zhe shuō: “Huānyíng nǐ!”",
+      "es": [
+       "Dijo sonriendo: «¡Bienvenido!».",
+       "Ella dijo sonriendo: «¡Bienvenido!».",
+       "Dijo con una sonrisa: «¡Bienvenido!».",
+       "Dijo sonriendo: «¡Bienvenida!».",
+       "Sonriendo, dijo: «¡Bienvenido!».",
+       "Ella dijo sonriendo: «¡Te doy la bienvenida!»."
+      ]
+     },
+     {
+      "zh": "爸爸喜欢喝着咖啡看报纸。",
+      "py": "Bàba xǐhuan hē zhe kāfēi kàn bàozhǐ.",
+      "es": [
+       "A mi padre le gusta leer el periódico tomando café.",
+       "A mi padre le gusta leer el periódico mientras toma café.",
+       "A papá le gusta leer el periódico tomando café.",
+       "A mi padre le gusta leer el periódico bebiendo café.",
+       "A mi papá le gusta leer el diario tomando café."
+      ]
+     },
+     {
+      "zh": "孩子们笑着跑出去了。",
+      "py": "Háizimen xiào zhe pǎo chūqu le.",
+      "es": [
+       "Los niños salieron corriendo entre risas.",
+       "Los niños salieron corriendo y riendo.",
+       "Los niños se fueron corriendo, riéndose.",
+       "Los niños han salido corriendo y riéndose.",
+       "Los chicos salieron corriendo y riendo."
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "Una mañana en clase",
+     "zh": "今天早上，王老师笑着走进教室。她拿着一本书说：“我们今天坐着听，不写字。”学生们都很高兴。杨笑笑想了想，笑着回答了老师的问题。",
+     "py": "Jīntiān zǎoshang, Wáng lǎoshī xiào zhe zǒu jìn jiàoshì. Tā ná zhe yì běn shū shuō: “Wǒmen jīntiān zuò zhe tīng, bù xiě zì.” Xuéshengmen dōu hěn gāoxìng. Yáng Xiàoxiao xiǎng le xiǎng, xiào zhe huídá le lǎoshī de wèntí.",
+     "es": "Esta mañana, la profesora Wang entró en el aula sonriendo. Con un libro en la mano, dijo: «Hoy escuchamos sentados, no escribimos». Todos los alumnos se pusieron muy contentos. Yang Xiaoxiao lo pensó un momento y respondió sonriendo a la pregunta de la profesora.",
+     "preguntas": [
+      {
+       "q": "¿Cómo entró la profesora en el aula?",
+       "opciones": [
+        "Corriendo",
+        "Sonriendo",
+        "Cantando"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "老师手里拿着什么？",
+       "opciones": [
+        "一本书",
+        "一个手机",
+        "一杯茶"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "杨笑笑怎么回答了问题？",
+       "opciones": [
+        "看着书",
+        "听着歌",
+        "笑着"
+       ],
+       "ok": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "G13-3",
+    "elige": [
+     {
+      "q": "从这儿一直___前走，到了路口再往右走。",
+      "opciones": [
+       "在",
+       "离",
+       "往"
+      ],
+      "ok": 2,
+      "exp": "往 + dirección = hacia…: «Desde aquí sigue todo recto y, en el cruce, gira a la derecha»."
+     },
+     {
+      "q": "Elige el orden correcto:",
+      "opciones": [
+       "你走往左。",
+       "你往左走。",
+       "往你左走。"
+      ],
+      "ok": 1,
+      "exp": "往 + dirección va delante del verbo: 你往左走 «Ve a la izquierda»."
+     },
+     {
+      "q": "¿Qué significa 一直往前走？",
+      "opciones": [
+       "Siga todo recto.",
+       "Gire a la izquierda.",
+       "Espere en el cruce."
+      ],
+      "ok": 0,
+      "exp": "一直 = todo recto, sin parar; 往前走 = ir hacia delante: «Siga todo recto»."
+     },
+     {
+      "q": "¿Cómo se dice «Al llegar al cruce, gira a la izquierda»?",
+      "opciones": [
+       "到了路口再往右走。",
+       "往左走再到了路口。",
+       "到了路口再往左走。"
+      ],
+      "ok": 2,
+      "exp": "到了 + lugar + 再 + 往左走. 左 = izquierda, 右 = derecha."
+     },
+     {
+      "q": "宾馆___路口的右边。",
+      "opciones": [
+       "在",
+       "往",
+       "从"
+      ],
+      "ok": 0,
+      "exp": "Para decir dónde está algo se usa 在, no 往: «El hotel está a la derecha del cruce»."
+     },
+     {
+      "q": "请问，去新京宾馆___走？",
+      "opciones": [
+       "什么",
+       "怎么",
+       "哪"
+      ],
+      "ok": 1,
+      "exp": "怎么走 = cómo se va: «Perdone, ¿cómo se va al hotel Xinjing?»."
+     },
+     {
+      "q": "往前走五分钟___到了。",
+      "opciones": [
+       "就",
+       "都",
+       "还"
+      ],
+      "ok": 0,
+      "exp": "就 = ya, enseguida: «Sigue cinco minutos hacia delante y ya llegas»."
+     },
+     {
+      "q": "¿Qué frase tiene un error?",
+      "opciones": [
+       "从这儿往前走。",
+       "你走往前。",
+       "到了路口往右走。"
+      ],
+      "ok": 1,
+      "exp": "往 va siempre delante del verbo: ✗走往前 → 往前走 «ve hacia delante»."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "去宾馆怎么走？",
+      "py": "Qù bīnguǎn zěnme zǒu?",
+      "es": [
+       "¿Cómo se va al hotel?",
+       "¿Cómo voy al hotel?",
+       "¿Por dónde se va al hotel?",
+       "¿Cómo llego al hotel?",
+       "¿Cómo se llega al hotel?"
+      ]
+     },
+     {
+      "zh": "从这儿一直往前走。",
+      "py": "Cóng zhèr yìzhí wǎng qián zǒu.",
+      "es": [
+       "Desde aquí sigue todo recto.",
+       "Desde aquí siga todo recto.",
+       "Desde aquí ve todo recto.",
+       "Siga recto desde aquí.",
+       "Sigue todo recto desde aquí.",
+       "Desde aquí vaya todo derecho."
+      ]
+     },
+     {
+      "zh": "到了路口再往右走。",
+      "py": "Dào le lùkǒu zài wǎng yòu zǒu.",
+      "es": [
+       "Al llegar al cruce, gira a la derecha.",
+       "Al llegar al cruce, gire a la derecha.",
+       "Cuando llegues al cruce, gira a la derecha.",
+       "En el cruce, tuerce a la derecha.",
+       "Cuando llegue al cruce, gire a la derecha.",
+       "Al llegar a la intersección, gira a la derecha."
+      ],
+      "altzh": [
+       "到路口再往右走。"
+      ],
+      "altpy": [
+       "Dào lùkǒu zài wǎng yòu zǒu."
+      ]
+     },
+     {
+      "zh": "往前走五分钟就到了。",
+      "py": "Wǎng qián zǒu wǔ fēnzhōng jiù dào le.",
+      "es": [
+       "Sigue adelante cinco minutos y ya llegas.",
+       "Siga cinco minutos hacia delante y ya está.",
+       "Camina cinco minutos hacia delante y ya llegas.",
+       "Siga adelante cinco minutos y ya habrá llegado.",
+       "Andando cinco minutos hacia delante, ya estás."
+      ]
+     },
+     {
+      "zh": "宾馆就在路口的左边。",
+      "py": "Bīnguǎn jiù zài lùkǒu de zuǒbian.",
+      "es": [
+       "El hotel está justo a la izquierda del cruce.",
+       "El hotel está a la izquierda del cruce.",
+       "El hotel queda justo a la izquierda del cruce.",
+       "El hotel está justo en el lado izquierdo del cruce.",
+       "El hotel está justo a mano izquierda del cruce."
+      ]
+     },
+     {
+      "zh": "到了医院再往左走。",
+      "py": "Dào le yīyuàn zài wǎng zuǒ zǒu.",
+      "es": [
+       "Al llegar al hospital, gira a la izquierda.",
+       "Al llegar al hospital, gire a la izquierda.",
+       "Cuando llegues al hospital, gira a la izquierda.",
+       "En el hospital, tuerce a la izquierda.",
+       "Cuando llegue al hospital, gire a la izquierda."
+      ],
+      "altzh": [
+       "到医院再往左走。"
+      ],
+      "altpy": [
+       "Dào yīyuàn zài wǎng zuǒ zǒu."
+      ]
+     },
+     {
+      "zh": "一直往前走就是学校。",
+      "py": "Yìzhí wǎng qián zǒu jiù shì xuéxiào.",
+      "es": [
+       "Sigue todo recto y ahí está el colegio.",
+       "Siga todo recto y ahí está la escuela.",
+       "Todo recto está el colegio.",
+       "Yendo todo recto está la escuela.",
+       "Si sigues todo recto, ahí mismo está el colegio."
+      ]
+     },
+     {
+      "zh": "从宾馆出去往右走。",
+      "py": "Cóng bīnguǎn chūqu wǎng yòu zǒu.",
+      "es": [
+       "Sal del hotel y gira a la derecha.",
+       "Al salir del hotel, gira a la derecha.",
+       "Sal del hotel y ve a la derecha.",
+       "Al salir del hotel, ve hacia la derecha.",
+       "Salga del hotel y gire a la derecha."
+      ]
+     },
+     {
+      "zh": "请问，商店往哪儿走？",
+      "py": "Qǐngwèn, shāngdiàn wǎng nǎr zǒu?",
+      "es": [
+       "Perdone, ¿por dónde se va a la tienda?",
+       "Perdona, ¿por dónde se va a la tienda?",
+       "Disculpe, ¿hacia dónde queda la tienda?",
+       "Por favor, ¿hacia dónde se va a la tienda?",
+       "Disculpa, ¿para dónde queda la tienda?"
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "¿Cómo se va al hotel?",
+     "zh": "我是来北京旅游的。我问一个学生：“去新京宾馆怎么走？”他说：“从这儿一直往前走，到了路口再往左走，走五分钟就到了。宾馆就在医院的右边。”",
+     "py": "Wǒ shì lái Běijīng lǚyóu de. Wǒ wèn yí ge xuésheng: “Qù Xīnjīng Bīnguǎn zěnme zǒu?” Tā shuō: “Cóng zhèr yìzhí wǎng qián zǒu, dào le lùkǒu zài wǎng zuǒ zǒu, zǒu wǔ fēnzhōng jiù dào le. Bīnguǎn jiù zài yīyuàn de yòubian.”",
+     "es": "He venido a Pekín de viaje. Le pregunté a un estudiante: «¿Cómo se va al hotel Xinjing?». Me dijo: «Desde aquí sigue todo recto; al llegar al cruce, gira a la izquierda y en cinco minutos ya estás. El hotel está justo a la derecha del hospital».",
+     "preguntas": [
+      {
+       "q": "¿Hacia dónde hay que girar en el cruce?",
+       "opciones": [
+        "A la derecha",
+        "A la izquierda",
+        "Hay que volver atrás"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "宾馆在哪儿？",
+       "opciones": [
+        "医院的右边",
+        "医院的左边",
+        "学校的前面"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "¿Cuánto hay que andar después del cruce?",
+       "opciones": [
+        "Una hora",
+        "Diez minutos",
+        "Cinco minutos"
+       ],
+       "ok": 2
+      }
+     ]
+    }
+   }
+  ],
+  "vocab": [
+   {
+    "w": "着",
+    "zh": "门开着呢。",
+    "py": "Mén kāi zhe ne.",
+    "es": [
+     "La puerta está abierta.",
+     "La puerta sigue abierta.",
+     "Está abierta la puerta.",
+     "La puerta está abierta ahora."
+    ]
+   },
+   {
+    "w": "手",
+    "zh": "你的手很冷。",
+    "py": "Nǐ de shǒu hěn lěng.",
+    "es": [
+     "Tienes las manos muy frías.",
+     "Tu mano está muy fría.",
+     "Tus manos están muy frías.",
+     "Tienes la mano muy fría."
+    ]
+   },
+   {
+    "w": "拿",
+    "zh": "我去拿手机。",
+    "py": "Wǒ qù ná shǒujī.",
+    "es": [
+     "Voy a por el móvil.",
+     "Voy a coger el móvil.",
+     "Voy a buscar el móvil.",
+     "Voy a traer el móvil.",
+     "Voy por el celular."
+    ]
+   },
+   {
+    "w": "铅笔",
+    "zh": "我没有铅笔。",
+    "py": "Wǒ méiyǒu qiānbǐ.",
+    "es": [
+     "No tengo lápiz.",
+     "No tengo lápices.",
+     "Yo no tengo lápiz.",
+     "No tengo ningún lápiz."
+    ]
+   },
+   {
+    "w": "笑",
+    "zh": "她很爱笑。",
+    "py": "Tā hěn ài xiào.",
+    "es": [
+     "Se ríe mucho.",
+     "Es muy risueña.",
+     "Le encanta reírse.",
+     "Ella sonríe mucho.",
+     "Ella es muy risueña."
+    ]
+   },
+   {
+    "w": "往",
+    "zh": "往右走。",
+    "py": "Wǎng yòu zǒu.",
+    "es": [
+     "Gira a la derecha.",
+     "Ve a la derecha.",
+     "Gire a la derecha.",
+     "Vaya hacia la derecha.",
+     "Camina hacia la derecha."
+    ]
+   },
+   {
+    "w": "路口",
+    "zh": "在前面的路口往左走。",
+    "py": "Zài qiánmiàn de lùkǒu wǎng zuǒ zǒu.",
+    "es": [
+     "En el cruce de delante, gira a la izquierda.",
+     "En el próximo cruce, gira a la izquierda.",
+     "Gira a la izquierda en el siguiente cruce.",
+     "En el cruce de ahí delante, gire a la izquierda."
+    ]
+   },
+   {
+    "w": "宾馆",
+    "zh": "这个宾馆很便宜。",
+    "py": "Zhège bīnguǎn hěn piányi.",
+    "es": [
+     "Este hotel es muy barato.",
+     "Este hotel es barato.",
+     "Este hotel sale muy barato.",
+     "Este hotel es muy económico."
+    ]
+   },
+   {
+    "w": "出",
+    "zh": "他出门了。",
+    "py": "Tā chū mén le.",
+    "es": [
+     "Ha salido de casa.",
+     "Ha salido.",
+     "Él ha salido de casa.",
+     "Salió de casa."
+    ]
+   },
+   {
+    "w": "出去",
+    "zh": "妈妈出去买东西了。",
+    "py": "Māma chūqu mǎi dōngxi le.",
+    "es": [
+     "Mi madre ha salido a comprar.",
+     "Mamá ha salido a hacer la compra.",
+     "Mi madre salió a comprar cosas.",
+     "Mi mamá ha salido de compras.",
+     "Mamá ha salido a comprar."
+    ]
+   },
+   {
+    "w": "一直",
+    "zh": "他一直在看书。",
+    "py": "Tā yìzhí zài kàn shū.",
+    "es": [
+     "No ha parado de leer.",
+     "Ha estado leyendo todo el rato.",
+     "Lleva todo el tiempo leyendo.",
+     "Él ha estado leyendo todo el rato."
+    ]
+   },
+   {
+    "w": "一直",
+    "zh": "一直往前走。",
+    "py": "Yìzhí wǎng qián zǒu.",
+    "es": [
+     "Sigue todo recto.",
+     "Siga todo recto.",
+     "Ve todo recto.",
+     "Todo recto.",
+     "Vaya todo derecho."
+    ]
+   },
+   {
+    "w": "班",
+    "zh": "我们班有二十个学生。",
+    "py": "Wǒmen bān yǒu èrshí ge xuésheng.",
+    "es": [
+     "En nuestra clase hay veinte alumnos.",
+     "Nuestra clase tiene veinte alumnos.",
+     "En nuestra clase hay veinte estudiantes.",
+     "Nuestro grupo tiene veinte estudiantes.",
+     "En mi clase hay veinte alumnos."
+    ]
+   },
+   {
+    "w": "回答",
+    "zh": "请你回答我的问题。",
+    "py": "Qǐng nǐ huídá wǒ de wèntí.",
+    "es": [
+     "Por favor, responde a mi pregunta.",
+     "Por favor, contesta a mi pregunta.",
+     "Responde a mi pregunta, por favor.",
+     "Por favor, responda a mi pregunta."
+    ]
+   },
+   {
+    "w": "妹妹",
+    "zh": "我妹妹今年十岁。",
+    "py": "Wǒ mèimei jīnnián shí suì.",
+    "es": [
+     "Mi hermana pequeña tiene diez años.",
+     "Mi hermana menor tiene diez años este año.",
+     "Mi hermana pequeña cumple diez años este año.",
+     "Mi hermanita tiene diez años.",
+     "Este año mi hermana menor tiene diez años."
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 14,
+  "puntos": [
+   {
+    "id": "G14-1",
+    "elige": [
+     {
+      "q": "你吃___中国菜吗？",
+      "opciones": [
+       "着",
+       "过",
+       "得"
+      ],
+      "ok": 1,
+      "exp": "V + 过 = haber hecho algo alguna vez: «¿Has comido comida china alguna vez?»."
+     },
+     {
+      "q": "Elige la negación correcta:",
+      "opciones": [
+       "我不看过这个电影。",
+       "我没看这个电影过。",
+       "我没看过这个电影。"
+      ],
+      "ok": 2,
+      "exp": "没 + V + 过 + objeto (el 过 se mantiene): «Nunca he visto esta película»."
+     },
+     {
+      "q": "¿Qué significa 我坐过船？",
+      "opciones": [
+       "Estoy en un barco.",
+       "He ido en barco alguna vez.",
+       "Voy a ir en barco."
+      ],
+      "ok": 1,
+      "exp": "坐过 = he ido alguna vez (experiencia): «He viajado en barco alguna vez»."
+     },
+     {
+      "q": "¿Cómo se dice «Nunca he aprendido a bailar»?",
+      "opciones": [
+       "我没学过跳舞。",
+       "我不学过跳舞。",
+       "我学过没跳舞。"
+      ],
+      "ok": 0,
+      "exp": "Experiencia negada: 没 + 学过 + 跳舞."
+     },
+     {
+      "q": "你以前听说___这件事吗？",
+      "opciones": [
+       "过",
+       "得",
+       "着"
+      ],
+      "ok": 0,
+      "exp": "听说过 = haber oído hablar de algo: «¿Habías oído hablar antes de este asunto?»."
+     },
+     {
+      "q": "¿Qué frase significa «He estado en Pekín»?",
+      "opciones": [
+       "我快要去北京了。",
+       "我要去北京。",
+       "我去过北京。"
+      ],
+      "ok": 2,
+      "exp": "去过 + lugar = haber estado alguna vez: 我去过北京."
+     },
+     {
+      "q": "¿Cuál es la pregunta correcta? «¿Has visto alguna vez a su hermana pequeña?»",
+      "opciones": [
+       "你见过她妹妹没有？",
+       "你见过没有她妹妹？",
+       "你没见过她妹妹过？"
+      ],
+      "ok": 0,
+      "exp": "Pregunta con 过: …过 + objeto + 没有？ o …过 + objeto + 吗？"
+     },
+     {
+      "q": "¿Qué frase habla de una experiencia (alguna vez en la vida)?",
+      "opciones": [
+       "我昨天去了商店。",
+       "我吃过羊肉。",
+       "我在吃羊肉。"
+      ],
+      "ok": 1,
+      "exp": "过 marca experiencia: 我吃过羊肉 «He comido cordero (alguna vez)». 了 es una acción concreta; 在 es acción en curso."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "你看过那个电影吗？",
+      "py": "Nǐ kàn guo nàge diànyǐng ma?",
+      "es": [
+       "¿Has visto esa película?",
+       "¿Has visto alguna vez esa película?",
+       "¿Ya has visto esa película?",
+       "¿Ha visto usted esa película?",
+       "¿Has visto aquella película?"
+      ],
+      "altzh": [
+       "你看过那个电影没有？"
+      ],
+      "altpy": [
+       "Nǐ kàn guo nàge diànyǐng méiyǒu?"
+      ]
+     },
+     {
+      "zh": "我们没有看过那个电影。",
+      "py": "Wǒmen méiyǒu kàn guo nàge diànyǐng.",
+      "es": [
+       "No hemos visto esa película.",
+       "Nunca hemos visto esa película.",
+       "Nosotros no hemos visto esa película.",
+       "No hemos visto nunca esa película.",
+       "No hemos visto aquella película."
+      ],
+      "altzh": [
+       "我们没看过那个电影。"
+      ],
+      "altpy": [
+       "Wǒmen méi kàn guo nàge diànyǐng."
+      ]
+     },
+     {
+      "zh": "你以前吃过这种水果吗？",
+      "py": "Nǐ yǐqián chī guo zhè zhǒng shuǐguǒ ma?",
+      "es": [
+       "¿Habías probado antes esta fruta?",
+       "¿Has comido alguna vez esta fruta?",
+       "¿Has probado antes este tipo de fruta?",
+       "¿Habías comido antes esta clase de fruta?",
+       "¿Alguna vez has probado esta fruta?"
+      ]
+     },
+     {
+      "zh": "我没学过跳舞。",
+      "py": "Wǒ méi xué guo tiào wǔ.",
+      "es": [
+       "Nunca he aprendido a bailar.",
+       "No he aprendido nunca a bailar.",
+       "Nunca he estudiado baile.",
+       "Nunca he dado clases de baile.",
+       "Yo nunca he aprendido a bailar."
+      ],
+      "altzh": [
+       "我没有学过跳舞。"
+      ],
+      "altpy": [
+       "Wǒ méiyǒu xué guo tiào wǔ."
+      ]
+     },
+     {
+      "zh": "我坐过船，没坐过飞机。",
+      "py": "Wǒ zuò guo chuán, méi zuò guo fēijī.",
+      "es": [
+       "He ido en barco, pero nunca en avión.",
+       "He viajado en barco, pero nunca en avión.",
+       "He montado en barco, pero no en avión.",
+       "Alguna vez he ido en barco, pero nunca he ido en avión.",
+       "He ido en barco pero no he subido nunca a un avión."
+      ]
+     },
+     {
+      "zh": "你去过北京没有？",
+      "py": "Nǐ qù guo Běijīng méiyǒu?",
+      "es": [
+       "¿Has estado alguna vez en Pekín?",
+       "¿Has estado en Pekín?",
+       "¿Has ido a Pekín?",
+       "¿Has estado en Beijing?",
+       "¿Has ido alguna vez a Pekín?"
+      ],
+      "altzh": [
+       "你去过北京吗？"
+      ],
+      "altpy": [
+       "Nǐ qù guo Běijīng ma?"
+      ]
+     },
+     {
+      "zh": "这种咖啡我喝过，很好喝。",
+      "py": "Zhè zhǒng kāfēi wǒ hē guo, hěn hǎohē.",
+      "es": [
+       "Este café ya lo he probado y está muy bueno.",
+       "Ya he probado este café y está muy bueno.",
+       "He tomado este tipo de café y está muy rico.",
+       "Este café lo he probado; está buenísimo.",
+       "He bebido este café y está muy rico."
+      ],
+      "altzh": [
+       "我喝过这种咖啡，很好喝。"
+      ],
+      "altpy": [
+       "Wǒ hē guo zhè zhǒng kāfēi, hěn hǎohē."
+      ]
+     },
+     {
+      "zh": "我以前见过你妹妹。",
+      "py": "Wǒ yǐqián jiàn guo nǐ mèimei.",
+      "es": [
+       "He visto antes a tu hermana pequeña.",
+       "Ya había visto antes a tu hermana pequeña.",
+       "He visto a tu hermana menor alguna vez.",
+       "Antes ya había visto a tu hermana menor.",
+       "Ya he visto antes a tu hermanita."
+      ]
+     },
+     {
+      "zh": "这件事你听说过吗？",
+      "py": "Zhè jiàn shì nǐ tīngshuō guo ma?",
+      "es": [
+       "¿Has oído hablar de este asunto?",
+       "¿Habías oído hablar de esto?",
+       "¿Te habían contado esto?",
+       "¿Has oído hablar alguna vez de esto?",
+       "¿Habías oído hablar de este asunto?"
+      ],
+      "altzh": [
+       "你听说过这件事吗？"
+      ],
+      "altpy": [
+       "Nǐ tīngshuō guo zhè jiàn shì ma?"
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "David en China",
+     "zh": "大卫是美国人，以前没来过中国。去年他第一次来北京，在北京吃过很多中国菜。他说：“羊肉我吃过，很好吃。但是我还没喝过中国的茶。”",
+     "py": "Dàwèi shì Měiguó rén, yǐqián méi lái guo Zhōngguó. Qùnián tā dì-yī cì lái Běijīng, zài Běijīng chī guo hěn duō Zhōngguó cài. Tā shuō: “Yángròu wǒ chī guo, hěn hǎochī. Dànshì wǒ hái méi hē guo Zhōngguó de chá.”",
+     "es": "David es estadounidense y antes nunca había estado en China. El año pasado vino a Pekín por primera vez y allí probó mucha comida china. Dice: «El cordero ya lo he probado y está muy rico, pero todavía no he probado el té chino».",
+     "preguntas": [
+      {
+       "q": "¿Había estado David en China antes?",
+       "opciones": [
+        "Sí, muchas veces",
+        "No, nunca",
+        "Sí, una vez"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "大卫没喝过什么？",
+       "opciones": [
+        "中国的茶",
+        "咖啡",
+        "牛奶"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "¿Qué opina del cordero?",
+       "opciones": [
+        "Que es caro",
+        "Que no lo ha probado",
+        "Que está muy rico"
+       ],
+       "ok": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "G14-2",
+    "elige": [
+     {
+      "q": "Elige el orden correcto:",
+      "opciones": [
+       "我三次坐过飞机。",
+       "我坐三次过飞机。",
+       "我坐过三次飞机。"
+      ],
+      "ok": 2,
+      "exp": "V + 过 + número + 次 + cosa: «He ido en avión tres veces»."
+     },
+     {
+      "q": "我去年见过你哥哥___。",
+      "opciones": [
+       "第一次",
+       "一次",
+       "次一"
+      ],
+      "ok": 1,
+      "exp": "Con persona, número + 次 va al final: «El año pasado vi una vez a tu hermano mayor»."
+     },
+     {
+      "q": "你去过___中国？（¿cuántas veces?）",
+      "opciones": [
+       "几次",
+       "几个",
+       "多少个"
+      ],
+      "ok": 0,
+      "exp": "几次 = cuántas veces: «¿Cuántas veces has estado en China?»."
+     },
+     {
+      "q": "¿Qué significa 这个电影我看过两次？",
+      "opciones": [
+       "Voy a ver esta película dos veces.",
+       "He visto esta película dos veces.",
+       "He visto dos películas."
+      ],
+      "ok": 1,
+      "exp": "看过两次 = lo he visto dos veces: «He visto esta película dos veces»."
+     },
+     {
+      "q": "¿Cómo se dice «Lo he llamado tres veces»?",
+      "opciones": [
+       "我三次给他打过电话。",
+       "我给他打电话过三次。",
+       "我给他打过三次电话。"
+      ],
+      "ok": 2,
+      "exp": "给 + persona + 打过 + 三次 + 电话."
+     },
+     {
+      "q": "¿Cómo se dice «Lo he visto una vez»?",
+      "opciones": [
+       "我见过一次他。",
+       "我见过他一次。",
+       "我一次见过他。"
+      ],
+      "ok": 1,
+      "exp": "Si el objeto es un pronombre, va delante de 次: 我见过他一次."
+     },
+     {
+      "q": "他来过我家三___。",
+      "opciones": [
+       "个",
+       "岁",
+       "次"
+      ],
+      "ok": 2,
+      "exp": "次 cuenta las veces: «Ha venido a mi casa tres veces»."
+     },
+     {
+      "q": "¿Qué frase dice «He estado en China dos veces»?",
+      "opciones": [
+       "我去过两次中国。",
+       "我去过二次中国。",
+       "我两次去过中国。",
+       "我去过中国第二次。"
+      ],
+      "ok": 0,
+      "exp": "Delante de un clasificador como 次 se usa 两, no 二: 我去过两次中国."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "我去过两次北京。",
+      "py": "Wǒ qù guo liǎng cì Běijīng.",
+      "es": [
+       "He estado en Pekín dos veces.",
+       "He ido a Pekín dos veces.",
+       "He estado dos veces en Pekín.",
+       "He estado dos veces en Beijing.",
+       "Fui a Pekín dos veces."
+      ],
+      "altzh": [
+       "北京我去过两次。"
+      ],
+      "altpy": [
+       "Běijīng wǒ qù guo liǎng cì."
+      ]
+     },
+     {
+      "zh": "我去年见过你姐姐一次。",
+      "py": "Wǒ qùnián jiàn guo nǐ jiějie yí cì.",
+      "es": [
+       "El año pasado vi una vez a tu hermana mayor.",
+       "Vi a tu hermana mayor una vez el año pasado.",
+       "El año pasado vi a tu hermana mayor una vez.",
+       "El año pasado me encontré una vez con tu hermana mayor.",
+       "Vi una vez a tu hermana mayor el año pasado."
+      ],
+      "altzh": [
+       "去年我见过你姐姐一次。"
+      ],
+      "altpy": [
+       "Qùnián wǒ jiàn guo nǐ jiějie yí cì."
+      ]
+     },
+     {
+      "zh": "这个电影我看过三次。",
+      "py": "Zhège diànyǐng wǒ kàn guo sān cì.",
+      "es": [
+       "He visto esta película tres veces.",
+       "Esta película la he visto tres veces.",
+       "He visto tres veces esta película.",
+       "Ya he visto esta película tres veces.",
+       "Esta peli la he visto tres veces."
+      ],
+      "altzh": [
+       "我看过三次这个电影。"
+      ],
+      "altpy": [
+       "Wǒ kàn guo sān cì zhège diànyǐng."
+      ]
+     },
+     {
+      "zh": "你去过几次中国？",
+      "py": "Nǐ qù guo jǐ cì Zhōngguó?",
+      "es": [
+       "¿Cuántas veces has estado en China?",
+       "¿Cuántas veces has ido a China?",
+       "¿Cuántas veces ha estado usted en China?",
+       "¿Cuántas veces fuiste a China?"
+      ],
+      "altzh": [
+       "中国你去过几次？"
+      ],
+      "altpy": [
+       "Zhōngguó nǐ qù guo jǐ cì?"
+      ]
+     },
+     {
+      "zh": "我给他打过两次电话。",
+      "py": "Wǒ gěi tā dǎ guo liǎng cì diànhuà.",
+      "es": [
+       "Lo he llamado por teléfono dos veces.",
+       "Le he llamado dos veces.",
+       "Lo he llamado dos veces.",
+       "La he llamado por teléfono dos veces.",
+       "Le he telefoneado dos veces."
+      ]
+     },
+     {
+      "zh": "我坐过一次船。",
+      "py": "Wǒ zuò guo yí cì chuán.",
+      "es": [
+       "He ido en barco una vez.",
+       "He viajado en barco una vez.",
+       "Una vez fui en barco.",
+       "He montado en barco una vez.",
+       "He subido a un barco una vez."
+      ]
+     },
+     {
+      "zh": "他来过我家两次。",
+      "py": "Tā lái guo wǒ jiā liǎng cì.",
+      "es": [
+       "Ha venido a mi casa dos veces.",
+       "Ha estado en mi casa dos veces.",
+       "Ha venido dos veces a mi casa.",
+       "Él ha venido a mi casa dos veces.",
+       "Ha estado dos veces en mi casa."
+      ]
+     },
+     {
+      "zh": "这种水果我只吃过一次。",
+      "py": "Zhè zhǒng shuǐguǒ wǒ zhǐ chī guo yí cì.",
+      "es": [
+       "Esta fruta solo la he comido una vez.",
+       "Solo he probado esta fruta una vez.",
+       "Solo he comido esta clase de fruta una vez.",
+       "Esta fruta solo la he probado una vez.",
+       "He comido esta fruta solo una vez."
+      ],
+      "altzh": [
+       "我只吃过一次这种水果。"
+      ],
+      "altpy": [
+       "Wǒ zhǐ chī guo yí cì zhè zhǒng shuǐguǒ."
+      ]
+     },
+     {
+      "zh": "我见过他几次，但是不认识他。",
+      "py": "Wǒ jiàn guo tā jǐ cì, dànshì bú rènshi tā.",
+      "es": [
+       "Lo he visto varias veces, pero no lo conozco.",
+       "Lo he visto unas cuantas veces, pero no lo conozco.",
+       "Le he visto varias veces, pero no le conozco.",
+       "Lo he visto algunas veces, pero no lo conozco.",
+       "Lo he visto varias veces, pero no nos conocemos."
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "Mis viajes",
+     "zh": "我很喜欢坐火车。我坐过很多次火车，去过三次北京。我还坐过一次船。飞机我只坐过两次，因为太贵了。你坐过几次飞机？",
+     "py": "Wǒ hěn xǐhuan zuò huǒchē. Wǒ zuò guo hěn duō cì huǒchē, qù guo sān cì Běijīng. Wǒ hái zuò guo yí cì chuán. Fēijī wǒ zhǐ zuò guo liǎng cì, yīnwèi tài guì le. Nǐ zuò guo jǐ cì fēijī?",
+     "es": "Me gusta mucho ir en tren. He viajado muchas veces en tren y he estado tres veces en Pekín. También he ido una vez en barco. En avión solo he ido dos veces, porque es demasiado caro. ¿Cuántas veces has ido tú en avión?",
+     "preguntas": [
+      {
+       "q": "¿Cuántas veces ha estado en Pekín?",
+       "opciones": [
+        "Dos",
+        "Tres",
+        "Muchas"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "他坐过几次船？",
+       "opciones": [
+        "一次",
+        "两次",
+        "三次"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "¿Por qué ha ido pocas veces en avión?",
+       "opciones": [
+        "Porque le da miedo",
+        "Porque no le gusta",
+        "Porque es demasiado caro"
+       ],
+       "ok": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "G14-3",
+    "elige": [
+     {
+      "q": "虽然今天是晴天，___有点儿冷。",
+      "opciones": [
+       "所以",
+       "但是",
+       "因为"
+      ],
+      "ok": 1,
+      "exp": "虽然… 但是…: «Aunque hoy hace sol, hace un poco de frío»."
+     },
+     {
+      "q": "___这件衣服有点儿贵，但是很漂亮。",
+      "opciones": [
+       "因为",
+       "所以",
+       "虽然"
+      ],
+      "ok": 2,
+      "exp": "但是 en la segunda parte pide 虽然 en la primera: «Aunque esta prenda es un poco cara, es muy bonita»."
+     },
+     {
+      "q": "¿Qué significa 虽然他很忙，但是每天都去跑步？",
+      "opciones": [
+       "Aunque está muy ocupado, va a correr todos los días.",
+       "Como está muy ocupado, no va a correr.",
+       "Si está ocupado, no va a correr."
+      ],
+      "ok": 0,
+      "exp": "虽然…但是… expresa contraste: «Aunque está muy ocupado, va a correr todos los días»."
+     },
+     {
+      "q": "Elige la frase correcta:",
+      "opciones": [
+       "但是汉语很难，虽然我很喜欢。",
+       "虽然汉语很难，但是我很喜欢。",
+       "虽然汉语很难，所以我很喜欢。"
+      ],
+      "ok": 1,
+      "exp": "虽然 va en la primera parte y 但是 en la segunda: «Aunque el chino es difícil, me gusta mucho»."
+     },
+     {
+      "q": "¿Cómo se dice «Aunque llueve, él todavía quiere ir»?",
+      "opciones": [
+       "因为下雨了，所以他还要去。",
+       "虽然下雨了，所以他不去。",
+       "虽然下雨了，但是他还要去。"
+      ],
+      "ok": 2,
+      "exp": "Contraste = 虽然…但是…; 因为…所以… es causa y consecuencia."
+     },
+     {
+      "q": "这个商店的东西还可以，___不便宜。",
+      "opciones": [
+       "就是",
+       "因为",
+       "所以"
+      ],
+      "ok": 0,
+      "exp": "就是 = solo que: «Las cosas de esta tienda no están mal, solo que no son baratas»."
+     },
+     {
+      "q": "Elige la frase correcta:",
+      "opciones": [
+       "他很累虽然，但是还在工作。",
+       "他虽然很累，但是还在工作。",
+       "他很累，但是虽然还在工作。"
+      ],
+      "ok": 1,
+      "exp": "虽然 puede ir detrás del sujeto: 他虽然很累，但是还在工作 «Aunque está cansado, sigue trabajando»."
+     },
+     {
+      "q": "虽然天气很冷，但是他___要去游泳。",
+      "opciones": [
+       "还",
+       "已经",
+       "都"
+      ],
+      "ok": 0,
+      "exp": "还 = todavía, aun así: «Aunque hace mucho frío, todavía quiere ir a nadar»."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "虽然天气很冷，但是他还要去游泳。",
+      "py": "Suīrán tiānqì hěn lěng, dànshì tā hái yào qù yóu yǒng.",
+      "es": [
+       "Aunque hace mucho frío, él todavía quiere ir a nadar.",
+       "Aunque hace mucho frío, aun así quiere ir a nadar.",
+       "Aunque hace mucho frío, sigue queriendo ir a nadar.",
+       "Aunque hace frío, todavía quiere ir a nadar.",
+       "A pesar del frío, él todavía quiere ir a nadar.",
+       "Aunque hace mucho frío, igualmente quiere ir a nadar."
+      ]
+     },
+     {
+      "zh": "虽然英语很难，但是她学得很好。",
+      "py": "Suīrán Yīngyǔ hěn nán, dànshì tā xué de hěn hǎo.",
+      "es": [
+       "Aunque el inglés es difícil, ella lo aprende muy bien.",
+       "Aunque el inglés es muy difícil, lo aprende muy bien.",
+       "Aunque el inglés es difícil, lo está aprendiendo muy bien.",
+       "El inglés es difícil, pero ella lo aprende muy bien.",
+       "A pesar de que el inglés es difícil, ella lo aprende muy bien."
+      ]
+     },
+     {
+      "zh": "今天虽然是晴天，但是有点儿冷。",
+      "py": "Jīntiān suīrán shì qíngtiān, dànshì yǒudiǎnr lěng.",
+      "es": [
+       "Aunque hoy hace sol, hace un poco de frío.",
+       "Hoy está despejado, pero hace algo de frío.",
+       "Aunque hoy hace sol, hace algo de frío.",
+       "Aunque hoy está despejado, hace un poco de frío.",
+       "Hoy hace sol, pero hace un poco de frío."
+      ],
+      "altzh": [
+       "虽然今天是晴天，但是有点儿冷。"
+      ],
+      "altpy": [
+       "Suīrán jīntiān shì qíngtiān, dànshì yǒudiǎnr lěng."
+      ]
+     },
+     {
+      "zh": "虽然这件衣服有点儿贵，但是很漂亮。",
+      "py": "Suīrán zhè jiàn yīfu yǒudiǎnr guì, dànshì hěn piàoliang.",
+      "es": [
+       "Aunque esta prenda es un poco cara, es muy bonita.",
+       "Aunque esta ropa es algo cara, es muy bonita.",
+       "Esta prenda es un poco cara, pero es preciosa.",
+       "Aunque esta prenda es un poco cara, es preciosa.",
+       "Aunque esta ropa es un poco cara, es muy linda."
+      ],
+      "altzh": [
+       "这件衣服虽然有点儿贵，但是很漂亮。"
+      ],
+      "altpy": [
+       "Zhè jiàn yīfu suīrán yǒudiǎnr guì, dànshì hěn piàoliang."
+      ]
+     },
+     {
+      "zh": "虽然他很忙，但是每天都去跑步。",
+      "py": "Suīrán tā hěn máng, dànshì měi tiān dōu qù pǎo bù.",
+      "es": [
+       "Aunque está muy ocupado, va a correr todos los días.",
+       "Aunque está muy ocupado, sale a correr cada día.",
+       "Aunque él está muy ocupado, todos los días va a correr.",
+       "Está muy ocupado, pero va a correr todos los días.",
+       "Aunque tiene mucho trabajo, sale a correr todos los días."
+      ],
+      "altzh": [
+       "他虽然很忙，但是每天都去跑步。"
+      ],
+      "altpy": [
+       "Tā suīrán hěn máng, dànshì měi tiān dōu qù pǎo bù."
+      ]
+     },
+     {
+      "zh": "虽然汉字很难，但是我很喜欢写。",
+      "py": "Suīrán Hànzì hěn nán, dànshì wǒ hěn xǐhuan xiě.",
+      "es": [
+       "Aunque los caracteres chinos son difíciles, me gusta mucho escribirlos.",
+       "Aunque los caracteres chinos son muy difíciles, me encanta escribirlos.",
+       "Los caracteres chinos son difíciles, pero me gusta mucho escribirlos.",
+       "Aunque los hanzi son difíciles, me gusta mucho escribirlos.",
+       "A pesar de que los caracteres chinos son difíciles, me gusta mucho escribirlos."
+      ]
+     },
+     {
+      "zh": "虽然我没去过中国，但是我会说汉语。",
+      "py": "Suīrán wǒ méi qù guo Zhōngguó, dànshì wǒ huì shuō Hànyǔ.",
+      "es": [
+       "Aunque nunca he estado en China, sé hablar chino.",
+       "Aunque no he ido nunca a China, hablo chino.",
+       "No he estado nunca en China, pero sé hablar chino.",
+       "Aunque nunca he ido a China, sé hablar chino.",
+       "A pesar de que nunca he estado en China, sé hablar chino."
+      ],
+      "altzh": [
+       "我虽然没去过中国，但是我会说汉语。"
+      ],
+      "altpy": [
+       "Wǒ suīrán méi qù guo Zhōngguó, dànshì wǒ huì shuō Hànyǔ."
+      ]
+     },
+     {
+      "zh": "这个宾馆虽然不大，但是很便宜。",
+      "py": "Zhège bīnguǎn suīrán bú dà, dànshì hěn piányi.",
+      "es": [
+       "Aunque este hotel no es grande, es muy barato.",
+       "Este hotel no es grande, pero es muy barato.",
+       "Aunque este hotel es pequeño, es muy barato.",
+       "Aunque este hotel no es grande, sale muy barato.",
+       "Este hotel, aunque no es grande, es muy económico."
+      ],
+      "altzh": [
+       "虽然这个宾馆不大，但是很便宜。"
+      ],
+      "altpy": [
+       "Suīrán zhège bīnguǎn bú dà, dànshì hěn piányi."
+      ]
+     },
+     {
+      "zh": "这件衣服很好看，就是有点儿贵。",
+      "py": "Zhè jiàn yīfu hěn hǎokàn, jiù shì yǒudiǎnr guì.",
+      "es": [
+       "Esta prenda es muy bonita, solo que es un poco cara.",
+       "Esta ropa es muy bonita, lo único es que es algo cara.",
+       "Esta prenda es preciosa, solo que es un poco cara.",
+       "Esta ropa es muy bonita, pero es un poco cara.",
+       "Esta prenda es muy linda, solo que es algo cara."
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "Un día nublado",
+     "zh": "今天是阴天，虽然没下雨，但是有点儿冷。我虽然很想出去玩儿，但是作业还没做完。妈妈说：“这个作业不难，就是有点儿多。你做完了再出去吧。”",
+     "py": "Jīntiān shì yīntiān, suīrán méi xià yǔ, dànshì yǒudiǎnr lěng. Wǒ suīrán hěn xiǎng chūqu wánr, dànshì zuòyè hái méi zuò wán. Māma shuō: “Zhège zuòyè bù nán, jiù shì yǒudiǎnr duō. Nǐ zuò wán le zài chūqu ba.”",
+     "es": "Hoy está nublado; aunque no ha llovido, hace un poco de frío. Aunque tengo muchas ganas de salir a jugar, todavía no he terminado los deberes. Mamá dice: «Estos deberes no son difíciles, solo que son un poco largos. Termínalos y luego sales».",
+     "preguntas": [
+      {
+       "q": "¿Qué tiempo hace hoy?",
+       "opciones": [
+        "Hace sol y calor",
+        "Está nublado y hace un poco de frío",
+        "Llueve mucho"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "妈妈觉得作业怎么样？",
+       "opciones": [
+        "不难，就是有点儿多",
+        "很难",
+        "太少了"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "¿Por qué no sale a jugar todavía?",
+       "opciones": [
+        "Porque llueve",
+        "Porque está enfermo",
+        "Porque no ha terminado los deberes"
+       ],
+       "ok": 2
+      }
+     ]
+    }
+   }
+  ],
+  "vocab": [
+   {
+    "w": "难",
+    "zh": "汉语不太难。",
+    "py": "Hànyǔ bú tài nán.",
+    "es": [
+     "El chino no es muy difícil.",
+     "El chino no es demasiado difícil.",
+     "El chino no es tan difícil.",
+     "El idioma chino no es muy difícil."
+    ]
+   },
+   {
+    "w": "过",
+    "zh": "我去过北京。",
+    "py": "Wǒ qù guo Běijīng.",
+    "es": [
+     "He estado en Pekín.",
+     "He ido a Pekín.",
+     "He estado en Beijing.",
+     "Ya he estado en Pekín.",
+     "He estado alguna vez en Pekín."
+    ]
+   },
+   {
+    "w": "过",
+    "zh": "你们在哪儿过新年？",
+    "py": "Nǐmen zài nǎr guò xīnnián?",
+    "es": [
+     "¿Dónde pasáis el Año Nuevo?",
+     "¿Dónde vais a pasar el Año Nuevo?",
+     "¿Dónde celebráis el Año Nuevo?",
+     "¿Dónde pasan ustedes el Año Nuevo?"
+    ]
+   },
+   {
+    "w": "虽然",
+    "zh": "虽然很贵，但是很好吃。",
+    "py": "Suīrán hěn guì, dànshì hěn hǎochī.",
+    "es": [
+     "Aunque es caro, está muy bueno.",
+     "Aunque es caro, está muy rico.",
+     "Es caro, pero está muy bueno.",
+     "Aunque cuesta mucho, está buenísimo."
+    ]
+   },
+   {
+    "w": "但是",
+    "zh": "我想去，但是没有时间。",
+    "py": "Wǒ xiǎng qù, dànshì méiyǒu shíjiān.",
+    "es": [
+     "Quiero ir, pero no tengo tiempo.",
+     "Me gustaría ir, pero no tengo tiempo.",
+     "Tengo ganas de ir, pero no tengo tiempo.",
+     "Quiero ir, pero no me da tiempo."
+    ]
+   },
+   {
+    "w": "晴",
+    "zh": "明天是晴天。",
+    "py": "Míngtiān shì qíngtiān.",
+    "es": [
+     "Mañana hará sol.",
+     "Mañana estará despejado.",
+     "Mañana va a hacer sol.",
+     "Mañana será un día soleado."
+    ]
+   },
+   {
+    "w": "阴",
+    "zh": "天阴了。",
+    "py": "Tiān yīn le.",
+    "es": [
+     "Se ha nublado.",
+     "El cielo se ha nublado.",
+     "Se ha puesto nublado.",
+     "Ya está nublado."
+    ]
+   },
+   {
+    "w": "就是",
+    "zh": "这儿很好，就是有点儿远。",
+    "py": "Zhèr hěn hǎo, jiù shì yǒudiǎnr yuǎn.",
+    "es": [
+     "Aquí está muy bien, solo que está un poco lejos.",
+     "Este sitio está muy bien, solo que queda un poco lejos.",
+     "Aquí se está muy bien, lo único es que está algo lejos.",
+     "Esto está muy bien, pero está un poco lejos."
+    ]
+   },
+   {
+    "w": "事",
+    "zh": "我今天有事，不能去。",
+    "py": "Wǒ jīntiān yǒu shì, bù néng qù.",
+    "es": [
+     "Hoy tengo cosas que hacer, no puedo ir.",
+     "Hoy tengo un asunto pendiente y no puedo ir.",
+     "Hoy tengo un compromiso, no puedo ir.",
+     "Hoy estoy liado, no puedo ir."
+    ]
+   },
+   {
+    "w": "以前",
+    "zh": "我以前没见过他。",
+    "py": "Wǒ yǐqián méi jiàn guo tā.",
+    "es": [
+     "No lo había visto antes.",
+     "Antes nunca lo había visto.",
+     "Nunca lo había visto antes.",
+     "No le había visto nunca antes."
+    ]
+   },
+   {
+    "w": "见",
+    "zh": "明天见！",
+    "py": "Míngtiān jiàn!",
+    "es": [
+     "¡Hasta mañana!",
+     "¡Nos vemos mañana!",
+     "¡Mañana nos vemos!",
+     "¡Hasta mañana, nos vemos!"
+    ]
+   },
+   {
+    "w": "种",
+    "zh": "我喜欢这种水果。",
+    "py": "Wǒ xǐhuan zhè zhǒng shuǐguǒ.",
+    "es": [
+     "Me gusta esta fruta.",
+     "Me gusta este tipo de fruta.",
+     "Me gusta esta clase de fruta.",
+     "A mí me gusta esta fruta."
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 15,
+  "puntos": [
+   {
+    "id": "G15-1",
+    "elige": [
+     {
+      "q": "明天___考试了，今天别玩儿了。",
+      "opciones": [
+       "快要",
+       "就要",
+       "已经"
+      ],
+      "ok": 1,
+      "exp": "Con un momento concreto (明天) se usa 就要…了: «Mañana ya es el examen; hoy deja de jugar»."
+     },
+     {
+      "q": "天阴了，快要下雨___。",
+      "opciones": [
+       "过",
+       "着",
+       "了"
+      ],
+      "ok": 2,
+      "exp": "La estructura 快要…了 necesita 了 al final: «Se ha nublado, está a punto de llover»."
+     },
+     {
+      "q": "¿Qué significa 火车快要开了？",
+      "opciones": [
+       "El tren está a punto de salir.",
+       "El tren ya ha salido.",
+       "El tren sale mañana."
+      ],
+      "ok": 0,
+      "exp": "快要…了 = estar a punto de: «El tren está a punto de salir»."
+     },
+     {
+      "q": "¿Qué frase está MAL?",
+      "opciones": [
+       "我们明天就要回国了。",
+       "我们明天快要回国了。",
+       "快要下雨了。"
+      ],
+      "ok": 1,
+      "exp": "Con una fecha (明天) no se usa 快要, sino 就要: 我们明天就要回国了 «Mañana ya volvemos a nuestro país»."
+     },
+     {
+      "q": "___十二点了，我们回家吧。",
+      "opciones": [
+       "就",
+       "更",
+       "快"
+      ],
+      "ok": 2,
+      "exp": "快 + hora + 了 = ya casi es…: «Ya son casi las doce, vámonos a casa»."
+     },
+     {
+      "q": "¿Cómo se dice «El Año Nuevo está a punto de llegar»?",
+      "opciones": [
+       "新年已经到了。",
+       "新年就要到了。",
+       "新年到过了。"
+      ],
+      "ok": 1,
+      "exp": "就要…了 = estar a punto de. 已经到了 = ya ha llegado."
+     },
+     {
+      "q": "电影快要开始___，别说话了。",
+      "opciones": [
+       "了",
+       "过",
+       "着"
+      ],
+      "ok": 0,
+      "exp": "快要 + V + 了: «La película está a punto de empezar, dejad de hablar»."
+     },
+     {
+      "q": "Elige el orden correcto:",
+      "opciones": [
+       "我妹妹就要下个月回国了。",
+       "就要我妹妹下个月回国了。",
+       "我妹妹下个月就要回国了。"
+      ],
+      "ok": 2,
+      "exp": "El tiempo va delante de 就要: 下个月就要回国了 «Mi hermana pequeña vuelve a su país el mes que viene»."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "新年就要到了。",
+      "py": "Xīnnián jiùyào dào le.",
+      "es": [
+       "El Año Nuevo está a punto de llegar.",
+       "Ya casi es Año Nuevo.",
+       "Ya llega el Año Nuevo.",
+       "Falta poco para Año Nuevo.",
+       "Se acerca el Año Nuevo.",
+       "El Año Nuevo está al caer."
+      ],
+      "altzh": [
+       "新年快要到了。",
+       "新年快到了。",
+       "新年要到了。"
+      ],
+      "altpy": [
+       "Xīnnián kuàiyào dào le.",
+       "Xīnnián kuài dào le.",
+       "Xīnnián yào dào le."
+      ]
+     },
+     {
+      "zh": "天阴了，快要下雨了。",
+      "py": "Tiān yīn le, kuàiyào xià yǔ le.",
+      "es": [
+       "Se ha nublado; está a punto de llover.",
+       "Se ha nublado, va a llover enseguida.",
+       "El cielo se ha nublado; va a llover pronto.",
+       "Se ha puesto nublado, está a punto de llover.",
+       "Se ha nublado y ya va a llover."
+      ],
+      "altzh": [
+       "天阴了，快下雨了。",
+       "天阴了，要下雨了。"
+      ],
+      "altpy": [
+       "Tiān yīn le, kuài xià yǔ le.",
+       "Tiān yīn le, yào xià yǔ le."
+      ]
+     },
+     {
+      "zh": "姐姐四月一号就要回国了。",
+      "py": "Jiějie sì yuè yī hào jiùyào huí guó le.",
+      "es": [
+       "Mi hermana mayor vuelve a su país el uno de abril.",
+       "Mi hermana mayor regresa a su país el uno de abril.",
+       "Mi hermana mayor vuelve a su país el día uno de abril.",
+       "El uno de abril mi hermana mayor ya vuelve a su país.",
+       "Mi hermana mayor se vuelve a su país el 1 de abril."
+      ],
+      "altzh": [
+       "姐姐四月一日就要回国了。"
+      ],
+      "altpy": [
+       "Jiějie sì yuè yī rì jiùyào huí guó le."
+      ]
+     },
+     {
+      "zh": "我们明天就要考试了。",
+      "py": "Wǒmen míngtiān jiùyào kǎoshì le.",
+      "es": [
+       "Mañana ya tenemos el examen.",
+       "Mañana nos examinamos.",
+       "Mañana tenemos examen.",
+       "Nos examinamos mañana mismo.",
+       "Mañana ya tenemos examen."
+      ],
+      "altzh": [
+       "明天我们就要考试了。"
+      ],
+      "altpy": [
+       "Míngtiān wǒmen jiùyào kǎoshì le."
+      ]
+     },
+     {
+      "zh": "火车快要开了，快上车吧！",
+      "py": "Huǒchē kuàiyào kāi le, kuài shàng chē ba!",
+      "es": [
+       "El tren está a punto de salir, ¡sube rápido!",
+       "El tren va a salir ya, ¡sube deprisa!",
+       "El tren está a punto de salir, ¡subid rápido!",
+       "El tren sale ya, ¡sube corriendo!",
+       "El tren está a punto de arrancar, ¡sube rápido!"
+      ],
+      "altzh": [
+       "火车要开了，快上车吧！",
+       "火车快开了，快上车吧！"
+      ],
+      "altpy": [
+       "Huǒchē yào kāi le, kuài shàng chē ba!",
+       "Huǒchē kuài kāi le, kuài shàng chē ba!"
+      ]
+     },
+     {
+      "zh": "快十二点了，我们回家吧。",
+      "py": "Kuài shí'èr diǎn le, wǒmen huí jiā ba.",
+      "es": [
+       "Ya son casi las doce, vámonos a casa.",
+       "Son casi las doce; volvamos a casa.",
+       "Casi son las doce, vamos a casa.",
+       "Ya casi son las doce, volvamos a casa.",
+       "Son casi las doce, vámonos a casa."
+      ]
+     },
+     {
+      "zh": "电影就要开始了，别说话了。",
+      "py": "Diànyǐng jiùyào kāishǐ le, bié shuō huà le.",
+      "es": [
+       "La película está a punto de empezar, dejad de hablar.",
+       "La película va a empezar, no habléis más.",
+       "Ya empieza la película, no hables más.",
+       "La película está a punto de empezar, deja de hablar.",
+       "La peli va a empezar ya, dejad de hablar."
+      ],
+      "altzh": [
+       "电影快要开始了，别说话了。"
+      ],
+      "altpy": [
+       "Diànyǐng kuàiyào kāishǐ le, bié shuō huà le."
+      ]
+     },
+     {
+      "zh": "商店快要关门了。",
+      "py": "Shāngdiàn kuàiyào guān mén le.",
+      "es": [
+       "La tienda está a punto de cerrar.",
+       "La tienda va a cerrar enseguida.",
+       "La tienda cierra ya.",
+       "Están a punto de cerrar la tienda.",
+       "La tienda está por cerrar."
+      ],
+      "altzh": [
+       "商店快关门了。",
+       "商店要关门了。"
+      ],
+      "altpy": [
+       "Shāngdiàn kuài guān mén le.",
+       "Shāngdiàn yào guān mén le."
+      ]
+     },
+     {
+      "zh": "我妹妹下个月就要来北京了。",
+      "py": "Wǒ mèimei xià ge yuè jiùyào lái Běijīng le.",
+      "es": [
+       "Mi hermana pequeña viene a Pekín el mes que viene.",
+       "Mi hermana pequeña va a venir a Pekín el mes que viene.",
+       "El mes que viene mi hermana menor ya viene a Pekín.",
+       "Mi hermana menor vendrá a Pekín el mes próximo.",
+       "Mi hermanita viene a Beijing el próximo mes."
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "Ya llega el Año Nuevo",
+     "zh": "新年快要到了，大家都很高兴。姐姐十二月三十日就要回国了。我明天要去火车站买票。天阴了，快要下雪了，我们都想在家里过新年。",
+     "py": "Xīnnián kuàiyào dào le, dàjiā dōu hěn gāoxìng. Jiějie shí'èr yuè sānshí rì jiùyào huí guó le. Wǒ míngtiān yào qù huǒchēzhàn mǎi piào. Tiān yīn le, kuàiyào xià xuě le, wǒmen dōu xiǎng zài jiā lǐ guò xīnnián.",
+     "es": "El Año Nuevo está a punto de llegar y todos estamos muy contentos. Mi hermana mayor vuelve al país el treinta de diciembre. Mañana voy a ir a la estación de tren a comprar los billetes. Se ha nublado y está a punto de nevar; todos queremos pasar el Año Nuevo en casa.",
+     "preguntas": [
+      {
+       "q": "¿Cuándo vuelve la hermana mayor?",
+       "opciones": [
+        "El treinta de diciembre",
+        "El uno de enero",
+        "Mañana"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "我明天要去哪儿？",
+       "opciones": [
+        "机场",
+        "火车站",
+        "商店"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "¿Qué tiempo va a hacer?",
+       "opciones": [
+        "Va a hacer sol",
+        "Va a llover",
+        "Va a nevar"
+       ],
+       "ok": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "G15-2",
+    "elige": [
+     {
+      "q": "___十一点了，你怎么还不睡觉？",
+      "opciones": [
+       "就",
+       "都",
+       "还"
+      ],
+      "ok": 1,
+      "exp": "都…了 = ya (y es tarde): «¡Ya son las once! ¿Cómo es que todavía no te acuestas?»."
+     },
+     {
+      "q": "¿Qué significa 他都五十岁了？",
+      "opciones": [
+       "Todos tienen cincuenta años.",
+       "Tendrá cincuenta años.",
+       "¡Ya tiene cincuenta años!"
+      ],
+      "ok": 2,
+      "exp": "都 + edad + 了 = ya, y es mucho: «¡Ya tiene cincuenta años!»."
+     },
+     {
+      "q": "都八点了，他___没起床。",
+      "opciones": [
+       "还",
+       "就",
+       "都"
+      ],
+      "ok": 0,
+      "exp": "还没 = todavía no: «Ya son las ocho y todavía no se ha levantado»."
+     },
+     {
+      "q": "¿En qué frase 都 significa «ya»?",
+      "opciones": [
+       "我们都是学生。",
+       "都十二点了！",
+       "他们都去了。"
+      ],
+      "ok": 1,
+      "exp": "都 + hora + 了 = ¡ya…!: «¡Ya son las doce!». En las otras, 都 = todos."
+     },
+     {
+      "q": "¿Cómo se dice «¡Llevo ya una hora esperando!»?",
+      "opciones": [
+       "我都等了一个小时了！",
+       "我等都一个小时了！",
+       "我都一个小时等了！"
+      ],
+      "ok": 0,
+      "exp": "都 va delante del verbo: 我都等了一个小时了."
+     },
+     {
+      "q": "弟弟都三岁___，能一个人吃饭了。",
+      "opciones": [
+       "过",
+       "着",
+       "了"
+      ],
+      "ok": 2,
+      "exp": "都 + edad + 了: «Mi hermano pequeño ya tiene tres años y ya puede comer solo»."
+     },
+     {
+      "q": "Elige la frase correcta:",
+      "opciones": [
+       "九点都了，商店已经关门了。",
+       "都九点了，商店已经关门了。",
+       "都九点，商店已经关门过。"
+      ],
+      "ok": 1,
+      "exp": "都 + hora + 了: «Ya son las nueve; la tienda ya ha cerrado»."
+     },
+     {
+      "q": "¿Qué expresa 都 en 都十点了，快走吧！?",
+      "opciones": [
+       "Que ya es tarde (sorpresa o prisa)",
+       "Que es temprano",
+       "Que se van todos"
+      ],
+      "ok": 0,
+      "exp": "都…了 transmite que es tarde o mucho: «¡Ya son las diez, vámonos rápido!»."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "都十二点了，商店已经关门了。",
+      "py": "Dōu shí'èr diǎn le, shāngdiàn yǐjīng guān mén le.",
+      "es": [
+       "Ya son las doce; la tienda ya ha cerrado.",
+       "Son ya las doce, la tienda ya ha cerrado.",
+       "Ya son las doce y la tienda ya está cerrada.",
+       "¡Si ya son las doce! La tienda ya ha cerrado.",
+       "Ya son las doce, la tienda ya cerró."
+      ]
+     },
+     {
+      "zh": "都八点了，你怎么还不起床？",
+      "py": "Dōu bā diǎn le, nǐ zěnme hái bù qǐ chuáng?",
+      "es": [
+       "¡Ya son las ocho! ¿Cómo es que todavía no te levantas?",
+       "Son ya las ocho, ¿por qué no te levantas todavía?",
+       "Ya son las ocho, ¿cómo es que aún no te levantas?",
+       "¡Ya son las ocho! ¿Por qué todavía no te levantas?",
+       "Son ya las ocho, ¿cómo es que no te levantas aún?"
+      ]
+     },
+     {
+      "zh": "弟弟都三岁了，能一个人吃饭了。",
+      "py": "Dìdi dōu sān suì le, néng yí ge rén chī fàn le.",
+      "es": [
+       "Mi hermano pequeño ya tiene tres años y ya puede comer solo.",
+       "Mi hermano menor ya tiene tres años y puede comer solo.",
+       "Mi hermanito tiene ya tres años y ya come solo.",
+       "Mi hermano pequeño tiene ya tres años; ya puede comer solo.",
+       "Mi hermano menor ya tiene tres años, ya puede comer él solo."
+      ]
+     },
+     {
+      "zh": "我都等了一个小时了！",
+      "py": "Wǒ dōu děng le yí ge xiǎoshí le!",
+      "es": [
+       "¡Llevo ya una hora esperando!",
+       "¡Ya llevo una hora esperando!",
+       "¡He esperado ya una hora!",
+       "¡Llevo esperando una hora!",
+       "¡Ya he esperado una hora entera!"
+      ]
+     },
+     {
+      "zh": "都十一点了，快去睡觉吧！",
+      "py": "Dōu shíyī diǎn le, kuài qù shuì jiào ba!",
+      "es": [
+       "¡Ya son las once, vete a dormir!",
+       "Ya son las once, ¡a la cama!",
+       "¡Son ya las once, ve a dormir rápido!",
+       "¡Ya son las once, date prisa y vete a dormir!",
+       "Son ya las once, vete a dormir ya."
+      ]
+     },
+     {
+      "zh": "他都六十岁了，还每天跑步。",
+      "py": "Tā dōu liùshí suì le, hái měi tiān pǎo bù.",
+      "es": [
+       "Ya tiene sesenta años y todavía corre todos los días.",
+       "Tiene ya sesenta años y sigue corriendo todos los días.",
+       "Ya tiene sesenta años y aún sale a correr cada día.",
+       "¡Con sesenta años y todavía corre todos los días!",
+       "Él ya tiene sesenta años y todavía sale a correr todos los días."
+      ]
+     },
+     {
+      "zh": "都五月了，天气还这么冷。",
+      "py": "Dōu wǔyuè le, tiānqì hái zhème lěng.",
+      "es": [
+       "¡Ya estamos en mayo y todavía hace tanto frío!",
+       "Ya es mayo y aún hace tanto frío.",
+       "Estamos ya en mayo y sigue haciendo tanto frío.",
+       "¡Si ya es mayo y todavía hace este frío!",
+       "Ya estamos en mayo y aún hace tanto frío."
+      ]
+     },
+     {
+      "zh": "都七点了，他还没来。",
+      "py": "Dōu qī diǎn le, tā hái méi lái.",
+      "es": [
+       "Ya son las siete y todavía no ha venido.",
+       "Son ya las siete y aún no ha llegado.",
+       "Ya son las siete y él todavía no ha llegado.",
+       "¡Ya son las siete y sigue sin venir!",
+       "Son ya las siete y todavía no ha venido."
+      ]
+     },
+     {
+      "zh": "妹妹都十岁了，还不会游泳。",
+      "py": "Mèimei dōu shí suì le, hái bú huì yóu yǒng.",
+      "es": [
+       "Mi hermana pequeña ya tiene diez años y todavía no sabe nadar.",
+       "Mi hermana menor tiene ya diez años y aún no sabe nadar.",
+       "¡Mi hermanita ya tiene diez años y todavía no sabe nadar!",
+       "Mi hermana pequeña tiene ya diez años y sigue sin saber nadar.",
+       "Mi hermana menor ya tiene diez años y todavía no sabe nadar."
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "¡Ya es tarde!",
+     "zh": "都九点了，哥哥还没起床。妈妈说：“你都二十岁了，怎么还这么晚起床？”哥哥说：“今天是星期天，我不上课。”妈妈笑着说：“但是我们都等了你一个小时了！”",
+     "py": "Dōu jiǔ diǎn le, gēge hái méi qǐ chuáng. Māma shuō: “Nǐ dōu èrshí suì le, zěnme hái zhème wǎn qǐ chuáng?” Gēge shuō: “Jīntiān shì xīngqītiān, wǒ bú shàng kè.” Māma xiào zhe shuō: “Dànshì wǒmen dōu děng le nǐ yí ge xiǎoshí le!”",
+     "es": "Ya son las nueve y mi hermano mayor todavía no se ha levantado. Mamá le dice: «Ya tienes veinte años, ¿cómo es que todavía te levantas tan tarde?». Mi hermano contesta: «Hoy es domingo, no tengo clase». Mamá dice sonriendo: «¡Pero ya llevamos una hora esperándote!».",
+     "preguntas": [
+      {
+       "q": "¿Qué hora es?",
+       "opciones": [
+        "Las ocho",
+        "Las nueve",
+        "Las diez"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "哥哥多大了？",
+       "opciones": [
+        "二十岁",
+        "十岁",
+        "三十岁"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "¿Por qué no se levanta el hermano?",
+       "opciones": [
+        "Porque está enfermo",
+        "Porque llueve",
+        "Porque es domingo y no tiene clase"
+       ],
+       "ok": 2
+      }
+     ]
+    }
+   },
+   {
+    "id": "G15-3",
+    "elige": [
+     {
+      "q": "我到的时候，火车___开了。",
+      "opciones": [
+       "更",
+       "已经",
+       "还"
+      ],
+      "ok": 1,
+      "exp": "已经…了 = ya: «Cuando llegué, el tren ya había salido»."
+     },
+     {
+      "q": "作业太多了，我___没做完。",
+      "opciones": [
+       "还",
+       "就",
+       "已经"
+      ],
+      "ok": 0,
+      "exp": "还没 = todavía no: «Hay demasiados deberes; todavía no los he terminado»."
+     },
+     {
+      "q": "往前走五分钟___到了。",
+      "opciones": [
+       "还",
+       "都",
+       "就"
+      ],
+      "ok": 2,
+      "exp": "就 = ya, enseguida (antes de lo esperado): «Sigue cinco minutos hacia delante y ya llegas»."
+     },
+     {
+      "q": "我们___是学生。（todos）",
+      "opciones": [
+       "还",
+       "都",
+       "就"
+      ],
+      "ok": 1,
+      "exp": "都 = todos: «Todos somos estudiantes»."
+     },
+     {
+      "q": "Elige el orden correcto:",
+      "opciones": [
+       "还我没做完作业。",
+       "我没做完还作业。",
+       "我还没做完作业。"
+      ],
+      "ok": 2,
+      "exp": "El adverbio va detrás del sujeto y delante del verbo: 我还没做完作业 «Todavía no he terminado los deberes»."
+     },
+     {
+      "q": "¿Qué significa 她每天晚上九点就睡觉？",
+      "opciones": [
+       "Todas las noches se acuesta ya a las nueve (pronto).",
+       "Todas las noches se acuesta tarde, a las nueve.",
+       "Todavía no se ha acostado."
+      ],
+      "ok": 0,
+      "exp": "就 indica «antes de lo esperado»: «Todas las noches se acuesta ya a las nueve»."
+     },
+     {
+      "q": "我有一个哥哥，___有一个妹妹。",
+      "opciones": [
+       "就",
+       "都",
+       "还"
+      ],
+      "ok": 2,
+      "exp": "还 = además, también: «Tengo un hermano mayor y además una hermana pequeña»."
+     },
+     {
+      "q": "¿Cómo se dice «La tienda ya ha cerrado»?",
+      "opciones": [
+       "商店已经关门了。",
+       "商店还关门了。",
+       "商店就要关门了。"
+      ],
+      "ok": 0,
+      "exp": "已经 + V + 了 = ya ha…; 就要…了 = está a punto de."
+     }
+    ],
+    "frases": [
+     {
+      "zh": "作业太多了，我还没做完。",
+      "py": "Zuòyè tài duō le, wǒ hái méi zuò wán.",
+      "es": [
+       "Hay demasiados deberes; todavía no los he terminado.",
+       "Hay muchísimos deberes, aún no los he acabado.",
+       "Tengo demasiados deberes y todavía no los he terminado.",
+       "Son demasiados deberes; aún no he terminado.",
+       "Hay demasiada tarea, todavía no la he terminado."
+      ]
+     },
+     {
+      "zh": "商店已经关门了。",
+      "py": "Shāngdiàn yǐjīng guān mén le.",
+      "es": [
+       "La tienda ya ha cerrado.",
+       "La tienda ya está cerrada.",
+       "La tienda ya cerró.",
+       "Ya han cerrado la tienda.",
+       "Ya ha cerrado la tienda."
+      ]
+     },
+     {
+      "zh": "她每天晚上十点就睡觉。",
+      "py": "Tā měi tiān wǎnshang shí diǎn jiù shuì jiào.",
+      "es": [
+       "Se acuesta todas las noches ya a las diez.",
+       "Todas las noches se va a dormir ya a las diez.",
+       "Cada noche se acuesta ya a las diez.",
+       "Ella se va a la cama todas las noches ya a las diez.",
+       "Todas las noches se acuesta pronto, a las diez."
+      ]
+     },
+     {
+      "zh": "我们都是学生。",
+      "py": "Wǒmen dōu shì xuésheng.",
+      "es": [
+       "Todos somos estudiantes.",
+       "Somos todos estudiantes.",
+       "Todos nosotros somos estudiantes.",
+       "Todos somos alumnos.",
+       "Somos todos alumnos."
+      ]
+     },
+     {
+      "zh": "他已经回国了。",
+      "py": "Tā yǐjīng huí guó le.",
+      "es": [
+       "Ya ha vuelto a su país.",
+       "Ya volvió a su país.",
+       "Él ya ha regresado a su país.",
+       "Ya se ha vuelto a su país.",
+       "Ya regresó a su país."
+      ]
+     },
+     {
+      "zh": "我到的时候，他已经走了。",
+      "py": "Wǒ dào de shíhou, tā yǐjīng zǒu le.",
+      "es": [
+       "Cuando llegué, él ya se había ido.",
+       "Cuando llegué, ya se había marchado.",
+       "Cuando llegué ya se había ido.",
+       "Al llegar yo, él ya se había ido.",
+       "Cuando llegué, él ya se había marchado."
+      ]
+     },
+     {
+      "zh": "你等一下，我一会儿就来。",
+      "py": "Nǐ děng yíxià, wǒ yíhuìr jiù lái.",
+      "es": [
+       "Espera un momento, enseguida vengo.",
+       "Espera un poco, ahora mismo vengo.",
+       "Espérate un momento, ahora voy.",
+       "Espera un momento, en un rato vengo.",
+       "Espere un momento, enseguida voy."
+      ]
+     },
+     {
+      "zh": "他还没来，我们再等等吧。",
+      "py": "Tā hái méi lái, wǒmen zài děngdeng ba.",
+      "es": [
+       "Todavía no ha venido; esperemos un poco más.",
+       "Aún no ha llegado, esperemos un poco más.",
+       "Él todavía no ha venido, vamos a esperar un poco más.",
+       "Todavía no ha llegado; esperemos otro poco.",
+       "Aún no ha venido, esperemos un rato más."
+      ]
+     },
+     {
+      "zh": "我们都去过北京。",
+      "py": "Wǒmen dōu qù guo Běijīng.",
+      "es": [
+       "Todos hemos estado en Pekín.",
+       "Todos nosotros hemos estado en Pekín.",
+       "Hemos estado todos en Pekín.",
+       "Todos hemos ido a Pekín.",
+       "Todos hemos estado en Beijing."
+      ]
+     }
+    ],
+    "lectura": {
+     "titulo": "En la estación",
+     "zh": "我到火车站的时候，已经八点了。火车还没开，大家都在等。我的朋友已经买了票。他说：“往前走两分钟就到了，快走吧！”",
+     "py": "Wǒ dào huǒchēzhàn de shíhou, yǐjīng bā diǎn le. Huǒchē hái méi kāi, dàjiā dōu zài děng. Wǒ de péngyou yǐjīng mǎi le piào. Tā shuō: “Wǎng qián zǒu liǎng fēnzhōng jiù dào le, kuài zǒu ba!”",
+     "es": "Cuando llegué a la estación de tren, ya eran las ocho. El tren todavía no había salido y todos estaban esperando. Mi amigo ya había comprado los billetes. Me dijo: «Dos minutos hacia delante y ya llegamos, ¡vamos rápido!».",
+     "preguntas": [
+      {
+       "q": "¿Qué hora era al llegar a la estación?",
+       "opciones": [
+        "Las siete",
+        "Las ocho",
+        "Las nueve"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "火车开了吗？",
+       "opciones": [
+        "已经开了",
+        "不开了",
+        "还没开"
+       ],
+       "ok": 2
+      },
+      {
+       "q": "¿Quién había comprado los billetes?",
+       "opciones": [
+        "Su amigo",
+        "Él mismo",
+        "Nadie"
+       ],
+       "ok": 0
+      }
+     ]
+    }
+   }
+  ],
+  "vocab": [
+   {
+    "w": "火车站",
+    "zh": "火车站离这儿很近。",
+    "py": "Huǒchēzhàn lí zhèr hěn jìn.",
+    "es": [
+     "La estación de tren está muy cerca de aquí.",
+     "La estación de tren queda muy cerca de aquí.",
+     "La estación de trenes está muy cerca de aquí.",
+     "La estación de tren está cerquita de aquí."
+    ]
+   },
+   {
+    "w": "新年",
+    "zh": "新年快乐！",
+    "py": "Xīnnián kuàilè!",
+    "es": [
+     "¡Feliz Año Nuevo!",
+     "¡Feliz año!",
+     "¡Próspero Año Nuevo!",
+     "¡Que tengas un feliz Año Nuevo!"
+    ]
+   },
+   {
+    "w": "票",
+    "zh": "我去买票。",
+    "py": "Wǒ qù mǎi piào.",
+    "es": [
+     "Voy a comprar los billetes.",
+     "Voy a comprar las entradas.",
+     "Voy a sacar los billetes.",
+     "Voy a comprar el billete.",
+     "Voy a comprar los boletos."
+    ]
+   },
+   {
+    "w": "火车",
+    "zh": "我们坐火车去北京。",
+    "py": "Wǒmen zuò huǒchē qù Běijīng.",
+    "es": [
+     "Vamos a Pekín en tren.",
+     "Vamos en tren a Pekín.",
+     "Iremos a Pekín en tren.",
+     "Nos vamos a Pekín en tren.",
+     "Vamos a Beijing en tren."
+    ]
+   },
+   {
+    "w": "大家",
+    "zh": "大家好！",
+    "py": "Dàjiā hǎo!",
+    "es": [
+     "¡Hola a todos!",
+     "¡Buenas a todos!",
+     "¡Hola a todo el mundo!",
+     "¡Hola, qué tal todos!"
+    ]
+   },
+   {
+    "w": "船",
+    "zh": "他们坐船去。",
+    "py": "Tāmen zuò chuán qù.",
+    "es": [
+     "Van en barco.",
+     "Ellos van en barco.",
+     "Irán en barco.",
+     "Se van en barco."
+    ]
+   },
+   {
+    "w": "快要",
+    "zh": "快要下雨了。",
+    "py": "Kuàiyào xià yǔ le.",
+    "es": [
+     "Está a punto de llover.",
+     "Va a llover enseguida.",
+     "Pronto va a llover.",
+     "Está por llover.",
+     "Va a ponerse a llover ya."
+    ]
+   },
+   {
+    "w": "就要",
+    "zh": "我们下个星期就要考试了。",
+    "py": "Wǒmen xià ge xīngqī jiùyào kǎoshì le.",
+    "es": [
+     "La semana que viene ya tenemos exámenes.",
+     "La próxima semana nos examinamos.",
+     "Tenemos el examen la semana que viene.",
+     "La semana que viene tenemos examen."
+    ]
+   },
+   {
+    "w": "回国",
+    "zh": "他明天回国。",
+    "py": "Tā míngtiān huí guó.",
+    "es": [
+     "Mañana vuelve a su país.",
+     "Vuelve a su país mañana.",
+     "Él regresa a su país mañana.",
+     "Mañana regresa a su país."
+    ]
+   },
+   {
+    "w": "关门",
+    "zh": "商店几点关门？",
+    "py": "Shāngdiàn jǐ diǎn guān mén?",
+    "es": [
+     "¿A qué hora cierra la tienda?",
+     "¿Cuándo cierra la tienda?",
+     "¿A qué hora cierran la tienda?",
+     "¿A qué hora cierra el comercio?"
+    ]
+   },
+   {
+    "w": "更",
+    "zh": "今天比昨天更冷。",
+    "py": "Jīntiān bǐ zuótiān gèng lěng.",
+    "es": [
+     "Hoy hace aún más frío que ayer.",
+     "Hoy hace todavía más frío que ayer.",
+     "Hoy hace más frío aún que ayer.",
+     "Hoy hace incluso más frío que ayer."
+    ]
+   },
+   {
+    "w": "向",
+    "zh": "一直向前走就到了。",
+    "py": "Yìzhí xiàng qián zǒu jiù dào le.",
+    "es": [
+     "Sigue todo recto y ya llegas.",
+     "Siga todo recto y ya está.",
+     "Todo recto hacia delante y ya llegas.",
+     "Vaya todo recto y enseguida llega."
+    ],
+    "altzh": [
+     "一直往前走就到了。"
+    ],
+    "altpy": [
+     "Yìzhí wǎng qián zǒu jiù dào le."
+    ]
+   },
+   {
+    "w": "日",
+    "zh": "今天是五月一日。",
+    "py": "Jīntiān shì wǔ yuè yī rì.",
+    "es": [
+     "Hoy es uno de mayo.",
+     "Hoy es 1 de mayo.",
+     "Hoy es el uno de mayo.",
+     "Hoy estamos a uno de mayo."
+    ],
+    "altzh": [
+     "今天是五月一号。"
+    ],
+    "altpy": [
+     "Jīntiān shì wǔ yuè yī hào."
+    ]
+   }
+  ]
+ }
+]

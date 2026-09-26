@@ -271,7 +271,12 @@
 
   // ---------------------------------------------------------------- español
   var STOP = ("el la los las un una unos unas lo al del de a en y e o u que se me te le les nos os " +
-    "es son esta estan este esto eso ese esa por para con mi mis tu tus su sus muy ya pero").split(" ");
+    "es son esta estan este esto eso ese esa por para con mi mis tu tus su sus muy ya pero " +
+    // pronombres sujeto (en español se omiten) y formas de ser/estar
+    "yo ella ello nosotros nosotras vosotros vosotras ellos ellas usted ustedes " +
+    "soy eres somos sois estoy estas estamos estais era eras eramos eran estaba estaban " +
+    "mio mia mios mias tuyo tuya suyo suya nuestro nuestra nuestros nuestras vuestro vuestra " +
+    "pues bueno eh ah oh vale si").split(" ");
   var STOPSET = {}; STOP.forEach(function (w) { STOPSET[w] = 1; });
   var NUMS = {
     cero: 0, uno: 1, una: 1, un: 1, dos: 2, tres: 3, cuatro: 4, cinco: 5, seis: 6, siete: 7, ocho: 8,
@@ -285,7 +290,84 @@
     profe: "profesor", maestro: "profesor", maestra: "profesor", doctor: "medico", doctora: "medico",
     papa: "padre", mama: "madre", perrito: "perro", gatito: "gato", tele: "television", tv: "television",
     filme: "pelicula", cine: "pelicula", yuanes: "yuan", kuai: "yuan", colegio: "escuela",
+    beijing: "pekin", pequin: "pekin", celular: "movil", telefono: "movil",
+    bus: "autobus", buses: "autobus", guagua: "autobus", colectivo: "autobus", camion: "autobus",
+    lindo: "bonito", linda: "bonito", lindos: "bonito", lindas: "bonito", precioso: "bonito", preciosa: "bonito",
+    guapo: "bonito", guapa: "bonito", guapos: "bonito", guapas: "bonito", hermoso: "bonito", hermosa: "bonito",
+    bonita: "bonito", bonitos: "bonito", bonitas: "bonito",
+    costoso: "caro", costosa: "caro", economico: "barato", economica: "barato",
+    deprisa: "rapido", rapidamente: "rapido", despacio: "lento", lentamente: "lento",
+    cuarto: "habitacion", dormitorio: "habitacion", pieza: "habitacion",
+    marido: "esposo", esposa: "esposo", mujer: "mujer",
+    chico: "nino", chica: "nina", chicos: "nino", chicas: "nina", muchacho: "nino", muchacha: "nina",
+    crio: "nino", cria: "nina", nene: "nino", nena: "nina",
+    curro: "trabajo", chamba: "trabajo", laburo: "trabajo",
+    jugo: "zumo", mesero: "camarero", mesera: "camarero", mozo: "camarero",
+    anteojos: "gafas", lentes: "gafas", plata: "dinero", pasta: "dinero",
+    platicar: "hablar", conversar: "hablar", charlar: "hablar",
+    ok: "bien", genial: "bien", estupendo: "bien",
+    // formas irregulares más frecuentes → infinitivo
+    voy: "ir", vas: "ir", va: "ir", vamos: "ir", vais: "ir", van: "ir", ire: "ir", iras: "ir", ira: "ir",
+    iremos: "ir", ireis: "ir", iran: "ir", iba: "ir", ibas: "ir", ibamos: "ir", iban: "ir", fui: "ir",
+    fuiste: "ir", fuimos: "ir", fueron: "ir", vaya: "ir", vayas: "ir", vayamos: "ir", ve: "ir", id: "ir",
+    tengo: "tener", tienes: "tener", tiene: "tener", tenemos: "tener", tienen: "tener", tuve: "tener",
+    tuvo: "tener", tendre: "tener", tendra: "tener", tenia: "tener", tenga: "tener",
+    quiero: "querer", quieres: "querer", quiere: "querer", queremos: "querer", quieren: "querer",
+    quise: "querer", quiso: "querer", querria: "querer", quisiera: "querer",
+    puedo: "poder", puedes: "poder", puede: "poder", podemos: "poder", pueden: "poder", pude: "poder",
+    pudo: "poder", podre: "poder", podra: "poder", podria: "poder",
+    hago: "hacer", haces: "hacer", hace: "hacer", hacemos: "hacer", hacen: "hacer", hice: "hacer",
+    hizo: "hacer", hicimos: "hacer", hicieron: "hacer", hare: "hacer", hara: "hacer", haga: "hacer", haz: "hacer",
+    hecho: "hacer",
+    digo: "decir", dices: "decir", dice: "decir", decimos: "decir", dicen: "decir", dije: "decir",
+    dijo: "decir", dijeron: "decir", dire: "decir", dira: "decir", di: "decir", dicho: "decir",
+    se: "se", sabes: "saber", sabe: "saber", sabemos: "saber", saben: "saber", supe: "saber", sabia: "saber",
+    vengo: "venir", vienes: "venir", viene: "venir", venimos: "venir", vienen: "venir", vine: "venir",
+    vino: "venir", vendre: "venir", vendra: "venir", ven: "venir", venga: "venir",
+    salgo: "salir", sales: "salir", sale: "salir", salen: "salir", saldre: "salir", sal: "salir",
+    pongo: "poner", pone: "poner", puse: "poner", puso: "poner", puesto: "poner",
+    veo: "ver", ves: "ver", vemos: "ver", vi: "ver", vio: "ver", vimos: "ver", visto: "ver",
+    doy: "dar", das: "dar", da: "dar", damos: "dar", dan: "dar", dio: "dar", dieron: "dar",
+    duermo: "dormir", duermes: "dormir", duerme: "dormir", duermen: "dormir", durmio: "dormir",
+    juego: "jugar", juegas: "jugar", juega: "jugar", juegan: "jugar",
+    vuelvo: "volver", vuelves: "volver", vuelve: "volver", vuelven: "volver", vuelto: "volver",
+    empiezo: "empezar", empiezas: "empezar", empieza: "empezar", empiezan: "empezar", empece: "empezar",
+    pienso: "creer", piensas: "creer", piensa: "creer", piensan: "creer", creo: "creer", crees: "creer",
+    cree: "creer", creemos: "creer", creen: "creer",
+    prefiero: "preferir", prefiere: "preferir", prefieres: "preferir",
+    pido: "pedir", pide: "pedir", pides: "pedir", pidio: "pedir",
+    sigo: "seguir", sigue: "seguir", sigues: "seguir",
+    cuesta: "costar", cuestan: "costar", costo: "costar",
+    llueve: "llover", llovio: "llover", nieva: "nevar", nevo: "nevar",
+    hay: "haber", habia: "haber", habra: "haber", hubo: "haber",
     lunes: "lunes" };
+  // sinónimos a nivel de raíz (después de quitar terminaciones)
+  var STEMSYN = { pens: "cre", parec: "cre", opin: "cre",
+    comenz: "empez", inici: "empez", acab: "termin", finaliz: "termin",
+    regres: "volv", contest: "respond", respond: "respond", tom: "tom", cog: "tom", agarr: "tom",
+    aguard: "esper", mir: "ver", observ: "ver", escuch: "oir", oig: "oir", oy: "oir",
+    viaj: "viaj", turism: "viaj", recorr: "viaj", pase: "pase",
+    ayud: "ayud", echarunaman: "ayud", enseñ: "enseñ", ensen: "enseñ",
+    enferm: "enferm", malit: "enferm", cans: "cans", agot: "cans",
+    feliz: "feliz", content: "feliz", alegr: "feliz",
+    deport: "deport", ejercici: "deport",
+    mejor: "mejor", optim: "mejor", encant: "gust", fascin: "gust",
+    habl: "habl", convers: "habl", charl: "habl", platic: "habl",
+    necesit: "necesit", deb: "ten", preciso: "necesit",
+    lleg: "lleg", arrib: "lleg", march: "ir",
+    cumplean: "cumplean", aniversari: "cumplean",
+    colegi: "escuel", escuel: "escuel", clas: "clas", leccion: "clas", lecci: "clas",
+    frecuent: "frecuent", menud: "frecuent", suel: "frecuent", habitual: "frecuent",
+    siempr: "siempr", tod: "tod", cad: "tod",
+    hermos: "bonit", precios: "bonit", lind: "bonit", guap: "bonit", bonit: "bonit",
+    costos: "car", caro: "car",
+    delicios: "ric", sabros: "ric", ric: "ric", buenisim: "ric" };
+
+  var SUFFIXES = ["ariamos", "eriamos", "iriamos", "aremos", "eremos", "iremos", "abamos", "ieramos",
+    "asteis", "isteis", "ierais", "ieron", "abais", "arais", "ando", "iendo", "yendo", "ados", "idos",
+    "adas", "idas", "aban", "abas", "aras", "aran", "iera", "ieras", "ieran", "aron", "aste", "iste",
+    "amos", "emos", "imos", "aria", "eria", "iria", "aba", "ado", "ido", "ada", "ida", "ara", "are",
+    "ere", "ire", "ian", "ias", "ar", "er", "ir", "as", "es", "an", "en", "ia", "io", "o", "a", "e"];
 
   function esTokens(s) {
     s = (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -308,9 +390,13 @@
   function stem(w) {
     if (/^\d+$/.test(w)) return w;
     w = SYN[w] || w;
-    if (w.length > 4) w = w.replace(/(es|s)$/, "");
-    if (w.length > 3) w = w.replace(/[aoe]$/, "");
-    return w;
+    if (w.length > 4 && /[^aeiou]es$/.test(w)) w = w.slice(0, -2);
+    else if (w.length > 3 && /[aeiou]s$/.test(w)) w = w.slice(0, -1);
+    for (var i = 0; i < SUFFIXES.length; i++) {
+      var suf = SUFFIXES[i];
+      if (w.length - suf.length >= 3 && w.slice(-suf.length) === suf) { w = w.slice(0, -suf.length); break; }
+    }
+    return STEMSYN[w] || w;
   }
   function content(s) {
     var t = esTokens(s), c = t.filter(function (w) { return !STOPSET[w]; });
@@ -329,6 +415,8 @@
     return { level: "ko", score: 0 };
   }
 
+  function negated(s) { return esTokens(s).some(function (w) { return /^(no|nunca|jamas|tampoco|ni|nada|nadie|ningun|ninguno|ninguna|sin)$/.test(w); }); }
+
   /** Traducción al español: parecido con la mejor de las traducciones válidas. */
   function compareSpanish(answer, variants) {
     var B = content(answer), best = 0, bestV = variants[0];
@@ -341,6 +429,8 @@
       if (f > best) { best = f; bestV = v; }
     });
     var level = best >= 0.8 ? "ok" : best >= 0.5 ? "mid" : "ko";
+    // Una negación de más o de menos cambia el sentido.
+    if (level === "ok" && negated(answer) !== negated(bestV)) level = "mid";
     return { level: level, score: level === "ok" ? 1 : level === "mid" ? 0.5 : 0, sim: best, best: bestV };
   }
 

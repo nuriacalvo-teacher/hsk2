@@ -9,11 +9,17 @@ igual, pero el diseño es de porcelana azul y blanca y la música es distinta.
 | Sección | Qué hay | Cuántos |
 |---|---|---|
 | **Gramática · 语法** | Las estructuras de cada lección explicadas en español, con la fórmula, ejemplos con audio (cada palabra se puede tocar) y un minitest de 3 preguntas. | 53 puntos (3-4 por lección) |
+| **Ejercicios · 练习** | Una zona de práctica por lección: ejercicios de **cada punto de gramática** (elegir, ordenar fichas, traducir hanzi ↔ español ↔ pinyin, escuchar y una lectura con 3 preguntas), **8 ejercicios de vocabulario** con todas las palabras de la lección y un **examen** que lo mezcla todo. En las traducciones de hanzi al español se puede tocar una palabra para verla, pero cada ayuda resta un 10 %. | 53 puntos · 393 preguntas · 463 frases · 53 lecturas · 219 frases de vocabulario |
 | **Dictado · 听写** | Escuchas y escribes en pinyin. Se corrige sílaba a sílaba y tono a tono. | 72 dictados: frases y vocabulario de cada lección y dictados especiales (números grandes, precios, horas y duración, fechas, medidas) |
 | **Listening · 听力** | Diálogos con 2 o 3 voces y 5 preguntas que se responden en pinyin o en español. Después se ve la transcripción y se puede repetir cada línea. | 30 diálogos, 2 por lección |
-| **Lectura · 阅读** | Nivel 1 en **pinyin** y nivel 2 en **hanzi**. Al tocar una palabra se ven su hanzi o su pinyin y su traducción. Cada lectura tiene 5 preguntas. | 30 lecturas, 1 por lección y nivel |
-| **Traducción · 翻译** | 4 niveles: pinyin → español, español → pinyin, hanzi → español y español → hanzi (con fichas o con el teclado chino). Se puede elegir una lección o mezclar todo el curso. | 322 frases del curso |
+| **Lectura · 阅读** | Siempre en **hanzi**: nivel 1 con el pinyin encima y nivel 2 sin él. Al tocar una palabra se ven su pinyin y su traducción y se oye. Cada lectura tiene 5 preguntas. | 30 lecturas, 1 por lección y nivel |
+| **Traducción · 翻译** | 4 niveles: hanzi con pinyin → español, español → pinyin, hanzi → español y español → hanzi (con fichas o con el teclado chino). Se puede elegir una lección o mezclar todo el curso. | 322 frases del curso |
 | **Vocabulario · 词语** | Las palabras nuevas de HSK 2 por lección y el vocabulario de HSK 1 para repasar, con buscador y audio. | 218 palabras de HSK 2 + 241 de HSK 1 |
+
+**Todo el chino de la app se puede tocar** (explicaciones, preguntas, títulos,
+ejemplos…): cada hanzi muestra su pinyin y su traducción y se puede escuchar.
+Las traducciones al español aceptan sinónimos, variantes de España y América,
+frases con o sin pronombre y distintos tiempos verbales equivalentes.
 
 Todos los audios tienen **cuatro velocidades**: muy lento, lento, medio y
 normal.
@@ -130,6 +136,8 @@ Todo el contenido está en `data/` y se puede editar como texto:
 | `data/dictados_extra.txt` | Los dictados especiales: números, fechas, horas… |
 | `data/listenings_*.json` | Los diálogos y sus preguntas. |
 | `data/lecturas_n1.json`, `data/lecturas_n2.json` | Las lecturas y sus preguntas. |
+| `data/ejercicios_*.json` | La zona de ejercicios: preguntas de gramática, frases (con todas sus traducciones válidas), lecturas y frases de vocabulario de cada lección. |
+| `data/diccionario_extra_chars.tsv` | Caracteres sueltos (lección 99) para que también se puedan tocar. |
 
 Después de editar, ejecuta:
 
