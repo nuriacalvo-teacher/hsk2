@@ -95,8 +95,15 @@ una vez**, igual que en el proyecto BRIT:
 ### Opción A · online, sin instalar nada
 
 1. Pestaña **Actions** del repositorio → **Grabar los audios** → **Run workflow**.
-2. Tarda unos 30-45 minutos la primera vez (≈ 780 audios × 3 velocidades) y
-   sube él solo los audios al repositorio.
+2. Si hay que grabarlo todo tarda un par de horas (≈ 1600 audios × 4
+   velocidades) y sube él solo los audios al repositorio. Si se acaba el
+   tiempo, sube lo que lleva: vuelve a pulsar **Run workflow** y sigue por ahí
+   (el resumen de la ejecución dice cuántos faltan).
+
+Todo se graba con voces neuronales nativas: **Xiaoxiao** (mujer) y **Yunxi**
+(hombre) leen todas las frases, palabras, ejemplos y lecturas; en los
+diálogos, si hay dos personajes del mismo sexo, el segundo es **Xiaoyi** o
+**Yunyang**. La velocidad «muy lento» se graba aparte, sin estirar el audio.
 
 > Si falla al subir: **Settings → Actions → General → Workflow permissions →
 > Read and write permissions**. Solo hay que tocarlo una vez.
@@ -118,7 +125,7 @@ una vez**, igual que en el proyecto BRIT:
 - Escribe en **`tools/voces.txt`** las que más te gusten. En ese mismo
   fichero se cambian las velocidades.
 - **`tools/ESCUCHAR-VOCES.command`** (o **muestra**) graba un minuto con las
-  voces elegidas a las tres velocidades.
+  voces elegidas a las cuatro velocidades.
 
 Al volver a grabar, **solo se regraban los audios cuyo texto o voz haya
 cambiado**.

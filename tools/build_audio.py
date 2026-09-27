@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 build_audio.py · graba con voces neuronales chinas todos los audios de la app
-(dictados, listenings y lecturas), cada uno a TRES velocidades.
+(dictados, listenings y lecturas), cada uno a CUATRO velocidades.
 
 Por qué existe
 --------------
@@ -40,6 +40,7 @@ import json
 import os
 import re
 import sys
+import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -54,15 +55,15 @@ VOICES = {
     "f1": "zh-CN-XiaoxiaoNeural",
     "m1": "zh-CN-YunxiNeural",
     "f2": "zh-CN-XiaoyiNeural",
-    "m2": "zh-CN-YunjianNeural",
-    "f3": "zh-CN-XiaoxiaoNeural@+15Hz",
-    "m3": "zh-CN-YunyangNeural",
+    "m2": "zh-CN-YunyangNeural",
+    "f3": "zh-CN-XiaoxiaoNeural@+6Hz",
+    "m3": "zh-CN-YunjianNeural",
 }
 # Velocidad de cada versión (porcentaje sobre la velocidad natural de la voz).
-SPEEDS = {"lento": "-40%", "medio": "-20%", "normal": "+0%"}
+SPEEDS = {"muylento": "-50%", "lento": "-35%", "medio": "-18%", "normal": "+0%"}
 
 GAP = {"listening": 0.55, "lectura": 0.7}      # silencio entre líneas/párrafos (a velocidad normal)
-CONCURRENCY = 4
+CONCURRENCY = 6
 
 
 def load_voice_config():
@@ -177,7 +178,7 @@ def unit_hash(unit):
 async def build_one(uid, unit, speed):
     """Graba una unidad a una velocidad. Devuelve {"d": duración, "c": [inicio de cada línea]}."""
     pieces, cues, elapsed, rate = [], [], 0.0, 24000
-    factor = {"lento": 1.6, "medio": 1.25}.get(speed, 1.0)
+    factor = {"muylento": 1.9, "lento": 1.55, "medio": 1.2}.get(speed, 1.0)
     gap = GAP.get(unit["tipo"], 0.5) * factor
     for i, ln in enumerate(unit["lineas"]):
         audio = await synth(ln["zh"], VOICES[ln["v"]], SPEEDS[speed])
@@ -233,12 +234,20 @@ async def build_all(args):
         todo.append((uid, unit, h))
 
     print("Audios: %d en total, %d por grabar (x%d velocidades)" % (len(units), len(todo), len(SPEEDS)))
+    # Primero lo que se oye más (frases y palabras), luego lecturas y diálogos.
+    order = {"palabra": 0, "frase": 1, "lectura": 2, "listening": 3}
+    todo.sort(key=lambda t: order.get(t[1]["tipo"], 9))
+    deadline = time.time() + args.max_minutes * 60 if args.max_minutes else None
+    skipped = [0]
     sem = asyncio.Semaphore(CONCURRENCY)
     done = [0]
     failed = []
 
     async def worker(uid, unit, h):
         async with sem:
+            if deadline and time.time() > deadline:
+                skipped[0] += 1
+                return
             try:
                 entry = {"h": h}
                 for speed in SPEEDS:
@@ -262,6 +271,8 @@ async def build_all(args):
     write_manifest(files)
     total = sum(v["normal"]["d"] for v in files.values() if "normal" in v)
     print("\nListo: %d audios · %d min de audio a velocidad normal" % (len(files), total // 60))
+    if skipped[0]:
+        print("Se acabó el tiempo: quedan %d audios. Vuelve a lanzarlo y seguirá por ahí." % skipped[0])
     if failed:
         print("Han fallado %d audios. Vuelve a lanzar el script para reintentarlos." % len(failed))
         return 1
@@ -272,7 +283,7 @@ SAMPLE = "你好！我叫李月，我是中国人。今天九月一号，星期�
 
 
 async def build_demo():
-    """Muestra corta: cada voz configurada lee una frase a las tres velocidades."""
+    """Muestra corta: cada voz configurada lee una frase a las cuatro velocidades."""
     os.makedirs(AUDIO_DIR, exist_ok=True)
     pieces, rate = [], 24000
     for key in ("f1", "m1", "f2", "m2"):
@@ -337,6 +348,7 @@ def main():
     ap.add_argument("--only", nargs="+", metavar="ID")
     ap.add_argument("--tipo", nargs="+", choices=["frase", "palabra", "listening", "lectura"])
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--max-minutes", type=float, default=0, help="deja de empezar audios nuevos pasado este tiempo")
     ap.add_argument("--demo", action="store_true")
     ap.add_argument("--audition", action="store_true")
     ap.add_argument("--list-voices", action="store_true")

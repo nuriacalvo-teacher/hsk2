@@ -185,7 +185,7 @@
   // voz: audio grabado o voz del navegador
   // ======================================================================
   var SPEEDS = [
-    { k: "muylento", zh: "很慢", es: "Muy lento", file: "lento", rate: 0.8, tts: 0.45 },
+    { k: "muylento", zh: "很慢", es: "Muy lento", file: "muylento", rate: 1, tts: 0.45 },
     { k: "lento", zh: "慢", es: "Lento", file: "lento", rate: 1, tts: 0.6 },
     { k: "medio", zh: "中", es: "Medio", file: "medio", rate: 1, tts: 0.8 },
     { k: "normal", zh: "正常", es: "Normal", file: "normal", rate: 1, tts: 1 }
@@ -193,6 +193,12 @@
   function speedObj(k) { return SPEEDS.filter(function (s) { return s.k === k; })[0] || SPEEDS[1]; }
   function manifest() { return window.HSK_AUDIO && window.HSK_AUDIO.files ? window.HSK_AUDIO.files : null; }
   function recorded(id) { var m = manifest(); return !!(m && id && m[id] && m[id].normal); }
+  /** Fichero que toca para esa velocidad. Los audios antiguos no tienen "muy lento" grabado: se usa el lento un poco más despacio. */
+  function audioFile(id, sp) {
+    var m = manifest(), e = m && m[id];
+    if (sp.file === "muylento" && !(e && e.muylento)) return { file: "lento", rate: 0.8 };
+    return { file: sp.file, rate: sp.rate };
+  }
 
   var TTS = {
     voices: [],
@@ -274,7 +280,7 @@
     if (!on) { this.lineIdx = -1; if (this.opts.onLine) this.opts.onLine(-1); }
   };
   Player.prototype.ensureAudio = function () {
-    var sp = this.speed(), self = this;
+    var sp = audioFile(this.opts.id, this.speed()), self = this;
     if (this.audio && this.audio._file === sp.file) { this.audio.playbackRate = sp.rate; return this.audio; }
     var a = new Audio("audio/" + sp.file + "/" + this.opts.id + ".mp3");
     a._file = sp.file;
@@ -303,7 +309,7 @@
   };
   Player.prototype.cues = function () {
     var m = manifest(); if (!m || !m[this.opts.id]) return null;
-    var e = m[this.opts.id][this.speed().file]; return e ? e.c : null;
+    var e = m[this.opts.id][audioFile(this.opts.id, this.speed()).file]; return e ? e.c : null;
   };
   Player.prototype.toggle = function () { if (this.playing) this.stop(); else this.play(false); };
   Player.prototype.play = function (fromStart) {
@@ -373,7 +379,7 @@
   function speakOnce(zh, id) {
     stopAll();
     if (id && recorded(id)) {
-      var sp = speedObj(S.settings.speed === "muylento" ? "lento" : S.settings.speed);
+      var sp = audioFile(id, speedObj(S.settings.speed));
       var a = new Audio("audio/" + sp.file + "/" + id + ".mp3");
       a.playbackRate = sp.rate;
       a.play().catch(function () {});

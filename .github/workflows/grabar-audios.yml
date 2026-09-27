@@ -4,7 +4,7 @@
 # Se lanza desde la pestaña "Actions" de GitHub → "Grabar los audios" →
 # botón "Run workflow". No hace falta instalar nada.
 #
-# La primera vez tarda unos 30-45 minutos (unos 600 audios x 3 velocidades).
+# Tarda un par de horas si hay que grabarlo todo (unos 1600 audios x 4 velocidades).
 # Después solo graba lo nuevo o lo que haya cambiado.
 
 name: Grabar los audios
@@ -42,7 +42,7 @@ concurrency:
 jobs:
   grabar:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 340
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v4
@@ -93,6 +93,9 @@ jobs:
             ARGS+=(--force)
           fi
           # Si algún audio falla se reintenta una vez; lo ya grabado se conserva.
+          # Se para a las 4 h y media para que dé tiempo a subir lo grabado;
+          # si queda algo, basta con volver a pulsar "Run workflow".
+          ARGS+=(--max-minutes 270)
           python3 tools/build_audio.py "${ARGS[@]}" || python3 tools/build_audio.py "${ARGS[@]}" || true
 
       - name: Subir los audios al repositorio
@@ -114,7 +117,7 @@ jobs:
         if: ${{ always() && !inputs.muestra && !inputs.comparativa }}
         run: |
           if [ -f audio/manifest.json ]; then
-            python3 -c "import json; d=json.load(open('audio/manifest.json'))['files']; t=sum(f['normal']['d'] for f in d.values() if 'normal' in f); print('## Audios\\n\\n- Audios grabados: **%d** (x3 velocidades)\\n- Duración a velocidad normal: **%d min**' % (len(d), t//60))" >> "$GITHUB_STEP_SUMMARY"
+            python3 -c "import json; d=json.load(open('audio/manifest.json'))['files']; u=json.load(open('data/audios.json'))['units']; t=sum(f['normal']['d'] for f in d.values() if 'normal' in f); f=len([k for k in u if k in d]); print('## Audios\\n\\n- Audios grabados: **%d de %d** (x4 velocidades)\\n- Duración a velocidad normal: **%d min**\\n- %s' % (f, len(u), t//60, 'Todo grabado.' if f == len(u) else 'Faltan %d: vuelve a pulsar Run workflow.' % (len(u) - f)))" >> "$GITHUB_STEP_SUMMARY"
           else
             echo '## Audios' >> "$GITHUB_STEP_SUMMARY"
             echo 'No se generó ningún audio. Revisa el registro del paso anterior.' >> "$GITHUB_STEP_SUMMARY"

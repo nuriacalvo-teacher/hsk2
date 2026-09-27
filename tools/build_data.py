@@ -43,6 +43,18 @@ MAX_DICTADO = 10        # frases por dictado; los temas largos se parten en vari
 NOT_NAMES = {"中国", "美国", "中国人", "美国人", "汉语", "汉字", "中国菜", "北京", "英语"}
 
 
+# Palabras de un carácter con varias lecturas: sueltas, la voz elegiría la
+# lectura equivocada, así que se graba un carácter que suena igual.
+WORD_TTS = {
+    "还": "孩",     # hái (no huán)
+    "长": "常",     # cháng (no zhǎng)
+    "教": "交",     # jiāo (no jiào)
+    "种": "肿",     # zhǒng (no zhòng)
+    "得": "的",     # de (no dé / děi)
+    "地": "弟",     # dì
+}
+
+
 def audio_id(prefix, text):
     return prefix + hashlib.sha1(text.encode("utf-8")).hexdigest()[:10]
 
@@ -141,9 +153,10 @@ def main():
     def add_audio(aid, text, kind):
         if aid in audios:
             return
-        v = ("f1", "m1", "f2", "m2")[voice_toggle[0] % 4]
+        # Frases y palabras: solo las dos voces más naturales (f1 y m1).
+        v = ("f1", "m1")[voice_toggle[0] % 2]
         voice_toggle[0] += 1
-        audios[aid] = {"tipo": kind, "lineas": [{"v": v, "zh": text}]}
+        audios[aid] = {"tipo": kind, "lineas": [{"v": v, "zh": WORD_TTS.get(text, text) if kind == "palabra" else text}]}
 
     for t in temas:
         fr = t["frases"]
@@ -220,7 +233,7 @@ def main():
         paras = [p.strip() for p in R["texto"].split("¶")]
         text = "\n".join("".join(tok.split("|", 1)[0] for tok in p.split()) for p in paras if p)
         audios[R["id"]] = {"tipo": "lectura",
-                           "lineas": [{"v": "f2" if R["tema"] % 2 else "m2", "zh": para}
+                           "lineas": [{"v": "f1" if R["tema"] % 2 else "m1", "zh": para}
                                       for para in text.split("\n")]}
 
     # ------------------------------------------------------------- gramática
@@ -269,7 +282,7 @@ def main():
             lec = pto.get("lectura")
             if lec:
                 lec["au"] = audio_id("e-", lec["zh"])
-                audios[lec["au"]] = {"tipo": "lectura", "lineas": [{"v": "f2", "zh": lec["zh"]}]}
+                audios[lec["au"]] = {"tipo": "lectura", "lineas": [{"v": "f1" if t["tema"] % 2 else "m1", "zh": lec["zh"]}]}
         for f in t.get("vocab", []):
             f["es"] = es_by_zh[f["zh"]]
             f["au"] = audio_id("d-", f.get("tts", f["zh"]))
@@ -314,7 +327,7 @@ def main():
     print("  ejercicios: %d lecciones, %d puntos, %d frases, %d frases de vocabulario" % (
         len(ejercicios), sum(len(t["puntos"]) for t in ejercicios),
         sum(len(p["frases"]) for t in ejercicios for p in t["puntos"]), sum(len(t.get("vocab", [])) for t in ejercicios)))
-    print("  %d audios distintos para grabar (x3 velocidades)" % len(audios))
+    print("  %d audios distintos para grabar (x4 velocidades)" % len(audios))
 
 
 if __name__ == "__main__":
