@@ -1,20 +1,20 @@
 # 汉语 HSK2 · Repaso
 
-App web para repasar todo el curso **HSK 2** (las 15 lecciones del *HSK Standard
-Course 2*). Está pensada para hispanohablantes: la gramática, las preguntas y
+App web para repasar todo el curso **HSK 2** (las 15 lecciones del nuevo libro
+*新HSK教程 2 · New HSK Course 2*, 2026) y todo el vocabulario HSK 1 y HSK 2 del **HSK 3.0**. Está pensada para hispanohablantes: la gramática, las preguntas y
 las traducciones están en español. Es la continuación de
 [HSK1 · Repaso](https://nuriacalvo-teacher.github.io/hsk1/): funciona
 igual, pero el diseño es de porcelana azul y blanca y la música es distinta.
 
 | Sección | Qué hay | Cuántos |
 |---|---|---|
-| **Gramática · 语法** | Las estructuras de cada lección explicadas en español, con la fórmula, ejemplos con audio (cada palabra se puede tocar) y un minitest de 3 preguntas. | 53 puntos (3-4 por lección) |
-| **Ejercicios · 练习** | Una zona de práctica por lección: ejercicios de **cada punto de gramática** (elegir, ordenar fichas, traducir hanzi ↔ español ↔ pinyin, escuchar y una lectura con 3 preguntas), **8 ejercicios de vocabulario** con todas las palabras de la lección y un **examen** que lo mezcla todo. En las traducciones de hanzi al español se puede tocar una palabra para verla, pero cada ayuda resta un 10 %. | 53 puntos · 393 preguntas · 463 frases · 53 lecturas · 219 frases de vocabulario |
-| **Dictado · 听写** | Escuchas y escribes en pinyin. Se corrige sílaba a sílaba y tono a tono. | 72 dictados: frases y vocabulario de cada lección y dictados especiales (números grandes, precios, horas y duración, fechas, medidas) |
+| **Gramática · 语法** | Las estructuras de cada lección explicadas en español, con la fórmula, ejemplos con audio (cada palabra se puede tocar) y un minitest de 3 preguntas. | 45 puntos (3 por lección, los del 小语讲堂) |
+| **Ejercicios · 练习** | Una zona de práctica por lección: ejercicios de **cada punto de gramática** (elegir, ordenar fichas, traducir hanzi ↔ español ↔ pinyin, escuchar y una lectura con 3 preguntas), **8 ejercicios de vocabulario** con todas las palabras de la lección y un **examen** que lo mezcla todo. En las traducciones de hanzi al español se puede tocar una palabra para verla, pero cada ayuda resta un 10 %. | 45 puntos · 389 frases · 45 lecturas · 609 frases de vocabulario (una por palabra) |
+| **Dictado · 听写** | Escuchas y escribes en pinyin. Se corrige sílaba a sílaba y tono a tono. | 99 dictados: frases y vocabulario de cada lección y dictados especiales (números grandes, precios, horas y duración, fechas, medidas) |
 | **Listening · 听力** | Diálogos con 2 o 3 voces y 5 preguntas que se responden en pinyin o en español. Después se ve la transcripción y se puede repetir cada línea. | 30 diálogos, 2 por lección |
 | **Lectura · 阅读** | Siempre en **hanzi**: nivel 1 con el pinyin encima y nivel 2 sin él. Al tocar una palabra se ven su pinyin y su traducción y se oye. Cada lectura tiene 5 preguntas. | 30 lecturas, 1 por lección y nivel |
-| **Traducción · 翻译** | 4 niveles: hanzi con pinyin → español, español → pinyin, hanzi → español y español → hanzi (con fichas o con el teclado chino). Se puede elegir una lección o mezclar todo el curso. | 322 frases del curso |
-| **Vocabulario · 词语** | Las palabras nuevas de HSK 2 por lección y el vocabulario de HSK 1 para repasar, con buscador y audio. | 218 palabras de HSK 2 + 241 de HSK 1 |
+| **Traducción · 翻译** | 4 niveles: hanzi con pinyin → español, español → pinyin, hanzi → español y español → hanzi (con fichas o con el teclado chino). Se puede elegir una lección o mezclar todo el curso. | 447 frases del curso (todas las de los textos del libro) |
+| **Vocabulario · 词语** | Todo el vocabulario que hay que aprender, repartido por lecciones para ir poco a poco: las 500 palabras de HSK 1 (3.0), las 200 de HSK 2 (3.0) y las del libro, con buscador y audio. | ≈ 660 palabras + nombres propios |
 
 **Todo el chino de la app se puede tocar** (explicaciones, preguntas, títulos,
 ejemplos…): cada hanzi muestra su pinyin y su traducción y se puede escuchar.

@@ -35,7 +35,8 @@ def load_dict():
                 raise SystemExit("%s:%d: faltan columnas: %r" % (os.path.basename(path), n, line))
             zh, py, es = cols[0].strip(), cols[1].strip(), cols[2].strip()
             tema = int(cols[3]) if len(cols) > 3 and cols[3].strip().isdigit() else 0
-            words[zh] = {"p": py, "es": es, "t": tema}
+            nivel = cols[4].strip() if len(cols) > 4 else ""
+            words[zh] = {"p": py, "es": es, "t": tema, "nv": nivel}
     return words
 
 
@@ -137,7 +138,8 @@ def split_letters(s):
     return best[n] if best[n] is not None else [s]
 
 
-ERHUA = ("哪儿", "那儿", "这儿", "点儿", "会儿", "玩儿", "孩儿")
+ERHUA = ("哪儿", "那儿", "这儿", "点儿", "会儿", "玩儿", "孩儿", "条儿", "块儿", "事儿", "空儿", "边儿", "门儿",
+         "味儿", "画儿", "歌儿", "片儿", "号儿", "瓶儿", "头儿", "伴儿", "样儿", "下儿")
 
 
 def hanzi_syllable_count(zh):

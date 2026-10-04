@@ -1,0 +1,278 @@
+[
+ {
+  "tema": 13,
+  "puntos": [
+   {
+    "id": "G13-1",
+    "titulo": "双宾语句 (2): 送给 / 拿给 / 卖给 + persona + cosa",
+    "zh": "送给 · 拿给 · 卖给",
+    "explicacion": [
+     "Un <b>双宾语句</b> (shuāng bīnyǔ jù, «oración de doble objeto») es una frase en la que el verbo lleva dos complementos: normalmente primero la <b>persona</b> que recibe y después la <b>cosa</b>. Ya conoces algunos verbos así, como 教 (jiāo): 王老师教我们中文 = «la profesora Wang nos enseña chino».",
+     "En esta lección se añaden verbos de «pasar algo a alguien»: <b>送</b> (sòng, regalar), <b>拿</b> (ná, coger, traer) y <b>卖</b> (mài, vender), seguidos de <b>给</b> (gěi): 送给她花 = «regalarle flores», 拿给我一杯水 = «traerme un vaso de agua», 卖给我一本中文书 = «venderme un libro de chino». 给 marca a quién va la cosa, como nuestro «le / a alguien».",
+     "El orden es fijo: <b>verbo + 给 + persona + cosa</b>. En español el complemento indirecto se mueve con libertad («le regalamos flores a la profesora», «a la profesora le regalamos flores»), pero en chino la persona va justo detrás de 给 y la cosa (con su número y clasificador) al final.",
+     "Con 送, en frases cortas y coloquiales, 给 puede desaparecer: 我买了两个，送你一个 = «compré dos y te regalo uno». Con 拿 y 卖, en cambio, mantén siempre 给."
+    ],
+    "estructura": [
+     "Sujeto + 送/拿/卖 + 给 + persona + cosa → 我们送给王老师漂亮的花",
+     "Sujeto + 送 + persona + cosa (coloquial) → 我送你一个本子"
+    ],
+    "ejemplos": [
+     {"zh": "王老师喜欢花，就送给她花吧。", "py": "Wáng lǎoshī xǐhuan huā, jiù sòng gěi tā huā ba.", "es": "A la profesora Wang le gustan las flores, así que regalémosle flores.", "nota": "del libro"},
+     {"zh": "她拿给我一杯水。", "py": "Tā ná gěi wǒ yì bēi shuǐ.", "es": "Me trajo un vaso de agua.", "nota": "del libro"},
+     {"zh": "他卖给我一本中文书。", "py": "Tā mài gěi wǒ yì běn Zhōngwén shū.", "es": "Me vendió un libro de chino.", "nota": "del libro"},
+     {"zh": "安妮送给我一个新本子。", "py": "Ānnī sòng gěi wǒ yí gè xīn běnzi.", "es": "Annie me regaló un cuaderno nuevo."},
+     {"zh": "昨天过生日，爸爸送给我一个新手机。", "py": "Zuótiān guò shēngrì, bàba sòng gěi wǒ yí gè xīn shǒujī.", "es": "Ayer fue mi cumpleaños y mi padre me regaló un móvil nuevo."},
+     {"zh": "你拿给他一个杯子吧。", "py": "Nǐ ná gěi tā yí gè bēizi ba.", "es": "Pásale un vaso.", "nota": "拿给 = «dar, pasar, acercar»"}
+    ],
+    "ojo": "No metas la cosa entre 给 y la persona: *我送给一本书她* está mal → 我送给她一本书. Y con 拿 o 卖 no te olvides de 给: *她拿我一杯水* no se dice → 她拿给我一杯水.",
+    "practica": [
+     {"q": "我想送给___，她最喜欢读书。", "opciones": ["一本书她", "她一本书", "她书一本"], "ok": 1, "exp": "Primero la persona y luego la cosa: 我想送给她一本书 = «quiero regalarle un libro»."},
+     {"q": "Elige la frase correcta:", "opciones": ["他卖我给一个杯子。", "他卖杯子一个给我。", "他卖给我一个杯子。"], "ok": 2, "exp": "Verbo + 给 + persona + cosa: 他卖给我一个杯子 = «me vendió un vaso»."},
+     {"q": "妈妈___我一杯茶。(«Mi madre me trajo un té.»)", "opciones": ["拿给", "拿到", "拿着"], "ok": 0, "exp": "拿给 + persona + cosa = «traerle / darle algo a alguien»: 妈妈拿给我一杯茶."}
+    ]
+   },
+   {
+    "id": "G13-2",
+    "titulo": "比较句 (7): A 比 B + adjetivo + cantidad («tres años mayor», «diez más»)",
+    "zh": "A 比 B + adj. + número + clasificador",
+    "explicacion": [
+     "Ya sabes comparar con <b>比</b> (bǐ): 姐姐比我大 = «mi hermana es mayor que yo». Para decir <b>cuánta</b> es la diferencia, se pone la cantidad (número + clasificador) <b>detrás del adjetivo</b>: 姐姐比我大三岁 = «mi hermana es tres años mayor que yo».",
+     "Es justo al revés que en español: nosotros decimos «tres años mayor» o «diez palabras más», con la cantidad delante; en chino se dice literalmente «mayor tres años», «más diez»: 今天的词比昨天多了十个 = «hoy hay diez palabras más que ayer». El 了 detrás del adjetivo indica que la diferencia ya existe; se puede omitir.",
+     "La cantidad puede ser de edad (岁), de cosas (个、本), de dinero (块) o de tiempo (小时、天): 坐飞机比坐火车快五个多小时 = «en avión se llega más de cinco horas antes que en tren». Con 多 también se puede poner un nombre al final: 我们班比他们班多五个学生.",
+     "Recuerda que en las comparaciones con 比 <b>no se usa 很, 非常 ni 太</b> delante del adjetivo."
+    ],
+    "estructura": [
+     "A 比 B + adjetivo (+ 了) + número + clasificador → 今天的词比昨天多了十个",
+     "A 比 B + 大/小 + número + 岁 → 姐姐比我大三岁",
+     "A 比 B + 多/少 + número + clasificador + nombre → 我们班比他们班多五个学生"
+    ],
+    "ejemplos": [
+     {"zh": "今天的词比昨天多了十个。", "py": "Jīntiān de cí bǐ zuótiān duōle shí gè.", "es": "Hoy hay diez palabras más que ayer.", "nota": "del libro"},
+     {"zh": "姐姐比我大三岁。", "py": "Jiějie bǐ wǒ dà sān suì.", "es": "Mi hermana es tres años mayor que yo.", "nota": "del libro"},
+     {"zh": "坐飞机比坐火车快五个多小时。", "py": "Zuò fēijī bǐ zuò huǒchē kuài wǔ gè duō xiǎoshí.", "es": "En avión se llega más de cinco horas antes que en tren.", "nota": "del libro"},
+     {"zh": "这本书比那本贵二十块。", "py": "Zhè běn shū bǐ nà běn guì èrshí kuài.", "es": "Este libro cuesta veinte yuanes más que aquel."},
+     {"zh": "我们班比他们班多五个学生。", "py": "Wǒmen bān bǐ tāmen bān duō wǔ gè xuésheng.", "es": "Nuestra clase tiene cinco alumnos más que la suya."},
+     {"zh": "弟弟比我小两岁。", "py": "Dìdi bǐ wǒ xiǎo liǎng suì.", "es": "Mi hermano pequeño es dos años menor que yo."}
+    ],
+    "ojo": "No pongas la cantidad delante del adjetivo como en español: *姐姐比我三岁大* está mal → 姐姐比我大三岁. Y no añadas 很: *姐姐比我很大三岁* tampoco se dice.",
+    "practica": [
+     {"q": "哥哥比我___。(«Mi hermano es dos años mayor que yo.»)", "opciones": ["两岁大", "大两岁", "很大两岁"], "ok": 1, "exp": "La cantidad va detrás del adjetivo: 哥哥比我大两岁."},
+     {"q": "这个本子比那个___。(«…cuesta diez yuanes más»)", "opciones": ["贵十块", "十块贵", "很贵十块"], "ok": 0, "exp": "A 比 B + adjetivo + cantidad: 这个本子比那个贵十块 = «este cuaderno cuesta diez yuanes más que aquel»."},
+     {"q": "Elige la frase correcta:", "opciones": ["我们班比你们班三个学生多。", "我们班比你们班很多三个学生。", "我们班比你们班多三个学生。"], "ok": 2, "exp": "多 + número + clasificador + nombre: 我们班比你们班多三个学生 = «nuestra clase tiene tres alumnos más que la vuestra»."}
+    ]
+   },
+   {
+    "id": "G13-3",
+    "titulo": "比较句 (8): A 比 B + adjetivo + 一点儿 / 一些 («un poco más…»)",
+    "zh": "A 比 B + adj. + 一点儿 / 一些",
+    "explicacion": [
+     "Cuando la diferencia es <b>pequeña</b>, detrás del adjetivo se pone <b>一点儿</b> (yìdiǎnr) o <b>一些</b> (yìxiē): 姐姐比我高一点儿 = «mi hermana es un poco más alta que yo». Equivale a nuestro «un poco más + adjetivo».",
+     "Otra vez el orden es el contrario al español: «un poco más caro» → 贵一点儿 (literalmente «caro un poco»). En una comparación, 一点儿 nunca va delante del adjetivo: 比我们一起买的那个本子贵一点儿 = «es un poco más caro que el cuaderno que compramos juntas».",
+     "一点儿 y 一些 significan casi lo mismo; 一点儿 es más coloquial y en el habla rápida a menudo se queda en 点儿. Si la diferencia es <b>grande</b>, se dice 多了: 这个本子比那个贵多了 = «este cuaderno es mucho más caro que aquel».",
+     "No lo confundas con <b>有点儿 + adjetivo</b> (yǒudiǎnr), que no compara nada y suele expresar algo negativo: 这个本子有点儿贵 = «este cuaderno es algo caro»."
+    ],
+    "estructura": [
+     "A 比 B + adjetivo + 一点儿 → 姐姐比我高一点儿",
+     "A 比 B + adjetivo + 一些 → 那间教室比这间大一些",
+     "A 比 B + adjetivo + 多了 (diferencia grande) → 这个比那个贵多了"
+    ],
+    "ejemplos": [
+     {"zh": "比我们一起买的那个本子贵一点儿。", "py": "Bǐ wǒmen yìqǐ mǎi de nàge běnzi guì yìdiǎnr.", "es": "Es un poco más caro que el cuaderno que compramos juntas.", "nota": "del libro"},
+     {"zh": "姐姐比我高一点儿。", "py": "Jiějie bǐ wǒ gāo yìdiǎnr.", "es": "Mi hermana es un poco más alta que yo.", "nota": "del libro"},
+     {"zh": "那间教室比这间大一些。", "py": "Nà jiān jiàoshì bǐ zhè jiān dà yìxiē.", "es": "Aquella aula es un poco más grande que esta.", "nota": "del libro"},
+     {"zh": "今天比昨天冷一点儿。", "py": "Jīntiān bǐ zuótiān lěng yìdiǎnr.", "es": "Hoy hace un poco más de frío que ayer."},
+     {"zh": "这条裤子比那条长一些。", "py": "Zhè tiáo kùzi bǐ nà tiáo cháng yìxiē.", "es": "Estos pantalones son un poco más largos que aquellos."},
+     {"zh": "坐地铁比坐公交车快一点儿。", "py": "Zuò dìtiě bǐ zuò gōngjiāochē kuài yìdiǎnr.", "es": "En metro se va un poco más rápido que en autobús."}
+    ],
+    "ojo": "No calques «un poco más caro» como *这个本子比那个一点儿贵*: 一点儿 va detrás → 这个本子比那个贵一点儿. Y con 比 no pongas 很: *这个比那个很贵* está mal.",
+    "practica": [
+     {"q": "今天比昨天___。(«Hoy hace un poco más de calor que ayer.»)", "opciones": ["一点儿热", "热一点儿", "很热一点儿"], "ok": 1, "exp": "一点儿 va detrás del adjetivo: 今天比昨天热一点儿."},
+     {"q": "Elige la frase correcta:", "opciones": ["我比她很高。", "我比她一些高。", "我比她高一些。"], "ok": 2, "exp": "A 比 B + adjetivo + 一些: 我比她高一些 = «soy un poco más alto que ella»."},
+     {"q": "这个房间比那个___，我们住这个吧。", "opciones": ["大一点儿", "有点儿大", "一点儿大"], "ok": 0, "exp": "Para comparar se usa adjetivo + 一点儿: 这个房间比那个大一点儿 = «esta habitación es un poco más grande que aquella». 有点儿大 no compara."}
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 14,
+  "puntos": [
+   {
+    "id": "G14-1",
+    "titulo": "存现句 (2): lugar + verbo + 着 + persona/cosa («hay alguien de pie…»)",
+    "zh": "Lugar + V + 着 + …",
+    "explicacion": [
+     "El <b>存现句</b> (cúnxiàn jù, «oración existencial») sirve para describir <b>qué hay en un lugar</b> y en qué postura o estado está. Se empieza por el <b>lugar</b>, luego viene un verbo con <b>着</b> (zhe) y al final la persona o la cosa: 你家楼下站着一个人 = «abajo, en tu portal, hay una persona de pie».",
+     "Se parece a nuestro «hay…», pero el verbo dice además <b>cómo</b> está: 站着 (de pie), 坐着 (sentado), 住着 (viviendo), 拿着 (sujetando), 写着 (escrito), 放着 (colocado). 本子上面写着我的名字 = «en el cuaderno pone mi nombre».",
+     "Lo que va al final suele ser algo <b>indeterminado</b>, con número + clasificador o con palabras como 不少、很多: 一个人、一杯咖啡、不少学生. Igual que en español decimos «hay un hombre en la puerta» y no «hay el hombre», para una persona concreta y conocida se usa otra frase: 王老师在楼下.",
+     "El lugar va al principio y <b>sin 在</b>: 教室里坐着很多学生, no *在教室里坐着很多学生*."
+    ],
+    "estructura": [
+     "Lugar + verbo + 着 + número + clasificador + persona/cosa → 你家楼下站着一个人",
+     "Lugar + verbo + 着 + 不少 / 很多 + nombre → 那间教室里坐着不少学生"
+    ],
+    "ejemplos": [
+     {"zh": "你家楼下站着一个人。", "py": "Nǐ jiā lóu xià zhànzhe yí gè rén.", "es": "Abajo, en tu portal, hay una persona de pie.", "nota": "del libro"},
+     {"zh": "爸爸手里拿着一杯咖啡。", "py": "Bàba shǒuli názhe yì bēi kāfēi.", "es": "Mi padre tiene un café en la mano.", "nota": "del libro"},
+     {"zh": "那间教室里坐着不少学生。", "py": "Nà jiān jiàoshì li zuòzhe bù shǎo xuésheng.", "es": "En aquella aula hay bastantes alumnos sentados.", "nota": "del libro"},
+     {"zh": "我楼下还住着一家中国人。", "py": "Wǒ lóu xià hái zhùzhe yì jiā Zhōngguó rén.", "es": "En el piso de abajo vive además una familia china."},
+     {"zh": "本子上面写着她的名字。", "py": "Běnzi shàngmiàn xiězhe tā de míngzi.", "es": "En el cuaderno pone su nombre."},
+     {"zh": "桌子上放着一个黑色的包。", "py": "Zhuōzi shang fàngzhe yí gè hēisè de bāo.", "es": "Encima de la mesa hay un bolso negro."}
+    ],
+    "ojo": "No empieces con 在 ni pongas el lugar al final como en español: *在楼下站着一个人* o *一个人站着在楼下* → 楼下站着一个人. Y no olvides 着: *楼下站一个人* suena incompleto.",
+    "practica": [
+     {"q": "桌子上___一本书。", "opciones": ["放着", "放了在", "在放"], "ok": 0, "exp": "Lugar + verbo + 着 + cosa: 桌子上放着一本书 = «encima de la mesa hay un libro»."},
+     {"q": "Elige la frase correcta:", "opciones": ["教室里坐很多着学生。", "教室里坐着很多学生。", "教室里很多学生坐着在。"], "ok": 1, "exp": "着 va pegado al verbo y la persona al final: 教室里坐着很多学生 = «en el aula hay muchos alumnos sentados»."},
+     {"q": "本子上面___你的名字。", "opciones": ["写完", "写过", "写着"], "ok": 2, "exp": "写着 describe lo que está escrito: 本子上面写着你的名字 = «en el cuaderno pone tu nombre»."}
+    ]
+   },
+   {
+    "id": "G14-2",
+    "titulo": "程度副词 多: exclamaciones «¡qué…!» (多好看啊！)",
+    "zh": "多 + adj. + 啊！",
+    "explicacion": [
+     "Además de «mucho» y de las preguntas como 多大？ o 多高？, <b>多</b> (duō) puede ir delante de un adjetivo en una <b>exclamación</b> para decir que algo es muy…: 多好看啊！ = «¡qué bonito!». Equivale a nuestro «¡qué + adjetivo!» o «¡lo + adjetivo + que es!».",
+     "La frase suele terminar en <b>啊</b> (a) y con signo de exclamación: 我们一起去多好啊！ = «¡qué bien estaría ir juntos!». También va delante de expresiones como 没意思: 你一个人在这儿多没意思啊！ = «¡qué aburrido estar aquí tú solo!».",
+     "Fíjate en la diferencia: <b>多大？</b> con tono de pregunta pregunta por el grado («¿qué edad / qué tamaño?»), mientras que <b>多大啊！</b> expresa sorpresa («¡qué grande!»). Lo que cambia es el 啊 final y la entonación."
+    ],
+    "estructura": [
+     "(Sujeto +) 多 + adjetivo + 啊！ → 多好看啊！",
+     "Sujeto + 多 + 没意思 / 好 + 啊！ → 你一个人在这儿多没意思啊！"
+    ],
+    "ejemplos": [
+     {"zh": "你一个人在这儿多没意思啊！", "py": "Nǐ yí gè rén zài zhèr duō méi yìsi a!", "es": "¡Qué aburrido estar aquí tú solo!", "nota": "del libro"},
+     {"zh": "我们一起去多好啊！", "py": "Wǒmen yìqǐ qù duō hǎo a!", "es": "¡Qué bien estaría ir juntos!", "nota": "del libro"},
+     {"zh": "多好看啊！买这个吧。", "py": "Duō hǎokàn a! Mǎi zhège ba.", "es": "¡Qué bonito! Cómprate este."},
+     {"zh": "她的汉语说得多好啊！", "py": "Tā de Hànyǔ shuō de duō hǎo a!", "es": "¡Qué bien habla chino!"},
+     {"zh": "你看，孩子们多高兴啊！", "py": "Nǐ kàn, háizimen duō gāoxìng a!", "es": "¡Mira qué contentos están los niños!"},
+     {"zh": "这个小孩儿的眼睛多大啊！", "py": "Zhège xiǎoháir de yǎnjing duō dà a!", "es": "¡Qué ojos tan grandes tiene este niño!"}
+    ],
+    "ojo": "Sin 啊 y sin tono de exclamación, 多 + adjetivo se entiende como pregunta: 你家多大？ = «¿cómo de grande es tu casa?». Para un simple «muy» en una afirmación normal usa 很 o 非常, no 多.",
+    "practica": [
+     {"q": "你看，这些花___啊！", "opciones": ["多漂亮", "很漂亮多", "漂亮多"], "ok": 0, "exp": "多 + adjetivo + 啊: 这些花多漂亮啊！ = «¡qué bonitas son estas flores!»."},
+     {"q": "«¡Qué aburrido es ver la tele solo!»", "opciones": ["一个人看电视没意思多啊！", "一个人看电视多没意思啊！", "一个人看电视多没有意思吗？"], "ok": 1, "exp": "多 va delante de 没意思 y la frase acaba en 啊: 一个人看电视多没意思啊！"},
+     {"q": "Elige la frase exclamativa («¡qué lejos está tu casa!»):", "opciones": ["你家离学校多远？", "你家离学校远吗？", "你家离学校多远啊！"], "ok": 2, "exp": "Con 啊 y exclamación es una exclamación: 你家离学校多远啊！ La primera es una pregunta: «¿a qué distancia está?»."}
+    ]
+   },
+   {
+    "id": "G14-3",
+    "titulo": "复合趋向补语: complemento de dirección compuesto (跑上来、走出去、站起来)",
+    "zh": "V + 上/下/进/出/回/过 + 来/去 · V + 起来",
+    "explicacion": [
+     "Detrás de un verbo se puede poner un <b>complemento de dirección compuesto</b>: uno de <b>上、下、进、出、回、过</b> seguido de <b>来</b> o <b>去</b>, o bien <b>起来</b>. El primero indica la dirección (arriba, abajo, adentro, afuera, de vuelta, hacia el otro lado) y 来/去 dice si el movimiento se acerca a quien habla (来) o se aleja (去): 她经常跑上来找我玩 = «a menudo sube corriendo a jugar conmigo» (yo estoy arriba).",
+     "En español solemos usar un verbo distinto para cada dirección (subir, bajar, entrar, salir, volver) y la manera la añadimos aparte («subió corriendo»). En chino es al revés: primero la <b>manera</b> (走 andar, 跑 correr, 拿 llevar, 飞 volar) y luego la dirección: 走上去 = «subir andando», 跑出来 = «salir corriendo», 飞回去 = «volver volando». <b>起来</b> indica movimiento de abajo arriba: 他就站起来了 = «se puso de pie».",
+     "Si hay complemento: un <b>lugar</b> va siempre <b>antes de 来/去</b>: 同学们都走出教室去了 (no *走出去教室*). Una <b>cosa</b> puede ir antes o después de 来/去: 买回一些菜来 o 买回来一些菜; 找出来一个本子 o 找出一个本子来."
+    ],
+    "estructura": [
+     "Verbo + 上/下/进/出/回/过 + 来/去 → 跑上来、走上去",
+     "Verbo + 起来 → 站起来",
+     "Verbo + 上/下/进/出/回/过 + lugar + 来/去 → 走出教室去",
+     "Verbo + 回/出 + cosa + 来/去 · Verbo + 回/出 + 来/去 + cosa → 买回一些菜来 / 找出来一个本子"
+    ],
+    "ejemplos": [
+     {"zh": "她经常跑上来找我玩。", "py": "Tā jīngcháng pǎo shànglái zhǎo wǒ wán.", "es": "A menudo sube corriendo a jugar conmigo.", "nota": "del libro"},
+     {"zh": "楼不高，我们走上去吧。", "py": "Lóu bù gāo, wǒmen zǒu shàngqù ba.", "es": "El edificio no es alto, subamos andando.", "nota": "del libro"},
+     {"zh": "一听到老师叫他的名字，他就站起来了。", "py": "Yì tīngdào lǎoshī jiào tā de míngzi, tā jiù zhàn qǐlái le.", "es": "En cuanto oyó al profesor decir su nombre, se puso de pie.", "nota": "del libro"},
+     {"zh": "同学们都走出教室去了。", "py": "Tóngxuémen dōu zǒuchū jiàoshì qù le.", "es": "Todos los compañeros han salido del aula.", "nota": "lugar antes de 去"},
+     {"zh": "妈妈让我买回一些菜来。", "py": "Māma ràng wǒ mǎihuí yìxiē cài lái.", "es": "Mi madre me ha pedido que traiga algo de verdura.", "nota": "cosa antes de 来"},
+     {"zh": "白家月从书包里找出来一个漂亮的本子。", "py": "Bái Jiāyuè cóng shūbāo li zhǎo chūlái yí gè piàoliang de běnzi.", "es": "Bai Jiayue sacó de la mochila un cuaderno precioso.", "nota": "cosa después de 来"}
+    ],
+    "ojo": "No pongas el lugar detrás de 来/去: *他跑进来教室* está mal → 他跑进教室来. Y piensa dónde está quien habla: si estás arriba dices 上来 («sube»); si estás abajo, 上去.",
+    "practica": [
+     {"q": "我在楼上，你快___吧！", "opciones": ["上来", "上去", "下来"], "ok": 0, "exp": "Quien habla está arriba y el otro se acerca subiendo: 上来. 你快上来吧！ = «¡sube rápido!»."},
+     {"q": "Elige la frase correcta:", "opciones": ["他走进去教室了。", "他走进教室去了。", "他走教室进去了。"], "ok": 1, "exp": "El lugar va antes de 去: 他走进教室去了 = «ha entrado en el aula»."},
+     {"q": "老师一进来，同学们都站___了。", "opciones": ["出去", "上去", "起来"], "ok": 2, "exp": "站起来 = «ponerse de pie». 老师一进来，同学们都站起来了 = «en cuanto entró el profesor, todos se levantaron»."}
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 15,
+  "puntos": [
+   {
+    "id": "G15-1",
+    "titulo": "动量补语 (1): número + 次 detrás del verbo («una vez», «dos veces»)",
+    "zh": "V + 一次 / 两次",
+    "explicacion": [
+     "Para decir <b>cuántas veces</b> se hace algo se usa <b>número + 次</b> (cì) <b>detrás del verbo</b>: 去过一次 = «he ido una vez», 再去一次 = «ir otra vez». En español «dos veces» puede ir en varios sitios («dos veces he ido», «he ido dos veces»), pero en chino nunca va delante del verbo.",
+     "Suele ir con <b>过</b> (experiencia, «he … alguna vez») o con <b>了</b> (acción terminada), siempre pegados al verbo y antes de 次: 我去过一次中国 = «he estado una vez en China»; 李文见了杨同乐两次 = «Li Wen vio dos veces a Yang Tongle». Para «otra vez» se usa 再 + verbo + 一次: 很想再去一次.",
+     "Si el verbo lleva como complemento un <b>nombre de persona o de lugar</b>, este puede ir delante o detrás de 一次/两次: 安妮去过一次北京 = 安妮去过北京一次 («Annie ha estado en Pekín una vez»); 李文见了杨同乐两次 = 李文见了两次杨同乐."
+    ],
+    "estructura": [
+     "Verbo (+ 过/了) + número + 次 → 去过一次、再去一次",
+     "Verbo + 过/了 + número + 次 + persona/lugar → 安妮去过一次北京",
+     "Verbo + 过/了 + persona/lugar + número + 次 → 李文见了杨同乐两次"
+    ],
+    "ejemplos": [
+     {"zh": "我想去中国，虽然去过一次，但是很想再去一次。", "py": "Wǒ xiǎng qù Zhōngguó, suīrán qùguo yí cì, dànshì hěn xiǎng zài qù yí cì.", "es": "Quiero ir a China; aunque ya he estado una vez, tengo muchas ganas de volver.", "nota": "del libro"},
+     {"zh": "安妮去过一次北京。", "py": "Ānnī qùguo yí cì Běijīng.", "es": "Annie ha estado una vez en Pekín.", "nota": "del libro"},
+     {"zh": "李文见了杨同乐两次。", "py": "Lǐ Wén jiànle Yáng Tónglè liǎng cì.", "es": "Li Wen vio dos veces a Yang Tongle.", "nota": "del libro"},
+     {"zh": "我去过两次北京。", "py": "Wǒ qùguo liǎng cì Běijīng.", "es": "He estado dos veces en Pekín."},
+     {"zh": "我六月的时候回去了一次。", "py": "Wǒ Liùyuè de shíhou huíqùle yí cì.", "es": "En junio volví una vez."},
+     {"zh": "他来过上海三次。", "py": "Tā láiguo Shànghǎi sān cì.", "es": "Ha venido a Shanghái tres veces."}
+    ],
+    "ojo": "No pongas las veces delante del verbo como en español: *我两次去过北京* → 我去过两次北京. Para «dos veces» se dice 两次, no *二次*.",
+    "practica": [
+     {"q": "我去过___上海，觉得很不错。", "opciones": ["次一", "一次", "一个"], "ok": 1, "exp": "Número + 次 detrás del verbo: 我去过一次上海 = «he estado una vez en Shanghái»."},
+     {"q": "Elige la frase correcta:", "opciones": ["我两次见过王老师。", "我见两次过王老师。", "我见过王老师两次。"], "ok": 2, "exp": "过 va pegado al verbo y 两次 detrás; con un nombre de persona vale 见过王老师两次 o 见过两次王老师."},
+     {"q": "«Quiero ir otra vez a China.»", "opciones": ["我想再去一次中国。", "我想去再一次中国。", "我想一次去中国。"], "ok": 0, "exp": "再 + verbo + 一次: 我想再去一次中国."}
+    ]
+   },
+   {
+    "id": "G15-2",
+    "titulo": "动量补语 (2): dónde va el complemento (再吃一次烤鸭 · 找他一次)",
+    "zh": "V + 一次 + cosa · V + pronombre + 一次",
+    "explicacion": [
+     "Cuando el verbo lleva número + 次 y además un complemento, la posición depende del tipo de complemento. Si es una <b>cosa</b> (un nombre común), normalmente va <b>detrás</b> de 次: 再吃一次烤鸭 = «comer pato asado otra vez», 再喝一次奶茶 = «tomar otra vez té con leche», 看一次电影 = «ver una película (una vez)».",
+     "Si es un <b>pronombre</b> (我、你、他、这儿、那儿…), va <b>delante</b> de 次: 我想找他一次 = «quiero ir a verle una vez»; 安妮来过这儿两次 = «Annie ha venido aquí dos veces». Se parece al español, donde el pronombre se pega al verbo («verle una vez»).",
+     "Resumen: cosa → verbo + 一次 + cosa (打两次电话); pronombre → verbo + pronombre + 一次 (找他一次); nombre de persona o de lugar → las dos posiciones valen (punto anterior)."
+    ],
+    "estructura": [
+     "Verbo + número + 次 + cosa → 再吃一次烤鸭",
+     "Verbo + pronombre + número + 次 → 我想找他一次、安妮来过这儿两次"
+    ],
+    "ejemplos": [
+     {"zh": "因为我想再吃一次烤鸭，再喝一次奶茶。", "py": "Yīnwèi wǒ xiǎng zài chī yí cì kǎoyā, zài hē yí cì nǎichá.", "es": "Porque quiero volver a comer pato asado y tomar otra vez té con leche.", "nota": "del libro"},
+     {"zh": "我想找他一次。", "py": "Wǒ xiǎng zhǎo tā yí cì.", "es": "Quiero ir a verle una vez.", "nota": "del libro"},
+     {"zh": "安妮来过这儿两次。", "py": "Ānnī láiguo zhèr liǎng cì.", "es": "Annie ha venido aquí dos veces.", "nota": "del libro"},
+     {"zh": "我每个星期给家里打两次电话。", "py": "Wǒ měi gè xīngqī gěi jiāli dǎ liǎng cì diànhuà.", "es": "Llamo a casa dos veces por semana."},
+     {"zh": "我们一个星期上三次汉语课。", "py": "Wǒmen yí gè xīngqī shàng sān cì Hànyǔ kè.", "es": "Tenemos clase de chino tres veces por semana."},
+     {"zh": "我去年见过她两次。", "py": "Wǒ qùnián jiànguo tā liǎng cì.", "es": "El año pasado la vi dos veces."}
+    ],
+    "ojo": "No pongas el pronombre detrás de 次: *我见过两次她* → 我见过她两次. Y con una cosa evita ponerla delante: *我看过电影一次* suena mal → 我看过一次电影.",
+    "practica": [
+     {"q": "我想再吃___。", "opciones": ["一次烤鸭", "烤鸭一次", "次一烤鸭"], "ok": 0, "exp": "Con una cosa: verbo + 一次 + cosa → 再吃一次烤鸭 = «comer pato asado otra vez»."},
+     {"q": "她来过___，知道怎么走。", "opciones": ["两次这儿", "这儿两次", "两这儿次"], "ok": 1, "exp": "这儿 es un pronombre: va delante de 次 → 她来过这儿两次 = «ha venido aquí dos veces»."},
+     {"q": "Elige la frase correcta:", "opciones": ["我找过两次他。", "我找两次过他。", "我找过他两次。"], "ok": 2, "exp": "Pronombre delante de 次: 我找过他两次 = «le he buscado dos veces»."}
+    ]
+   },
+   {
+    "id": "G15-3",
+    "titulo": "“有”字句 (2): 有 + cantidad («ya tiene…», «hace ya… que no…»)",
+    "zh": "有 + número + clasificador",
+    "explicacion": [
+     "<b>有</b> + número + clasificador sirve para decir que algo <b>llega a</b> una cantidad: 你女儿今年有十岁了吗？ = «¿tu hija ya tiene diez años?». Aquí 有 no indica posesión, sino que se alcanza esa cifra, como nuestro «llegar a» o «ya».",
+     "Es muy frecuente para decir cuánto tiempo lleva sin pasar algo: <b>有 + tiempo + 没 + verbo + 了</b>: 你有一年没回国了吧？ = «hace ya un año que no vuelves a tu país, ¿no?»; 我有一个月没给家里打电话了 = «llevo un mes sin llamar a casa». Fíjate en que 没 va detrás del tiempo, como en «llevo un mes sin llamar».",
+     "En preguntas, 有 + cantidad + 吗 pregunta si se llega a esa cifra: 你的老师有三十岁吗？ = «¿tu profesor llega a los treinta?». La respuesta negativa es 没有: 没有，他今年二十九岁. También se combina con 多: 现在有半年多没回去了 = «ya hace más de medio año que no vuelvo»."
+    ],
+    "estructura": [
+     "有 + número + clasificador (+ 了/吗) → 你女儿今年有十岁了吗？",
+     "有 + tiempo + 没 + verbo + 了 → 你有一年没回国了吧？"
+    ],
+    "ejemplos": [
+     {"zh": "你有一年没回国了吧？", "py": "Nǐ yǒu yì nián méi huí guó le ba?", "es": "Hace ya un año que no vuelves a tu país, ¿no?", "nota": "del libro"},
+     {"zh": "你女儿今年有十岁了吗？", "py": "Nǐ nǚ'ér jīnnián yǒu shí suì le ma?", "es": "¿Tu hija ya tiene diez años?", "nota": "del libro"},
+     {"zh": "我有一个月没给家里打电话了。", "py": "Wǒ yǒu yí gè yuè méi gěi jiāli dǎ diànhuà le.", "es": "Llevo un mes sin llamar a casa.", "nota": "del libro"},
+     {"zh": "你的老师有三十岁吗？", "py": "Nǐ de lǎoshī yǒu sānshí suì ma?", "es": "¿Tu profesor llega a los treinta años?"},
+     {"zh": "现在有半年多没回去了。", "py": "Xiànzài yǒu bàn nián duō méi huíqù le.", "es": "Ya hace más de medio año que no vuelvo."},
+     {"zh": "我们两个有一年多没见了。", "py": "Wǒmen liǎng gè yǒu yì nián duō méi jiàn le.", "es": "Hace más de un año que no nos vemos."}
+    ],
+    "ojo": "No pongas 没 delante del tiempo calcando otra estructura: *我没有一年回国* está mal → 我有一年没回国了. Y no olvides el 了 final: indica que la situación dura hasta ahora.",
+    "practica": [
+     {"q": "他___三十岁了吗？", "opciones": ["有", "是", "在"], "ok": 0, "exp": "有 + cantidad = «llegar a»: 他有三十岁了吗？ = «¿ya tiene treinta años?»."},
+     {"q": "«Hace medio año que no veo a mi madre.»", "opciones": ["我没有半年见妈妈了。", "我有半年没见妈妈了。", "我半年有没见妈妈了。"], "ok": 1, "exp": "有 + tiempo + 没 + verbo + 了: 我有半年没见妈妈了."},
+     {"q": "我们两个有___没见了吧？", "opciones": ["多一年", "一多年", "一年多"], "ok": 2, "exp": "一年多 = «más de un año»: 我们两个有一年多没见了吧？ = «hace más de un año que no nos vemos, ¿no?»."}
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,369 @@
+[
+ {
+  "id": "R1-01",
+  "nivel": 1,
+  "tema": 1,
+  "titulo": "Nuestro primer día en Pekín",
+  "titulo_zh": "我们 到 北京 了",
+  "texto": "我 叫 安妮 。 这 是 我 第 一 次 来 中国 。 我们 是 今天 早上 到 北京 的 。 王老师 的 姐姐 王一雪 来 接 我们 ， 她 请 我们 吃 了 北京烤鸭 。 北京烤鸭 很 好吃 ！ ¶ 一雪 这 几 天 都 不 忙 ， 她 让 我们 有 事 就 找 她 。 我 的 中文 不|bú 太 好 ， 有时 不 懂 她 的 意思 ， 家月 就 给 我 介绍 。",
+  "es": "Me llamo Annie. Es la primera vez que vengo a China. Llegamos a Pekín esta mañana. La hermana de la profesora Wang, Wang Yixue, vino a recogernos y nos invitó a pato laqueado de Pekín. ¡El pato laqueado está buenísimo! Yixue no está ocupada estos días y nos ha dicho que, si necesitamos algo, la busquemos. Mi chino no es muy bueno y a veces no la entiendo; entonces Jiayue me lo explica.",
+  "preguntas": [
+   {
+    "q": "¿Es la primera vez que Annie viene a China?",
+    "lang": "es",
+    "a": [
+     "si",
+     "sí",
+     "primera",
+     "la primera vez"
+    ],
+    "r": "Sí, es la primera vez (第一次)."
+   },
+   {
+    "q": "¿Cuándo llegaron a Pekín?",
+    "lang": "py",
+    "a": [
+     "jīntiān zǎoshang",
+     "zǎoshang"
+    ],
+    "r": "Jīntiān zǎoshang · 今天早上 (esta mañana)."
+   },
+   {
+    "q": "¿Quién fue a recogerlas?",
+    "lang": "es",
+    "a": [
+     "Wang Yixue",
+     "Yixue",
+     "la hermana de la profesora Wang",
+     "la hermana",
+     "hermana"
+    ],
+    "r": "Wang Yixue, la hermana de la profesora Wang (王老师的姐姐)."
+   },
+   {
+    "q": "¿A qué las invitó?",
+    "lang": "py",
+    "a": [
+     "Běijīng Kǎoyā",
+     "kǎoyā"
+    ],
+    "r": "Běijīng Kǎoyā · 北京烤鸭 (pato laqueado de Pekín)."
+   },
+   {
+    "q": "¿Quién ayuda a Annie cuando no entiende?",
+    "lang": "es",
+    "a": [
+     "Jiayue",
+     "Bai Jiayue",
+     "Jia yue"
+    ],
+    "r": "Jiayue (家月)."
+   }
+  ]
+ },
+ {
+  "id": "R2-01",
+  "nivel": 2,
+  "tema": 1,
+  "titulo": "Chen Tianzhong necesita ayuda",
+  "titulo_zh": "陈天中 请 朋友 帮忙",
+  "texto": "陈天中 是 泰国 人 ， 他 在 中国 学 中文 。 他 的 中国 朋友 很 多 ， 李文 就 是 他 的 好 朋友 。 ¶ 今天 陈天中 有 事 ， 他 想 请 白家月 帮 个 忙 。 他 给 家月 打电话 ， 家月 说 ： “ 不好意思 ， 我 已经 到 北京 了 。 ” 家月 是 来 北京 旅游 的 ， 是 王老师 的 姐姐 王一雪 去 接 的 她 。 家月 让 天中 找 李文 帮忙 ， 李文 还 在 学校 呢 。 ¶ 天中 就 给 李文 打电话 了 。 李文 说 ： “ 好 的 ， 你 的 事 我 来 帮忙 。 ” 天中 很 高兴 ， 他 说 ： “ 谢谢 你 ！ 明天 我 请 你 吃饭 。 ” 李文 说 ： “ 不客气 。 我们 是 朋友 ， 你 有 事 就 找 我 。 ”",
+  "es": "Chen Tianzhong es tailandés y estudia chino en China. Tiene muchos amigos chinos; Li Wen es un buen amigo suyo. Hoy Chen Tianzhong tenía un asunto y quería pedirle un favor a Bai Jiayue. La llamó por teléfono y Jiayue le dijo: «Lo siento, ya estoy en Pekín». Jiayue ha ido a Pekín de viaje, y fue Wang Yixue, la hermana de la profesora Wang, quien fue a recogerla. Jiayue le dijo a Tianzhong que le pidiera ayuda a Li Wen, que todavía estaba en la universidad. Tianzhong llamó entonces a Li Wen. Li Wen le dijo: «Vale, yo te ayudo con eso». Tianzhong se puso muy contento y le dijo: «¡Gracias! Mañana te invito a comer». Li Wen respondió: «De nada. Somos amigos; si necesitas algo, cuenta conmigo».",
+  "preguntas": [
+   {
+    "q": "¿De dónde es Chen Tianzhong?",
+    "lang": "es",
+    "a": [
+     "Tailandia",
+     "tailandes",
+     "tailandés"
+    ],
+    "r": "De Tailandia (泰国人)."
+   },
+   {
+    "q": "¿Por qué no puede ayudarle Bai Jiayue?",
+    "lang": "es",
+    "a": [
+     "esta en Pekin",
+     "está en Pekín",
+     "Pekin",
+     "Pekín",
+     "ya esta en Pekin"
+    ],
+    "r": "Porque ya está en Pekín (已经到北京了)."
+   },
+   {
+    "q": "¿Quién fue a recoger a Jiayue en Pekín?",
+    "lang": "py",
+    "a": [
+     "Wáng Yīxuě"
+    ],
+    "r": "Wáng Yīxuě · 王一雪 (la hermana de la profesora Wang)."
+   },
+   {
+    "q": "¿Dónde estaba Li Wen?",
+    "lang": "es",
+    "a": [
+     "universidad",
+     "en la universidad",
+     "escuela",
+     "en la escuela",
+     "colegio"
+    ],
+    "r": "En la universidad (还在学校呢)."
+   },
+   {
+    "q": "¿A qué invita Tianzhong a Li Wen?",
+    "lang": "py",
+    "a": [
+     "chīfàn",
+     "chī fàn"
+    ],
+    "r": "Chīfàn · 吃饭 (a comer)."
+   }
+  ]
+ },
+ {
+  "id": "R1-02",
+  "nivel": 1,
+  "tema": 2,
+  "titulo": "Visita a la Universidad de Pekín",
+  "titulo_zh": "去 北大",
+  "texto": "今天 我们 想 去 北京大学 。 这儿 有 到 北大 的 公交车 ， 但 车站 有点儿 远 ， 我们 还是 打车 去 的 。 ¶ 北大 很 大 ， 有 四 万 多 名 学生 ， 外国 学生 也 很 多 。 学校 里 还 有 一|yì 家 电影院 ， 电影 票 不|bú 贵 ， 有的 还 不|bú 到 二十 块 钱 。",
+  "es": "Hoy queríamos ir a la Universidad de Pekín. Desde aquí hay un autobús que va a Beida, pero la parada está un poco lejos, así que al final fuimos en taxi. Beida es muy grande: tiene más de cuarenta mil estudiantes y también muchos estudiantes extranjeros. En la universidad hay incluso un cine; las entradas no son caras y algunas no llegan ni a veinte yuanes.",
+  "preguntas": [
+   {
+    "q": "¿Cómo fueron a la universidad?",
+    "lang": "py",
+    "a": [
+     "dǎchē"
+    ],
+    "r": "Dǎchē · 打车 (en taxi)."
+   },
+   {
+    "q": "¿Por qué no fueron en autobús?",
+    "lang": "es",
+    "a": [
+     "lejos",
+     "parada lejos",
+     "la parada esta lejos",
+     "la parada está lejos"
+    ],
+    "r": "Porque la parada estaba un poco lejos (车站有点儿远)."
+   },
+   {
+    "q": "¿Cuántos estudiantes tiene la universidad?",
+    "lang": "es",
+    "a": [
+     "mas de cuarenta mil",
+     "más de cuarenta mil",
+     "cuarenta mil",
+     "40000",
+     "40.000"
+    ],
+    "r": "Más de cuarenta mil (四万多名)."
+   },
+   {
+    "q": "¿Qué hay dentro de la universidad?",
+    "lang": "py",
+    "a": [
+     "diànyǐngyuàn"
+    ],
+    "r": "Diànyǐngyuàn · 电影院 (un cine)."
+   },
+   {
+    "q": "¿Cuánto cuestan algunas entradas?",
+    "lang": "es",
+    "a": [
+     "menos de veinte",
+     "menos de 20",
+     "veinte",
+     "20"
+    ],
+    "r": "Menos de veinte yuanes (不到二十块钱)."
+   }
+  ]
+ },
+ {
+  "id": "R2-02",
+  "nivel": 2,
+  "tema": 2,
+  "titulo": "Un día en Beida",
+  "titulo_zh": "白家月 和 安妮 在 北大",
+  "texto": "今天 ， 白家月 、 安妮 去 了 北京大学 。 这儿 有 到 北大 的 公交车 ， 但 车站 有点儿 远 。 打车 也 不|bú 贵 ， 她们 是 打车 去 的 。 ¶ 北大 的 学生 真 多 啊 ！ 安妮 在 网上 看 了 ， 北大 有 四 万 多 名 学生 ， 外国 学生 有 三 千 多 名 。 现在 学 中文 的 外国 学生 很 多 ， 家月 也 想 来 这儿 学习 。 她们 还 去 看 了 一|yì 间 大 教室 ， 教室 里 有 二十 多 个 学生 。 ¶ 学校 里 还 有 一|yì 家 电影院 。 他们 卖 的 电影 票 很 便宜 ， 有的 还 不|bú 到 二十 块 钱 。 安妮 问 家月 想 不 想 去 看 个 电影 ， 家月 说 ： “ 还是 别 看 电影 了 ， 北大 就 很 好看 ！ ”",
+  "es": "Hoy Bai Jiayue y Annie han ido a la Universidad de Pekín. Desde aquí hay un autobús que va a Beida, pero la parada está un poco lejos. El taxi tampoco es caro, así que fueron en taxi. ¡Cuántos estudiantes hay en Beida! Annie lo ha mirado en internet: Beida tiene más de cuarenta mil estudiantes, y los extranjeros son más de tres mil. Ahora hay muchos estudiantes extranjeros que aprenden chino, y Jiayue también quiere venir aquí a estudiar. También fueron a ver un aula grande; en el aula había veintitantos estudiantes. En la universidad hay además un cine. Las entradas que venden son muy baratas: algunas no llegan ni a veinte yuanes. Annie le preguntó a Jiayue si quería ver una película, y Jiayue dijo: «Mejor no veamos ninguna película: ¡la propia Beida ya es preciosa!».",
+  "preguntas": [
+   {
+    "q": "¿Por qué no fueron en autobús?",
+    "lang": "es",
+    "a": [
+     "lejos",
+     "parada lejos",
+     "la parada esta lejos",
+     "la parada está lejos"
+    ],
+    "r": "Porque la parada está un poco lejos (车站有点儿远)."
+   },
+   {
+    "q": "¿Cuántos estudiantes extranjeros hay en Beida?",
+    "lang": "es",
+    "a": [
+     "mas de tres mil",
+     "más de tres mil",
+     "tres mil",
+     "3000",
+     "3.000"
+    ],
+    "r": "Más de tres mil (三千多名)."
+   },
+   {
+    "q": "¿Dónde lo ha leído Annie?",
+    "lang": "py",
+    "a": [
+     "wǎngshang"
+    ],
+    "r": "Wǎngshang · 网上 (en internet)."
+   },
+   {
+    "q": "¿Cuántos estudiantes había en el aula?",
+    "lang": "es",
+    "a": [
+     "veintitantos",
+     "mas de veinte",
+     "más de veinte",
+     "veinte",
+     "20"
+    ],
+    "r": "Veintitantos (二十多个)."
+   },
+   {
+    "q": "¿Cómo son las entradas de cine?",
+    "lang": "py",
+    "a": [
+     "piányi"
+    ],
+    "r": "Piányi · 便宜 (baratas)."
+   }
+  ]
+ },
+ {
+  "id": "R1-03",
+  "nivel": 1,
+  "tema": 3,
+  "titulo": "Un día largo",
+  "titulo_zh": "刘明 回来 晚 了",
+  "texto": "今天 刘明 回来 这么 晚 ， 工作 太 多 了 ， 下班 的 时候 他 没 做 完 。 王一雪 已经 做 好 了 菜 ， 让 他 过来 吃饭 。 刘明 很 累 ， 想 休息 一下 ， 喝 杯 水 。 ¶ 吃 完 饭 ， 刘明 说 ： “ 我们 找 个 时间 去 旅游 吧 。 ” 王一雪 也 很 想 一起 出去 玩 ， 但 她 还 没 想 好 去 哪儿 。",
+  "es": "Hoy Liu Ming ha vuelto muy tarde: tenía demasiado trabajo y a la hora de salir no lo había terminado. Wang Yixue ya había preparado la comida y le dijo que viniera a comer. Liu Ming estaba muy cansado y quería descansar un poco y beber un vaso de agua. Después de comer, Liu Ming dijo: «Busquemos un momento para irnos de viaje». Wang Yixue también tiene muchas ganas de salir juntos, pero todavía no ha decidido adónde ir.",
+  "preguntas": [
+   {
+    "q": "¿Por qué vuelve tarde Liu Ming?",
+    "lang": "es",
+    "a": [
+     "mucho trabajo",
+     "demasiado trabajo",
+     "trabajo"
+    ],
+    "r": "Porque tenía demasiado trabajo (工作太多了)."
+   },
+   {
+    "q": "¿Qué había hecho ya Wang Yixue?",
+    "lang": "py",
+    "a": [
+     "cài",
+     "zuòhǎo cài",
+     "zuò cài"
+    ],
+    "r": "Cài · 菜 (la comida: 做好了菜)."
+   },
+   {
+    "q": "¿Qué quiere beber Liu Ming?",
+    "lang": "es",
+    "a": [
+     "agua",
+     "un vaso de agua"
+    ],
+    "r": "Un vaso de agua (喝杯水)."
+   },
+   {
+    "q": "¿Qué propone Liu Ming después de comer?",
+    "lang": "py",
+    "a": [
+     "lǚyóu",
+     "qù lǚyóu"
+    ],
+    "r": "Qù lǚyóu · 去旅游 (irse de viaje)."
+   },
+   {
+    "q": "¿Ha decidido Wang Yixue adónde ir?",
+    "lang": "es",
+    "a": [
+     "no",
+     "todavia no",
+     "todavía no",
+     "aun no",
+     "aún no"
+    ],
+    "r": "No, todavía no (还没想好)."
+   }
+  ]
+ },
+ {
+  "id": "R2-03",
+  "nivel": 2,
+  "tema": 3,
+  "titulo": "Un viaje a Xi'an",
+  "titulo_zh": "去 西安 旅游",
+  "texto": "刘明 每 天 都 很 忙 ， 这个 月 他 很 累 。 早上 他 开车 送 孩子 去 学校 ， 有时 回 到 家 ， 医院 就 来 电话 了 ， 让 他 回去 上班 。 王一雪 想 让 他 休息 休息 ， 就 说 ： “ 我们 找 个 时间 出去 旅游 吧 。 ” ¶ 去 哪儿 呢 ？ 王一雪 在 网上 看 了 看 西安 的 介绍 ， 她 觉得 这个 时候 去 西安 很 不错 。 刘明 问 她 ： “ 为什么 想 去 西安 ？ ” 她 说 ： “ 西安 有 很 多 好 地方 ， 也 有 很 多 好吃 的 东西 。 ” 刘明 说 ： “ 好 ， 我 来 买 票 。 ” ¶ 他们 是 开车 去 的 西安 。 在 西安 ， 他们 看 了 很 多 地方 ， 吃 了 很 多 好吃 的 。 回到 家 ， 刘明 说 ： “ 这 次 旅游 真 不错 ， 我 现在 不|bú 累 了 ！ ”",
+  "es": "Liu Ming está muy ocupado todos los días y este mes está muy cansado. Por la mañana lleva al niño al colegio en coche, y a veces, nada más volver a casa, llaman del hospital para que vuelva a trabajar. Wang Yixue quiere que descanse un poco, así que le dice: «Busquemos un momento para salir de viaje». ¿Adónde ir? Wang Yixue echó un vistazo a la información de Xi'an en internet y le pareció que en esta época está muy bien ir a Xi'an. Liu Ming le preguntó: «¿Por qué quieres ir a Xi'an?». Ella le dijo: «En Xi'an hay muchos sitios bonitos y también muchas cosas ricas para comer». Liu Ming dijo: «Vale, yo compro los billetes». Fueron a Xi'an en coche. Allí vieron muchos sitios y comieron muchas cosas ricas. Al volver a casa, Liu Ming dijo: «Este viaje ha estado genial, ¡ya no estoy cansado!».",
+  "preguntas": [
+   {
+    "q": "¿Cómo lleva Liu Ming al niño al colegio?",
+    "lang": "py",
+    "a": [
+     "kāichē"
+    ],
+    "r": "Kāichē · 开车 (en coche)."
+   },
+   {
+    "q": "¿Quién llama a Liu Ming para que vuelva a trabajar?",
+    "lang": "es",
+    "a": [
+     "hospital",
+     "el hospital"
+    ],
+    "r": "El hospital (医院)."
+   },
+   {
+    "q": "¿Dónde leyó Wang Yixue sobre Xi'an?",
+    "lang": "es",
+    "a": [
+     "internet",
+     "en internet",
+     "red"
+    ],
+    "r": "En internet (网上)."
+   },
+   {
+    "q": "¿Quién compra los billetes?",
+    "lang": "py",
+    "a": [
+     "Liú Míng"
+    ],
+    "r": "Liú Míng · 刘明."
+   },
+   {
+    "q": "¿Cómo se siente Liu Ming después del viaje?",
+    "lang": "es",
+    "a": [
+     "no esta cansado",
+     "no está cansado",
+     "bien",
+     "ya no esta cansado",
+     "ya no está cansado",
+     "descansado"
+    ],
+    "r": "Ya no está cansado (不累了)."
+   }
+  ]
+ }
+]

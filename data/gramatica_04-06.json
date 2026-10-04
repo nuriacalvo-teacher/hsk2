@@ -1,0 +1,756 @@
+[
+ {
+  "tema": 4,
+  "puntos": [
+   {
+    "id": "G04-1",
+    "titulo": "过: experiencias pasadas («he … alguna vez»)",
+    "zh": "过",
+    "explicacion": [
+     "La partícula <b>过</b> (guo, tono neutro) va justo detrás del verbo e indica que una acción <b>ha ocurrido alguna vez en el pasado</b>, pero ya no continúa ahora. Equivale a nuestro «he … (alguna vez)» o «ya he …»: 她去过中国 (Tā qùguo Zhōngguó) = «ha estado en China» (fue en algún momento y ahora no está allí).",
+     "La negación se hace con <b>没(有)</b> delante del verbo, y 过 se mantiene: 我没穿过红色的 = «nunca me he puesto nada rojo». ¡Ojo!: con 过 nunca se usa 不.",
+     "Para preguntar hay tres formas: (1) añadir <b>吗</b> al final: 我们来过这家商场吗？; (2) añadir <b>没有</b> al final: 陈天中吃过饺子没有？; (3) usar <b>verbo + 没 + verbo + 过</b>: 你看没看过那个电影？ Todas significan «¿has … alguna vez?».",
+     "Compara con <b>了</b>: 我去了北京 cuenta que la acción se realizó (fui a Pekín, quizá aún estoy allí); 我去过北京 habla de la experiencia (he estado en Pekín alguna vez)."
+    ],
+    "estructura": [
+     "Sujeto + verbo + 过 + objeto → 她去过中国。",
+     "Sujeto + 没(有) + verbo + 过 + objeto → 她没去过中国。",
+     "¿…过…吗? / ¿…过…没有? / verbo + 没 + verbo + 过 → 你看没看过那个电影？"
+    ],
+    "ejemplos": [
+     {
+      "zh": "妈妈，我们来过这家商场吗？",
+      "py": "Māma, wǒmen láiguo zhè jiā shāngchǎng ma?",
+      "es": "Mamá, ¿hemos venido alguna vez a este centro comercial?",
+      "nota": "pregunta con 吗"
+     },
+     {
+      "zh": "没来过，这是新开的。",
+      "py": "Méi láiguo, zhè shì xīn kāi de.",
+      "es": "No hemos venido nunca; es nuevo.",
+      "nota": "negación: 没 + verbo + 过"
+     },
+     {
+      "zh": "我吃过饺子，很好吃。",
+      "py": "Wǒ chīguo jiǎozi, hěn hǎochī.",
+      "es": "He comido jiaozi y están muy ricos."
+     },
+     {
+      "zh": "陈天中吃过饺子没有？",
+      "py": "Chén Tiānzhōng chīguo jiǎozi méiyǒu?",
+      "es": "¿Chen Tianzhong ha comido jiaozi alguna vez?",
+      "nota": "pregunta con 没有 al final"
+     },
+     {
+      "zh": "你看没看过那个电影？",
+      "py": "Nǐ kàn méi kànguo nàge diànyǐng?",
+      "es": "¿Has visto esa película?",
+      "nota": "verbo + 没 + verbo + 过"
+     },
+     {
+      "zh": "我没穿过红色的裤子。",
+      "py": "Wǒ méi chuānguo hóngsè de kùzi.",
+      "es": "Nunca me he puesto pantalones rojos."
+     }
+    ],
+    "ojo": "No digas *我不去过北京: la negación de 过 es siempre 没(有): 我没去过北京. Y 过 va pegado al verbo, no al final de la frase: 我去过北京, no *我去北京过.",
+    "practica": [
+     {
+      "q": "我没___过红色的裤子。",
+      "opciones": [
+       "穿",
+       "穿了",
+       "不穿"
+      ],
+      "ok": 0,
+      "exp": "Negación de la experiencia: 没 + verbo + 过. «Nunca me he puesto pantalones rojos»."
+     },
+     {
+      "q": "¿Cómo se dice «Nunca he estado en Shanghái»?",
+      "opciones": [
+       "我不去过上海。",
+       "我没去过上海。",
+       "我去上海过没有。"
+      ],
+      "ok": 1,
+      "exp": "Con 过 la negación es 没: 我没去过上海."
+     },
+     {
+      "q": "你看没看___那个电影？",
+      "opciones": [
+       "了",
+       "吗",
+       "过"
+      ],
+      "ok": 2,
+      "exp": "Pregunta verbo + 没 + verbo + 过: «¿Has visto esa película?»."
+     }
+    ]
+   },
+   {
+    "id": "G04-2",
+    "titulo": "因为……，所以……: causa y consecuencia («como…, por eso…»)",
+    "zh": "因为……，所以……",
+    "explicacion": [
+     "<b>因为</b> (yīnwèi) significa «porque, como» e introduce la causa; <b>所以</b> (suǒyǐ) significa «por eso, así que» e introduce el resultado. En chino el orden normal es primero la causa y luego la consecuencia: 因为我生病了，所以今天没去上班 = «como estaba enfermo, hoy no he ido a trabajar».",
+     "Se pueden usar <b>los dos juntos</b> o <b>solo uno</b> de ellos: 因为我生病了，今天没去上班 / 我没去过他家，所以让他来车站接我. En español diríamos solo «como…» o solo «así que…», pero en chino es muy normal y correcto usar la pareja completa.",
+     "Para responder a «¿por qué?» (为什么) basta con 因为…: 你为什么还买白色的？—因为我喜欢白色啊！ Y la expresión <b>就是因为…，所以…</b> refuerza la causa: «precisamente porque…»."
+    ],
+    "estructura": [
+     "因为 + causa，所以 + resultado → 因为是新开的，所以东西很便宜。",
+     "因为 + causa，resultado → 因为我生病了，今天没去上班。",
+     "causa，所以 + resultado → 我没去过他家，所以让他来车站接我。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "就是因为没穿过，所以要试试啊！",
+      "py": "Jiù shì yīnwèi méi chuānguo, suǒyǐ yào shìshi a!",
+      "es": "¡Precisamente porque nunca te lo has puesto, tienes que probártelo!",
+      "nota": "就是因为: «precisamente porque»"
+     },
+     {
+      "zh": "因为我生病了，今天没去上班。",
+      "py": "Yīnwèi wǒ shēng bìng le, jīntiān méi qù shàng bān.",
+      "es": "Como estoy enfermo, hoy no he ido a trabajar.",
+      "nota": "solo 因为"
+     },
+     {
+      "zh": "我没去过他家，所以让他来车站接我。",
+      "py": "Wǒ méi qùguo tā jiā, suǒyǐ ràng tā lái chēzhàn jiē wǒ.",
+      "es": "Nunca he estado en su casa, así que le he pedido que venga a buscarme a la estación.",
+      "nota": "solo 所以"
+     },
+     {
+      "zh": "因为是新开的，所以这几天东西很便宜。",
+      "py": "Yīnwèi shì xīn kāi de, suǒyǐ zhè jǐ tiān dōngxi hěn piányi.",
+      "es": "Como es nuevo, estos días las cosas están muy baratas."
+     },
+     {
+      "zh": "因为我喜欢白色啊！",
+      "py": "Yīnwèi wǒ xǐhuan báisè a!",
+      "es": "¡Porque me gusta el blanco!",
+      "nota": "respuesta a 为什么"
+     },
+     {
+      "zh": "因为太贵了，所以我没买。",
+      "py": "Yīnwèi tài guì le, suǒyǐ wǒ méi mǎi.",
+      "es": "Como era demasiado caro, no lo compré."
+     }
+    ],
+    "ojo": "No pongas la consecuencia delante como en «no fui porque estaba enfermo» con 所以: el orden natural es 因为 (causa) + 所以 (resultado). Y no confundas 所以 «por eso» con 因为 «porque».",
+    "practica": [
+     {
+      "q": "___我今天很忙，所以没去看电影。",
+      "opciones": [
+       "所以",
+       "因为",
+       "为什么"
+      ],
+      "ok": 1,
+      "exp": "因为 introduce la causa: «Como hoy estaba muy ocupado, no fui al cine»."
+     },
+     {
+      "q": "这家商场是新开的，___东西很便宜。",
+      "opciones": [
+       "因为",
+       "但",
+       "所以"
+      ],
+      "ok": 2,
+      "exp": "所以 introduce el resultado: «El centro comercial es nuevo, así que las cosas están baratas»."
+     },
+     {
+      "q": "A: 你为什么不买那条裤子？ B: ___",
+      "opciones": [
+       "因为太贵了。",
+       "所以太贵了。",
+       "太贵了因为。"
+      ],
+      "ok": 0,
+      "exp": "Para responder a 为什么 se usa 因为: «Porque es demasiado caro»."
+     }
+    ]
+   },
+   {
+    "id": "G04-3",
+    "titulo": "La estructura con 的: «el rojo», «el que compró mamá»",
+    "zh": "……的",
+    "explicacion": [
+     "Si ponemos <b>的</b> detrás de un sustantivo, un pronombre, un verbo o un adjetivo, obtenemos una expresión que funciona como un <b>sustantivo</b>: se omite el nombre porque ya se sabe de qué hablamos. Es como en español «el rojo», «la verde», «el de mamá», «lo que compró papá».",
+     "红色的、绿色的、黑色的，你想买哪个？ = «rojas, verdes, negras… ¿cuál quieres?» (se sobrentiende 书包). 妈妈买的在那儿 = «el que compró mamá está ahí» (se sobrentiende 面包). 那件便宜的 = «esa (prenda) barata».",
+     "También se usa mucho con 是: 这个面包是爸爸买的 = «este pan es (el que) compró papá», y en expresiones como 好吃的 «cosas ricas» o 吃的 «algo de comer»."
+    ],
+    "estructura": [
+     "adjetivo / color + 的 → 红色的、便宜的、新的",
+     "verbo (+ sujeto) + 的 → 妈妈买的、爸爸做的",
+     "sustantivo / pronombre + 的 → 我的、老师的"
+    ],
+    "ejemplos": [
+     {
+      "zh": "红色的、绿色的、黑色的，你想买哪个？",
+      "py": "Hóngsè de, lǜsè de, hēisè de, nǐ xiǎng mǎi nǎge?",
+      "es": "Rojas, verdes, negras… ¿cuál quieres comprar?",
+      "nota": "= 红色的书包…"
+     },
+     {
+      "zh": "这个面包是爸爸买的，妈妈买的在那儿。",
+      "py": "Zhège miànbāo shì bàba mǎi de, māma mǎi de zài nàr.",
+      "es": "Este pan lo ha comprado papá; el que ha comprado mamá está allí.",
+      "nota": "妈妈买的 = el pan que compró mamá"
+     },
+     {
+      "zh": "这件衣服太贵了，还是买那件便宜的吧。",
+      "py": "Zhè jiàn yīfu tài guì le, háishi mǎi nà jiàn piányi de ba.",
+      "es": "Esta prenda es demasiado cara; mejor compra esa más barata."
+     },
+     {
+      "zh": "我觉得绿色的更好看。",
+      "py": "Wǒ juéde lǜsè de gèng hǎokàn.",
+      "es": "Creo que la verde es más bonita."
+     },
+     {
+      "zh": "你试试那条红色的吧。",
+      "py": "Nǐ shìshi nà tiáo hóngsè de ba.",
+      "es": "Pruébate esos rojos.",
+      "nota": "那条红色的 = esos pantalones rojos"
+     },
+     {
+      "zh": "这个书包是我的，那个是她的。",
+      "py": "Zhège shūbāo shì wǒ de, nàge shì tā de.",
+      "es": "Esta mochila es mía y esa es suya."
+     }
+    ],
+    "ojo": "No traduzcas «el rojo» con 红色 a secas cuando hablas de un objeto: hace falta 的 (红色的). 我想买红色 sería «quiero comprar el color rojo»; lo natural es 我想买红色的.",
+    "practica": [
+     {
+      "q": "这条裤子是我的，那条是我妈妈___。",
+      "opciones": [
+       "的",
+       "了",
+       "过"
+      ],
+      "ok": 0,
+      "exp": "我妈妈的 = los (pantalones) de mi madre."
+     },
+     {
+      "q": "黑色的书包很好看，但我更喜欢___。",
+      "opciones": [
+       "绿色",
+       "绿色的",
+       "的绿色"
+      ],
+      "ok": 1,
+      "exp": "绿色的 = la (mochila) verde."
+     },
+     {
+      "q": "¿Cómo se dice «Esto lo ha hecho papá»?",
+      "opciones": [
+       "这是爸爸做。",
+       "这爸爸做的是。",
+       "这是爸爸做的。"
+      ],
+      "ok": 2,
+      "exp": "是 + 爸爸做的: «es lo que hizo papá»."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 5,
+  "puntos": [
+   {
+    "id": "G05-1",
+    "titulo": "Complemento de dirección simple (1): verbo + 来 / 去",
+    "zh": "来 / 去",
+    "explicacion": [
+     "En chino, detrás de muchos verbos de movimiento se añade <b>来</b> (lái) o <b>去</b> (qù) para indicar la dirección respecto a quien habla: <b>来</b> = hacia el hablante (hacia aquí); <b>去</b> = alejándose del hablante (hacia allí). Los verbos más frecuentes son <b>上</b> (subir), <b>下</b> (bajar), <b>进</b> (entrar), <b>出</b> (salir), <b>回</b> (volver) y <b>过</b> (pasar, acercarse).",
+     "Así, si yo estoy abajo, te digo 你下来吧 «baja (aquí)» y digo de mí 我不上去了 «no subo (allí)». Si estoy arriba y tú también, hablando de alguien que está abajo: 你下去接她吧 «baja (allí) a buscarla». Es parecido a la diferencia entre «venir» e «ir», o «traer» y «llevar» en español.",
+     "También otros verbos como 叫, 开, 买, 拿, 请, 送, 要, 找, 走 pueden llevar 来/去: 她拿来一本中文书 «trajo un libro en chino»; 我给你送去 «te lo llevo». Y <b>起来</b> (qǐlái) tiene un uso especial: «levantarse» de la cama o de la silla: 你起来吧 «levántate»."
+    ],
+    "estructura": [
+     "verbo (上/下/进/出/回/过) + 来 → hacia el hablante: 你上来吧！",
+     "verbo (上/下/进/出/回/过) + 去 → lejos del hablante: 我一会儿就下去。",
+     "otros verbos + 来/去 → 拿来、送去；起来 = levantarse"
+    ],
+    "ejemplos": [
+     {
+      "zh": "还有时间，你上来吧。",
+      "py": "Hái yǒu shíjiān, nǐ shànglái ba.",
+      "es": "Todavía hay tiempo, sube.",
+      "nota": "quien habla está arriba"
+     },
+     {
+      "zh": "我不上去了，就在下面等你。",
+      "py": "Wǒ bú shàngqù le, jiù zài xiàmiàn děng nǐ.",
+      "es": "No subo; te espero aquí abajo.",
+      "nota": "quien habla está abajo"
+     },
+     {
+      "zh": "家月到下边了，你下去接她吧。",
+      "py": "Jiāyuè dào xiàbian le, nǐ xiàqù jiē tā ba.",
+      "es": "Jiayue ya está abajo; baja a buscarla.",
+      "nota": "los dos hablantes están arriba"
+     },
+     {
+      "zh": "我在外边呢，你出来吧。",
+      "py": "Wǒ zài wàibian ne, nǐ chūlái ba.",
+      "es": "Estoy fuera, sal.",
+      "nota": "quien habla está fuera"
+     },
+     {
+      "zh": "你别过来拿了，我给你送去。",
+      "py": "Nǐ bié guòlái ná le, wǒ gěi nǐ sòngqù.",
+      "es": "No vengas a por ello, ya te lo llevo yo."
+     },
+     {
+      "zh": "你起来吧，让小妹妹坐这儿。",
+      "py": "Nǐ qǐlái ba, ràng xiǎo mèimei zuò zhèr.",
+      "es": "Levántate y deja que se siente aquí la niña.",
+      "nota": "起来 = levantarse"
+     }
+    ],
+    "ojo": "Fíjate en dónde está quien habla: si tu amigo está en la calle y tú en casa, le dices 你进来吧 («entra, pasa»), no *你进去吧. Es el mismo error que confundir «venir» e «ir» en español.",
+    "practica": [
+     {
+      "q": "(Tú estás en casa y tu amiga llama a la puerta.) 请___吧！",
+      "opciones": [
+       "进来",
+       "进去",
+       "下去"
+      ],
+      "ok": 0,
+      "exp": "Ella se mueve hacia ti, que estás dentro: 进来 «entra, pasa»."
+     },
+     {
+      "q": "(Tú estás abajo y tu amiga arriba.) 我不上去了，你___吧。",
+      "opciones": [
+       "上来",
+       "下去",
+       "下来"
+      ],
+      "ok": 2,
+      "exp": "Ella baja hacia donde estás tú: 下来."
+     },
+     {
+      "q": "A: 你在哪儿？ B: 我在楼下，我现在就___。",
+      "opciones": [
+       "上来",
+       "上去",
+       "下来"
+      ],
+      "ok": 1,
+      "exp": "Quien habla está abajo y va a subir alejándose de su posición: 上去."
+     }
+    ]
+   },
+   {
+    "id": "G05-2",
+    "titulo": "Complemento de dirección simple (2): dónde va el objeto",
+    "zh": "verbo + 进/回/出… + objeto + 来/去",
+    "explicacion": [
+     "Cuando el verbo con 来/去 lleva también un objeto, la posición depende del tipo de objeto. Si es un <b>lugar</b>, va <b>delante de 来/去</b>: 你们快进教室来吧 «entrad rápido en el aula»; 他回家去了 «se ha ido a casa». Nunca *进来教室.",
+     "Si es una <b>cosa</b>, puede ir <b>delante o detrás de 来/去</b>: 还拿这么多礼物来 / 家月给我送来了一本书 «Jiayue me trajo un libro».",
+     "Además, verbos como 开, 买, 拿, 请, 送, 要, 找, 走 pueden combinarse con <b>上, 下, 进, 出, 回, 过</b>. En ese caso el objeto suele ir detrás: 爸爸今天买回了很多水果 «papá ha traído mucha fruta a casa»; 妈妈拿出了二十块钱 «mamá sacó veinte yuanes»; 我们是走回酒店的 «volvimos andando al hotel»."
+    ],
+    "estructura": [
+     "verbo + lugar + 来/去 → 进教室来、回家去",
+     "verbo + cosa + 来/去 → 拿礼物来 ／ verbo + 来/去 + cosa → 送来了一本书",
+     "verbo + 上/下/进/出/回/过 + objeto → 买回了很多水果、走回酒店"
+    ],
+    "ejemplos": [
+     {
+      "zh": "你们太客气了，还拿这么多礼物来！",
+      "py": "Nǐmen tài kèqi le, hái ná zhème duō lǐwù lái!",
+      "es": "¡No teníais que molestaros, y encima traéis tantos regalos!",
+      "nota": "cosa delante de 来"
+     },
+     {
+      "zh": "家月给我送来了一本书。",
+      "py": "Jiāyuè gěi wǒ sòngláile yì běn shū.",
+      "es": "Jiayue me trajo un libro.",
+      "nota": "cosa detrás de 来"
+     },
+     {
+      "zh": "上课了，你们快进教室来吧。",
+      "py": "Shàng kè le, nǐmen kuài jìn jiàoshì lái ba.",
+      "es": "Ya empieza la clase, entrad rápido en el aula.",
+      "nota": "lugar delante de 来"
+     },
+     {
+      "zh": "爸爸今天买回了很多水果。",
+      "py": "Bàba jīntiān mǎihuíle hěn duō shuǐguǒ.",
+      "es": "Hoy papá ha traído mucha fruta a casa."
+     },
+     {
+      "zh": "妈妈拿出了二十块钱，让小雪自己去买点儿吃的。",
+      "py": "Māma náchūle èrshí kuài qián, ràng Xiǎoxuě zìjǐ qù mǎi diǎnr chī de.",
+      "es": "Mamá sacó veinte yuanes para que Xiaoxue fuera ella sola a comprar algo de comer."
+     },
+     {
+      "zh": "我们吃完饭是走回酒店的。",
+      "py": "Wǒmen chīwán fàn shì zǒuhuí jiǔdiàn de.",
+      "es": "Después de comer volvimos andando al hotel."
+     }
+    ],
+    "ojo": "Con lugares no digas *他回去家了 ni *进来教室: el lugar va en medio: 他回家去了, 进教室来.",
+    "practica": [
+     {
+      "q": "上课了，老师___了。",
+      "opciones": [
+       "进来教室",
+       "进教室来",
+       "来进教室"
+      ],
+      "ok": 1,
+      "exp": "El lugar va entre 进 y 来: 进教室来 «entró en el aula»."
+     },
+     {
+      "q": "你看见天中了吗？—我看见他___书店了。",
+      "opciones": [
+       "走进",
+       "进走",
+       "走来"
+      ],
+      "ok": 0,
+      "exp": "走进 + lugar: «lo vi entrar en la librería»."
+     },
+     {
+      "q": "他吃完饭已经___了。",
+      "opciones": [
+       "回去学校",
+       "学校回去",
+       "回学校去"
+      ],
+      "ok": 2,
+      "exp": "回 + 学校 + 去: «ya ha vuelto a la escuela»."
+     }
+    ]
+   },
+   {
+    "id": "G05-3",
+    "titulo": "都……了: «ya…» con énfasis o queja",
+    "zh": "都……了",
+    "explicacion": [
+     "La estructura <b>都……了</b> significa «ya…» y subraya que se ha llegado a un punto (una hora, una edad, una cantidad) que parece tarde, mucho o suficiente. Suele tener un tono de <b>énfasis o de queja</b>, como nuestro «¡pero si ya son las doce!».",
+     "Aquí 都 no significa «todos», sino «ya». Lo que va en medio suele ser una hora, una cantidad o una acción: 都十二点了 «ya son las doce», 都八点半了，你还不起床吗？ «¡ya son las ocho y media! ¿Todavía no te levantas?», 我都去过北京了 «si ya he estado en Pekín».",
+     "Detrás suele venir una propuesta (…，我们吃饭吧), una pregunta de reproche (…，你还…吗？) o una consecuencia (…，不想再去了)."
+    ],
+    "estructura": [
+     "都 + hora / cantidad + 了 → 都十二点了，我们吃饭吧。",
+     "都 + verbo + 过/了 + objeto + 了 → 我都去过北京了。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "都十二点了，我们吃饭吧。",
+      "py": "Dōu shí'èr diǎn le, wǒmen chī fàn ba.",
+      "es": "Ya son las doce, vamos a comer."
+     },
+     {
+      "zh": "都八点半了，你还不起床吗？",
+      "py": "Dōu bā diǎn bàn le, nǐ hái bù qǐ chuáng ma?",
+      "es": "¡Ya son las ocho y media! ¿Todavía no te levantas?",
+      "nota": "tono de queja"
+     },
+     {
+      "zh": "我都去过北京了，不想再去了。",
+      "py": "Wǒ dōu qùguo Běijīng le, bù xiǎng zài qù le.",
+      "es": "Ya he estado en Pekín, no quiero volver."
+     },
+     {
+      "zh": "都十一点了，我们快走吧。",
+      "py": "Dōu shíyī diǎn le, wǒmen kuài zǒu ba.",
+      "es": "Ya son las once, vámonos rápido."
+     },
+     {
+      "zh": "你都二十岁了，还不会做饭？",
+      "py": "Nǐ dōu èrshí suì le, hái bú huì zuò fàn?",
+      "es": "¡Ya tienes veinte años y aún no sabes cocinar?"
+     },
+     {
+      "zh": "都十点了，他还没来。",
+      "py": "Dōu shí diǎn le, tā hái méi lái.",
+      "es": "Ya son las diez y todavía no ha llegado."
+     }
+    ],
+    "ojo": "No olvides el 了 final: *都十二点，我们吃饭吧 queda incompleto. Y no confundas este 都 («ya») con 都 «todos»: 都十二点了 no significa «todas las doce».",
+    "practica": [
+     {
+      "q": "___十二点了，你怎么还不睡觉？",
+      "opciones": [
+       "都",
+       "也",
+       "还"
+      ],
+      "ok": 0,
+      "exp": "都……了 = «ya»: «Ya son las doce, ¿cómo es que aún no duermes?»."
+     },
+     {
+      "q": "都八点半___，你还不起床吗？",
+      "opciones": [
+       "过",
+       "了",
+       "的"
+      ],
+      "ok": 1,
+      "exp": "La estructura es 都……了."
+     },
+     {
+      "q": "¿Qué significa 我都吃过饺子了？",
+      "opciones": [
+       "Todos hemos comido jiaozi.",
+       "Nunca he comido jiaozi.",
+       "Ya he comido jiaozi (antes)."
+      ],
+      "ok": 2,
+      "exp": "Aquí 都 = «ya», con énfasis."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 6,
+  "puntos": [
+   {
+    "id": "G06-1",
+    "titulo": "Adjetivos duplicados: 大大的, 漂漂亮亮的",
+    "zh": "AA / AABB",
+    "explicacion": [
+     "En chino, muchos adjetivos se pueden <b>repetir</b> para intensificar su significado o para darle un tono <b>cariñoso, expresivo</b>. Un adjetivo de una sílaba A se repite como <b>AA</b>: 大 → 大大, 小 → 小小, 长 → 长长. Uno de dos sílabas AB se repite como <b>AABB</b>: 漂亮 → 漂漂亮亮, 高兴 → 高高兴兴, 舒服 → 舒舒服服.",
+     "Equivale a nuestros diminutivos o aumentativos y a expresiones como «bien grande», «grandote», «bien guapa», «tan a gusto»: 一个大大的生日蛋糕 «una tarta de cumpleaños bien grande»; 这只猫小小的 «este gato es pequeñito».",
+     "El adjetivo duplicado ya es intenso, así que <b>no lleva 很 ni 非常</b> delante. Detrás suele llevar 的 (大大的蛋糕, 每天都漂漂亮亮的) o, delante de un verbo, 地 (高高兴兴地玩)."
+    ],
+    "estructura": [
+     "A → AA (+ 的) → 大大的蛋糕、小小的猫",
+     "AB → AABB (+ 的 / 地) → 漂漂亮亮的、高高兴兴地玩"
+    ],
+    "ejemplos": [
+     {
+      "zh": "我再给她买个大大的生日蛋糕。",
+      "py": "Wǒ zài gěi tā mǎi ge dàdà de shēngrì dàngāo.",
+      "es": "Y yo le compro una tarta de cumpleaños bien grande."
+     },
+     {
+      "zh": "这只猫小小的，真让人喜欢。",
+      "py": "Zhè zhī māo xiǎoxiǎo de, zhēn ràng rén xǐhuan.",
+      "es": "Este gato es pequeñito, qué mono."
+     },
+     {
+      "zh": "一雪的女儿每天都漂漂亮亮的。",
+      "py": "Yīxuě de nǚ'ér měi tiān dōu piàopiàoliàngliàng de.",
+      "es": "La hija de Yixue va siempre muy guapa.",
+      "nota": "AABB"
+     },
+     {
+      "zh": "长长的面条儿，大大的蛋糕。",
+      "py": "Chángcháng de miàntiáor, dàdà de dàngāo.",
+      "es": "Fideos larguísimos y una tarta enorme."
+     },
+     {
+      "zh": "他每天都高高兴兴的。",
+      "py": "Tā měi tiān dōu gāogāoxìngxìng de.",
+      "es": "Siempre está muy contento."
+     },
+     {
+      "zh": "这家饭店的饺子大大的，很好吃。",
+      "py": "Zhè jiā fàndiàn de jiǎozi dàdà de, hěn hǎochī.",
+      "es": "Los jiaozi de este restaurante son bien grandes y están muy ricos."
+     }
+    ],
+    "ojo": "No digas *很大大的 ni *非常漂漂亮亮: la repetición ya intensifica. Y los adjetivos de dos sílabas se duplican como AABB (高高兴兴), no ABAB (*高兴高兴).",
+    "practica": [
+     {
+      "q": "妈妈给我买了一个___的蛋糕。",
+      "opciones": [
+       "很大大",
+       "大大",
+       "大大大"
+      ],
+      "ok": 1,
+      "exp": "Adjetivo de una sílaba: AA (大大), sin 很."
+     },
+     {
+      "q": "¿Cuál es la forma duplicada de 舒服?",
+      "opciones": [
+       "舒舒服服",
+       "舒服舒服",
+       "舒服服"
+      ],
+      "ok": 0,
+      "exp": "Un adjetivo AB se duplica como AABB: 舒舒服服."
+     },
+     {
+      "q": "¿Cuál es correcta?",
+      "opciones": [
+       "他每天都很高高兴兴的。",
+       "他每天都高兴高兴的。",
+       "他每天都高高兴兴的。"
+      ],
+      "ok": 2,
+      "exp": "AABB y sin 很: 高高兴兴的 «siempre está muy contento»."
+     }
+    ]
+   },
+   {
+    "id": "G06-2",
+    "titulo": "什么的: «y cosas así», «etcétera»",
+    "zh": "什么的",
+    "explicacion": [
+     "<b>什么的</b> (shénmede) se pone al final de una enumeración para indicar que la lista no está completa: equivale a «etcétera», «y cosas así», «y todo eso», «y demás».",
+     "Se coloca detrás del último elemento: 桌子上有电脑、杯子、书和画笔什么的 «en la mesa hay un ordenador, tazas, libros, rotuladores y cosas así». Los elementos se suelen separar con la coma de enumeración 、 o con 啊: 鱼啊肉啊什么的 «pescado, carne y demás».",
+     "Es una expresión del <b>registro hablado</b>. Aquí 什么 no es una pregunta: la frase termina con punto, no con interrogación."
+    ],
+    "estructura": [
+     "A、B(和)C + 什么的 → 电脑、杯子、书和画笔什么的",
+     "A啊B啊 + 什么的 → 鱼啊肉啊什么的"
+    ],
+    "ejemplos": [
+     {
+      "zh": "有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "py": "Yǒu bàba, māma, dìdi, hái yǒu hēisè de gǒu, báisè de māo shénmede.",
+      "es": "Con papá, mamá, mi hermano, y también el perro negro, el gato blanco y todo eso."
+     },
+     {
+      "zh": "桌子上有电脑、杯子、书和画笔什么的。",
+      "py": "Zhuōzi shang yǒu diànnǎo, bēizi, shū hé huàbǐ shénmede.",
+      "es": "En la mesa hay un ordenador, tazas, libros, rotuladores y cosas así."
+     },
+     {
+      "zh": "她拿来了一些水、面包和苹果什么的。",
+      "py": "Tā náláile yìxiē shuǐ, miànbāo hé píngguǒ shénmede.",
+      "es": "Trajo agua, pan, manzanas y cosas así."
+     },
+     {
+      "zh": "你看，还有鱼啊肉啊什么的，都是你喜欢吃的。",
+      "py": "Nǐ kàn, hái yǒu yú a ròu a shénmede, dōu shì nǐ xǐhuan chī de.",
+      "es": "Mira, también hay pescado, carne y demás; todo lo que te gusta.",
+      "nota": "A啊B啊什么的"
+     },
+     {
+      "zh": "我喜欢唱歌、画画什么的。",
+      "py": "Wǒ xǐhuan chàng gē, huà huà shénmede.",
+      "es": "Me gusta cantar, dibujar y cosas así."
+     },
+     {
+      "zh": "商场里有衣服、书包、手机什么的。",
+      "py": "Shāngchǎng li yǒu yīfu, shūbāo, shǒujī shénmede.",
+      "es": "En el centro comercial hay ropa, mochilas, móviles y demás."
+     }
+    ],
+    "ojo": "什么的 va al final de la lista, no al principio, y no convierte la frase en pregunta: 我买了鱼、肉什么的。 (con punto). No lo uses con un solo elemento suelto si quieres decir «algo»: para eso se dice 点儿什么.",
+    "practica": [
+     {
+      "q": "我买了面包、苹果___。",
+      "opciones": [
+       "什么",
+       "什么的",
+       "的什么"
+      ],
+      "ok": 1,
+      "exp": "什么的 cierra la enumeración: «pan, manzanas y cosas así»."
+     },
+     {
+      "q": "¿Qué significa 我们吃了鱼啊肉啊什么的？",
+      "opciones": [
+       "Comimos pescado, carne y otras cosas.",
+       "¿Qué pescado y qué carne comimos?",
+       "No comimos ni pescado ni carne."
+      ],
+      "ok": 0,
+      "exp": "什么的 = «y demás»; no es una pregunta."
+     },
+     {
+      "q": "¿Dónde va 什么的? 桌子上有 (A) 电脑 (B) 杯子和书 (C)。",
+      "opciones": [
+       "A",
+       "B",
+       "C"
+      ],
+      "ok": 2,
+      "exp": "Al final de la enumeración: 桌子上有电脑、杯子和书什么的。"
+     }
+    ]
+   },
+   {
+    "id": "G06-3",
+    "titulo": "La partícula 地: cómo se hace algo (adjetivo + 地 + verbo)",
+    "zh": "地",
+    "explicacion": [
+     "<b>地</b> (de) se pone entre un adjetivo (o adverbio) y un verbo para indicar <b>de qué manera</b> se hace la acción. Funciona como nuestra terminación «-mente» o expresiones como «con alegría», «a gusto»: 高高兴兴地玩 «jugar alegremente, pasarlo en grande».",
+     "Se pronuncia igual que 的 (de, tono neutro), pero se escribe distinto: <b>的</b> va delante de un sustantivo (大大的蛋糕), <b>地</b> va delante de un verbo (早早地到了).",
+     "Es muy frecuente con adjetivos duplicados: 早早地就上床了 «se acostaron muy pronto», 舒舒服服地睡一觉 «dormir a gusto». También con 很 + adjetivo: 很快地吃完早饭 «desayunó muy rápido»."
+    ],
+    "estructura": [
+     "adjetivo (duplicado) + 地 + verbo → 高高兴兴地玩、早早地到了",
+     "很 + adjetivo + 地 + verbo → 很快地吃完早饭"
+    ],
+    "ejemplos": [
+     {
+      "zh": "过生日就要吃好吃的，还要高高兴兴地玩。",
+      "py": "Guò shēngrì jiù yào chī hǎochī de, hái yào gāogāoxìngxìng de wán.",
+      "es": "En el cumpleaños hay que comer cosas ricas y divertirse con alegría."
+     },
+     {
+      "zh": "老师早早地到了教室。",
+      "py": "Lǎoshī zǎozǎo de dàole jiàoshì.",
+      "es": "El profesor llegó al aula muy temprano."
+     },
+     {
+      "zh": "爸爸很快地吃完早饭，就去上班了。",
+      "py": "Bàba hěn kuài de chīwán zǎofàn, jiù qù shàng bān le.",
+      "es": "Papá desayunó muy deprisa y se fue a trabajar."
+     },
+     {
+      "zh": "回家后，孩子们早早地就上床了。",
+      "py": "Huí jiā hòu, háizimen zǎozǎo de jiù shàng chuáng le.",
+      "es": "Al volver a casa, los niños se acostaron pronto."
+     },
+     {
+      "zh": "他们说要舒舒服服地睡一觉。",
+      "py": "Tāmen shuō yào shūshūfúfú de shuì yí jiào.",
+      "es": "Dicen que quieren dormir a gusto."
+     },
+     {
+      "zh": "她高兴地说：“谢谢爸爸、妈妈！”",
+      "py": "Tā gāoxìng de shuō: “Xièxie bàba, māma!”",
+      "es": "Dijo contenta: «¡Gracias, papá y mamá!»."
+     }
+    ],
+    "ojo": "No confundas 的 y 地: suenan igual, pero 大大的蛋糕 (delante de sustantivo) y 高高兴兴地玩 (delante de verbo). Escribir *高高兴兴的玩 es un error frecuente.",
+    "practica": [
+     {
+      "q": "孩子们高高兴兴___玩。",
+      "opciones": [
+       "的",
+       "地",
+       "得"
+      ],
+      "ok": 1,
+      "exp": "Delante de un verbo (玩) se usa 地."
+     },
+     {
+      "q": "我要舒舒服服地___。",
+      "opciones": [
+       "睡一觉",
+       "蛋糕",
+       "衣服"
+      ],
+      "ok": 0,
+      "exp": "Detrás de 地 va un verbo: 睡一觉 «dormir a gusto»."
+     },
+     {
+      "q": "¿Cuál es correcta?",
+      "opciones": [
+       "这是一个大大地蛋糕。",
+       "他早早的到了。",
+       "他早早地到了。"
+      ],
+      "ok": 2,
+      "exp": "早早地 + verbo (到): «llegó muy pronto». Con sustantivo sería 大大的蛋糕."
+     }
+    ]
+   }
+  ]
+ }
+]

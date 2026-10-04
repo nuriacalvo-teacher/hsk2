@@ -1,0 +1,373 @@
+[
+ {
+  "id": "R1-13",
+  "nivel": 1,
+  "tema": 13,
+  "titulo": "Flores para la profesora",
+  "titulo_zh": "送 给 老师 的 花",
+  "texto": "新年 就 要 到 了 ， 我们 班 的 同学 都 很 高兴 。 王老师 教 我们 中文 ， 她 教 得 非常 认真 。 我们 想 送 给 她 一个 新年 礼物 。 安妮 说 王老师 喜欢 花 ， 我们 就 去 花店 买 了 很 多 花 。 花店 的 花 比 商店 的 贵 一点儿 ， 但是 非常 漂亮 。 王老师 看到 花 ， 高兴 地 说 ： “ 谢谢 你们 ！ ”",
+  "es": "Ya llega el Año Nuevo y todos los compañeros de mi clase están muy contentos. La profesora Wang nos enseña chino y lo hace con mucha dedicación. Queremos hacerle un regalo de Año Nuevo. Annie dice que a la profesora Wang le gustan las flores, así que fuimos a la floristería y compramos muchas flores. Las flores de la floristería son un poco más caras que las de las tiendas normales, pero son preciosas. Cuando la profesora Wang vio las flores, dijo muy contenta: «¡Gracias!».",
+  "preguntas": [
+   {
+    "q": "¿Qué asignatura enseña la profesora Wang?",
+    "lang": "es",
+    "a": [
+     "chino",
+     "el chino",
+     "clase de chino",
+     "lengua china"
+    ],
+    "r": "Chino (中文)."
+   },
+   {
+    "q": "¿Cómo enseña? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "rènzhēn",
+     "fēicháng rènzhēn"
+    ],
+    "r": "Con mucha dedicación · fēicháng rènzhēn (非常认真)."
+   },
+   {
+    "q": "¿Qué le regalan los alumnos?",
+    "lang": "es",
+    "a": [
+     "flores",
+     "unas flores",
+     "muchas flores"
+    ],
+    "r": "Flores (花)."
+   },
+   {
+    "q": "¿Dónde las compraron? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "huādiàn"
+    ],
+    "r": "En la floristería · huādiàn (花店)."
+   },
+   {
+    "q": "¿Cómo son de precio las flores de la floristería?",
+    "lang": "es",
+    "a": [
+     "un poco mas caras",
+     "un poco más caras",
+     "mas caras",
+     "más caras",
+     "algo mas caras"
+    ],
+    "r": "Un poco más caras que en las tiendas (贵一点儿)."
+   }
+  ]
+ },
+ {
+  "id": "R2-13",
+  "nivel": 2,
+  "tema": 13,
+  "titulo": "Mi clase de chino",
+  "titulo_zh": "我们 的 中文 课",
+  "texto": "我 叫 白家月 ， 在 北京 的 一个 大学 学习 汉语 。 我们 班 有 十 五 个 学生 ， 比 安妮 的 班 多 三 个 。 我们 的 老师 是 王一飞 ， 她 教 得 非常 好 ， 同学 们 都 很 爱 上 她 的 课 。 ¶ 今天 的 词 比 昨天 多 了 五 个 ， 但是 大 家 都 学 会 了 。 王老师 让 我们 在 本子 上面 写 字 。 陈天中 写 错 了 “ 间 ” 字 ， 老师 告诉 他 ， 这个 字 的 里面 是 “ 日 ” ， 不|bú 是 “ 口 ” 。 写 “ 口 ” 就 是 “ 问题 ” 的 “ 问 ” 了 。 ¶ 下课 后 ， 安妮 拿 给 我 一个 新 本子 。 她 说 是 在 网上 买 的 ， 比 商店 里|li 的 便宜 一些 。 我 很 高兴 ， 就 送 给 她 一个 咖啡杯 ， 因为 她 最 喜欢 喝 咖啡 了 。 现在 我们 都 有 新年 礼物 了 ！",
+  "es": "Me llamo Bai Jiayue y estudio chino en una universidad de Pekín. En mi clase hay quince alumnos, tres más que en la clase de Annie. Nuestra profesora es Wang Yifei; enseña muy bien y a todos nos encanta su clase. Hoy hemos tenido cinco palabras más que ayer, pero todos las hemos aprendido. La profesora Wang nos hizo escribir en el cuaderno. Chen Tianzhong escribió mal el carácter «jian»: la profesora le dijo que dentro lleva «ri», no «kou»; si se escribe «kou», es el «wen» de «wenti». Después de clase, Annie me dio un cuaderno nuevo. Me dijo que lo había comprado por internet y que era un poco más barato que en las tiendas. Me puse muy contenta y le regalé una taza de café, porque lo que más le gusta es tomar café. ¡Ahora las dos tenemos regalo de Año Nuevo!",
+  "preguntas": [
+   {
+    "q": "¿Cuántos alumnos hay en la clase de Bai Jiayue?",
+    "lang": "es",
+    "a": [
+     "15",
+     "quince",
+     "quince alumnos"
+    ],
+    "r": "Quince (十五个学生)."
+   },
+   {
+    "q": "¿Cuántas palabras más que ayer han tenido hoy? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "wǔ gè",
+     "wǔ"
+    ],
+    "r": "Cinco · wǔ gè (多了五个)."
+   },
+   {
+    "q": "¿Qué carácter escribió mal Chen Tianzhong? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "jiān"
+    ],
+    "r": "El de «jian» · jiān (间)."
+   },
+   {
+    "q": "¿Qué le dio Annie a Bai Jiayue?",
+    "lang": "es",
+    "a": [
+     "cuaderno",
+     "un cuaderno",
+     "un cuaderno nuevo",
+     "libreta"
+    ],
+    "r": "Un cuaderno nuevo (一个新本子)."
+   },
+   {
+    "q": "¿Qué le regaló Bai Jiayue a Annie?",
+    "lang": "es",
+    "a": [
+     "taza",
+     "una taza",
+     "taza de cafe",
+     "una taza de café",
+     "una taza de cafe"
+    ],
+    "r": "Una taza de café (咖啡杯)."
+   }
+  ]
+ },
+ {
+  "id": "R1-14",
+  "nivel": 1,
+  "tema": 14,
+  "titulo": "La niña de abajo",
+  "titulo_zh": "楼下 的 小 女孩儿",
+  "texto": "我 家 楼下 住 着 一|yì 家 中国人 。 他们 家 有 一个 小 女孩儿 ， 眼睛 大 大 的 ， 多 漂亮 啊 ！ 她 今年 六 岁 ， 很 喜欢 唱歌 跳舞 。 她 经常 跑 上来 找 我 玩儿 ， 我 教 她 说 外语 ， 她 教 我 说 汉语 。 就 要 过年 了 ， 她 妈妈 请 我 去 她们 家 吃饭 。",
+  "es": "En el piso de abajo vive una familia china. Tienen una niña pequeña con unos ojos muy grandes; ¡qué guapa es! Este año cumple seis años y le encanta cantar y bailar. A menudo sube corriendo a jugar conmigo: yo le enseño un idioma extranjero y ella me enseña chino. Ya llega el Año Nuevo chino y su madre me ha invitado a comer en su casa.",
+  "preguntas": [
+   {
+    "q": "¿Quién vive en el piso de abajo?",
+    "lang": "es",
+    "a": [
+     "una familia china",
+     "familia china",
+     "chinos",
+     "una familia"
+    ],
+    "r": "Una familia china (一家中国人)."
+   },
+   {
+    "q": "¿Cuántos años tiene la niña? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "liù suì",
+     "liù"
+    ],
+    "r": "Seis · liù suì (六岁)."
+   },
+   {
+    "q": "¿Qué le gusta hacer a la niña?",
+    "lang": "es",
+    "a": [
+     "cantar y bailar",
+     "cantar",
+     "bailar"
+    ],
+    "r": "Cantar y bailar (唱歌跳舞)."
+   },
+   {
+    "q": "¿Qué le enseña la niña al narrador?",
+    "lang": "es",
+    "a": [
+     "chino",
+     "el chino",
+     "a hablar chino"
+    ],
+    "r": "Chino (汉语)."
+   },
+   {
+    "q": "¿Qué fiesta se acerca? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "guònián",
+     "guò nián"
+    ],
+    "r": "El Año Nuevo chino · guònián (过年)."
+   }
+  ]
+ },
+ {
+  "id": "R2-14",
+  "nivel": 2,
+  "tema": 14,
+  "titulo": "Una visita por sorpresa",
+  "titulo_zh": "男朋友 来 了",
+  "texto": "我 叫 王一飞 ， 是 一个 汉语 老师 。 我 男朋友 叫 杨同乐 ， 我们 是 在 姐姐 家 认识 的 。 他 高 个子 、 大 眼睛 ， 唱歌 唱 得 很 好 ， 跳舞 也 不错 。 ¶ 就 要 过年 了 。 杨同乐 说 我 一个 人 在 这儿 过年 多 没意思 啊 ， 所以 他 早 早|zǎo 就 过来 看 我 了 。 那 天 他 在 我 家 楼下 站 着 ， 手 里|li 拿 着 一个 黑色 的 包 。 我 从 楼上 跑 下来 ， 他 就 笑 了 。 ¶ 我 住 的 房子 很 大 ， 离 学校 也 不 远 。 楼下 还 住 着 一|yì 家 中国人 ， 他们 的 小孩儿 经常 跑 上来 找 我 玩儿 。 杨同乐 说 ： “ 这里 多 好 啊 ！ 我 也 想 住 在 这儿 。 ”",
+  "es": "Me llamo Wang Yifei y soy profesora de chino. Mi novio se llama Yang Tongle; nos conocimos en casa de mi hermana. Es alto, tiene los ojos grandes, canta muy bien y también baila bastante bien. Ya llega la Fiesta de la Primavera. Yang Tongle dice que pasar las fiestas yo sola aquí sería muy aburrido, así que ha venido con tiempo a verme. Aquel día estaba de pie delante de mi portal, con un bolso negro en la mano. Bajé corriendo y él se echó a reír. La casa donde vivo es muy grande y no está lejos de la escuela. Abajo vive además una familia china, y su niña sube a menudo a jugar conmigo. Yang Tongle dijo: «¡Qué bien se está aquí! Yo también quiero vivir aquí».",
+  "preguntas": [
+   {
+    "q": "¿A qué se dedica Wang Yifei?",
+    "lang": "es",
+    "a": [
+     "profesora",
+     "profesora de chino",
+     "es profesora",
+     "maestra"
+    ],
+    "r": "Es profesora de chino (汉语老师)."
+   },
+   {
+    "q": "¿Dónde se conocieron Wang Yifei y su novio?",
+    "lang": "es",
+    "a": [
+     "en casa de su hermana",
+     "casa de su hermana",
+     "en casa de la hermana",
+     "hermana"
+    ],
+    "r": "En casa de su hermana (在姐姐家)."
+   },
+   {
+    "q": "¿Por qué ha venido Tongle?",
+    "lang": "es",
+    "a": [
+     "aburrido",
+     "sola",
+     "para que no este sola",
+     "pasar el año nuevo sola es aburrido"
+    ],
+    "r": "Porque pasar el Año Nuevo sola sería muy aburrido (一个人过年多没意思)."
+   },
+   {
+    "q": "¿Qué llevaba en la mano? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "bāo",
+     "hēisè de bāo"
+    ],
+    "r": "Un bolso negro · hēisè de bāo (黑色的包)."
+   },
+   {
+    "q": "¿Qué le parece a Tongle la casa?",
+    "lang": "es",
+    "a": [
+     "muy bien",
+     "bien",
+     "le gusta",
+     "quiere vivir alli",
+     "quiere vivir ahi"
+    ],
+    "r": "Le encanta: ¡qué bien se está! Él también quiere vivir allí (这里多好啊！)."
+   }
+  ]
+ },
+ {
+  "id": "R1-15",
+  "nivel": 1,
+  "tema": 15,
+  "titulo": "Quiero volver a Pekín",
+  "titulo_zh": "我 想 再 去 一|yí 次 北京",
+  "texto": "我 去年 去 过|guo 一|yí 次 北京 ， 在 那儿 吃 了 两 次 北京烤鸭 ， 还 去 了 北京大学 。 明年 我 想 再 去 一|yí 次 北京 ， 看 看|kan 颐和园 。 朋友 说 颐和园 很 有名 ， 也 很 好玩儿 。 我 已经 在 网上 看 了 机票 ， 有点儿 贵 ， 但是 我 还是 很 想 去 。",
+  "es": "El año pasado estuve una vez en Pekín; allí comí pato laqueado dos veces y además fui a la Universidad de Pekín. El año que viene quiero volver a Pekín para ver el Palacio de Verano. Mis amigos dicen que el Palacio de Verano es muy famoso y muy bonito de visitar. Ya he mirado los billetes de avión en internet; son algo caros, pero aun así tengo muchas ganas de ir.",
+  "preguntas": [
+   {
+    "q": "¿Cuántas veces ha estado en Pekín?",
+    "lang": "es",
+    "a": [
+     "una",
+     "una vez",
+     "1",
+     "1 vez"
+    ],
+    "r": "Una vez (去过一次)."
+   },
+   {
+    "q": "¿Cuántas veces comió pato laqueado? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "liǎng cì",
+     "liǎng"
+    ],
+    "r": "Dos veces · liǎng cì (两次)."
+   },
+   {
+    "q": "¿Qué quiere visitar el año que viene?",
+    "lang": "es",
+    "a": [
+     "palacio de verano",
+     "el palacio de verano",
+     "yiheyuan"
+    ],
+    "r": "El Palacio de Verano (颐和园)."
+   },
+   {
+    "q": "¿Dónde ha mirado los billetes? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "wǎngshang",
+     "wǎngshàng",
+     "zài wǎngshang"
+    ],
+    "r": "En internet · wǎngshang (网上)."
+   },
+   {
+    "q": "¿Cómo son los billetes de avión?",
+    "lang": "es",
+    "a": [
+     "caros",
+     "algo caros",
+     "un poco caros"
+    ],
+    "r": "Algo caros (有点儿贵)."
+   }
+  ]
+ },
+ {
+  "id": "R2-15",
+  "nivel": 2,
+  "tema": 15,
+  "titulo": "Vuelta a casa por Año Nuevo",
+  "titulo_zh": "回家 过年",
+  "texto": "我 是 李文 ， 在 这儿 上 大学 已经 三 年 了 。 我 家 在 北京 ， 我 有 半年 多 没 回家 了 ， 很 想 爸爸 妈妈 。 ¶ 就 要 过年 了 ， 我 在 网上 买 好 了 机票 ， 是 星期六 上午 的 。 这 次 的 机票 比 上次 贵 五 百 块 ， 但是 想 到 马上 就 可以 见 到 家人 ， 我 还是 很 高兴 。 ¶ 白家月 也 要 去 北京 旅游 。 她 去 过|guo 两 次 ， 这 次 是 第 三 次 。 她 说 要 再 吃 一|yí 次 北京烤鸭 ， 再 去 一|yí 次 颐和园 。 我 的 高中 同学 在 颐和园 上班 ， 我 想 让 他 给 家月 好 好 介绍 介绍 。 出门 旅游 ， 多 个 朋友 多 条 路 啊 ！",
+  "es": "Soy Li Wen y ya llevo tres años estudiando en la universidad aquí. Mi familia vive en Pekín; hace más de medio año que no voy a casa y echo mucho de menos a mis padres. Ya llega el Año Nuevo chino y he comprado por internet el billete de avión, para el sábado por la mañana. Esta vez el billete ha costado quinientos yuanes más que la última vez, pero al pensar que pronto veré a mi familia, estoy muy contento. Bai Jiayue también va a ir de viaje a Pekín. Ha estado dos veces y esta es la tercera. Dice que quiere comer otra vez pato laqueado y volver al Palacio de Verano. Un compañero mío del instituto trabaja en el Palacio de Verano; quiero pedirle que se lo enseñe bien a Jiayue. ¡Cuando viajas, cuantos más amigos, mejor!",
+  "preguntas": [
+   {
+    "q": "¿Cuánto tiempo hace que Li Wen no va a casa?",
+    "lang": "es",
+    "a": [
+     "medio año",
+     "mas de medio año",
+     "más de medio año",
+     "seis meses"
+    ],
+    "r": "Más de medio año (半年多)."
+   },
+   {
+    "q": "¿Qué día sale su avión? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "xīngqīliù",
+     "Xīngqīliù",
+     "xīngqīliù shàngwǔ"
+    ],
+    "r": "El sábado por la mañana · xīngqīliù shàngwǔ (星期六上午)."
+   },
+   {
+    "q": "¿Cuánto más caro es el billete que la última vez?",
+    "lang": "es",
+    "a": [
+     "500",
+     "quinientos",
+     "500 yuanes",
+     "quinientos yuanes"
+    ],
+    "r": "Quinientos yuanes más (贵五百块)."
+   },
+   {
+    "q": "¿Cuántas veces ha estado Bai Jiayue en Pekín?",
+    "lang": "es",
+    "a": [
+     "dos",
+     "dos veces",
+     "2",
+     "2 veces"
+    ],
+    "r": "Dos veces; esta será la tercera (去过两次)."
+   },
+   {
+    "q": "¿Dónde trabaja el compañero de instituto de Li Wen? (en pinyin)",
+    "lang": "py",
+    "a": [
+     "Yíhé Yuán",
+     "Yíhéyuán"
+    ],
+    "r": "En el Palacio de Verano · Yíhé Yuán (颐和园)."
+   }
+  ]
+ }
+]

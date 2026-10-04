@@ -1,0 +1,364 @@
+[
+ {
+  "id": "R1-10",
+  "nivel": 1,
+  "tema": 10,
+  "titulo": "A la librería antes del curso",
+  "titulo_zh": "去 书店",
+  "texto": "快要 开学 了 ， 我 和 妹妹 去 书店 买 书 。 妹妹 是 小学生 ， 她 要 买 两 本 课本 和 一些 本子 。 我 在 中学 学习 ， 我 要 买 三 本 书 和 一些 笔 。 ¶ 书店 人 很 多 。 妹妹 问 我 ： “ 我们 买 红色 的 本子 还是 白色 的 本子 ？ ” 我 说 ： “ 红色 的 好看 。 ” 买 完 书 ， 我们 就 回家 了 。",
+  "es": "Las clases están a punto de empezar y mi hermana pequeña y yo vamos a la librería a comprar libros. Mi hermana va a primaria y tiene que comprar dos libros de texto y unos cuantos cuadernos. Yo estudio secundaria y tengo que comprar tres libros y algunos bolígrafos. En la librería hay mucha gente. Mi hermana me pregunta: «¿Compramos cuadernos rojos o blancos?». Yo le digo: «Los rojos son más bonitos». Cuando terminamos de comprar los libros, nos volvemos a casa.",
+  "preguntas": [
+   {
+    "q": "¿Adónde van los dos hermanos?",
+    "lang": "py",
+    "a": [
+     "shūdiàn"
+    ],
+    "r": "Shūdiàn · 书店 (a la librería)."
+   },
+   {
+    "q": "¿Cuántos libros de texto tiene que comprar la hermana?",
+    "lang": "es",
+    "a": [
+     "2",
+     "dos"
+    ],
+    "r": "Dos (两本课本)."
+   },
+   {
+    "q": "¿Qué tiene que comprar el narrador?",
+    "lang": "es",
+    "a": [
+     "libros",
+     "tres libros",
+     "boligrafos",
+     "libros y boligrafos",
+     "tres libros y bolis"
+    ],
+    "r": "Tres libros y algunos bolígrafos (三本书和一些笔)."
+   },
+   {
+    "q": "¿Qué cuadernos le parecen más bonitos?",
+    "lang": "es",
+    "a": [
+     "rojos",
+     "los rojos",
+     "rojo"
+    ],
+    "r": "Los rojos (红色的)."
+   },
+   {
+    "q": "¿Qué es la hermana? Es…",
+    "lang": "py",
+    "a": [
+     "xiǎoxuéshēng"
+    ],
+    "r": "Xiǎoxuéshēng · 小学生 (alumna de primaria)."
+   }
+  ]
+ },
+ {
+  "id": "R2-10",
+  "nivel": 2,
+  "tema": 10,
+  "titulo": "Primera en el dictado",
+  "titulo_zh": "我 是 第 一 名",
+  "texto": "下 星期 就 要 考试 了 。 这 次 考试 很 重要 ， 所以 我 每 天 放学 后 都 去 图书馆 看书 。 课本 上 的 词 我 都 读 了 很 多 次 ， 意思 也 都 明白 了 。 妈妈 也 很 忙 ， 她 每 天 晚上 都 帮 我 听写 。 ¶ 我 的 本子 上 有 很 多 做 错 的 题 。 有的 题 很 难 ， 我 不 懂 ， 就 去 问 老师 。 老师 说 ： “ 错 了 没关系 ， 下次 写 对 就 行 了 。 ” 我 觉得 老师 说 得 对 ， 做 错 的 题 也 很 有用 。 ¶ 今天 我 跟 妈妈 说 ： “ 前天 的 听写 ， 我 是 第 一 名 ！ ” 妈妈 笑 了 ， 她 说 ： “ 真 不错 ！ 你 想 吃 鱼 还是 吃 肉 ？ 我 给 你 做 。 ”",
+  "es": "La semana que viene ya tengo el examen. Este examen es muy importante, así que todos los días, después de clase, voy a la biblioteca a estudiar. Las palabras del libro las he leído muchas veces y ya entiendo todos sus significados. Mi madre también está muy liada: todas las noches me ayuda haciéndome dictados. En mi cuaderno hay muchos ejercicios que hice mal. Algunos son muy difíciles; cuando no los entiendo, voy a preguntarle al profesor. El profesor dice: «No pasa nada por equivocarse; con que la próxima vez lo escribas bien, basta». Creo que el profesor tiene razón: los ejercicios que hago mal también son muy útiles. Hoy le he dicho a mi madre: «¡En el dictado de anteayer he sido la primera!». Mi madre se ha reído y me ha dicho: «¡Muy bien! ¿Qué quieres comer, pescado o carne? Te lo preparo yo».",
+  "preguntas": [
+   {
+    "q": "¿Cuándo es el examen?",
+    "lang": "es",
+    "a": [
+     "la semana que viene",
+     "semana que viene",
+     "la proxima semana",
+     "proxima semana"
+    ],
+    "r": "La semana que viene (下星期)."
+   },
+   {
+    "q": "¿Adónde va a estudiar después de clase?",
+    "lang": "py",
+    "a": [
+     "túshūguǎn"
+    ],
+    "r": "Túshūguǎn · 图书馆 (a la biblioteca)."
+   },
+   {
+    "q": "¿Qué hace cuando no entiende un ejercicio?",
+    "lang": "es",
+    "a": [
+     "pregunta al profesor",
+     "preguntar al profesor",
+     "profesor",
+     "le pregunta al profesor"
+    ],
+    "r": "Va a preguntarle al profesor (去问老师)."
+   },
+   {
+    "q": "¿En qué puesto quedó en el dictado de anteayer?",
+    "lang": "es",
+    "a": [
+     "primera",
+     "primero",
+     "la primera",
+     "1",
+     "el primero"
+    ],
+    "r": "La primera (第一名)."
+   },
+   {
+    "q": "¿Qué le ofrece cocinar su madre? (di una cosa)",
+    "lang": "py",
+    "a": [
+     "yú",
+     "ròu"
+    ],
+    "r": "Yú huò ròu · 鱼还是肉 (pescado o carne)."
+   }
+  ]
+ },
+ {
+  "id": "R1-11",
+  "nivel": 1,
+  "tema": 11,
+  "titulo": "Me he puesto enfermo",
+  "titulo_zh": "我 生病 了",
+  "texto": "我 这 几 天 身体 不 舒服 ， 头 很 疼 ， 也 不 想 吃饭 。 今天 早上 我 去 医院 看病 。 医生 说 ： “ 你 要 多 喝 水 ， 多 休息 。 ” 他 给 我 开 了 一些 药 。 ¶ 回家 的 路上 ， 我 很 饿 ， 就 买 了 两 个 鸡蛋 和 一些 米饭 。 现在 我 在 床 上 坐 着 ， 头 没 那么 疼 了 。",
+  "es": "Estos días no me encuentro bien: me duele mucho la cabeza y tampoco tengo ganas de comer. Esta mañana he ido al hospital a que me vean. El médico me ha dicho: «Tienes que beber mucha agua y descansar mucho». Me ha recetado unas medicinas. De camino a casa tenía mucha hambre, así que he comprado dos huevos y un poco de arroz. Ahora estoy sentado en la cama y la cabeza ya no me duele tanto.",
+  "preguntas": [
+   {
+    "q": "¿Qué le duele?",
+    "lang": "py",
+    "a": [
+     "tóu"
+    ],
+    "r": "Tóu · 头 (la cabeza)."
+   },
+   {
+    "q": "¿Qué le ha dicho el médico?",
+    "lang": "es",
+    "a": [
+     "beber agua",
+     "descansar",
+     "beber mucha agua y descansar",
+     "agua",
+     "beber agua y descansar"
+    ],
+    "r": "Que beba mucha agua y descanse mucho (多喝水，多休息)."
+   },
+   {
+    "q": "¿Qué ha comprado de camino a casa?",
+    "lang": "es",
+    "a": [
+     "huevos",
+     "huevos y arroz",
+     "arroz",
+     "dos huevos y arroz"
+    ],
+    "r": "Dos huevos y un poco de arroz (两个鸡蛋和一些米饭)."
+   },
+   {
+    "q": "¿Cuántos huevos ha comprado?",
+    "lang": "es",
+    "a": [
+     "2",
+     "dos"
+    ],
+    "r": "Dos (两个)."
+   },
+   {
+    "q": "¿Dónde está sentado ahora?",
+    "lang": "py",
+    "a": [
+     "chuáng",
+     "chuáng shang",
+     "chuángshang"
+    ],
+    "r": "Chuáng shang · 床上 (en la cama)."
+   }
+  ]
+ },
+ {
+  "id": "R2-11",
+  "nivel": 2,
+  "tema": 11,
+  "titulo": "Bai Jiayue se ha puesto enferma",
+  "titulo_zh": "白家月 生病 了",
+  "texto": "我 的 朋友 白家月 来 中国 一|yì 年 多 了 。 她 最 喜欢 吃 中国菜 ， 也 最 爱 喝 中国 的 茶 。 她 经常 说 ： “ 中国菜 最 好吃 ！ ” 她 汉字 写 得 很 好 ， 学习 也 很 好 。 ¶ 上 星期 她 生病 了 ， 头 很 疼 ， 不 想 动 。 我 去 看 她 的 时候 ， 她 在 床 上 坐 着 ， 手 上 拿 着 一|yì 杯 水 。 我 问 她 ： “ 你 想 吃 什么 ？ ” 她 说 ： “ 我 想 吃 米饭 和 鸡蛋 。 ” ¶ 我 先 去 药店 给 她 买 了 药 ， 最后 去 饭馆 买 了 她 最 喜欢 的 菜 。 她 吃 完 饭 ， 吃 了 药 ， 就 睡 了 。 第 二 天 ， 王 老师 也 来 看 她 了 。 现在 她 的 身体 好 多 了 ， 明天 就 能 去 学校 了 。",
+  "es": "Mi amiga Bai Jiayue lleva más de un año en China. Lo que más le gusta es la comida china y lo que más le encanta beber es el té chino. Siempre dice: «¡La comida china es la más rica!». Escribe muy bien los caracteres y también va muy bien en los estudios. La semana pasada se puso enferma: le dolía mucho la cabeza y no quería moverse. Cuando fui a verla, estaba sentada en la cama con un vaso de agua en la mano. Le pregunté: «¿Qué te apetece comer?». Me dijo: «Me apetece arroz con huevo». Primero fui a la farmacia a comprarle las medicinas y al final fui a un restaurante a comprarle su plato favorito. Después de comer y tomarse la medicina, se durmió. Al día siguiente, la profesora Wang también vino a verla. Ahora está mucho mejor y mañana ya podrá ir a clase.",
+  "preguntas": [
+   {
+    "q": "¿Cuánto tiempo lleva Bai Jiayue en China?",
+    "lang": "es",
+    "a": [
+     "mas de un año",
+     "más de un año",
+     "un año",
+     "1 año",
+     "un ano"
+    ],
+    "r": "Más de un año (一年多)."
+   },
+   {
+    "q": "¿Qué es lo que más le gusta comer?",
+    "lang": "py",
+    "a": [
+     "Zhōngguó cài",
+     "Zhōngguócài"
+    ],
+    "r": "Zhōngguó cài · 中国菜 (la comida china)."
+   },
+   {
+    "q": "¿Qué tenía en la mano cuando fue a verla?",
+    "lang": "es",
+    "a": [
+     "agua",
+     "un vaso de agua",
+     "vaso de agua"
+    ],
+    "r": "Un vaso de agua (一杯水)."
+   },
+   {
+    "q": "¿Adónde fue primero el narrador?",
+    "lang": "py",
+    "a": [
+     "yàodiàn"
+    ],
+    "r": "Yàodiàn · 药店 (a la farmacia)."
+   },
+   {
+    "q": "¿Qué hizo Jiayue después de comer y tomarse la medicina?",
+    "lang": "es",
+    "a": [
+     "dormir",
+     "durmio",
+     "se durmio",
+     "se durmió",
+     "dormirse"
+    ],
+    "r": "Se durmió (就睡了)."
+   }
+  ]
+ },
+ {
+  "id": "R1-12",
+  "nivel": 1,
+  "tema": 12,
+  "titulo": "Un día de sol",
+  "titulo_zh": "今天 是 晴 天",
+  "texto": "昨天 是 阴 天 ， 风 很 大 ， 还 下 了 雨 。 今天 是 晴 天 ， 比 昨天 热 多 了 。 ¶ 我 和 哥哥 去 外边 跑步 。 哥哥 从小 就 喜欢 跑步 ， 他 跑 得 比 我 快 得 多 。 我们 跑 了 一个 小时 ， 就 坐 地铁 回家 了 。",
+  "es": "Ayer estuvo nublado, hizo mucho viento y además llovió. Hoy hace sol y mucho más calor que ayer. Mi hermano mayor y yo hemos salido a correr. A mi hermano le gusta correr desde pequeño y corre mucho más rápido que yo. Hemos corrido una hora y luego hemos vuelto a casa en metro.",
+  "preguntas": [
+   {
+    "q": "¿Qué tiempo hizo ayer?",
+    "lang": "es",
+    "a": [
+     "nublado",
+     "viento",
+     "lluvia",
+     "llovio",
+     "nublado y viento"
+    ],
+    "r": "Estuvo nublado, hizo mucho viento y llovió (阴天，风很大，下了雨)."
+   },
+   {
+    "q": "¿Hoy hace más calor o más frío que ayer?",
+    "lang": "es",
+    "a": [
+     "calor",
+     "mas calor",
+     "mucho mas calor"
+    ],
+    "r": "Mucho más calor (热多了)."
+   },
+   {
+    "q": "¿Desde cuándo le gusta correr al hermano?",
+    "lang": "py",
+    "a": [
+     "cóngxiǎo"
+    ],
+    "r": "Cóngxiǎo · 从小 (desde pequeño)."
+   },
+   {
+    "q": "¿Cuánto tiempo han corrido?",
+    "lang": "es",
+    "a": [
+     "una hora",
+     "1 hora",
+     "1"
+    ],
+    "r": "Una hora (一个小时)."
+   },
+   {
+    "q": "¿Cómo han vuelto a casa?",
+    "lang": "py",
+    "a": [
+     "dìtiě",
+     "zuò dìtiě"
+    ],
+    "r": "Zuò dìtiě · 坐地铁 (en metro)."
+   }
+  ]
+ },
+ {
+  "id": "R2-12",
+  "nivel": 2,
+  "tema": 12,
+  "titulo": "El invierno en Pekín",
+  "titulo_zh": "北京 比 我 家 那边 冷 多 了",
+  "texto": "我 来 北京 半年 了 。 北京 比 我 家 那边 冷 多 了 ， 风 也 大 得 多 。 我 家 在 南边 ， 一|yì 年 都 很 热 。 ¶ 这 几 天 是 阴 天 ， 外面 正 下 着 雪 。 我 小时候 没 看见 过|guo 雪 ， 所以 我 很 高兴 ， 就 去 外面 走 了 走 。 楼下 有 很 多 小学生 ， 他们 也 在 外面 笑 着 、 跑 着 。 ¶ 我 的 中国 朋友 李文 从小 住 在 北京 。 他 说 一 月 比 现在 冷 得 多 ， 让 我 去 外面 的 时候 多 穿 一点儿 衣服 。 李文 跑步 跑 得 比 我 快 多 了 ， 每 天 早上 他 都 在 楼下 等 我 ， 我们 一起 跑步 。",
+  "es": "Llevo medio año en Pekín. En Pekín hace mucho más frío que en mi tierra, y también hace mucho más viento. Mi casa está en el sur, donde hace calor todo el año. Estos días está nublado y fuera está nevando. De pequeña nunca había visto la nieve, así que estoy muy contenta y he salido a dar un paseo. Abajo había muchos niños de primaria que también estaban fuera, riendo y corriendo. Mi amigo chino Li Wen vive en Pekín desde pequeño. Dice que en enero hace mucho más frío que ahora y me ha dicho que me abrigue cuando salga. Li Wen corre mucho más rápido que yo; todas las mañanas me espera abajo, en el portal, y corremos juntos.",
+  "preguntas": [
+   {
+    "q": "¿Cuánto tiempo lleva la narradora en Pekín?",
+    "lang": "es",
+    "a": [
+     "medio año",
+     "seis meses",
+     "6 meses"
+    ],
+    "r": "Medio año (半年)."
+   },
+   {
+    "q": "¿Qué tiempo hace estos días?",
+    "lang": "es",
+    "a": [
+     "nublado",
+     "nieva",
+     "nieve",
+     "nublado y nieva",
+     "esta nevando"
+    ],
+    "r": "Está nublado y nevando (阴天，正下着雪)."
+   },
+   {
+    "q": "¿Había visto la nieve de pequeña?",
+    "lang": "es",
+    "a": [
+     "no",
+     "nunca"
+    ],
+    "r": "No (小时候没看见过雪)."
+   },
+   {
+    "q": "¿Desde cuándo vive Li Wen en Pekín?",
+    "lang": "py",
+    "a": [
+     "cóngxiǎo"
+    ],
+    "r": "Cóngxiǎo · 从小 (desde pequeño)."
+   },
+   {
+    "q": "¿Dónde la espera Li Wen por las mañanas?",
+    "lang": "py",
+    "a": [
+     "lóuxià",
+     "lóu xià"
+    ],
+    "r": "Lóuxià · 楼下 (abajo, en el portal)."
+   }
+  ]
+ }
+]

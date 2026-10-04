@@ -1,0 +1,285 @@
+[
+ {
+  "tema": 7,
+  "puntos": [
+   {
+    "id": "G07-1",
+    "titulo": "一……就……: «en cuanto…, …» / «nada más…, …»",
+    "zh": "一……就……",
+    "explicacion": [
+     "La estructura <b>一……就……</b> (yī… jiù…) une dos acciones en una sola frase e indica que la segunda ocurre <b>justo después</b> de la primera: 我一下飞机就给妈妈打电话 = «en cuanto bajo del avión, llamo a mi madre». Equivale a nuestro «en cuanto…», «nada más…» o «tan pronto como…».",
+     "También puede expresar que la primera acción es la <b>condición o causa</b> y la segunda, el <b>resultado</b> habitual: 我一有时间就去运动 = «siempre que tengo tiempo, voy a hacer deporte». 一到星期天就去踢球 = «en cuanto llega el domingo (= todos los domingos) voy a jugar al fútbol».",
+     "Ojo con la posición del sujeto. Si el sujeto es <b>el mismo</b> en las dos partes, se pone una sola vez, delante de 一: 你怎么一下课就往外跑？ Si los sujetos son <b>distintos</b>, cada uno va delante de su palabra: el primero delante de 一 y el segundo delante de 就: 我一到家，妈妈就打来电话了.",
+     "Recuerda que 一 cambia de tono: <b>yí</b> delante de cuarto tono (一下课 yí xiàkè, 一到 yí dào) y <b>yì</b> delante de los demás (一有 yì yǒu)."
+    ],
+    "estructura": [
+     "Sujeto + 一 + acción 1 + 就 + acción 2 → 我一下飞机就给妈妈打电话。",
+     "Sujeto 1 + 一 + acción 1，sujeto 2 + 就 + acción 2 → 我一到家，妈妈就打来电话了。",
+     "一 + momento，sujeto + 就 + acción → 一到星期六，陈天中就去打篮球。"
+    ],
+    "ejemplos": [
+     {"zh": "你怎么一下课就往外跑？", "py": "Nǐ zěnme yí xiàkè jiù wǎng wài pǎo?", "es": "¿Por qué sales corriendo en cuanto acaba la clase?", "nota": "mismo sujeto: va delante de 一"},
+     {"zh": "我一到家，妈妈就打来电话了。", "py": "Wǒ yí dào jiā, māma jiù dǎlai diànhuà le.", "es": "Nada más llegar a casa, mi madre me llamó.", "nota": "sujetos distintos: 我…一, 妈妈…就"},
+     {"zh": "一到星期六，陈天中就跟同学去打篮球。", "py": "Yí dào Xīngqīliù, Chén Tiānzhōng jiù gēn tóngxué qù dǎ lánqiú.", "es": "Todos los sábados, Chen Tianzhong va a jugar al baloncesto con sus compañeros."},
+     {"zh": "我一有时间就去运动。", "py": "Wǒ yì yǒu shíjiān jiù qù yùndòng.", "es": "En cuanto tengo tiempo, voy a hacer deporte.", "nota": "condición → resultado habitual"},
+     {"zh": "我一下飞机就给妈妈打电话。", "py": "Wǒ yí xià fēijī jiù gěi māma dǎ diànhuà.", "es": "En cuanto bajo del avión, llamo a mi madre."},
+     {"zh": "你看，小猫一看见鱼就过来了。", "py": "Nǐ kàn, xiǎo māo yí kànjiàn yú jiù guòlai le.", "es": "Mira, el gatito ha venido en cuanto ha visto el pescado."}
+    ],
+    "ojo": "No pongas el segundo sujeto detrás de 就: se dice 我一到家，妈妈就打电话了, no *我一到家，就妈妈打电话了. Y no olvides 就: *我一下课去打球 queda incompleto.",
+    "practica": [
+     {"q": "我一下课___去打篮球。", "opciones": ["也", "就", "还"], "ok": 1, "exp": "La pareja fija es 一……就……: «en cuanto acaba la clase, voy a jugar al baloncesto»."},
+     {"q": "¿Qué frase está bien ordenada? («En cuanto llegué a casa, mi madre me llamó»)", "opciones": ["我一到家，就妈妈打电话了。", "一我到家，妈妈就打电话了。", "我一到家，妈妈就打电话了。"], "ok": 2, "exp": "Con sujetos distintos, cada sujeto va delante de su palabra: 我 + 一…, 妈妈 + 就…"},
+     {"q": "«Siempre que tengo tiempo voy a nadar» se dice:", "opciones": ["我一有时间就去游泳。", "我有时间一就去游泳。", "我一去游泳就有时间。"], "ok": 0, "exp": "一 + condición (有时间) + 就 + resultado (去游泳)."}
+    ]
+   },
+   {
+    "id": "G07-2",
+    "titulo": "Complemento de estado (1): verbo + 得 + adjetivo («hacer algo bien, rápido…»)",
+    "zh": "得",
+    "explicacion": [
+     "Para decir <b>cómo</b> se hace una acción (bien, mal, rápido, pronto…), el chino pone la valoración <b>después</b> del verbo, unida con la partícula <b>得</b> (de): 他跑得很快 = «corre muy rápido». Es lo que en español hacemos con un adverbio: «corre <i>deprisa</i>», «juega <i>bien</i>».",
+     "La estructura básica es <b>verbo + 得 + (很/非常/不太…) + adjetivo</b>. Como en cualquier frase con adjetivo, en la afirmativa suele aparecer 很 u otro adverbio: 他们玩得很高兴. Para la <b>negativa</b>, el 不 va delante del <b>adjetivo</b>, no del verbo: 白家月跑得<b>不</b>快 («no corre rápido»).",
+     "Hay tres formas de preguntar: (1) añadir <b>吗</b>: 你跑得快吗？ (2) adjetivo afirmativo + negativo: 他来得早不早？ (3) <b>怎么样</b>: 他们玩得怎么样？ = «¿qué tal se lo pasaron?».",
+     "La respuesta 还可以 (hái kěyǐ) significa «no está mal», «regular, tirando a bien»: 我踢得还可以."
+    ],
+    "estructura": [
+     "Verbo + 得 + 很 + adjetivo → 他们玩得很高兴。",
+     "Verbo + 得 + 不 + adjetivo → 白家月跑得不快。",
+     "Verbo + 得 + adj. + 不 + adj.？ / Verbo + 得 + 怎么样？ → 他来得早不早？ 你踢得怎么样？"
+    ],
+    "ejemplos": [
+     {"zh": "我踢得还可以。", "py": "Wǒ tī de hái kěyǐ.", "es": "No juego mal (al fútbol)."},
+     {"zh": "他们玩得很高兴。", "py": "Tāmen wán de hěn gāoxìng.", "es": "Se lo pasaron muy bien."},
+     {"zh": "白家月跑得不快。", "py": "Bái Jiāyuè pǎo de bú kuài.", "es": "Bai Jiayue no corre rápido.", "nota": "negación: 得 + 不 + adjetivo"},
+     {"zh": "你跑得快吗？", "py": "Nǐ pǎo de kuài ma?", "es": "¿Corres rápido?"},
+     {"zh": "他来得早不早？", "py": "Tā lái de zǎo bu zǎo?", "es": "¿Llegó temprano?", "nota": "pregunta afirmativo-negativa"},
+     {"zh": "你听，她唱得怎么样？", "py": "Nǐ tīng, tā chàng de zěnmeyàng?", "es": "Escucha, ¿qué tal canta?"}
+    ],
+    "ojo": "El 不 nunca va delante del verbo: se dice 他跑得不快, no *他不跑得快. Y no confundas 得 (de, «de manera…») con 的 (de, posesivo): suenan igual, pero 得 va detrás de un verbo.",
+    "practica": [
+     {"q": "他们昨天玩___很高兴。", "opciones": ["的", "了", "得"], "ok": 2, "exp": "Detrás del verbo, para decir cómo se hace algo, se usa 得: «se lo pasaron muy bien»."},
+     {"q": "«Ella no canta bien» se dice:", "opciones": ["她不唱得好。", "她唱得不好。", "她唱不得好。"], "ok": 1, "exp": "En el complemento de estado, 不 va delante del adjetivo: 唱得不好."},
+     {"q": "¿Qué pregunta NO es correcta?", "opciones": ["你跑得快吗？", "你跑得快不快？", "你跑得快怎么样？"], "ok": 2, "exp": "Las preguntas son con 吗, con 快不快 o con 怎么样 solo (跑得怎么样), pero no 快 + 怎么样 juntos."}
+    ]
+   },
+   {
+    "id": "G07-3",
+    "titulo": "Complemento de estado (2): con objeto y con verbos separables (他篮球打得很好)",
+    "zh": "（动词）+宾语+动词+得",
+    "explicacion": [
+     "Detrás de 得 solo puede ir la valoración (很好, 不快…), así que el <b>objeto no puede quedarse detrás del verbo</b>: *他打篮球得很好 es incorrecto. Hay dos soluciones.",
+     "<b>1) Repetir el verbo</b>: verbo + objeto + <b>mismo verbo</b> + 得 + adjetivo: 他<b>打</b>篮球<b>打</b>得很好. 白家月<b>写</b>汉字<b>写</b>得很好看. <b>2) Adelantar el objeto</b> y quitar el primer verbo: 他篮球打得很好, 你篮球打得怎么样？ Las dos significan lo mismo.",
+     "Con los <b>verbos separables</b> (verbo + objeto en una sola palabra, como 游泳 yóuyǒng, 跑步 pǎobù, 唱歌 chànggē, 睡觉 shuìjiào) pasa igual: se repite la parte verbal: 我<b>游泳游</b>得不快, 她<b>唱歌唱</b>得很好听, 他<b>跑步跑</b>得很快.",
+     "En español decimos simplemente «juega bien al baloncesto»; en chino hay que pensar «baloncesto, (lo) juega bien»."
+    ],
+    "estructura": [
+     "Sujeto + V + objeto + V + 得 + adjetivo → 白家月写汉字写得很好看。",
+     "Sujeto + objeto + V + 得 + adjetivo → 他篮球打得很好。",
+     "Sujeto + verbo separable + 1.ª sílaba + 得 + adjetivo → 我游泳游得不快。"
+    ],
+    "ejemplos": [
+     {"zh": "我游泳游得不快。", "py": "Wǒ yóuyǒng yóu de bú kuài.", "es": "No nado rápido.", "nota": "verbo separable: 游泳 → 游"},
+     {"zh": "你篮球打得怎么样？", "py": "Nǐ lánqiú dǎ de zěnmeyàng?", "es": "¿Qué tal juegas al baloncesto?", "nota": "objeto adelantado"},
+     {"zh": "白家月写汉字写得很好看。", "py": "Bái Jiāyuè xiě hànzì xiě de hěn hǎokàn.", "es": "Bai Jiayue escribe los caracteres chinos muy bonitos.", "nota": "verbo repetido"},
+     {"zh": "他打篮球打得很好。", "py": "Tā dǎ lánqiú dǎ de hěn hǎo.", "es": "Juega muy bien al baloncesto."},
+     {"zh": "安妮唱歌唱得很好听。", "py": "Ānnī chànggē chàng de hěn hǎotīng.", "es": "Annie canta muy bien."},
+     {"zh": "家月中文说得非常好。", "py": "Jiāyuè Zhōngwén shuō de fēicháng hǎo.", "es": "Jiayue habla chino muy bien."}
+    ],
+    "ojo": "Error típico: *他打篮球得很好 o *我游泳得很快. Detrás del objeto hay que repetir el verbo (打篮球打得, 游泳游得) o adelantar el objeto (篮球打得).",
+    "practica": [
+     {"q": "我游泳___得不快。", "opciones": ["游", "泳", "了"], "ok": 0, "exp": "En los verbos separables se repite la parte verbal: 游泳游得不快 = «no nado rápido»."},
+     {"q": "¿Qué frase es correcta? («Habla chino muy bien»)", "opciones": ["他说中文得很好。", "他中文说得很好。", "他说得中文很好。"], "ok": 1, "exp": "Se adelanta el objeto: 中文说得很好. También valdría 他说中文说得很好."},
+     {"q": "安妮唱歌___很好听。", "opciones": ["得", "唱的", "唱得"], "ok": 2, "exp": "唱歌 es separable: hay que repetir 唱 antes de 得: 唱歌唱得很好听."}
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 8,
+  "puntos": [
+   {
+    "id": "G08-1",
+    "titulo": "Comparación (1): A 比 B + adjetivo («A es más… que B»)",
+    "zh": "比",
+    "explicacion": [
+     "Para decir que una cosa es <b>más</b> algo que otra se usa la preposición <b>比</b> (bǐ): <b>A 比 B + adjetivo</b>. 今天比昨天冷 = «hoy hace más frío que ayer». Fíjate en que en chino no hay ninguna palabra para «más»: el propio 比 ya indica la comparación.",
+     "El orden es fijo: primero lo que se compara (A), luego 比 + aquello con lo que se compara (B) y al final el adjetivo. Detrás de 比 puede ir un nombre, un pronombre o incluso una acción entera: 网上买比在这里买便宜 = «comprar por internet es más barato que comprar aquí»; 踢足球比打篮球有意思.",
+     "Si en las dos partes se repite el mismo sustantivo, se puede quitar: 左边的（手表）比右边的（手表）好看 → 左边的比右边的好看."
+    ],
+    "estructura": [
+     "A + 比 + B + adjetivo → 今天比昨天冷。",
+     "A + 比 + B + adjetivo + diferencia → 姐姐比我大两岁。",
+     "Acción A + 比 + acción B + adjetivo → 网上买比在这里买便宜。"
+    ],
+    "ejemplos": [
+     {"zh": "我也觉得左边的比右边的好看。", "py": "Wǒ yě juéde zuǒbian de bǐ yòubian de hǎokàn.", "es": "Yo también creo que el de la izquierda es más bonito que el de la derecha."},
+     {"zh": "今天比昨天冷。", "py": "Jīntiān bǐ zuótiān lěng.", "es": "Hoy hace más frío que ayer."},
+     {"zh": "他觉得踢足球比打篮球有意思。", "py": "Tā juéde tī zúqiú bǐ dǎ lánqiú yǒu yìsi.", "es": "Cree que jugar al fútbol es más divertido que jugar al baloncesto."},
+     {"zh": "网上买比在这里买便宜。", "py": "Wǎngshang mǎi bǐ zài zhèlǐ mǎi piányi.", "es": "Comprar por internet es más barato que comprar aquí."},
+     {"zh": "这家商店比前边那家大。", "py": "Zhè jiā shāngdiàn bǐ qiánbian nà jiā dà.", "es": "Esta tienda es más grande que la de ahí delante."},
+     {"zh": "姐姐比我大两岁。", "py": "Jiějie bǐ wǒ dà liǎng suì.", "es": "Mi hermana es dos años mayor que yo.", "nota": "la diferencia va al final"}
+    ],
+    "ojo": "No traduzcas «más» con 多 ni pongas el adjetivo delante: es 今天比昨天冷, no *今天比昨天多冷 ni *今天冷比昨天.",
+    "practica": [
+     {"q": "今天___昨天冷。", "opciones": ["比", "跟", "和"], "ok": 0, "exp": "A 比 B + adjetivo: «hoy hace más frío que ayer»."},
+     {"q": "«Estos pantalones son más baratos que aquellos» se dice:", "opciones": ["这条裤子便宜比那条。", "这条裤子比那条便宜。", "这条裤子比那条多便宜。"], "ok": 1, "exp": "Orden: A + 比 + B + adjetivo, sin 多 ni ningún «más»."},
+     {"q": "¿Qué significa 网上买比在这里买便宜？", "opciones": ["En internet es tan barato como aquí.", "Aquí es más barato que en internet.", "Comprar por internet es más barato que aquí."], "ok": 2, "exp": "A (网上买) es más barato (便宜) que B (在这里买)."}
+    ]
+   },
+   {
+    "id": "G08-2",
+    "titulo": "Comparación (2): 还 y 更 («todavía más»), nunca 很 con 比",
+    "zh": "比……更／还……",
+    "explicacion": [
+     "En una frase con <b>比</b>, delante del adjetivo <b>no se pueden poner</b> adverbios de grado como <b>很</b> o <b>非常</b>: *今天比昨天很热 está mal. En cambio, sí se pueden usar <b>更</b> (gèng) y <b>还</b> (hái), que significan «todavía más», «aún más».",
+     "更 y 还 indican que <b>B ya tiene mucho</b> de esa cualidad y que A tiene aún más: 今天比昨天更热 = «ayer ya hacía mucho calor, y hoy hace todavía más». 这个电影比那个爱情片更有意思 = «la película romántica está muy bien, pero esta es aún más interesante».",
+     "Con 还 la frase suele sonar más expresiva, a veces con sorpresa: 我觉得奶茶比牛奶还好喝 = «la leche está muy buena, ¡pero el té con leche está todavía más rico!»."
+    ],
+    "estructura": [
+     "A + 比 + B + 更 + adjetivo → 今天比昨天更热。",
+     "A + 比 + B + 还 + adjetivo → 奶茶比牛奶还好喝。",
+     "✗ A + 比 + B + 很/非常 + adjetivo"
+    ],
+    "ejemplos": [
+     {"zh": "我看网上说这个电影比那个爱情片更有意思。", "py": "Wǒ kàn wǎngshang shuō zhège diànyǐng bǐ nàge àiqíngpiàn gèng yǒu yìsi.", "es": "He leído en internet que esta película es aún más interesante que esa romántica."},
+     {"zh": "今天比昨天更热。", "py": "Jīntiān bǐ zuótiān gèng rè.", "es": "Hoy hace todavía más calor que ayer.", "nota": "ayer ya hacía calor"},
+     {"zh": "我觉得奶茶比牛奶还好喝。", "py": "Wǒ juéde nǎichá bǐ niúnǎi hái hǎohē.", "es": "Creo que el té con leche está aún más rico que la leche."},
+     {"zh": "我喜欢绿茶，我觉得绿茶比红茶更好喝。", "py": "Wǒ xǐhuan lǜchá, wǒ juéde lǜchá bǐ hóngchá gèng hǎohē.", "es": "Me gusta el té verde; creo que está aún más bueno que el té negro."},
+     {"zh": "今天晚上比昨天晚上还冷。", "py": "Jīntiān wǎnshang bǐ zuótiān wǎnshang hái lěng.", "es": "Esta noche hace todavía más frío que anoche."},
+     {"zh": "妈妈的床比我的床更舒服。", "py": "Māma de chuáng bǐ wǒ de chuáng gèng shūfu.", "es": "La cama de mamá es aún más cómoda que la mía."}
+    ],
+    "ojo": "Los hispanohablantes tienden a decir *他比我很高 («él es mucho más alto»). Con 比 nunca va 很 ni 非常: di 他比我高 o 他比我更高 / 还高.",
+    "practica": [
+     {"q": "今天比昨天___热。", "opciones": ["很", "更", "非常"], "ok": 1, "exp": "Con 比 solo valen 更 o 还 delante del adjetivo: «hoy hace aún más calor que ayer»."},
+     {"q": "¿Qué frase es incorrecta?", "opciones": ["奶茶比牛奶还好喝。", "这个电影比那个更有意思。", "他比我非常高。"], "ok": 2, "exp": "非常 no puede ir en una frase con 比. Correcto: 他比我高 / 他比我更高."},
+     {"q": "En 奶茶比牛奶还好喝, ¿qué sabemos de la leche?", "opciones": ["Que también está buena.", "Que está mala.", "Que es más cara."], "ok": 0, "exp": "还/更 implican que B (la leche) ya está bueno, y A está todavía más bueno."}
+    ]
+   },
+   {
+    "id": "G08-3",
+    "titulo": "虽然……，但是……: «aunque…, …»",
+    "zh": "虽然……，但是……",
+    "explicacion": [
+     "<b>虽然……，但是……</b> (suīrán…, dànshì…) une dos ideas que se oponen: la primera es un hecho que se reconoce y la segunda dice algo inesperado o contrario. Equivale a «aunque…, …» o «…, pero…».",
+     "A diferencia del español, en chino es muy normal usar <b>las dos palabras a la vez</b>: 虽然你忘了，但是我记得 = «aunque tú lo hayas olvidado, yo me acuerdo» (en español no diríamos «aunque… pero…»). También se puede usar <b>solo una</b> de las dos: 外边下雪了，但是不太冷; 虽然觉得有点儿累，我还是走回家了.",
+     "虽然 puede ir delante o detrás del sujeto de la primera parte: 虽然妻子忘了… / 妻子虽然忘了…. 但是 va siempre al principio de la segunda parte. En lugar de 但是 se puede usar el más corto <b>但</b>."
+    ],
+    "estructura": [
+     "虽然 + hecho，但是 + contraste → 虽然你忘了，但是我记得。",
+     "Sujeto + 虽然 + …，但是 + … → 他虽然很累，但是很高兴。",
+     "Solo una palabra: …，但是… / 虽然…，… → 外边下雪了，但是不太冷。"
+    ],
+    "ejemplos": [
+     {"zh": "虽然你忘了，但是我记得。", "py": "Suīrán nǐ wàng le, dànshì wǒ jìde.", "es": "Aunque tú lo hayas olvidado, yo me acuerdo."},
+     {"zh": "外边下雪了，但是不太冷。", "py": "Wàibian xià xuě le, dànshì bú tài lěng.", "es": "Fuera está nevando, pero no hace mucho frío.", "nota": "solo 但是"},
+     {"zh": "虽然觉得有点儿累，我还是走回家了。", "py": "Suīrán juéde yǒudiǎnr lèi, wǒ háishi zǒuhuí jiā le.", "es": "Aunque estaba un poco cansado, volví a casa andando.", "nota": "solo 虽然"},
+     {"zh": "虽然花了一些钱，但是我们过了一个快乐的生日。", "py": "Suīrán huāle yìxiē qián, dànshì wǒmen guòle yí ge kuàilè de shēngrì.", "es": "Aunque gastamos algo de dinero, pasamos un cumpleaños feliz."},
+     {"zh": "我喜欢打篮球，但是打得不太好。", "py": "Wǒ xǐhuan dǎ lánqiú, dànshì dǎ de bú tài hǎo.", "es": "Me gusta jugar al baloncesto, pero no juego muy bien."},
+     {"zh": "这块手表虽然很贵，但是非常好看。", "py": "Zhè kuài shǒubiǎo suīrán hěn guì, dànshì fēicháng hǎokàn.", "es": "Aunque este reloj es caro, es precioso.", "nota": "虽然 detrás del sujeto"}
+    ],
+    "ojo": "No te dé miedo usar 虽然 y 但是 juntos: en chino es lo más natural, aunque en español «aunque… pero…» esté mal. Lo que no se hace es poner 但是 delante de la primera parte.",
+    "practica": [
+     {"q": "虽然你忘了，___我记得。", "opciones": ["所以", "因为", "但是"], "ok": 2, "exp": "虽然 va con 但是: «aunque tú lo hayas olvidado, yo me acuerdo»."},
+     {"q": "«Aunque es caro, es muy bonito» se dice:", "opciones": ["虽然很贵，但是很好看。", "因为很贵，所以很好看。", "但是很贵，虽然很好看。"], "ok": 0, "exp": "虽然 + hecho, 但是 + contraste. 因为…所以… expresa causa, no contraste."},
+     {"q": "¿Cuál NO es correcta?", "opciones": ["外边下雪了，但是不太冷。", "虽然外边下雪了，但是不太冷。", "外边虽然下雪了，虽然不太冷。"], "ok": 2, "exp": "虽然 solo va en la primera parte; en la segunda va 但是 (o nada)."}
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 9,
+  "puntos": [
+   {
+    "id": "G09-1",
+    "titulo": "Comparación (3): A 没有 B (这么/那么) + adjetivo («A no es tan… como B»)",
+    "zh": "没有",
+    "explicacion": [
+     "Para decir que A <b>no llega</b> al nivel de B se usa <b>A 没有 B + adjetivo</b>: 这块手表没有那块好看 = «este reloj no es tan bonito como aquel». Es la forma más natural de la comparación negativa, como nuestro «no es tan… como…».",
+     "Delante del adjetivo se puede añadir <b>这么</b> (zhème, «tan», cuando B está cerca o es lo de ahora) o <b>那么</b> (nàme, «tan», cuando B está lejos o es otra cosa), para subrayar que B tiene mucho de esa cualidad: 儿子的个子没有他那么高; 昨天没有今天这么冷.",
+     "Para <b>preguntar</b> se usa la forma afirmativa <b>有</b>: A 有 B + adjetivo + 吗？ = «¿A es tan… como B?»: 妹妹有姐姐高吗？ 那件衣服有这件好看吗？",
+     "Fíjate: 今天比昨天冷 y 昨天没有今天冷 dicen casi lo mismo, pero desde puntos de vista opuestos."
+    ],
+    "estructura": [
+     "A + 没有 + B + adjetivo → 这块手表没有那块好看。",
+     "A + 没有 + B + 这么/那么 + adjetivo → 儿子的个子没有他那么高。",
+     "A + 有 + B + adjetivo + 吗？ → 妹妹有姐姐高吗？"
+    ],
+    "ejemplos": [
+     {"zh": "儿子的个子没有他那么高。", "py": "Érzi de gèzi méiyǒu tā nàme gāo.", "es": "Nuestro hijo no es tan alto como él."},
+     {"zh": "昨天没有今天这么冷。", "py": "Zuótiān méiyǒu jīntiān zhème lěng.", "es": "Ayer no hacía tanto frío como hoy."},
+     {"zh": "这块手表没有那块好看。", "py": "Zhè kuài shǒubiǎo méiyǒu nà kuài hǎokàn.", "es": "Este reloj no es tan bonito como aquel."},
+     {"zh": "妹妹有姐姐高吗？", "py": "Mèimei yǒu jiějie gāo ma?", "es": "¿La hermana pequeña es tan alta como la mayor?", "nota": "pregunta con 有"},
+     {"zh": "那件衣服有这件好看吗？", "py": "Nà jiàn yīfu yǒu zhè jiàn hǎokàn ma?", "es": "¿Aquella prenda es tan bonita como esta?"},
+     {"zh": "没有你上次买的那条好看。", "py": "Méiyǒu nǐ shàng cì mǎi de nà tiáo hǎokàn.", "es": "No son tan bonitos como los que compraste la última vez."}
+    ],
+    "ojo": "No digas *今天不比昨天冷 para «hoy no hace tanto frío como ayer»: lo normal es 今天没有昨天冷. Y con 没有 tampoco se usa 很: *A没有B很高.",
+    "practica": [
+     {"q": "儿子的个子___他那么高。", "opciones": ["没有", "不比", "不是"], "ok": 0, "exp": "A 没有 B 那么 + adjetivo = «A no es tan alto como B»."},
+     {"q": "«¿Tu hermana pequeña es tan alta como tú?» se dice:", "opciones": ["妹妹比你高吗？", "妹妹没有你高。", "妹妹有你高吗？"], "ok": 2, "exp": "Para preguntar «¿tan… como…?» se usa 有: A 有 B + adjetivo + 吗？"},
+     {"q": "昨天没有今天这么冷 significa:", "opciones": ["Ayer hizo más frío que hoy.", "Hoy hace más frío que ayer.", "Hoy y ayer hace el mismo frío."], "ok": 1, "exp": "Ayer no llegó al frío de hoy, o sea, hoy hace más frío."}
+    ]
+   },
+   {
+    "id": "G09-2",
+    "titulo": "El verbo 离: distancia en el espacio y en el tiempo («A está lejos/cerca de B»)",
+    "zh": "离",
+    "explicacion": [
+     "<b>离</b> (lí) sirve para hablar de la <b>distancia</b> entre dos lugares o dos momentos. La estructura es <b>A 离 B + 远/近…</b>: 学校离医院不远 = «el colegio no está lejos del hospital». Ojo al orden: en español decimos «A está lejos <i>de</i> B», y en chino 离 hace de ese «de».",
+     "Con lugares se usa sobre todo con <b>远</b> (lejos) y <b>近</b> (cerca), con 很, 不, 有点儿, 太…: 咖啡店离这儿有点儿远; 这里离家很近.",
+     "Con el tiempo, 离 indica <b>cuánto falta</b> para un momento: 现在离我的生日还有三天 = «faltan tres días para mi cumpleaños». La estructura es A (ahora) + 离 + B (momento) + (还)有 + cantidad de tiempo.",
+     "No lo confundas con <b>从</b> (cóng, «desde»), que marca el punto de partida de un movimiento: 从家到学校 = «de casa al colegio»."
+    ],
+    "estructura": [
+     "Lugar A + 离 + lugar B + (很/不/有点儿) + 远/近 → 咖啡店离这儿有点儿远。",
+     "Momento A + 离 + momento B + 还有 + tiempo → 现在离我的生日还有三天。",
+     "A + 离 + B + 远不远？ → 你家离学校远不远？"
+    ],
+    "ejemplos": [
+     {"zh": "咖啡店离这儿有点儿远。", "py": "Kāfēidiàn lí zhèr yǒudiǎnr yuǎn.", "es": "La cafetería está un poco lejos de aquí."},
+     {"zh": "学校离医院不远。", "py": "Xuéxiào lí yīyuàn bù yuǎn.", "es": "El colegio no está lejos del hospital."},
+     {"zh": "现在离我的生日还有三天。", "py": "Xiànzài lí wǒ de shēngrì hái yǒu sān tiān.", "es": "Faltan tres días para mi cumpleaños.", "nota": "distancia en el tiempo"},
+     {"zh": "这里离家很近，还是走路吧。", "py": "Zhèlǐ lí jiā hěn jìn, háishi zǒulù ba.", "es": "Esto está muy cerca de casa; mejor vamos andando."},
+     {"zh": "我家离学校很近。", "py": "Wǒ jiā lí xuéxiào hěn jìn.", "es": "Mi casa está muy cerca del colegio."},
+     {"zh": "现在离下班还有一个小时。", "py": "Xiànzài lí xiàbān hái yǒu yí ge xiǎoshí.", "es": "Todavía falta una hora para salir del trabajo."}
+    ],
+    "ojo": "El sujeto va delante de 离 y el adjetivo al final: 我家离学校很近, no *离学校我家很近 ni *我家很近离学校. Y no uses 从 para distancias: *我家从学校很近 está mal.",
+    "practica": [
+     {"q": "我家___学校很近。", "opciones": ["从", "离", "往"], "ok": 1, "exp": "Para la distancia se usa 离: «mi casa está muy cerca del colegio»."},
+     {"q": "«Faltan tres días para mi cumpleaños» se dice:", "opciones": ["现在离我的生日还有三天。", "我的生日离三天还有现在。", "现在从我的生日有三天。"], "ok": 0, "exp": "Ahora (A) + 离 + cumpleaños (B) + 还有 + tres días."},
+     {"q": "¿Qué frase está bien?", "opciones": ["咖啡店很远离这儿。", "离这儿咖啡店很远。", "咖啡店离这儿很远。"], "ok": 2, "exp": "A + 离 + B + 很远."}
+    ]
+   },
+   {
+    "id": "G09-3",
+    "titulo": "Complemento de duración (1): cuánto tiempo dura una acción (我们休息十分钟)",
+    "zh": "时量补语",
+    "explicacion": [
+     "Para decir <b>cuánto tiempo</b> dura una acción, la expresión de tiempo (十分钟, 两年, 一个小时…) va <b>detrás del verbo</b>: 我们休息十分钟 = «descansamos diez minutos»; 他们学了两年 = «estudiaron dos años». En español también decimos «estudió dos años», así que el orden básico es parecido.",
+     "Si hay <b>objeto</b>, depende de qué tipo sea: si es una <b>cosa</b>, va <b>detrás</b> de la duración, a menudo con 的: 我看了一个晚上（的）电视. Si es una <b>persona o un pronombre</b>, va <b>delante</b> de la duración: 李文等了她一个小时; 我找了陈天中二十多分钟. También se puede <b>repetir el verbo</b>: 他们学中文学了两年; 李文等她等了一个小时.",
+     "Con <b>verbos separables</b> (游泳, 跑步, 睡觉…) se repite la parte verbal: 安妮游泳游了一个下午; 陈天中跑步跑了两个小时.",
+     "Si hay <b>了</b> detrás del verbo y <b>otro 了</b> al final, la acción <b>sigue</b> en marcha: 他写了半个小时汉字了 = «lleva media hora escribiendo caracteres (y sigue)». Con un solo 了 la acción ya ha terminado."
+    ],
+    "estructura": [
+     "Sujeto + V (+了) + duración → 我们休息十分钟。",
+     "Sujeto + V + 了 + duración + (的) + cosa → 我看了一个晚上电视。",
+     "Sujeto + V + 了 + persona + duración → 李文等了她一个小时。",
+     "Sujeto + V + objeto + V + 了 + duración (+了) → 陈天中跑步跑了两个小时了。"
+    ],
+    "ejemplos": [
+     {"zh": "走半个多小时就到了。", "py": "Zǒu bàn ge duō xiǎoshí jiù dào le.", "es": "En algo más de media hora andando llegamos."},
+     {"zh": "我们休息十分钟。", "py": "Wǒmen xiūxi shí fēnzhōng.", "es": "Descansamos diez minutos."},
+     {"zh": "我看了一个晚上电视。", "py": "Wǒ kànle yí ge wǎnshang diànshì.", "es": "Estuve toda la noche viendo la tele.", "nota": "cosa: detrás de la duración"},
+     {"zh": "李文等了她一个小时。", "py": "Lǐ Wén děngle tā yí ge xiǎoshí.", "es": "Li Wen la esperó una hora.", "nota": "persona: delante de la duración"},
+     {"zh": "安妮游泳游了一个下午。", "py": "Ānnī yóuyǒng yóule yí ge xiàwǔ.", "es": "Annie estuvo nadando toda la tarde.", "nota": "verbo separable"},
+     {"zh": "他写了半个小时汉字了。", "py": "Tā xiěle bàn ge xiǎoshí hànzì le.", "es": "Lleva media hora escribiendo caracteres.", "nota": "doble 了: sigue escribiendo"}
+    ],
+    "ojo": "No pongas la duración delante del verbo como en «dos horas corrió»: *他两个小时跑步 está mal; di 他跑步跑了两个小时. Y el pronombre va antes de la duración: 等了她一个小时, no *等了一个小时她.",
+    "practica": [
+     {"q": "我们休息___。", "opciones": ["十分钟", "十点", "十号"], "ok": 0, "exp": "Detrás del verbo va la duración: «descansamos diez minutos»."},
+     {"q": "«Li Wen la esperó una hora» se dice:", "opciones": ["李文等了一个小时她。", "李文一个小时等了她。", "李文等了她一个小时。"], "ok": 2, "exp": "Si el objeto es un pronombre o una persona, va delante de la duración: 等了她一个小时."},
+     {"q": "陈天中跑步跑了两个小时了 significa que…", "opciones": ["ya terminó de correr hace dos horas.", "lleva dos horas corriendo y sigue.", "va a correr dos horas."], "ok": 1, "exp": "Con 了 tras el verbo y otro 了 al final, la acción sigue en marcha."}
+    ]
+   }
+  ]
+ }
+]

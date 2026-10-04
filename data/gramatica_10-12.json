@@ -1,0 +1,750 @@
+[
+ {
+  "tema": 10,
+  "puntos": [
+   {
+    "id": "G10-1",
+    "titulo": "主谓谓语句: oraciones con «sujeto + predicado» como predicado («Mi hermano, las manos las tiene pequeñas»)",
+    "zh": "主谓谓语句",
+    "explicacion": [
+     "En chino, el predicado de una oración puede ser a su vez una pequeña oración con su propio sujeto y su propio predicado. La estructura es <b>Sujeto + [sujeto 2 + predicado]</b>: 弟弟手很小 (dìdi shǒu hěn xiǎo) = literalmente «mi hermano · las manos (son) muy pequeñas», es decir, «mi hermano tiene las manos pequeñas».",
+     "Normalmente el <b>sujeto 2</b> es una parte del sujeto principal o algo relacionado con él: 我头疼 (wǒ tóu téng, «me duele la cabeza»), 刘明工作很忙 (Liú Míng gōngzuò hěn máng, «Liu Ming tiene mucho trabajo»), 他学习很好 (tā xuéxí hěn hǎo, «saca buenas notas»). El primer elemento funciona como <b>tema</b>: «en cuanto a…».",
+     "El tema también puede ser el <b>objeto</b>, que se pone delante para destacarlo: 我的书包你看见了吗？ (wǒ de shūbāo nǐ kànjiànle ma?, «mi mochila, ¿la has visto?»). En español hacemos algo parecido («la mochila, ¿la has visto?»), pero repetimos el objeto con un pronombre (<i>la</i>); en chino no hace falta ningún pronombre.",
+     "Este tipo de frase es muy frecuente para describir personas, cosas y situaciones, y aparece mucho en el examen: 北京天气怎么样？ (Běijīng tiānqì zěnmeyàng?, «¿qué tiempo hace en Pekín?»)."
+    ],
+    "estructura": [
+     "Sujeto + sujeto 2 + adjetivo → 弟弟手很小。",
+     "Sujeto + sujeto 2 + verbo → 我头疼。",
+     "Objeto (tema) + sujeto + verbo → 我的书包你看见了吗？"
+    ],
+    "ejemplos": [
+     {
+      "zh": "弟弟手很小。",
+      "py": "Dìdi shǒu hěn xiǎo.",
+      "es": "Mi hermano pequeño tiene las manos pequeñas.",
+      "nota": "手 es parte de 弟弟"
+     },
+     {
+      "zh": "我的书包你看见了吗？",
+      "py": "Wǒ de shūbāo nǐ kànjiànle ma?",
+      "es": "¿Has visto mi mochila?",
+      "nota": "el objeto va delante como tema"
+     },
+     {
+      "zh": "刘明工作很忙。",
+      "py": "Liú Míng gōngzuò hěn máng.",
+      "es": "Liu Ming tiene mucho trabajo."
+     },
+     {
+      "zh": "他学习很好。",
+      "py": "Tā xuéxí hěn hǎo.",
+      "es": "Va muy bien en los estudios."
+     },
+     {
+      "zh": "我头疼，不太舒服。",
+      "py": "Wǒ tóu téng, bú tài shūfu.",
+      "es": "Me duele la cabeza, no me encuentro muy bien."
+     },
+     {
+      "zh": "这个电影我看过，很好看。",
+      "py": "Zhège diànyǐng wǒ kànguo, hěn hǎokàn.",
+      "es": "Esa película ya la he visto; es muy buena.",
+      "nota": "objeto delante"
+     }
+    ],
+    "ojo": "No metas 是 ni 有 entre las dos partes: ✗ 他学习是很好 / ✗ 弟弟有手很小. Lo correcto es 他学习很好 y 弟弟手很小. Y cuando el objeto va delante, no lo repitas detrás con 它: ✗ 我的书包你看见它了吗？",
+    "practica": [
+     {
+      "q": "A: 刘明工作忙吗？ B: 刘明___很忙。",
+      "opciones": [
+       "是工作",
+       "工作",
+       "有工作"
+      ],
+      "ok": 1,
+      "exp": "刘明工作很忙: «Liu Ming tiene mucho trabajo». Entre el sujeto y el adjetivo no va 是 ni 有."
+     },
+     {
+      "q": "¿Cómo se dice «Me duele la cabeza»?",
+      "opciones": [
+       "我疼头。",
+       "头我疼。",
+       "我头疼。"
+      ],
+      "ok": 2,
+      "exp": "我头疼: «yo · la cabeza duele». El sujeto 2 (头) va delante del adjetivo/verbo 疼."
+     },
+     {
+      "q": "¿Qué frase significa «Mi mochila, ¿la has visto?»",
+      "opciones": [
+       "我的书包你看见了吗？",
+       "我的书包看见你了吗？",
+       "你看见我的书包它了吗？"
+      ],
+      "ok": 0,
+      "exp": "El objeto 我的书包 va delante como tema y después viene 你看见了吗, sin pronombre."
+     }
+    ]
+   },
+   {
+    "id": "G10-2",
+    "titulo": "选择问句 con 还是: «¿A o B?»",
+    "zh": "还是",
+    "explicacion": [
+     "Para preguntar a alguien que elija entre dos o más opciones se usa la conjunción <b>还是</b> (háishi), que equivale a nuestra «o» en preguntas: 你喝咖啡还是茶？ (nǐ hē kāfēi háishi chá?, «¿tomas café o té?»).",
+     "La estructura básica es <b>(是) A 还是 B</b>. El 是 inicial es opcional y suele aparecer cuando las opciones son frases completas: 妈妈，是您准备考试还是我准备考试？ (Māma, shì nín zhǔnbèi kǎoshì háishi wǒ zhǔnbèi kǎoshì?, «Mamá, ¿quién prepara el examen, tú o yo?»).",
+     "Con tres opciones o más, las primeras se separan con la coma de enumeración 「、」 y 还是 va delante de la última: 你更喜欢打篮球、踢足球还是游泳？ (nǐ gèng xǐhuan dǎ lánqiú, tī zúqiú háishi yóuyǒng?). Las opciones pueden ser también expresiones de tiempo: 今天还是明天？",
+     "La frase con 还是 ya es una pregunta por sí misma, así que <b>no lleva 吗</b> al final. Se contesta eligiendo una de las opciones, nunca con «sí» o «no»."
+    ],
+    "estructura": [
+     "(是) A 还是 B？ → 你喝咖啡还是茶？",
+     "是 + frase A + 还是 + frase B？ → 是您准备考试还是我准备考试？",
+     "A、B 还是 C？ → 你更喜欢打篮球、踢足球还是游泳？"
+    ],
+    "ejemplos": [
+     {
+      "zh": "妈妈，是您准备考试还是我准备考试？",
+      "py": "Māma, shì nín zhǔnbèi kǎoshì háishi wǒ zhǔnbèi kǎoshì?",
+      "es": "Mamá, ¿quién se prepara el examen, tú o yo?"
+     },
+     {
+      "zh": "你更喜欢打篮球、踢足球还是游泳？",
+      "py": "Nǐ gèng xǐhuan dǎ lánqiú, tī zúqiú háishi yóuyǒng?",
+      "es": "¿Qué te gusta más: jugar al baloncesto, al fútbol o nadar?",
+      "nota": "tres opciones"
+     },
+     {
+      "zh": "我们什么时候去看电影？今天还是明天？",
+      "py": "Wǒmen shénme shíhou qù kàn diànyǐng? Jīntiān háishi míngtiān?",
+      "es": "¿Cuándo vamos al cine? ¿Hoy o mañana?"
+     },
+     {
+      "zh": "你喝咖啡还是茶？",
+      "py": "Nǐ hē kāfēi háishi chá?",
+      "es": "¿Tomas café o té?"
+     },
+     {
+      "zh": "你想坐公交车还是打车？",
+      "py": "Nǐ xiǎng zuò gōngjiāochē háishi dǎchē?",
+      "es": "¿Quieres ir en autobús o en taxi?"
+     },
+     {
+      "zh": "你是老师还是学生？",
+      "py": "Nǐ shì lǎoshī háishi xuésheng?",
+      "es": "¿Eres profesor o estudiante?"
+     }
+    ],
+    "ojo": "No pongas 吗 al final: ✗ 你喝咖啡还是茶吗？ → 你喝咖啡还是茶？ Y no uses 和 (hé) para «o»: 和 significa «y». ✗ 你喝咖啡和茶？ pregunta otra cosa.",
+    "practica": [
+     {
+      "q": "你喝咖啡___茶？",
+      "opciones": [
+       "和",
+       "还是",
+       "也"
+      ],
+      "ok": 1,
+      "exp": "还是 = «o» en preguntas: «¿Tomas café o té?». 和 significa «y»."
+     },
+     {
+      "q": "¿Qué pregunta es correcta?",
+      "opciones": [
+       "你去还是不去吗？",
+       "你还是去不去？",
+       "你去还是不去？"
+      ],
+      "ok": 2,
+      "exp": "La pregunta con 还是 no lleva 吗: 你去还是不去？ «¿Vas o no vas?»."
+     },
+     {
+      "q": "A: 你吃面包还是包子？ B: ___",
+      "opciones": [
+       "包子吧，我觉得包子更好吃。",
+       "是的，我吃。",
+       "我吃面包还是包子。"
+      ],
+      "ok": 0,
+      "exp": "A una pregunta con 还是 se responde eligiendo una opción: «Bollos al vapor, creo que están más buenos»."
+     }
+    ]
+   },
+   {
+    "id": "G10-3",
+    "titulo": "要/快/快要/就要……了: algo está a punto de pasar",
+    "zh": "快要……了",
+    "explicacion": [
+     "Para decir que algo <b>va a pasar muy pronto</b> («estar a punto de», «ya casi», «dentro de nada») se usa la estructura <b>要 / 快 / 快要 / 就要 + verbo + 了</b>. El 了 final es obligatorio: 火车快开了 (huǒchē kuài kāi le, «el tren está a punto de salir»), 饭菜快要做好了 (fàncài kuàiyào zuòhǎo le, «la comida ya casi está»).",
+     "Si la frase lleva una <b>expresión de tiempo</b> concreta (明天, 下星期, 三点…), se usa <b>就要……了</b>, no 快/快要: 我们下星期就要考试了 (wǒmen xià xīngqī jiù yào kǎoshì le, «la semana que viene ya tenemos examen»).",
+     "快 también puede ir delante de un número o una hora: 快八点了 (kuài bā diǎn le, «son casi las ocho»), 开学快一个月了 («ya hace casi un mes que empezó el curso»). En español lo traducimos con «ya casi», «está a punto de», «falta poco para» o simplemente con un presente: «¡que se va el tren!»."
+    ],
+    "estructura": [
+     "(Sujeto) + 快/快要/要 + verbo + 了 → 火车快开了。",
+     "Expresión de tiempo + 就要 + verbo + 了 → 我们下星期就要考试了。",
+     "快 + número/hora + 了 → 快八点了。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "饭菜快要做好了。",
+      "py": "Fàncài kuàiyào zuòhǎo le.",
+      "es": "La comida está casi lista."
+     },
+     {
+      "zh": "火车快开了。",
+      "py": "Huǒchē kuài kāi le.",
+      "es": "El tren está a punto de salir."
+     },
+     {
+      "zh": "我们下星期就要考试了。",
+      "py": "Wǒmen xià xīngqī jiù yào kǎoshì le.",
+      "es": "La semana que viene ya tenemos examen.",
+      "nota": "con expresión de tiempo: 就要"
+     },
+     {
+      "zh": "快要开学了，你准备好了吗？",
+      "py": "Kuàiyào kāixué le, nǐ zhǔnbèi hǎo le ma?",
+      "es": "Falta poco para que empiecen las clases, ¿estás preparado?"
+     },
+     {
+      "zh": "电影就要开始了，你到哪儿了？",
+      "py": "Diànyǐng jiù yào kāishǐ le, nǐ dào nǎr le?",
+      "es": "La película está a punto de empezar, ¿por dónde vas?"
+     },
+     {
+      "zh": "要下雨了，我们回家吧。",
+      "py": "Yào xiàyǔ le, wǒmen huí jiā ba.",
+      "es": "Va a llover; volvamos a casa."
+     }
+    ],
+    "ojo": "Con una hora o un día concretos no se usa 快/快要: ✗ 明天快要考试了 → 明天就要考试了. Y no olvides el 了 final: ✗ 火车快开 → 火车快开了.",
+    "practica": [
+     {
+      "q": "我们明天___考试了。",
+      "opciones": [
+       "快",
+       "就要",
+       "快要"
+      ],
+      "ok": 1,
+      "exp": "Con una expresión de tiempo (明天) se usa 就要……了: «Mañana ya tenemos examen»."
+     },
+     {
+      "q": "火车快开___。",
+      "opciones": [
+       "吗",
+       "的",
+       "了"
+      ],
+      "ok": 2,
+      "exp": "La estructura es 快……了: «El tren está a punto de salir»."
+     },
+     {
+      "q": "¿Cómo se dice «Ya son casi las ocho»?",
+      "opciones": [
+       "快八点了。",
+       "八点快了。",
+       "快了八点。"
+      ],
+      "ok": 0,
+      "exp": "快 + hora + 了: 快八点了."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 11,
+  "puntos": [
+   {
+    "id": "G11-1",
+    "titulo": "着 (1): una acción o un estado que dura («está sentado», «está abierta»)",
+    "zh": "着",
+    "explicacion": [
+     "La partícula <b>着</b> (zhe) va <b>detrás del verbo</b> e indica que una acción o un estado <b>se mantiene</b>: 那你在这儿坐着 (nà nǐ zài zhèr zuòzhe, «entonces quédate aquí sentada»), 教室的门开着 (jiàoshì de mén kāizhe, «la puerta del aula está abierta»).",
+     "Más que una acción en marcha, 着 describe muchas veces el <b>estado que resulta</b> de una acción: 开 es «abrir», pero 门开着 no es «la puerta se está abriendo», sino «la puerta está abierta». Por eso en español lo traducimos a menudo con «estar + participio» (sentado, abierto) o con un gerundio («esperando»): 我等着你 («te estoy esperando»).",
+     "La forma negativa se hace con <b>没(有)</b> delante del verbo, nunca con 不: 教室的门没开着 (jiàoshì de mén méi kāizhe, «la puerta del aula no está abierta»). Al final de la frase suele aparecer 呢: 他在床上坐着呢."
+    ],
+    "estructura": [
+     "Sujeto + verbo + 着 → 教室的门开着。",
+     "Sujeto + 没(有) + verbo + 着 → 教室的门没开着。",
+     "Sujeto + 在 + lugar + verbo + 着 (呢) → 你在这儿坐着。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "那你在这儿坐着。",
+      "py": "Nà nǐ zài zhèr zuòzhe.",
+      "es": "Entonces quédate aquí sentado."
+     },
+     {
+      "zh": "教室的门开着。",
+      "py": "Jiàoshì de mén kāizhe.",
+      "es": "La puerta del aula está abierta."
+     },
+     {
+      "zh": "教室的门没开着。",
+      "py": "Jiàoshì de mén méi kāizhe.",
+      "es": "La puerta del aula no está abierta.",
+      "nota": "negación con 没"
+     },
+     {
+      "zh": "电脑开着，你用吧。",
+      "py": "Diànnǎo kāizhe, nǐ yòng ba.",
+      "es": "El ordenador está encendido, úsalo."
+     },
+     {
+      "zh": "我在门口等着呢。",
+      "py": "Wǒ zài ménkǒu děngzhe ne.",
+      "es": "Estoy esperando en la puerta."
+     },
+     {
+      "zh": "别找了，我拿着呢。",
+      "py": "Bié zhǎo le, wǒ názhe ne.",
+      "es": "No lo busques más, lo tengo yo en la mano."
+     }
+    ],
+    "ojo": "La negación de 着 es 没, no 不: ✗ 门不开着 → 门没开着. Y 着 va pegado al verbo: ✗ 着坐 → 坐着.",
+    "practica": [
+     {
+      "q": "La puerta del aula está abierta: 教室的门___。",
+      "opciones": [
+       "着开",
+       "开了着",
+       "开着"
+      ],
+      "ok": 2,
+      "exp": "着 va detrás del verbo: 开着 = «está abierta»."
+     },
+     {
+      "q": "¿Cuál es la forma negativa correcta?",
+      "opciones": [
+       "门不开着。",
+       "门没开着。",
+       "门开没着。"
+      ],
+      "ok": 1,
+      "exp": "着 se niega con 没 delante del verbo: 门没开着 «la puerta no está abierta»."
+     },
+     {
+      "q": "你在这儿___，我去开车。",
+      "opciones": [
+       "坐着",
+       "坐过",
+       "坐得"
+      ],
+      "ok": 0,
+      "exp": "坐着 = «quedarse sentado»: «Quédate aquí sentado, que voy a por el coche»."
+     }
+    ]
+   },
+   {
+    "id": "G11-2",
+    "titulo": "着 (2): verbo + 着 + objeto y preguntas con 着",
+    "zh": "着",
+    "explicacion": [
+     "Cuando el verbo lleva objeto, el <b>objeto va detrás de 着</b>: 还下着雪 (hái xiàzhe xuě, «además está nevando»), 她穿着白色的裤子 (tā chuānzhe báisè de kùzi, «lleva unos pantalones blancos»), 王老师开着车呢 («la profesora Wang está conduciendo»). La negación sigue siendo 没: 陈天中没拿着咖啡.",
+     "Para preguntar hay <b>tres formas</b>: (1) añadir <b>吗</b> al final: 教室的门开着吗？; (2) añadir <b>没有</b> al final: 白家月坐着没有？; (3) <b>verbo + 没 + verbo + 着</b>: 她拿没拿着手机？ (tā ná méi ná zhe shǒujī?).",
+     "Fíjate en que 穿着 describe lo que alguien lleva puesto en ese momento: es la forma típica de describir la ropa de una persona («¿Cuál es? — La que lleva el abrigo rojo»)."
+    ],
+    "estructura": [
+     "Sujeto + verbo + 着 + objeto → 她穿着白色的裤子。",
+     "… + 吗？ / … + 没有？ → 教室的门开着吗？ / 白家月坐着没有？",
+     "Verbo + 没 + verbo + 着 (+ objeto)？ → 她拿没拿着手机？"
+    ],
+    "ejemplos": [
+     {
+      "zh": "现在路上车多，还下着雪，我开慢一点儿。",
+      "py": "Xiànzài lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn yìdiǎnr.",
+      "es": "Hay muchos coches y además está nevando; iré un poco más despacio."
+     },
+     {
+      "zh": "她穿着白色的裤子。",
+      "py": "Tā chuānzhe báisè de kùzi.",
+      "es": "Lleva unos pantalones blancos."
+     },
+     {
+      "zh": "陈天中没拿着咖啡。",
+      "py": "Chén Tiānzhōng méi názhe kāfēi.",
+      "es": "Chen Tianzhong no lleva el café en la mano."
+     },
+     {
+      "zh": "王老师开着车呢。",
+      "py": "Wáng lǎoshī kāizhe chē ne.",
+      "es": "La profesora Wang está conduciendo."
+     },
+     {
+      "zh": "白家月坐着没有？",
+      "py": "Bái Jiāyuè zuòzhe méiyǒu?",
+      "es": "¿Bai Jiayue está sentada?",
+      "nota": "pregunta con 没有"
+     },
+     {
+      "zh": "她拿没拿着手机？",
+      "py": "Tā ná méi ná zhe shǒujī?",
+      "es": "¿Lleva el móvil en la mano?",
+      "nota": "verbo + 没 + verbo + 着"
+     }
+    ],
+    "ojo": "El objeto va después de 着, no antes ni al final: ✗ 她穿白色的裤子着 → 她穿着白色的裤子. En la pregunta afirmativo-negativa se usa 没, no 不: ✗ 她拿不拿着手机？",
+    "practica": [
+     {
+      "q": "Ella lleva unos pantalones blancos: 她___白色的裤子。",
+      "opciones": [
+       "穿着",
+       "着穿",
+       "穿了着"
+      ],
+      "ok": 0,
+      "exp": "Verbo + 着 + objeto: 穿着白色的裤子."
+     },
+     {
+      "q": "¿Qué pregunta es correcta?",
+      "opciones": [
+       "白家月坐没着？",
+       "白家月坐着没有？",
+       "白家月不坐着吗？"
+      ],
+      "ok": 1,
+      "exp": "Se puede preguntar añadiendo 没有 al final: 白家月坐着没有？ «¿Está sentada Bai Jiayue?»."
+     },
+     {
+      "q": "¿Cómo se pregunta «¿Lleva el móvil en la mano?»",
+      "opciones": [
+       "她拿不拿着手机？",
+       "她拿着没手机？",
+       "她拿没拿着手机？"
+      ],
+      "ok": 2,
+      "exp": "Verbo + 没 + verbo + 着: 她拿没拿着手机？"
+     }
+    ]
+   },
+   {
+    "id": "G11-3",
+    "titulo": "最: «el más…», «lo que más…»",
+    "zh": "最",
+    "explicacion": [
+     "El adverbio <b>最</b> (zuì) se pone <b>delante de un adjetivo</b> o de un <b>verbo de sentimiento o deseo</b> (喜欢, 爱, 想…) para decir que algo supera a todos los demás de su grupo: es nuestro superlativo «el más…» o «lo que más…».",
+     "Con adjetivos: 在我们家，爸爸最高 (zài wǒmen jiā, bàba zuì gāo, «en mi casa, el más alto es mi padre»). Con verbos de sentimiento: 你最喜欢吃中国菜 (nǐ zuì xǐhuan chī Zhōngguó cài, «lo que más te gusta es la comida china»), 我最想去北京 («adonde más me apetece ir es a Pekín»).",
+     "Con el complemento de grado con 得, 最 va detrás de 得, delante del adjetivo: 你们班谁说中文说得最好？ (nǐmen bān shéi shuō Zhōngwén shuō de zuì hǎo?, «¿quién habla mejor chino de vuestra clase?»). Y delante de un sustantivo hace falta 的: 最好的朋友 («el mejor amigo»)."
+    ],
+    "estructura": [
+     "最 + adjetivo → 爸爸最高。",
+     "最 + 喜欢/爱/想 + … → 你最喜欢吃中国菜。",
+     "Verbo + 得 + 最 + adjetivo → 他说得最好。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "你最喜欢吃中国菜。",
+      "py": "Nǐ zuì xǐhuan chī Zhōngguó cài.",
+      "es": "Lo que más te gusta es la comida china."
+     },
+     {
+      "zh": "在我们家，爸爸最高。",
+      "py": "Zài wǒmen jiā, bàba zuì gāo.",
+      "es": "En nuestra casa, el más alto es papá."
+     },
+     {
+      "zh": "你们班谁说中文说得最好？",
+      "py": "Nǐmen bān shéi shuō Zhōngwén shuō de zuì hǎo?",
+      "es": "¿Quién habla mejor chino de vuestra clase?",
+      "nota": "最 detrás de 得"
+     },
+     {
+      "zh": "这是离我家最近的药店。",
+      "py": "Zhè shì lí wǒ jiā zuì jìn de yàodiàn.",
+      "es": "Esta es la farmacia más cercana a mi casa."
+     },
+     {
+      "zh": "我最想去北京旅游。",
+      "py": "Wǒ zuì xiǎng qù Běijīng lǚyóu.",
+      "es": "Adonde más me apetece ir de viaje es a Pekín."
+     },
+     {
+      "zh": "他是我最好的朋友。",
+      "py": "Tā shì wǒ zuì hǎo de péngyou.",
+      "es": "Es mi mejor amigo."
+     }
+    ],
+    "ojo": "最 siempre va delante del adjetivo o del verbo, nunca detrás como en «el más alto»: ✗ 爸爸高最 → 爸爸最高. Y no hace falta 很: ✗ 爸爸最很高.",
+    "practica": [
+     {
+      "q": "En nuestra casa, papá es el más alto: 在我们家，爸爸___高。",
+      "opciones": [
+       "比",
+       "最",
+       "多"
+      ],
+      "ok": 1,
+      "exp": "最 + adjetivo = superlativo: 爸爸最高."
+     },
+     {
+      "q": "¿Cómo se dice «Lo que más me gusta es el rojo»?",
+      "opciones": [
+       "我喜欢最红色。",
+       "最我喜欢红色。",
+       "我最喜欢红色。"
+      ],
+      "ok": 2,
+      "exp": "最 va delante del verbo 喜欢: 我最喜欢红色."
+     },
+     {
+      "q": "你们班谁说中文___？",
+      "opciones": [
+       "说得最好",
+       "最说得好",
+       "说最得好"
+      ],
+      "ok": 0,
+      "exp": "Con 得, 最 va delante del adjetivo: 说得最好 «el que mejor habla»."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 12,
+  "puntos": [
+   {
+    "id": "G12-1",
+    "titulo": "比较句 (4): A 比 B + adjetivo + 多了 / 得多 («mucho más…»)",
+    "zh": "多了 / 得多",
+    "explicacion": [
+     "Ya sabes comparar con <b>A 比 B + adjetivo</b>. Para decir que la diferencia es <b>grande</b> («mucho más…»), se añade <b>多了</b> o <b>得多</b> detrás del adjetivo: 我这里比北京冷多了 (wǒ zhèlǐ bǐ Běijīng lěngduō le, «aquí hace mucho más frío que en Pekín»), 坐飞机比坐火车快得多 (zuò fēijī bǐ zuò huǒchē kuài de duō, «ir en avión es mucho más rápido que ir en tren»).",
+     "Los dos significan lo mismo; 多了 es algo más coloquial. Fíjate en el orden: en español decimos «<b>mucho</b> más frío», con el «mucho» delante; en chino 多了 / 得多 va <b>detrás</b> del adjetivo.",
+     "En las frases con 比 <b>no se puede usar</b> 很, 非常 ni 太 delante del adjetivo: ✗ 这里比北京很冷. Para intensificar se usa precisamente 多了 / 得多 (o 更, 还 delante del adjetivo)."
+    ],
+    "estructura": [
+     "A 比 B + adjetivo + 多了 → 我这里比北京冷多了。",
+     "A 比 B + adjetivo + 得多 → 坐飞机比坐火车快得多。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "我这里比北京冷多了。",
+      "py": "Wǒ zhèlǐ bǐ Běijīng lěngduō le.",
+      "es": "Aquí hace mucho más frío que en Pekín."
+     },
+     {
+      "zh": "坐飞机比坐火车快得多。",
+      "py": "Zuò fēijī bǐ zuò huǒchē kuài de duō.",
+      "es": "Ir en avión es mucho más rápido que ir en tren."
+     },
+     {
+      "zh": "他觉得红茶比绿茶好喝得多。",
+      "py": "Tā juéde hóngchá bǐ lǜchá hǎohē de duō.",
+      "es": "Él cree que el té negro está mucho más bueno que el verde."
+     },
+     {
+      "zh": "今天比昨天热多了。",
+      "py": "Jīntiān bǐ zuótiān rè duō le.",
+      "es": "Hoy hace mucho más calor que ayer."
+     },
+     {
+      "zh": "我女儿现在比我高多了。",
+      "py": "Wǒ nǚ'ér xiànzài bǐ wǒ gāo duō le.",
+      "es": "Mi hija ahora es mucho más alta que yo."
+     },
+     {
+      "zh": "奶茶店比咖啡店近得多。",
+      "py": "Nǎichá diàn bǐ kāfēi diàn jìn de duō.",
+      "es": "La tienda de té con leche está mucho más cerca que la cafetería."
+     }
+    ],
+    "ojo": "Nada de 很 o 非常 en una frase con 比: ✗ 今天比昨天很热 → 今天比昨天热多了. Y 多了 / 得多 van detrás del adjetivo, no delante: ✗ 今天比昨天多热了.",
+    "practica": [
+     {
+      "q": "Hoy hace mucho más calor que ayer: 今天比昨天___。",
+      "opciones": [
+       "很热",
+       "热多了",
+       "非常热"
+      ],
+      "ok": 1,
+      "exp": "Con 比 no se usa 很 ni 非常; «mucho más» es adjetivo + 多了: 热多了."
+     },
+     {
+      "q": "¿Qué frase es correcta?",
+      "opciones": [
+       "这里比北京冷得多。",
+       "这里比北京很冷。",
+       "这里很比北京冷。"
+      ],
+      "ok": 0,
+      "exp": "A 比 B + adjetivo + 得多: «Aquí hace mucho más frío que en Pekín»."
+     },
+     {
+      "q": "坐飞机比坐火车快___。",
+      "opciones": [
+       "多得",
+       "很多了",
+       "得多"
+      ],
+      "ok": 2,
+      "exp": "La forma es adjetivo + 得多: 快得多 «mucho más rápido»."
+     }
+    ]
+   },
+   {
+    "id": "G12-2",
+    "titulo": "比较句 (5): 比 con complemento de grado (昨天比今天下得大 / 昨天下得比今天大)",
+    "zh": "比 + 得",
+    "explicacion": [
+     "Cuando comparamos <b>cómo se hace una acción</b>, usamos el complemento con 得 (verbo + 得 + adjetivo). En estas frases, <b>比 + B</b> puede ir en dos sitios y las dos frases significan lo mismo:",
+     "(1) <b>delante del verbo</b>: 昨天比今天下得大 (zuótiān bǐ jīntiān xià de dà, «ayer nevó más que hoy»), 妈妈比我睡得晚 (māma bǐ wǒ shuì de wǎn, «mi madre se acuesta más tarde que yo»); (2) <b>detrás de 得</b>, delante del adjetivo: 李文跑得比白家月快 (Lǐ Wén pǎo de bǐ Bái Jiāyuè kuài, «Li Wen corre más rápido que Bai Jiayue»).",
+     "El adjetivo siempre va al final. Se puede añadir 多了 / 得多 para marcar mucha diferencia: 他跑得比我快多了. Para decir lo contrario se usa 没有: 我没有他跑得快 («no corro tan rápido como él»)."
+    ],
+    "estructura": [
+     "A + 比 B + verbo + 得 + adjetivo → 妈妈比我睡得晚。",
+     "A + verbo + 得 + 比 B + adjetivo → 李文跑得比白家月快。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "昨天比今天下得大。",
+      "py": "Zuótiān bǐ jīntiān xià de dà.",
+      "es": "Ayer nevó (o llovió) más que hoy."
+     },
+     {
+      "zh": "妈妈比我睡得晚。",
+      "py": "Māma bǐ wǒ shuì de wǎn.",
+      "es": "Mi madre se acuesta más tarde que yo."
+     },
+     {
+      "zh": "李文跑得比白家月快。",
+      "py": "Lǐ Wén pǎo de bǐ Bái Jiāyuè kuài.",
+      "es": "Li Wen corre más rápido que Bai Jiayue."
+     },
+     {
+      "zh": "哥哥比我起得早。",
+      "py": "Gēge bǐ wǒ qǐ de zǎo.",
+      "es": "Mi hermano mayor se levanta antes que yo."
+     },
+     {
+      "zh": "你说得比我好。",
+      "py": "Nǐ shuō de bǐ wǒ hǎo.",
+      "es": "Tú lo dices mejor que yo."
+     },
+     {
+      "zh": "他跑得比我快多了。",
+      "py": "Tā pǎo de bǐ wǒ kuài duō le.",
+      "es": "Él corre mucho más rápido que yo.",
+      "nota": "con 多了"
+     }
+    ],
+    "ojo": "No partas el complemento: ✗ 李文跑比白家月得快. O 比 va delante del verbo (李文比白家月跑得快) o detrás de 得 (李文跑得比白家月快). Y sin 很: ✗ 妈妈比我睡得很晚.",
+    "practica": [
+     {
+      "q": "妈妈比我睡___晚。",
+      "opciones": [
+       "的",
+       "得",
+       "地"
+      ],
+      "ok": 1,
+      "exp": "Complemento de grado: verbo + 得 + adjetivo. «Mi madre se acuesta más tarde que yo»."
+     },
+     {
+      "q": "¿Qué frase es correcta?",
+      "opciones": [
+       "李文跑比白家月得快。",
+       "李文比白家月快跑得。",
+       "李文跑得比白家月快。"
+      ],
+      "ok": 2,
+      "exp": "比 + B puede ir detrás de 得: 跑得比白家月快."
+     },
+     {
+      "q": "Ayer nevó más que hoy:",
+      "opciones": [
+       "昨天比今天下得大。",
+       "昨天下比今天得大。",
+       "昨天比今天很下得大。"
+      ],
+      "ok": 0,
+      "exp": "比今天 va delante del verbo y el adjetivo al final, sin 很."
+     }
+    ]
+   },
+   {
+    "id": "G12-3",
+    "titulo": "比较句 (6): 比 con objeto y complemento (你跑步跑得比我快 / 他踢足球比我踢得好)",
+    "zh": "比 + V O V 得",
+    "explicacion": [
+     "Si el verbo tiene <b>objeto</b> y además complemento con 得, no se puede poner el objeto entre el verbo y 得 (✗ 跑步得). Hay dos soluciones: <b>repetir el verbo</b> o <b>poner el objeto delante</b>.",
+     "<b>Repetir el verbo</b>: 他踢足球比我踢得好 (tā tī zúqiú bǐ wǒ tī de hǎo, «juega al fútbol mejor que yo»). <b>Objeto delante</b>: 白家月汉字写得比陈天中好 (Bái Jiāyuè Hànzì xiě de bǐ Chén Tiānzhōng hǎo, «Bai Jiayue escribe los caracteres mejor que Chen Tianzhong»).",
+     "Con los <b>verbos separables</b> (跑步, 唱歌, 游泳, 睡觉…), se repite solo la parte verbal: 你跑步跑得比我快 (nǐ pǎobù pǎo de bǐ wǒ kuài, «corres más rápido que yo»), 她唱歌唱得比我好 («canta mejor que yo»)."
+    ],
+    "estructura": [
+     "A + verbo + objeto + verbo + 得 + 比 B + adjetivo → 你跑步跑得比我快。",
+     "A + verbo + objeto + 比 B + verbo + 得 + adjetivo → 他踢足球比我踢得好。",
+     "A + objeto + verbo + 得 + 比 B + adjetivo → 白家月汉字写得比陈天中好。"
+    ],
+    "ejemplos": [
+     {
+      "zh": "你跑步跑得比我快。",
+      "py": "Nǐ pǎobù pǎo de bǐ wǒ kuài.",
+      "es": "Corres más rápido que yo.",
+      "nota": "verbo separable: se repite 跑"
+     },
+     {
+      "zh": "白家月汉字写得比陈天中好。",
+      "py": "Bái Jiāyuè Hànzì xiě de bǐ Chén Tiānzhōng hǎo.",
+      "es": "Bai Jiayue escribe los caracteres mejor que Chen Tianzhong.",
+      "nota": "objeto delante"
+     },
+     {
+      "zh": "他踢足球比我踢得好。",
+      "py": "Tā tī zúqiú bǐ wǒ tī de hǎo.",
+      "es": "Juega al fútbol mejor que yo.",
+      "nota": "verbo repetido"
+     },
+     {
+      "zh": "她唱歌唱得比我好多了。",
+      "py": "Tā chàng gē chàng de bǐ wǒ hǎo duō le.",
+      "es": "Canta muchísimo mejor que yo."
+     },
+     {
+      "zh": "我哥哥游泳比我游得快。",
+      "py": "Wǒ gēge yóuyǒng bǐ wǒ yóu de kuài.",
+      "es": "Mi hermano nada más rápido que yo."
+     },
+     {
+      "zh": "妈妈做菜做得比爸爸好。",
+      "py": "Māma zuò cài zuò de bǐ bàba hǎo.",
+      "es": "Mi madre cocina mejor que mi padre."
+     }
+    ],
+    "ojo": "El error típico es poner 得 justo detrás del objeto: ✗ 你跑步得比我快 / ✗ 他踢足球得比我好. Repite el verbo (跑步跑得, 踢足球……踢得) o pon el objeto delante.",
+    "practica": [
+     {
+      "q": "他踢足球比我___好。",
+      "opciones": [
+       "得",
+       "踢得",
+       "足球得"
+      ],
+      "ok": 1,
+      "exp": "Con objeto se repite el verbo: 他踢足球比我踢得好 «juega al fútbol mejor que yo»."
+     },
+     {
+      "q": "¿Qué frase es correcta?",
+      "opciones": [
+       "你跑步得比我快。",
+       "你跑得步比我快。",
+       "你跑步跑得比我快。"
+      ],
+      "ok": 2,
+      "exp": "跑步 es separable: se repite 跑 → 跑步跑得比我快."
+     },
+     {
+      "q": "白家月___写得比陈天中好。",
+      "opciones": [
+       "汉字",
+       "写汉字得",
+       "得汉字"
+      ],
+      "ok": 0,
+      "exp": "El objeto puede ir delante del verbo: 白家月汉字写得比陈天中好."
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,273 @@
+[
+ {
+  "tema": 1,
+  "puntos": [
+   {
+    "id": "G01-1",
+    "titulo": "吧 (2): suposición o estimación («…, ¿no?»)",
+    "zh": "吧",
+    "explicacion": [
+     "Ya conoces <b>吧</b> (ba) para proponer algo: 我们走吧 «vámonos». En esta lección 吧 aparece al final de una <b>pregunta</b> y expresa que el hablante <b>supone</b> o <b>calcula</b> algo y solo busca confirmación. Equivale a nuestro «…, ¿no?», «…, ¿verdad?» o «supongo que…».",
+     "Compara con <b>吗</b> (ma): con 吗 preguntas sin saber la respuesta; con 吧 ya casi la sabes. 你是老师吗？ «¿Eres profesor?» (no tengo ni idea) frente a 你是老师吧？ «Eres profesor, ¿no?» (me lo imagino).",
+     "La frase tiene la forma de una afirmación (o negación) normal y solo se le añade 吧 al final, con entonación de pregunta. Por eso no se combina con 吗 ni con palabras interrogativas como 什么 (shénme) o 谁 (shéi)."
+    ],
+    "estructura": [
+     "Afirmación + 吧？ → 你们就是她的学生吧？",
+     "Negación + 吧？ → 你不是中国人吧？"
+    ],
+    "ejemplos": [
+     {"zh": "你们就是她的学生吧？", "py": "Nǐmen jiù shì tā de xuésheng ba?", "es": "Vosotras sois sus alumnas, ¿no?", "nota": "texto 1"},
+     {"zh": "她唱歌很好听吧？", "py": "Tā chàng gē hěn hǎotīng ba?", "es": "Canta muy bien, ¿verdad?"},
+     {"zh": "陈天中是泰国人吧？", "py": "Chén Tiānzhōng shì Tàiguórén ba?", "es": "Chen Tianzhong es tailandés, ¿no?"},
+     {"zh": "这是你的手机吧？", "py": "Zhè shì nǐ de shǒujī ba?", "es": "Este es tu móvil, ¿no?"},
+     {"zh": "你是安妮吧？认识你很高兴。", "py": "Nǐ shì Ānnī ba? Rènshi nǐ hěn gāoxìng.", "es": "Tú eres Annie, ¿verdad? Encantada de conocerte."},
+     {"zh": "很晚了，老师已经回家了吧？", "py": "Hěn wǎn le, lǎoshī yǐjīng huí jiā le ba?", "es": "Es muy tarde; la profesora ya se habrá ido a casa, ¿no?", "nota": "estimación"}
+    ],
+    "ojo": "No pongas 吗 y 吧 a la vez (*你是学生吗吧？) ni 吧 con palabras interrogativas (*你是谁吧？). Y no confundas los dos 吧: con tono de propuesta (我们去吧 «vamos») invita a hacer algo; con tono de pregunta, expresa suposición.",
+    "practica": [
+     {"q": "Supones que la chica que tienes delante es Annie: 你是安妮___？", "opciones": ["吗", "吧", "呢"], "ok": 1, "exp": "吧 indica suposición: «Tú eres Annie, ¿no?». Con 吗 sería una pregunta neutra, sin suponer nada."},
+     {"q": "¿Qué frase expresa una suposición?", "opciones": ["你是谁？", "你是老师吗？", "你是老师吧？"], "ok": 2, "exp": "你是老师吧？ = «Eres profesor, ¿no?». Las otras son preguntas normales."},
+     {"q": "¿Cuál es correcta?", "opciones": ["他是泰国人吧？", "他是泰国人吗吧？", "他是哪国人吧？"], "ok": 0, "exp": "吧 no se combina con 吗 ni con palabras interrogativas como 哪: «Es tailandés, ¿no?»."}
+    ]
+   },
+   {
+    "id": "G01-2",
+    "titulo": "是……的: resaltar cuándo, dónde, cómo o para qué",
+    "zh": "是……的",
+    "explicacion": [
+     "Cuando ya sabemos que algo <b>ha ocurrido</b> y queremos destacar un detalle (<b>cuándo, dónde, cómo, quién</b> o <b>para qué</b>), usamos <b>是……的</b> (shì … de): 是 va delante de lo que se resalta y 的 al final. Se parece a nuestro «fue… cuando / donde / como…»: 我是今天早上到的 «fue esta mañana cuando llegué» → «llegué esta mañana».",
+     "En frases afirmativas e interrogativas el <b>是 se puede omitir</b>: 苹果在哪儿买的？ En la <b>negativa</b>, en cambio, es obligatorio: 我们<b>不是</b>坐出租车去的 «no fuimos en taxi».",
+     "No se usa para cosas que todavía no han pasado y no lleva 了: no se dice *我是昨天到了的. Si el verbo tiene objeto, 的 puede ir delante o detrás de él: 是您姐姐来接的我们 = 是您姐姐来接我们的 «fue su hermana quien vino a recogernos»."
+    ],
+    "estructura": [
+     "Sujeto + 是 + tiempo / lugar / modo / propósito + verbo + 的 → 我是今天早上到的。",
+     "Sujeto + 不是 + … + verbo + 的 → 我们不是坐出租车去的。",
+     "是 + persona + verbo + 的 (+ objeto) → 是您姐姐来接的我们。"
+    ],
+    "ejemplos": [
+     {"zh": "我们是来旅游的。", "py": "Wǒmen shì lái lǚyóu de.", "es": "Hemos venido de viaje.", "nota": "propósito"},
+     {"zh": "你是什么时候到的？", "py": "Nǐ shì shénme shíhou dào de?", "es": "¿Cuándo llegaste?", "nota": "tiempo"},
+     {"zh": "苹果在哪儿买的？", "py": "Píngguǒ zài nǎr mǎi de?", "es": "¿Dónde has comprado las manzanas?", "nota": "lugar, sin 是"},
+     {"zh": "我们不是坐出租车去的。", "py": "Wǒmen bú shì zuò chūzūchē qù de.", "es": "No fuimos en taxi.", "nota": "modo; en la negativa el 是 es obligatorio"},
+     {"zh": "是您姐姐来接的我们。", "py": "Shì nín jiějie lái jiē de wǒmen.", "es": "Fue su hermana quien vino a recogernos.", "nota": "quién"},
+     {"zh": "我是在书店看见安妮的。", "py": "Wǒ shì zài shūdiàn kànjiàn Ānnī de.", "es": "Vi a Annie en la librería.", "nota": "lugar"}
+    ],
+    "ojo": "Si te preguntan 你是什么时候到的？, no contestes *我昨天到了: lo natural es repetir la estructura, 我是昨天到的. Y en la negativa nunca quites el 是: *我们不坐出租车去的 es incorrecto.",
+    "practica": [
+     {"q": "你是什么时候到北京___？", "opciones": ["了", "的", "吗"], "ok": 1, "exp": "Se pregunta por el momento de algo que ya ha pasado: 是……的. «¿Cuándo llegaste a Pekín?»"},
+     {"q": "¿Cómo se dice «No vinimos en taxi»?", "opciones": ["我们没坐出租车来的。", "我们坐出租车不是来的。", "我们不是坐出租车来的。"], "ok": 2, "exp": "En la negativa: 不是 + modo + verbo + 的."},
+     {"q": "A: 你们是来学中文的吗？ B: 不是，我们是来___的。", "opciones": ["旅游", "明天", "坐"], "ok": 0, "exp": "«No, hemos venido de viaje»: 是来旅游的 resalta el propósito."}
+    ]
+   },
+   {
+    "id": "G01-3",
+    "titulo": "Oraciones pivote con 请, 让 y 叫 (pedir a alguien que haga algo)",
+    "zh": "请 / 让 / 叫",
+    "explicacion": [
+     "En una oración pivote (兼语句) hay dos verbos seguidos y el <b>objeto del primero es a la vez el sujeto del segundo</b>: 我请<b>你</b>帮个忙 = «yo te pido a ti» + «tú me echas una mano». En español lo decimos con «que + subjuntivo» o con infinitivo: «te pido que me ayudes», «nos hace hablar en chino».",
+     "Con <b>请</b> (qǐng) es una petición educada o una invitación: 她请我们吃了北京烤鸭 «nos invitó a pato laqueado». Con <b>让</b> (ràng) es pedir, mandar o dejar: 王老师让我们说中文. Con <b>叫</b> (jiào), más coloquial, es decirle a alguien que haga algo: 妈妈叫孩子们回家.",
+     "El orden es fijo: sujeto + 请/让/叫 + persona + verbo (+ objeto). En chino no hay ninguna palabra equivalente a «que»: simplemente se ponen la persona y el segundo verbo detrás."
+    ],
+    "estructura": [
+     "Sujeto + 请/让/叫 + persona + verbo (+ objeto) → 我想请你帮个忙。",
+     "Negación delante del primer verbo → 妈妈不让我去。"
+    ],
+    "ejemplos": [
+     {"zh": "我想请你帮个忙。", "py": "Wǒ xiǎng qǐng nǐ bāng ge máng.", "es": "Quería pedirte un favor."},
+     {"zh": "王老师让我们说中文。", "py": "Wáng lǎoshī ràng wǒmen shuō Zhōngwén.", "es": "La profesora Wang nos hace hablar en chino."},
+     {"zh": "妈妈叫孩子们回家。", "py": "Māma jiào háizimen huí jiā.", "es": "Mamá les dice a los niños que vuelvan a casa."},
+     {"zh": "一飞给我打电话了，让我来接你们。", "py": "Yīfēi gěi wǒ dǎ diànhuà le, ràng wǒ lái jiē nǐmen.", "es": "Yifei me llamó y me pidió que viniera a recogeros."},
+     {"zh": "她请我们吃了北京烤鸭。", "py": "Tā qǐng wǒmen chīle Běijīng Kǎoyā.", "es": "Nos invitó a pato laqueado de Pekín.", "nota": "请 = invitar"},
+     {"zh": "你有事可以叫李文帮忙。", "py": "Nǐ yǒu shì kěyǐ jiào Lǐ Wén bāngmáng.", "es": "Si necesitas algo, puedes pedirle ayuda a Li Wen."}
+    ],
+    "ojo": "No busques un «que»: se dice 我让你说中文, sin nada entre la persona y el verbo. Y la negación va delante de 请/让/叫: 妈妈不让我去 «mamá no me deja ir» (妈妈让我不去 significa otra cosa: «mamá me dice que no vaya»).",
+    "practica": [
+     {"q": "Ordena: 我 / 你 / 请 / 吃饭", "opciones": ["我你请吃饭。", "我请你吃饭。", "我吃饭请你。"], "ok": 1, "exp": "Sujeto + 请 + persona + verbo: 我请你吃饭 «te invito a comer»."},
+     {"q": "王老师___我们说中文。", "opciones": ["是", "的", "让"], "ok": 2, "exp": "让 + persona + verbo: «La profesora Wang nos hace hablar en chino»."},
+     {"q": "¿Qué significa 她请我们吃了北京烤鸭？", "opciones": ["Nos invitó a pato laqueado de Pekín.", "Le pedimos pato laqueado de Pekín.", "Ella no comió pato laqueado de Pekín."], "ok": 0, "exp": "请 + persona + 吃 = invitar a alguien a comer."}
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 2,
+  "puntos": [
+   {
+    "id": "G02-1",
+    "titulo": "还是……吧: «mejor…», «será mejor que…»",
+    "zh": "还是……吧",
+    "explicacion": [
+     "<b>还是……吧</b> (háishi … ba) sirve para elegir la opción que nos parece mejor después de pensarlo un poco, como nuestro «mejor…» o «será mejor que…»: 我们还是打车去吧 «mejor vamos en taxi».",
+     "Normalmente se acaba de mencionar otra posibilidad o un problema (el autobús queda lejos, el taxi es caro…) y 还是 introduce la opción que preferimos. 还是 va delante del verbo (detrás del sujeto, si lo hay) y 吧 al final suaviza la propuesta.",
+     "Para recomendar <b>no</b> hacer algo se combina con <b>别</b> (bié): 还是别看电影了 «mejor no veamos la película». No lo confundas con el 还是 de las preguntas, que significa «o»: 你喝茶还是喝水？ «¿bebes té o agua?»."
+    ],
+    "estructura": [
+     "(Sujeto) + 还是 + verbo … + 吧 → 我们还是打车去吧。",
+     "还是 + 别 + verbo … + 了 → 还是别看电影了。"
+    ],
+    "ejemplos": [
+     {"zh": "我们还是打车去吧。", "py": "Wǒmen háishi dǎchē qù ba.", "es": "Mejor vamos en taxi.", "nota": "texto 1"},
+     {"zh": "那件衣服很好看，还是买那件吧。", "py": "Nà jiàn yīfu hěn hǎokàn, háishi mǎi nà jiàn ba.", "es": "Esa prenda es muy bonita; mejor cómprate esa."},
+     {"zh": "你第一次去北京，还是找个人接你吧。", "py": "Nǐ dì-yī cì qù Běijīng, háishi zhǎo ge rén jiē nǐ ba.", "es": "Es tu primera vez en Pekín; mejor busca a alguien que te recoja."},
+     {"zh": "还是别看电影了，北京大学就很好看！", "py": "Háishi bié kàn diànyǐng le, Běijīng Dàxué jiù hěn hǎokàn!", "es": "Mejor no vamos al cine: ¡la propia universidad ya es preciosa!", "nota": "还是别……了"},
+     {"zh": "打车太贵了，我还是坐公交车去吧。", "py": "Dǎchē tài guì le, wǒ háishi zuò gōngjiāochē qù ba.", "es": "El taxi es demasiado caro; mejor voy en autobús."},
+     {"zh": "明天有雨，我们还是今天去吧。", "py": "Míngtiān yǒu yǔ, wǒmen háishi jīntiān qù ba.", "es": "Mañana va a llover; mejor vamos hoy."}
+    ],
+    "ojo": "Aquí 还是 no significa «todavía es» ni «o»: significa «mejor». Y no te olvides del 吧 final, que hace que la frase suene a sugerencia amable y no a orden.",
+    "practica": [
+     {"q": "车站有点儿远，我们___打车去吧。", "opciones": ["还是", "已经", "就是"], "ok": 0, "exp": "«La parada está un poco lejos; mejor vamos en taxi.»"},
+     {"q": "¿Cómo se dice «Mejor no vayas»?", "opciones": ["你还是去吧。", "你还是别去了。", "你别还是去了。"], "ok": 1, "exp": "还是 + 别 + verbo + 了 recomienda no hacer algo."},
+     {"q": "A: 打车太贵了。 B: 那我们___。", "opciones": ["还是打车去吧", "打车还是吧", "还是坐公交车去吧"], "ok": 2, "exp": "Si el taxi es caro, lo lógico es: «Entonces mejor vamos en autobús»."}
+    ]
+   },
+   {
+    "id": "G02-2",
+    "titulo": "多 detrás de un número: «y pico», «más de»",
+    "zh": "多",
+    "explicacion": [
+     "<b>多</b> (duō) detrás de un número indica que la cantidad es un poco mayor, como «y pico», «-tantos» o «más de»: 四万多名学生 «más de cuarenta mil estudiantes», 二十多个学生 «veintitantos alumnos».",
+     "La posición depende del número. Si es un <b>número redondo</b>, múltiplo de diez (十, 二十, 一百, 三千, 四万…), 多 va <b>justo detrás del número</b>, antes del clasificador: 二十多个人, 三千多名学生.",
+     "Si el número <b>no</b> acaba en cero (一, 五, 九…), 多 va <b>detrás del clasificador</b>: 五块多钱 «cinco yuanes y pico», 两岁多 «dos años y pico». Fíjate en la diferencia: 十多块钱 (entre once y diecinueve yuanes) frente a 十块多钱 (diez yuanes y unos céntimos)."
+    ],
+    "estructura": [
+     "Número redondo + 多 + clasificador + sustantivo → 二十多个学生",
+     "Número no redondo + clasificador + 多 (+ sustantivo) → 五块多钱"
+    ],
+    "ejemplos": [
+     {"zh": "北京大学有四万多名学生呢！", "py": "Běijīng Dàxué yǒu sìwàn duō míng xuésheng ne!", "es": "¡La Universidad de Pekín tiene más de cuarenta mil estudiantes!", "nota": "texto 2"},
+     {"zh": "教室里有二十多个学生。", "py": "Jiàoshì li yǒu èrshí duō ge xuésheng.", "es": "En el aula hay más de veinte estudiantes."},
+     {"zh": "这两个苹果五块多钱。", "py": "Zhè liǎng ge píngguǒ wǔ kuài duō qián.", "es": "Estas dos manzanas cuestan cinco yuanes y pico.", "nota": "número no redondo: 多 tras el clasificador"},
+     {"zh": "北京大学有三千多名外国学生。", "py": "Běijīng Dàxué yǒu sānqiān duō míng wàiguó xuésheng.", "es": "La Universidad de Pekín tiene más de tres mil estudiantes extranjeros."},
+     {"zh": "我有二十多本中文书。", "py": "Wǒ yǒu èrshí duō běn Zhōngwén shū.", "es": "Tengo más de veinte libros en chino."},
+     {"zh": "我家的小狗两岁多了。", "py": "Wǒ jiā de xiǎogǒu liǎng suì duō le.", "es": "Mi perrito tiene dos años y pico."}
+    ],
+    "ojo": "No pongas 多 delante del número como en español «más de veinte»: *多二十个学生 es incorrecto. Y cuidado con el orden: 十多块 (once a diecinueve) no es lo mismo que 十块多 (diez y pico).",
+    "practica": [
+     {"q": "教室里有二十___学生。", "opciones": ["个多", "多个", "多"], "ok": 1, "exp": "二十 es redondo, así que 多 va antes del clasificador: 二十多个学生."},
+     {"q": "«Cinco yuanes y pico»", "opciones": ["五多块钱", "多五块钱", "五块多钱"], "ok": 2, "exp": "五 no es redondo: 多 va detrás del clasificador 块."},
+     {"q": "¿Qué significa 北京大学有四万多名学生？", "opciones": ["Tiene más de cuarenta mil estudiantes.", "Tiene unos cuatro mil estudiantes.", "Tiene cuarenta y tantos estudiantes."], "ok": 0, "exp": "四万 = cuarenta mil; 四万多 = más de cuarenta mil."}
+    ]
+   },
+   {
+    "id": "G02-3",
+    "titulo": "Verbos y frases delante del sustantivo con 的 («el … que …»)",
+    "zh": "……的 + sustantivo",
+    "explicacion": [
+     "En chino, todo lo que describe a un sustantivo va <b>delante</b> de él, unido con <b>的</b> (de). No solo adjetivos: también <b>verbos</b>, verbos con objeto y frases enteras con sujeto. 学中文的学生 = «los estudiantes que estudian chino». En español usamos una oración de relativo con «que» detrás del sustantivo; en chino va delante y sin «que».",
+     "Verbo (+ objeto) + 的 + sustantivo: 唱歌的人 «la persona que canta». Sujeto + verbo + 的 + sustantivo: 他们卖的电影票 «las entradas que (ellos) venden», 朋友给我的杯子 «la taza que me dio un amigo».",
+     "Truco para entender estas frases: busca el 的; lo que va detrás es el sustantivo principal y lo que va delante es el «que…». Si por el contexto se sabe de qué hablamos, el sustantivo se puede omitir: 这是谁买的？ «¿Quién ha comprado esto?» (literalmente, «¿esto es lo que compró quién?»)."
+    ],
+    "estructura": [
+     "Verbo (+ objeto) + 的 + sustantivo → 学中文的学生",
+     "Sujeto + verbo + 的 + sustantivo → 他们卖的电影票"
+    ],
+    "ejemplos": [
+     {"zh": "他们卖的电影票也很便宜。", "py": "Tāmen mài de diànyǐngpiào yě hěn piányi.", "es": "Las entradas que venden también son muy baratas.", "nota": "texto 3"},
+     {"zh": "现在学中文的学生很多。", "py": "Xiànzài xué Zhōngwén de xuésheng hěn duō.", "es": "Ahora hay muchos estudiantes que aprenden chino."},
+     {"zh": "这是朋友给我的杯子。", "py": "Zhè shì péngyou gěi wǒ de bēizi.", "es": "Esta es la taza que me dio un amigo."},
+     {"zh": "你认识那个唱歌的人吗？", "py": "Nǐ rènshi nàge chàng gē de rén ma?", "es": "¿Conoces a esa persona que está cantando?"},
+     {"zh": "我很喜欢你做的菜。", "py": "Wǒ hěn xǐhuan nǐ zuò de cài.", "es": "Me gusta mucho la comida que haces."},
+     {"zh": "来北京旅游的人很多。", "py": "Lái Běijīng lǚyóu de rén hěn duō.", "es": "Hay mucha gente que viene a Pekín de viaje."}
+    ],
+    "ojo": "No sigas el orden del español (*学生学中文的, *人唱歌的): la descripción con 的 va siempre delante del sustantivo. Y no olvides el 的: *他们卖电影票很便宜 cambia el sentido.",
+    "practica": [
+     {"q": "«las entradas que venden»", "opciones": ["卖的票", "票卖的", "的卖票"], "ok": 0, "exp": "Verbo + 的 + sustantivo: 卖的票."},
+     {"q": "A: 这是谁___的苹果？ B: 我买的，很好吃。", "opciones": ["是", "买", "们"], "ok": 1, "exp": "谁买的苹果 = «las manzanas que ha comprado quién»: «¿Quién ha comprado estas manzanas?»"},
+     {"q": "¿Qué significa 我很喜欢你做的菜？", "opciones": ["Me gusta mucho cocinar para ti.", "Quiero que me hagas la comida.", "Me gusta mucho la comida que haces."], "ok": 2, "exp": "你做的菜 = «la comida que tú haces»."}
+    ]
+   }
+  ]
+ },
+ {
+  "tema": 3,
+  "puntos": [
+   {
+    "id": "G03-1",
+    "titulo": "Complemento de resultado (做好, 吃完, 来晚…)",
+    "zh": "结果补语",
+    "explicacion": [
+     "En chino el verbo muchas veces solo indica la acción; para decir que se ha <b>conseguido un resultado</b> se pone detrás otro verbo o un adjetivo: el <b>complemento de resultado</b>. 做 «hacer» + 好 «bien» = 做好 «dejar hecho»; 吃 «comer» + 完 «acabar» = 吃完 «terminar de comer»; 来 «venir» + 晚 «tarde» = 来晚 «llegar tarde».",
+     "Los más frecuentes: <b>完</b> (wán, terminar: 做完, 吃完), <b>好</b> (hǎo, dejar listo o bien hecho: 做好, 洗好, 想好), <b>见</b> (jiàn, percibir: 看见, 听见), <b>到</b> (dào, conseguir: 找到, 看到), <b>懂</b> (dǒng, entender: 看懂), <b>会</b> (huì, aprender a: 学会), <b>对</b> (duì, hacer bien: 写对) y <b>晚</b> (wǎn, tarde: 来晚).",
+     "Negativa: <b>没(有)</b> delante del verbo y <b>sin 了</b>: 我没吃完饭. Hay tres formas de preguntar: 你吃完饭了吗？ / 小雪来晚了没有？ / 你学没学会？ El verbo y su complemento van siempre juntos y el objeto va detrás de los dos: 吃完饭, no *吃饭完."
+    ],
+    "estructura": [
+     "Verbo + resultado (+ objeto) + 了 → 菜都做好了。",
+     "没(有) + verbo + resultado (+ objeto) → 我没吃完饭。",
+     "Verbo + 没 + verbo + resultado？ → 你学没学会？"
+    ],
+    "ejemplos": [
+     {"zh": "菜都做好了。", "py": "Cài dōu zuòhǎo le.", "es": "La comida ya está hecha.", "nota": "好 = listo"},
+     {"zh": "我吃完饭了。", "py": "Wǒ chīwán fàn le.", "es": "Ya he terminado de comer.", "nota": "完 = terminar"},
+     {"zh": "工作太多了，下班的时候没做完。", "py": "Gōngzuò tài duō le, xiàbān de shíhou méi zuòwán.", "es": "Había demasiado trabajo y a la hora de salir no lo había terminado.", "nota": "negativa sin 了"},
+     {"zh": "小雪来晚了没有？", "py": "Xiǎoxuě láiwǎn le méiyǒu?", "es": "¿Ha llegado tarde Xiaoxue?"},
+     {"zh": "这本书你看懂了吗？", "py": "Zhè běn shū nǐ kàndǒng le ma?", "es": "¿Has entendido este libro?"},
+     {"zh": "我在桌子上找到了我的手机。", "py": "Wǒ zài zhuōzi shang zhǎodàole wǒ de shǒujī.", "es": "Encontré mi móvil encima de la mesa."}
+    ],
+    "ojo": "Para negar un resultado no uses 不: se dice 我没做完, no *我不做完. Y en la negativa se quita el 了: *我没吃完饭了 es incorrecto. Cuidado también con 看 / 看见: 我看了 «miré», 我看见了 «vi (lo conseguí ver)».",
+    "practica": [
+     {"q": "A: 你想去哪儿？ B: 我还没想___呢。", "opciones": ["好", "了", "的"], "ok": 0, "exp": "想好 = «decidir, tenerlo pensado»: «Todavía no lo he decidido»."},
+     {"q": "¿Cuál es la negación correcta?", "opciones": ["我不吃完饭。", "我没吃完饭了。", "我没吃完饭。"], "ok": 2, "exp": "Negativa: 没 + verbo + resultado, sin 了: «No he terminado de comer»."},
+     {"q": "A: 老师，我写完了。 B: 很好，这几个字都写___了。", "opciones": ["完", "对", "见"], "ok": 1, "exp": "写对 = escribir correctamente: «Muy bien, has escrito bien todos estos caracteres»."}
+    ]
+   },
+   {
+    "id": "G03-2",
+    "titulo": "Duplicación del verbo (1): 想一想, 休息休息, 帮帮忙",
+    "zh": "AA / ABAB / AAB",
+    "explicacion": [
+     "Los verbos de acción se pueden <b>duplicar</b> para indicar que la acción es <b>breve</b>, se hace <b>un poco</b> o <b>para probar</b>: 想一想 «piénsalo un poco», 休息休息 «descansar un rato». El tono es relajado y amable, muy propio de la lengua hablada; en español decimos «un poco», «un momento», «un rato» o «echar un vistazo».",
+     "Formas: verbo de una sílaba → <b>A(一)A</b>: 想想 o 想一想, 看看 o 看一看 (la segunda sílaba y el 一 se pronuncian átonos). Verbo de dos sílabas → <b>ABAB</b>: 休息休息, 介绍介绍. Verbo separable (verbo + objeto, como 帮忙 o 洗手) → <b>AAB</b>: 帮帮忙, 洗洗手.",
+     "El sentido es parecido al de verbo + <b>一下</b> (yíxià): 看看 ≈ 看一下. Se usa mucho para pedir o proponer algo con suavidad: 你能过来帮帮忙吗？ «¿Puedes venir a echar una mano?»."
+    ],
+    "estructura": [
+     "A(一)A → 想想 / 想一想",
+     "ABAB → 休息休息",
+     "AAB (verbo separable) → 帮帮忙、洗洗手"
+    ],
+    "ejemplos": [
+     {"zh": "那你再想一想，你想好了，我来买票。", "py": "Nà nǐ zài xiǎng yi xiǎng, nǐ xiǎnghǎo le, wǒ lái mǎi piào.", "es": "Pues piénsalo un poco más; cuando lo decidas, compro los billetes.", "nota": "A一A"},
+     {"zh": "我有点儿累，现在想休息休息。", "py": "Wǒ yǒudiǎnr lèi, xiànzài xiǎng xiūxi xiūxi.", "es": "Estoy un poco cansado; ahora quiero descansar un rato.", "nota": "ABAB"},
+     {"zh": "你能过来帮帮忙吗？", "py": "Nǐ néng guòlái bāngbang máng ma?", "es": "¿Puedes venir a echar una mano?", "nota": "AAB"},
+     {"zh": "我去洗洗手。", "py": "Wǒ qù xǐxi shǒu.", "es": "Voy a lavarme las manos.", "nota": "AAB"},
+     {"zh": "你去问问老师吧。", "py": "Nǐ qù wènwen lǎoshī ba.", "es": "Pregúntale a la profesora."},
+     {"zh": "我给你介绍介绍，这是我的朋友李文。", "py": "Wǒ gěi nǐ jièshào jièshào, zhè shì wǒ de péngyou Lǐ Wén.", "es": "Te presento: este es mi amigo Li Wen."}
+    ],
+    "ojo": "Con verbos de dos sílabas no se dice *休休息息 ni *休息一休息, y en los separables solo se repite la primera parte: 帮帮忙, no *帮忙帮忙. Tampoco se duplican verbos que no son de acción, como 是, 有, 在 o 喜欢.",
+    "practica": [
+     {"q": "我给你___，这是我的朋友李文。", "opciones": ["介介绍绍", "介绍介绍", "介绍一介绍"], "ok": 1, "exp": "Verbo de dos sílabas: ABAB → 介绍介绍 «te presento»."},
+     {"q": "你能过来___吗？", "opciones": ["帮忙帮忙", "忙帮忙", "帮帮忙"], "ok": 2, "exp": "帮忙 es separable: se repite solo 帮 → 帮帮忙."},
+     {"q": "¿Qué significa 你再想一想？", "opciones": ["Piénsalo un poco más.", "Piensa en una cosa.", "No lo pienses más."], "ok": 0, "exp": "想一想 = pensar un poco; 再 = otra vez, más."}
+    ]
+   },
+   {
+    "id": "G03-3",
+    "titulo": "Duplicación del verbo (2): en pasado (看了看, 休息了一下, 帮了帮忙)",
+    "zh": "A了A / AB了一下 / A了AB",
+    "explicacion": [
+     "Cuando la acción breve <b>ya ha ocurrido</b>, la duplicación lleva <b>了</b> en medio. Con verbos de una sílaba: <b>A了A</b>: 我看了看网上的介绍 «eché un vistazo a la información de internet».",
+     "Los verbos de dos sílabas normalmente <b>no</b> se duplican en pasado; se usa <b>AB了一下</b>: 我休息了一下 «descansé un poco» (no *休息了休息). Los verbos separables siguen <b>A了AB</b>: 他昨天来帮了帮忙 «ayer vino a echar una mano».",
+     "El 了 va siempre entre las dos partes (看了看), nunca al final de la duplicación (*看看了). Es como decir en español «eché un vistazo», «descansé un rato», «estuve un rato…»."
+    ],
+    "estructura": [
+     "A了A → 看了看",
+     "AB了一下 → 休息了一下",
+     "A了AB (verbo separable) → 帮了帮忙、洗了洗手"
+    ],
+    "ejemplos": [
+     {"zh": "我看了看网上的介绍。", "py": "Wǒ kànle kàn wǎngshang de jièshào.", "es": "Eché un vistazo a la información de internet.", "nota": "A了A"},
+     {"zh": "我休息了一下，现在觉得不累了。", "py": "Wǒ xiūxile yíxià, xiànzài juéde bú lèi le.", "es": "He descansado un poco y ya no me siento cansado.", "nota": "AB了一下"},
+     {"zh": "他昨天来帮了帮忙。", "py": "Tā zuótiān lái bāngle bang máng.", "es": "Ayer vino a echar una mano.", "nota": "A了AB"},
+     {"zh": "我在桌子上找了找，但没有。", "py": "Wǒ zài zhuōzi shang zhǎole zhǎo, dàn méiyǒu.", "es": "Busqué un poco en la mesa, pero no estaba."},
+     {"zh": "昨天下午我在房间看了看书，写了写字。", "py": "Zuótiān xiàwǔ wǒ zài fángjiān kànle kàn shū, xiěle xiě zì.", "es": "Ayer por la tarde estuve en mi habitación leyendo un poco y escribiendo algunos caracteres."},
+     {"zh": "他看了看我，没说话。", "py": "Tā kànle kàn wǒ, méi shuō huà.", "es": "Me miró un momento y no dijo nada."}
+    ],
+    "ojo": "Es muy habitual poner el 了 al final (*我看看了): lo correcto es 我看了看. Y con verbos de dos sílabas usa 了一下: 我休息了一下, no *我休息了休息.",
+    "practica": [
+     {"q": "我___网上的介绍，这个时候去西安很不错。", "opciones": ["看看了", "看了看", "了看看"], "ok": 1, "exp": "Pasado de un verbo de una sílaba duplicado: A了A → 看了看."},
+     {"q": "¿Cómo se dice «Descansé un poco»?", "opciones": ["我休息了休息。", "我休息休息了。", "我休息了一下。"], "ok": 2, "exp": "Los verbos de dos sílabas en pasado: AB了一下."},
+     {"q": "他昨天来___。", "opciones": ["帮了帮忙", "帮忙了帮忙", "帮帮忙了"], "ok": 0, "exp": "Verbo separable en pasado: A了AB → 帮了帮忙 «vino a echar una mano»."}
+    ]
+   }
+  ]
+ }
+]

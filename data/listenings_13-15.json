@@ -1,0 +1,181 @@
+[
+ {
+  "id": "L13a",
+  "tema": 13,
+  "titulo": "Regalos de Año Nuevo para la familia",
+  "escena": "Después de clase, Annie y Chen Tianzhong hablan de los regalos que van a hacer a su familia por Año Nuevo.",
+  "personajes": {"安妮": "f", "陈天中": "m"},
+  "lineas": [
+   {"sp": "安妮", "zh": "天中，新年就要到了，你给家人准备礼物了吗？", "py": "Tiānzhōng, xīnnián jiù yào dào le, nǐ gěi jiārén zhǔnbèi lǐwù le ma?", "es": "Tianzhong, ya llega el Año Nuevo. ¿Has preparado regalos para tu familia?"},
+   {"sp": "陈天中", "zh": "准备了。我想送给妈妈一个手机，她的手机太老了。", "py": "Zhǔnbèi le. Wǒ xiǎng sòng gěi māma yí gè shǒujī, tā de shǒujī tài lǎo le.", "es": "Sí. Quiero regalarle a mi madre un móvil, el suyo es demasiado viejo."},
+   {"sp": "安妮", "zh": "你在哪儿买的？商店里的手机都很贵吧？", "py": "Nǐ zài nǎr mǎi de? Shāngdiàn li de shǒujī dōu hěn guì ba?", "es": "¿Dónde lo has comprado? Los móviles de las tiendas son todos carísimos, ¿no?"},
+   {"sp": "陈天中", "zh": "我是上网买的，比商店里的便宜一些。", "py": "Wǒ shì shàngwǎng mǎi de, bǐ shāngdiàn li de piányi yìxiē.", "es": "Lo compré por internet; es un poco más barato que en las tiendas."},
+   {"sp": "安妮", "zh": "便宜多少钱？", "py": "Piányi duōshao qián?", "es": "¿Cuánto más barato?"},
+   {"sp": "陈天中", "zh": "比商店里的便宜两百块。", "py": "Bǐ shāngdiàn li de piányi liǎng bǎi kuài.", "es": "Doscientos yuanes más barato que en la tienda."},
+   {"sp": "安妮", "zh": "真不错！你还送给谁礼物？", "py": "Zhēn búcuò! Nǐ hái sòng gěi shéi lǐwù?", "es": "¡Qué bien! ¿Y a quién más le haces regalos?"},
+   {"sp": "陈天中", "zh": "我弟弟比我小五岁，很爱看书，所以我送给他两本书。", "py": "Wǒ dìdi bǐ wǒ xiǎo wǔ suì, hěn ài kàn shū, suǒyǐ wǒ sòng gěi tā liǎng běn shū.", "es": "Mi hermano pequeño es cinco años menor que yo y le encanta leer, así que le regalo dos libros."},
+   {"sp": "安妮", "zh": "你对家人真好！我也想买一些中国茶，拿回去送给妈妈。", "py": "Nǐ duì jiārén zhēn hǎo! Wǒ yě xiǎng mǎi yìxiē Zhōngguó chá, ná huíqù sòng gěi māma.", "es": "¡Qué bueno eres con tu familia! Yo también quiero comprar té chino para llevárselo a mi madre."},
+   {"sp": "陈天中", "zh": "那我们下课后一起去商场看看吧。", "py": "Nà wǒmen xiàkè hòu yìqǐ qù shāngchǎng kànkan ba.", "es": "Entonces vamos juntos al centro comercial después de clase a echar un vistazo."},
+   {"sp": "安妮", "zh": "好啊！商场离学校远不远？", "py": "Hǎo a! Shāngchǎng lí xuéxiào yuǎn bu yuǎn?", "es": "¡Vale! ¿Está lejos el centro comercial de la escuela?"},
+   {"sp": "陈天中", "zh": "不远，坐公交车一会儿就到了。", "py": "Bù yuǎn, zuò gōngjiāochē yíhuìr jiù dào le.", "es": "No, en autobús se llega en un momento."},
+   {"sp": "安妮", "zh": "太好了！希望商场里还有好茶。", "py": "Tài hǎo le! Xīwàng shāngchǎng li hái yǒu hǎo chá.", "es": "¡Genial! Ojalá aún quede buen té en el centro comercial."},
+   {"sp": "陈天中", "zh": "会有的，新年的时候商场里东西很多。", "py": "Huì yǒu de, xīnnián de shíhou shāngchǎng li dōngxi hěn duō.", "es": "Seguro que sí; en Año Nuevo hay de todo en los centros comerciales."}
+  ],
+  "preguntas": [
+   {"q": "¿Qué le va a regalar Chen Tianzhong a su madre?", "lang": "es", "a": ["movil", "un movil", "móvil", "un móvil", "telefono", "un telefono", "telefono movil"], "r": "Un móvil (手机)."},
+   {"q": "¿Cómo lo ha comprado? (en pinyin)", "lang": "py", "a": ["shàngwǎng", "wǎngshang", "wǎngshàng", "zài wǎngshang"], "r": "Por internet · shàngwǎng (上网)."},
+   {"q": "¿Cuánto más barato es que en la tienda?", "lang": "es", "a": ["200", "doscientos", "200 yuanes", "doscientos yuanes", "200 kuai"], "r": "Doscientos yuanes más barato (便宜两百块)."},
+   {"q": "¿Cuántos años menor que él es su hermano? (en pinyin)", "lang": "py", "a": ["wǔ suì", "wǔ"], "r": "Cinco años · wǔ suì (小五岁)."},
+   {"q": "¿Adónde van a ir después de clase?", "lang": "es", "a": ["centro comercial", "al centro comercial", "un centro comercial", "a un centro comercial"], "r": "Al centro comercial (商场)."}
+  ]
+ },
+ {
+  "id": "L13b",
+  "tema": 13,
+  "titulo": "¿Cuántas palabras hoy?",
+  "escena": "Li Wen y Bai Jiayue comparan sus clases de chino y se intercambian pequeños regalos.",
+  "personajes": {"李文": "m", "白家月": "f"},
+  "lineas": [
+   {"sp": "李文", "zh": "家月，你们班有多少学生？", "py": "Jiāyuè, nǐmen bān yǒu duōshao xuésheng?", "es": "Jiayue, ¿cuántos alumnos hay en tu clase?"},
+   {"sp": "白家月", "zh": "二十个。比你们班多吗？", "py": "Èrshí gè. Bǐ nǐmen bān duō ma?", "es": "Veinte. ¿Somos más que en la tuya?"},
+   {"sp": "李文", "zh": "比我们班多三个。你们的汉语老师是谁？", "py": "Bǐ wǒmen bān duō sān gè. Nǐmen de Hànyǔ lǎoshī shì shéi?", "es": "Tres más que en mi clase. ¿Quién es vuestra profesora de chino?"},
+   {"sp": "白家月", "zh": "是王一飞老师。她教得非常好，我们都很爱上她的课。", "py": "Shì Wáng Yīfēi lǎoshī. Tā jiāo de fēicháng hǎo, wǒmen dōu hěn ài shàng tā de kè.", "es": "La profesora Wang Yifei. Enseña muy bien y a todos nos encanta su clase."},
+   {"sp": "李文", "zh": "你们每天学多少个词？", "py": "Nǐmen měi tiān xué duōshao gè cí?", "es": "¿Cuántas palabras aprendéis cada día?"},
+   {"sp": "白家月", "zh": "昨天学了十个，今天比昨天多五个。", "py": "Zuótiān xuéle shí gè, jīntiān bǐ zuótiān duō wǔ gè.", "es": "Ayer aprendimos diez y hoy, cinco más que ayer."},
+   {"sp": "李文", "zh": "这么多！你们都记住了吗？", "py": "Zhème duō! Nǐmen dōu jìzhù le ma?", "es": "¡Cuántas! ¿Os las habéis aprendido todas?"},
+   {"sp": "白家月", "zh": "记住了。王老师让我们在本子上写，每个词写五次。", "py": "Jìzhù le. Wáng lǎoshī ràng wǒmen zài běnzi shang xiě, měi gè cí xiě wǔ cì.", "es": "Sí. La profesora Wang nos hace escribirlas en el cuaderno, cada palabra cinco veces."},
+   {"sp": "李文", "zh": "我的本子用完了，你能拿给我一个吗？", "py": "Wǒ de běnzi yòngwán le, nǐ néng ná gěi wǒ yí gè ma?", "es": "Se me ha acabado el cuaderno, ¿me puedes dar uno?"},
+   {"sp": "白家月", "zh": "可以。我这儿有两个，送给你一个吧。", "py": "Kěyǐ. Wǒ zhèr yǒu liǎng gè, sòng gěi nǐ yí gè ba.", "es": "Claro. Tengo dos, te regalo uno."},
+   {"sp": "李文", "zh": "谢谢！你的本子比我的好看一点儿。", "py": "Xièxie! Nǐ de běnzi bǐ wǒ de hǎokàn yìdiǎnr.", "es": "¡Gracias! Tu cuaderno es un poco más bonito que el mío."},
+   {"sp": "白家月", "zh": "是我妈妈送给我的新年礼物。", "py": "Shì wǒ māma sòng gěi wǒ de xīnnián lǐwù.", "es": "Es un regalo de Año Nuevo de mi madre."},
+   {"sp": "李文", "zh": "那我明天拿给你一杯咖啡吧。", "py": "Nà wǒ míngtiān ná gěi nǐ yì bēi kāfēi ba.", "es": "Entonces mañana te traigo un café."},
+   {"sp": "白家月", "zh": "好啊，我最喜欢喝咖啡了！", "py": "Hǎo a, wǒ zuì xǐhuan hē kāfēi le!", "es": "¡Vale, me encanta el café!"}
+  ],
+  "preguntas": [
+   {"q": "¿Cuántos alumnos hay en la clase de Bai Jiayue? (en pinyin)", "lang": "py", "a": ["èrshí", "èrshí gè"], "r": "Veinte · èrshí gè (二十个)."},
+   {"q": "¿Cuántos alumnos más que la clase de Li Wen?", "lang": "es", "a": ["3", "tres", "tres mas", "tres más", "tres alumnos"], "r": "Tres más (比我们班多三个)."},
+   {"q": "¿Cuántas palabras han aprendido hoy?", "lang": "es", "a": ["15", "quince", "quince palabras"], "r": "Quince: ayer diez y hoy cinco más (今天比昨天多五个)."},
+   {"q": "¿Cuántas veces escriben cada palabra?", "lang": "es", "a": ["5", "cinco", "cinco veces", "5 veces"], "r": "Cinco veces (写五次)."},
+   {"q": "¿Qué le va a llevar Li Wen mañana a Bai Jiayue? (en pinyin)", "lang": "py", "a": ["kāfēi", "yì bēi kāfēi"], "r": "Un café · kāfēi (一杯咖啡)."}
+  ]
+ },
+ {
+  "id": "L14a",
+  "tema": 14,
+  "titulo": "¿A quién espera Annie?",
+  "escena": "El día de Año Nuevo, Chen Tianzhong y Wang Yixue ven a Annie esperando en la puerta de la escuela.",
+  "personajes": {"陈天中": "m", "王一雪": "f", "安妮": "f"},
+  "lineas": [
+   {"sp": "陈天中", "zh": "一雪，你看，学校门口站着很多人。", "py": "Yīxuě, nǐ kàn, xuéxiào ménkǒu zhànzhe hěn duō rén.", "es": "Yixue, mira, hay mucha gente de pie en la puerta de la escuela."},
+   {"sp": "王一雪", "zh": "他们手里都拿着花，可能在等什么人。", "py": "Tāmen shǒuli dōu názhe huā, kěnéng zài děng shénme rén.", "es": "Todos llevan flores en la mano; a lo mejor están esperando a alguien."},
+   {"sp": "陈天中", "zh": "今天是新年，可能在等家人吧。", "py": "Jīntiān shì xīnnián, kěnéng zài děng jiārén ba.", "es": "Hoy es Año Nuevo; seguramente esperan a su familia."},
+   {"sp": "王一雪", "zh": "你看那个女孩儿，眼睛大大的，多漂亮啊！", "py": "Nǐ kàn nàge nǚháir, yǎnjing dàdà de, duō piàoliang a!", "es": "Mira esa chica, con esos ojos tan grandes, ¡qué guapa!"},
+   {"sp": "陈天中", "zh": "她是我们班的同学安妮。我们过去吧。", "py": "Tā shì wǒmen bān de tóngxué Ānnī. Wǒmen guòqù ba.", "es": "Es Annie, una compañera de mi clase. Vamos allí."},
+   {"sp": "王一雪", "zh": "安妮，你在这儿等谁啊？", "py": "Ānnī, nǐ zài zhèr děng shéi a?", "es": "Annie, ¿a quién esperas aquí?"},
+   {"sp": "安妮", "zh": "我在等我妈妈。她从美国飞过来看我。", "py": "Wǒ zài děng wǒ māma. Tā cóng Měiguó fēi guòlái kàn wǒ.", "es": "Espero a mi madre. Viene en avión desde Estados Unidos para verme."},
+   {"sp": "陈天中", "zh": "多好啊！你妈妈是第一次来中国吗？", "py": "Duō hǎo a! Nǐ māma shì dì-yī cì lái Zhōngguó ma?", "es": "¡Qué bien! ¿Es la primera vez que tu madre viene a China?"},
+   {"sp": "安妮", "zh": "是啊。她说我一个人在这儿过年多没意思，所以就过来了。", "py": "Shì a. Tā shuō wǒ yí gè rén zài zhèr guònián duō méi yìsi, suǒyǐ jiù guòlái le.", "es": "Sí. Dice que pasar el Año Nuevo aquí yo sola sería muy aburrido, así que ha venido."},
+   {"sp": "王一雪", "zh": "你看，那边走过来一个人，是不是你妈妈？", "py": "Nǐ kàn, nàbiān zǒu guòlái yí gè rén, shì bu shì nǐ māma?", "es": "Mira, por allí viene alguien andando, ¿es tu madre?"},
+   {"sp": "安妮", "zh": "是她！妈妈，我在这儿！", "py": "Shì tā! Māma, wǒ zài zhèr!", "es": "¡Es ella! ¡Mamá, estoy aquí!"},
+   {"sp": "陈天中", "zh": "她手里拿着那么多东西，我们去帮帮她吧。", "py": "Tā shǒuli názhe nàme duō dōngxi, wǒmen qù bāngbang tā ba.", "es": "Lleva muchísimas cosas en las manos; vamos a ayudarla."},
+   {"sp": "安妮", "zh": "谢谢你们！晚上来我家吃饭吧，我妈妈做的菜多好吃啊！", "py": "Xièxie nǐmen! Wǎnshang lái wǒ jiā chī fàn ba, wǒ māma zuò de cài duō hǎochī a!", "es": "¡Gracias! Venid a cenar a mi casa esta noche, ¡la comida de mi madre está riquísima!"},
+   {"sp": "王一雪", "zh": "太好了！", "py": "Tài hǎo le!", "es": "¡Genial!"}
+  ],
+  "preguntas": [
+   {"q": "¿Qué hay en la puerta de la escuela?", "lang": "es", "a": ["mucha gente", "gente", "muchas personas", "personas", "mucha gente de pie"], "r": "Mucha gente de pie (站着很多人)."},
+   {"q": "¿A quién espera Annie?", "lang": "es", "a": ["madre", "su madre", "a su madre", "mama", "su mama"], "r": "A su madre (妈妈)."},
+   {"q": "¿De qué país viene su madre? (en pinyin)", "lang": "py", "a": ["Měiguó"], "r": "De Estados Unidos · Měiguó (美国)."},
+   {"q": "¿Por qué ha venido la madre?", "lang": "es", "a": ["aburrido", "sola", "para que no este sola", "porque esta sola", "año nuevo sola"], "r": "Porque pasar el Año Nuevo sola sería muy aburrido (一个人过年多没意思)."},
+   {"q": "¿Qué lleva la madre en las manos? (en pinyin)", "lang": "py", "a": ["dōngxi", "hěn duō dōngxi", "nàme duō dōngxi"], "r": "Muchas cosas · dōngxi (那么多东西)."}
+  ]
+ },
+ {
+  "id": "L14b",
+  "tema": 14,
+  "titulo": "Un piso para Yang Tongle",
+  "escena": "Yang Tongle va a ver un piso y le pide a Wang Yifei que le acompañe y le dé su opinión.",
+  "personajes": {"杨同乐": "m", "王一飞": "f"},
+  "lineas": [
+   {"sp": "杨同乐", "zh": "一飞，你帮我看看，这个房子怎么样？", "py": "Yīfēi, nǐ bāng wǒ kànkan, zhège fángzi zěnmeyàng?", "es": "Yifei, ayúdame a decidir: ¿qué te parece este piso?"},
+   {"sp": "王一飞", "zh": "这个房子多大啊！里面有几个房间？", "py": "Zhège fángzi duō dà a! Lǐmiàn yǒu jǐ gè fángjiān?", "es": "¡Qué grande es! ¿Cuántas habitaciones tiene?"},
+   {"sp": "杨同乐", "zh": "有三个房间，还有两个洗手间。", "py": "Yǒu sān gè fángjiān, hái yǒu liǎng gè xǐshǒujiān.", "es": "Tiene tres habitaciones y dos baños."},
+   {"sp": "王一飞", "zh": "楼下住着什么人？", "py": "Lóu xià zhùzhe shénme rén?", "es": "¿Quién vive abajo?"},
+   {"sp": "杨同乐", "zh": "楼下住着一位老人，他每天早上都在外面跑步。", "py": "Lóu xià zhùzhe yí wèi lǎorén, tā měi tiān zǎoshang dōu zài wàimiàn pǎobù.", "es": "Abajo vive un señor mayor que sale a correr todas las mañanas."},
+   {"sp": "王一飞", "zh": "那多好啊！这里离你工作的地方远不远？", "py": "Nà duō hǎo a! Zhèlǐ lí nǐ gōngzuò de dìfang yuǎn bu yuǎn?", "es": "¡Qué bien! ¿Está lejos de tu trabajo?"},
+   {"sp": "杨同乐", "zh": "不太远，坐地铁半个小时就到了。", "py": "Bú tài yuǎn, zuò dìtiě bàn gè xiǎoshí jiù dào le.", "es": "No mucho: en metro se llega en media hora."},
+   {"sp": "王一飞", "zh": "房子前面是什么？", "py": "Fángzi qiánmiàn shì shénme?", "es": "¿Y qué hay delante de la casa?"},
+   {"sp": "杨同乐", "zh": "前面有很多树，还有几个小孩儿在那儿玩儿。", "py": "Qiánmiàn yǒu hěn duō shù, hái yǒu jǐ gè xiǎoháir zài nàr wánr.", "es": "Hay muchos árboles, y unos cuantos niños jugando."},
+   {"sp": "王一飞", "zh": "我们上去看看吧。房子在几楼？", "py": "Wǒmen shàngqù kànkan ba. Fángzi zài jǐ lóu?", "es": "Subamos a verlo. ¿En qué piso está?"},
+   {"sp": "杨同乐", "zh": "在五楼。楼不高，我们走上去吧。", "py": "Zài wǔ lóu. Lóu bù gāo, wǒmen zǒu shàngqù ba.", "es": "En el quinto. El edificio no es alto, subamos andando."},
+   {"sp": "王一飞", "zh": "五楼？走上去多累啊！", "py": "Wǔ lóu? Zǒu shàngqù duō lèi a!", "es": "¿El quinto? ¡Qué cansado subir andando!"},
+   {"sp": "杨同乐", "zh": "到了。你看，房间里放着一些新桌子。", "py": "Dào le. Nǐ kàn, fángjiān li fàngzhe yìxiē xīn zhuōzi.", "es": "Ya hemos llegado. Mira, en la habitación hay unas mesas nuevas."},
+   {"sp": "王一飞", "zh": "真不错！我觉得你就住这儿吧。", "py": "Zhēn búcuò! Wǒ juéde nǐ jiù zhù zhèr ba.", "es": "¡Está genial! Yo creo que deberías quedártelo."}
+  ],
+  "preguntas": [
+   {"q": "¿Cuántos baños tiene el piso? (en pinyin)", "lang": "py", "a": ["liǎng gè", "liǎng", "liǎng gè xǐshǒujiān"], "r": "Dos · liǎng gè xǐshǒujiān (两个洗手间)."},
+   {"q": "¿Quién vive en el piso de abajo?", "lang": "es", "a": ["anciano", "un anciano", "un señor mayor", "señor mayor", "una persona mayor", "persona mayor", "un hombre mayor"], "r": "Un señor mayor (一位老人)."},
+   {"q": "¿Cuánto tarda en metro hasta el trabajo?", "lang": "es", "a": ["media hora", "30 minutos", "treinta minutos"], "r": "Media hora (半个小时)."},
+   {"q": "¿En qué piso está la vivienda? (en pinyin)", "lang": "py", "a": ["wǔ lóu", "wǔ"], "r": "En el quinto · wǔ lóu (五楼)."},
+   {"q": "¿Cómo suben?", "lang": "es", "a": ["andando", "a pie", "caminando", "por la escalera", "por las escaleras"], "r": "Andando (走上去)."}
+  ]
+ },
+ {
+  "id": "L15a",
+  "tema": 15,
+  "titulo": "Otra vez a Xi'an",
+  "escena": "Después del examen, Chen Tianzhong le cuenta a Wang Yixue sus planes de viaje.",
+  "personajes": {"王一雪": "f", "陈天中": "m"},
+  "lineas": [
+   {"sp": "王一雪", "zh": "天中，考完试你想去哪儿旅游？", "py": "Tiānzhōng, kǎowán shì nǐ xiǎng qù nǎr lǚyóu?", "es": "Tianzhong, ¿adónde quieres ir de viaje después del examen?"},
+   {"sp": "陈天中", "zh": "我想去西安。我去过一次，但是还想再去一次。", "py": "Wǒ xiǎng qù Xī'ān. Wǒ qùguo yí cì, dànshì hái xiǎng zài qù yí cì.", "es": "Quiero ir a Xi'an. Ya he estado una vez, pero quiero volver."},
+   {"sp": "王一雪", "zh": "西安有什么好玩儿的？", "py": "Xī'ān yǒu shénme hǎowánr de?", "es": "¿Qué hay de interesante en Xi'an?"},
+   {"sp": "陈天中", "zh": "好玩儿的地方很多！上次我只去了两天，很多地方都没去。", "py": "Hǎowánr de dìfang hěn duō! Shàng cì wǒ zhǐ qùle liǎng tiān, hěn duō dìfang dōu méi qù.", "es": "¡Hay muchos sitios interesantes! La última vez solo fui dos días y no vi muchos de ellos."},
+   {"sp": "王一雪", "zh": "你怎么去？坐飞机还是坐火车？", "py": "Nǐ zěnme qù? Zuò fēijī háishi zuò huǒchē?", "es": "¿Cómo vas a ir? ¿En avión o en tren?"},
+   {"sp": "陈天中", "zh": "坐火车。火车比飞机慢四个多小时，但是车票便宜。", "py": "Zuò huǒchē. Huǒchē bǐ fēijī màn sì gè duō xiǎoshí, dànshì chēpiào piányi.", "es": "En tren. El tren tarda más de cuatro horas más que el avión, pero el billete es barato."},
+   {"sp": "王一雪", "zh": "你买好车票了吗？", "py": "Nǐ mǎihǎo chēpiào le ma?", "es": "¿Ya has comprado el billete?"},
+   {"sp": "陈天中", "zh": "买好了，是下个星期三的。你去过西安吗？", "py": "Mǎihǎo le, shì xià gè Xīngqīsān de. Nǐ qùguo Xī'ān ma?", "es": "Sí, es para el miércoles que viene. ¿Tú has estado en Xi'an?"},
+   {"sp": "王一雪", "zh": "没去过。我有两年没出门旅游了。", "py": "Méi qùguo. Wǒ yǒu liǎng nián méi chūmén lǚyóu le.", "es": "No. Hace dos años que no salgo de viaje."},
+   {"sp": "陈天中", "zh": "那你跟我一起去吧！出门旅游，多个朋友多条路。", "py": "Nà nǐ gēn wǒ yìqǐ qù ba! Chūmén lǚyóu, duō gè péngyou duō tiáo lù.", "es": "¡Pues vente conmigo! De viaje, cuantos más amigos, mejor."},
+   {"sp": "王一雪", "zh": "好啊！我今天就上网买火车票。", "py": "Hǎo a! Wǒ jīntiān jiù shàngwǎng mǎi huǒchēpiào.", "es": "¡Vale! Hoy mismo compro el billete de tren por internet."},
+   {"sp": "陈天中", "zh": "太好了！到了西安，我请你吃一次那儿有名的面条儿。", "py": "Tài hǎo le! Dàole Xī'ān, wǒ qǐng nǐ chī yí cì nàr yǒumíng de miàntiáor.", "es": "¡Genial! Cuando lleguemos a Xi'an, te invito a probar sus famosos fideos."},
+   {"sp": "王一雪", "zh": "我最喜欢吃面条儿了！", "py": "Wǒ zuì xǐhuan chī miàntiáor le!", "es": "¡Me encantan los fideos!"}
+  ],
+  "preguntas": [
+   {"q": "¿Adónde quiere ir Chen Tianzhong? (en pinyin)", "lang": "py", "a": ["Xī'ān", "Xīān", "Xī ān"], "r": "A Xi'an · Xī'ān (西安)."},
+   {"q": "¿Cuántas veces ha estado allí?", "lang": "es", "a": ["una", "una vez", "1", "1 vez"], "r": "Una vez (去过一次)."},
+   {"q": "¿En qué medio de transporte va a ir?", "lang": "es", "a": ["tren", "en tren"], "r": "En tren (坐火车)."},
+   {"q": "¿Cuánto tiempo hace que Wang Yixue no sale de viaje?", "lang": "es", "a": ["dos años", "2 años", "dos"], "r": "Dos años (有两年没出门旅游了)."},
+   {"q": "¿A qué la va a invitar en Xi'an? (en pinyin)", "lang": "py", "a": ["miàntiáor", "miàntiáo"], "r": "A unos fideos · miàntiáor (面条儿)."}
+  ]
+ },
+ {
+  "id": "L15b",
+  "tema": 15,
+  "titulo": "Consejos para viajar a Pekín",
+  "escena": "Annie quiere ir a Pekín el año que viene y le pregunta a Li Wen, que es de allí.",
+  "personajes": {"安妮": "f", "李文": "m"},
+  "lineas": [
+   {"sp": "安妮", "zh": "李文，我明年想去北京旅游。你回过几次北京？", "py": "Lǐ Wén, wǒ míngnián xiǎng qù Běijīng lǚyóu. Nǐ huíguo jǐ cì Běijīng?", "es": "Li Wen, el año que viene quiero ir de viaje a Pekín. ¿Cuántas veces has vuelto a Pekín?"},
+   {"sp": "李文", "zh": "我家就在北京，我每年都回去两次。", "py": "Wǒ jiā jiù zài Běijīng, wǒ měi nián dōu huíqù liǎng cì.", "es": "Mi familia vive en Pekín; vuelvo dos veces al año."},
+   {"sp": "安妮", "zh": "那你去过颐和园吗？", "py": "Nà nǐ qùguo Yíhé Yuán ma?", "es": "¿Y has estado en el Palacio de Verano?"},
+   {"sp": "李文", "zh": "去过三次。颐和园很有名，也很好玩儿。", "py": "Qùguo sān cì. Yíhé Yuán hěn yǒumíng, yě hěn hǎowánr.", "es": "Tres veces. Es muy famoso y muy bonito para visitar."},
+   {"sp": "安妮", "zh": "门票贵不贵？", "py": "Ménpiào guì bu guì?", "es": "¿La entrada es cara?"},
+   {"sp": "李文", "zh": "不贵。你可以在网上买，比在门口买便宜十块。", "py": "Bú guì. Nǐ kěyǐ zài wǎngshang mǎi, bǐ zài ménkǒu mǎi piányi shí kuài.", "es": "No. Puedes comprarla por internet: es diez yuanes más barata que en la puerta."},
+   {"sp": "安妮", "zh": "北京的菜好吃吗？", "py": "Běijīng de cài hǎochī ma?", "es": "¿Se come bien en Pekín?"},
+   {"sp": "李文", "zh": "太好吃了！我每次回去都要吃一次北京烤鸭。", "py": "Tài hǎochī le! Wǒ měi cì huíqù dōu yào chī yí cì Běijīng kǎoyā.", "es": "¡Muy bien! Cada vez que vuelvo como pato laqueado."},
+   {"sp": "安妮", "zh": "我也想吃！从这儿飞到北京要多长时间？", "py": "Wǒ yě xiǎng chī! Cóng zhèr fēidào Běijīng yào duō cháng shíjiān?", "es": "¡Yo también quiero probarlo! ¿Cuánto se tarda en avión de aquí a Pekín?"},
+   {"sp": "李文", "zh": "坐飞机三个多小时。", "py": "Zuò fēijī sān gè duō xiǎoshí.", "es": "En avión, algo más de tres horas."},
+   {"sp": "安妮", "zh": "你下次什么时候回去？", "py": "Nǐ xià cì shénme shíhou huíqù?", "es": "¿Cuándo vuelves la próxima vez?"},
+   {"sp": "李文", "zh": "我有半年没回家了，下个月就要回去。", "py": "Wǒ yǒu bàn nián méi huí jiā le, xià gè yuè jiù yào huíqù.", "es": "Hace medio año que no voy a casa; vuelvo el mes que viene."},
+   {"sp": "安妮", "zh": "我能跟你一起去吗？你可以给我好好介绍介绍北京。", "py": "Wǒ néng gēn nǐ yìqǐ qù ma? Nǐ kěyǐ gěi wǒ hǎohǎo jièshào jièshào Běijīng.", "es": "¿Puedo ir contigo? Así me enseñas bien Pekín."},
+   {"sp": "李文", "zh": "好啊！出门有朋友，多好啊！", "py": "Hǎo a! Chūmén yǒu péngyou, duō hǎo a!", "es": "¡Claro! ¡Qué bien viajar con amigos!"}
+  ],
+  "preguntas": [
+   {"q": "¿Cuántas veces al año vuelve Li Wen a Pekín?", "lang": "es", "a": ["dos", "dos veces", "2", "2 veces"], "r": "Dos veces (每年回去两次)."},
+   {"q": "¿Cuántas veces ha estado en el Palacio de Verano? (en pinyin)", "lang": "py", "a": ["sān cì", "sān"], "r": "Tres veces · sān cì (三次)."},
+   {"q": "¿Cuánto más barata es la entrada por internet?", "lang": "es", "a": ["diez", "10", "diez yuanes", "10 yuanes", "10 kuai"], "r": "Diez yuanes más barata (便宜十块)."},
+   {"q": "¿Qué come siempre que vuelve a Pekín?", "lang": "es", "a": ["pato", "pato laqueado", "pato asado", "pato pekin", "pato a la pekinesa"], "r": "Pato laqueado (北京烤鸭)."},
+   {"q": "¿Cuánto tiempo hace que no vuelve a casa? (en pinyin)", "lang": "py", "a": ["bàn nián"], "r": "Medio año · bàn nián (半年)."}
+  ]
+ }
+]

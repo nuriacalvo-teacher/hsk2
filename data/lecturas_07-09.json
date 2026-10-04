@@ -1,0 +1,98 @@
+[
+ {
+  "id": "R1-07",
+  "nivel": 1,
+  "tema": 7,
+  "titulo": "Las aficiones de Chen Tianzhong",
+  "titulo_zh": "陈天中 的 爱好",
+  "texto": "陈天中 的 爱好 是 运动 。 他 篮球 打 得 很 好 ， 足球 踢 得 也 不错 。 他 一|yì 有 时间 就 去 运动 。 ¶ 安妮 不|bú 太 喜欢 跑步 ， 她 跑 得 不|bú 快 。 但 她 喜欢 游泳 ， 每 个 星期六 她 一|yì 起床 就 去 游泳 。",
+  "es": "La afición de Chen Tianzhong es el deporte. Juega muy bien al baloncesto y al fútbol tampoco juega mal. En cuanto tiene tiempo, va a hacer deporte. A Annie no le gusta mucho correr; no corre rápido. Pero le gusta nadar: todos los sábados, en cuanto se levanta, se va a nadar.",
+  "preguntas": [
+   {"q": "¿Cuál es la afición de Chen Tianzhong?", "lang": "es", "a": ["deporte", "el deporte", "hacer deporte"], "r": "El deporte (运动)."},
+   {"q": "¿Qué deporte se le da muy bien a Tianzhong? (pinyin)", "lang": "py", "a": ["lánqiú", "dǎ lánqiú"], "r": "Lánqiú · 篮球 (el baloncesto)."},
+   {"q": "¿Corre rápido Annie?", "lang": "es", "a": ["no", "no corre rapido", "despacio"], "r": "No, no corre rápido (她跑得不快)."},
+   {"q": "¿Qué le gusta a Annie? (pinyin)", "lang": "py", "a": ["yóuyǒng"], "r": "Yóuyǒng · 游泳 (nadar)."},
+   {"q": "¿Cuándo va Annie a nadar?", "lang": "es", "a": ["sabado", "los sabados", "el sabado", "sabados por la mañana", "sabado por la manana"], "r": "Los sábados, en cuanto se levanta (每个星期六，一起床就去)."}
+  ]
+ },
+ {
+  "id": "R2-07",
+  "nivel": 2,
+  "tema": 7,
+  "titulo": "Me encanta el deporte",
+  "titulo_zh": "我 的 爱好 是 运动",
+  "texto": "我 叫 白家月 ， 我 的 爱好 是 运动 。 从 上 小学 开始 ， 我 每 天 早上 都 跟 爸爸 去 跑步 。 我 跑 得 不|bú 快 ， 但 我 很 喜欢 跑步 。 现在 我 一|yì 起床 就 去 跑步 ， 跑 完 就 回家 吃饭 。 ¶ 我 的 同学 陈天中 也 非常 喜欢 运动 。 他 打 篮球 打 得 很 好 ， 踢 足球 踢 得 也 不错 。 一|yí 到 星期天 ， 他 就 跟 朋友 们 去 踢 球 。 ¶ 昨天 下午 ， 安妮 从 北京 回来 了 。 她 一|yí 下课 就 跟 我们 一起 去 打 篮球 。 她 篮球 打 得 还可以 ， 但 跑 得 非常 快 ！ 我们 玩 得 很 高兴 。",
+  "es": "Me llamo Bai Jiayue y mi afición es el deporte. Desde que empecé primaria, salgo a correr todas las mañanas con mi padre. No corro rápido, pero me encanta correr. Ahora, en cuanto me levanto, salgo a correr y, al terminar, vuelvo a casa a comer algo. Mi compañero Chen Tianzhong también adora el deporte. Juega muy bien al baloncesto y al fútbol tampoco juega mal. Todos los domingos va a jugar al fútbol con sus amigos. Ayer por la tarde Annie volvió de Pekín. Nada más acabar la clase, vino con nosotros a jugar al baloncesto. No juega mal, ¡pero corre rapidísimo! Nos lo pasamos muy bien.",
+  "preguntas": [
+   {"q": "¿Con quién salía a correr Jiayue desde primaria?", "lang": "es", "a": ["padre", "con su padre", "su padre", "papa"], "r": "Con su padre (跟爸爸)."},
+   {"q": "¿Qué hace Jiayue al volver a casa después de correr? (pinyin)", "lang": "py", "a": ["chī fàn", "chīfàn", "huíjiā chī fàn"], "r": "Chī fàn · 吃饭 (comer)."},
+   {"q": "¿Qué hace Tianzhong todos los domingos?", "lang": "es", "a": ["futbol", "jugar al futbol", "juega al futbol"], "r": "Juega al fútbol con sus amigos (跟朋友们去踢球)."},
+   {"q": "¿De dónde volvió Annie ayer? (pinyin)", "lang": "py", "a": ["Běijīng"], "r": "Běijīng · 北京 (de Pekín)."},
+   {"q": "¿Qué tal corre Annie?", "lang": "es", "a": ["rapido", "muy rapido", "deprisa", "muy deprisa"], "r": "Muy rápido (跑得非常快)."}
+  ]
+ },
+ {
+  "id": "R1-08",
+  "nivel": 1,
+  "tema": 8,
+  "titulo": "El cumpleaños de Annie",
+  "titulo_zh": "安妮 的 生日",
+  "texto": "今天 是 安妮 的 生日 。 虽然 她 忘 了 ， 但是 她 的 朋友 们 都 记得 。 ¶ 晚上 ， 他们 请 安妮 去 饭馆 吃饭 。 饭馆 的 菜 比 学校 的 好吃 。 白家月 还 给 她 买 了 一|yí 块 手表 ， 手表 非常 漂亮 。 安妮 觉得 今天 非常 快乐 。",
+  "es": "Hoy es el cumpleaños de Annie. Aunque ella lo ha olvidado, todos sus amigos se acuerdan. Por la noche invitan a Annie a cenar en un restaurante. La comida del restaurante está más rica que la de la escuela. Además, Bai Jiayue le ha comprado un reloj precioso. Annie siente que hoy ha sido un día muy feliz.",
+  "preguntas": [
+   {"q": "¿Quién ha olvidado el cumpleaños de Annie?", "lang": "es", "a": ["annie", "ella", "ella misma", "la propia annie"], "r": "La propia Annie (虽然她忘了)."},
+   {"q": "¿Adónde invitan a Annie por la noche? (pinyin)", "lang": "py", "a": ["fànguǎn"], "r": "Fànguǎn · 饭馆 (a un restaurante)."},
+   {"q": "¿Qué comida está más rica?", "lang": "es", "a": ["restaurante", "la del restaurante", "del restaurante"], "r": "La del restaurante (饭馆的菜比学校的好吃)."},
+   {"q": "¿Qué le compra Bai Jiayue? (pinyin)", "lang": "py", "a": ["shǒubiǎo"], "r": "Shǒubiǎo · 手表 (un reloj)."},
+   {"q": "¿Cómo se siente Annie hoy?", "lang": "es", "a": ["feliz", "muy feliz", "contenta", "alegre"], "r": "Muy feliz (非常快乐)."}
+  ]
+ },
+ {
+  "id": "R2-08",
+  "nivel": 2,
+  "tema": 8,
+  "titulo": "Un sábado de cumpleaños",
+  "titulo_zh": "一|yí 个 快乐 的 生日",
+  "texto": "这 个 星期六 是 王一雪 的 生日 。 早上 ， 刘明 跟 她 去 商场 买 衣服 。 商场 有 两 条 裤子 ， 左边 的 是 黑色 的 ， 右边 的 是 白色 的 。 王一雪 觉得 白色 的 比 黑色 的 好看 ， 但是 白色 的 比 黑色 的 贵 。 刘明 说 ： “ 今天 是 你 的 生日 ， 我 给 你 买 ！ ” ¶ 下午 ， 他们 去 看 电影 。 王一雪 喜欢 看 爱情片 ， 但是 刘明 觉得 别的 电影 更 有意思 。 他们 在 网上 买 了 票 ， 网上 买 比 在 电影院 买 便宜 。 ¶ 晚上 ， 他们 去 一|yì 家 饭馆 吃饭 。 刘明 点 了 很 多 菜 。 虽然 今天 花 了 不少 钱 ， 但是 王一雪 觉得 这 个 生日 非常 快乐 。",
+  "es": "Este sábado es el cumpleaños de Wang Yixue. Por la mañana, Liu Ming va con ella al centro comercial a comprar ropa. Hay dos pantalones: los de la izquierda son negros y los de la derecha, blancos. A Wang Yixue los blancos le parecen más bonitos que los negros, pero son más caros. Liu Ming dice: «Hoy es tu cumpleaños, ¡te los compro yo!». Por la tarde van al cine. A Wang Yixue le gustan las películas románticas, pero a Liu Ming otras películas le parecen más interesantes. Compran las entradas por internet, porque es más barato que en el cine. Por la noche van a cenar a un restaurante. Liu Ming pide muchos platos. Aunque hoy han gastado bastante dinero, a Wang Yixue este cumpleaños le parece muy feliz.",
+  "preguntas": [
+   {"q": "¿Qué día es el cumpleaños de Wang Yixue?", "lang": "es", "a": ["sabado", "el sabado", "este sabado"], "r": "Este sábado (这个星期六)."},
+   {"q": "¿De qué color son los pantalones más caros? (pinyin)", "lang": "py", "a": ["báisè", "báisè de"], "r": "Báisè · 白色 (blancos)."},
+   {"q": "¿Qué tipo de películas le gustan a Wang Yixue? (pinyin)", "lang": "py", "a": ["àiqíngpiàn"], "r": "Àiqíngpiàn · 爱情片 (las películas románticas)."},
+   {"q": "¿Por qué compran las entradas por internet?", "lang": "es", "a": ["barato", "mas barato", "es mas barato"], "r": "Porque es más barato que en el cine (网上买比在电影院买便宜)."},
+   {"q": "¿Cómo le parece a Wang Yixue este cumpleaños?", "lang": "es", "a": ["feliz", "muy feliz", "alegre", "muy alegre"], "r": "Muy feliz (非常快乐)."}
+  ]
+ },
+ {
+  "id": "R1-09",
+  "nivel": 1,
+  "tema": 9,
+  "titulo": "¿Café o té con leche?",
+  "titulo_zh": "咖啡 和 奶茶",
+  "texto": "我 家 离 学校 很 近 ， 走路 十 分钟 就 到 了 。 学校 门口 有 一|yì 家 奶茶店 ， 那儿 的 奶茶 很 好喝 。 ¶ 我 的 同学 都 很 喜欢 喝 咖啡 ， 但 我 觉得 咖啡 没有 奶茶 好喝 。 还有 ， 喝 了 咖啡 ， 我 晚上 就 别 想 睡觉 了 。",
+  "es": "Mi casa está muy cerca de la escuela: andando llego en diez minutos. En la puerta de la escuela hay una tienda de té con leche, y allí el té con leche está muy rico. A mis compañeros les encanta el café, pero a mí el café no me parece tan rico como el té con leche. Además, si tomo café, por la noche no hay quien duerma.",
+  "preguntas": [
+   {"q": "¿Cuánto se tarda andando de casa a la escuela?", "lang": "es", "a": ["10 minutos", "diez minutos", "10", "diez"], "r": "Diez minutos (十分钟)."},
+   {"q": "¿Qué hay en la puerta de la escuela? (pinyin)", "lang": "py", "a": ["nǎichádiàn", "yì jiā nǎichádiàn"], "r": "Nǎichádiàn · 奶茶店 (una tienda de té con leche)."},
+   {"q": "¿Qué les gusta beber a los compañeros?", "lang": "es", "a": ["cafe", "el cafe"], "r": "Café (咖啡)."},
+   {"q": "¿Qué le parece más rico al narrador? (pinyin)", "lang": "py", "a": ["nǎichá"], "r": "Nǎichá · 奶茶 (el té con leche)."},
+   {"q": "¿Qué le pasa si toma café?", "lang": "es", "a": ["no duerme", "no puede dormir", "no dormir", "dormir"], "r": "Por la noche no puede dormir (晚上就别想睡觉了)."}
+  ]
+ },
+ {
+  "id": "R2-09",
+  "nivel": 2,
+  "tema": 9,
+  "titulo": "De compras con nuestro hijo",
+  "titulo_zh": "跟 儿子 去 商场",
+  "texto": "这 周 星期六 ， 刘明 和 我 跟 儿子 一起 去 商场 。 商场 离 我们 家 有点儿 远 ， 坐 车 要 半 个 小时 。 ¶ 儿子 的 裤子 坏 了 ， 我们 想 给 他 买 条 新 的 。 我们 看 了 两 个 小时 ， 那儿 的 裤子 虽然 很 多 ， 但是 都 没有 网上 的 好看 ， 也 没有 网上 的 便宜 。 儿子 说 ： “ 别 看 了 ， 我 想 喝 奶茶 ！ ” ¶ 门口 就 有 一|yì 家 奶茶店 ， 我们 在 那儿 坐 了 一会儿 。 喝 完 奶茶 ， 儿子 说 ： “ 我们 走路 回家 吧 ！ ” 我们 走 了 四十 分钟 才 到 家 。 虽然 有点儿 累 ， 但是 我们 都 很 高兴 。",
+  "es": "Este sábado, Liu Ming y yo fuimos con nuestro hijo al centro comercial. El centro comercial está un poco lejos de casa: en coche se tarda media hora. A nuestro hijo se le habían roto los pantalones y queríamos comprarle unos nuevos. Estuvimos mirando dos horas; aunque allí había muchos pantalones, ninguno era tan bonito ni tan barato como los de internet. Nuestro hijo dijo: «¡Dejad de mirar, quiero un té con leche!». Justo en la entrada había una tienda de té con leche y nos sentamos allí un rato. Al terminar el té, nuestro hijo dijo: «¡Volvamos a casa andando!». Tardamos cuarenta minutos en llegar. Aunque estábamos un poco cansados, todos estábamos muy contentos.",
+  "preguntas": [
+   {"q": "¿Cuánto se tarda en coche de casa al centro comercial?", "lang": "es", "a": ["media hora", "30 minutos", "treinta minutos"], "r": "Media hora (半个小时)."},
+   {"q": "¿Cuánto tiempo estuvieron mirando pantalones? (pinyin)", "lang": "py", "a": ["liǎng ge xiǎoshí", "liǎng gè xiǎoshí"], "r": "Liǎng ge xiǎoshí · 两个小时 (dos horas)."},
+   {"q": "¿Por qué no compraron pantalones en el centro comercial?", "lang": "es", "a": ["internet", "no eran tan bonitos", "mas caros", "no tan bonitos ni baratos", "bonitos", "baratos"], "r": "Porque no eran tan bonitos ni tan baratos como los de internet (没有网上的好看，也没有网上的便宜)."},
+   {"q": "¿Qué quería beber el hijo? (pinyin)", "lang": "py", "a": ["nǎichá"], "r": "Nǎichá · 奶茶 (té con leche)."},
+   {"q": "¿Cuánto tardaron en volver a casa andando?", "lang": "es", "a": ["40 minutos", "cuarenta minutos", "40", "cuarenta"], "r": "Cuarenta minutos (四十分钟)."}
+  ]
+ }
+]

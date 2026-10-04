@@ -1,253 +1,564 @@
-# Diccionario de HSK 1 (tema 0 = vocabulario de HSK 1, ya conocido)
-# hanzi <TAB> pinyin <TAB> español <TAB> 0
-你	nǐ	tú	0
-好	hǎo	bien, bueno	0
-你好	nǐ hǎo	hola	0
-您	nín	usted	0
-您好	nín hǎo	hola (formal)	0
-你们	nǐmen	vosotros	0
-你们好	nǐmen hǎo	hola a todos	0
-对不起	duìbuqǐ	lo siento, perdón	0
-没关系	méi guānxi	no pasa nada	0
-谢谢	xièxie	gracias	0
-不	bù	no	0
-不谢	bú xiè	de nada	0
-不客气	bú kèqi	de nada, no hay de qué	0
-再见	zàijiàn	adiós, hasta luego	0
-叫	jiào	llamarse	0
-什么	shénme	qué	0
-名字	míngzi	nombre	0
-我	wǒ	yo	0
-是	shì	ser	0
-老师	lǎoshī	profesor, profesora	0
-吗	ma	(partícula de pregunta)	0
-学生	xuésheng	estudiante	0
-人	rén	persona	0
-中国	Zhōngguó	China	0
-中国人	Zhōngguó rén	chino, china (persona)	0
-美国	Měiguó	Estados Unidos	0
-美国人	Měiguó rén	estadounidense	0
-她	tā	ella	0
-他	tā	él	0
-谁	shéi	quién	0
-的	de	de (posesivo)	0
-汉语	Hànyǔ	chino (idioma)	0
-哪	nǎ	qué, cuál	0
-国	guó	país	0
-呢	ne	¿y…? (partícula)	0
-同学	tóngxué	compañero de clase	0
-朋友	péngyou	amigo, amiga	0
-家	jiā	casa, familia	0
-有	yǒu	tener, haber	0
-口	kǒu	(clasificador de miembros de la familia)	0
-女儿	nǚ'ér	hija	0
-几	jǐ	cuántos	0
-岁	suì	años (de edad)	0
-了	le	(partícula de cambio o acción terminada)	0
-今年	jīnnián	este año	0
-多	duō	mucho; cuán	0
-大	dà	grande; mayor	0
-多大	duō dà	qué edad	0
-零	líng	cero	0
-一	yī	uno	0
-二	èr	dos	0
-三	sān	tres	0
-四	sì	cuatro	0
-五	wǔ	cinco	0
-六	liù	seis	0
-七	qī	siete	0
-八	bā	ocho	0
-九	jiǔ	nueve	0
-十	shí	diez	0
-会	huì	saber (hacer algo); poder que ocurra	0
-说	shuō	hablar, decir	0
-妈妈	māma	mamá, madre	0
-菜	cài	plato, comida	0
-中国菜	Zhōngguó cài	comida china	0
-很	hěn	muy	0
-好吃	hǎochī	rico, sabroso	0
-做	zuò	hacer; cocinar	0
-写	xiě	escribir	0
-汉字	Hànzì	carácter chino	0
-字	zì	carácter, letra	0
-怎么	zěnme	cómo	0
-读	dú	leer (en voz alta)	0
-这个	zhège	este, esta	0
-请	qǐng	por favor; invitar	0
-请问	qǐngwèn	disculpe, una pregunta	0
-今天	jīntiān	hoy	0
-号	hào	día (del mes)	0
-月	yuè	mes	0
-星期	xīngqī	semana	0
-星期几	xīngqījǐ	qué día de la semana	0
-星期一	xīngqīyī	lunes	0
-星期二	xīngqī'èr	martes	0
-星期三	xīngqīsān	miércoles	0
-星期四	xīngqīsì	jueves	0
-星期五	xīngqīwǔ	viernes	0
-星期六	xīngqīliù	sábado	0
-星期日	xīngqīrì	domingo	0
-星期天	xīngqītiān	domingo	0
-昨天	zuótiān	ayer	0
-明天	míngtiān	mañana (día)	0
-去	qù	ir	0
-学校	xuéxiào	escuela	0
-看	kàn	mirar, ver; leer	0
-书	shū	libro	0
-看书	kàn shū	leer (libros)	0
-想	xiǎng	querer; pensar	0
-喝	hē	beber	0
-茶	chá	té	0
-吃	chī	comer	0
-米饭	mǐfàn	arroz	0
-下午	xiàwǔ	tarde	0
-商店	shāngdiàn	tienda	0
-买	mǎi	comprar	0
-个	ge	(clasificador general)	0
-一个	yí ge	un, una	0
-杯子	bēizi	taza, vaso	0
-这	zhè	esto, este	0
-那	nà	eso, ese; entonces	0
-那个	nàge	ese, esa	0
-多少	duōshao	cuánto	0
-钱	qián	dinero	0
-块	kuài	yuan (moneda)	0
-哪儿	nǎr	dónde	0
-小	xiǎo	pequeño	0
-猫	māo	gato	0
-小猫	xiǎo māo	gatito	0
-狗	gǒu	perro	0
-小狗	xiǎo gǒu	perrito	0
-在	zài	estar en; en	0
-那儿	nàr	allí	0
-这儿	zhèr	aquí	0
-椅子	yǐzi	silla	0
-下面	xiàmiàn	debajo	0
-工作	gōngzuò	trabajar; trabajo	0
-儿子	érzi	hijo	0
-医院	yīyuàn	hospital	0
-医生	yīshēng	médico	0
-爸爸	bàba	papá, padre	0
-桌子	zhuōzi	mesa	0
-上	shàng	sobre, encima; subir	0
-上面	shàngmiàn	encima	0
-电脑	diànnǎo	ordenador	0
-和	hé	y, con	0
-本	běn	(clasificador de libros)	0
-一本	yì běn	un (libro)	0
-里	lǐ	dentro	0
-里面	lǐmiàn	dentro	0
-前面	qiánmiàn	delante	0
-后面	hòumiàn	detrás	0
-没有	méiyǒu	no tener, no haber	0
-没	méi	no (pasado); no tener	0
-能	néng	poder	0
-坐	zuò	sentarse; ir en (transporte)	0
-现在	xiànzài	ahora	0
-点	diǎn	hora (en punto)	0
-分	fēn	minuto	0
-中午	zhōngwǔ	mediodía	0
-饭	fàn	comida, arroz	0
-吃饭	chī fàn	comer	0
-时候	shíhou	momento, tiempo	0
-什么时候	shénme shíhou	cuándo	0
-回	huí	volver	0
-回家	huí jiā	volver a casa	0
-我们	wǒmen	nosotros	0
-电影	diànyǐng	película	0
-住	zhù	vivir, alojarse	0
-天	tiān	día	0
-前	qián	antes	0
-北京	Běijīng	Pekín	0
-时间	shíjiān	tiempo (disponible)	0
-来	lái	venir	0
-天气	tiānqì	tiempo (clima)	0
-怎么样	zěnmeyàng	qué tal, cómo	0
-太	tài	demasiado	0
-热	rè	caluroso, calor	0
-冷	lěng	frío	0
-下雨	xià yǔ	llover	0
-雨	yǔ	lluvia	0
-小姐	xiǎojiě	señorita	0
-身体	shēntǐ	cuerpo, salud	0
-爱	ài	amar, encantar	0
-些	xiē	algunos	0
-水果	shuǐguǒ	fruta	0
-水	shuǐ	agua	0
-一会儿	yíhuìr	un rato	0
-喂	wèi	¿diga? (al teléfono)	0
-也	yě	también	0
-学	xué	aprender, estudiar	0
-学习	xuéxí	estudiar	0
-上午	shàngwǔ	mañana (antes del mediodía)	0
-睡觉	shuì jiào	dormir	0
-电视	diànshì	televisión	0
-喜欢	xǐhuan	gustar	0
-电话	diànhuà	teléfono	0
-给	gěi	a, para; dar	0
-打	dǎ	hacer (una llamada); golpear	0
-打电话	dǎ diànhuà	llamar por teléfono	0
-吧	ba	(partícula de sugerencia)	0
-东西	dōngxi	cosas	0
-一点儿	yìdiǎnr	un poco	0
-苹果	píngguǒ	manzana	0
-看见	kànjiàn	ver	0
-先生	xiānsheng	señor	0
-开	kāi	conducir; abrir	0
-车	chē	coche	0
-开车	kāi chē	conducir	0
-回来	huílai	volver	0
-分钟	fēnzhōng	minuto	0
-后	hòu	después	0
-衣服	yīfu	ropa	0
-漂亮	piàoliang	bonito, guapo	0
-啊	a	(partícula exclamativa)	0
-少	shǎo	poco	0
-不少	bùshǎo	bastante, no poco	0
-这些	zhèxiē	estos, estas	0
-那些	nàxiē	esos, esas	0
-都	dōu	todo, todos	0
-认识	rènshi	conocer	0
-年	nián	año	0
-大学	dàxué	universidad	0
-饭店	fàndiàn	restaurante, hotel	0
-出租车	chūzūchē	taxi	0
-一起	yìqǐ	juntos	0
-高兴	gāoxìng	contento	0
-听	tīng	escuchar, oír	0
-飞机	fēijī	avión	0
-是的	shì de	sí, así es	0
-火车站	huǒchēzhàn	estación de tren	0
-# Nombres propios
-李	Lǐ	Li (apellido)	0
-王	Wáng	Wang (apellido)	0
-张	Zhāng	Zhang (apellido)	0
-李月	Lǐ Yuè	Li Yue (nombre)	0
-大卫	Dàwèi	David	0
-李心	Lǐ Xīn	Li Xin (nombre)	0
-王方	Wáng Fāng	Wang Fang (nombre)	0
-谢朋	Xiè Péng	Xie Peng (nombre)	0
-李朋	Lǐ Péng	Li Peng (nombre)	0
-小王	Xiǎo Wáng	Xiao Wang	0
-小李	Xiǎo Lǐ	Xiao Li	0
-小张	Xiǎo Zhāng	Xiao Zhang	0
-王老师	Wáng lǎoshī	profesor(a) Wang	0
-李老师	Lǐ lǎoshī	profesor(a) Li	0
-张先生	Zhāng xiānsheng	señor Zhang	0
-李先生	Lǐ xiānsheng	señor Li	0
-王先生	Wáng xiānsheng	señor Wang	0
-王小姐	Wáng xiǎojiě	señorita Wang	0
-李小姐	Lǐ xiǎojiě	señorita Li	0
-# Añadidas: palabras básicas que faltaban
-他们	tāmen	ellos	0
-她们	tāmen	ellas	0
-下	xià	debajo; siguiente; bajar	0
-杯	bēi	vaso, taza (clasificador)	0
-半	bàn	medio, y media	0
-跑	pǎo	correr	0
-唱	chàng	cantar	0
-好看	hǎokàn	bonito	0
-只	zhǐ	solo, solamente	0
-右	yòu	derecha	0
-左	zuǒ	izquierda	0
-一下	yíxià	un momento, un poco	0
+# Diccionario HSK 1 · lista oficial HSK 3.0 (500 palabras), repartida por las lecciones del libro (columna 4) para aprenderla poco a poco.
+# hanzi <TAB> pinyin <TAB> español <TAB> lección <TAB> nivel
+爱	ài	amar, tener afecto	6	HSK1
+爱好	àihào	afición, interés, gustar	7	HSK1
+八	bā	ocho, 8	8	HSK1
+爸爸	bàba	papá	5	HSK1
+吧	ba	partícula modal utilizada al final de la oración para indicar consulta	1	HSK1
+白	bái	blanco	4	HSK1
+白天	báitiān	durante el día, día	12	HSK1
+百	bǎi	cien	2	HSK1
+班	bān	grupo, clase, equipo, CL: para grupos	13	HSK1
+半	bàn	mitad, semi, incompleto, y medio (después de un número)	5	HSK1
+半年	bànnián	medio año	9	HSK1
+半天	bàntiān	medio día, mucho tiempo, un buen rato	9	HSK1
+帮	bāng	ayudar, asistir	1	HSK1
+帮忙	bāngmáng	ayudar, echar una mano, hacer un favor	1	HSK1
+包	bāo	paquete, envoltorio, bolsa, cubrir	15	HSK1
+包子	bāozi	bollo relleno al vapor	9	HSK1
+杯	bēi	taza, CL: para determinados contenedores de líquidos: vaso, taza	9	HSK1
+杯子	bēizi	taza, vaso	9	HSK1
+北	běi	norte	12	HSK1
+北边	běibiān	norte, lado norte, parte norte, al norte de	12	HSK1
+北京	běijīng	pekín	1	HSK1
+本	běn	cuaderno, raíz, origen, CL: libros	10	HSK1
+本子	běnzi	libro, libreta	10	HSK1
+比	bǐ	partícula para hacer uso de la comparación	8	HSK1
+别	bié	negación, otro, marcharse	8	HSK1
+别的	biéde	si no, otros	8	HSK1
+别人	biérén	otras personas, otra persona, otros	8	HSK1
+病	bìng	náusea, enfermedad, dolencia, enfermar	11	HSK1
+病人	bìngrén	persona enferma, paciente	11	HSK1
+不大	búdà	no muy, no demasiado, no a menudo	12	HSK1
+不对	búduì	incorrecto, mal	8	HSK1
+不客气	búkèqi	de nada	1	HSK1
+不用	búyòng	no necesita, no necesario	8	HSK1
+不	bù	negación	1	HSK1
+菜	cài	plato (de comida), verduras	1	HSK1
+茶	chá	té	9	HSK1
+差	chà	escaso, falta de, diferenciarse de, mediocre	8	HSK1
+常	cháng	siempre, alguna vez, a menudo, con frecuencia	7	HSK1
+常常	chángcháng	con frecuencia, normalmente, a menudo	7	HSK1
+唱	chàng	cantar	6	HSK1
+唱歌	chànggē	cantar una canción	6	HSK1
+车	chē	coche, vehículo	2	HSK1
+车票	chēpiào	billete de autobús o de tren	15	HSK1
+车上	chēshang	en el coche	2	HSK1
+车站	chēzhàn	estación de ferrocaril, parada de autobús	15	HSK1
+吃	chī	comer	1	HSK1
+吃饭	chīfàn	comer, tomar una comida	1	HSK1
+出	chū	salir, elevar	5	HSK1
+出来	chūlái	salir	5	HSK1
+出去	chūqù	salir	5	HSK1
+穿	chuān	vestirse, llevar puesto	4	HSK1
+床	chuáng	cama	7	HSK1
+次	cì	veces, para enumerar, para secuencias	1	HSK1
+从	cóng	desde, nunca (seguido de una negación)	7	HSK1
+错	cuò	fallo, error, incorrecto	3	HSK1
+打	dǎ	pegar, golpear, romper, conmover	7	HSK1
+打车	dǎchē	coger un taxi	2	HSK1
+打电话	dǎdiànhuà	llamar por teléfono	1	HSK1
+打开	dǎkāi	abrir, encender	6	HSK1
+打球	dǎqiú	jugar a la pelota	7	HSK1
+大	dà	grande	4	HSK1
+大学	dàxué	universidad	2	HSK1
+大学生	dàxuéshēng	estudiante universitario	13	HSK1
+到	dào	llegar, hacia/hasta (un lugar), hasta (un período de tiempo), ir	2	HSK1
+得到	dédào	obtener, conseguir, recibir	3	HSK1
+地	de	terminación -mente	6	HSK1
+的	de	particula estructural	1	HSK1
+等	děng	etcétera, esperar a, grado, igual que	9	HSK1
+第	dì	prefijo para indicar número ordinal	1	HSK1
+弟弟	dìdi	hermano menor	5	HSK1
+地点	dìdiǎn	lugar, sitio, ubicación, sede	15	HSK1
+地方	dìfang	lugar, región, región local	3	HSK1
+地上	dìshang	en el suelo	12	HSK1
+地图	dìtú	mapa	15	HSK1
+点	diǎn	hora en punto, pequeña cantidad	10	HSK1
+电	diàn	eléctrico, electricidad	6	HSK1
+电话	diànhuà	teléfono	1	HSK1
+电脑	diànnǎo	ordenador	6	HSK1
+电视	diànshì	televisión	9	HSK1
+电视机	diànshìjī	televisor	9	HSK1
+电影	diànyǐng	película de cine	3	HSK1
+电影院	diànyǐngyuàn	cine	3	HSK1
+东	dōng	este (puntos cardinales), anfitrión, propietario	12	HSK1
+东边	dōngbian	este, lado este, parte este, al este d	12	HSK1
+东西	dōngxi	cosa	3	HSK1
+动	dòng	mover (algo), poner en movimiento, desplazar, tocar	7	HSK1
+动作	dòngzuò	movimiento, acción	7	HSK1
+都	dōu	todo, todos	1	HSK1
+读	dú	leer, estudiar	10	HSK1
+读书	dúshū	leer un libro, estudiar	13	HSK1
+对	duì	correcto, un par, opuesto, responder	8	HSK1
+对不起	duìbuqǐ	lo siento, disculpa	8	HSK1
+多	duō	mucho	2	HSK1
+多少	duōshao	¿cuánto?, ¿cuántos?	2	HSK1
+饿	è	tener hambre, hambriento	11	HSK1
+儿子	érzi	hijo	9	HSK1
+二	èr	dos, 2	2	HSK1
+饭	fàn	comida, cocina, arroz hervido, plato	9	HSK1
+饭店	fàndiàn	restaurante, hotel	1	HSK1
+房间	fáng jiān	habitación	3	HSK1
+房子	fángzi	casa, edificio (de una o dos plantas), apartamento, habitación	14	HSK1
+放	fàng	liberar, dejar ir, dejar salir, colocar	14	HSK1
+放假	fàng jià	tener un día de fiesta	10	HSK1
+放学	fàngxué	después del colegio, se han acabado las clases	10	HSK1
+飞	fēi	volar	15	HSK1
+非常	fēicháng	mucho, extraordinariamente	6	HSK1
+飞机	fēijī	avión	7	HSK1
+分	fēn	dividir, separar, asignar, distinguir	10	HSK1
+风	fēng	viento	12	HSK1
+干	gān	seco, limpio, en vano, alimentos secos	7	HSK1
+干净	gānjìng	limpio, bien cuidado	6	HSK1
+干什么	gànshénme	¿qué tal?, ¿qué haces?, ¿qué hay que hacer?	7	HSK1
+高	gāo	alto, elevado	12	HSK1
+高兴	gāoxìng	contento	1	HSK1
+告诉	gàosu	decir, informar, hacer saber	13	HSK1
+歌	gē	canción	6	HSK1
+哥哥	gēge	hermano mayor	5	HSK1
+个	gè	CL: clasificador para personas y objetos en general	2	HSK1
+给	gěi	dar, permitir, para (alguien)	1	HSK1
+跟	gēn	tacón, seguir de cerca, ir con, con	13	HSK1
+工人	gōngrén	trabajador	14	HSK1
+工作	gōngzuò	trabajo	3	HSK1
+关	guān	cerrar, paso de montaña, apagar, preocupar	14	HSK1
+关上	guānshang	cerrar (una puerta), apagar (la luz, equipo eléctrico, etc.)	14	HSK1
+贵	guì	caro	4	HSK1
+国	guó	país, nación, estado, nacional	12	HSK1
+国家	guójiā	país, estado, nación	15	HSK1
+国外	guówài	en el extranjero, ultramar, extranjero, (asuntos) exteriores	15	HSK1
+过	guò	cruzar, pasar (el tiempo), partícula que expresa experiencia previa	4	HSK1
+还	hái	bastante, pasable, además, también	3	HSK1
+还是	háishì	o, sin embargo, todavía	2	HSK1
+还有	háiyǒu	es más, además, todavía, también	4	HSK1
+孩子	háizi	niño	14	HSK1
+汉语	hànyǔ	lengua china	13	HSK1
+汉字	hànzì	carácter chino	7	HSK1
+好	hǎo	bien, bueno	1	HSK1
+好吃	hǎochī	delicioso, sabroso	1	HSK1
+好看	hǎokàn	guapo, bonito	4	HSK1
+好听	hǎotīng	agradable de oír, melodioso (canción, voz, etc.)	6	HSK1
+好玩儿	hǎowánr	divertido, interesante, encantador, entretenido	15	HSK1
+号	hào	número, día del mes	8	HSK1
+喝	hē	beber	9	HSK1
+和	hé	y	3	HSK1
+很	hěn	muy	1	HSK1
+后	hòu	detrás	7	HSK1
+后边	hòubian	parte trasera, detrás	7	HSK1
+后天	hòutiān	pasado mañana	10	HSK1
+花	huā	flor	4	HSK1
+话	huà	hablar, palabras, lo que dijo alguien, conversación	5	HSK1
+坏	huài	estropeado, malo, roto, romper	9	HSK1
+回	huí	volver	5	HSK1
+回答	huídá	responder, contestar	13	HSK1
+回到	huídào	volver a	3	HSK1
+回家	huíjiā	volver a casa	5	HSK1
+回来	huílái	regresar	5	HSK1
+回去	huíqù	regresar	5	HSK1
+会	huì	tener la habilidad de	7	HSK1
+火车	huǒchē	tren	15	HSK1
+机场	jīchǎng	aeropuerto	15	HSK1
+鸡蛋	jīdàn	huevo de pollo	11	HSK1
+机票	jīpiào	billete de avión	15	HSK1
+几	jǐ	unos pocos, unos cuantos, cuántos	4	HSK1
+记	jì	recordar, notar, marca, señal	3	HSK1
+记得	jìde	recordar	8	HSK1
+记住	jìzhù	recordar, no olvidar, aprender de memoria, chapar	3	HSK1
+家	jiā	hogar, familia	5	HSK1
+家里	jiāli	en casa de alguien	5	HSK1
+家人	jiārén	familia	5	HSK1
+间	jiān	entre, dentro de un espacio de tiempo, o de lugar, concreto	13	HSK1
+见	jiàn	ver, conocer a alguien, parecer (ser algo), entrevistar	5	HSK1
+见面	jiànmiàn	conocer, ver	5	HSK1
+教	jiāo	enseñar	13	HSK1
+叫	jiào	llamarse	1	HSK1
+教学楼	jiàoxuélóu	edificio de enseñanza, edificio escolar	13	HSK1
+姐姐	jiějie	hermana mayor	5	HSK1
+介绍	jièshào	presentar, sugerir	5	HSK1
+今年	jīnnián	este año	4	HSK1
+今天	jīntiān	hoy	4	HSK1
+进	jìn	entrar, recibir, admitir (a alguien)	5	HSK1
+进来	jìnlái	entrar	5	HSK1
+进去	jìnqù	entrar	4	HSK1
+九	jiǔ	nueve, 9	8	HSK1
+就	jiù	utilizado para indicar una conclusión o resolución, aquí mismo, sólo	7	HSK1
+觉得	juéde	pensar, sentir	4	HSK1
+开	kāi	abrir, empezar, conducir	6	HSK1
+开车	kāichē	conducir un coche	2	HSK1
+开会	kāihuì	tener una reunión, asistir a una reunión	10	HSK1
+开玩笑	kāiwánxiào	burlarse, bromear	8	HSK1
+看	kàn	ver, mirar, leer, considerar	3	HSK1
+看病	kànbìng	ir a ver al médico	11	HSK1
+看到	kàndào	ver	3	HSK1
+看见	kànjiàn	mirar	3	HSK1
+考	kǎo	comprobar, examinar, hacer un examen, chequear	10	HSK1
+考试	kǎoshì	examen	10	HSK1
+渴	kě	sediento	11	HSK1
+课	kè	lección, curso, asignatura	13	HSK1
+课本	kèběn	libro de texto	10	HSK1
+课文	kèwén	texto	13	HSK1
+口	kǒu	boca, CL: para animales o cosas con boca	11	HSK1
+块	kuài	pedazo, CL: piezas de ropa	4	HSK1
+快	kuài	rápido	6	HSK1
+来	lái	venir	1	HSK1
+来到	láidào	venir, llegar	15	HSK1
+老	lǎo	viejo, venerable, experimentado, obsoleto	14	HSK1
+老人	lǎorén	anciano o anciana, los mayores	14	HSK1
+老师	lǎoshī	profesor	2	HSK1
+了	le	partícula modal, intensifica acción previa	1	HSK1
+累	lèi	cansado, llevar a cabo, trabajar duro	3	HSK1
+冷	lěng	frío	12	HSK1
+里	lǐ	dentro	14	HSK1
+里边	lǐbian	dentro, interior	14	HSK1
+两	liǎng	ambos, algunos, unos pocos, peso: 50 gramos	2	HSK1
+零	líng	zero, 0, 〇	8	HSK1
+六	liù	seis, 6	2	HSK1
+楼	lóu	edificio, casa con más de un piso, piso	5	HSK1
+楼上	lóushàng	arriba	5	HSK1
+楼下	lóuxià	abajo	5	HSK1
+路	lù	carretera, calle, camino	2	HSK1
+路口	lùkǒu	cruce, intersección (de carreteras)	9	HSK1
+路上	lùshang	en carretera, de viaje, el firme de una carretera	11	HSK1
+妈妈	māma	mamá	5	HSK1
+马路	mǎlù	calle, carretera	9	HSK1
+马上	mǎshàng	de inmediato, a la vez, inmediatamente, a caballo	7	HSK1
+吗	ma	partícula para preguntas, utilizada al final de una pregunta	1	HSK1
+买	mǎi	comprar	4	HSK1
+慢	màn	despacio	6	HSK1
+忙	máng	ocupado	3	HSK1
+毛	máo	plumas, pelo, abajo, 10 céntimos	4	HSK1
+没	méi	(prefijo verbal negativo), no tener, no haber, no	4	HSK1
+没关系	méiguānxi	no tiene importancia	5	HSK1
+没什么	méishénme	nada, no importa, no es nada, no te preocupes	8	HSK1
+没事儿	méishìr	no es nada, no te preocupes, no importa	8	HSK1
+没有	méiyǒu	no tener, no existir, a no ser	4	HSK1
+妹妹	mèimei	hermana menor	5	HSK1
+门	mén	puerta	2	HSK1
+门口	ménkǒu	puerta	2	HSK1
+门票	ménpiào	billete de entrada	15	HSK1
+们	men	marcador de plural para pronombres y sustantivos que se refieren a individuos	2	HSK1
+米饭	mǐfàn	arroz cocido	11	HSK1
+面包	miànbāo	pan	9	HSK1
+面条儿	miàntiáor	fideos	6	HSK1
+明白	míngbai	claro, obvio, inequívoco, entender	10	HSK1
+明年	míngnián	el año que viene	15	HSK1
+明天	míngtiān	mañana	4	HSK1
+名字	míngzi	nombre	14	HSK1
+拿	ná	coger, tomar, mantener, apoderarse	14	HSK1
+哪	nǎ	cual	2	HSK1
+哪里	nǎlǐ	¿dónde?, expresión humilde para negar un cumplido	4	HSK1
+哪儿	nǎr	dónde	2	HSK1
+哪些	nǎxiē	¿cuáles?, ¿quién?, ¿qué?	6	HSK1
+那	nà	aquel	2	HSK1
+那边	nàbiān	ahí, allí, más allá, también pronunciado [nàbian]	9	HSK1
+那里	nàlǐ	allí, en aquel lugar	9	HSK1
+那儿	nàr	allí, allá	9	HSK1
+那些	nàxiē	aquellos	4	HSK1
+奶	nǎi	leche, abuela	9	HSK1
+奶奶	nǎinai	abuela paterna	5	HSK1
+男	nán	masculino	14	HSK1
+南	nán	sur	12	HSK1
+难	nán	difícil, problema, dificultad	10	HSK1
+南边	nánbian	sur, lado sur, parte sur, al sur de	12	HSK1
+男孩儿	nánháir	niño	9	HSK1
+男朋友	nánpéngyou	amigo, novio	5	HSK1
+男人	nánrén	un hombre, macho (bio.), hombres	14	HSK1
+男生	nánshēng	niño	14	HSK1
+呢	ne	partícula para preguntar sobre opinión, ubicación, afirmación, etc	2	HSK1
+能	néng	poder, tener la capacidad de	7	HSK1
+你	nǐ	tú	1	HSK1
+你们	nǐmen	vosotros	1	HSK1
+年	nián	año	2	HSK1
+您	nín	usted	1	HSK1
+牛奶	niúnǎi	leche de vaca	8	HSK1
+女	nǚ	mujer, hembra, hija	14	HSK1
+女儿	nǚ'ér	hija	6	HSK1
+女孩儿	nǚháir	niña	14	HSK1
+女朋友	nǚpéngyou	amiga, novia	3	HSK1
+女人	nǚrén	mujer	14	HSK1
+女生	nǚshēng	niña	14	HSK1
+旁边	pángbiān	al lado	14	HSK1
+跑	pǎo	correr, escapar, carrera	7	HSK1
+朋友	péngyou	amigo	1	HSK1
+票	piào	tiquet, entrada, CL: envíos y transacciones de negocios	15	HSK1
+七	qī	siete, 7	8	HSK1
+起	qǐ	levantarse, partir, empezar, alzar	7	HSK1
+起床	qǐchuáng	despertarse	7	HSK1
+起来	qǐlai	ponerse de pie, comenzar o continuar una acción, movimiento ascendente	5	HSK1
+汽车	qìchē	coche, automóvil, autobús	15	HSK1
+前	qián	delante de, enfrente	7	HSK1
+钱	qián	dinero	4	HSK1
+钱包	qiánbāo	monedero, cartera	4	HSK1
+前边	qiánbian	frente, lado frontal, delante de, frente a	7	HSK1
+前天	qiántiān	anteayer	10	HSK1
+请	qǐng	iniciar pregunta o invitación para realizar algo	1	HSK1
+请假	qǐng jià	solicitar tiempo libre	10	HSK1
+请进	qǐng jìn	por favor, entra	5	HSK1
+请问	qǐngwèn	disculpe	1	HSK1
+请坐	qǐngzuò	por favor, toma asiento	5	HSK1
+球	qiú	bola, esfera, globo, juego de pelota	7	HSK1
+去	qù	ir	1	HSK1
+去年	qùnián	año pasado	15	HSK1
+热	rè	calor, caliente	12	HSK1
+人	rén	persona, gente	1	HSK1
+认识	rènshi	saber, reconocer, estar familiarizado con	1	HSK1
+认真	rènzhēn	serio, consciente, tomar en serio	13	HSK1
+日	rì	sol, día	6	HSK1
+日期	rìqī	fecha	6	HSK1
+肉	ròu	carne, pulpa (de fruta)	6	HSK1
+三	sān	tres, 3	2	HSK1
+山	shān	montaña, colina	15	HSK1
+商场	shāngchǎng	centro comercial, mercado, bazar	4	HSK1
+商店	shāngdiàn	tienda	4	HSK1
+上	shàng	encima	5	HSK1
+上班	shàngbān	ir a trabajar, empezar a trabajar	3	HSK1
+上边	shàngbian	arriba	5	HSK1
+上车	shàngchē	entrar o subirse (a un autobús, tren, coche, etc.)	11	HSK1
+上次	shàngcì	la última vez	15	HSK1
+上课	shàngkè	ir a clase, participar en clase, ir a impartir clases	13	HSK1
+上网	shàngwǎng	navegar por internet	13	HSK1
+上午	shàngwǔ	la mañana	3	HSK1
+上学	shàngxué	ir al colegio, asistir al colegio	6	HSK1
+少	shǎo	poco	12	HSK1
+谁	shéi	quién	4	HSK1
+身上	shēnshang	en el propio cuerpo	11	HSK1
+身体	shēntǐ	el cuerpo, salud	11	HSK1
+什么	shénme	¿qué?, algo	2	HSK1
+生病	shēngbìng	enfermar	11	HSK1
+生气	shēngqì	enfadado, loco, ofendido, enfadarse	8	HSK1
+生日	shēngrì	aniversario	6	HSK1
+十	shí	diez, 10	2	HSK1
+时候	shíhou	momento, período de tiempo	3	HSK1
+时间	shíjiān	tiempo, período	15	HSK1
+事	shì	asunto, tema, objeto, trabajo	3	HSK1
+试	shì	intentar, probar, experimento, examen	4	HSK1
+是	shì	ser, sí	1	HSK1
+是不是	shìbúshì	es o no es, sí o no, tanto si... como si no	8	HSK1
+手	shǒu	mano	11	HSK1
+手机	shǒujī	teléfono móvil	6	HSK1
+书	shū	libro	10	HSK1
+书包	shūbāo	mochila	4	HSK1
+书店	shūdiàn	librería	10	HSK1
+树	shù	árbol	11	HSK1
+水	shuǐ	agua	9	HSK1
+水果	shuǐguǒ	fruta	9	HSK1
+睡	shuì	dormir	11	HSK1
+睡觉	shuìjiào	dormir	6	HSK1
+说	shuō	hablar, decir, explicar, regañar	3	HSK1
+说话	shuōhuà	hablar	5	HSK1
+四	sì	cuatro, 4	2	HSK1
+送	sòng	regalar, entregar	6	HSK1
+岁	suì	años (edad)	2	HSK1
+他	tā	él	1	HSK1
+她	tā	ella	1	HSK1
+他们	tāmen	ellos, a ellos, les	2	HSK1
+她们	tāmen	ellas, a ellas, les	2	HSK1
+太	tài	demasiado, excesivamente	4	HSK1
+天	tiān	día, cielo	9	HSK1
+天气	tiānqì	tiempo (clima)	12	HSK1
+听	tīng	escuchar	3	HSK1
+听到	tīngdào	oír	14	HSK1
+听见	tīng jiàn	oír	3	HSK1
+听写	tīngxiě	dictar, dictado	10	HSK1
+同学	tóngxué	compañero de clase	13	HSK1
+图书馆	túshūguǎn	biblioteca	10	HSK1
+外	wài	de fuera, extranjero	12	HSK1
+外边	wàibian	fuera, superficie externa, en el extranjero	12	HSK1
+外国	wàiguó	extranjero (país)	2	HSK1
+外语	wàiyǔ	idioma extranjero	13	HSK1
+玩儿	wánr	jugar, pasarlo bien	15	HSK1
+晚	wǎn	tarde-noche, noche, tarde (adv.)	12	HSK1
+晚饭	wǎnfàn	cena	5	HSK1
+晚上	wǎnshang	por la tarde/noche	3	HSK1
+网上	wǎngshang	online, en internet	2	HSK1
+网友	wǎngyǒu	amigo en la red, amigo electrónico, usuario de internet	13	HSK1
+忘	wàng	olvidar	6	HSK1
+忘记	wàng jì	olvidar	8	HSK1
+问	wèn	preguntar	2	HSK1
+我	wǒ	yo, mi, mío	1	HSK1
+我们	wǒmen	nosotros, nuestro	1	HSK1
+五	wǔ	cinco, 5	2	HSK1
+午饭	wǔfàn	almuerzo	11	HSK1
+西	xī	oeste	12	HSK1
+西边	xībian	oeste, lado oeste, parte oeste, al oeste de	12	HSK1
+洗	xǐ	lavar, bañarse	11	HSK1
+喜欢	xǐhuan	gustar	4	HSK1
+洗手间	xǐshǒujiān	lavabo, baño	13	HSK1
+下	xià	debajo, más tarde, siguiente	5	HSK1
+下班	xiàbān	después del trabajo, no estar de servicio	3	HSK1
+下边	xiàbian	debajo, la parte de abajo, por debajo de	5	HSK1
+下车	xiàchē	bajar del autobús, tren, etc., salir del coche	11	HSK1
+下次	xiàcì	la próxima vez	10	HSK1
+下课	xiàkè	después de clases, acabar la clase, salir de clase	7	HSK1
+下午	xiàwǔ	la tarde	3	HSK1
+下雨	xiàyǔ	llover	10	HSK1
+先	xiān	en primer lugar, por adelantado, temprano, previo	11	HSK1
+先生	xiānsheng	señor, marido	14	HSK1
+现在	xiànzài	ahora	3	HSK1
+想	xiǎng	querer, pensar, desear	3	HSK1
+小	xiǎo	pequeño, joven	4	HSK1
+小孩儿	xiǎoháir	niño o niña	14	HSK1
+小姐	xiǎojiě	señorita, ( jerga) prostituta	14	HSK1
+小朋友	xiǎopéngyǒu	niño o niña	14	HSK1
+小时	xiǎoshí	hora	9	HSK1
+小学	xiǎoxué	escuela de primaria	10	HSK1
+小学生	xiǎoxuéshēng	alumno de primaria, escolar	10	HSK1
+笑	xiào	reir, sonerir	6	HSK1
+写	xiě	escribir	3	HSK1
+谢谢	xièxie	gracias	1	HSK1
+新	xīn	nuevo	4	HSK1
+新年	xīnnián	año Nuevo	13	HSK1
+星期	xīngqī	semana	6	HSK1
+星期日	xīngqīrì	domingo	6	HSK1
+星期天	xīngqītiān	domingo	6	HSK1
+行	xíng	estar bien, estar bien, caminar, ir	4	HSK1
+休息	xiūxi	descansar, descanso	3	HSK1
+学	xué	aprender, estudiar	13	HSK1
+学生	xuésheng	estudiante	2	HSK1
+学习	xuéxí	estudiar	2	HSK1
+学校	xuéxiào	escuela	2	HSK1
+学院	xuéyuàn	universidad, institución educativa, colegio, facultad	13	HSK1
+要	yào	importante, querer, quisiera, poder	10	HSK1
+爷爷	yéye	abuelo paterno	5	HSK1
+也	yě	también	1	HSK1
+页	yè	página, hoja	10	HSK1
+一	yī	uno, 1, un	1	HSK1
+衣服	yīfu	ropa	4	HSK1
+医生	yīshēng	doctor	11	HSK1
+医院	yīyuàn	hospital	3	HSK1
+一半	yíbàn	mitad	9	HSK1
+一会儿	yíhuìr	un rato	9	HSK1
+一块儿	yíkuàir	un trozo	7	HSK1
+一下儿	yíxiàr	(después de verbo) darle una oportunidad	15	HSK1
+一样	yíyàng	como, igual a, lo mismo que, al igual que	13	HSK1
+一边	yìbiān	un lado, cada lado, por un lado, por otra parte	7	HSK1
+一点儿	yìdiǎnr	un poco, un poco de, un punto de, variante	11	HSK1
+一起	yìqǐ	juntos, con	3	HSK1
+一些	yìxiē	algunos, unos pocos, un poco	3	HSK1
+用	yòng	usar, emplear, tener que, comer o beber	10	HSK1
+有	yǒu	tener, haber	1	HSK1
+有的	yǒude	(hay) algunos (que son...), algunos (existen)	4	HSK1
+有名	yǒumíng	famoso, conocido	15	HSK1
+有时候	yǒushíhou	a veces	7	HSK1
+有些	yǒuxiē	algunos, un poco, 有一些 [yǒuyīxiē]	6	HSK1
+有用	yǒuyòng	útil	10	HSK1
+右	yòu	derecha, a la derecha, el lado derecho	8	HSK1
+右边	yòubian	derecha, a la derecha, el lado derecho	8	HSK1
+雨	yǔ	lluvia	12	HSK1
+元	yuán	unidad monetaria China, primero	4	HSK1
+远	yuǎn	lejos, distante, remoto	2	HSK1
+月	yuè	luna, mes	6	HSK1
+再	zài	de nuevo, entonces, una vez más, otra vez	15	HSK1
+在	zài	estar en	2	HSK1
+在家	zàijiā	en casa	5	HSK1
+再见	zàijiàn	adiós	5	HSK1
+早	zǎo	temprano, la mañana, ¡Buenos días!	12	HSK1
+早饭	zǎofàn	desayuno	9	HSK1
+早上	zǎoshang	la mañana, temprano por la mañana	3	HSK1
+怎么	zěnme	¿cómo?	3	HSK1
+站	zhàn	estación, de pie, detener, parar	7	HSK1
+找	zhǎo	buscar, encontrar, devolver	3	HSK1
+找到	zhǎodào	encontrar	3	HSK1
+这	zhè	éste, ese	2	HSK1
+这边	zhèbiān	aquí, por aquí, en este lado	9	HSK1
+这里	zhèlǐ	aquí	9	HSK1
+这儿	zhèr	aquí	9	HSK1
+这些	zhèxiē	estos	4	HSK1
+着	zhe	partícula añadida tras un verbo para indicar que la acción todavía se está realizando	5	HSK1
+真	zhēn	realmente, de veras, genuino	2	HSK1
+真的	zhēnde	de verdad, en serio, real, cierto	8	HSK1
+正	zhèng	ubicado centralmente, exactamente, correcto, puro	10	HSK1
+正在	zhèngzài	en proceso de, mientras	10	HSK1
+知道	zhīdào	saber	2	HSK1
+知识	zhīshi	conocimiento, intelectual	13	HSK1
+中	zhōng	dentro de, entre, en, medio	12	HSK1
+中国	zhōngguó	china	1	HSK1
+中间	zhōng jiān	entre, intermedio, en medio, centro	6	HSK1
+中文	zhōngwén	lengua china escrita	1	HSK1
+中午	zhōngwǔ	mediodía	3	HSK1
+中学	zhōngxué	instituto de educación secundaria	10	HSK1
+中学生	zhōngxuéshēng	alumno de instituto, alumno de bachiller	13	HSK1
+重	zhòng	grave, pesada	12	HSK1
+重要	zhòngyào	importante, significativo, principal	10	HSK1
+住	zhù	vivir	3	HSK1
+准备	zhǔnbèi	preparación, preparar	5	HSK1
+桌子	zhuōzi	mesa	5	HSK1
+字	zì	palabra, carácter, símbolo	3	HSK1
+子	zi	sufijo nominal	4	HSK1
+走	zǒu	caminar	7	HSK1
+走路	zǒulù	caminar, ir a pie	7	HSK1
+最	zuì	lo que más, el más, superlativo	11	HSK1
+最好	zuìhǎo	más vale que, el mejor, mejor que	11	HSK1
+最后	zuìhòu	final, última, finalmente	11	HSK1
+昨天	zuótiān	ayer	4	HSK1
+左	zuǒ	izquierda, a la izquierda, el lado izquierdo	8	HSK1
+左边	zuǒbian	izquierda, a la izquierda, el lado izquierdo	8	HSK1
+坐	zuò	tomar asiento, coger (avión, bus, etc), CL: para edificios	2	HSK1
+做	zuò	hacer	3	HSK1
+坐下	zuòxia	sentarse	5	HSK1
+# Palabras del HSK 1 anterior que ya no están en la lista 3.0 (tema 99: se pueden tocar, pero no se estudian)
+你好	nǐ hǎo	hola	99
+您好	nín hǎo	hola (formal)	99
+你们好	nǐmen hǎo	hola a todos	99
+不谢	bú xiè	de nada	99
+中国人	Zhōngguó rén	chino, china (persona)	99
+美国	Měiguó	Estados Unidos	99
+美国人	Měiguó rén	estadounidense	99
+多大	duō dà	qué edad	99
+中国菜	Zhōngguó cài	comida china	99
+这个	zhège	este, esta	99
+星期几	xīngqījǐ	qué día de la semana	99
+星期一	xīngqīyī	lunes	99
+星期二	xīngqī'èr	martes	99
+星期三	xīngqīsān	miércoles	99
+星期四	xīngqīsì	jueves	99
+星期五	xīngqīwǔ	viernes	99
+星期六	xīngqīliù	sábado	99
+看书	kàn shū	leer (libros)	99
+一个	yí ge	un, una	99
+那个	nàge	ese, esa	99
+猫	māo	gato	99
+小猫	xiǎo māo	gatito	99
+狗	gǒu	perro	99
+小狗	xiǎo gǒu	perrito	99
+椅子	yǐzi	silla	99
+下面	xiàmiàn	debajo	99
+上面	shàngmiàn	encima	99
+一本	yì běn	un (libro)	99
+里面	lǐmiàn	dentro	99
+前面	qiánmiàn	delante	99
+后面	hòumiàn	detrás	99
+什么时候	shénme shíhou	cuándo	99
+怎么样	zěnmeyàng	qué tal, cómo	99
+些	xiē	algunos	99
+喂	wèi	¿diga? (al teléfono)	99
+苹果	píngguǒ	manzana	99
+分钟	fēnzhōng	minuto	99
+漂亮	piàoliang	bonito, guapo	99
+啊	a	(partícula exclamativa)	99
+不少	bùshǎo	bastante, no poco	99
+出租车	chūzūchē	taxi	99
+是的	shì de	sí, así es	99
+火车站	huǒchēzhàn	estación de tren	99
+李	Lǐ	Li (apellido)	99
+王	Wáng	Wang (apellido)	99
+张	Zhāng	Zhang (apellido)	99
+李月	Lǐ Yuè	Li Yue (nombre)	99
+大卫	Dàwèi	David	99
+李心	Lǐ Xīn	Li Xin (nombre)	99
+王方	Wáng Fāng	Wang Fang (nombre)	99
+谢朋	Xiè Péng	Xie Peng (nombre)	99
+李朋	Lǐ Péng	Li Peng (nombre)	99
+小王	Xiǎo Wáng	Xiao Wang	99
+小李	Xiǎo Lǐ	Xiao Li	99
+小张	Xiǎo Zhāng	Xiao Zhang	99
+王老师	Wáng lǎoshī	profesor(a) Wang	99
+李老师	Lǐ lǎoshī	profesor(a) Li	99
+张先生	Zhāng xiānsheng	señor Zhang	99
+李先生	Lǐ xiānsheng	señor Li	99
+王先生	Wáng xiānsheng	señor Wang	99
+王小姐	Wáng xiǎojiě	señorita Wang	99
+李小姐	Lǐ xiǎojiě	señorita Li	99
+只	zhǐ	solo, solamente	99
+一下	yíxià	un momento, un poco	99

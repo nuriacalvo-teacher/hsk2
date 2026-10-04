@@ -5,236 +5,1235 @@
    {
     "id": "G01-1",
     "elige": [
-     {"q": "他们下午___去踢足球。", "opciones": ["最", "要", "多"], "ok": 1,
-      "exp": "要 + verbo expresa un plan: 他们下午要去踢足球 «Esta tarde van a ir a jugar al fútbol»."},
-     {"q": "¿Qué frase está bien?", "opciones": ["我一杯茶要。", "我茶要一杯。", "我要一杯茶。"], "ok": 2,
-      "exp": "Orden: sujeto + 要 + cantidad + lo que se quiere: 我要一杯茶 «Quiero un té»."},
-     {"q": "«Mañana voy a ir de viaje a Pekín.»", "opciones": ["明天我要去北京旅游。", "明天我去要北京旅游。", "我要明天北京去旅游。", "明天要我去北京旅游。"], "ok": 0,
-      "exp": "Tiempo + sujeto + 要 + 去 + lugar + verbo: 明天我要去北京旅游。"},
-     {"q": "你___多喝水。(Tienes que beber más agua.)", "opciones": ["最", "几", "要"], "ok": 2,
-      "exp": "要 también significa «tener que»: 你要多喝水 «Tienes que beber más agua»."},
-     {"q": "¿Cómo se dice «No quiero ir» de forma natural?", "opciones": ["我要不去。", "我不想去。", "我去不要。"], "ok": 1,
-      "exp": "Para «no querer hacer algo» se usa 不想: 我不想去 «No quiero ir». (你不要去 suena a orden: «no vayas».)"},
-     {"q": "—你要喝什么？ —___", "opciones": ["我要一杯水。", "我是一杯水。", "我在一杯水。"], "ok": 0,
-      "exp": "Se responde con 要 + lo que se quiere: 我要一杯水 «Quiero un vaso de agua»."},
-     {"q": "¿Qué significa «你要买衣服，去那个商店吧。»?", "opciones": ["Ya has comprado ropa en esa tienda.", "Si quieres comprar ropa, ve a esa tienda.", "No compres ropa en esa tienda."], "ok": 1,
-      "exp": "Aquí 要 = «querer»: «Si quieres comprar ropa, ve a esa tienda»."}
+     {
+      "q": "Supones que sí y quieres confirmarlo: «Eres Annie, ¿verdad?»",
+      "opciones": [
+       "你是安妮吗？",
+       "你是安妮吧？",
+       "你是安妮呢？"
+      ],
+      "ok": 1,
+      "exp": "吧 al final de una pregunta indica que ya supones la respuesta: 你是安妮吧？ «Eres Annie, ¿verdad?». 吗 es una pregunta neutra, sin suponer nada."
+     },
+     {
+      "q": "陈天中是泰国人___？（Crees que sí.）",
+      "opciones": [
+       "吧",
+       "呢",
+       "了"
+      ],
+      "ok": 0,
+      "exp": "Para suponer y pedir confirmación se usa 吧: 陈天中是泰国人吧？ «Chen Tianzhong es tailandés, ¿no?»."
+     },
+     {
+      "q": "¿Qué significa 她唱歌很好听吧？",
+      "opciones": [
+       "¿Canta bien o no?",
+       "Canta muy bien, ¿verdad?",
+       "Cantemos, que suena bien."
+      ],
+      "ok": 1,
+      "exp": "Con 吧 el hablante cree que la respuesta es «sí»: «Canta muy bien, ¿verdad?». No es una pregunta abierta."
+     },
+     {
+      "q": "¿Qué frase está bien?",
+      "opciones": [
+       "你吧是王老师的姐姐？",
+       "你是吧王老师的姐姐？",
+       "你是王老师的姐姐吧？"
+      ],
+      "ok": 2,
+      "exp": "吧 va siempre al final de la frase: 你是王老师的姐姐吧？ «Usted es la hermana de la profesora Wang, ¿no?»."
+     },
+     {
+      "q": "A：这是你的手机吧？ B：___",
+      "opciones": [
+       "对，是我的，谢谢你！",
+       "不客气。",
+       "我们是第一次来。"
+      ],
+      "ok": 0,
+      "exp": "A supone que el móvil es de B («Este es tu móvil, ¿no?»), y B lo confirma: 对，是我的，谢谢你！ «Sí, es mío, ¡gracias!»."
+     },
+     {
+      "q": "Ordena: 吧 / 中国人 / 他 / 是",
+      "opciones": [
+       "他吧是中国人？",
+       "中国人是他吧？",
+       "他是中国人吧？"
+      ],
+      "ok": 2,
+      "exp": "Frase normal + 吧 al final: 他是中国人吧？ «Es chino, ¿no?»."
+     },
+     {
+      "q": "¿Qué pregunta es neutra, SIN suponer la respuesta?",
+      "opciones": [
+       "您就是王老师吧？",
+       "你们是来旅游的吗？",
+       "你们是来旅游的吧？"
+      ],
+      "ok": 1,
+      "exp": "吗 pregunta sin suponer nada: 你们是来旅游的吗？ «¿Habéis venido de viaje?». Con 吧 el hablante ya cree saber la respuesta."
+     }
     ],
     "frases": [
-     {"zh": "明天我要去北京旅游。", "py": "Míngtiān wǒ yào qù Běijīng lǚyóu.",
-      "es": ["Mañana voy a ir de viaje a Pekín.", "Mañana me voy de viaje a Pekín.", "Mañana voy a viajar a Pekín.", "Mañana quiero ir a Pekín de viaje.", "Mañana iré a Pekín de turismo.", "Mañana voy a hacer turismo en Pekín.", "Mañana voy a Beijing de viaje."],
-      "altzh": ["我明天要去北京旅游。"], "altpy": ["Wǒ míngtiān yào qù Běijīng lǚyóu."]},
-     {"zh": "他们下午要去踢足球。", "py": "Tāmen xiàwǔ yào qù tī zúqiú.",
-      "es": ["Esta tarde van a ir a jugar al fútbol.", "Por la tarde van a jugar al fútbol.", "Esta tarde van a jugar al fútbol.", "Ellos van a ir a jugar al fútbol esta tarde.", "Esta tarde irán a jugar al fútbol.", "Por la tarde van a ir a jugar a fútbol."],
-      "altzh": ["下午他们要去踢足球。"], "altpy": ["Xiàwǔ tāmen yào qù tī zúqiú."]},
-     {"zh": "我要一杯茶。", "py": "Wǒ yào yì bēi chá.",
-      "es": ["Quiero un té.", "Quiero una taza de té.", "Yo quiero un té.", "Quisiera un té.", "Para mí, un té."]},
-     {"zh": "你要喝什么？", "py": "Nǐ yào hē shénme?",
-      "es": ["¿Qué quieres beber?", "¿Qué quieres tomar?", "¿Qué vas a tomar?", "¿Qué quiere tomar?", "¿Qué va a beber usted?", "¿Qué te apetece beber?"]},
-     {"zh": "我要去买几个新杯子。", "py": "Wǒ yào qù mǎi jǐ ge xīn bēizi.",
-      "es": ["Voy a comprar unas cuantas tazas nuevas.", "Voy a ir a comprar algunas tazas nuevas.", "Voy a comprar unos vasos nuevos.", "Voy a ir a comprar unos cuantos vasos nuevos.", "Quiero ir a comprar algunas tazas nuevas.", "Voy a comprar varias tazas nuevas."]},
-     {"zh": "你要多喝水。", "py": "Nǐ yào duō hē shuǐ.",
-      "es": ["Tienes que beber más agua.", "Debes beber más agua.", "Tiene que beber más agua.", "Debe usted beber más agua.", "Tienes que beber mucha agua."]},
-     {"zh": "星期六我要和朋友一起去看电影。", "py": "Xīngqīliù wǒ yào hé péngyou yìqǐ qù kàn diànyǐng.",
-      "es": ["El sábado voy a ir al cine con mis amigos.", "El sábado voy a ir a ver una película con unos amigos.", "El sábado iré al cine con mis amigos.", "El sábado voy a ir al cine con un amigo.", "Este sábado voy a ir al cine con amigos.", "El sábado voy a ver una peli con mis amigos."],
-      "altzh": ["我星期六要和朋友一起去看电影。"], "altpy": ["Wǒ xīngqīliù yào hé péngyou yìqǐ qù kàn diànyǐng."]},
-     {"zh": "你要买衣服，去那个商店吧。", "py": "Nǐ yào mǎi yīfu, qù nàge shāngdiàn ba.",
-      "es": ["Si quieres comprar ropa, ve a esa tienda.", "Si quiere comprar ropa, vaya a esa tienda.", "Si vas a comprar ropa, ve a esa tienda.", "Si quieres comprarte ropa, vete a esa tienda.", "Para comprar ropa, ve a esa tienda."]},
-     {"zh": "我不想去，我要在家看书。", "py": "Wǒ bù xiǎng qù, wǒ yào zài jiā kàn shū.",
-      "es": ["No quiero ir, voy a leer en casa.", "No quiero ir; quiero leer en casa.", "No quiero ir, me voy a quedar en casa leyendo.", "Yo no quiero ir, quiero quedarme en casa a leer.", "No me apetece ir, voy a leer en casa."]}
+     {
+      "zh": "你们就是她的学生吧？",
+      "py": "Nǐmen jiù shì tā de xuésheng ba?",
+      "es": [
+       "Vosotras sois sus alumnas, ¿no?",
+       "Vosotros sois sus alumnos, ¿verdad?",
+       "Sois sus estudiantes, ¿no?",
+       "Así que vosotros sois sus alumnos, ¿no?",
+       "Vosotras debéis de ser sus alumnas, ¿verdad?"
+      ]
+     },
+     {
+      "zh": "您是王一飞老师的姐姐吧？",
+      "py": "Nín shì Wáng Yīfēi lǎoshī de jiějie ba?",
+      "es": [
+       "Usted es la hermana mayor de la profesora Wang Yifei, ¿verdad?",
+       "Es usted la hermana de la profesora Wang Yifei, ¿no?",
+       "Usted debe de ser la hermana de la profesora Wang Yifei.",
+       "Es la hermana mayor de la profesora Wang Yifei, ¿no?"
+      ]
+     },
+     {
+      "zh": "陈天中是泰国人吧？",
+      "py": "Chén Tiānzhōng shì Tàiguó rén ba?",
+      "es": [
+       "Chen Tianzhong es tailandés, ¿no?",
+       "Chen Tianzhong es de Tailandia, ¿verdad?",
+       "Chen Tianzhong debe de ser tailandés.",
+       "Chen Tianzhong es tailandés, ¿verdad?"
+      ]
+     },
+     {
+      "zh": "她唱歌很好听吧？",
+      "py": "Tā chànggē hěn hǎotīng ba?",
+      "es": [
+       "Canta muy bien, ¿no?",
+       "Ella canta muy bien, ¿verdad?",
+       "Canta de maravilla, ¿no?",
+       "Canta muy bonito, ¿verdad?"
+      ]
+     },
+     {
+      "zh": "你是第一次来北京吧？",
+      "py": "Nǐ shì dì-yī cì lái Běijīng ba?",
+      "es": [
+       "Es la primera vez que vienes a Pekín, ¿no?",
+       "Es tu primera vez en Pekín, ¿verdad?",
+       "Vienes a Pekín por primera vez, ¿no?",
+       "Es la primera vez que vienes a Beijing, ¿verdad?"
+      ]
+     },
+     {
+      "zh": "这是你的手机吧？",
+      "py": "Zhè shì nǐ de shǒujī ba?",
+      "es": [
+       "Este es tu móvil, ¿no?",
+       "Este móvil es tuyo, ¿verdad?",
+       "Esto es tu móvil, ¿no?",
+       "Este es tu teléfono, ¿verdad?"
+      ]
+     },
+     {
+      "zh": "你们是来旅游的吧？",
+      "py": "Nǐmen shì lái lǚyóu de ba?",
+      "es": [
+       "Habéis venido de viaje, ¿no?",
+       "Venís de turismo, ¿verdad?",
+       "Habéis venido a hacer turismo, ¿no?",
+       "Estáis aquí de vacaciones, ¿no?"
+      ]
+     },
+     {
+      "zh": "他已经到北京了吧？",
+      "py": "Tā yǐjīng dào Běijīng le ba?",
+      "es": [
+       "Ya ha llegado a Pekín, ¿no?",
+       "Ya habrá llegado a Pekín, ¿verdad?",
+       "Supongo que ya ha llegado a Pekín.",
+       "Ya está en Pekín, ¿no?"
+      ]
+     },
+     {
+      "zh": "你就是李文吧？",
+      "py": "Nǐ jiù shì Lǐ Wén ba?",
+      "es": [
+       "Tú eres Li Wen, ¿no?",
+       "Así que tú eres Li Wen, ¿verdad?",
+       "Tú debes de ser Li Wen.",
+       "Eres Li Wen, ¿no?"
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "El plan del sábado",
-     "zh": "星期六上午我要去商店买衣服。下午我要和朋友一起去踢足球。五点我们要去饭店吃饭。我觉得星期六最好！",
-     "py": "Xīngqīliù shàngwǔ wǒ yào qù shāngdiàn mǎi yīfu. Xiàwǔ wǒ yào hé péngyou yìqǐ qù tī zúqiú. Wǔ diǎn wǒmen yào qù fàndiàn chī fàn. Wǒ juéde xīngqīliù zuì hǎo!",
-     "es": "El sábado por la mañana voy a ir a la tienda a comprar ropa. Por la tarde voy a ir a jugar al fútbol con mis amigos. A las cinco vamos a ir a comer a un restaurante. ¡Creo que el sábado es el mejor día!",
+     "titulo": "En el aeropuerto",
+     "zh": "白家月和安妮到北京了。一个人来接她们，她问：“你们就是王老师的学生吧？”白家月说：“对，您是王老师的姐姐吧？”她说：“是的，我叫王一雪。”",
+     "py": "Bái Jiāyuè hé Ānnī dào Běijīng le. Yí ge rén lái jiē tāmen, tā wèn: “Nǐmen jiù shì Wáng lǎoshī de xuésheng ba?” Bái Jiāyuè shuō: “Duì, nín shì Wáng lǎoshī de jiějie ba?” Tā shuō: “Shì de, wǒ jiào Wáng Yīxuě.”",
+     "es": "Bai Jiayue y Annie han llegado a Pekín. Una persona va a recogerlas y les pregunta: «Vosotras sois las alumnas de la profesora Wang, ¿verdad?». Bai Jiayue responde: «Sí. Usted es la hermana de la profesora Wang, ¿no?». Ella dice: «Así es, me llamo Wang Yixue».",
      "preguntas": [
-      {"q": "¿Qué va a hacer el sábado por la mañana?", "opciones": ["Jugar al fútbol", "Comprar ropa", "Ir al cine"], "ok": 1},
-      {"q": "下午他要做什么？", "opciones": ["去饭店", "去商店", "去踢足球"], "ok": 2},
-      {"q": "五点他们要去哪儿？", "opciones": ["饭店", "学校", "医院"], "ok": 0}
+      {
+       "q": "¿Quién va a recoger a Bai Jiayue y Annie?",
+       "opciones": [
+        "La profesora Wang",
+        "La hermana de la profesora Wang",
+        "Li Wen"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "白家月和安妮是谁的学生？",
+       "opciones": [
+        "王老师的",
+        "王一雪的",
+        "李文的"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "来接她们的人叫什么？",
+       "opciones": [
+        "王一飞",
+        "安妮",
+        "王一雪"
+       ],
+       "ok": 2
+      }
      ]
     }
    },
    {
     "id": "G01-2",
     "elige": [
-     {"q": "我___喜欢踢足球。", "opciones": ["要", "最", "几"], "ok": 1,
-      "exp": "最 + verbo de gusto: 我最喜欢踢足球 «Lo que más me gusta es jugar al fútbol»."},
-     {"q": "¿Qué frase está bien?", "opciones": ["我最喜欢茶。", "我喜欢最茶。", "最我喜欢茶。"], "ok": 0,
-      "exp": "最 va delante del verbo: 我最喜欢茶 «Lo que más me gusta es el té»."},
-     {"q": "«¿Cuál es tu deporte favorito?»", "opciones": ["你喜欢最什么运动？", "你最什么运动喜欢？", "什么运动你喜欢最？", "你最喜欢什么运动？"], "ok": 3,
-      "exp": "最 + 喜欢 + 什么 + sustantivo: 你最喜欢什么运动？ «¿Qué deporte te gusta más?»"},
-     {"q": "九月去北京旅游___好。", "opciones": ["几", "多", "最"], "ok": 2,
-      "exp": "最好 = «lo mejor»: «Lo mejor es ir de viaje a Pekín en septiembre»."},
-     {"q": "¿Qué significa «这个杯子最大。»?", "opciones": ["Esta taza es muy grande.", "Esta taza es la más grande.", "Esta taza no es grande."], "ok": 1,
-      "exp": "最大 = «el más grande», no «muy grande» (很大): «Esta taza es la más grande»."},
-     {"q": "Elige el orden correcto:", "opciones": ["我觉得中国菜最好吃。", "我觉得中国菜好吃最。", "我最觉得中国菜好吃。"], "ok": 0,
-      "exp": "最 va justo delante del adjetivo 好吃: «Creo que la comida china es la más rica»."},
-     {"q": "—你最喜欢什么水果？ —___", "opciones": ["我喜欢最苹果。", "苹果我最。", "我最喜欢苹果。"], "ok": 2,
-      "exp": "Se repite la estructura 最喜欢 + objeto: 我最喜欢苹果 «La fruta que más me gusta es la manzana»."}
+     {
+      "q": "我们___来旅游的。",
+      "opciones": [
+       "是",
+       "在",
+       "有"
+      ],
+      "ok": 0,
+      "exp": "Estructura 是……的 para resaltar el propósito: 我们是来旅游的 «Hemos venido de viaje»."
+     },
+     {
+      "q": "¿Qué frase negativa está bien?",
+      "opciones": [
+       "我们不坐出租车去的。",
+       "我们不是坐出租车去的。",
+       "我们是不坐出租车去的。"
+      ],
+      "ok": 1,
+      "exp": "En la negativa 是 no se puede omitir: 不是……的. 我们不是坐出租车去的 «No fuimos en taxi»."
+     },
+     {
+      "q": "«¿Cuándo llegaste?» (hecho ya pasado)",
+      "opciones": [
+       "你是什么时候到的？",
+       "你什么时候到了吗？",
+       "你是什么时候到吗？"
+      ],
+      "ok": 0,
+      "exp": "Para preguntar por el momento de algo ya ocurrido: 你是什么时候到的？ «¿Cuándo llegaste?». No se mezcla con 吗 ni con 了."
+     },
+     {
+      "q": "A：你是怎么来学校的？ B：___",
+      "opciones": [
+       "我来学校坐公交车的。",
+       "我是来学校坐公交车。",
+       "我是坐公交车来的。"
+      ],
+      "ok": 2,
+      "exp": "Se responde con la misma estructura, resaltando el medio: 我是坐公交车来的 «He venido en autobús»."
+     },
+     {
+      "q": "¿Qué resalta 是……的 en 我是今天早上到的？",
+      "opciones": [
+       "El lugar",
+       "El momento (cuándo)",
+       "La persona que lo hizo"
+      ],
+      "ok": 1,
+      "exp": "Entre 是 y 的 está 今天早上: se resalta CUÁNDO: «Llegué esta mañana»."
+     },
+     {
+      "q": "A：你们是来学中文的吗？ B：不是，我们是来___的。",
+      "opciones": [
+       "认识",
+       "旅游",
+       "懂"
+      ],
+      "ok": 1,
+      "exp": "B corrige el propósito: 我们是来旅游的 «Hemos venido de turismo»."
+     },
+     {
+      "q": "«Fue la hermana de la profesora Wang quien vino a buscarnos.»",
+      "opciones": [
+       "是王老师的姐姐来接我们的。",
+       "是王老师的姐姐的来接我们。",
+       "的是王老师的姐姐来接我们。"
+      ],
+      "ok": 0,
+      "exp": "是 + la persona que lo hizo + verbo + 的: 是王老师的姐姐来接我们的 (resalta QUIÉN)."
+     }
     ],
     "frases": [
-     {"zh": "我最喜欢踢足球。", "py": "Wǒ zuì xǐhuan tī zúqiú.",
-      "es": ["Lo que más me gusta es jugar al fútbol.", "Mi deporte favorito es el fútbol.", "Lo que más me gusta es el fútbol.", "Jugar al fútbol es lo que más me gusta.", "Lo que más me gusta hacer es jugar al fútbol.", "Lo que más me gusta es jugar a fútbol."]},
-     {"zh": "九月去北京旅游最好。", "py": "Jiǔ yuè qù Běijīng lǚyóu zuì hǎo.",
-      "es": ["Lo mejor es ir de viaje a Pekín en septiembre.", "Septiembre es el mejor mes para viajar a Pekín.", "En septiembre es cuando mejor se viaja a Pekín.", "Lo mejor es viajar a Pekín en septiembre.", "Septiembre es la mejor época para ir de viaje a Beijing."]},
-     {"zh": "你最喜欢什么运动？", "py": "Nǐ zuì xǐhuan shénme yùndòng?",
-      "es": ["¿Cuál es tu deporte favorito?", "¿Qué deporte te gusta más?", "¿Qué deporte es el que más te gusta?", "¿Cuál es su deporte favorito?", "¿Qué deporte le gusta más?"]},
-     {"zh": "这个杯子最大。", "py": "Zhège bēizi zuì dà.",
-      "es": ["Esta taza es la más grande.", "Este vaso es el más grande.", "Esta es la taza más grande.", "Este es el vaso más grande.", "La taza más grande es esta."]},
-     {"zh": "我觉得中国菜最好吃。", "py": "Wǒ juéde Zhōngguó cài zuì hǎochī.",
-      "es": ["Creo que la comida china es la más rica.", "Me parece que la comida china es la más buena.", "Para mí la comida china es la más rica.", "Creo que la comida china es la mejor.", "Pienso que la comida china es la más sabrosa."]},
-     {"zh": "什么时候去北京旅游最好？", "py": "Shénme shíhou qù Běijīng lǚyóu zuì hǎo?",
-      "es": ["¿Cuándo es mejor ir de viaje a Pekín?", "¿Cuál es la mejor época para viajar a Pekín?", "¿Cuándo es el mejor momento para ir a Pekín de viaje?", "¿Cuándo es mejor viajar a Beijing?", "¿Cuál es el mejor momento para viajar a Pekín?"]},
-     {"zh": "我最喜欢的水果是苹果。", "py": "Wǒ zuì xǐhuan de shuǐguǒ shì píngguǒ.",
-      "es": ["Mi fruta favorita es la manzana.", "La fruta que más me gusta es la manzana.", "Mi fruta preferida es la manzana.", "La manzana es mi fruta favorita.", "La fruta que más me gusta son las manzanas."]},
-     {"zh": "他是我们学校最好的老师。", "py": "Tā shì wǒmen xuéxiào zuì hǎo de lǎoshī.",
-      "es": ["Es el mejor profesor de nuestra escuela.", "Él es el mejor profesor de nuestro colegio.", "Es el mejor maestro de nuestra escuela.", "Él es el mejor profesor de nuestra escuela.", "Es el mejor profesor de nuestro colegio."]}
+     {
+      "zh": "我们是来旅游的。",
+      "py": "Wǒmen shì lái lǚyóu de.",
+      "es": [
+       "Hemos venido de viaje.",
+       "Hemos venido a hacer turismo.",
+       "Venimos de turismo.",
+       "Estamos aquí de viaje.",
+       "Hemos venido de vacaciones."
+      ]
+     },
+     {
+      "zh": "我是今天早上到的。",
+      "py": "Wǒ shì jīntiān zǎoshang dào de.",
+      "es": [
+       "He llegado esta mañana.",
+       "Llegué esta mañana.",
+       "Llegué hoy por la mañana.",
+       "He llegado hoy por la mañana."
+      ],
+      "altzh": [
+       "我今天早上到的。"
+      ],
+      "altpy": [
+       "Wǒ jīntiān zǎoshang dào de."
+      ]
+     },
+     {
+      "zh": "你是什么时候到的？",
+      "py": "Nǐ shì shénme shíhou dào de?",
+      "es": [
+       "¿Cuándo has llegado?",
+       "¿Cuándo llegaste?",
+       "¿Cuándo has llegado tú?",
+       "¿Y cuándo llegaste?"
+      ]
+     },
+     {
+      "zh": "我们不是坐出租车去的。",
+      "py": "Wǒmen bú shì zuò chūzūchē qù de.",
+      "es": [
+       "No fuimos en taxi.",
+       "No hemos ido en taxi.",
+       "No fuimos allí en taxi.",
+       "No hemos ido allí en taxi."
+      ]
+     },
+     {
+      "zh": "苹果是在哪儿买的？",
+      "py": "Píngguǒ shì zài nǎr mǎi de?",
+      "es": [
+       "¿Dónde has comprado las manzanas?",
+       "¿Dónde compraste las manzanas?",
+       "¿Las manzanas dónde las has comprado?",
+       "¿Dónde compraste la manzana?"
+      ]
+     },
+     {
+      "zh": "我是在书店看见安妮的。",
+      "py": "Wǒ shì zài shūdiàn kànjiàn Ānnī de.",
+      "es": [
+       "Vi a Annie en la librería.",
+       "Fue en la librería donde vi a Annie.",
+       "He visto a Annie en la librería.",
+       "A Annie la vi en la librería."
+      ]
+     },
+     {
+      "zh": "你们是来学中文的吗？",
+      "py": "Nǐmen shì lái xué Zhōngwén de ma?",
+      "es": [
+       "¿Habéis venido a estudiar chino?",
+       "¿Venís a aprender chino?",
+       "¿Habéis venido para estudiar chino?",
+       "¿Estáis aquí para aprender chino?"
+      ]
+     },
+     {
+      "zh": "是王老师的姐姐来接我们的。",
+      "py": "Shì Wáng lǎoshī de jiějie lái jiē wǒmen de.",
+      "es": [
+       "Fue la hermana de la profesora Wang quien vino a buscarnos.",
+       "La hermana de la profesora Wang vino a recogernos.",
+       "Vino a recogernos la hermana de la profesora Wang.",
+       "Quien vino a buscarnos fue la hermana de la profesora Wang."
+      ]
+     },
+     {
+      "zh": "我是坐车来学校的。",
+      "py": "Wǒ shì zuò chē lái xuéxiào de.",
+      "es": [
+       "He venido a la escuela en coche.",
+       "Vine al colegio en coche.",
+       "He venido al colegio en coche.",
+       "Vine a la escuela en coche."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "Lo que más le gusta a Li Yue",
-     "zh": "李月最喜欢踢足球。她最喜欢的水果是苹果。她觉得九月最好，九月不冷也不热，去北京旅游最好。",
-     "py": "Lǐ Yuè zuì xǐhuan tī zúqiú. Tā zuì xǐhuan de shuǐguǒ shì píngguǒ. Tā juéde jiǔ yuè zuì hǎo, jiǔ yuè bù lěng yě bú rè, qù Běijīng lǚyóu zuì hǎo.",
-     "es": "A Li Yue lo que más le gusta es jugar al fútbol. Su fruta favorita es la manzana. Cree que septiembre es el mejor mes: en septiembre no hace ni frío ni calor, y es la mejor época para viajar a Pekín.",
+     "titulo": "Un viaje a Pekín",
+     "zh": "安妮是来北京旅游的。她是今天早上到的，是王老师的姐姐来接她的。中午，王老师的姐姐请她吃了北京烤鸭。安妮说：“真好吃！”",
+     "py": "Ānnī shì lái Běijīng lǚyóu de. Tā shì jīntiān zǎoshang dào de, shì Wáng lǎoshī de jiějie lái jiē tā de. Zhōngwǔ, Wáng lǎoshī de jiějie qǐng tā chīle Běijīng Kǎoyā. Ānnī shuō: “Zhēn hǎochī!”",
+     "es": "Annie ha venido a Pekín de viaje. Llegó esta mañana y fue la hermana de la profesora Wang quien fue a buscarla. Al mediodía, la hermana de la profesora Wang la invitó a comer pato laqueado de Pekín. Annie dijo: «¡Está buenísimo!».",
      "preguntas": [
-      {"q": "¿Qué es lo que más le gusta hacer a Li Yue?", "opciones": ["Viajar", "Jugar al fútbol", "Leer"], "ok": 1},
-      {"q": "李月最喜欢什么水果？", "opciones": ["米饭", "茶", "苹果"], "ok": 2},
-      {"q": "¿Por qué le gusta septiembre?", "opciones": ["No hace ni frío ni calor", "Llueve mucho", "Hace mucho calor"], "ok": 0}
+      {
+       "q": "¿Para qué ha venido Annie a Pekín?",
+       "opciones": [
+        "Para estudiar chino",
+        "Para hacer turismo",
+        "Para trabajar"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "安妮是什么时候到的？",
+       "opciones": [
+        "今天早上",
+        "今天中午",
+        "昨天晚上"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "谁来接安妮的？",
+       "opciones": [
+        "王老师",
+        "李文",
+        "王老师的姐姐"
+       ],
+       "ok": 2
+      }
      ]
     }
    },
    {
     "id": "G01-3",
     "elige": [
-     {"q": "你想买___个杯子？", "opciones": ["几", "最", "要"], "ok": 0,
-      "exp": "En una pregunta, 几 + clasificador = «¿cuántos?»: «¿Cuántas tazas quieres comprar?»"},
-     {"q": "¿Qué significa «我有几个中国朋友。»?", "opciones": ["¿Cuántos amigos chinos tengo?", "Tengo unos cuantos amigos chinos.", "No tengo amigos chinos."], "ok": 1,
-      "exp": "En una frase afirmativa (con punto), 几 significa «unos cuantos»: «Tengo unos cuantos amigos chinos»."},
-     {"q": "¿Qué frase está bien?", "opciones": ["桌子上有几书。", "桌子上有书几本。", "桌子上有几本书。"], "ok": 2,
-      "exp": "几 necesita clasificador delante del sustantivo: 几本书. «Hay unos cuantos libros en la mesa.»"},
-     {"q": "«En nuestra escuela hay once, doce… estudiantes estadounidenses» (entre 11 y 19).", "opciones": ["我们学校有几十个美国学生。", "我们学校有十几个美国学生。", "我们学校有几个十美国学生。"], "ok": 1,
-      "exp": "十几 = «diez y pico» (de 11 a 19); 几十 = «varias decenas». 我们学校有十几个美国学生。"},
-     {"q": "你女儿今年___岁了？", "opciones": ["要", "最", "几"], "ok": 2,
-      "exp": "Para la edad de un niño pequeño se pregunta 几岁: «¿Cuántos años tiene tu hija?»"},
-     {"q": "¿Cuál NO es correcta?", "opciones": ["你要几个？", "我买了几本书。", "你有几朋友？"], "ok": 2,
-      "exp": "Falta el clasificador: 你有几个朋友？ «¿Cuántos amigos tienes?»"},
-     {"q": "«Mañana voy a ir a comprar unas cuantas tazas.»", "opciones": ["明天我要去买杯子几个。", "明天我要去买几个杯子。", "明天几个我要去买杯子。"], "ok": 1,
-      "exp": "几 + clasificador va delante del sustantivo: 买几个杯子 «comprar unas cuantas tazas»."}
+     {
+      "q": "«Quiero pedirte que me hagas un favor.»",
+      "opciones": [
+       "我想请你帮个忙。",
+       "我想你请帮个忙。",
+       "我请想你帮个忙。"
+      ],
+      "ok": 0,
+      "exp": "Sujeto + 想 + 请 + persona + lo que hace: 我想请你帮个忙 «Quiero pedirte un favor»."
+     },
+     {
+      "q": "王老师___我们说中文。",
+      "opciones": [
+       "给",
+       "让",
+       "是"
+      ],
+      "ok": 1,
+      "exp": "让 + persona + verbo = hacer/pedir que alguien haga algo: 王老师让我们说中文 «La profesora Wang nos hace hablar en chino»."
+     },
+     {
+      "q": "¿Qué significa 她请我们吃了北京烤鸭？",
+      "opciones": [
+       "Nos pidió pato laqueado.",
+       "Comimos pato laqueado y pagamos nosotros.",
+       "Nos invitó a comer pato laqueado."
+      ],
+      "ok": 2,
+      "exp": "请 + persona + 吃… = invitar a alguien a comer algo: «Nos invitó a comer pato laqueado»."
+     },
+     {
+      "q": "一飞给我打电话了，___我来接你们。",
+      "opciones": [
+       "让",
+       "请问",
+       "有"
+      ],
+      "ok": 0,
+      "exp": "让我来接你们: «(Yifei) me pidió que viniera a recogeros». 让 + persona + acción."
+     },
+     {
+      "q": "¿Qué frase está bien?",
+      "opciones": [
+       "妈妈叫回家孩子们。",
+       "妈妈孩子们叫回家。",
+       "妈妈叫孩子们回家。"
+      ],
+      "ok": 2,
+      "exp": "Sujeto + 叫 + persona + acción: 妈妈叫孩子们回家 «Mamá llama a los niños para que vuelvan a casa»."
+     },
+     {
+      "q": "«Si necesitas algo, pídele ayuda a Li Wen.»",
+      "opciones": [
+       "你有事就帮忙请李文。",
+       "你有事就请李文帮忙。",
+       "你有事李文就请帮忙。"
+      ],
+      "ok": 1,
+      "exp": "请 + persona (李文) + acción (帮忙): 你有事就请李文帮忙."
+     },
+     {
+      "q": "En 王老师让我们说中文, ¿qué palabra es a la vez objeto de 让 y sujeto de 说?",
+      "opciones": [
+       "王老师",
+       "我们",
+       "中文"
+      ],
+      "ok": 1,
+      "exp": "我们 es a quien «hace» la profesora (objeto de 让) y quien habla (sujeto de 说): es el «pivote» de la oración."
+     }
     ],
     "frases": [
-     {"zh": "我有几个中国朋友。", "py": "Wǒ yǒu jǐ ge Zhōngguó péngyou.",
-      "es": ["Tengo unos cuantos amigos chinos.", "Tengo algunos amigos chinos.", "Tengo varios amigos chinos.", "Yo tengo unos cuantos amigos chinos.", "Tengo unas cuantas amigas chinas."]},
-     {"zh": "你想买几个杯子？", "py": "Nǐ xiǎng mǎi jǐ ge bēizi?",
-      "es": ["¿Cuántas tazas quieres comprar?", "¿Cuántos vasos quieres comprar?", "¿Cuántas tazas quiere comprar?", "¿Cuántos vasos quiere usted comprar?", "¿Cuántas tazas piensas comprar?"]},
-     {"zh": "桌子上有几本书。", "py": "Zhuōzi shang yǒu jǐ běn shū.",
-      "es": ["Hay unos cuantos libros en la mesa.", "En la mesa hay algunos libros.", "Encima de la mesa hay unos libros.", "Sobre la mesa hay varios libros.", "Hay algunos libros encima de la mesa."]},
-     {"zh": "我们学校有十几个美国学生。", "py": "Wǒmen xuéxiào yǒu shíjǐ ge Měiguó xuésheng.",
-      "es": ["En nuestra escuela hay más de diez estudiantes estadounidenses.", "Nuestra escuela tiene diez y pico alumnos estadounidenses.", "En nuestra escuela hay una docena y pico de estudiantes estadounidenses.", "En nuestro colegio hay más de diez alumnos norteamericanos.", "En nuestra escuela hay más de diez estudiantes americanos."]},
-     {"zh": "你家有几口人？", "py": "Nǐ jiā yǒu jǐ kǒu rén?",
-      "es": ["¿Cuántas personas hay en tu familia?", "¿Cuántos sois en tu familia?", "¿Cuántos sois en casa?", "¿Cuántas personas son en su familia?", "¿Cuántos miembros tiene tu familia?"]},
-     {"zh": "你女儿今年几岁了？", "py": "Nǐ nǚ'ér jīnnián jǐ suì le?",
-      "es": ["¿Cuántos años tiene tu hija?", "¿Cuántos años tiene este año tu hija?", "¿Qué edad tiene tu hija?", "¿Cuántos años tiene su hija?", "¿Cuántos años cumple tu hija este año?"]},
-     {"zh": "下午我想去商店买几本书。", "py": "Xiàwǔ wǒ xiǎng qù shāngdiàn mǎi jǐ běn shū.",
-      "es": ["Esta tarde quiero ir a la tienda a comprar unos cuantos libros.", "Por la tarde quiero ir a la tienda a comprar algunos libros.", "Esta tarde quiero ir a comprar unos libros a la tienda.", "Esta tarde me gustaría ir a la tienda a comprar varios libros.", "Por la tarde pienso ir a la tienda a comprar unos cuantos libros."],
-      "altzh": ["我下午想去商店买几本书。"], "altpy": ["Wǒ xiàwǔ xiǎng qù shāngdiàn mǎi jǐ běn shū."]},
-     {"zh": "现在几点了？", "py": "Xiànzài jǐ diǎn le?",
-      "es": ["¿Qué hora es?", "¿Qué hora es ahora?", "¿Qué hora es ya?", "¿Qué hora tienes?", "¿Qué hora tiene?"]}
+     {
+      "zh": "我想请你帮个忙。",
+      "py": "Wǒ xiǎng qǐng nǐ bāng ge máng.",
+      "es": [
+       "Quiero pedirte un favor.",
+       "Me gustaría pedirte que me ayudes.",
+       "Quería pedirte un favor.",
+       "Quiero pedirte ayuda."
+      ]
+     },
+     {
+      "zh": "王老师让我们说中文。",
+      "py": "Wáng lǎoshī ràng wǒmen shuō Zhōngwén.",
+      "es": [
+       "La profesora Wang nos hace hablar en chino.",
+       "El profesor Wang nos pide que hablemos chino.",
+       "La profesora Wang nos manda hablar en chino.",
+       "La profesora Wang quiere que hablemos en chino."
+      ]
+     },
+     {
+      "zh": "妈妈叫孩子们回家。",
+      "py": "Māma jiào háizimen huí jiā.",
+      "es": [
+       "Mamá llama a los niños para que vuelvan a casa.",
+       "La madre les dice a los niños que vuelvan a casa.",
+       "Mamá les dice a los niños que vengan a casa.",
+       "La madre manda a los niños volver a casa."
+      ]
+     },
+     {
+      "zh": "她请我们吃了北京烤鸭。",
+      "py": "Tā qǐng wǒmen chīle Běijīng Kǎoyā.",
+      "es": [
+       "Nos invitó a pato laqueado de Pekín.",
+       "Nos invitó a comer pato laqueado.",
+       "Ella nos invitó a comer pato a la pekinesa.",
+       "Nos invitó a pato laqueado."
+      ]
+     },
+     {
+      "zh": "一飞让我来接你们。",
+      "py": "Yīfēi ràng wǒ lái jiē nǐmen.",
+      "es": [
+       "Yifei me ha pedido que venga a recogeros.",
+       "Yifei me dijo que viniera a buscaros.",
+       "Yifei me pidió que viniera a recogeros.",
+       "Yifei me ha mandado a buscaros."
+      ]
+     },
+     {
+      "zh": "我想请朋友来吃饭。",
+      "py": "Wǒ xiǎng qǐng péngyou lái chī fàn.",
+      "es": [
+       "Quiero invitar a unos amigos a comer.",
+       "Me gustaría invitar a un amigo a comer.",
+       "Quiero invitar a mis amigos a comer.",
+       "Quiero invitar a una amiga a comer."
+      ]
+     },
+     {
+      "zh": "你有事就请李文帮忙。",
+      "py": "Nǐ yǒu shì jiù qǐng Lǐ Wén bāngmáng.",
+      "es": [
+       "Si necesitas algo, pídele ayuda a Li Wen.",
+       "Si tienes algún problema, pide a Li Wen que te ayude.",
+       "Si necesitas cualquier cosa, pídele a Li Wen que te eche una mano.",
+       "Si te hace falta algo, pide ayuda a Li Wen."
+      ]
+     },
+     {
+      "zh": "王老师的姐姐请我们去饭店吃饭。",
+      "py": "Wáng lǎoshī de jiějie qǐng wǒmen qù fàndiàn chī fàn.",
+      "es": [
+       "La hermana de la profesora Wang nos invitó a comer a un restaurante.",
+       "La hermana de la profesora Wang nos invita a comer en un restaurante.",
+       "La hermana de la profesora Wang nos ha invitado a comer en un restaurante.",
+       "La hermana de la profesora Wang nos invitó a cenar en un restaurante."
+      ]
+     },
+     {
+      "zh": "老师让我给他打电话。",
+      "py": "Lǎoshī ràng wǒ gěi tā dǎ diànhuà.",
+      "es": [
+       "El profesor me pidió que lo llamara.",
+       "El profesor me dijo que le llamara por teléfono.",
+       "El profesor me ha pedido que le llame.",
+       "El profesor quiere que lo llame."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "En nuestra escuela",
-     "zh": "我们学校有十几个美国学生，也有几个中国学生。我有几个中国朋友。今天下午我要和他们一起去商店买几本汉语书。",
-     "py": "Wǒmen xuéxiào yǒu shíjǐ ge Měiguó xuésheng, yě yǒu jǐ ge Zhōngguó xuésheng. Wǒ yǒu jǐ ge Zhōngguó péngyou. Jīntiān xiàwǔ wǒ yào hé tāmen yìqǐ qù shāngdiàn mǎi jǐ běn Hànyǔ shū.",
-     "es": "En nuestra escuela hay más de diez estudiantes estadounidenses y también unos cuantos estudiantes chinos. Tengo unos cuantos amigos chinos. Esta tarde voy a ir con ellos a la tienda a comprar algunos libros de chino.",
+     "titulo": "Un favor",
+     "zh": "陈天中想请白家月帮个忙，但白家月已经到北京了。她让陈天中给李文打电话。李文说：“没问题，我来帮你！”",
+     "py": "Chén Tiānzhōng xiǎng qǐng Bái Jiāyuè bāng ge máng, dàn Bái Jiāyuè yǐjīng dào Běijīng le. Tā ràng Chén Tiānzhōng gěi Lǐ Wén dǎ diànhuà. Lǐ Wén shuō: “Méi wèntí, wǒ lái bāng nǐ!”",
+     "es": "Chen Tianzhong quiere pedirle un favor a Bai Jiayue, pero Bai Jiayue ya ha llegado a Pekín. Ella le dice a Chen Tianzhong que llame a Li Wen. Li Wen dice: «¡Sin problema, yo te ayudo!».",
      "preguntas": [
-      {"q": "¿Cuántos estudiantes estadounidenses hay en la escuela?", "opciones": ["Unos tres", "Entre once y diecinueve", "Más de cien"], "ok": 1},
-      {"q": "今天下午他要去哪儿？", "opciones": ["医院", "饭店", "商店"], "ok": 2},
-      {"q": "他要买什么？", "opciones": ["汉语书", "杯子", "衣服"], "ok": 0}
-     ]
-    }
-   },
-   {
-    "id": "G01-4",
-    "elige": [
-     {"q": "它六个___月了。", "opciones": ["多", "几", "最"], "ok": 0,
-      "exp": "Número + 个 + 多 + 月: 六个多月 «seis meses y pico». «Tiene seis meses y pico.»"},
-     {"q": "«Mi gato tiene tres años y pico.»", "opciones": ["我的猫三多岁了。", "我的猫三岁多了。", "我的猫三十多岁了。"], "ok": 1,
-      "exp": "Con un número de una cifra, 多 va detrás de la medida: 三岁多. 三十多岁 sería «treinta y tantos años»."},
-     {"q": "¿Qué significa «我们学校有二十多个老师。»?", "opciones": ["En nuestra escuela hay exactamente veinte profesores.", "En nuestra escuela hay unos dos profesores.", "En nuestra escuela hay veintitantos profesores."], "ok": 2,
-      "exp": "Decena + 多 + clasificador: 二十多个 = «veintitantos». «En nuestra escuela hay veintitantos profesores.»"},
-     {"q": "¿Qué frase está bien?", "opciones": ["他一个多月没来学校。", "他一个月多没来学校。", "他多一个月没来学校。"], "ok": 0,
-      "exp": "Se dice 一个多月 «un mes y pico», nunca *一个月多: «Lleva más de un mes sin venir a la escuela»."},
-     {"q": "这个杯子三十___块钱。(treinta y tantos)", "opciones": ["最", "要", "多"], "ok": 2,
-      "exp": "Decena + 多 + clasificador: 三十多块 «Esta taza cuesta treinta y tantos yuanes»."},
-     {"q": "现在九点___了。(Son las nueve y pico.)", "opciones": ["要", "多", "最"], "ok": 1,
-      "exp": "Hora + 多: 九点多 «las nueve y pico». «Ya son las nueve y pico.»"},
-     {"q": "¿Cuál significa «treinta y tantos años»?", "opciones": ["三岁多", "三十多岁", "三十岁多", "多三十岁"], "ok": 1,
-      "exp": "Con decenas, 多 va delante del clasificador: 三十多岁. 三岁多 = «tres años y pico»."}
-    ],
-    "frases": [
-     {"zh": "它六个多月了。", "py": "Tā liù ge duō yuè le.",
-      "es": ["Tiene seis meses y pico.", "Tiene más de seis meses.", "Tiene seis meses y algo.", "Ya tiene más de seis meses.", "Tiene algo más de seis meses."]},
-     {"zh": "我的猫三岁多了。", "py": "Wǒ de māo sān suì duō le.",
-      "es": ["Mi gato tiene tres años y pico.", "Mi gata tiene más de tres años.", "Mi gato tiene tres años y algo.", "Mi gato ya tiene más de tres años.", "Mi gata tiene tres años y pico."]},
-     {"zh": "这个杯子三十多块钱。", "py": "Zhège bēizi sānshí duō kuài qián.",
-      "es": ["Esta taza cuesta treinta y tantos yuanes.", "Este vaso cuesta treinta y pico yuanes.", "Esta taza vale más de treinta yuanes.", "Esta taza cuesta treinta y pico yuanes.", "Este vaso cuesta más de treinta yuanes."]},
-     {"zh": "我们学校有二十多个老师。", "py": "Wǒmen xuéxiào yǒu èrshí duō ge lǎoshī.",
-      "es": ["En nuestra escuela hay veintitantos profesores.", "Nuestra escuela tiene más de veinte profesores.", "En nuestro colegio hay veinte y pico profesores.", "En nuestra escuela hay más de veinte profesores.", "Nuestra escuela tiene veintitantos maestros."]},
-     {"zh": "现在九点多了。", "py": "Xiànzài jiǔ diǎn duō le.",
-      "es": ["Ya son las nueve y pico.", "Son las nueve y pico.", "Ahora son las nueve pasadas.", "Son más de las nueve.", "Ya son más de las nueve."]},
-     {"zh": "他三十多岁了。", "py": "Tā sānshí duō suì le.",
-      "es": ["Tiene treinta y tantos años.", "Tiene treinta y pico años.", "Tiene más de treinta años.", "Ya tiene treinta y tantos años.", "Él tiene treinta y pico años."]},
-     {"zh": "我在北京住了一个多月。", "py": "Wǒ zài Běijīng zhù le yí ge duō yuè.",
-      "es": ["Viví en Pekín algo más de un mes.", "Estuve viviendo en Pekín más de un mes.", "He vivido en Pekín un mes y pico.", "Viví un mes y pico en Pekín.", "Me quedé en Pekín más de un mes.", "Viví en Beijing más de un mes."]},
-     {"zh": "商店里有五十多个人。", "py": "Shāngdiàn li yǒu wǔshí duō ge rén.",
-      "es": ["En la tienda hay cincuenta y tantas personas.", "Hay más de cincuenta personas en la tienda.", "En la tienda hay cincuenta y pico personas.", "Dentro de la tienda hay más de cincuenta personas.", "En la tienda hay más de cincuenta personas."]},
-     {"zh": "这本书八十多块钱。", "py": "Zhè běn shū bāshí duō kuài qián.",
-      "es": ["Este libro cuesta ochenta y tantos yuanes.", "Este libro cuesta ochenta y pico yuanes.", "Este libro vale más de ochenta yuanes.", "Este libro cuesta más de ochenta yuanes."]}
-    ],
-    "lectura": {
-     "titulo": "Huahua y el gato de mi amigo",
-     "zh": "我家有一只猫，它叫花花。花花六个多月了，它的眼睛很漂亮。我朋友的猫三岁多了，它很大。我们都很喜欢猫。",
-     "py": "Wǒ jiā yǒu yì zhī māo, tā jiào Huāhua. Huāhua liù ge duō yuè le, tā de yǎnjing hěn piàoliang. Wǒ péngyou de māo sān suì duō le, tā hěn dà. Wǒmen dōu hěn xǐhuan māo.",
-     "es": "En mi casa tenemos un gato que se llama Huahua. Huahua tiene seis meses y pico y tiene unos ojos muy bonitos. El gato de mi amigo tiene tres años y pico y es muy grande. A todos nos gustan mucho los gatos.",
-     "preguntas": [
-      {"q": "花花多大了？", "opciones": ["三岁多", "六个多月", "六岁多"], "ok": 1},
-      {"q": "¿Cómo son los ojos de Huahua?", "opciones": ["Muy bonitos", "Muy grandes", "Pequeños"], "ok": 0},
-      {"q": "¿Cuántos años tiene el gato del amigo?", "opciones": ["Seis meses", "Treinta y tantos", "Tres y pico"], "ok": 2}
+      {
+       "q": "¿Por qué no puede ayudar Bai Jiayue?",
+       "opciones": [
+        "Está muy ocupada",
+        "Ya está en Pekín",
+        "Está enferma"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "白家月让陈天中给谁打电话？",
+       "opciones": [
+        "王一雪",
+        "安妮",
+        "李文"
+       ],
+       "ok": 2
+      },
+      {
+       "q": "谁帮陈天中？",
+       "opciones": [
+        "李文",
+        "白家月",
+        "王老师"
+       ],
+       "ok": 0
+      }
      ]
     }
    }
   ],
   "vocab": [
-   {"w": "也", "zh": "我也喜欢踢足球。", "py": "Wǒ yě xǐhuan tī zúqiú.",
-    "es": ["A mí también me gusta jugar al fútbol.", "También me gusta jugar al fútbol.", "A mí también me gusta el fútbol.", "Yo también disfruto jugando al fútbol."]},
-   {"w": "一起", "zh": "我们一起去吃饭吧。", "py": "Wǒmen yìqǐ qù chī fàn ba.",
-    "es": ["Vamos a comer juntos.", "Vayamos a comer juntos.", "Vamos juntos a comer.", "¿Vamos a comer juntos?", "Comamos juntos."]},
-   {"w": "旅游", "zh": "九月去北京旅游最好。", "py": "Jiǔ yuè qù Běijīng lǚyóu zuì hǎo.",
-    "es": ["Lo mejor es ir de viaje a Pekín en septiembre.", "Septiembre es el mejor mes para viajar a Pekín.", "En septiembre es cuando mejor se viaja a Pekín.", "Lo mejor es viajar a Pekín en septiembre."]},
-   {"w": "觉得", "zh": "我觉得这个菜很好吃。", "py": "Wǒ juéde zhège cài hěn hǎochī.",
-    "es": ["Creo que este plato está muy rico.", "Me parece que este plato está muy bueno.", "Este plato me parece muy rico.", "Creo que esta comida está muy buena.", "Pienso que este plato está muy rico."]},
-   {"w": "最", "zh": "我最喜欢九月。", "py": "Wǒ zuì xǐhuan jiǔ yuè.",
-    "es": ["Mi mes favorito es septiembre.", "Septiembre es el mes que más me gusta.", "Septiembre es mi mes preferido.", "El mes que más me gusta es septiembre."]},
-   {"w": "为什么", "zh": "你为什么不去踢足球？", "py": "Nǐ wèi shénme bú qù tī zúqiú?",
-    "es": ["¿Por qué no vas a jugar al fútbol?", "¿Por qué no vas a jugar a fútbol?", "¿Por qué no va usted a jugar al fútbol?", "¿Por qué no te vas a jugar al fútbol?"]},
-   {"w": "运动", "zh": "你喜欢什么运动？", "py": "Nǐ xǐhuan shénme yùndòng?",
-    "es": ["¿Qué deporte te gusta?", "¿Qué deportes te gustan?", "¿Qué deporte le gusta?", "¿Qué deportes le gustan a usted?"]},
-   {"w": "踢足球", "zh": "他们下午去踢足球。", "py": "Tāmen xiàwǔ qù tī zúqiú.",
-    "es": ["Por la tarde van a jugar al fútbol.", "Esta tarde van a jugar al fútbol.", "Ellos van a jugar al fútbol por la tarde.", "Por la tarde van a jugar a fútbol.", "Por las tardes van a jugar al fútbol."]},
-   {"w": "足球", "zh": "我爸爸很喜欢看足球。", "py": "Wǒ bàba hěn xǐhuan kàn zúqiú.",
-    "es": ["A mi padre le gusta mucho ver el fútbol.", "A mi padre le encanta ver fútbol.", "A mi papá le gusta mucho ver el fútbol.", "A mi padre le gusta mucho ver fútbol."]},
-   {"w": "踢", "zh": "下午我们去踢球吧。", "py": "Xiàwǔ wǒmen qù tī qiú ba.",
-    "es": ["Vamos a jugar a la pelota esta tarde.", "Esta tarde vamos a jugar al fútbol.", "Por la tarde vamos a jugar al balón.", "Vamos a jugar al fútbol por la tarde.", "¿Vamos a jugar a la pelota esta tarde?"]},
-   {"w": "要", "zh": "我要一杯水。", "py": "Wǒ yào yì bēi shuǐ.",
-    "es": ["Quiero un vaso de agua.", "Yo quiero un vaso de agua.", "Quisiera un vaso de agua.", "Para mí, un vaso de agua."]},
-   {"w": "要", "zh": "明天我要去北京。", "py": "Míngtiān wǒ yào qù Běijīng.",
-    "es": ["Mañana voy a ir a Pekín.", "Mañana me voy a Pekín.", "Mañana iré a Pekín.", "Mañana voy a Beijing.", "Mañana tengo que ir a Pekín."],
-    "altzh": ["我明天要去北京。"], "altpy": ["Wǒ míngtiān yào qù Běijīng."]},
-   {"w": "新", "zh": "这是我的新电脑。", "py": "Zhè shì wǒ de xīn diànnǎo.",
-    "es": ["Este es mi ordenador nuevo.", "Esta es mi computadora nueva.", "Este es mi nuevo ordenador.", "Es mi ordenador nuevo.", "Esta es mi nueva computadora."]},
-   {"w": "它", "zh": "它是我的小狗。", "py": "Tā shì wǒ de xiǎo gǒu.",
-    "es": ["Es mi perrito.", "Este es mi perrito.", "Esta es mi perrita.", "Es mi perro pequeño.", "Es mi cachorro."]},
-   {"w": "眼睛", "zh": "它的眼睛很漂亮。", "py": "Tā de yǎnjing hěn piàoliang.",
-    "es": ["Sus ojos son muy bonitos.", "Tiene unos ojos muy bonitos.", "Tiene los ojos muy bonitos.", "Sus ojos son preciosos.", "Tiene unos ojos preciosos."]}
+   {
+    "w": "吧",
+    "zh": "我们去吃北京烤鸭吧。",
+    "py": "Wǒmen qù chī Běijīng Kǎoyā ba.",
+    "es": [
+     "Vamos a comer pato laqueado.",
+     "Vamos a comer pato laqueado de Pekín.",
+     "¿Y si vamos a comer pato laqueado?",
+     "Vayamos a comer pato laqueado."
+    ]
+   },
+   {
+    "w": "帮忙",
+    "zh": "我想请你帮忙。",
+    "py": "Wǒ xiǎng qǐng nǐ bāngmáng.",
+    "es": [
+     "Quiero pedirte ayuda.",
+     "Me gustaría que me ayudaras.",
+     "Quería pedirte que me echaras una mano.",
+     "Quiero pedirte un favor."
+    ]
+   },
+   {
+    "w": "北京",
+    "zh": "我们已经到北京了。",
+    "py": "Wǒmen yǐjīng dào Běijīng le.",
+    "es": [
+     "Ya hemos llegado a Pekín.",
+     "Ya estamos en Pekín.",
+     "Hemos llegado ya a Pekín.",
+     "Ya estamos en Beijing."
+    ]
+   },
+   {
+    "w": "不客气",
+    "zh": "不客气，有事就找我。",
+    "py": "Bú kèqi, yǒu shì jiù zhǎo wǒ.",
+    "es": [
+     "De nada; si necesitas algo, búscame.",
+     "No hay de qué; si te hace falta algo, avísame.",
+     "De nada; para lo que necesites, aquí estoy.",
+     "De nada, si tienes algún problema, dímelo."
+    ]
+   },
+   {
+    "w": "不",
+    "zh": "我不认识他。",
+    "py": "Wǒ bú rènshi tā.",
+    "es": [
+     "No lo conozco.",
+     "Yo no le conozco.",
+     "A él no lo conozco.",
+     "No le conozco."
+    ]
+   },
+   {
+    "w": "菜",
+    "zh": "这儿的菜很好吃。",
+    "py": "Zhèr de cài hěn hǎochī.",
+    "es": [
+     "La comida de aquí está muy buena.",
+     "Aquí se come muy bien.",
+     "Los platos de aquí están muy ricos.",
+     "La comida de este sitio está buenísima."
+    ]
+   },
+   {
+    "w": "吃",
+    "zh": "你吃北京烤鸭吗？",
+    "py": "Nǐ chī Běijīng Kǎoyā ma?",
+    "es": [
+     "¿Comes pato laqueado?",
+     "¿Tú comes pato laqueado?",
+     "¿Comes pato laqueado de Pekín?",
+     "¿Te comes el pato laqueado?"
+    ]
+   },
+   {
+    "w": "吃饭",
+    "zh": "我请你吃饭。",
+    "py": "Wǒ qǐng nǐ chī fàn.",
+    "es": [
+     "Te invito a comer.",
+     "Yo te invito a comer.",
+     "Te invito a cenar.",
+     "Invito yo a comer."
+    ]
+   },
+   {
+    "w": "出",
+    "zh": "我已经出站了。",
+    "py": "Wǒ yǐjīng chū zhàn le.",
+    "es": [
+     "Ya he salido de la estación.",
+     "Ya estoy fuera de la estación.",
+     "Ya salí de la estación.",
+     "He salido ya de la estación."
+    ]
+   },
+   {
+    "w": "次",
+    "zh": "这是我第一次来北京。",
+    "py": "Zhè shì wǒ dì-yī cì lái Běijīng.",
+    "es": [
+     "Es la primera vez que vengo a Pekín.",
+     "Esta es mi primera vez en Pekín.",
+     "Vengo a Pekín por primera vez.",
+     "Es mi primera visita a Pekín."
+    ]
+   },
+   {
+    "w": "打电话",
+    "zh": "一飞给我打电话了。",
+    "py": "Yīfēi gěi wǒ dǎ diànhuà le.",
+    "es": [
+     "Yifei me ha llamado por teléfono.",
+     "Yifei me llamó.",
+     "Yifei me ha llamado.",
+     "Me ha llamado Yifei."
+    ]
+   },
+   {
+    "w": "的",
+    "zh": "她是我的朋友。",
+    "py": "Tā shì wǒ de péngyou.",
+    "es": [
+     "Es mi amiga.",
+     "Ella es amiga mía.",
+     "Es una amiga mía.",
+     "Ella es mi amiga."
+    ]
+   },
+   {
+    "w": "第",
+    "zh": "这是我第三次来中国。",
+    "py": "Zhè shì wǒ dì-sān cì lái Zhōngguó.",
+    "es": [
+     "Es la tercera vez que vengo a China.",
+     "Esta es mi tercera vez en China.",
+     "Vengo a China por tercera vez.",
+     "Es mi tercera visita a China."
+    ]
+   },
+   {
+    "w": "电话",
+    "zh": "我有她的电话。",
+    "py": "Wǒ yǒu tā de diànhuà.",
+    "es": [
+     "Tengo su teléfono.",
+     "Tengo su número de teléfono.",
+     "Tengo el teléfono de ella.",
+     "Tengo su número."
+    ]
+   },
+   {
+    "w": "都",
+    "zh": "我们都是第一次来。",
+    "py": "Wǒmen dōu shì dì-yī cì lái.",
+    "es": [
+     "Es la primera vez que venimos todos.",
+     "Todas venimos por primera vez.",
+     "Para todos es la primera vez que venimos.",
+     "Es la primera vez para los dos."
+    ]
+   },
+   {
+    "w": "饭店",
+    "zh": "我们去饭店吃饭吧。",
+    "py": "Wǒmen qù fàndiàn chī fàn ba.",
+    "es": [
+     "Vamos a comer a un restaurante.",
+     "Vayamos a comer a un restaurante.",
+     "¿Y si comemos en un restaurante?",
+     "Vamos a comer fuera, a un restaurante."
+    ]
+   },
+   {
+    "w": "高兴",
+    "zh": "认识你很高兴。",
+    "py": "Rènshi nǐ hěn gāoxìng.",
+    "es": [
+     "Encantado de conocerte.",
+     "Encantada de conocerte.",
+     "Me alegro de conocerte.",
+     "Mucho gusto en conocerte."
+    ]
+   },
+   {
+    "w": "给",
+    "zh": "我给王老师打电话了。",
+    "py": "Wǒ gěi Wáng lǎoshī dǎ diànhuà le.",
+    "es": [
+     "He llamado a la profesora Wang.",
+     "Llamé por teléfono al profesor Wang.",
+     "He llamado por teléfono a la profesora Wang.",
+     "Llamé al profesor Wang."
+    ]
+   },
+   {
+    "w": "好吃",
+    "zh": "北京烤鸭真好吃！",
+    "py": "Běijīng Kǎoyā zhēn hǎochī!",
+    "es": [
+     "¡El pato laqueado está buenísimo!",
+     "¡Qué rico está el pato laqueado de Pekín!",
+     "¡El pato laqueado de Pekín está riquísimo!",
+     "¡Qué bueno está el pato laqueado!"
+    ]
+   },
+   {
+    "w": "很",
+    "zh": "我很高兴。",
+    "py": "Wǒ hěn gāoxìng.",
+    "es": [
+     "Estoy muy contento.",
+     "Estoy muy contenta.",
+     "Me alegro mucho.",
+     "Estoy muy feliz."
+    ]
+   },
+   {
+    "w": "叫",
+    "zh": "我叫王一雪。",
+    "py": "Wǒ jiào Wáng Yīxuě.",
+    "es": [
+     "Me llamo Wang Yixue.",
+     "Mi nombre es Wang Yixue.",
+     "Soy Wang Yixue.",
+     "Yo me llamo Wang Yixue."
+    ]
+   },
+   {
+    "w": "介绍",
+    "zh": "我给你们介绍我的朋友。",
+    "py": "Wǒ gěi nǐmen jièshào wǒ de péngyou.",
+    "es": [
+     "Os presento a mi amigo.",
+     "Os voy a presentar a mi amiga.",
+     "Dejad que os presente a mi amigo.",
+     "Os presento a una amiga mía."
+    ]
+   },
+   {
+    "w": "就",
+    "zh": "我就是白家月。",
+    "py": "Wǒ jiù shì Bái Jiāyuè.",
+    "es": [
+     "Yo soy Bai Jiayue.",
+     "Bai Jiayue soy yo.",
+     "Precisamente yo soy Bai Jiayue.",
+     "Sí, soy yo, Bai Jiayue."
+    ]
+   },
+   {
+    "w": "来",
+    "zh": "王老师的姐姐来接我们。",
+    "py": "Wáng lǎoshī de jiějie lái jiē wǒmen.",
+    "es": [
+     "La hermana de la profesora Wang viene a recogernos.",
+     "La hermana del profesor Wang viene a buscarnos.",
+     "La hermana de la profesora Wang vendrá a recogernos.",
+     "Viene a recogernos la hermana de la profesora Wang."
+    ]
+   },
+   {
+    "w": "了",
+    "zh": "她请我们吃了北京烤鸭。",
+    "py": "Tā qǐng wǒmen chīle Běijīng Kǎoyā.",
+    "es": [
+     "Nos invitó a pato laqueado de Pekín.",
+     "Nos invitó a comer pato laqueado.",
+     "Nos invitó a pato laqueado.",
+     "Ella nos invitó a comer pato a la pekinesa."
+    ]
+   },
+   {
+    "w": "吗",
+    "zh": "你们是来学中文的吗？",
+    "py": "Nǐmen shì lái xué Zhōngwén de ma?",
+    "es": [
+     "¿Habéis venido a estudiar chino?",
+     "¿Venís a aprender chino?",
+     "¿Habéis venido para estudiar chino?",
+     "¿Estáis aquí para aprender chino?"
+    ]
+   },
+   {
+    "w": "那",
+    "zh": "那我给他打个电话。",
+    "py": "Nà wǒ gěi tā dǎ ge diànhuà.",
+    "es": [
+     "Entonces le llamo.",
+     "Pues le llamo por teléfono.",
+     "Entonces le voy a llamar.",
+     "Pues lo llamo."
+    ]
+   },
+   {
+    "w": "你",
+    "zh": "你认识他吗？",
+    "py": "Nǐ rènshi tā ma?",
+    "es": [
+     "¿Lo conoces?",
+     "¿Le conoces?",
+     "¿Tú lo conoces?",
+     "¿Conoces a ese chico?"
+    ]
+   },
+   {
+    "w": "你们",
+    "zh": "谢谢你们来接我。",
+    "py": "Xièxie nǐmen lái jiē wǒ.",
+    "es": [
+     "Gracias por venir a recogerme.",
+     "Gracias por venir a buscarme.",
+     "Muchas gracias por venir a por mí.",
+     "Gracias por recogerme."
+    ]
+   },
+   {
+    "w": "您",
+    "zh": "谢谢您！",
+    "py": "Xièxie nín!",
+    "es": [
+     "¡Gracias!",
+     "¡Muchas gracias!",
+     "¡Se lo agradezco!",
+     "Gracias."
+    ]
+   },
+   {
+    "w": "朋友",
+    "zh": "李文是我的中国朋友。",
+    "py": "Lǐ Wén shì wǒ de Zhōngguó péngyou.",
+    "es": [
+     "Li Wen es mi amigo chino.",
+     "Li Wen es un amigo chino mío.",
+     "Li Wen es mi amiga china.",
+     "Li Wen es uno de mis amigos chinos."
+    ]
+   },
+   {
+    "w": "请",
+    "zh": "我请你们吃北京烤鸭。",
+    "py": "Wǒ qǐng nǐmen chī Běijīng Kǎoyā.",
+    "es": [
+     "Os invito a pato laqueado.",
+     "Os invito a comer pato laqueado de Pekín.",
+     "Yo os invito a pato laqueado.",
+     "Os invito a comer pato laqueado."
+    ]
+   },
+   {
+    "w": "请问",
+    "zh": "请问，您是王老师吗？",
+    "py": "Qǐngwèn, nín shì Wáng lǎoshī ma?",
+    "es": [
+     "Perdone, ¿es usted la profesora Wang?",
+     "Disculpe, ¿es usted el profesor Wang?",
+     "Perdone, ¿usted es la profesora Wang?",
+     "Perdón, ¿es usted el profesor Wang?"
+    ]
+   },
+   {
+    "w": "去",
+    "zh": "你去北京旅游吗？",
+    "py": "Nǐ qù Běijīng lǚyóu ma?",
+    "es": [
+     "¿Vas a Pekín de viaje?",
+     "¿Vas a hacer turismo a Pekín?",
+     "¿Te vas de viaje a Pekín?",
+     "¿Vas a viajar a Pekín?"
+    ]
+   },
+   {
+    "w": "人",
+    "zh": "陈天中是泰国人。",
+    "py": "Chén Tiānzhōng shì Tàiguó rén.",
+    "es": [
+     "Chen Tianzhong es tailandés.",
+     "Chen Tianzhong es de Tailandia.",
+     "Chen Tianzhong viene de Tailandia.",
+     "Chen Tianzhong es una persona tailandesa."
+    ]
+   },
+   {
+    "w": "认识",
+    "zh": "你认识王一飞吗？",
+    "py": "Nǐ rènshi Wáng Yīfēi ma?",
+    "es": [
+     "¿Conoces a Wang Yifei?",
+     "¿Tú conoces a Wang Yifei?",
+     "¿Sabes quién es Wang Yifei?",
+     "¿Wang Yifei? ¿La conoces?"
+    ]
+   },
+   {
+    "w": "是",
+    "zh": "她是安妮。",
+    "py": "Tā shì Ānnī.",
+    "es": [
+     "Ella es Annie.",
+     "Es Annie.",
+     "Esta es Annie.",
+     "Esta chica es Annie."
+    ]
+   },
+   {
+    "w": "他",
+    "zh": "他是我的朋友。",
+    "py": "Tā shì wǒ de péngyou.",
+    "es": [
+     "Es mi amigo.",
+     "Él es mi amigo.",
+     "Es un amigo mío.",
+     "Él es amigo mío."
+    ]
+   },
+   {
+    "w": "她",
+    "zh": "她是王老师的姐姐。",
+    "py": "Tā shì Wáng lǎoshī de jiějie.",
+    "es": [
+     "Es la hermana mayor de la profesora Wang.",
+     "Ella es la hermana del profesor Wang.",
+     "Es la hermana de la profesora Wang.",
+     "Ella es la hermana mayor del profesor Wang."
+    ]
+   },
+   {
+    "w": "我",
+    "zh": "我叫白家月。",
+    "py": "Wǒ jiào Bái Jiāyuè.",
+    "es": [
+     "Me llamo Bai Jiayue.",
+     "Soy Bai Jiayue.",
+     "Mi nombre es Bai Jiayue.",
+     "Yo me llamo Bai Jiayue."
+    ]
+   },
+   {
+    "w": "我们",
+    "zh": "我们都是王老师的学生。",
+    "py": "Wǒmen dōu shì Wáng lǎoshī de xuésheng.",
+    "es": [
+     "Todos somos alumnos de la profesora Wang.",
+     "Somos todas alumnas del profesor Wang.",
+     "Las dos somos alumnas de la profesora Wang.",
+     "Todos somos estudiantes del profesor Wang."
+    ]
+   },
+   {
+    "w": "谢谢",
+    "zh": "谢谢你来接我们。",
+    "py": "Xièxie nǐ lái jiē wǒmen.",
+    "es": [
+     "Gracias por venir a recogernos.",
+     "Gracias por venir a buscarnos.",
+     "Muchas gracias por venir a por nosotros.",
+     "Gracias por recogernos."
+    ]
+   },
+   {
+    "w": "也",
+    "zh": "认识你，我也很高兴。",
+    "py": "Rènshi nǐ, wǒ yě hěn gāoxìng.",
+    "es": [
+     "Yo también estoy encantado de conocerte.",
+     "Igualmente, encantada de conocerte.",
+     "Yo también me alegro de conocerte.",
+     "Encantado de conocerte también."
+    ]
+   },
+   {
+    "w": "一",
+    "zh": "那边有一间教室。",
+    "py": "Nàbiān yǒu yì jiān jiàoshì.",
+    "es": [
+     "Allí hay un aula.",
+     "Ahí al lado hay un aula.",
+     "Por allí hay una clase.",
+     "Allí mismo hay un aula."
+    ]
+   },
+   {
+    "w": "有",
+    "zh": "我在北京有很多朋友。",
+    "py": "Wǒ zài Běijīng yǒu hěn duō péngyou.",
+    "es": [
+     "Tengo muchos amigos en Pekín.",
+     "En Pekín tengo muchos amigos.",
+     "Tengo un montón de amigos en Pekín.",
+     "En Pekín tengo muchas amigas."
+    ]
+   },
+   {
+    "w": "有时候",
+    "zh": "有时候我不懂她的意思。",
+    "py": "Yǒushíhou wǒ bù dǒng tā de yìsi.",
+    "es": [
+     "A veces no entiendo lo que quiere decir.",
+     "A veces no la entiendo.",
+     "Hay veces que no entiendo lo que dice.",
+     "A veces no le entiendo."
+    ]
+   },
+   {
+    "w": "中国",
+    "zh": "我想去中国旅游。",
+    "py": "Wǒ xiǎng qù Zhōngguó lǚyóu.",
+    "es": [
+     "Quiero ir de viaje a China.",
+     "Me gustaría viajar a China.",
+     "Quiero hacer turismo en China.",
+     "Quiero irme de viaje a China."
+    ]
+   },
+   {
+    "w": "中文",
+    "zh": "我们的中文不太好。",
+    "py": "Wǒmen de Zhōngwén bú tài hǎo.",
+    "es": [
+     "Nuestro chino no es muy bueno.",
+     "No hablamos muy bien chino.",
+     "Nuestro chino no es demasiado bueno.",
+     "No sabemos mucho chino."
+    ]
+   },
+   {
+    "w": "不好意思",
+    "zh": "不好意思，我已经到北京了。",
+    "py": "Bù hǎoyìsi, wǒ yǐjīng dào Běijīng le.",
+    "es": [
+     "Lo siento, ya estoy en Pekín.",
+     "Perdona, es que ya he llegado a Pekín.",
+     "Lo siento, ya he llegado a Pekín.",
+     "Perdona, ya estoy en Pekín."
+    ]
+   },
+   {
+    "w": "懂",
+    "zh": "你懂我的意思吗？",
+    "py": "Nǐ dǒng wǒ de yìsi ma?",
+    "es": [
+     "¿Entiendes lo que quiero decir?",
+     "¿Me entiendes?",
+     "¿Entiendes lo que digo?",
+     "¿Sabes a qué me refiero?"
+    ]
+   },
+   {
+    "w": "接",
+    "zh": "我来接你们。",
+    "py": "Wǒ lái jiē nǐmen.",
+    "es": [
+     "Vengo a recogeros.",
+     "Vengo a buscaros.",
+     "Yo voy a recogeros.",
+     "Os vengo a buscar."
+    ]
+   },
+   {
+    "w": "旅游",
+    "zh": "我们是来旅游的。",
+    "py": "Wǒmen shì lái lǚyóu de.",
+    "es": [
+     "Hemos venido de viaje.",
+     "Hemos venido a hacer turismo.",
+     "Venimos de turismo.",
+     "Estamos aquí de vacaciones."
+    ]
+   },
+   {
+    "w": "让",
+    "zh": "一飞让我来接你们。",
+    "py": "Yīfēi ràng wǒ lái jiē nǐmen.",
+    "es": [
+     "Yifei me ha pedido que venga a recogeros.",
+     "Yifei me dijo que viniera a buscaros.",
+     "Yifei me pidió que viniera a recogeros.",
+     "Yifei me ha mandado a buscaros."
+    ]
+   },
+   {
+    "w": "已经",
+    "zh": "我已经到北京了。",
+    "py": "Wǒ yǐjīng dào Běijīng le.",
+    "es": [
+     "Ya he llegado a Pekín.",
+     "Ya estoy en Pekín.",
+     "Ya he llegado a Beijing.",
+     "Ya estoy en Beijing."
+    ]
+   },
+   {
+    "w": "意思",
+    "zh": "这是什么意思？",
+    "py": "Zhè shì shénme yìsi?",
+    "es": [
+     "¿Qué significa esto?",
+     "¿Qué quiere decir esto?",
+     "¿Esto qué significa?",
+     "¿Qué significa eso?"
+    ]
+   },
+   {
+    "w": "有时",
+    "zh": "我有时不太懂她的意思。",
+    "py": "Wǒ yǒushí bú tài dǒng tā de yìsi.",
+    "es": [
+     "A veces no entiendo muy bien lo que quiere decir.",
+     "A veces no la entiendo del todo.",
+     "Hay veces que no entiendo bien lo que dice.",
+     "A veces no termino de entenderla."
+    ]
+   }
   ]
  },
  {
@@ -243,195 +1242,1160 @@
    {
     "id": "G02-1",
     "elige": [
-     {"q": "他___天早上都去跑步。", "opciones": ["多", "每", "最"], "ok": 1,
-      "exp": "每天 = «cada día»: «Todas las mañanas va a correr»."},
-     {"q": "我们每个星期六___去踢足球。", "opciones": ["都", "最", "几"], "ok": 0,
-      "exp": "每… se refuerza con 都 delante del verbo: «Todos los sábados vamos a jugar al fútbol»."},
-     {"q": "¿Qué frase está bien?", "opciones": ["都我每天跑步。", "我都每天跑步。", "我每天都跑步。"], "ok": 2,
-      "exp": "都 va detrás del sujeto y del tiempo, justo delante del verbo: 我每天都跑步 «Corro todos los días»."},
-     {"q": "«Cada persona tiene una taza.»", "opciones": ["每人个都有一个杯子。", "都每个人有一个杯子。", "每个人有都一个杯子。", "每个人都有一个杯子。"], "ok": 3,
-      "exp": "每 + clasificador + sustantivo + 都 + verbo: 每个人都有一个杯子。"},
-     {"q": "¿Qué significa «小丽每天都很忙。»?", "opciones": ["Xiaoli nunca está ocupada.", "Xiaoli está muy ocupada hoy.", "Xiaoli está muy ocupada todos los días."], "ok": 2,
-      "exp": "每天都 = «todos los días»: «Xiaoli está muy ocupada todos los días»."},
-     {"q": "¿Dónde va 都? 我们(A)每个(B)星期天(C)去(D)看电影。", "opciones": ["A", "B", "C", "D"], "ok": 2,
-      "exp": "都 va detrás de 每个星期天 y delante del verbo 去: 我们每个星期天都去看电影 «Todos los domingos vamos al cine»."},
-     {"q": "«Me levanto a las seis todos los días.»", "opciones": ["我起床每天六点。", "我每天六点起床。", "我六点每天起床。"], "ok": 1,
-      "exp": "Primero 每天, luego la hora, y el verbo al final: 我每天六点起床。"}
+     {
+      "q": "这儿好打车，我们___打车去吧。",
+      "opciones": [
+       "但",
+       "还是",
+       "也"
+      ],
+      "ok": 1,
+      "exp": "还是……吧 expresa la opción preferida: 我们还是打车去吧 «Mejor vamos en taxi»."
+     },
+     {
+      "q": "¿Qué expresa la estructura 还是……吧?",
+      "opciones": [
+       "Una pregunta: «¿esto o aquello?»",
+       "Una acción ya terminada",
+       "Una preferencia: «mejor hacer esto»"
+      ],
+      "ok": 2,
+      "exp": "还是……吧 indica que, pensándolo bien, una opción es mejor: «mejor…», «será mejor que…»."
+     },
+     {
+      "q": "«Mejor no vamos a ver la película.»",
+      "opciones": [
+       "还是别看电影了。",
+       "还是看别电影了。",
+       "别还是看电影了。"
+      ],
+      "ok": 0,
+      "exp": "还是 + 别 + verbo + 了: 还是别看电影了 «Mejor no vemos la película». 还是 va delante."
+     },
+     {
+      "q": "那个手机很好看，还是买那个___。",
+      "opciones": [
+       "吗",
+       "吧",
+       "呢"
+      ],
+      "ok": 1,
+      "exp": "La estructura se cierra con 吧: 还是买那个吧 «Mejor compra ese»."
+     },
+     {
+      "q": "A：车站有点儿远。 B：___",
+      "opciones": [
+       "那我们还是打车去吗？",
+       "那我们打车还是去吧。",
+       "那我们还是打车去吧。"
+      ],
+      "ok": 2,
+      "exp": "Sujeto + 还是 + acción + 吧: 那我们还是打车去吧 «Entonces mejor vamos en taxi»."
+     },
+     {
+      "q": "¿Qué significa 你第一次去北京，还是找个人接你吧？",
+      "opciones": [
+       "Es tu primera vez en Pekín, así que mejor busca a alguien que te recoja.",
+       "¿Vas a Pekín por primera vez o buscas a alguien?",
+       "Es tu primera vez en Pekín y ya has encontrado a alguien."
+      ],
+      "ok": 0,
+      "exp": "Es un consejo: «mejor busca a alguien que vaya a recogerte». Aquí 还是 no significa «o»."
+     },
+     {
+      "q": "¿Qué frase está bien?",
+      "opciones": [
+       "我们吧还是坐公交车去。",
+       "我们还是坐公交车去吧。",
+       "还是我们坐公交车吧去。"
+      ],
+      "ok": 1,
+      "exp": "还是 delante del verbo y 吧 al final: 我们还是坐公交车去吧 «Mejor vamos en autobús»."
+     }
     ],
     "frases": [
-     {"zh": "我每天六点起床。", "py": "Wǒ měi tiān liù diǎn qǐ chuáng.",
-      "es": ["Me levanto a las seis todos los días.", "Todos los días me levanto a las seis.", "Cada día me levanto a las seis.", "Me levanto cada día a las seis.", "Yo me levanto a las seis todos los días."]},
-     {"zh": "他每天早上都去跑步。", "py": "Tā měi tiān zǎoshang dōu qù pǎo bù.",
-      "es": ["Todas las mañanas va a correr.", "Cada mañana va a correr.", "Todas las mañanas sale a correr.", "Él sale a correr todas las mañanas.", "Cada mañana sale a hacer footing."]},
-     {"zh": "小丽每天都很忙。", "py": "Xiǎo Lì měi tiān dōu hěn máng.",
-      "es": ["Xiaoli está muy ocupada todos los días.", "Xiaoli está muy ocupada cada día.", "Todos los días Xiaoli está muy ocupada.", "Xiaoli tiene mucho que hacer todos los días.", "Xiaoli siempre está muy ocupada."]},
-     {"zh": "每个人都有一个杯子。", "py": "Měi ge rén dōu yǒu yí ge bēizi.",
-      "es": ["Cada persona tiene una taza.", "Todos tienen una taza.", "Todo el mundo tiene una taza.", "Cada uno tiene un vaso.", "Cada persona tiene un vaso."]},
-     {"zh": "我们每个星期六都去踢足球。", "py": "Wǒmen měi ge xīngqīliù dōu qù tī zúqiú.",
-      "es": ["Todos los sábados vamos a jugar al fútbol.", "Cada sábado vamos a jugar al fútbol.", "Los sábados siempre vamos a jugar al fútbol.", "Todos los sábados jugamos al fútbol.", "Nosotros vamos a jugar al fútbol cada sábado."]},
-     {"zh": "医生说我每天都要吃药。", "py": "Yīshēng shuō wǒ měi tiān dōu yào chī yào.",
-      "es": ["El médico dice que tengo que tomar la medicina todos los días.", "La médica dice que debo tomar medicinas cada día.", "El médico dice que tengo que tomarme la medicina cada día.", "El doctor dice que tengo que tomar la medicina todos los días.", "El médico dice que debo tomar el medicamento a diario."]},
-     {"zh": "他每天晚上都看电视。", "py": "Tā měi tiān wǎnshang dōu kàn diànshì.",
-      "es": ["Ve la tele todas las noches.", "Todas las noches ve la televisión.", "Cada noche ve la tele.", "Él mira la televisión todas las noches.", "Ve la televisión cada noche."]},
-     {"zh": "每个星期天我都在家休息。", "py": "Měi ge xīngqītiān wǒ dōu zài jiā xiūxi.",
-      "es": ["Todos los domingos descanso en casa.", "Cada domingo descanso en casa.", "Los domingos siempre descanso en casa.", "Todos los domingos me quedo en casa descansando.", "Descanso en casa todos los domingos."],
-      "altzh": ["我每个星期天都在家休息。"], "altpy": ["Wǒ měi ge xīngqītiān dōu zài jiā xiūxi."]}
+     {
+      "zh": "我们还是打车去吧。",
+      "py": "Wǒmen háishi dǎchē qù ba.",
+      "es": [
+       "Mejor vamos en taxi.",
+       "Será mejor que vayamos en taxi.",
+       "Mejor cogemos un taxi.",
+       "Vayamos mejor en taxi."
+      ]
+     },
+     {
+      "zh": "你第一次去北京，还是找个人接你吧。",
+      "py": "Nǐ dì-yī cì qù Běijīng, háishi zhǎo ge rén jiē nǐ ba.",
+      "es": [
+       "Es tu primera vez en Pekín; mejor busca a alguien que te recoja.",
+       "Como es la primera vez que vas a Pekín, mejor que alguien te recoja.",
+       "Vas a Pekín por primera vez, así que mejor busca a alguien que te recoja.",
+       "Es la primera vez que vas a Pekín: será mejor que alguien vaya a buscarte."
+      ]
+     },
+     {
+      "zh": "还是别看电影了。",
+      "py": "Háishi bié kàn diànyǐng le.",
+      "es": [
+       "Mejor no vemos la película.",
+       "Mejor no vamos al cine.",
+       "Mejor dejamos lo de la película.",
+       "Será mejor no ver la película."
+      ]
+     },
+     {
+      "zh": "车站有点儿远，还是开车去吧。",
+      "py": "Chēzhàn yǒudiǎnr yuǎn, háishi kāichē qù ba.",
+      "es": [
+       "La parada está un poco lejos; mejor vamos en coche.",
+       "La estación está algo lejos, así que mejor vamos en coche.",
+       "La parada queda un poco lejos: mejor ir en coche.",
+       "La estación está un poco lejos; será mejor ir en coche."
+      ]
+     },
+     {
+      "zh": "太远了，我们还是坐公交车吧。",
+      "py": "Tài yuǎn le, wǒmen háishi zuò gōngjiāochē ba.",
+      "es": [
+       "Está demasiado lejos; mejor vamos en autobús.",
+       "Está muy lejos, mejor cogemos el autobús.",
+       "Queda demasiado lejos: será mejor ir en autobús.",
+       "Está muy lejos, así que mejor tomamos el autobús."
+      ]
+     },
+     {
+      "zh": "今天太忙了，你还是明天来吧。",
+      "py": "Jīntiān tài máng le, nǐ háishi míngtiān lái ba.",
+      "es": [
+       "Hoy estoy muy liado; mejor ven mañana.",
+       "Hoy estoy demasiado ocupado, mejor vente mañana.",
+       "Hoy estoy muy ocupada; será mejor que vengas mañana.",
+       "Hoy tengo mucho lío, mejor ven mañana."
+      ]
+     },
+     {
+      "zh": "还是你给他打电话吧。",
+      "py": "Háishi nǐ gěi tā dǎ diànhuà ba.",
+      "es": [
+       "Mejor llámalo tú.",
+       "Mejor que le llames tú.",
+       "Será mejor que lo llames tú por teléfono.",
+       "Mejor le llamas tú."
+      ]
+     },
+     {
+      "zh": "我们还是在网上买票吧。",
+      "py": "Wǒmen háishi zài wǎngshang mǎi piào ba.",
+      "es": [
+       "Mejor compramos las entradas por internet.",
+       "Será mejor comprar los billetes en internet.",
+       "Mejor sacamos las entradas online.",
+       "Compremos mejor los billetes por internet."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "Un día de Wang Fang",
-     "zh": "王方每天早上六点起床，每天都去跑步。她每天都很忙，中午在学校吃饭。每个星期六她都和朋友一起去看电影。",
-     "py": "Wáng Fāng měi tiān zǎoshang liù diǎn qǐ chuáng, měi tiān dōu qù pǎo bù. Tā měi tiān dōu hěn máng, zhōngwǔ zài xuéxiào chī fàn. Měi ge xīngqīliù tā dōu hé péngyou yìqǐ qù kàn diànyǐng.",
-     "es": "Wang Fang se levanta todos los días a las seis de la mañana y todos los días sale a correr. Está muy ocupada todos los días y a mediodía come en la escuela. Todos los sábados va al cine con sus amigos.",
+     "titulo": "¿Autobús o taxi?",
+     "zh": "白家月和安妮想去北京大学。这儿有到北大的公交车，但车站有点儿远。这儿也好打车，白家月说：“我们还是打车去吧。”安妮说：“好，没问题。”",
+     "py": "Bái Jiāyuè hé Ānnī xiǎng qù Běijīng Dàxué. Zhèr yǒu dào Běidà de gōngjiāochē, dàn chēzhàn yǒudiǎnr yuǎn. Zhèr yě hǎo dǎchē, Bái Jiāyuè shuō: “Wǒmen háishi dǎchē qù ba.” Ānnī shuō: “Hǎo, méi wèntí.”",
+     "es": "Bai Jiayue y Annie quieren ir a la Universidad de Pekín. Desde aquí hay un autobús que va a Beida, pero la parada está un poco lejos. Aquí también es fácil coger un taxi, así que Bai Jiayue dice: «Mejor vamos en taxi». Annie dice: «Vale, sin problema».",
      "preguntas": [
-      {"q": "王方每天几点起床？", "opciones": ["五点", "六点", "七点"], "ok": 1},
-      {"q": "¿Dónde come a mediodía?", "opciones": ["En casa", "En un restaurante", "En la escuela"], "ok": 2},
-      {"q": "¿Qué hace todos los sábados?", "opciones": ["Va al cine con sus amigos", "Va al hospital", "Descansa en casa"], "ok": 0}
+      {
+       "q": "¿Adónde quieren ir?",
+       "opciones": [
+        "A la estación",
+        "A la Universidad de Pekín",
+        "A un restaurante"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "车站怎么样？",
+       "opciones": [
+        "有点儿远",
+        "不远",
+        "人很多"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "她们怎么去北大？",
+       "opciones": [
+        "坐公交车",
+        "开车",
+        "打车"
+       ],
+       "ok": 2
+      }
      ]
     }
    },
    {
     "id": "G02-2",
     "elige": [
-     {"q": "大卫今年___大？", "opciones": ["多", "几", "最"], "ok": 0,
-      "exp": "多大 pregunta la edad de un joven o adulto: «¿Cuántos años tiene David este año?»"},
-     {"q": "王医生的儿子___？(¿Cuánto mide?)", "opciones": ["几高", "多小", "多高"], "ok": 2,
-      "exp": "Para la altura se pregunta con 多 + 高 (adjetivo «grande», nunca *多小): «¿Cuánto mide el hijo del doctor Wang?»"},
-     {"q": "—他多高？ —___", "opciones": ["他八米一。", "他一米八。", "他高一米八个。"], "ok": 1,
-      "exp": "La altura se dice 一米八 «uno ochenta»: «Mide uno ochenta»."},
-     {"q": "¿Qué significa «你多大了？»?", "opciones": ["¿Cuántos años tienes?", "¿Qué tamaño tienes?", "¿Cuánto mides?"], "ok": 0,
-      "exp": "多大 con personas pregunta la edad: «¿Cuántos años tienes?». La altura sería 多高."},
-     {"q": "«¿Cuánto mide tu hijo?»", "opciones": ["你儿子几高？", "你儿子多高？", "你儿子高多？", "你儿子多小？"], "ok": 1,
-      "exp": "Sujeto + 多 + adjetivo: 你儿子多高？"},
-     {"q": "—你女儿___了？ —她五岁了。", "opciones": ["多高", "几岁", "多少"], "ok": 1,
-      "exp": "Para niños pequeños se pregunta 几岁: «¿Cuántos años tiene tu hija? — Tiene cinco años»."},
-     {"q": "—李先生今年多大？ —___", "opciones": ["他一米七。", "他很高。", "他四十多岁。"], "ok": 2,
-      "exp": "多大 pregunta la edad: 他四十多岁 «Tiene cuarenta y tantos años»."}
+     {
+      "q": "北京大学有四万___名学生。",
+      "opciones": [
+       "多",
+       "几",
+       "个"
+      ],
+      "ok": 0,
+      "exp": "四万 es múltiplo de diez, así que 多 va justo detrás del número: 四万多名学生 «más de cuarenta mil estudiantes»."
+     },
+     {
+      "q": "«En el aula hay más de veinte alumnos.»",
+      "opciones": [
+       "教室里有二十个多学生。",
+       "教室里有二十多个学生。",
+       "教室里有多二十个学生。"
+      ],
+      "ok": 1,
+      "exp": "二十 es múltiplo de diez: número + 多 + clasificador: 二十多个学生."
+     },
+     {
+      "q": "«Estas dos manzanas cuestan cinco yuanes y pico.»",
+      "opciones": [
+       "这两个苹果五多块钱。",
+       "这两个苹果多五块钱。",
+       "这两个苹果五块多钱。"
+      ],
+      "ok": 2,
+      "exp": "五 no es múltiplo de diez: 多 va detrás del clasificador: 五块多钱 «cinco yuanes y pico»."
+     },
+     {
+      "q": "«Más de tres mil estudiantes extranjeros»",
+      "opciones": [
+       "三多千名外国学生",
+       "三千多名外国学生",
+       "三千名多外国学生"
+      ],
+      "ok": 1,
+      "exp": "三千 es múltiplo de diez: 三千多名外国学生."
+     },
+     {
+      "q": "Con un número que NO es múltiplo de diez (p. ej. tres años), ¿dónde va 多?",
+      "opciones": [
+       "Detrás del número: 三多岁",
+       "Delante del número: 多三岁",
+       "Detrás de la palabra de medida: 三岁多"
+      ],
+      "ok": 2,
+      "exp": "Si el número no es múltiplo de diez, 多 va detrás del clasificador o palabra de medida: 三岁多 «tres años y pico»."
+     },
+     {
+      "q": "他今年___岁。（Tiene treinta y tantos.）",
+      "opciones": [
+       "三十多",
+       "三多十",
+       "多三十"
+      ],
+      "ok": 0,
+      "exp": "三十多岁 «treinta y tantos años»: 多 detrás de 三十."
+     },
+     {
+      "q": "我们学校有一万多学生。¿Cuántos estudiantes puede haber?",
+      "opciones": [
+       "9000",
+       "100 000",
+       "10 500"
+      ],
+      "ok": 2,
+      "exp": "一万多 = «más de diez mil»: 10 500 encaja; 9000 es menos y 100 000 sería 十万."
+     }
     ],
     "frases": [
-     {"zh": "大卫今年多大？", "py": "Dàwèi jīnnián duō dà?",
-      "es": ["¿Cuántos años tiene David?", "¿Cuántos años tiene David este año?", "¿Qué edad tiene David?", "¿Qué edad tiene David este año?"]},
-     {"zh": "他今年二十多岁。", "py": "Tā jīnnián èrshí duō suì.",
-      "es": ["Este año tiene veintitantos años.", "Tiene veintitantos años.", "Tiene veinte y pico años.", "Tiene más de veinte años.", "Este año cumple veintitantos."]},
-     {"zh": "王医生的儿子多高？", "py": "Wáng yīshēng de érzi duō gāo?",
-      "es": ["¿Cuánto mide el hijo del doctor Wang?", "¿Cuánto mide el hijo de la doctora Wang?", "¿Qué altura tiene el hijo del doctor Wang?", "¿Cuánto mide el hijo del médico Wang?"]},
-     {"zh": "他一米八几。", "py": "Tā yì mǐ bā jǐ.",
-      "es": ["Mide uno ochenta y pico.", "Mide uno ochenta y tantos.", "Mide más de uno ochenta.", "Él mide uno ochenta y algo.", "Mide un metro ochenta y pico."]},
-     {"zh": "你今年多大了？", "py": "Nǐ jīnnián duō dà le?",
-      "es": ["¿Cuántos años tienes?", "¿Cuántos años tienes este año?", "¿Qué edad tienes?", "¿Cuántos años tiene usted?", "¿Qué edad tiene usted?"]},
-     {"zh": "我女儿一米二，她六岁。", "py": "Wǒ nǚ'ér yì mǐ èr, tā liù suì.",
-      "es": ["Mi hija mide uno veinte y tiene seis años.", "Mi hija mide un metro veinte; tiene seis años.", "Mi hija mide uno veinte, tiene seis años.", "Mi hija mide 1,20 y tiene seis años."]},
-     {"zh": "你爸爸多高？", "py": "Nǐ bàba duō gāo?",
-      "es": ["¿Cuánto mide tu padre?", "¿Cuánto mide tu papá?", "¿Qué altura tiene tu padre?", "¿Cuánto mide su padre?", "¿Cómo de alto es tu padre?"]},
-     {"zh": "他很高，一米九。", "py": "Tā hěn gāo, yì mǐ jiǔ.",
-      "es": ["Es muy alto: mide uno noventa.", "Es muy alto, mide uno noventa.", "Él es muy alto; mide un metro noventa.", "Es muy alto, mide 1,90."]},
-     {"zh": "你的小狗多大了？", "py": "Nǐ de xiǎo gǒu duō dà le?",
-      "es": ["¿Cuánto tiempo tiene tu perrito?", "¿Qué edad tiene tu perrito?", "¿Cuántos años tiene tu perrito?", "¿Qué edad tiene tu cachorro?"]}
+     {
+      "zh": "北京大学有四万多名学生呢！",
+      "py": "Běijīng Dàxué yǒu sìwàn duō míng xuésheng ne!",
+      "es": [
+       "¡La Universidad de Pekín tiene más de cuarenta mil estudiantes!",
+       "¡En la Universidad de Pekín hay más de cuarenta mil estudiantes!",
+       "¡La Universidad de Pekín tiene más de cuarenta mil alumnos!",
+       "¡Hay más de cuarenta mil estudiantes en la Universidad de Pekín!"
+      ]
+     },
+     {
+      "zh": "教室里有二十多个学生。",
+      "py": "Jiàoshì li yǒu èrshí duō ge xuésheng.",
+      "es": [
+       "En el aula hay más de veinte alumnos.",
+       "Hay más de veinte estudiantes en la clase.",
+       "En el aula hay veintitantos alumnos.",
+       "En clase hay veintitantos estudiantes."
+      ]
+     },
+     {
+      "zh": "这两个苹果五块多钱。",
+      "py": "Zhè liǎng ge píngguǒ wǔ kuài duō qián.",
+      "es": [
+       "Estas dos manzanas cuestan algo más de cinco yuanes.",
+       "Estas dos manzanas cuestan cinco yuanes y pico.",
+       "Estas dos manzanas valen poco más de cinco yuanes.",
+       "Las dos manzanas cuestan cinco yuanes y algo."
+      ]
+     },
+     {
+      "zh": "北大有三千多名外国学生。",
+      "py": "Běidà yǒu sānqiān duō míng wàiguó xuésheng.",
+      "es": [
+       "Beida tiene más de tres mil estudiantes extranjeros.",
+       "En la Universidad de Pekín hay más de tres mil estudiantes extranjeros.",
+       "Beida tiene más de tres mil alumnos extranjeros.",
+       "Hay más de tres mil estudiantes extranjeros en Beida."
+      ]
+     },
+     {
+      "zh": "我们老师三十多岁。",
+      "py": "Wǒmen lǎoshī sānshí duō suì.",
+      "es": [
+       "Nuestro profesor tiene treinta y tantos años.",
+       "Nuestra profesora tiene más de treinta años.",
+       "Nuestro profesor tiene treinta y pico años.",
+       "La profesora tiene treinta y tantos."
+      ]
+     },
+     {
+      "zh": "我在北京学习了一年多。",
+      "py": "Wǒ zài Běijīng xuéxíle yì nián duō.",
+      "es": [
+       "Estudié en Pekín algo más de un año.",
+       "He estudiado en Pekín más de un año.",
+       "Estuve estudiando en Pekín un año y pico.",
+       "Estudié más de un año en Pekín."
+      ]
+     },
+     {
+      "zh": "这个学校有一百多个老师。",
+      "py": "Zhège xuéxiào yǒu yìbǎi duō ge lǎoshī.",
+      "es": [
+       "Este colegio tiene más de cien profesores.",
+       "En esta escuela hay más de cien profesores.",
+       "Esta escuela tiene cien y pico profesores.",
+       "Hay más de cien profesores en este colegio."
+      ]
+     },
+     {
+      "zh": "我的小狗两岁多了。",
+      "py": "Wǒ de xiǎogǒu liǎng suì duō le.",
+      "es": [
+       "Mi perrito tiene ya más de dos años.",
+       "Mi perro tiene dos años y pico.",
+       "Mi perrito ya tiene más de dos años.",
+       "Mi perro ya tiene dos años y algo."
+      ]
+     },
+     {
+      "zh": "那个教室有五十多个人。",
+      "py": "Nàge jiàoshì yǒu wǔshí duō ge rén.",
+      "es": [
+       "En esa aula hay más de cincuenta personas.",
+       "Esa clase tiene más de cincuenta personas.",
+       "En aquella aula hay cincuenta y tantas personas.",
+       "Hay más de cincuenta personas en esa aula."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "La familia del doctor Wang",
-     "zh": "王医生今年五十多岁。他儿子二十多岁，很高，一米八几。他女儿今年十岁，一米四。你知道王医生多高吗？他一米七。",
-     "py": "Wáng yīshēng jīnnián wǔshí duō suì. Tā érzi èrshí duō suì, hěn gāo, yì mǐ bā jǐ. Tā nǚ'ér jīnnián shí suì, yì mǐ sì. Nǐ zhīdao Wáng yīshēng duō gāo ma? Tā yì mǐ qī.",
-     "es": "El doctor Wang tiene cincuenta y tantos años. Su hijo tiene veintitantos y es muy alto: mide uno ochenta y pico. Su hija tiene diez años y mide uno cuarenta. ¿Sabes cuánto mide el doctor Wang? Mide uno setenta.",
+     "titulo": "Nuestra universidad",
+     "zh": "我的大学很大，有两万多名学生，外国学生有一千多名。我们的教室不大，一间教室有三十多个学生。我在这儿学习一年多了。",
+     "py": "Wǒ de dàxué hěn dà, yǒu liǎngwàn duō míng xuésheng, wàiguó xuésheng yǒu yìqiān duō míng. Wǒmen de jiàoshì bú dà, yì jiān jiàoshì yǒu sānshí duō ge xuésheng. Wǒ zài zhèr xuéxí yì nián duō le.",
+     "es": "Mi universidad es muy grande: tiene más de veinte mil estudiantes, y estudiantes extranjeros hay más de mil. Nuestras aulas no son grandes: en cada aula hay más de treinta alumnos. Llevo estudiando aquí algo más de un año.",
      "preguntas": [
-      {"q": "王医生多大？", "opciones": ["二十多岁", "五十多岁", "十岁"], "ok": 1},
-      {"q": "¿Cuánto mide el hijo?", "opciones": ["Uno setenta", "Uno cuarenta", "Uno ochenta y pico"], "ok": 2},
-      {"q": "他女儿多高？", "opciones": ["一米四", "一米七", "一米八"], "ok": 0}
+      {
+       "q": "¿Cuántos estudiantes tiene la universidad?",
+       "opciones": [
+        "Más de 2000",
+        "Más de 20 000",
+        "Más de 200 000"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "一间教室有多少学生？",
+       "opciones": [
+        "三十多个",
+        "十三个",
+        "三百多个"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "¿Cuánto tiempo lleva estudiando allí?",
+       "opciones": [
+        "Un mes",
+        "Más de dos años",
+        "Algo más de un año"
+       ],
+       "ok": 2
+      }
      ]
     }
    },
    {
     "id": "G02-3",
     "elige": [
-     {"q": "¿Qué frase está bien?", "opciones": ["我起床六点。", "我六点起床。", "起床我六点。"], "ok": 1,
-      "exp": "La hora va delante del verbo: 我六点起床 «Me levanto a las seis»."},
-     {"q": "«Por la noche veo la tele en casa.»", "opciones": ["晚上我在家看电视。", "我看电视在家晚上。", "我在家看电视晚上。"], "ok": 0,
-      "exp": "Tiempo + (sujeto) + lugar + verbo: 晚上我在家看电视。"},
-     {"q": "¿Cuál es el orden correcto de «el sábado a las diez de la mañana»?", "opciones": ["上午十点星期六", "十点上午星期六", "星期六上午十点"], "ok": 2,
-      "exp": "De lo general a lo concreto: día + parte del día + hora = 星期六上午十点."},
-     {"q": "¿Dónde va 中午? 你(A)在哪儿(B)吃饭(C)？", "opciones": ["A", "B", "C"], "ok": 0,
-      "exp": "El tiempo va delante del lugar y del verbo: 你中午在哪儿吃饭？ «¿Dónde comes a mediodía?»"},
-     {"q": "«Mañana a las seis de la mañana voy a ir a correr.»", "opciones": ["我要去跑步明天早上六点。", "六点早上明天我要去跑步。", "我要明天去跑步早上六点。", "明天早上六点我要去跑步。"], "ok": 3,
-      "exp": "Todo el tiempo va delante del verbo, de lo general a lo concreto: 明天早上六点我要去跑步。"},
-     {"q": "¿Qué significa «我晚上十一点睡觉。»?", "opciones": ["Me levanto a las once de la mañana.", "Me acuesto a las once de la noche.", "Duermo once horas por la noche."], "ok": 1,
-      "exp": "晚上十一点 = «a las once de la noche»; 睡觉 = «dormir, acostarse»."},
-     {"q": "你___几点起床？(todas las mañanas)", "opciones": ["早上每天", "每早上天", "每天早上"], "ok": 2,
-      "exp": "每天早上 = «todas las mañanas»: 你每天早上几点起床？ «¿A qué hora te levantas cada mañana?»"}
+     {
+      "q": "这是朋友___的杯子。（la taza que me regaló un amigo）",
+      "opciones": [
+       "给我",
+       "给我吧",
+       "给我了"
+      ],
+      "ok": 0,
+      "exp": "Frase + 的 + sustantivo: 朋友给我的杯子 «la taza que me dio un amigo». Dentro del modificador no se pone 吧 ni 了 final."
+     },
+     {
+      "q": "«Hoy en día hay muchos estudiantes que aprenden chino.»",
+      "opciones": [
+       "现在学中文学生的很多。",
+       "现在学中文的学生很多。",
+       "现在很多学中文学生。"
+      ],
+      "ok": 1,
+      "exp": "El modificador (学中文) + 的 va DELANTE del sustantivo: 学中文的学生 «los estudiantes que aprenden chino»."
+     },
+     {
+      "q": "¿Qué significa 我很喜欢你做的菜？",
+      "opciones": [
+       "Me gusta mucho cocinar para ti.",
+       "Quiero que me hagas la comida.",
+       "Me gusta mucho la comida que haces."
+      ],
+      "ok": 2,
+      "exp": "你做的菜 = «la comida que tú haces». En español la oración de relativo va detrás; en chino, delante con 的."
+     },
+     {
+      "q": "这是谁买___苹果？",
+      "opciones": [
+       "了",
+       "的",
+       "吧"
+      ],
+      "ok": 1,
+      "exp": "谁买的苹果 «las manzanas que compró quién»: el modificador se une al sustantivo con 的."
+     },
+     {
+      "q": "«La comida que hace mamá está muy buena.»",
+      "opciones": [
+       "妈妈做的菜很好吃。",
+       "妈妈的菜做很好吃。",
+       "菜妈妈做的很好吃。"
+      ],
+      "ok": 0,
+      "exp": "妈妈做 + 的 + 菜: 妈妈做的菜很好吃."
+     },
+     {
+      "q": "«La persona que vino esta mañana es Li Wen.»",
+      "opciones": [
+       "来今天早上的人是李文。",
+       "今天早上的来人是李文。",
+       "今天早上来的人是李文。"
+      ],
+      "ok": 2,
+      "exp": "Todo el modificador (今天早上来) va delante de 的人: 今天早上来的人 «la persona que vino esta mañana»."
+     },
+     {
+      "q": "¿Qué frase está MAL?",
+      "opciones": [
+       "我认识来接你们的人。",
+       "这是朋友给我东西。",
+       "这是朋友给我的东西。"
+      ],
+      "ok": 1,
+      "exp": "Falta 的 entre el modificador y el sustantivo: debe ser 这是朋友给我的东西 «Esto es lo que me dio un amigo»."
+     }
     ],
     "frases": [
-     {"zh": "我晚上十一点睡觉。", "py": "Wǒ wǎnshang shíyī diǎn shuì jiào.",
-      "es": ["Me acuesto a las once de la noche.", "Me voy a dormir a las once de la noche.", "Por la noche me acuesto a las once.", "Duermo a partir de las once de la noche.", "Me acuesto a las once."],
-      "altzh": ["晚上我十一点睡觉。"], "altpy": ["Wǎnshang wǒ shíyī diǎn shuì jiào."]},
-     {"zh": "星期六上午我们去商店。", "py": "Xīngqīliù shàngwǔ wǒmen qù shāngdiàn.",
-      "es": ["El sábado por la mañana vamos a la tienda.", "El sábado por la mañana vamos a ir a la tienda.", "Vamos a la tienda el sábado por la mañana.", "El sábado por la mañana iremos a la tienda.", "El sábado por la mañana nos vamos a la tienda."],
-      "altzh": ["我们星期六上午去商店。"], "altpy": ["Wǒmen xīngqīliù shàngwǔ qù shāngdiàn."]},
-     {"zh": "你中午在哪儿吃饭？", "py": "Nǐ zhōngwǔ zài nǎr chī fàn?",
-      "es": ["¿Dónde comes a mediodía?", "¿Dónde comes al mediodía?", "¿Dónde come usted a mediodía?", "¿Dónde almuerzas?", "¿Dónde vas a comer a mediodía?"],
-      "altzh": ["中午你在哪儿吃饭？"], "altpy": ["Zhōngwǔ nǐ zài nǎr chī fàn?"]},
-     {"zh": "明天早上六点我要去跑步。", "py": "Míngtiān zǎoshang liù diǎn wǒ yào qù pǎo bù.",
-      "es": ["Mañana a las seis de la mañana voy a ir a correr.", "Mañana voy a salir a correr a las seis de la mañana.", "Mañana a las seis de la mañana iré a correr.", "Mañana por la mañana a las seis voy a correr.", "Mañana a las seis de la mañana voy a hacer footing."],
-      "altzh": ["我明天早上六点要去跑步。"], "altpy": ["Wǒ míngtiān zǎoshang liù diǎn yào qù pǎo bù."]},
-     {"zh": "你早上几点起床？", "py": "Nǐ zǎoshang jǐ diǎn qǐ chuáng?",
-      "es": ["¿A qué hora te levantas por la mañana?", "¿A qué hora te levantas?", "¿A qué hora se levanta usted por la mañana?", "¿A qué hora te levantas por las mañanas?"]},
-     {"zh": "晚上我在家看电视。", "py": "Wǎnshang wǒ zài jiā kàn diànshì.",
-      "es": ["Por la noche veo la tele en casa.", "Por la noche veo la televisión en casa.", "Por las noches veo la tele en casa.", "Por la noche me quedo en casa viendo la tele.", "Esta noche voy a ver la tele en casa."],
-      "altzh": ["我晚上在家看电视。"], "altpy": ["Wǒ wǎnshang zài jiā kàn diànshì."]},
-     {"zh": "我们下午三点去医院看朋友。", "py": "Wǒmen xiàwǔ sān diǎn qù yīyuàn kàn péngyou.",
-      "es": ["A las tres de la tarde vamos al hospital a ver a un amigo.", "Vamos a ir al hospital a las tres de la tarde a ver a un amigo.", "A las tres de la tarde iremos al hospital a visitar a un amigo.", "A las tres de la tarde vamos al hospital a visitar a una amiga.", "Vamos al hospital a ver a unos amigos a las tres de la tarde."],
-      "altzh": ["下午三点我们去医院看朋友。"], "altpy": ["Xiàwǔ sān diǎn wǒmen qù yīyuàn kàn péngyou."]},
-     {"zh": "他星期一上午九点来学校。", "py": "Tā xīngqīyī shàngwǔ jiǔ diǎn lái xuéxiào.",
-      "es": ["Viene a la escuela el lunes a las nueve de la mañana.", "El lunes a las nueve de la mañana viene a la escuela.", "El lunes a las nueve de la mañana vendrá a la escuela.", "Viene al colegio el lunes a las nueve de la mañana.", "Él viene a la escuela el lunes a las nueve de la mañana."],
-      "altzh": ["星期一上午九点他来学校。"], "altpy": ["Xīngqīyī shàngwǔ jiǔ diǎn tā lái xuéxiào."]}
+     {
+      "zh": "现在学中文的学生很多。",
+      "py": "Xiànzài xué Zhōngwén de xuésheng hěn duō.",
+      "es": [
+       "Hoy en día hay muchos estudiantes que aprenden chino.",
+       "Ahora hay muchos alumnos que estudian chino.",
+       "Actualmente hay muchos estudiantes de chino.",
+       "Ahora muchos estudiantes aprenden chino."
+      ]
+     },
+     {
+      "zh": "他们卖的电影票也很便宜。",
+      "py": "Tāmen mài de diànyǐngpiào yě hěn piányi.",
+      "es": [
+       "Las entradas de cine que venden también son muy baratas.",
+       "Las entradas que venden también están muy baratas.",
+       "Además, las entradas de cine que venden son muy baratas.",
+       "También venden entradas de cine muy baratas."
+      ]
+     },
+     {
+      "zh": "这是朋友给我的杯子。",
+      "py": "Zhè shì péngyou gěi wǒ de bēizi.",
+      "es": [
+       "Esta es la taza que me regaló un amigo.",
+       "Esta taza me la dio un amigo.",
+       "Este es el vaso que me regaló mi amiga.",
+       "Esta es la taza que me dio un amigo."
+      ]
+     },
+     {
+      "zh": "我很喜欢你做的菜。",
+      "py": "Wǒ hěn xǐhuan nǐ zuò de cài.",
+      "es": [
+       "Me encanta la comida que haces.",
+       "Me gustan mucho los platos que cocinas.",
+       "Me gusta mucho cómo cocinas.",
+       "Me gusta mucho la comida que preparas."
+      ]
+     },
+     {
+      "zh": "来接我们的人是王一雪。",
+      "py": "Lái jiē wǒmen de rén shì Wáng Yīxuě.",
+      "es": [
+       "La persona que vino a recogernos es Wang Yixue.",
+       "Quien vino a buscarnos fue Wang Yixue.",
+       "La que vino a recogernos fue Wang Yixue.",
+       "Wang Yixue es quien vino a recogernos."
+      ]
+     },
+     {
+      "zh": "这是我在网上买的票。",
+      "py": "Zhè shì wǒ zài wǎngshang mǎi de piào.",
+      "es": [
+       "Esta es la entrada que compré por internet.",
+       "Este es el billete que he comprado en internet.",
+       "Estas son las entradas que compré online.",
+       "Este billete lo compré por internet."
+      ]
+     },
+     {
+      "zh": "我想去你说的那个饭店。",
+      "py": "Wǒ xiǎng qù nǐ shuō de nàge fàndiàn.",
+      "es": [
+       "Quiero ir a ese restaurante del que hablas.",
+       "Quiero ir al restaurante que dijiste.",
+       "Me gustaría ir a ese restaurante que mencionaste.",
+       "Quiero ir al restaurante del que me hablaste."
+      ]
+     },
+     {
+      "zh": "坐公交车的人真多啊！",
+      "py": "Zuò gōngjiāochē de rén zhēn duō a!",
+      "es": [
+       "¡Cuánta gente coge el autobús!",
+       "¡Hay muchísima gente que va en autobús!",
+       "¡Qué cantidad de gente va en autobús!",
+       "¡Cuánta gente va en autobús!"
+      ]
+     },
+     {
+      "zh": "那是老师给我们的票。",
+      "py": "Nà shì lǎoshī gěi wǒmen de piào.",
+      "es": [
+       "Esas son las entradas que nos dio el profesor.",
+       "Esos son los billetes que nos dio la profesora.",
+       "Esas entradas nos las dio el profesor.",
+       "Esos billetes nos los ha dado el profesor."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "El domingo de Xiaoli",
-     "zh": "星期天早上小丽七点起床，八点去跑步。中午她和妈妈在饭店吃饭。下午她在家休息。晚上十点她睡觉。",
-     "py": "Xīngqītiān zǎoshang Xiǎo Lì qī diǎn qǐ chuáng, bā diǎn qù pǎo bù. Zhōngwǔ tā hé māma zài fàndiàn chī fàn. Xiàwǔ tā zài jiā xiūxi. Wǎnshang shí diǎn tā shuì jiào.",
-     "es": "El domingo por la mañana Xiaoli se levanta a las siete y a las ocho va a correr. A mediodía come con su madre en un restaurante. Por la tarde descansa en casa. Por la noche, a las diez, se acuesta.",
+     "titulo": "El cine de la universidad",
+     "zh": "北京大学里有家电影院。来这儿看电影的人很多，学生买的票不到二十块钱。安妮说：“我们有时间再过来看个电影吧！”",
+     "py": "Běijīng Dàxué li yǒu jiā diànyǐngyuàn. Lái zhèr kàn diànyǐng de rén hěn duō, xuésheng mǎi de piào bú dào èrshí kuài qián. Ānnī shuō: “Wǒmen yǒu shíjiān zài guòlái kàn ge diànyǐng ba!”",
+     "es": "En la Universidad de Pekín hay un cine. Viene mucha gente a ver películas, y las entradas que compran los estudiantes cuestan menos de veinte yuanes. Annie dice: «¡Cuando tengamos tiempo, volvemos a ver una película!».",
      "preguntas": [
-      {"q": "小丽几点去跑步？", "opciones": ["七点", "八点", "十点"], "ok": 1},
-      {"q": "¿Qué hace por la tarde?", "opciones": ["Va a correr", "Come en un restaurante", "Descansa en casa"], "ok": 2},
-      {"q": "¿Con quién come a mediodía?", "opciones": ["Con su madre", "Con una amiga", "Sola"], "ok": 0}
+      {
+       "q": "¿Qué hay en la Universidad de Pekín?",
+       "opciones": [
+        "Un cine",
+        "Un restaurante",
+        "Una estación"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "学生买的票多少钱？",
+       "opciones": [
+        "二十多块钱",
+        "不到二十块钱",
+        "两块钱"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "安妮想做什么？",
+       "opciones": [
+        "去饭店吃饭",
+        "买很多票",
+        "有时间再来看电影"
+       ],
+       "ok": 2
+      }
      ]
     }
    }
   ],
   "vocab": [
-   {"w": "时间", "zh": "我今天很忙，没有时间。", "py": "Wǒ jīntiān hěn máng, méiyǒu shíjiān.",
-    "es": ["Hoy estoy muy ocupado, no tengo tiempo.", "Hoy estoy muy ocupada y no tengo tiempo.", "Hoy estoy muy liado, no tengo tiempo.", "Estoy muy ocupado hoy; no tengo tiempo."]},
-   {"w": "身体", "zh": "他每天跑步，身体很好。", "py": "Tā měi tiān pǎo bù, shēntǐ hěn hǎo.",
-    "es": ["Corre todos los días y está muy sano.", "Corre cada día y tiene muy buena salud.", "Sale a correr todos los días y está muy sano.", "Corre todos los días y tiene una salud muy buena."]},
-   {"w": "生病", "zh": "我听说安妮生病了。", "py": "Wǒ tīngshuō Ānnī shēng bìng le.",
-    "es": ["He oído que Annie se ha puesto enferma.", "Me han dicho que Annie está enferma.", "He oído que Annie está enferma.", "Dicen que Annie se ha puesto mala."]},
-   {"w": "每", "zh": "每个人都有一本书。", "py": "Měi ge rén dōu yǒu yì běn shū.",
-    "es": ["Cada persona tiene un libro.", "Todos tienen un libro.", "Cada uno tiene un libro.", "Todo el mundo tiene un libro."]},
-   {"w": "早上", "zh": "今天早上很冷。", "py": "Jīntiān zǎoshang hěn lěng.",
-    "es": ["Esta mañana hace mucho frío.", "Esta mañana hacía mucho frío.", "Hoy por la mañana hace mucho frío.", "Hace mucho frío esta mañana."]},
-   {"w": "跑步", "zh": "我们一起去跑步吧。", "py": "Wǒmen yìqǐ qù pǎo bù ba.",
-    "es": ["Vamos a correr juntos.", "Vayamos a correr juntos.", "¿Vamos juntos a correr?", "Vamos juntos a hacer footing.", "Salgamos a correr juntos."]},
-   {"w": "起床", "zh": "你每天几点起床？", "py": "Nǐ měi tiān jǐ diǎn qǐ chuáng?",
-    "es": ["¿A qué hora te levantas cada día?", "¿A qué hora te levantas todos los días?", "¿A qué hora se levanta usted cada día?", "¿A qué hora te levantas normalmente?"]},
-   {"w": "药", "zh": "这是什么药？", "py": "Zhè shì shénme yào?",
-    "es": ["¿Qué medicina es esta?", "¿Qué medicamento es este?", "¿Qué es esta medicina?", "¿Qué medicina es esa?"]},
-   {"w": "吃药", "zh": "你今天吃药了吗？", "py": "Nǐ jīntiān chī yào le ma?",
-    "es": ["¿Te has tomado hoy la medicina?", "¿Has tomado hoy las medicinas?", "¿Ha tomado usted hoy la medicina?", "¿Te tomaste hoy la medicina?"]},
-   {"w": "高", "zh": "他儿子很高。", "py": "Tā érzi hěn gāo.",
-    "es": ["Su hijo es muy alto.", "El hijo de él es muy alto.", "Su hijo es altísimo.", "Tiene un hijo muy alto."]},
-   {"w": "米", "zh": "我妈妈一米六。", "py": "Wǒ māma yì mǐ liù.",
-    "es": ["Mi madre mide uno sesenta.", "Mi madre mide un metro sesenta.", "Mi mamá mide uno sesenta.", "Mi madre mide 1,60."]},
-   {"w": "知道", "zh": "你知道她什么时候出院吗？", "py": "Nǐ zhīdao tā shénme shíhou chū yuàn ma?",
-    "es": ["¿Sabes cuándo sale del hospital?", "¿Sabe usted cuándo le dan el alta?", "¿Sabes cuándo le dan el alta?", "¿Sabes cuándo sale ella del hospital?"]},
-   {"w": "休息", "zh": "你太累了，要多休息。", "py": "Nǐ tài lèi le, yào duō xiūxi.",
-    "es": ["Estás demasiado cansado, tienes que descansar más.", "Estás muy cansada, debes descansar más.", "Está usted muy cansado, debe descansar más.", "Estás agotado, tienes que descansar más."]},
-   {"w": "忙", "zh": "你今天忙吗？", "py": "Nǐ jīntiān máng ma?",
-    "es": ["¿Estás ocupado hoy?", "¿Hoy estás ocupada?", "¿Está usted ocupado hoy?", "¿Tienes mucho que hacer hoy?"]},
-   {"w": "出院", "zh": "听说她明天出院。", "py": "Tīngshuō tā míngtiān chū yuàn.",
-    "es": ["Dicen que sale del hospital mañana.", "He oído que mañana le dan el alta.", "Me han dicho que mañana sale del hospital.", "He oído que sale del hospital mañana."]},
-   {"w": "晚上", "zh": "晚上我们一起去看电影吧。", "py": "Wǎnshang wǒmen yìqǐ qù kàn diànyǐng ba.",
-    "es": ["Esta noche vamos juntos al cine.", "Vamos al cine juntos esta noche.", "¿Vamos juntos al cine esta noche?", "Por la noche vamos a ver una película juntos.", "Esta noche vamos a ver una peli juntos."]},
-   {"w": "听说", "zh": "听说你生病了。", "py": "Tīngshuō nǐ shēng bìng le.",
-    "es": ["He oído que te has puesto enfermo.", "Me han dicho que estás enfermo.", "Dicen que estás enferma.", "He oído que estás malo."]},
-   {"w": "累", "zh": "我今天很累。", "py": "Wǒ jīntiān hěn lèi.",
-    "es": ["Hoy estoy muy cansado.", "Hoy estoy muy cansada.", "Estoy muy cansado hoy.", "Hoy estoy agotado."]}
+   {
+    "w": "百",
+    "zh": "我们学校有三百个学生。",
+    "py": "Wǒmen xuéxiào yǒu sānbǎi ge xuésheng.",
+    "es": [
+     "Nuestro colegio tiene trescientos alumnos.",
+     "En nuestra escuela hay trescientos estudiantes.",
+     "Nuestra escuela tiene trescientos alumnos.",
+     "En nuestro colegio hay trescientos alumnos."
+    ]
+   },
+   {
+    "w": "别",
+    "zh": "你别打车，车站不远。",
+    "py": "Nǐ bié dǎchē, chēzhàn bù yuǎn.",
+    "es": [
+     "No cojas un taxi, la estación no está lejos.",
+     "No tomes un taxi; la parada no está lejos.",
+     "No hace falta que cojas un taxi, la estación está cerca.",
+     "No cojas taxi, que la parada no queda lejos."
+    ]
+   },
+   {
+    "w": "车",
+    "zh": "你的车在哪儿？",
+    "py": "Nǐ de chē zài nǎr?",
+    "es": [
+     "¿Dónde está tu coche?",
+     "¿Dónde tienes el coche?",
+     "¿Dónde has dejado el coche?",
+     "¿Tu coche dónde está?"
+    ]
+   },
+   {
+    "w": "车上",
+    "zh": "车上人真多！",
+    "py": "Chēshang rén zhēn duō!",
+    "es": [
+     "¡Cuánta gente hay en el autobús!",
+     "¡Hay muchísima gente en el coche!",
+     "¡Qué lleno va el autobús!",
+     "¡Cuánta gente en el autobús!"
+    ]
+   },
+   {
+    "w": "车站",
+    "zh": "车站有点儿远。",
+    "py": "Chēzhàn yǒudiǎnr yuǎn.",
+    "es": [
+     "La estación está un poco lejos.",
+     "La parada está algo lejos.",
+     "La parada queda un poco lejos.",
+     "La estación queda algo lejos."
+    ]
+   },
+   {
+    "w": "打车",
+    "zh": "这儿好打车吗？",
+    "py": "Zhèr hǎo dǎchē ma?",
+    "es": [
+     "¿Es fácil coger un taxi aquí?",
+     "¿Se encuentra taxi fácilmente por aquí?",
+     "¿Aquí es fácil pillar un taxi?",
+     "¿Es fácil coger taxi por aquí?"
+    ]
+   },
+   {
+    "w": "大学",
+    "zh": "她是大学老师。",
+    "py": "Tā shì dàxué lǎoshī.",
+    "es": [
+     "Es profesora de universidad.",
+     "Ella es profesora universitaria.",
+     "Es profesor de universidad.",
+     "Trabaja de profesora en la universidad."
+    ]
+   },
+   {
+    "w": "到",
+    "zh": "请问，这儿有到北京大学的公交车吗？",
+    "py": "Qǐngwèn, zhèr yǒu dào Běijīng Dàxué de gōngjiāochē ma?",
+    "es": [
+     "Perdone, ¿hay algún autobús de aquí a la Universidad de Pekín?",
+     "Disculpe, ¿desde aquí hay autobús a la Universidad de Pekín?",
+     "Perdone, ¿hay un autobús que vaya de aquí a la Universidad de Pekín?",
+     "Disculpe, ¿hay autobús hasta la Universidad de Pekín?"
+    ]
+   },
+   {
+    "w": "多",
+    "zh": "学校里人真多啊！",
+    "py": "Xuéxiào li rén zhēn duō a!",
+    "es": [
+     "¡Cuánta gente hay en la universidad!",
+     "¡Hay muchísima gente en el campus!",
+     "¡Qué cantidad de gente hay en la escuela!",
+     "¡Cuánta gente hay en el colegio!"
+    ]
+   },
+   {
+    "w": "多少",
+    "zh": "北京大学有多少学生？",
+    "py": "Běijīng Dàxué yǒu duōshao xuésheng?",
+    "es": [
+     "¿Cuántos estudiantes tiene la Universidad de Pekín?",
+     "¿Cuántos alumnos hay en la Universidad de Pekín?",
+     "¿Cuántos estudiantes hay en la Universidad de Pekín?"
+    ]
+   },
+   {
+    "w": "二",
+    "zh": "这是我第二次来北京。",
+    "py": "Zhè shì wǒ dì-èr cì lái Běijīng.",
+    "es": [
+     "Es la segunda vez que vengo a Pekín.",
+     "Esta es mi segunda vez en Pekín.",
+     "Vengo a Pekín por segunda vez.",
+     "Es mi segunda visita a Pekín."
+    ]
+   },
+   {
+    "w": "个",
+    "zh": "我们去看个电影吧。",
+    "py": "Wǒmen qù kàn ge diànyǐng ba.",
+    "es": [
+     "Vamos a ver una peli.",
+     "Vamos al cine a ver una película.",
+     "¿Vemos una película?",
+     "Vamos a ver una película."
+    ]
+   },
+   {
+    "w": "还是",
+    "zh": "我们还是坐公交车去吧。",
+    "py": "Wǒmen háishi zuò gōngjiāochē qù ba.",
+    "es": [
+     "Mejor vamos en autobús.",
+     "Será mejor que vayamos en autobús.",
+     "Mejor cogemos el autobús.",
+     "Vayamos mejor en autobús."
+    ]
+   },
+   {
+    "w": "间",
+    "zh": "这间教室很大。",
+    "py": "Zhè jiān jiàoshì hěn dà.",
+    "es": [
+     "Esta aula es muy grande.",
+     "Esta clase es muy grande.",
+     "Esta aula es grandísima.",
+     "Esta aula es muy amplia."
+    ]
+   },
+   {
+    "w": "开车",
+    "zh": "我开车去接你。",
+    "py": "Wǒ kāichē qù jiē nǐ.",
+    "es": [
+     "Voy en coche a recogerte.",
+     "Te recojo en coche.",
+     "Voy a buscarte en coche.",
+     "Voy a recogerte con el coche."
+    ]
+   },
+   {
+    "w": "老师",
+    "zh": "王老师是我们的中文老师。",
+    "py": "Wáng lǎoshī shì wǒmen de Zhōngwén lǎoshī.",
+    "es": [
+     "La profesora Wang es nuestra profesora de chino.",
+     "El profesor Wang es nuestro profesor de chino.",
+     "La señora Wang es nuestra profesora de chino.",
+     "Wang es nuestro profesor de chino."
+    ]
+   },
+   {
+    "w": "两",
+    "zh": "我有两个中国朋友。",
+    "py": "Wǒ yǒu liǎng ge Zhōngguó péngyou.",
+    "es": [
+     "Tengo dos amigos chinos.",
+     "Tengo dos amigas chinas.",
+     "Tengo un par de amigos chinos.",
+     "Tengo dos amigos de China."
+    ]
+   },
+   {
+    "w": "六",
+    "zh": "教室里有六个学生。",
+    "py": "Jiàoshì li yǒu liù ge xuésheng.",
+    "es": [
+     "En el aula hay seis alumnos.",
+     "Hay seis estudiantes en clase.",
+     "En la clase hay seis alumnos.",
+     "Hay seis alumnos en el aula."
+    ]
+   },
+   {
+    "w": "们",
+    "zh": "孩子们都在学校。",
+    "py": "Háizimen dōu zài xuéxiào.",
+    "es": [
+     "Los niños están todos en el colegio.",
+     "Todos los niños están en la escuela.",
+     "Los chicos están todos en el colegio.",
+     "Los niños están en el cole."
+    ]
+   },
+   {
+    "w": "哪",
+    "zh": "你在哪个学校学习？",
+    "py": "Nǐ zài nǎge xuéxiào xuéxí?",
+    "es": [
+     "¿En qué escuela estudias?",
+     "¿En qué colegio estudias?",
+     "¿En qué universidad estudias?",
+     "¿Dónde estudias?"
+    ]
+   },
+   {
+    "w": "哪儿",
+    "zh": "车站在哪儿？",
+    "py": "Chēzhàn zài nǎr?",
+    "es": [
+     "¿Dónde está la estación?",
+     "¿Dónde está la parada?",
+     "¿Dónde queda la estación?",
+     "¿La parada dónde está?"
+    ]
+   },
+   {
+    "w": "呢",
+    "zh": "李文还在学校呢。",
+    "py": "Lǐ Wén hái zài xuéxiào ne.",
+    "es": [
+     "Li Wen todavía está en el colegio.",
+     "Li Wen sigue en la escuela.",
+     "Li Wen aún está en la universidad.",
+     "Li Wen está todavía en el colegio."
+    ]
+   },
+   {
+    "w": "年",
+    "zh": "我在北京学习了两年。",
+    "py": "Wǒ zài Běijīng xuéxíle liǎng nián.",
+    "es": [
+     "Estudié dos años en Pekín.",
+     "He estudiado dos años en Pekín.",
+     "Estuve dos años estudiando en Pekín.",
+     "Pasé dos años estudiando en Pekín."
+    ]
+   },
+   {
+    "w": "票",
+    "zh": "我们在网上买票吧。",
+    "py": "Wǒmen zài wǎngshang mǎi piào ba.",
+    "es": [
+     "Compremos las entradas por internet.",
+     "Vamos a comprar los billetes en internet.",
+     "Saquemos los billetes por internet.",
+     "Compramos las entradas online, ¿vale?"
+    ]
+   },
+   {
+    "w": "三",
+    "zh": "我们三个人都是学生。",
+    "py": "Wǒmen sān ge rén dōu shì xuésheng.",
+    "es": [
+     "Los tres somos estudiantes.",
+     "Nosotros tres somos estudiantes.",
+     "Los tres somos alumnos.",
+     "Las tres somos estudiantes."
+    ]
+   },
+   {
+    "w": "什么",
+    "zh": "你们来北京做什么？",
+    "py": "Nǐmen lái Běijīng zuò shénme?",
+    "es": [
+     "¿A qué habéis venido a Pekín?",
+     "¿Qué venís a hacer a Pekín?",
+     "¿Qué hacéis en Pekín?",
+     "¿Para qué habéis venido a Pekín?"
+    ]
+   },
+   {
+    "w": "十",
+    "zh": "这个教室有十个学生。",
+    "py": "Zhège jiàoshì yǒu shí ge xuésheng.",
+    "es": [
+     "Esta aula tiene diez alumnos.",
+     "En esta clase hay diez estudiantes.",
+     "Hay diez alumnos en esta aula.",
+     "Esta clase tiene diez estudiantes."
+    ]
+   },
+   {
+    "w": "四",
+    "zh": "教室里有四个外国学生。",
+    "py": "Jiàoshì li yǒu sì ge wàiguó xuésheng.",
+    "es": [
+     "En el aula hay cuatro estudiantes extranjeros.",
+     "Hay cuatro alumnos extranjeros en la clase.",
+     "En clase hay cuatro estudiantes extranjeros.",
+     "En el aula hay cuatro alumnos extranjeros."
+    ]
+   },
+   {
+    "w": "岁",
+    "zh": "安妮二十二岁。",
+    "py": "Ānnī èrshí'èr suì.",
+    "es": [
+     "Annie tiene veintidós años.",
+     "Annie tiene 22 años.",
+     "La edad de Annie es veintidós años."
+    ]
+   },
+   {
+    "w": "他们",
+    "zh": "他们是外国学生。",
+    "py": "Tāmen shì wàiguó xuésheng.",
+    "es": [
+     "Son estudiantes extranjeros.",
+     "Ellos son alumnos extranjeros.",
+     "Son alumnos de fuera.",
+     "Ellos son estudiantes extranjeros."
+    ]
+   },
+   {
+    "w": "她们",
+    "zh": "她们是来旅游的。",
+    "py": "Tāmen shì lái lǚyóu de.",
+    "es": [
+     "Ellas han venido de viaje.",
+     "Han venido a hacer turismo.",
+     "Ellas vienen de turismo.",
+     "Han venido de vacaciones."
+    ]
+   },
+   {
+    "w": "外国",
+    "zh": "学校里有很多外国学生。",
+    "py": "Xuéxiào li yǒu hěn duō wàiguó xuésheng.",
+    "es": [
+     "En la universidad hay muchos estudiantes extranjeros.",
+     "Hay muchos alumnos extranjeros en el colegio.",
+     "En la escuela hay muchos estudiantes extranjeros.",
+     "El campus tiene muchos estudiantes extranjeros."
+    ]
+   },
+   {
+    "w": "网上",
+    "zh": "你是在网上买的票吗？",
+    "py": "Nǐ shì zài wǎngshang mǎi de piào ma?",
+    "es": [
+     "¿Compraste las entradas por internet?",
+     "¿Has comprado los billetes en internet?",
+     "¿Sacaste las entradas por internet?",
+     "¿Las entradas las compraste online?"
+    ]
+   },
+   {
+    "w": "问",
+    "zh": "你去问王老师吧。",
+    "py": "Nǐ qù wèn Wáng lǎoshī ba.",
+    "es": [
+     "Ve a preguntarle a la profesora Wang.",
+     "Pregúntale al profesor Wang.",
+     "Pregúntaselo a la profesora Wang.",
+     "Mejor pregúntale a la profesora Wang."
+    ]
+   },
+   {
+    "w": "五",
+    "zh": "我们学校有五个教室。",
+    "py": "Wǒmen xuéxiào yǒu wǔ ge jiàoshì.",
+    "es": [
+     "Nuestra escuela tiene cinco aulas.",
+     "En nuestro colegio hay cinco aulas.",
+     "Nuestra escuela tiene cinco clases.",
+     "Hay cinco aulas en nuestra escuela."
+    ]
+   },
+   {
+    "w": "学生",
+    "zh": "我们是王老师的学生。",
+    "py": "Wǒmen shì Wáng lǎoshī de xuésheng.",
+    "es": [
+     "Somos alumnos de la profesora Wang.",
+     "Somos estudiantes del profesor Wang.",
+     "Somos alumnas de la profesora Wang.",
+     "Somos los alumnos del profesor Wang."
+    ]
+   },
+   {
+    "w": "学习",
+    "zh": "我也想来这儿学习。",
+    "py": "Wǒ yě xiǎng lái zhèr xuéxí.",
+    "es": [
+     "Yo también quiero venir a estudiar aquí.",
+     "A mí también me gustaría estudiar aquí.",
+     "Yo también quiero estudiar aquí.",
+     "Me gustaría venir a estudiar aquí yo también."
+    ]
+   },
+   {
+    "w": "学校",
+    "zh": "我们的学校很大。",
+    "py": "Wǒmen de xuéxiào hěn dà.",
+    "es": [
+     "Nuestra escuela es muy grande.",
+     "Nuestro colegio es muy grande.",
+     "Nuestra universidad es muy grande.",
+     "Nuestra escuela es enorme."
+    ]
+   },
+   {
+    "w": "远",
+    "zh": "车站远吗？",
+    "py": "Chēzhàn yuǎn ma?",
+    "es": [
+     "¿Está lejos la estación?",
+     "¿La parada está lejos?",
+     "¿Queda lejos la estación?",
+     "¿Queda lejos la parada?"
+    ]
+   },
+   {
+    "w": "在",
+    "zh": "我在北京学习中文。",
+    "py": "Wǒ zài Běijīng xuéxí Zhōngwén.",
+    "es": [
+     "Estudio chino en Pekín.",
+     "Estoy estudiando chino en Pekín.",
+     "Aprendo chino en Pekín.",
+     "Estudio chino en Beijing."
+    ]
+   },
+   {
+    "w": "这",
+    "zh": "这是我的票。",
+    "py": "Zhè shì wǒ de piào.",
+    "es": [
+     "Esta es mi entrada.",
+     "Este es mi billete.",
+     "Esto es mi entrada.",
+     "Este billete es mío."
+    ]
+   },
+   {
+    "w": "真",
+    "zh": "北京大学真大啊！",
+    "py": "Běijīng Dàxué zhēn dà a!",
+    "es": [
+     "¡Qué grande es la Universidad de Pekín!",
+     "¡La Universidad de Pekín es enorme!",
+     "¡Qué grande es Beida!",
+     "¡La Universidad de Pekín es grandísima!"
+    ]
+   },
+   {
+    "w": "知道",
+    "zh": "你是怎么知道的？",
+    "py": "Nǐ shì zěnme zhīdào de?",
+    "es": [
+     "¿Cómo lo sabes?",
+     "¿Cómo te has enterado?",
+     "¿Y tú cómo lo sabes?",
+     "¿Cómo lo sabías?"
+    ]
+   },
+   {
+    "w": "坐",
+    "zh": "我们坐公交车去吧。",
+    "py": "Wǒmen zuò gōngjiāochē qù ba.",
+    "es": [
+     "Vamos en autobús.",
+     "Vayamos en autobús.",
+     "Cojamos el autobús.",
+     "¿Vamos en autobús?"
+    ]
+   },
+   {
+    "w": "啊",
+    "zh": "是啊，这儿人真多！",
+    "py": "Shì a, zhèr rén zhēn duō!",
+    "es": [
+     "¡Sí, aquí hay muchísima gente!",
+     "¡Es verdad, cuánta gente hay aquí!",
+     "Sí, ¡qué cantidad de gente hay aquí!",
+     "¡Ya ves, aquí hay mucha gente!"
+    ]
+   },
+   {
+    "w": "但",
+    "zh": "有公交车，但车站有点儿远。",
+    "py": "Yǒu gōngjiāochē, dàn chēzhàn yǒudiǎnr yuǎn.",
+    "es": [
+     "Hay autobús, pero la parada está un poco lejos.",
+     "Sí que hay autobús, pero la estación queda algo lejos.",
+     "Hay un autobús, pero la parada está algo lejos.",
+     "Hay autobús, aunque la parada está un poco lejos."
+    ]
+   },
+   {
+    "w": "公交车",
+    "zh": "这儿有到北大的公交车吗？",
+    "py": "Zhèr yǒu dào Běidà de gōngjiāochē ma?",
+    "es": [
+     "¿Hay algún autobús de aquí a Beida?",
+     "¿Desde aquí hay autobús a la Universidad de Pekín?",
+     "¿Hay autobús de aquí a Beida?",
+     "¿Pasa por aquí algún autobús que vaya a Beida?"
+    ]
+   },
+   {
+    "w": "过来",
+    "zh": "我们有时间再过来看电影。",
+    "py": "Wǒmen yǒu shíjiān zài guòlái kàn diànyǐng.",
+    "es": [
+     "Cuando tengamos tiempo volveremos a ver una película.",
+     "Cuando tengamos tiempo, volvemos para ver una peli.",
+     "Si tenemos tiempo, volveremos a ver una película.",
+     "Ya vendremos otro día a ver una película cuando tengamos tiempo."
+    ]
+   },
+   {
+    "w": "教室",
+    "zh": "那边就有一间教室。",
+    "py": "Nàbiān jiù yǒu yì jiān jiàoshì.",
+    "es": [
+     "Justo allí hay un aula.",
+     "Ahí mismo hay un aula.",
+     "Allí al lado hay una clase.",
+     "Allí mismo hay un aula."
+    ]
+   },
+   {
+    "w": "名",
+    "zh": "我们学校有三千多名学生。",
+    "py": "Wǒmen xuéxiào yǒu sānqiān duō míng xuésheng.",
+    "es": [
+     "Nuestra escuela tiene más de tres mil alumnos.",
+     "En nuestro colegio hay más de tres mil estudiantes.",
+     "Nuestra universidad tiene más de tres mil estudiantes.",
+     "Hay más de tres mil alumnos en nuestra escuela."
+    ]
+   },
+   {
+    "w": "万",
+    "zh": "北京大学有四万多名学生。",
+    "py": "Běijīng Dàxué yǒu sìwàn duō míng xuésheng.",
+    "es": [
+     "La Universidad de Pekín tiene más de cuarenta mil estudiantes.",
+     "En la Universidad de Pekín hay más de cuarenta mil alumnos.",
+     "La Universidad de Pekín tiene más de 40 000 estudiantes.",
+     "Hay más de cuarenta mil estudiantes en la Universidad de Pekín."
+    ]
+   }
   ]
  },
  {
@@ -440,242 +2404,1233 @@
    {
     "id": "G03-1",
     "elige": [
-     {"q": "哪个杯子是你的？左边那个红色___是我的。", "opciones": ["吗", "的", "了"], "ok": 1,
-      "exp": "红色的 = «la roja»: 的 sustituye al sustantivo 杯子. «La roja de la izquierda es la mía.»"},
-     {"q": "«El repartidor de periódicos no ha venido.»", "opciones": ["送报纸没来。", "的送报纸没来。", "送报纸的没来。"], "ok": 2,
-      "exp": "Verbo + objeto + 的 = «el que…»: 送报纸的 «el repartidor de periódicos»."},
-     {"q": "¿Qué frase está bien? (Esta taza es mía.)", "opciones": ["这个杯子是我的。", "这个杯子是我。", "这个杯子的是我。"], "ok": 0,
-      "exp": "No olvides el 的 final: 这个杯子是我的. Sin 的, 是我 significa «soy yo»."},
-     {"q": "¿Qué significa «今天送牛奶的没来。»?", "opciones": ["Hoy no he mandado la leche.", "Hoy no ha venido el lechero.", "Hoy no hay leche."], "ok": 1,
-      "exp": "送牛奶的 = «el que reparte la leche», el lechero: «Hoy no ha venido el lechero»."},
-     {"q": "这本书不是我的，是我丈夫___。", "opciones": ["的", "吗", "呢"], "ok": 0,
-      "exp": "我丈夫的 = «de mi marido»: «Este libro no es mío, es de mi marido»."},
-     {"q": "«El grande es mío y el pequeño es tuyo.»", "opciones": ["大是我的，小是你的。", "大的是我，小的是你。", "大的是我的，小的是你的。", "的大是我的，的小是你的。"], "ok": 2,
-      "exp": "Hace falta 的 en los dos lados: 大的 «el grande», 我的 «el mío»."},
-     {"q": "—你要哪个杯子？ —我要___。(la roja)", "opciones": ["的红色", "红色的", "红色是"], "ok": 1,
-      "exp": "Color + 的 = «el/la de ese color»: 我要红色的 «Quiero la roja»."}
+     {
+      "q": "菜都做___了，过来吃饭吧。",
+      "opciones": [
+       "好",
+       "见",
+       "懂"
+      ],
+      "ok": 0,
+      "exp": "做好 = hacer y que quede listo: 菜都做好了 «La comida ya está lista, ven a comer»."
+     },
+     {
+      "q": "Negativa correcta de 我吃完饭了:",
+      "opciones": [
+       "我没吃完饭了。",
+       "我不吃完饭。",
+       "我没吃完饭。"
+      ],
+      "ok": 2,
+      "exp": "Negativa: 没(有) delante del verbo y SIN 了: 我没吃完饭 «No he terminado de comer»."
+     },
+     {
+      "q": "¿Qué pregunta está bien?",
+      "opciones": [
+       "你吃完饭吗了？",
+       "你吃完饭了吗？",
+       "你没吃完饭吗了？"
+      ],
+      "ok": 1,
+      "exp": "Una forma de preguntar es añadir 了吗 al final: 你吃完饭了吗？ «¿Has terminado de comer?»."
+     },
+     {
+      "q": "这本书你看___了吗？（¿Lo has entendido?）",
+      "opciones": [
+       "见",
+       "住",
+       "懂"
+      ],
+      "ok": 2,
+      "exp": "看懂 = leer y entender: 这本书你看懂了吗？ «¿Has entendido este libro?»."
+     },
+     {
+      "q": "«No oí lo que dijo.»",
+      "opciones": [
+       "我不听见他说什么。",
+       "我没听见他说什么。",
+       "我没听见他说什么了。"
+      ],
+      "ok": 1,
+      "exp": "Con complemento de resultado la negación es 没, no 不, y se quita 了: 我没听见他说什么."
+     },
+     {
+      "q": "¿Qué significa 找到 en 我找到你的手机了？",
+      "opciones": [
+       "encontrar (buscar con éxito)",
+       "buscar sin encontrar",
+       "perder"
+      ],
+      "ok": 0,
+      "exp": "找 es «buscar»; 找到 añade el resultado: «encontrar». 我找到你的手机了 «He encontrado tu móvil»."
+     },
+     {
+      "q": "小雪今天来___了。（Llegó tarde.）",
+      "opciones": [
+       "好",
+       "完",
+       "晚"
+      ],
+      "ok": 2,
+      "exp": "来晚 = llegar tarde (el resultado de venir es «tarde»): 小雪今天来晚了."
+     }
     ],
     "frases": [
-     {"zh": "左边那个红色的是我的。", "py": "Zuǒbian nàge hóngsè de shì wǒ de.",
-      "es": ["La roja de la izquierda es la mía.", "El rojo de la izquierda es el mío.", "Ese rojo de la izquierda es mío.", "La de la izquierda, la roja, es mía.", "El de la izquierda, el rojo, es el mío."]},
-     {"zh": "送报纸的来了吗？", "py": "Sòng bàozhǐ de lái le ma?",
-      "es": ["¿Ha venido el repartidor de periódicos?", "¿Ha venido el del periódico?", "¿Ha llegado el repartidor de periódicos?", "¿Ya vino el repartidor del periódico?", "¿Ha venido ya el del periódico?"]},
-     {"zh": "这本书不是我的，是我丈夫的。", "py": "Zhè běn shū bú shì wǒ de, shì wǒ zhàngfu de.",
-      "es": ["Este libro no es mío, es de mi marido.", "Este libro no es mío, sino de mi marido.", "Este libro no es mío; es de mi esposo.", "Este libro no es el mío, es el de mi marido."]},
-     {"zh": "大的是我的，小的是你的。", "py": "Dà de shì wǒ de, xiǎo de shì nǐ de.",
-      "es": ["El grande es mío y el pequeño es tuyo.", "La grande es mía y la pequeña es tuya.", "El grande es el mío y el pequeño, el tuyo.", "El grande es mío; el pequeño, tuyo.", "La grande es la mía y la pequeña es la tuya."]},
-     {"zh": "今天送牛奶的没来。", "py": "Jīntiān sòng niúnǎi de méi lái.",
-      "es": ["Hoy no ha venido el lechero.", "Hoy no ha venido el repartidor de leche.", "El lechero no ha venido hoy.", "Hoy no vino el lechero.", "Hoy no ha venido el de la leche."]},
-     {"zh": "这个杯子是谁的？", "py": "Zhège bēizi shì shéi de?",
-      "es": ["¿De quién es esta taza?", "¿De quién es este vaso?", "¿Esta taza de quién es?", "¿Este vaso de quién es?"]},
-     {"zh": "我的手表是红色的。", "py": "Wǒ de shǒubiǎo shì hóngsè de.",
-      "es": ["Mi reloj es rojo.", "Mi reloj es de color rojo.", "El reloj mío es rojo.", "Mi reloj de pulsera es rojo."]},
-     {"zh": "那个房间是我女儿的。", "py": "Nàge fángjiān shì wǒ nǚ'ér de.",
-      "es": ["Esa habitación es de mi hija.", "Aquella habitación es de mi hija.", "Ese cuarto es de mi hija.", "Esa es la habitación de mi hija.", "Ese dormitorio es de mi hija."]},
-     {"zh": "我不要大的，我要小的。", "py": "Wǒ bú yào dà de, wǒ yào xiǎo de.",
-      "es": ["No quiero el grande, quiero el pequeño.", "No quiero la grande, quiero la pequeña.", "El grande no, quiero el pequeño.", "No quiero el grande; quiero el pequeño.", "No quiero uno grande, quiero uno pequeño."]}
+     {
+      "zh": "菜都做好了。",
+      "py": "Cài dōu zuòhǎo le.",
+      "es": [
+       "La comida ya está hecha.",
+       "La comida ya está lista.",
+       "Ya están todos los platos preparados.",
+       "Ya he terminado de hacer la comida."
+      ]
+     },
+     {
+      "zh": "我吃完饭了。",
+      "py": "Wǒ chīwán fàn le.",
+      "es": [
+       "Ya he terminado de comer.",
+       "He acabado de comer.",
+       "Terminé de comer.",
+       "Ya he comido."
+      ]
+     },
+     {
+      "zh": "工作太多了，下班的时候没做完。",
+      "py": "Gōngzuò tài duō le, xiàbān de shíhou méi zuòwán.",
+      "es": [
+       "Tenía demasiado trabajo y a la hora de salir no lo había terminado.",
+       "Había demasiado trabajo; cuando salí no lo había acabado.",
+       "Tenía muchísimo trabajo y no lo terminé antes de salir.",
+       "Había demasiado trabajo y a la hora de salir aún no lo había terminado."
+      ]
+     },
+     {
+      "zh": "你看见我的手机了吗？",
+      "py": "Nǐ kànjiàn wǒ de shǒujī le ma?",
+      "es": [
+       "¿Has visto mi móvil?",
+       "¿Viste mi móvil?",
+       "¿Has visto mi teléfono?",
+       "¿No habrás visto mi móvil?"
+      ]
+     },
+     {
+      "zh": "我没听见他说什么。",
+      "py": "Wǒ méi tīngjiàn tā shuō shénme.",
+      "es": [
+       "No oí lo que dijo.",
+       "No he oído qué ha dicho.",
+       "No escuché lo que dijo.",
+       "No oí qué decía."
+      ]
+     },
+     {
+      "zh": "这几个字你都写对了。",
+      "py": "Zhè jǐ ge zì nǐ dōu xiěduì le.",
+      "es": [
+       "Has escrito bien todos estos caracteres.",
+       "Estos caracteres los has escrito todos bien.",
+       "Has escrito correctamente todos estos caracteres.",
+       "Todos estos caracteres los has escrito bien."
+      ]
+     },
+     {
+      "zh": "你找到房间了没有？",
+      "py": "Nǐ zhǎodào fángjiān le méiyǒu?",
+      "es": [
+       "¿Has encontrado la habitación?",
+       "¿Encontraste la habitación o no?",
+       "¿Has encontrado ya la habitación?",
+       "¿Encontraste el cuarto?"
+      ]
+     },
+     {
+      "zh": "这本书我没看懂。",
+      "py": "Zhè běn shū wǒ méi kàndǒng.",
+      "es": [
+       "No he entendido este libro.",
+       "Este libro no lo entendí.",
+       "No entendí este libro.",
+       "Este libro no lo he entendido."
+      ]
+     },
+     {
+      "zh": "请记住我的电话。",
+      "py": "Qǐng jìzhù wǒ de diànhuà.",
+      "es": [
+       "Por favor, recuerda mi teléfono.",
+       "Por favor, quédate con mi número.",
+       "Por favor, memoriza mi número de teléfono.",
+       "Acuérdate de mi teléfono, por favor."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "¿De quién es cada cosa?",
-     "zh": "桌子上有三个杯子。红色的是我的，大的是我丈夫的，小的是我儿子的。那本书不是我的，是我女儿的。",
-     "py": "Zhuōzi shang yǒu sān ge bēizi. Hóngsè de shì wǒ de, dà de shì wǒ zhàngfu de, xiǎo de shì wǒ érzi de. Nà běn shū bú shì wǒ de, shì wǒ nǚ'ér de.",
-     "es": "En la mesa hay tres tazas. La roja es la mía, la grande es de mi marido y la pequeña es de mi hijo. Ese libro no es mío, es de mi hija.",
+     "titulo": "Un día de trabajo",
+     "zh": "今天刘明的工作太多了，下班的时候还没做完，他回来晚了。王一雪已经做好菜了。刘明吃完饭就去休息了。",
+     "py": "Jīntiān Liú Míng de gōngzuò tài duō le, xiàbān de shíhou hái méi zuòwán, tā huílái wǎn le. Wáng Yīxuě yǐjīng zuòhǎo cài le. Liú Míng chīwán fàn jiù qù xiūxi le.",
+     "es": "Hoy Liu Ming tenía demasiado trabajo; a la hora de salir aún no lo había terminado y ha vuelto tarde. Wang Yixue ya había preparado la comida. Liu Ming, en cuanto terminó de comer, se fue a descansar.",
      "preguntas": [
-      {"q": "¿De quién es la taza grande?", "opciones": ["De su hijo", "De la narradora", "De su marido"], "ok": 2},
-      {"q": "那本书是谁的？", "opciones": ["她丈夫的", "她女儿的", "她儿子的"], "ok": 1},
-      {"q": "桌子上有几个杯子？", "opciones": ["三个", "一个", "五个"], "ok": 0}
+      {
+       "q": "¿Por qué ha vuelto tarde Liu Ming?",
+       "opciones": [
+        "Fue a comer fuera",
+        "No había terminado el trabajo",
+        "Estaba en el hospital"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "谁做好了菜？",
+       "opciones": [
+        "王一雪",
+        "刘明",
+        "孩子"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "刘明吃完饭做什么了？",
+       "opciones": [
+        "工作",
+        "洗手",
+        "休息"
+       ],
+       "ok": 2
+      }
      ]
     }
    },
    {
     "id": "G03-2",
     "elige": [
-     {"q": "你来___，好吗？", "opciones": ["一下", "一个", "一起"], "ok": 0,
-      "exp": "Verbo + 一下 = «un momento»: 你来一下，好吗？ «¿Puedes venir un momento?»"},
-     {"q": "¿Qué frase está bien?", "opciones": ["我一下看你的手表。", "我看一下你的手表。", "我看你的一下手表。"], "ok": 1,
-      "exp": "一下 va justo detrás del verbo y antes del objeto: 我看一下你的手表 «Déjame ver tu reloj un momento»."},
-     {"q": "«Quiero descansar un poco.»", "opciones": ["我想一下休息。", "一下我想休息。", "我想休息一下。"], "ok": 2,
-      "exp": "一下 va DETRÁS del verbo: 休息一下 «descansar un poco»."},
-     {"q": "¿Qué significa «请你听一下。»?", "opciones": ["Escúchalo otra vez.", "Escucha un momento, por favor.", "No escuches, por favor."], "ok": 1,
-      "exp": "请 + verbo + 一下 es una petición amable: «Escucha un momento, por favor»."},
-     {"q": "你坐___，我去买水果。", "opciones": ["一起", "最", "一下"], "ok": 2,
-      "exp": "坐一下 = «sentarse un momento»: «Siéntate un momento, voy a comprar fruta»."},
-     {"q": "¿Dónde va 一下? 我(A)看(B)你的报纸(C)，好吗？", "opciones": ["A", "B", "C"], "ok": 1,
-      "exp": "Verbo + 一下 + objeto: 我看一下你的报纸，好吗？ «¿Puedo echar un vistazo a tu periódico?»"},
-     {"q": "—你的新手表真漂亮！ —是吗？你看___。", "opciones": ["一下", "几个", "一起"], "ok": 0,
-      "exp": "看一下 = «echar un vistazo»: «¿Sí? Míralo un momento»."}
+     {
+      "q": "那你再想___，你想好了，我来买票。",
+      "opciones": [
+       "一想",
+       "想想了",
+       "一下想"
+      ],
+      "ok": 0,
+      "exp": "Verbo de una sílaba: A一A. 想一想 «pensarlo un poco»."
+     },
+     {
+      "q": "我有点儿累，现在想___。",
+      "opciones": [
+       "休休息息",
+       "休息休息",
+       "休息一休息"
+      ],
+      "ok": 1,
+      "exp": "Verbo de dos sílabas: ABAB. 休息休息 «descansar un rato»."
+     },
+     {
+      "q": "Forma duplicada de 帮忙 (verbo separable):",
+      "opciones": [
+       "帮忙帮忙",
+       "帮帮忙忙",
+       "帮帮忙"
+      ],
+      "ok": 2,
+      "exp": "Los verbos separables (verbo + objeto) se duplican AAB: 帮帮忙 «echar una mano»."
+     },
+     {
+      "q": "¿Qué matiz da 看看 en 我看看你的手机？",
+      "opciones": [
+       "Mirar muchísimo rato",
+       "Haberlo visto ya",
+       "Echar un vistazo, algo breve y relajado"
+      ],
+      "ok": 2,
+      "exp": "Duplicar el verbo indica acción breve, de prueba o informal: «déjame echar un vistazo a tu móvil»."
+     },
+     {
+      "q": "¿Qué frase está bien?",
+      "opciones": [
+       "你能过来帮忙帮忙吗？",
+       "你能过来帮帮忙吗？",
+       "你能过来帮一帮忙忙吗？"
+      ],
+      "ok": 1,
+      "exp": "帮忙 es separable → 帮帮忙: 你能过来帮帮忙吗？ «¿Puedes venir a echar una mano?»."
+     },
+     {
+      "q": "我去___手。",
+      "opciones": [
+       "洗洗",
+       "洗一洗洗",
+       "洗手洗"
+      ],
+      "ok": 0,
+      "exp": "洗手 es verbo + objeto → AAB: 洗洗手 «lavarse las manos (un momento)»."
+     },
+     {
+      "q": "你不认识他？那我给你___。",
+      "opciones": [
+       "介绍一介绍",
+       "介绍介绍",
+       "介绍了介绍"
+      ],
+      "ok": 1,
+      "exp": "介绍 es un verbo de dos sílabas → ABAB: 介绍介绍. No se usa 一 en medio con verbos de dos sílabas."
+     }
     ],
     "frases": [
-     {"zh": "你来一下，好吗？", "py": "Nǐ lái yíxià, hǎo ma?",
-      "es": ["¿Puedes venir un momento?", "Ven un momento, ¿vale?", "¿Puede venir un momento?", "Ven un momento, ¿quieres?", "¿Vienes un momento?"]},
-     {"zh": "我看一下你的手表。", "py": "Wǒ kàn yíxià nǐ de shǒubiǎo.",
-      "es": ["Déjame ver tu reloj un momento.", "Voy a mirar tu reloj un momento.", "Deja que vea tu reloj un momento.", "Voy a echar un vistazo a tu reloj.", "Déjame echar un vistazo a tu reloj."]},
-     {"zh": "请你听一下。", "py": "Qǐng nǐ tīng yíxià.",
-      "es": ["Escucha un momento, por favor.", "Por favor, escucha un momento.", "Escuche un momento, por favor.", "Escucha un poco, por favor."]},
-     {"zh": "你坐一下，我去买水果。", "py": "Nǐ zuò yíxià, wǒ qù mǎi shuǐguǒ.",
-      "es": ["Siéntate un momento, voy a comprar fruta.", "Siéntate un rato, que voy a comprar fruta.", "Siéntese un momento, voy a comprar fruta.", "Siéntate un momento; voy a por fruta.", "Siéntate un momento, que voy a comprar fruta."]},
-     {"zh": "我想休息一下。", "py": "Wǒ xiǎng xiūxi yíxià.",
-      "es": ["Quiero descansar un poco.", "Me gustaría descansar un rato.", "Quiero descansar un momento.", "Quisiera descansar un poco.", "Quiero descansar un rato."]},
-     {"zh": "请你们看一下这本书。", "py": "Qǐng nǐmen kàn yíxià zhè běn shū.",
-      "es": ["Por favor, echad un vistazo a este libro.", "Mirad este libro un momento, por favor.", "Echen un vistazo a este libro, por favor.", "Por favor, mirad un poco este libro.", "Echad una ojeada a este libro, por favor."]},
-     {"zh": "我去商店看一下。", "py": "Wǒ qù shāngdiàn kàn yíxià.",
-      "es": ["Voy a echar un vistazo a la tienda.", "Voy a la tienda a mirar un poco.", "Voy a ir a la tienda a echar un vistazo.", "Voy a mirar un momento en la tienda.", "Voy a pasarme por la tienda a mirar."]},
-     {"zh": "我们在这儿坐一下吧。", "py": "Wǒmen zài zhèr zuò yíxià ba.",
-      "es": ["Sentémonos aquí un momento.", "Vamos a sentarnos aquí un rato.", "Sentémonos aquí un rato.", "¿Nos sentamos aquí un momento?", "Vamos a sentarnos un momento aquí."]},
-     {"zh": "我能看一下你的报纸吗？", "py": "Wǒ néng kàn yíxià nǐ de bàozhǐ ma?",
-      "es": ["¿Puedo echar un vistazo a tu periódico?", "¿Puedo mirar un momento tu periódico?", "¿Me dejas ver un momento tu periódico?", "¿Puedo ver un momento su periódico?", "¿Puedo leer un poco tu periódico?"]}
+     {
+      "zh": "那你再想一想。",
+      "py": "Nà nǐ zài xiǎng yi xiǎng.",
+      "es": [
+       "Pues piénsalo un poco más.",
+       "Entonces dale otra vuelta.",
+       "Pues piénsatelo un poco más.",
+       "Entonces piénsalo otra vez."
+      ],
+      "altzh": [
+       "那你再想想。"
+      ],
+      "altpy": [
+       "Nà nǐ zài xiǎngxiang."
+      ]
+     },
+     {
+      "zh": "我有点儿累，现在想休息休息。",
+      "py": "Wǒ yǒudiǎnr lèi, xiànzài xiǎng xiūxi xiūxi.",
+      "es": [
+       "Estoy un poco cansado; ahora quiero descansar un rato.",
+       "Estoy algo cansada y me apetece descansar un poco.",
+       "Estoy un poco cansado, quiero descansar un poco.",
+       "Estoy un poco cansada; ahora me gustaría descansar un rato."
+      ]
+     },
+     {
+      "zh": "你能过来帮帮忙吗？",
+      "py": "Nǐ néng guòlái bāngbang máng ma?",
+      "es": [
+       "¿Puedes venir a echarme una mano?",
+       "¿Puedes venir a ayudar un poco?",
+       "¿Te importa venir a echar una mano?",
+       "¿Puedes venir a ayudarme un momento?"
+      ]
+     },
+     {
+      "zh": "我去洗洗手。",
+      "py": "Wǒ qù xǐxi shǒu.",
+      "es": [
+       "Voy a lavarme las manos.",
+       "Voy a lavarme un momento las manos.",
+       "Me voy a lavar las manos.",
+       "Voy a lavarme las manos un momento."
+      ]
+     },
+     {
+      "zh": "你去问问老师吧。",
+      "py": "Nǐ qù wènwen lǎoshī ba.",
+      "es": [
+       "Ve a preguntarle al profesor.",
+       "Pregúntale a la profesora.",
+       "Ve a preguntárselo al profesor.",
+       "Anda, pregúntale al profesor."
+      ]
+     },
+     {
+      "zh": "那我给你介绍介绍。",
+      "py": "Nà wǒ gěi nǐ jièshào jièshào.",
+      "es": [
+       "Pues te lo presento.",
+       "Entonces te lo presento.",
+       "Pues deja que te la presente.",
+       "Pues ya te lo presento yo."
+      ]
+     },
+     {
+      "zh": "让我听听。",
+      "py": "Ràng wǒ tīngting.",
+      "es": [
+       "Déjame escuchar.",
+       "Déjame oírlo.",
+       "A ver, déjame que lo escuche.",
+       "Déjame escucharlo un momento."
+      ]
+     },
+     {
+      "zh": "你看看这个房间怎么样。",
+      "py": "Nǐ kànkan zhège fángjiān zěnmeyàng.",
+      "es": [
+       "Mira a ver qué te parece esta habitación.",
+       "Echa un vistazo a esta habitación, a ver qué tal.",
+       "Mira esta habitación, a ver qué te parece.",
+       "Échale un vistazo a esta habitación a ver qué te parece."
+      ]
+     },
+     {
+      "zh": "晚上我们一起去电影院看看吧。",
+      "py": "Wǎnshang wǒmen yìqǐ qù diànyǐngyuàn kànkan ba.",
+      "es": [
+       "Esta noche vamos juntos al cine a ver qué hay.",
+       "Esta noche podemos ir juntos al cine a echar un vistazo.",
+       "Vamos esta noche juntos al cine a ver qué ponen.",
+       "Por la noche vamos juntos al cine a ver qué hay."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "Una visita",
-     "zh": "小王来我家。我说：“你坐一下，我去买水果。”我回来的时候，他说：“你的手表真漂亮，我能看一下吗？”我说：“你看一下吧。”",
-     "py": "Xiǎo Wáng lái wǒ jiā. Wǒ shuō: “Nǐ zuò yíxià, wǒ qù mǎi shuǐguǒ.” Wǒ huílai de shíhou, tā shuō: “Nǐ de shǒubiǎo zhēn piàoliang, wǒ néng kàn yíxià ma?” Wǒ shuō: “Nǐ kàn yíxià ba.”",
-     "es": "Xiao Wang viene a mi casa. Le digo: «Siéntate un momento, voy a comprar fruta». Cuando vuelvo, me dice: «Tu reloj es precioso, ¿puedo verlo un momento?». Le digo: «Sí, míralo»",
+     "titulo": "¿Adónde vamos?",
+     "zh": "刘明想和王一雪一起出去旅游。王一雪还没想好去哪儿。刘明说：“你再想一想，想好了我来买票。”王一雪说：“好，我在网上看看。”",
+     "py": "Liú Míng xiǎng hé Wáng Yīxuě yìqǐ chūqù lǚyóu. Wáng Yīxuě hái méi xiǎnghǎo qù nǎr. Liú Míng shuō: “Nǐ zài xiǎng yi xiǎng, xiǎnghǎo le wǒ lái mǎi piào.” Wáng Yīxuě shuō: “Hǎo, wǒ zài wǎngshang kànkan.”",
+     "es": "Liu Ming quiere irse de viaje con Wang Yixue. Wang Yixue aún no ha decidido adónde ir. Liu Ming dice: «Piénsalo un poco más; cuando lo tengas claro, yo compro los billetes». Wang Yixue dice: «Vale, voy a mirar un poco en internet».",
      "preguntas": [
-      {"q": "¿Qué va a comprar el narrador?", "opciones": ["Leche", "Fruta", "Un reloj"], "ok": 1},
-      {"q": "小王想看什么？", "opciones": ["手表", "报纸", "书"], "ok": 0},
-      {"q": "¿Qué le parece el reloj a Xiao Wang?", "opciones": ["Caro", "Feo", "Muy bonito"], "ok": 2}
+      {
+       "q": "¿Quién va a comprar los billetes?",
+       "opciones": [
+        "Wang Yixue",
+        "Liu Ming",
+        "Los dos"
+       ],
+       "ok": 1
+      },
+      {
+       "q": "王一雪想好去哪儿了吗？",
+       "opciones": [
+        "还没想好",
+        "想好了",
+        "她不想去"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "王一雪要在哪儿看看？",
+       "opciones": [
+        "书店",
+        "学校",
+        "网上"
+       ],
+       "ok": 2
+      }
      ]
     }
    },
    {
     "id": "G03-3",
     "elige": [
-     {"q": "今天___热！", "opciones": ["真", "几", "一下"], "ok": 0,
-      "exp": "真 + adjetivo + ！ expresa sorpresa o énfasis: 今天真热！ «¡Qué calor hace hoy!»"},
-     {"q": "¿Qué frase está bien?", "opciones": ["这是真漂亮的手表。", "这个手表真漂亮！", "这个真手表漂亮！"], "ok": 1,
-      "exp": "真 va delante del adjetivo, no del sustantivo: 这个手表真漂亮！ «¡Qué bonito es este reloj!»"},
-     {"q": "«¡Qué rica está esta comida!»", "opciones": ["这个菜很好吃吗？", "这个真菜好吃！", "这个菜真好吃！"], "ok": 2,
-      "exp": "Sujeto + 真 + 好吃 + ！: 这个菜真好吃！"},
-     {"q": "¿Qué significa «我真喜欢这个颜色。»?", "opciones": ["Este color me gusta de verdad.", "No me gusta este color.", "¿Te gusta este color?"], "ok": 0,
-      "exp": "真 + verbo de gusto = «de verdad»: «Este color me gusta de verdad / Me encanta este color»."},
-     {"q": "«¡Qué bonita es la habitación de su hija!»", "opciones": ["她女儿真漂亮的房间！", "真她女儿的房间漂亮！", "她女儿的真房间漂亮！", "她女儿的房间真漂亮！"], "ok": 3,
-      "exp": "Sujeto (她女儿的房间) + 真 + adjetivo: 她女儿的房间真漂亮！"},
-     {"q": "¿Cuál NO es correcta?", "opciones": ["今天真冷！", "你的猫真漂亮！", "我有一个真漂亮的手表。"], "ok": 2,
-      "exp": "真 no va delante de un sustantivo con 的: se dice 我有一个很漂亮的手表 «Tengo un reloj muy bonito»."},
-     {"q": "你的眼睛___漂亮！", "opciones": ["几", "真", "要"], "ok": 1,
-      "exp": "真漂亮 = «qué bonito»: 你的眼睛真漂亮！ «¡Qué ojos tan bonitos tienes!»"}
+     {
+      "q": "我___网上的介绍。（Ya lo hice.）",
+      "opciones": [
+       "看了看",
+       "看看了",
+       "看一看了"
+      ],
+      "ok": 0,
+      "exp": "Acción ya ocurrida con verbo de una sílaba: A了A. 我看了看网上的介绍 «Eché un vistazo a la información de internet»."
+     },
+     {
+      "q": "Para algo ya pasado con un verbo de dos sílabas como 休息, se dice:",
+      "opciones": [
+       "休息了休息",
+       "休息了一下",
+       "休了息息"
+      ],
+      "ok": 1,
+      "exp": "Los verbos de dos sílabas en pasado no se duplican: AB了一下. 我休息了一下 «Descansé un poco»."
+     },
+     {
+      "q": "他昨天来___。",
+      "opciones": [
+       "帮忙了帮忙",
+       "帮帮了忙",
+       "帮了帮忙"
+      ],
+      "ok": 2,
+      "exp": "Verbo separable en pasado: A了AB. 他昨天来帮了帮忙 «Ayer vino a echar una mano»."
+     },
+     {
+      "q": "¿Qué significa 我休息了一下，现在觉得不累了？",
+      "opciones": [
+       "Voy a descansar un poco porque estoy cansado.",
+       "He descansado un poco y ya no estoy cansado.",
+       "No he descansado nada y estoy cansado."
+      ],
+      "ok": 1,
+      "exp": "休息了一下 = acción breve ya hecha: «He descansado un poco y ahora ya no estoy cansado»."
+     },
+     {
+      "q": "¿Qué frase está MAL?",
+      "opciones": [
+       "我看了看那本书。",
+       "我介绍了一下我的朋友。",
+       "我介绍了介绍我的朋友。"
+      ],
+      "ok": 2,
+      "exp": "介绍 tiene dos sílabas: en pasado se usa 介绍了一下, no 介绍了介绍."
+     },
+     {
+      "q": "昨天我在房间___书，写了写字。",
+      "opciones": [
+       "看了看",
+       "看看了",
+       "看了一看了"
+      ],
+      "ok": 0,
+      "exp": "A了A con 看书 (separable: 看了看书) y 写字 (写了写字): «Ayer leí un poco y escribí un poco»."
+     },
+     {
+      "q": "A：你的手机是不是在桌子上？ B：我在桌子上___，但没有。",
+      "opciones": [
+       "找找了",
+       "找了找",
+       "找了一找了"
+      ],
+      "ok": 1,
+      "exp": "A了A: 找了找 «busqué un poco», pero no estaba."
+     }
     ],
     "frases": [
-     {"zh": "她女儿的房间真漂亮！", "py": "Tā nǚ'ér de fángjiān zhēn piàoliang!",
-      "es": ["¡Qué bonita es la habitación de su hija!", "¡La habitación de su hija es preciosa!", "¡Qué habitación tan bonita tiene su hija!", "¡El cuarto de su hija es precioso!", "¡Qué bonito es el cuarto de su hija!"]},
-     {"zh": "今天真热啊！", "py": "Jīntiān zhēn rè a!",
-      "es": ["¡Qué calor hace hoy!", "¡Hoy hace muchísimo calor!", "¡Hoy sí que hace calor!", "¡Menudo calor hace hoy!", "¡Qué calor hace hoy, eh!"]},
-     {"zh": "这个菜真好吃！", "py": "Zhège cài zhēn hǎochī!",
-      "es": ["¡Qué rico está este plato!", "¡Este plato está buenísimo!", "¡Qué bueno está este plato!", "¡Este plato está delicioso!", "¡Esta comida está riquísima!"]},
-     {"zh": "你的手表真漂亮！", "py": "Nǐ de shǒubiǎo zhēn piàoliang!",
-      "es": ["¡Qué reloj tan bonito tienes!", "¡Tu reloj es precioso!", "¡Qué bonito es tu reloj!", "¡Su reloj es precioso!", "¡Tu reloj es muy bonito!"]},
-     {"zh": "我真喜欢这个颜色。", "py": "Wǒ zhēn xǐhuan zhège yánsè.",
-      "es": ["Me gusta mucho este color.", "De verdad que me gusta este color.", "Me encanta este color.", "Este color me gusta de verdad.", "Me gusta muchísimo este color."]},
-     {"zh": "你的小猫真漂亮！", "py": "Nǐ de xiǎo māo zhēn piàoliang!",
-      "es": ["¡Qué bonito es tu gatito!", "¡Tu gatito es precioso!", "¡Qué gatito tan bonito tienes!", "¡Tu gatita es preciosa!", "¡Qué mono es tu gatito!"]},
-     {"zh": "今天我真累！", "py": "Jīntiān wǒ zhēn lèi!",
-      "es": ["¡Hoy estoy cansadísimo!", "¡Qué cansado estoy hoy!", "¡Hoy estoy realmente cansada!", "¡Qué cansada estoy hoy!", "¡Hoy estoy muy cansado!"],
-      "altzh": ["我今天真累！"], "altpy": ["Wǒ jīntiān zhēn lèi!"]},
-     {"zh": "这个房间真大！", "py": "Zhège fángjiān zhēn dà!",
-      "es": ["¡Qué grande es esta habitación!", "¡Esta habitación es enorme!", "¡Qué habitación tan grande!", "¡Este cuarto es muy grande!", "¡Esta habitación es grandísima!"]},
-     {"zh": "你女儿真高！", "py": "Nǐ nǚ'ér zhēn gāo!",
-      "es": ["¡Qué alta es tu hija!", "¡Tu hija es muy alta!", "¡Qué alta está tu hija!", "¡Su hija es altísima!"]}
+     {
+      "zh": "我看了看网上的介绍。",
+      "py": "Wǒ kànle kàn wǎngshang de jièshào.",
+      "es": [
+       "Le eché un vistazo a la información de internet.",
+       "He mirado un poco la presentación en internet.",
+       "Eché un vistazo a lo que ponía en internet.",
+       "Miré un poco la información en internet."
+      ]
+     },
+     {
+      "zh": "我休息了一下，现在觉得不累了。",
+      "py": "Wǒ xiūxile yíxià, xiànzài juéde bú lèi le.",
+      "es": [
+       "He descansado un poco y ahora ya no estoy cansado.",
+       "Descansé un rato y ya no me siento cansada.",
+       "He descansado un rato y ya no estoy cansado.",
+       "Después de descansar un poco, ya no me noto cansado."
+      ]
+     },
+     {
+      "zh": "他昨天来帮了帮忙。",
+      "py": "Tā zuótiān lái bāngle bāng máng.",
+      "es": [
+       "Ayer vino a echar una mano.",
+       "Ayer vino a ayudar un poco.",
+       "Ayer vino y nos echó una mano.",
+       "Ayer vino a ayudarnos un rato."
+      ]
+     },
+     {
+      "zh": "我在桌子上找了找，但没有。",
+      "py": "Wǒ zài zhuōzi shang zhǎole zhǎo, dàn méiyǒu.",
+      "es": [
+       "Lo busqué un poco en la mesa, pero no estaba.",
+       "He mirado en la mesa, pero no está.",
+       "Busqué un poco encima de la mesa, pero no lo encontré.",
+       "He buscado en la mesa, pero no estaba allí."
+      ]
+     },
+     {
+      "zh": "昨天下午我在房间看了看书，写了写字。",
+      "py": "Zuótiān xiàwǔ wǒ zài fángjiān kànle kàn shū, xiěle xiě zì.",
+      "es": [
+       "Ayer por la tarde leí un poco y escribí algunos caracteres en mi habitación.",
+       "Ayer por la tarde, en mi habitación, leí un poco y escribí un poco.",
+       "Ayer por la tarde estuve en mi cuarto leyendo un poco y practicando caracteres.",
+       "Ayer por la tarde estuve leyendo y escribiendo caracteres en la habitación."
+      ]
+     },
+     {
+      "zh": "我去洗了洗手。",
+      "py": "Wǒ qù xǐle xǐ shǒu.",
+      "es": [
+       "Fui a lavarme las manos.",
+       "Me fui a lavar las manos.",
+       "He ido a lavarme las manos.",
+       "Me he lavado las manos un momento."
+      ]
+     },
+     {
+      "zh": "王一雪想了想，说：“我们去西安吧！”",
+      "py": "Wáng Yīxuě xiǎngle xiǎng, shuō: “Wǒmen qù Xī'ān ba!”",
+      "es": [
+       "Wang Yixue lo pensó un momento y dijo: «¡Vamos a Xi'an!»",
+       "Wang Yixue se lo pensó un poco y dijo: «¡Vámonos a Xi'an!»",
+       "Wang Yixue pensó un momento y dijo: «¡Vamos a Xi'an!».",
+       "Tras pensarlo un poco, Wang Yixue dijo: «¡Vayamos a Xi'an!»"
+      ]
+     },
+     {
+      "zh": "他给我介绍了一下北京。",
+      "py": "Tā gěi wǒ jièshàole yíxià Běijīng.",
+      "es": [
+       "Me habló un poco de Pekín.",
+       "Me hizo una pequeña presentación de Pekín.",
+       "Me contó un poco sobre Pekín.",
+       "Me explicó un poco cómo es Pekín."
+      ]
+     },
+     {
+      "zh": "我听了听，没听懂。",
+      "py": "Wǒ tīngle tīng, méi tīngdǒng.",
+      "es": [
+       "Escuché un poco, pero no lo entendí.",
+       "Lo escuché, pero no lo entendí.",
+       "Lo he escuchado, pero no lo he entendido.",
+       "Lo oí un momento, pero no lo entendí."
+      ]
+     }
     ],
     "lectura": {
-     "titulo": "La casa nueva de una amiga",
-     "zh": "今天我去朋友的新家。她的家真大！她女儿的房间在左边，房间里的东西都是红色的，真漂亮！中午我们在她家吃饭，她做的菜真好吃！",
-     "py": "Jīntiān wǒ qù péngyou de xīn jiā. Tā de jiā zhēn dà! Tā nǚ'ér de fángjiān zài zuǒbian, fángjiān li de dōngxi dōu shì hóngsè de, zhēn piàoliang! Zhōngwǔ wǒmen zài tā jiā chī fàn, tā zuò de cài zhēn hǎochī!",
-     "es": "Hoy he ido a la casa nueva de una amiga. ¡Su casa es enorme! La habitación de su hija está a la izquierda; todas las cosas de la habitación son rojas, ¡qué bonita! A mediodía hemos comido en su casa y la comida que ha hecho estaba riquísima.",
+     "titulo": "Un día tranquilo",
+     "zh": "昨天我很累，上午在房间休息了一下。下午我看了看书，写了写字。晚上朋友给我打电话，我们一起去饭店吃了饭。",
+     "py": "Zuótiān wǒ hěn lèi, shàngwǔ zài fángjiān xiūxile yíxià. Xiàwǔ wǒ kànle kàn shū, xiěle xiě zì. Wǎnshang péngyou gěi wǒ dǎ diànhuà, wǒmen yìqǐ qù fàndiàn chīle fàn.",
+     "es": "Ayer estaba muy cansado, así que por la mañana descansé un rato en mi habitación. Por la tarde leí un poco y practiqué caracteres. Por la noche me llamó un amigo y fuimos juntos a cenar a un restaurante.",
      "preguntas": [
-      {"q": "¿Cómo es la casa de la amiga?", "opciones": ["Muy pequeña", "Muy grande", "Vieja"], "ok": 1},
-      {"q": "她女儿的房间在哪儿？", "opciones": ["右边", "后面", "左边"], "ok": 2},
-      {"q": "¿De qué color son las cosas de la habitación?", "opciones": ["Rojas", "Blancas", "Negras"], "ok": 0}
-     ]
-    }
-   },
-   {
-    "id": "G03-4",
-    "elige": [
-     {"q": "«El hospital está al lado de la escuela.»", "opciones": ["医院在旁边学校。", "医院在学校旁边。", "旁边学校在医院。"], "ok": 1,
-      "exp": "Primero el punto de referencia y luego 旁边: 学校旁边 «al lado de la escuela»."},
-     {"q": "我家右边___一个商店。", "opciones": ["的", "在", "有"], "ok": 2,
-      "exp": "Lugar + 有 + algo: 我家右边有一个商店 «A la derecha de mi casa hay una tienda»."},
-     {"q": "¿Qué significa «右边那本书是谁的？»?", "opciones": ["¿De quién es el libro de la derecha?", "¿De quién es el libro de la izquierda?", "¿Qué libro está a la derecha?"], "ok": 0,
-      "exp": "右边 = «(a la) derecha»: «¿De quién es el libro de la derecha?»"},
-     {"q": "¿Qué frase está bien?", "opciones": ["我的猫在你左边。", "我的猫在左边你。", "我的猫左边在你。"], "ok": 0,
-      "exp": "A + 在 + B + 左边: 我的猫在你左边 «Mi gato está a tu izquierda»."},
-     {"q": "La silla está a tu mano izquierda. 椅子在我___。", "opciones": ["右边", "左边", "后面"], "ok": 1,
-      "exp": "左边 = «izquierda»: 椅子在我左边 «La silla está a mi izquierda»."},
-     {"q": "«La habitación pequeña de al lado es de su hija.»", "opciones": ["那个小的房间旁边是她女儿的。", "小的房间那个旁边是她女儿的。", "旁边那个小的房间是她女儿的。"], "ok": 2,
-      "exp": "旁边 + 那个 + sustantivo = «el/la de al lado»: 旁边那个小的房间是她女儿的。"},
-     {"q": "—商店在哪儿？ —商店在医院___。(a la derecha del hospital)", "opciones": ["右边", "左边", "旁边"], "ok": 0,
-      "exp": "右边 = «derecha»: 商店在医院右边 «La tienda está a la derecha del hospital»."}
-    ],
-    "frases": [
-     {"zh": "医院在学校旁边。", "py": "Yīyuàn zài xuéxiào pángbiān.",
-      "es": ["El hospital está al lado de la escuela.", "El hospital está junto a la escuela.", "El hospital está junto al colegio.", "El hospital está al lado del colegio.", "El hospital queda al lado de la escuela."]},
-     {"zh": "我家右边有一个商店。", "py": "Wǒ jiā yòubian yǒu yí ge shāngdiàn.",
-      "es": ["A la derecha de mi casa hay una tienda.", "Hay una tienda a la derecha de mi casa.", "A la derecha de casa hay una tienda.", "Al lado derecho de mi casa hay una tienda."]},
-     {"zh": "右边那本书是谁的？", "py": "Yòubian nà běn shū shì shéi de?",
-      "es": ["¿De quién es el libro de la derecha?", "¿De quién es ese libro de la derecha?", "¿El libro de la derecha de quién es?", "¿De quién es aquel libro de la derecha?"]},
-     {"zh": "我的猫在你左边。", "py": "Wǒ de māo zài nǐ zuǒbian.",
-      "es": ["Mi gato está a tu izquierda.", "Mi gata está a tu izquierda.", "Mi gato está a su izquierda.", "Mi gato está a tu lado izquierdo."]},
-     {"zh": "旁边那个小的房间是她女儿的。", "py": "Pángbiān nàge xiǎo de fángjiān shì tā nǚ'ér de.",
-      "es": ["La habitación pequeña de al lado es de su hija.", "Esa habitación pequeña de al lado es de su hija.", "El cuarto pequeño de al lado es de su hija.", "La habitación pequeña de al lado es la de su hija."]},
-     {"zh": "学校左边有一个饭店。", "py": "Xuéxiào zuǒbian yǒu yí ge fàndiàn.",
-      "es": ["A la izquierda de la escuela hay un restaurante.", "Hay un restaurante a la izquierda de la escuela.", "A la izquierda del colegio hay un restaurante.", "A la izquierda de la escuela hay un hotel."]},
-     {"zh": "我的杯子在电脑旁边。", "py": "Wǒ de bēizi zài diànnǎo pángbiān.",
-      "es": ["Mi taza está al lado del ordenador.", "Mi taza está junto al ordenador.", "Mi vaso está al lado de la computadora.", "Mi taza está al lado de la computadora.", "Mi vaso está junto al ordenador."]},
-     {"zh": "坐在我旁边的是我丈夫。", "py": "Zuò zài wǒ pángbiān de shì wǒ zhàngfu.",
-      "es": ["El que está sentado a mi lado es mi marido.", "El que se sienta a mi lado es mi marido.", "Quien está sentado a mi lado es mi marido.", "El que está sentado junto a mí es mi esposo."]},
-     {"zh": "他家在医院右边。", "py": "Tā jiā zài yīyuàn yòubian.",
-      "es": ["Su casa está a la derecha del hospital.", "La casa de él está a la derecha del hospital.", "Su casa queda a la derecha del hospital.", "Su casa está al lado derecho del hospital."]}
-    ],
-    "lectura": {
-     "titulo": "Mi barrio",
-     "zh": "我家在学校旁边。我家左边有一个医院，右边有一个商店。商店旁边是一个饭店，那个饭店的菜真好吃。我很喜欢去那儿吃饭。",
-     "py": "Wǒ jiā zài xuéxiào pángbiān. Wǒ jiā zuǒbian yǒu yí ge yīyuàn, yòubian yǒu yí ge shāngdiàn. Shāngdiàn pángbiān shì yí ge fàndiàn, nàge fàndiàn de cài zhēn hǎochī. Wǒ hěn xǐhuan qù nàr chī fàn.",
-     "es": "Mi casa está al lado de la escuela. A la izquierda de mi casa hay un hospital y a la derecha hay una tienda. Al lado de la tienda hay un restaurante; la comida de ese restaurante está riquísima. Me gusta mucho ir a comer allí.",
-     "preguntas": [
-      {"q": "¿Qué hay a la izquierda de su casa?", "opciones": ["Una tienda", "Un hospital", "Una escuela"], "ok": 1},
-      {"q": "商店旁边是什么？", "opciones": ["学校", "医院", "饭店"], "ok": 2},
-      {"q": "他家在哪儿？", "opciones": ["学校旁边", "医院右边", "商店左边"], "ok": 0}
+      {
+       "q": "¿Qué hizo por la mañana?",
+       "opciones": [
+        "Descansar un rato",
+        "Leer",
+        "Ir a un restaurante"
+       ],
+       "ok": 0
+      },
+      {
+       "q": "下午他做什么了？",
+       "opciones": [
+        "打电话",
+        "去饭店",
+        "看书、写字"
+       ],
+       "ok": 2
+      },
+      {
+       "q": "晚上谁给他打电话了？",
+       "opciones": [
+        "老师",
+        "朋友",
+        "妈妈"
+       ],
+       "ok": 1
+      }
      ]
     }
    }
   ],
   "vocab": [
-   {"w": "一下", "zh": "请你来一下。", "py": "Qǐng nǐ lái yíxià.",
-    "es": ["Ven un momento, por favor.", "Por favor, ven un momento.", "Venga un momento, por favor.", "¿Puedes venir un momento, por favor?"]},
-   {"w": "手表", "zh": "这是我的新手表。", "py": "Zhè shì wǒ de xīn shǒubiǎo.",
-    "es": ["Este es mi reloj nuevo.", "Es mi reloj nuevo.", "Este es mi nuevo reloj.", "Este es mi reloj de pulsera nuevo."]},
-   {"w": "千", "zh": "爸爸的手表三千多块。", "py": "Bàba de shǒubiǎo sānqiān duō kuài.",
-    "es": ["El reloj de papá cuesta tres mil y pico yuanes.", "El reloj de mi padre cuesta más de tres mil yuanes.", "El reloj de papá costó tres mil y pico yuanes.", "El reloj de mi padre vale más de tres mil yuanes."]},
-   {"w": "报纸", "zh": "我爸爸每天早上看报纸。", "py": "Wǒ bàba měi tiān zǎoshang kàn bàozhǐ.",
-    "es": ["Mi padre lee el periódico todas las mañanas.", "Mi padre lee el periódico cada mañana.", "Mi papá lee el diario todas las mañanas.", "Todas las mañanas mi padre lee el periódico."]},
-   {"w": "送", "zh": "送报纸的来了吗？", "py": "Sòng bàozhǐ de lái le ma?",
-    "es": ["¿Ha venido el repartidor de periódicos?", "¿Ha venido el del periódico?", "¿Ha llegado el repartidor de periódicos?", "¿Ya vino el repartidor del periódico?"]},
-   {"w": "送", "zh": "我想送她一本书。", "py": "Wǒ xiǎng sòng tā yì běn shū.",
-    "es": ["Quiero regalarle un libro.", "Me gustaría regalarle un libro.", "Quiero regalarle un libro a ella.", "Le quiero regalar un libro."]},
-   {"w": "牛奶", "zh": "我每天早上喝一杯牛奶。", "py": "Wǒ měi tiān zǎoshang hē yì bēi niúnǎi.",
-    "es": ["Todas las mañanas me tomo un vaso de leche.", "Cada mañana bebo un vaso de leche.", "Tomo un vaso de leche todas las mañanas.", "Todas las mañanas bebo un vaso de leche."]},
-   {"w": "房间", "zh": "我的房间很小。", "py": "Wǒ de fángjiān hěn xiǎo.",
-    "es": ["Mi habitación es muy pequeña.", "Mi cuarto es muy pequeño.", "Mi dormitorio es muy pequeño.", "Mi habitación es pequeñita."]},
-   {"w": "丈夫", "zh": "她丈夫是医生。", "py": "Tā zhàngfu shì yīshēng.",
-    "es": ["Su marido es médico.", "Su esposo es médico.", "El marido de ella es médico.", "Su marido es doctor."]},
-   {"w": "旁边", "zh": "商店旁边有一个饭店。", "py": "Shāngdiàn pángbiān yǒu yí ge fàndiàn.",
-    "es": ["Al lado de la tienda hay un restaurante.", "Hay un restaurante al lado de la tienda.", "Junto a la tienda hay un restaurante.", "Al lado de la tienda hay un hotel."]},
-   {"w": "真", "zh": "你的眼睛真漂亮！", "py": "Nǐ de yǎnjing zhēn piàoliang!",
-    "es": ["¡Qué ojos tan bonitos tienes!", "¡Tienes unos ojos preciosos!", "¡Tus ojos son preciosos!", "¡Qué bonitos son tus ojos!"]},
-   {"w": "左边", "zh": "左边那个人是我丈夫。", "py": "Zuǒbian nàge rén shì wǒ zhàngfu.",
-    "es": ["El de la izquierda es mi marido.", "Esa persona de la izquierda es mi marido.", "El hombre de la izquierda es mi esposo.", "El de la izquierda es mi esposo."]},
-   {"w": "右边", "zh": "你的书在右边。", "py": "Nǐ de shū zài yòubian.",
-    "es": ["Tu libro está a la derecha.", "Tus libros están a la derecha.", "Su libro está a la derecha.", "Tu libro está en el lado derecho."]},
-   {"w": "红", "zh": "这个苹果真红！", "py": "Zhège píngguǒ zhēn hóng!",
-    "es": ["¡Qué roja está esta manzana!", "¡Esta manzana es muy roja!", "¡Qué roja es esta manzana!", "¡Esta manzana está rojísima!"]},
-   {"w": "红色", "zh": "我最喜欢红色。", "py": "Wǒ zuì xǐhuan hóngsè.",
-    "es": ["Mi color favorito es el rojo.", "Lo que más me gusta es el rojo.", "El rojo es mi color preferido.", "El color que más me gusta es el rojo."]},
-   {"w": "颜色", "zh": "你喜欢什么颜色？", "py": "Nǐ xǐhuan shénme yánsè?",
-    "es": ["¿Qué color te gusta?", "¿Qué color le gusta?", "¿Qué colores te gustan?", "¿Qué colores le gustan a usted?"]},
-   {"w": "孩子", "zh": "他们的孩子三岁了。", "py": "Tāmen de háizi sān suì le.",
-    "es": ["Su hijo tiene tres años.", "Su niño ya tiene tres años.", "Su hija tiene tres años.", "El niño de ellos tiene tres años.", "Su hijo ya tiene tres años."]},
-   {"w": "百", "zh": "这些杯子一百多块。", "py": "Zhèxiē bēizi yìbǎi duō kuài.",
-    "es": ["Estas tazas cuestan ciento y pico yuanes.", "Estos vasos valen más de cien yuanes.", "Estas tazas cuestan más de cien yuanes.", "Estos vasos cuestan ciento y pico yuanes."]}
+   {
+    "w": "出去",
+    "zh": "我们晚上出去吃饭吧。",
+    "py": "Wǒmen wǎnshang chūqù chī fàn ba.",
+    "es": [
+     "Esta noche salimos a cenar.",
+     "Vamos a salir a cenar esta noche.",
+     "¿Salimos a cenar esta noche?",
+     "Esta noche vamos a cenar fuera."
+    ]
+   },
+   {
+    "w": "得到",
+    "zh": "他得到了一个好工作。",
+    "py": "Tā dédàole yí ge hǎo gōngzuò.",
+    "es": [
+     "Consiguió un buen trabajo.",
+     "Ha conseguido un buen trabajo.",
+     "Obtuvo un buen empleo.",
+     "Ha conseguido un buen empleo."
+    ]
+   },
+   {
+    "w": "地方",
+    "zh": "西安是个很不错的地方。",
+    "py": "Xī'ān shì ge hěn búcuò de dìfang.",
+    "es": [
+     "Xi'an es un sitio muy bonito.",
+     "Xi'an es un lugar estupendo.",
+     "Xi'an es un lugar que está muy bien.",
+     "Xi'an es un sitio genial."
+    ]
+   },
+   {
+    "w": "电影",
+    "zh": "晚上我们去看电影吧。",
+    "py": "Wǎnshang wǒmen qù kàn diànyǐng ba.",
+    "es": [
+     "Esta noche vamos al cine.",
+     "Vamos a ver una película esta noche.",
+     "¿Vemos una película esta noche?",
+     "Esta noche vamos a ver una peli."
+    ]
+   },
+   {
+    "w": "电影院",
+    "zh": "学校里有家电影院。",
+    "py": "Xuéxiào li yǒu jiā diànyǐngyuàn.",
+    "es": [
+     "En la universidad hay un cine.",
+     "Hay un cine en el campus.",
+     "Dentro de la escuela hay un cine.",
+     "En el colegio hay un cine."
+    ]
+   },
+   {
+    "w": "东西",
+    "zh": "她给我们介绍了很多东西。",
+    "py": "Tā gěi wǒmen jièshàole hěn duō dōngxi.",
+    "es": [
+     "Nos explicó muchas cosas.",
+     "Nos contó un montón de cosas.",
+     "Nos habló de muchas cosas.",
+     "Nos enseñó muchas cosas."
+    ]
+   },
+   {
+    "w": "房间",
+    "zh": "我的房间不大。",
+    "py": "Wǒ de fángjiān bú dà.",
+    "es": [
+     "Mi habitación no es grande.",
+     "Mi cuarto no es muy grande.",
+     "Mi habitación es pequeña.",
+     "Mi cuarto no es grande."
+    ]
+   },
+   {
+    "w": "工作",
+    "zh": "今天的工作太多了。",
+    "py": "Jīntiān de gōngzuò tài duō le.",
+    "es": [
+     "Hoy hay demasiado trabajo.",
+     "Hoy tengo muchísimo trabajo.",
+     "El trabajo de hoy es demasiado.",
+     "Hoy hay un montón de trabajo."
+    ]
+   },
+   {
+    "w": "还",
+    "zh": "我还没想好呢。",
+    "py": "Wǒ hái méi xiǎnghǎo ne.",
+    "es": [
+     "Todavía no lo he decidido.",
+     "Aún no lo he pensado bien.",
+     "Todavía no lo tengo claro.",
+     "Aún no me he decidido."
+    ]
+   },
+   {
+    "w": "和",
+    "zh": "刘明和王一雪想去西安旅游。",
+    "py": "Liú Míng hé Wáng Yīxuě xiǎng qù Xī'ān lǚyóu.",
+    "es": [
+     "Liu Ming y Wang Yixue quieren ir de viaje a Xi'an.",
+     "Liu Ming y Wang Yixue quieren viajar a Xi'an.",
+     "Liu Ming y Wang Yixue quieren hacer turismo en Xi'an.",
+     "Liu Ming y Wang Yixue quieren irse de viaje a Xi'an."
+    ]
+   },
+   {
+    "w": "回到",
+    "zh": "他回到家就休息了。",
+    "py": "Tā huídào jiā jiù xiūxi le.",
+    "es": [
+     "Al llegar a casa se puso a descansar.",
+     "En cuanto volvió a casa, descansó.",
+     "Nada más volver a casa, se fue a descansar.",
+     "Cuando llegó a casa, descansó."
+    ]
+   },
+   {
+    "w": "回来",
+    "zh": "今天回来这么晚啊！",
+    "py": "Jīntiān huílái zhème wǎn a!",
+    "es": [
+     "¡Hoy vuelves muy tarde!",
+     "¡Qué tarde has vuelto hoy!",
+     "¡Hoy has llegado tardísimo!",
+     "¡Hoy vuelves tan tarde!"
+    ]
+   },
+   {
+    "w": "回去",
+    "zh": "医院让他回去上班。",
+    "py": "Yīyuàn ràng tā huíqù shàngbān.",
+    "es": [
+     "Del hospital le pidieron que volviera al trabajo.",
+     "El hospital le hizo volver a trabajar.",
+     "El hospital le pidió que volviera a trabajar.",
+     "Desde el hospital le dijeron que volviera al trabajo."
+    ]
+   },
+   {
+    "w": "记",
+    "zh": "请记一下我的电话。",
+    "py": "Qǐng jì yíxià wǒ de diànhuà.",
+    "es": [
+     "Por favor, apunta mi teléfono.",
+     "Anota mi número, por favor.",
+     "Apúntate mi teléfono, por favor.",
+     "Por favor, toma nota de mi teléfono."
+    ]
+   },
+   {
+    "w": "记住",
+    "zh": "你记住了吗？",
+    "py": "Nǐ jìzhù le ma?",
+    "es": [
+     "¿Te lo has quedado?",
+     "¿Lo has memorizado?",
+     "¿Te lo has aprendido?",
+     "¿Lo has recordado?"
+    ]
+   },
+   {
+    "w": "看",
+    "zh": "你看，学校里有家电影院！",
+    "py": "Nǐ kàn, xuéxiào li yǒu jiā diànyǐngyuàn!",
+    "es": [
+     "¡Mira, en la universidad hay un cine!",
+     "¡Mira, hay un cine en el campus!",
+     "¡Fíjate, en la escuela hay un cine!",
+     "¡Mira! Hay un cine en la universidad."
+    ]
+   },
+   {
+    "w": "看到",
+    "zh": "我在学校看到了李文。",
+    "py": "Wǒ zài xuéxiào kàndàole Lǐ Wén.",
+    "es": [
+     "Vi a Li Wen en la universidad.",
+     "He visto a Li Wen en el colegio.",
+     "Me encontré con Li Wen en la escuela.",
+     "Vi a Li Wen en el colegio."
+    ]
+   },
+   {
+    "w": "看见",
+    "zh": "你看见安妮了吗？",
+    "py": "Nǐ kànjiàn Ānnī le ma?",
+    "es": [
+     "¿Has visto a Annie?",
+     "¿Viste a Annie?",
+     "¿Has visto a Annie por aquí?",
+     "¿Annie? ¿La has visto?"
+    ]
+   },
+   {
+    "w": "累",
+    "zh": "他这个月每天都很累。",
+    "py": "Tā zhège yuè měi tiān dōu hěn lèi.",
+    "es": [
+     "Este mes está cansadísimo todos los días.",
+     "Este mes todos los días acaba muy cansado.",
+     "Este mes está muy cansado todos los días.",
+     "Este mes cada día está muy cansado."
+    ]
+   },
+   {
+    "w": "忙",
+    "zh": "我这几天都不忙。",
+    "py": "Wǒ zhè jǐ tiān dōu bù máng.",
+    "es": [
+     "Estos días no estoy ocupada.",
+     "Estos días no tengo mucho lío.",
+     "Estos días estoy libre.",
+     "Estos días no estoy nada ocupado."
+    ]
+   },
+   {
+    "w": "拿",
+    "zh": "苹果在桌子上，你自己拿。",
+    "py": "Píngguǒ zài zhuōzi shang, nǐ zìjǐ ná.",
+    "es": [
+     "Las manzanas están en la mesa, cógelas tú mismo.",
+     "Las manzanas están en la mesa; sírvete.",
+     "Las manzanas están encima de la mesa, coge tú.",
+     "Hay manzanas en la mesa, sírvete tú mismo."
+    ]
+   },
+   {
+    "w": "女朋友",
+    "zh": "他每天开车送女朋友上班。",
+    "py": "Tā měi tiān kāichē sòng nǚpéngyou shàngbān.",
+    "es": [
+     "Todos los días lleva en coche a su novia al trabajo.",
+     "Cada día lleva a su novia al trabajo en coche.",
+     "Lleva a su novia en coche al trabajo todos los días.",
+     "Todos los días acerca en coche a su novia al trabajo."
+    ]
+   },
+   {
+    "w": "上班",
+    "zh": "明天你上班吗？",
+    "py": "Míngtiān nǐ shàngbān ma?",
+    "es": [
+     "¿Mañana trabajas?",
+     "¿Vas a trabajar mañana?",
+     "¿Mañana tienes que trabajar?",
+     "¿Trabajas mañana?"
+    ]
+   },
+   {
+    "w": "上午",
+    "zh": "上午我在房间休息了一下。",
+    "py": "Shàngwǔ wǒ zài fángjiān xiūxile yíxià.",
+    "es": [
+     "Por la mañana descansé un rato en mi habitación.",
+     "Esta mañana he descansado un poco en mi cuarto.",
+     "Por la mañana descansé un poco en la habitación.",
+     "Por la mañana estuve descansando un rato en mi cuarto."
+    ]
+   },
+   {
+    "w": "时候",
+    "zh": "你下班的时候给我打电话。",
+    "py": "Nǐ xiàbān de shíhou gěi wǒ dǎ diànhuà.",
+    "es": [
+     "Llámame cuando salgas del trabajo.",
+     "Cuando salgas de trabajar, llámame.",
+     "Llámame al salir del trabajo.",
+     "Cuando termines de trabajar, llámame por teléfono."
+    ]
+   },
+   {
+    "w": "事",
+    "zh": "你们有事就找我。",
+    "py": "Nǐmen yǒu shì jiù zhǎo wǒ.",
+    "es": [
+     "Si necesitáis algo, buscadme.",
+     "Si os hace falta algo, avisadme.",
+     "Para lo que necesitéis, aquí estoy.",
+     "Si tenéis algún problema, venid a verme."
+    ]
+   },
+   {
+    "w": "手",
+    "zh": "我去洗手。",
+    "py": "Wǒ qù xǐ shǒu.",
+    "es": [
+     "Voy a lavarme las manos.",
+     "Me voy a lavar las manos.",
+     "Voy a lavarme las manos un momento.",
+     "Voy a lavar mis manos."
+    ]
+   },
+   {
+    "w": "说",
+    "zh": "你说什么？我没听见。",
+    "py": "Nǐ shuō shénme? Wǒ méi tīngjiàn.",
+    "es": [
+     "¿Qué dices? No te he oído.",
+     "¿Qué has dicho? No lo he oído.",
+     "¿Cómo? No te he oído.",
+     "¿Qué dices? No lo oí."
+    ]
+   },
+   {
+    "w": "送",
+    "zh": "刘明开车送孩子去学校。",
+    "py": "Liú Míng kāichē sòng háizi qù xuéxiào.",
+    "es": [
+     "Liu Ming lleva al niño al colegio en coche.",
+     "Liu Ming lleva en coche a su hijo al colegio.",
+     "Liu Ming lleva a los niños al colegio en coche.",
+     "Liu Ming acompaña en coche al niño a la escuela."
+    ]
+   },
+   {
+    "w": "听",
+    "zh": "你听我说。",
+    "py": "Nǐ tīng wǒ shuō.",
+    "es": [
+     "Escúchame.",
+     "Escucha lo que te digo.",
+     "Atiende a lo que te digo.",
+     "Escúchame un momento."
+    ]
+   },
+   {
+    "w": "听见",
+    "zh": "我没听见你说什么。",
+    "py": "Wǒ méi tīngjiàn nǐ shuō shénme.",
+    "es": [
+     "No he oído lo que has dicho.",
+     "No oí lo que dijiste.",
+     "No te he oído.",
+     "No escuché lo que dijiste."
+    ]
+   },
+   {
+    "w": "晚上",
+    "zh": "晚上我们一起去饭店吃饭吧。",
+    "py": "Wǎnshang wǒmen yìqǐ qù fàndiàn chī fàn ba.",
+    "es": [
+     "Esta noche vamos a cenar juntos a un restaurante.",
+     "Por la noche vamos juntos a cenar a un restaurante.",
+     "¿Cenamos juntos esta noche en un restaurante?",
+     "Esta noche podemos ir juntos a cenar a un restaurante."
+    ]
+   },
+   {
+    "w": "洗",
+    "zh": "苹果我都洗好了。",
+    "py": "Píngguǒ wǒ dōu xǐhǎo le.",
+    "es": [
+     "Ya he lavado todas las manzanas.",
+     "Las manzanas ya las he lavado.",
+     "Ya he lavado las manzanas.",
+     "Las manzanas ya están lavadas."
+    ]
+   },
+   {
+    "w": "下班",
+    "zh": "下班的时候工作还没做完。",
+    "py": "Xiàbān de shíhou gōngzuò hái méi zuòwán.",
+    "es": [
+     "A la hora de salir, el trabajo aún no estaba terminado.",
+     "Al salir del trabajo todavía no lo había acabado.",
+     "Cuando salí del trabajo aún no lo había terminado.",
+     "A la hora de salir aún no había acabado el trabajo."
+    ]
+   },
+   {
+    "w": "下午",
+    "zh": "下午我在家看了看书。",
+    "py": "Xiàwǔ wǒ zài jiā kànle kàn shū.",
+    "es": [
+     "Por la tarde leí un poco en casa.",
+     "Esta tarde he leído un rato en casa.",
+     "Por la tarde estuve leyendo un poco en casa.",
+     "Por la tarde leí un rato en casa."
+    ]
+   },
+   {
+    "w": "现在",
+    "zh": "你现在在哪儿？",
+    "py": "Nǐ xiànzài zài nǎr?",
+    "es": [
+     "¿Dónde estás ahora?",
+     "¿Ahora dónde estás?",
+     "¿Dónde estás en este momento?",
+     "¿Dónde andas ahora?"
+    ]
+   },
+   {
+    "w": "想",
+    "zh": "我想去西安旅游。",
+    "py": "Wǒ xiǎng qù Xī'ān lǚyóu.",
+    "es": [
+     "Quiero ir de viaje a Xi'an.",
+     "Me gustaría viajar a Xi'an.",
+     "Quiero ir a Xi'an de turismo.",
+     "Tengo ganas de ir de viaje a Xi'an."
+    ]
+   },
+   {
+    "w": "写",
+    "zh": "你写的字很好看。",
+    "py": "Nǐ xiě de zì hěn hǎokàn.",
+    "es": [
+     "Tu letra es muy bonita.",
+     "Escribes los caracteres muy bonitos.",
+     "Los caracteres que escribes son muy bonitos.",
+     "Tienes muy buena letra."
+    ]
+   },
+   {
+    "w": "休息",
+    "zh": "我想休息一下，喝杯水。",
+    "py": "Wǒ xiǎng xiūxi yíxià, hē bēi shuǐ.",
+    "es": [
+     "Quiero descansar un momento y beber un vaso de agua.",
+     "Me gustaría descansar un poco y tomar un vaso de agua.",
+     "Quiero descansar un rato y beber agua.",
+     "Voy a descansar un poco y a beber un vaso de agua."
+    ]
+   },
+   {
+    "w": "医院",
+    "zh": "早上医院来电话了。",
+    "py": "Zǎoshang yīyuàn lái diànhuà le.",
+    "es": [
+     "Esta mañana ha llamado el hospital.",
+     "Por la mañana llamaron del hospital.",
+     "Esta mañana llamaron del hospital.",
+     "Por la mañana ha llamado el hospital."
+    ]
+   },
+   {
+    "w": "一起",
+    "zh": "我们一起去吧。",
+    "py": "Wǒmen yìqǐ qù ba.",
+    "es": [
+     "Vamos juntos.",
+     "Vayamos juntos.",
+     "Vamos todos juntos.",
+     "¿Vamos juntos?"
+    ]
+   },
+   {
+    "w": "一些",
+    "zh": "爸爸拿了一些水果给孩子们吃。",
+    "py": "Bàba nále yìxiē shuǐguǒ gěi háizimen chī.",
+    "es": [
+     "Papá trajo algo de fruta para que comieran los niños.",
+     "Papá cogió un poco de fruta para los niños.",
+     "El padre sacó algunas frutas para que comieran los niños.",
+     "Papá trajo fruta para los niños."
+    ]
+   },
+   {
+    "w": "早上",
+    "zh": "他每天早上都很忙。",
+    "py": "Tā měi tiān zǎoshang dōu hěn máng.",
+    "es": [
+     "Todas las mañanas está muy ocupado.",
+     "Cada mañana está muy liado.",
+     "Por las mañanas siempre está muy ocupado.",
+     "Está muy ocupado todas las mañanas."
+    ]
+   },
+   {
+    "w": "怎么",
+    "zh": "你是怎么来的？",
+    "py": "Nǐ shì zěnme lái de?",
+    "es": [
+     "¿Cómo has venido?",
+     "¿Cómo viniste?",
+     "¿En qué has venido?",
+     "¿Cómo has llegado hasta aquí?"
+    ]
+   },
+   {
+    "w": "找",
+    "zh": "我去学校找李文。",
+    "py": "Wǒ qù xuéxiào zhǎo Lǐ Wén.",
+    "es": [
+     "Voy a la escuela a buscar a Li Wen.",
+     "Voy al colegio a ver a Li Wen.",
+     "Voy a la universidad a buscar a Li Wen.",
+     "Me voy a buscar a Li Wen a la escuela."
+    ]
+   },
+   {
+    "w": "找到",
+    "zh": "我找到你的手机了。",
+    "py": "Wǒ zhǎodào nǐ de shǒujī le.",
+    "es": [
+     "He encontrado tu móvil.",
+     "Ya encontré tu móvil.",
+     "Encontré tu teléfono.",
+     "He encontrado tu teléfono."
+    ]
+   },
+   {
+    "w": "中午",
+    "zh": "中午我们在饭店吃饭。",
+    "py": "Zhōngwǔ wǒmen zài fàndiàn chī fàn.",
+    "es": [
+     "Al mediodía comemos en un restaurante.",
+     "A mediodía comemos en un restaurante.",
+     "Al mediodía vamos a comer a un restaurante.",
+     "Comemos en un restaurante al mediodía."
+    ]
+   },
+   {
+    "w": "住",
+    "zh": "你住在哪儿？",
+    "py": "Nǐ zhù zài nǎr?",
+    "es": [
+     "¿Dónde vives?",
+     "¿Dónde te alojas?",
+     "¿Dónde vives tú?",
+     "¿Dónde estás viviendo?"
+    ]
+   },
+   {
+    "w": "字",
+    "zh": "这个字是什么意思？",
+    "py": "Zhège zì shì shénme yìsi?",
+    "es": [
+     "¿Qué significa este carácter?",
+     "¿Qué quiere decir este carácter?",
+     "¿Este carácter qué significa?",
+     "¿Qué significado tiene este carácter?"
+    ]
+   },
+   {
+    "w": "做",
+    "zh": "菜都做好了，过来吃饭吧。",
+    "py": "Cài dōu zuòhǎo le, guòlái chī fàn ba.",
+    "es": [
+     "La comida ya está lista, ven a comer.",
+     "Ya está la comida, venid a comer.",
+     "La comida está hecha; ven a comer.",
+     "Ya he terminado de cocinar, ven a comer."
+    ]
+   },
+   {
+    "w": "不错",
+    "zh": "这个时候去西安很不错。",
+    "py": "Zhège shíhou qù Xī'ān hěn búcuò.",
+    "es": [
+     "Ahora es muy buen momento para ir a Xi'an.",
+     "En esta época está muy bien ir a Xi'an.",
+     "Es una buena época para visitar Xi'an.",
+     "En estas fechas, ir a Xi'an está muy bien."
+    ]
+   },
+   {
+    "w": "每",
+    "zh": "他每天都很累。",
+    "py": "Tā měi tiān dōu hěn lèi.",
+    "es": [
+     "Todos los días está muy cansado.",
+     "Cada día está muy cansado.",
+     "Está muy cansado todos los días.",
+     "Acaba muy cansado cada día."
+    ]
+   },
+   {
+    "w": "完",
+    "zh": "工作做完了吗？",
+    "py": "Gōngzuò zuòwán le ma?",
+    "es": [
+     "¿Has terminado el trabajo?",
+     "¿Ya has acabado el trabajo?",
+     "¿Está terminado el trabajo?",
+     "¿Ya terminaste el trabajo?"
+    ]
+   },
+   {
+    "w": "为什么",
+    "zh": "你为什么想去西安？",
+    "py": "Nǐ wèi shénme xiǎng qù Xī'ān?",
+    "es": [
+     "¿Por qué quieres ir a Xi'an?",
+     "¿Por qué te apetece ir a Xi'an?",
+     "¿Por qué quieres viajar a Xi'an?",
+     "¿Y por qué Xi'an?"
+    ]
+   },
+   {
+    "w": "这么",
+    "zh": "车站这么远，我们还是打车吧。",
+    "py": "Chēzhàn zhème yuǎn, wǒmen háishi dǎchē ba.",
+    "es": [
+     "La estación está tan lejos que mejor cogemos un taxi.",
+     "Si la parada está tan lejos, mejor vamos en taxi.",
+     "Con lo lejos que está la estación, mejor cogemos un taxi.",
+     "La parada está tan lejos... mejor vamos en taxi."
+    ]
+   },
+   {
+    "w": "自己",
+    "zh": "你自己拿吧。",
+    "py": "Nǐ zìjǐ ná ba.",
+    "es": [
+     "Cógelo tú mismo.",
+     "Sírvete tú mismo.",
+     "Cógelo tú.",
+     "Sírvete."
+    ]
+   }
   ]
  }
 ]

@@ -188,7 +188,7 @@ def main():
         for zh in lst:
             vid = "v-" + zh
             vocab_items[vid] = {"id": vid, "zh": zh, "py": words[zh]["p"], "es": [words[zh]["es"]],
-                                "au": audio_id("w-", zh), "t": n}
+                                "au": audio_id("w-", zh), "t": n, "nv": words[zh].get("nv", "")}
             add_audio(vocab_items[vid]["au"], zh, "palabra")
             ids.append(vid)
         parts = max(1, -(-len(ids) // 14))
@@ -289,7 +289,7 @@ def main():
             add_audio(f["au"], f.get("tts", f["zh"]), "frase")
 
     # ------------------------------------------------------------ diccionario
-    dic = {zh: [w["p"], w["es"], w["t"]] for zh, w in words.items()}
+    dic = {zh: [w["p"], w["es"], w["t"]] + ([w["nv"]] if w.get("nv") else []) for zh, w in words.items()}
     # audio de TODAS las palabras (también las de HSK 1): se oyen al tocarlas
     word_audio = {}
     for zh in words:

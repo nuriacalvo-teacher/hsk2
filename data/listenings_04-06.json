@@ -1,0 +1,874 @@
+[
+ {
+  "id": "L04a",
+  "tema": 4,
+  "titulo": "Una prenda para papá",
+  "escena": "Wang Yixue y su hija Liu Xiaoxue están en una tienda buscando ropa para el padre de Xiaoxue.",
+  "personajes": {
+   "王一雪": "f",
+   "刘小雪": "f"
+  },
+  "lineas": [
+   {
+    "sp": "王一雪",
+    "zh": "小雪，你来过这家商店吗？",
+    "py": "Xiǎoxuě, nǐ láiguo zhè jiā shāngdiàn ma?",
+    "es": "Xiaoxue, ¿has estado alguna vez en esta tienda?"
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "来过，我和朋友来过两次。这儿的衣服很好看。",
+    "py": "Láiguo, wǒ hé péngyou láiguo liǎng cì. Zhèr de yīfu hěn hǎokàn.",
+    "es": "Sí, he venido dos veces con unos amigos. La ropa de aquí es muy bonita."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "我想给你爸爸买件衣服。",
+    "py": "Wǒ xiǎng gěi nǐ bàba mǎi jiàn yīfu.",
+    "es": "Quiero comprarle una prenda a tu padre."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "你看，这件黑色的好看吗？",
+    "py": "Nǐ kàn, zhè jiàn hēisè de hǎokàn ma?",
+    "es": "Mira, ¿es bonita esta negra?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "你爸爸有很多黑色的衣服了。我们看看红色的和绿色的吧。",
+    "py": "Nǐ bàba yǒu hěn duō hēisè de yīfu le. Wǒmen kànkan hóngsè de hé lǜsè de ba.",
+    "es": "Tu padre ya tiene mucha ropa negra. Vamos a mirar las rojas y las verdes."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "爸爸没穿过红色的衣服吧？",
+    "py": "Bàba méi chuānguo hóngsè de yīfu ba?",
+    "es": "Papá nunca se ha puesto ropa roja, ¿verdad?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "没穿过。因为没穿过，所以我想让他试试。",
+    "py": "Méi chuānguo. Yīnwèi méi chuānguo, suǒyǐ wǒ xiǎng ràng tā shìshi.",
+    "es": "Nunca. Precisamente porque nunca se la ha puesto, quiero que la pruebe."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "这件红色的不错，但太贵了，要五百块。",
+    "py": "Zhè jiàn hóngsè de búcuò, dàn tài guì le, yào wǔbǎi kuài.",
+    "es": "Esta roja no está mal, pero es demasiado cara: cuesta quinientos yuanes."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "那边那件绿色的呢？多少钱？",
+    "py": "Nàbiān nà jiàn lǜsè de ne? Duōshao qián?",
+    "es": "¿Y esa verde de allí? ¿Cuánto cuesta?"
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "绿色的两百块，不贵。",
+    "py": "Lǜsè de liǎngbǎi kuài, bú guì.",
+    "es": "La verde cuesta doscientos yuanes; no es cara."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "太好了！我觉得绿色的更好看。",
+    "py": "Tài hǎo le! Wǒ juéde lǜsè de gèng hǎokàn.",
+    "es": "¡Genial! Creo que la verde es más bonita."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "我也觉得。妈妈，你也试试那条白色的裤子吧！",
+    "py": "Wǒ yě juéde. Māma, nǐ yě shìshi nà tiáo báisè de kùzi ba!",
+    "es": "Yo también. Mamá, ¡pruébate tú también esos pantalones blancos!"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "我有很多白色的裤子了。今天就买你爸爸的吧。",
+    "py": "Wǒ yǒu hěn duō báisè de kùzi le. Jīntiān jiù mǎi nǐ bàba de ba.",
+    "es": "Ya tengo muchos pantalones blancos. Hoy compramos solo lo de tu padre."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cuántas veces ha estado Xiaoxue en esta tienda?",
+    "lang": "es",
+    "a": [
+     "dos",
+     "2",
+     "dos veces",
+     "2 veces"
+    ],
+    "r": "Dos veces (两次)."
+   },
+   {
+    "q": "¿Para quién quiere comprar ropa Wang Yixue?",
+    "lang": "es",
+    "a": [
+     "padre",
+     "papa",
+     "marido",
+     "esposo",
+     "liu ming",
+     "el padre de xiaoxue"
+    ],
+    "r": "Para el padre de Xiaoxue, su marido (你爸爸)."
+   },
+   {
+    "q": "¿Cuánto cuesta la prenda roja?",
+    "lang": "py",
+    "a": [
+     "wǔbǎi kuài",
+     "wǔbǎi",
+     "wǔ bǎi kuài"
+    ],
+    "r": "Wǔbǎi kuài · 五百块 (quinientos yuanes)."
+   },
+   {
+    "q": "¿Por qué quiere Wang Yixue que él pruebe la ropa roja?",
+    "lang": "es",
+    "a": [
+     "nunca",
+     "nunca se la ha puesto",
+     "no ha llevado",
+     "nunca ha llevado rojo",
+     "no se ha puesto"
+    ],
+    "r": "Porque él nunca se ha puesto ropa roja (因为没穿过)."
+   },
+   {
+    "q": "¿De qué color es la prenda que más les gusta al final?",
+    "lang": "py",
+    "a": [
+     "lǜsè",
+     "lǜsè de"
+    ],
+    "r": "Lǜsè · 绿色 (verde)."
+   }
+  ]
+ },
+ {
+  "id": "L04b",
+  "tema": 4,
+  "titulo": "La ropa nueva de Annie",
+  "escena": "Bai Jiayue ve a Annie con ropa nueva y le pregunta dónde la ha comprado.",
+  "personajes": {
+   "白家月": "f",
+   "安妮": "f"
+  },
+  "lineas": [
+   {
+    "sp": "白家月",
+    "zh": "安妮，你今天穿的衣服真好看！是新买的吗？",
+    "py": "Ānnī, nǐ jīntiān chuān de yīfu zhēn hǎokàn! Shì xīn mǎi de ma?",
+    "es": "Annie, ¡qué bonita es la ropa que llevas hoy! ¿Es nueva?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "是啊，是昨天在一家新开的商场买的。你去过那家商场吗？",
+    "py": "Shì a, shì zuótiān zài yì jiā xīn kāi de shāngchǎng mǎi de. Nǐ qùguo nà jiā shāngchǎng ma?",
+    "es": "Sí, la compré ayer en un centro comercial que acaban de abrir. ¿Has estado en ese centro comercial?"
+   },
+   {
+    "sp": "白家月",
+    "zh": "没去过。那儿的衣服贵不贵？",
+    "py": "Méi qùguo. Nàr de yīfu guì bu guì?",
+    "es": "No he ido nunca. ¿La ropa de allí es cara?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "不贵。这件一百块。",
+    "py": "Bú guì. Zhè jiàn yìbǎi kuài.",
+    "es": "No. Esta costó cien yuanes."
+   },
+   {
+    "sp": "白家月",
+    "zh": "一百块？太便宜了！",
+    "py": "Yìbǎi kuài? Tài piányi le!",
+    "es": "¿Cien yuanes? ¡Qué barato!"
+   },
+   {
+    "sp": "安妮",
+    "zh": "因为商场是新开的，所以这几天东西都很便宜。",
+    "py": "Yīnwèi shāngchǎng shì xīn kāi de, suǒyǐ zhè jǐ tiān dōngxi dōu hěn piányi.",
+    "es": "Como el centro comercial es nuevo, estos días todo está muy barato."
+   },
+   {
+    "sp": "白家月",
+    "zh": "我也想去买几件。那儿有书包吗？",
+    "py": "Wǒ yě xiǎng qù mǎi jǐ jiàn. Nàr yǒu shūbāo ma?",
+    "es": "Yo también quiero ir a comprarme unas cuantas cosas. ¿Hay mochilas allí?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "有，红色的、绿色的、黑色的，都很好看。",
+    "py": "Yǒu, hóngsè de, lǜsè de, hēisè de, dōu hěn hǎokàn.",
+    "es": "Sí: rojas, verdes, negras… todas muy bonitas."
+   },
+   {
+    "sp": "白家月",
+    "zh": "我的书包是黑色的，我想买个白色的。",
+    "py": "Wǒ de shūbāo shì hēisè de, wǒ xiǎng mǎi ge báisè de.",
+    "es": "Mi mochila es negra; quiero comprarme una blanca."
+   },
+   {
+    "sp": "安妮",
+    "zh": "我觉得绿色的更好看。",
+    "py": "Wǒ juéde lǜsè de gèng hǎokàn.",
+    "es": "A mí me parece que las verdes son más bonitas."
+   },
+   {
+    "sp": "白家月",
+    "zh": "我没买过绿色的书包。",
+    "py": "Wǒ méi mǎiguo lǜsè de shūbāo.",
+    "es": "Nunca me he comprado una mochila verde."
+   },
+   {
+    "sp": "安妮",
+    "zh": "没买过就试试吧！你今天下午有时间吗？",
+    "py": "Méi mǎiguo jiù shìshi ba! Nǐ jīntiān xiàwǔ yǒu shíjiān ma?",
+    "es": "¡Pues si nunca te la has comprado, pruébala! ¿Tienes tiempo esta tarde?"
+   },
+   {
+    "sp": "白家月",
+    "zh": "今天下午我很忙，明天上午去吧。",
+    "py": "Jīntiān xiàwǔ wǒ hěn máng, míngtiān shàngwǔ qù ba.",
+    "es": "Esta tarde estoy muy ocupada; vamos mañana por la mañana."
+   },
+   {
+    "sp": "安妮",
+    "zh": "好的，明天上午我去你那儿找你。",
+    "py": "Hǎo de, míngtiān shàngwǔ wǒ qù nǐ nàr zhǎo nǐ.",
+    "es": "Vale, mañana por la mañana paso a buscarte."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Dónde compró Annie su ropa nueva?",
+    "lang": "es",
+    "a": [
+     "centro comercial",
+     "comercial",
+     "en un centro comercial",
+     "centro comercial nuevo"
+    ],
+    "r": "En un centro comercial nuevo (一家新开的商场)."
+   },
+   {
+    "q": "¿Cuánto le costó la prenda?",
+    "lang": "py",
+    "a": [
+     "yìbǎi kuài",
+     "yìbǎi",
+     "yì bǎi kuài"
+    ],
+    "r": "Yìbǎi kuài · 一百块 (cien yuanes)."
+   },
+   {
+    "q": "¿Por qué está todo barato estos días?",
+    "lang": "es",
+    "a": [
+     "nuevo",
+     "es nuevo",
+     "acaban de abrir",
+     "recien abierto",
+     "nueva"
+    ],
+    "r": "Porque el centro comercial es nuevo (因为商场是新开的)."
+   },
+   {
+    "q": "¿De qué color es la mochila que tiene ahora Jiayue?",
+    "lang": "py",
+    "a": [
+     "hēisè",
+     "hēisè de"
+    ],
+    "r": "Hēisè · 黑色 (negra)."
+   },
+   {
+    "q": "¿Cuándo van a ir juntas al centro comercial?",
+    "lang": "es",
+    "a": [
+     "mañana por la mañana",
+     "manana por la manana",
+     "mañana",
+     "manana"
+    ],
+    "r": "Mañana por la mañana (明天上午)."
+   }
+  ]
+ },
+ {
+  "id": "L05a",
+  "tema": 5,
+  "titulo": "Abajo, en el portal",
+  "escena": "Annie llega a casa de Wang Yixue cargada de cosas y la llama desde el portal.",
+  "personajes": {
+   "安妮": "f",
+   "王一雪": "f",
+   "刘爷爷": "m"
+  },
+  "lineas": [
+   {
+    "sp": "安妮",
+    "zh": "喂，一雪姐，我到你家楼下了。",
+    "py": "Wéi, Yīxuě jiě, wǒ dào nǐ jiā lóuxià le.",
+    "es": "¿Diga? Yixue, ya estoy abajo, en tu portal."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "这么快！你上来吧，我家在三楼。",
+    "py": "Zhème kuài! Nǐ shànglái ba, wǒ jiā zài sān lóu.",
+    "es": "¡Qué rápido! Sube, vivo en el tercero."
+   },
+   {
+    "sp": "安妮",
+    "zh": "我拿了很多东西，你下来帮个忙吧？",
+    "py": "Wǒ nále hěn duō dōngxi, nǐ xiàlái bāng ge máng ba?",
+    "es": "Llevo muchas cosas, ¿puedes bajar a echarme una mano?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "好，你等一会儿，我现在就下去。",
+    "py": "Hǎo, nǐ děng yíhuìr, wǒ xiànzài jiù xiàqù.",
+    "es": "Vale, espera un momento, ahora mismo bajo."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "安妮，你怎么拿来这么多东西？",
+    "py": "Ānnī, nǐ zěnme nálái zhème duō dōngxi?",
+    "es": "Annie, ¿cómo es que has traído tantas cosas?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "这是给孩子们的礼物，还有一些奶茶。",
+    "py": "Zhè shì gěi háizimen de lǐwù, hái yǒu yìxiē nǎichá.",
+    "es": "Son regalos para los niños, y también un poco de té con leche."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "你太客气了！快进来吧，爷爷奶奶都在家等你呢。",
+    "py": "Nǐ tài kèqi le! Kuài jìnlái ba, yéye nǎinai dōu zài jiā děng nǐ ne.",
+    "es": "¡No hacía falta! Pasa, que los abuelos te están esperando en casa."
+   },
+   {
+    "sp": "安妮",
+    "zh": "家月呢？她来了吗？",
+    "py": "Jiāyuè ne? Tā lái le ma?",
+    "es": "¿Y Jiayue? ¿Ha llegado ya?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "还没来呢。都十一点半了，她怎么还没到？",
+    "py": "Hái méi lái ne. Dōu shíyī diǎn bàn le, tā zěnme hái méi dào?",
+    "es": "Todavía no. ¡Si ya son las once y media! ¿Cómo es que aún no ha llegado?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "她说要回酒店拿东西，一会儿就过来。",
+    "py": "Tā shuō yào huí jiǔdiàn ná dōngxi, yíhuìr jiù guòlái.",
+    "es": "Dijo que tenía que volver al hotel a por unas cosas; viene enseguida."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "那我们上去等她吧。",
+    "py": "Nà wǒmen shàngqù děng tā ba.",
+    "es": "Entonces subamos a esperarla."
+   },
+   {
+    "sp": "刘爷爷",
+    "zh": "安妮来了！快请进，请坐！",
+    "py": "Ānnī lái le! Kuài qǐng jìn, qǐng zuò!",
+    "es": "¡Ha llegado Annie! Pasa, pasa, siéntate."
+   },
+   {
+    "sp": "安妮",
+    "zh": "爷爷好！这是送您的礼物。",
+    "py": "Yéye hǎo! Zhè shì sòng nín de lǐwù.",
+    "es": "¡Hola, abuelo! Esto es un regalo para usted."
+   },
+   {
+    "sp": "刘爷爷",
+    "zh": "谢谢！来，喝杯奶茶吧。",
+    "py": "Xièxie! Lái, hē bēi nǎichá ba.",
+    "es": "¡Gracias! Ven, tómate un té con leche."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Dónde está Annie cuando llama a Yixue?",
+    "lang": "es",
+    "a": [
+     "abajo",
+     "portal",
+     "en el portal",
+     "planta baja",
+     "abajo del edificio"
+    ],
+    "r": "Abajo, en el portal del edificio (楼下)."
+   },
+   {
+    "q": "¿En qué planta vive Wang Yixue?",
+    "lang": "py",
+    "a": [
+     "sān lóu",
+     "sānlóu"
+    ],
+    "r": "Sān lóu · 三楼 (en el tercero)."
+   },
+   {
+    "q": "¿Para quién son los regalos que trae Annie?",
+    "lang": "es",
+    "a": [
+     "niños",
+     "ninos",
+     "los niños",
+     "los ninos",
+     "hijos"
+    ],
+    "r": "Para los niños (给孩子们的礼物)."
+   },
+   {
+    "q": "¿Quiénes esperan a Annie en casa?",
+    "lang": "py",
+    "a": [
+     "yéye nǎinai",
+     "yéye",
+     "nǎinai"
+    ],
+    "r": "Yéye nǎinai · 爷爷奶奶 (los abuelos)."
+   },
+   {
+    "q": "¿Adónde ha ido Jiayue antes de venir?",
+    "lang": "es",
+    "a": [
+     "hotel",
+     "al hotel",
+     "volver al hotel"
+    ],
+    "r": "Al hotel, a por unas cosas (回酒店拿东西)."
+   }
+  ]
+ },
+ {
+  "id": "L05b",
+  "tema": 5,
+  "titulo": "La mañana de la vuelta",
+  "escena": "El día de volver a su país, Bai Jiayue llama a Annie desde la planta baja del hotel.",
+  "personajes": {
+   "白家月": "f",
+   "安妮": "f"
+  },
+  "lineas": [
+   {
+    "sp": "白家月",
+    "zh": "喂，安妮，你起来了吗？都十点了！",
+    "py": "Wéi, Ānnī, nǐ qǐlái le ma? Dōu shí diǎn le!",
+    "es": "¿Diga? Annie, ¿te has levantado ya? ¡Que son las diez!"
+   },
+   {
+    "sp": "安妮",
+    "zh": "十点了？我现在就起来。昨天我们走回酒店，太累了。",
+    "py": "Shí diǎn le? Wǒ xiànzài jiù qǐlái. Zuótiān wǒmen zǒuhuí jiǔdiàn, tài lèi le.",
+    "es": "¿Ya son las diez? Ahora mismo me levanto. Ayer volvimos andando al hotel y estaba agotada."
+   },
+   {
+    "sp": "白家月",
+    "zh": "是啊，一雪姐做的菜太好吃了，我们吃了太多。",
+    "py": "Shì a, Yīxuě jiě zuò de cài tài hǎochī le, wǒmen chīle tài duō.",
+    "es": "Ya, la comida que hizo Yixue estaba tan rica que comimos demasiado."
+   },
+   {
+    "sp": "安妮",
+    "zh": "我还没吃过这么好吃的中国菜。",
+    "py": "Wǒ hái méi chīguo zhème hǎochī de Zhōngguó cài.",
+    "es": "Nunca había comido una comida china tan buena."
+   },
+   {
+    "sp": "白家月",
+    "zh": "上午我们去商场吧，我想买些奶茶，拿回家给家人喝。",
+    "py": "Shàngwǔ wǒmen qù shāngchǎng ba, wǒ xiǎng mǎi xiē nǎichá, náhuí jiā gěi jiārén hē.",
+    "es": "Esta mañana vamos al centro comercial; quiero comprar té con leche para llevárselo a mi familia."
+   },
+   {
+    "sp": "安妮",
+    "zh": "好啊！刘爷爷说那个商场不远，我们走过去就可以。",
+    "py": "Hǎo a! Liú yéye shuō nàge shāngchǎng bù yuǎn, wǒmen zǒu guòqù jiù kěyǐ.",
+    "es": "¡Vale! El abuelo Liu dijo que ese centro comercial no está lejos; podemos ir andando."
+   },
+   {
+    "sp": "白家月",
+    "zh": "我在楼下等你，你快下来吧。",
+    "py": "Wǒ zài lóuxià děng nǐ, nǐ kuài xiàlái ba.",
+    "es": "Te espero abajo; baja rápido."
+   },
+   {
+    "sp": "安妮",
+    "zh": "好，我一会儿就下去。你的钱包还在房间里呢。",
+    "py": "Hǎo, wǒ yíhuìr jiù xiàqù. Nǐ de qiánbāo hái zài fángjiān li ne.",
+    "es": "Vale, bajo enseguida. Tu cartera sigue en la habitación."
+   },
+   {
+    "sp": "白家月",
+    "zh": "是吗？那你给我拿下来吧。",
+    "py": "Shì ma? Nà nǐ gěi wǒ ná xiàlái ba.",
+    "es": "¿Ah, sí? Pues bájamela, por favor."
+   },
+   {
+    "sp": "安妮",
+    "zh": "没问题。买完奶茶，我们就回酒店吗？",
+    "py": "Méi wèntí. Mǎiwán nǎichá, wǒmen jiù huí jiǔdiàn ma?",
+    "es": "Sin problema. Cuando compremos el té con leche, ¿volvemos al hotel?"
+   },
+   {
+    "sp": "白家月",
+    "zh": "是的，下午三点我们就要回国了。",
+    "py": "Shì de, xiàwǔ sān diǎn wǒmen jiù yào huí guó le.",
+    "es": "Sí, a las tres de la tarde ya volvemos a nuestro país."
+   },
+   {
+    "sp": "安妮",
+    "zh": "时间不多了，我现在就下去！",
+    "py": "Shíjiān bù duō le, wǒ xiànzài jiù xiàqù!",
+    "es": "¡No queda mucho tiempo, ahora mismo bajo!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué hora es cuando llama Jiayue?",
+    "lang": "es",
+    "a": [
+     "diez",
+     "10",
+     "las diez",
+     "las 10"
+    ],
+    "r": "Las diez (十点)."
+   },
+   {
+    "q": "¿Cómo volvieron ayer al hotel?",
+    "lang": "py",
+    "a": [
+     "zǒuhuí",
+     "zǒu",
+     "zǒuhuí jiǔdiàn"
+    ],
+    "r": "Zǒuhuí · 走回 (andando)."
+   },
+   {
+    "q": "¿Qué quiere comprar Jiayue para su familia?",
+    "lang": "py",
+    "a": [
+     "nǎichá"
+    ],
+    "r": "Nǎichá · 奶茶 (té con leche)."
+   },
+   {
+    "q": "¿Qué se ha dejado Jiayue en la habitación?",
+    "lang": "es",
+    "a": [
+     "cartera",
+     "monedero",
+     "billetera",
+     "la cartera"
+    ],
+    "r": "La cartera (钱包)."
+   },
+   {
+    "q": "¿A qué hora vuelven a su país?",
+    "lang": "es",
+    "a": [
+     "tres",
+     "3",
+     "las tres",
+     "tres de la tarde",
+     "a las tres"
+    ],
+    "r": "A las tres de la tarde (下午三点)."
+   }
+  ]
+ },
+ {
+  "id": "L06a",
+  "tema": 6,
+  "titulo": "El cumpleaños de Xiaoming",
+  "escena": "Liu Xiaoxue y sus padres preparan el cumpleaños de su hermano pequeño, Liu Xiaoming.",
+  "personajes": {
+   "刘小雪": "f",
+   "王一雪": "f",
+   "刘明": "m"
+  },
+  "lineas": [
+   {
+    "sp": "刘小雪",
+    "zh": "妈妈，星期天是弟弟的生日，你没忘吧？",
+    "py": "Māma, xīngqītiān shì dìdi de shēngrì, nǐ méi wàng ba?",
+    "es": "Mamá, el domingo es el cumpleaños de mi hermano, no se te habrá olvidado, ¿verdad?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "没忘！我们准备给他买个电脑。",
+    "py": "Méi wàng! Wǒmen zhǔnbèi gěi tā mǎi ge diànnǎo.",
+    "es": "¡No! Vamos a comprarle un ordenador."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "电脑？太贵了吧？",
+    "py": "Diànnǎo? Tài guì le ba?",
+    "es": "¿Un ordenador? ¿No es demasiado caro?"
+   },
+   {
+    "sp": "刘明",
+    "zh": "因为他很爱学习，所以我们想送他一个小小的电脑。",
+    "py": "Yīnwèi tā hěn ài xuéxí, suǒyǐ wǒmen xiǎng sòng tā yí ge xiǎoxiǎo de diànnǎo.",
+    "es": "Como le encanta estudiar, queremos regalarle un ordenador pequeñito."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "那我送他什么呢？",
+    "py": "Nà wǒ sòng tā shénme ne?",
+    "es": "¿Y yo qué le regalo?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "你那么爱画画，就给他画一个大大的蛋糕吧！",
+    "py": "Nǐ nàme ài huà huà, jiù gěi tā huà yí ge dàdà de dàngāo ba!",
+    "es": "Como te gusta tanto dibujar, ¡dibújale una tarta bien grande!"
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "好啊！我还要画爸爸、妈妈、我和弟弟什么的。",
+    "py": "Hǎo a! Wǒ hái yào huà bàba, māma, wǒ hé dìdi shénmede.",
+    "es": "¡Vale! Y también voy a dibujar a papá, a mamá, a mi hermano, a mí y todo eso."
+   },
+   {
+    "sp": "刘明",
+    "zh": "那天中午我们吃什么？",
+    "py": "Nà tiān zhōngwǔ wǒmen chī shénme?",
+    "es": "¿Y qué comemos ese día a mediodía?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "过生日要吃长长的面条，我还想做鱼啊肉啊什么的。",
+    "py": "Guò shēngrì yào chī chángcháng de miàntiáo, wǒ hái xiǎng zuò yú a ròu a shénmede.",
+    "es": "En los cumpleaños hay que comer fideos bien largos; también quiero hacer pescado, carne y demás."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "弟弟非常爱吃肉！",
+    "py": "Dìdi fēicháng ài chī ròu!",
+    "es": "¡A mi hermano le encanta la carne!"
+   },
+   {
+    "sp": "刘明",
+    "zh": "吃完饭，我们一起去唱歌吧。",
+    "py": "Chīwán fàn, wǒmen yìqǐ qù chàng gē ba.",
+    "es": "Después de comer vamos todos a cantar."
+   },
+   {
+    "sp": "刘小雪",
+    "zh": "太好了！那天我们都要高高兴兴地玩！",
+    "py": "Tài hǎo le! Nà tiān wǒmen dōu yào gāogāoxìngxìng de wán!",
+    "es": "¡Genial! ¡Ese día lo vamos a pasar todos en grande!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué día es el cumpleaños del hermano?",
+    "lang": "es",
+    "a": [
+     "domingo",
+     "el domingo"
+    ],
+    "r": "El domingo (星期天)."
+   },
+   {
+    "q": "¿Qué le van a regalar sus padres?",
+    "lang": "py",
+    "a": [
+     "diànnǎo"
+    ],
+    "r": "Diànnǎo · 电脑 (un ordenador)."
+   },
+   {
+    "q": "¿Por qué le regalan eso?",
+    "lang": "es",
+    "a": [
+     "estudiar",
+     "le gusta estudiar",
+     "le encanta estudiar",
+     "estudia mucho"
+    ],
+    "r": "Porque le encanta estudiar (因为他很爱学习)."
+   },
+   {
+    "q": "¿Qué va a dibujar Xiaoxue además de la familia?",
+    "lang": "es",
+    "a": [
+     "tarta",
+     "una tarta",
+     "pastel",
+     "un pastel"
+    ],
+    "r": "Una tarta bien grande (大大的蛋糕)."
+   },
+   {
+    "q": "¿Qué van a hacer después de comer?",
+    "lang": "py",
+    "a": [
+     "chàng gē",
+     "chànggē"
+    ],
+    "r": "Chàng gē · 唱歌 (ir a cantar)."
+   }
+  ]
+ },
+ {
+  "id": "L06b",
+  "tema": 6,
+  "titulo": "El cumpleaños de Annie",
+  "escena": "Es el cumpleaños de Annie y Bai Jiayue le da un regalo.",
+  "personajes": {
+   "白家月": "f",
+   "安妮": "f"
+  },
+  "lineas": [
+   {
+    "sp": "白家月",
+    "zh": "安妮，生日快乐！这是送你的礼物。",
+    "py": "Ānnī, shēngrì kuàilè! Zhè shì sòng nǐ de lǐwù.",
+    "es": "¡Feliz cumpleaños, Annie! Esto es un regalo para ti."
+   },
+   {
+    "sp": "安妮",
+    "zh": "谢谢你，家月！我可以现在打开吗？",
+    "py": "Xièxie nǐ, Jiāyuè! Wǒ kěyǐ xiànzài dǎkāi ma?",
+    "es": "¡Gracias, Jiayue! ¿Puedo abrirlo ahora?"
+   },
+   {
+    "sp": "白家月",
+    "zh": "可以，你打开看看吧。",
+    "py": "Kěyǐ, nǐ dǎkāi kànkan ba.",
+    "es": "Claro, ábrelo y mira."
+   },
+   {
+    "sp": "安妮",
+    "zh": "是一件衣服！红红的，真漂亮！",
+    "py": "Shì yí jiàn yīfu! Hónghóng de, zhēn piàoliang!",
+    "es": "¡Es una prenda de ropa! ¡Roja, roja, qué bonita!"
+   },
+   {
+    "sp": "白家月",
+    "zh": "你穿红色的很好看，快试试吧。",
+    "py": "Nǐ chuān hóngsè de hěn hǎokàn, kuài shìshi ba.",
+    "es": "De rojo estás muy guapa; pruébatela."
+   },
+   {
+    "sp": "安妮",
+    "zh": "很舒服！我非常喜欢。",
+    "py": "Hěn shūfu! Wǒ fēicháng xǐhuan.",
+    "es": "¡Es muy cómoda! Me encanta."
+   },
+   {
+    "sp": "白家月",
+    "zh": "今天晚上你想吃什么？我请你。",
+    "py": "Jīntiān wǎnshang nǐ xiǎng chī shénme? Wǒ qǐng nǐ.",
+    "es": "¿Qué quieres cenar esta noche? Te invito."
+   },
+   {
+    "sp": "安妮",
+    "zh": "我想吃饺子、北京烤鸭什么的。",
+    "py": "Wǒ xiǎng chī jiǎozi, Běijīng kǎoyā shénmede.",
+    "es": "Quiero comer jiaozi, pato laqueado y cosas así."
+   },
+   {
+    "sp": "白家月",
+    "zh": "好！在中国，过生日还要吃长长的面条。",
+    "py": "Hǎo! Zài Zhōngguó, guò shēngrì hái yào chī chángcháng de miàntiáo.",
+    "es": "¡Vale! En China, en los cumpleaños también hay que comer fideos bien largos."
+   },
+   {
+    "sp": "安妮",
+    "zh": "太好了！吃完饭我们去唱歌吧。",
+    "py": "Tài hǎo le! Chīwán fàn wǒmen qù chàng gē ba.",
+    "es": "¡Genial! Después de cenar vamos a cantar."
+   },
+   {
+    "sp": "白家月",
+    "zh": "好啊！明天不上学，我们可以晚点儿回来。",
+    "py": "Hǎo a! Míngtiān bú shàng xué, wǒmen kěyǐ wǎn diǎnr huílái.",
+    "es": "¡Vale! Mañana no hay clase, podemos volver un poco más tarde."
+   },
+   {
+    "sp": "安妮",
+    "zh": "那明天早上我要舒舒服服地睡一觉！",
+    "py": "Nà míngtiān zǎoshang wǒ yào shūshūfúfú de shuì yí jiào!",
+    "es": "¡Entonces mañana por la mañana voy a dormir a gusto!"
+   },
+   {
+    "sp": "白家月",
+    "zh": "好的，明天我不叫你起床。",
+    "py": "Hǎo de, míngtiān wǒ bú jiào nǐ qǐ chuáng.",
+    "es": "Vale, mañana no te despierto."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Qué le regala Jiayue a Annie?",
+    "lang": "es",
+    "a": [
+     "ropa",
+     "una prenda",
+     "prenda",
+     "prenda de ropa",
+     "camisa",
+     "vestido"
+    ],
+    "r": "Una prenda de ropa (一件衣服)."
+   },
+   {
+    "q": "¿De qué color es el regalo?",
+    "lang": "py",
+    "a": [
+     "hóngsè",
+     "hóng",
+     "hónghóng"
+    ],
+    "r": "Hóngsè · 红色 (rojo)."
+   },
+   {
+    "q": "¿Qué quiere cenar Annie?",
+    "lang": "es",
+    "a": [
+     "jiaozi",
+     "pato",
+     "pato laqueado",
+     "empanadillas",
+     "jiaozi y pato laqueado"
+    ],
+    "r": "Jiaozi, pato laqueado y cosas así (饺子、北京烤鸭什么的)."
+   },
+   {
+    "q": "¿Qué hay que comer en China en los cumpleaños?",
+    "lang": "py",
+    "a": [
+     "miàntiáo",
+     "miàntiáor"
+    ],
+    "r": "Miàntiáo · 面条 (fideos largos)."
+   },
+   {
+    "q": "¿Por qué pueden volver tarde esa noche?",
+    "lang": "es",
+    "a": [
+     "no hay clase",
+     "no hay colegio",
+     "no tienen clase",
+     "clase",
+     "mañana no hay clase",
+     "manana no hay clase"
+    ],
+    "r": "Porque mañana no hay clase (明天不上学)."
+   }
+  ]
+ }
+]

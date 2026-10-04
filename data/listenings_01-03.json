@@ -1,0 +1,867 @@
+[
+ {
+  "id": "L01a",
+  "tema": 1,
+  "titulo": "En la estación de Pekín",
+  "escena": "Bai Jiayue le ha pedido a Li Wen que vaya a la estación a recoger a Chen Tianzhong, que llega a Pekín.",
+  "personajes": {
+   "李文": "m",
+   "陈天中": "m"
+  },
+  "lineas": [
+   {
+    "sp": "李文",
+    "zh": "请问，你是陈天中吧？",
+    "py": "Qǐngwèn, nǐ shì Chén Tiānzhōng ba?",
+    "es": "Perdona, tú eres Chen Tianzhong, ¿no?"
+   },
+   {
+    "sp": "陈天中",
+    "zh": "对，我就是。你是李文吧？",
+    "py": "Duì, wǒ jiù shì. Nǐ shì Lǐ Wén ba?",
+    "es": "Sí, soy yo. Y tú eres Li Wen, ¿verdad?"
+   },
+   {
+    "sp": "李文",
+    "zh": "是的。家月给我打电话了，让我来接你。",
+    "py": "Shì de. Jiāyuè gěi wǒ dǎ diànhuà le, ràng wǒ lái jiē nǐ.",
+    "es": "Sí. Jiayue me llamó y me pidió que viniera a recogerte."
+   },
+   {
+    "sp": "陈天中",
+    "zh": "谢谢你！认识你很高兴。",
+    "py": "Xièxie nǐ! Rènshi nǐ hěn gāoxìng.",
+    "es": "¡Gracias! Encantado de conocerte."
+   },
+   {
+    "sp": "李文",
+    "zh": "认识你我也很高兴。你是第一次来北京吗？",
+    "py": "Rènshi nǐ wǒ yě hěn gāoxìng. Nǐ shì dì-yī cì lái Běijīng ma?",
+    "es": "Igualmente. ¿Es la primera vez que vienes a Pekín?"
+   },
+   {
+    "sp": "陈天中",
+    "zh": "不是，这是第二次了。",
+    "py": "Bú shì, zhè shì dì-èr cì le.",
+    "es": "No, ya es la segunda vez."
+   },
+   {
+    "sp": "李文",
+    "zh": "你是来旅游的吗？",
+    "py": "Nǐ shì lái lǚyóu de ma?",
+    "es": "¿Has venido de viaje?"
+   },
+   {
+    "sp": "陈天中",
+    "zh": "不是，我是来学中文的。",
+    "py": "Bú shì, wǒ shì lái xué Zhōngwén de.",
+    "es": "No, he venido a estudiar chino."
+   },
+   {
+    "sp": "李文",
+    "zh": "你是什么时候到的？",
+    "py": "Nǐ shì shénme shíhou dào de?",
+    "es": "¿Cuándo has llegado?"
+   },
+   {
+    "sp": "陈天中",
+    "zh": "我是今天早上到的。我的中文不太好，有时不懂中国人的意思。",
+    "py": "Wǒ shì jīntiān zǎoshang dào de. Wǒ de Zhōngwén bú tài hǎo, yǒushí bù dǒng Zhōngguórén de yìsi.",
+    "es": "He llegado esta mañana. Mi chino no es muy bueno y a veces no entiendo lo que dicen los chinos."
+   },
+   {
+    "sp": "李文",
+    "zh": "我可以给你介绍很多中国朋友。",
+    "py": "Wǒ kěyǐ gěi nǐ jièshào hěn duō Zhōngguó péngyou.",
+    "es": "Yo puedo presentarte a muchos amigos chinos."
+   },
+   {
+    "sp": "陈天中",
+    "zh": "太好了！今天我请你吃饭吧。",
+    "py": "Tài hǎo le! Jīntiān wǒ qǐng nǐ chī fàn ba.",
+    "es": "¡Genial! Hoy te invito a comer."
+   },
+   {
+    "sp": "李文",
+    "zh": "好的！我们去饭店吃中国菜吧。",
+    "py": "Hǎo de! Wǒmen qù fàndiàn chī Zhōngguó cài ba.",
+    "es": "¡Vale! Vamos a un restaurante a comer comida china."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Quién le pidió a Li Wen que fuera a recoger a Chen Tianzhong?",
+    "lang": "es",
+    "a": [
+     "Jiayue",
+     "Bai Jiayue",
+     "Jia yue"
+    ],
+    "r": "Bai Jiayue (家月)."
+   },
+   {
+    "q": "¿Es la primera vez que Chen Tianzhong viene a Pekín?",
+    "lang": "es",
+    "a": [
+     "no",
+     "segunda",
+     "segunda vez",
+     "no es la segunda"
+    ],
+    "r": "No, es la segunda vez (第二次)."
+   },
+   {
+    "q": "¿A qué ha venido Chen Tianzhong?",
+    "lang": "py",
+    "a": [
+     "xué Zhōngwén",
+     "Zhōngwén"
+    ],
+    "r": "Xué Zhōngwén · 学中文 (a estudiar chino)."
+   },
+   {
+    "q": "¿Cuándo ha llegado?",
+    "lang": "es",
+    "a": [
+     "esta mañana",
+     "esta manana",
+     "hoy por la mañana",
+     "hoy por la manana",
+     "por la mañana",
+     "por la manana"
+    ],
+    "r": "Esta mañana (今天早上)."
+   },
+   {
+    "q": "¿Adónde van a comer?",
+    "lang": "py",
+    "a": [
+     "fàndiàn"
+    ],
+    "r": "Fàndiàn · 饭店 (a un restaurante)."
+   }
+  ]
+ },
+ {
+  "id": "L01b",
+  "tema": 1,
+  "titulo": "Un favor por teléfono",
+  "escena": "Annie llama a Wang Yixue para pedirle que vaya a recoger a una amiga suya que llega a Pekín.",
+  "personajes": {
+   "安妮": "f",
+   "王一雪": "f"
+  },
+  "lineas": [
+   {
+    "sp": "安妮",
+    "zh": "喂，是王一雪吗？",
+    "py": "Wèi, shì Wáng Yīxuě ma?",
+    "es": "¿Hola? ¿Es Wang Yixue?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "是我。你是安妮吧？",
+    "py": "Shì wǒ. Nǐ shì Ānnī ba?",
+    "es": "Soy yo. Tú eres Annie, ¿no?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "对。不好意思，我想请你帮个忙。",
+    "py": "Duì. Bù hǎoyìsi, wǒ xiǎng qǐng nǐ bāng ge máng.",
+    "es": "Sí. Perdona, quería pedirte un favor."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "好的，你有事就找我。",
+    "py": "Hǎo de, nǐ yǒu shì jiù zhǎo wǒ.",
+    "es": "Claro, si necesitas algo, cuenta conmigo."
+   },
+   {
+    "sp": "安妮",
+    "zh": "我的朋友明天到北京，但我明天有事。你可以去接她吗？",
+    "py": "Wǒ de péngyou míngtiān dào Běijīng, dàn wǒ míngtiān yǒu shì. Nǐ kěyǐ qù jiē tā ma?",
+    "es": "Mi amiga llega mañana a Pekín, pero mañana tengo cosas que hacer. ¿Puedes ir a recogerla?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "可以。她是第一次来中国吧？",
+    "py": "Kěyǐ. Tā shì dì-yī cì lái Zhōngguó ba?",
+    "es": "Sí. Es la primera vez que viene a China, ¿no?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "是的，她是来旅游的。她的中文不太好。",
+    "py": "Shì de, tā shì lái lǚyóu de. Tā de Zhōngwén bú tài hǎo.",
+    "es": "Sí, viene de viaje. Su chino no es muy bueno."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "没问题，我给她介绍北京。我还请她吃北京烤鸭！",
+    "py": "Méi wèntí, wǒ gěi tā jièshào Běijīng. Wǒ hái qǐng tā chī Běijīng Kǎoyā!",
+    "es": "No pasa nada, yo le enseño Pekín. ¡Y además la invito a pato laqueado!"
+   },
+   {
+    "sp": "安妮",
+    "zh": "太好了！她明天早上到。",
+    "py": "Tài hǎo le! Tā míngtiān zǎoshang dào.",
+    "es": "¡Estupendo! Llega mañana por la mañana."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "好，我明天早上去接她。",
+    "py": "Hǎo, wǒ míngtiān zǎoshang qù jiē tā.",
+    "es": "Vale, mañana por la mañana voy a recogerla."
+   },
+   {
+    "sp": "安妮",
+    "zh": "谢谢你，一雪！",
+    "py": "Xièxie nǐ, Yīxuě!",
+    "es": "¡Gracias, Yixue!"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "不客气。有事你就给我打电话。",
+    "py": "Bú kèqi. Yǒu shì nǐ jiù gěi wǒ dǎ diànhuà.",
+    "es": "De nada. Si necesitas algo, llámame."
+   },
+   {
+    "sp": "安妮",
+    "zh": "好的，再见！",
+    "py": "Hǎo de, zàijiàn!",
+    "es": "Vale, ¡hasta luego!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Para qué llama Annie a Wang Yixue?",
+    "lang": "es",
+    "a": [
+     "favor",
+     "un favor",
+     "pedir un favor",
+     "ayuda",
+     "pedir ayuda"
+    ],
+    "r": "Para pedirle un favor (请你帮个忙)."
+   },
+   {
+    "q": "¿Cuándo llega la amiga de Annie?",
+    "lang": "py",
+    "a": [
+     "míngtiān zǎoshang",
+     "míngtiān"
+    ],
+    "r": "Míngtiān zǎoshang · 明天早上 (mañana por la mañana)."
+   },
+   {
+    "q": "¿A qué viene la amiga?",
+    "lang": "es",
+    "a": [
+     "viaje",
+     "de viaje",
+     "turismo",
+     "viajar"
+    ],
+    "r": "De viaje (来旅游的)."
+   },
+   {
+    "q": "¿Qué tal habla chino la amiga?",
+    "lang": "es",
+    "a": [
+     "no muy bien",
+     "mal",
+     "no muy bueno",
+     "regular"
+    ],
+    "r": "No muy bien (中文不太好)."
+   },
+   {
+    "q": "¿A qué va a invitarla Wang Yixue?",
+    "lang": "py",
+    "a": [
+     "Běijīng Kǎoyā",
+     "kǎoyā"
+    ],
+    "r": "Běijīng Kǎoyā · 北京烤鸭 (pato laqueado de Pekín)."
+   }
+  ]
+ },
+ {
+  "id": "L02a",
+  "tema": 2,
+  "titulo": "¿Cómo vamos al cine?",
+  "escena": "Bai Jiayue le pregunta a Li Wen por un cine cerca de la universidad y cómo llegar.",
+  "personajes": {
+   "白家月": "f",
+   "李文": "m"
+  },
+  "lineas": [
+   {
+    "sp": "白家月",
+    "zh": "李文，学校里有电影院吗？",
+    "py": "Lǐ Wén, xuéxiào li yǒu diànyǐngyuàn ma?",
+    "es": "Li Wen, ¿hay un cine en la universidad?"
+   },
+   {
+    "sp": "李文",
+    "zh": "学校里没有，但不远就有一家。",
+    "py": "Xuéxiào li méiyǒu, dàn bù yuǎn jiù yǒu yì jiā.",
+    "es": "En la universidad no, pero hay uno no muy lejos."
+   },
+   {
+    "sp": "白家月",
+    "zh": "那家电影院的票多少钱？",
+    "py": "Nà jiā diànyǐngyuàn de piào duōshao qián?",
+    "es": "¿Cuánto cuestan las entradas en ese cine?"
+   },
+   {
+    "sp": "李文",
+    "zh": "不贵，三十多块钱。",
+    "py": "Bú guì, sānshí duō kuài qián.",
+    "es": "No son caras, treinta y pico yuanes."
+   },
+   {
+    "sp": "白家月",
+    "zh": "这儿有到那儿的公交车吗？",
+    "py": "Zhèr yǒu dào nàr de gōngjiāochē ma?",
+    "es": "¿Hay autobús de aquí hasta allí?"
+   },
+   {
+    "sp": "李文",
+    "zh": "有，车站就在那边。",
+    "py": "Yǒu, chēzhàn jiù zài nàbiān.",
+    "es": "Sí, la parada está justo ahí."
+   },
+   {
+    "sp": "白家月",
+    "zh": "太好了。你想不想去看个电影？我请你。",
+    "py": "Tài hǎo le. Nǐ xiǎng bu xiǎng qù kàn ge diànyǐng? Wǒ qǐng nǐ.",
+    "es": "Genial. ¿Te apetece ir a ver una película? Te invito."
+   },
+   {
+    "sp": "李文",
+    "zh": "想啊！但我今天还想学习，我们还是明天去吧。",
+    "py": "Xiǎng a! Dàn wǒ jīntiān hái xiǎng xuéxí, wǒmen háishi míngtiān qù ba.",
+    "es": "¡Claro! Pero hoy quiero estudiar todavía; mejor vamos mañana."
+   },
+   {
+    "sp": "白家月",
+    "zh": "好，那我们明天坐公交车去。",
+    "py": "Hǎo, nà wǒmen míngtiān zuò gōngjiāochē qù.",
+    "es": "Vale, entonces mañana vamos en autobús."
+   },
+   {
+    "sp": "李文",
+    "zh": "公交车上人太多了，还是打车去吧，打车也不贵。",
+    "py": "Gōngjiāochē shang rén tài duō le, háishi dǎchē qù ba, dǎchē yě bú guì.",
+    "es": "En el autobús va demasiada gente; mejor vamos en taxi, que tampoco es caro."
+   },
+   {
+    "sp": "白家月",
+    "zh": "这儿好打车吗？",
+    "py": "Zhèr hǎo dǎchē ma?",
+    "es": "¿Es fácil coger un taxi por aquí?"
+   },
+   {
+    "sp": "李文",
+    "zh": "很好打，这儿车很多。",
+    "py": "Hěn hǎo dǎ, zhèr chē hěn duō.",
+    "es": "Muy fácil, por aquí pasan muchos coches."
+   },
+   {
+    "sp": "白家月",
+    "zh": "好，没问题！",
+    "py": "Hǎo, méi wèntí!",
+    "es": "¡Vale, sin problema!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Hay cine dentro de la universidad?",
+    "lang": "es",
+    "a": [
+     "no",
+     "no hay"
+    ],
+    "r": "No, pero hay uno cerca (学校里没有)."
+   },
+   {
+    "q": "¿Cuánto cuestan las entradas?",
+    "lang": "es",
+    "a": [
+     "treinta y pico",
+     "mas de treinta",
+     "más de treinta",
+     "30",
+     "treinta"
+    ],
+    "r": "Treinta y pico yuanes (三十多块钱)."
+   },
+   {
+    "q": "¿Dónde está la parada del autobús?",
+    "lang": "py",
+    "a": [
+     "nàbiān"
+    ],
+    "r": "Nàbiān · 那边 (ahí mismo)."
+   },
+   {
+    "q": "¿Cuándo van a ir al cine?",
+    "lang": "py",
+    "a": [
+     "míngtiān"
+    ],
+    "r": "Míngtiān · 明天 (mañana)."
+   },
+   {
+    "q": "¿Por qué Li Wen prefiere no ir en autobús?",
+    "lang": "es",
+    "a": [
+     "mucha gente",
+     "demasiada gente",
+     "gente"
+    ],
+    "r": "Porque en el autobús va demasiada gente (人太多了)."
+   }
+  ]
+ },
+ {
+  "id": "L02b",
+  "tema": 2,
+  "titulo": "La escuela de la profesora Wang",
+  "escena": "Annie le pregunta a la profesora Wang Yifei por su escuela y por cómo va a trabajar.",
+  "personajes": {
+   "安妮": "f",
+   "王一飞": "f"
+  },
+  "lineas": [
+   {
+    "sp": "安妮",
+    "zh": "王老师，您的学校远吗？",
+    "py": "Wáng lǎoshī, nín de xuéxiào yuǎn ma?",
+    "es": "Profesora Wang, ¿está lejos su escuela?"
+   },
+   {
+    "sp": "王一飞",
+    "zh": "有点儿远。",
+    "py": "Yǒudiǎnr yuǎn.",
+    "es": "Un poco lejos."
+   },
+   {
+    "sp": "安妮",
+    "zh": "您怎么去学校？开车吗？",
+    "py": "Nín zěnme qù xuéxiào? Kāichē ma?",
+    "es": "¿Cómo va a la escuela? ¿En coche?"
+   },
+   {
+    "sp": "王一飞",
+    "zh": "不开车，我坐公交车。",
+    "py": "Bù kāichē, wǒ zuò gōngjiāochē.",
+    "es": "No conduzco; voy en autobús."
+   },
+   {
+    "sp": "安妮",
+    "zh": "公交车上人多不多？",
+    "py": "Gōngjiāochē shang rén duō bu duō?",
+    "es": "¿Va mucha gente en el autobús?"
+   },
+   {
+    "sp": "王一飞",
+    "zh": "人很多，但公交车很便宜，两块钱。",
+    "py": "Rén hěn duō, dàn gōngjiāochē hěn piányi, liǎng kuài qián.",
+    "es": "Mucha, pero el autobús es muy barato: dos yuanes."
+   },
+   {
+    "sp": "安妮",
+    "zh": "打车多少钱？",
+    "py": "Dǎchē duōshao qián?",
+    "es": "¿Y cuánto cuesta el taxi?"
+   },
+   {
+    "sp": "王一飞",
+    "zh": "五十多块钱，太贵了。",
+    "py": "Wǔshí duō kuài qián, tài guì le.",
+    "es": "Cincuenta y pico yuanes; es demasiado caro."
+   },
+   {
+    "sp": "安妮",
+    "zh": "您的学校有多少学生？",
+    "py": "Nín de xuéxiào yǒu duōshao xuésheng?",
+    "es": "¿Cuántos alumnos tiene su escuela?"
+   },
+   {
+    "sp": "王一飞",
+    "zh": "有两千多名学生，外国学生有一百多名。",
+    "py": "Yǒu liǎngqiān duō míng xuésheng, wàiguó xuésheng yǒu yìbǎi duō míng.",
+    "es": "Tiene más de dos mil alumnos, y más de cien son extranjeros."
+   },
+   {
+    "sp": "安妮",
+    "zh": "来学中文的外国学生多吗？",
+    "py": "Lái xué Zhōngwén de wàiguó xuésheng duō ma?",
+    "es": "¿Hay muchos estudiantes extranjeros que vienen a estudiar chino?"
+   },
+   {
+    "sp": "王一飞",
+    "zh": "很多。我的学生都是外国人。",
+    "py": "Hěn duō. Wǒ de xuésheng dōu shì wàiguórén.",
+    "es": "Muchos. Todos mis alumnos son extranjeros."
+   },
+   {
+    "sp": "安妮",
+    "zh": "我也想去您的学校看一下。",
+    "py": "Wǒ yě xiǎng qù nín de xuéxiào kàn yíxià.",
+    "es": "Me gustaría ir a ver su escuela."
+   },
+   {
+    "sp": "王一飞",
+    "zh": "好啊，明天你们过来吧。车站有点儿远，你们还是打车来吧。",
+    "py": "Hǎo a, míngtiān nǐmen guòlái ba. Chēzhàn yǒudiǎnr yuǎn, nǐmen háishi dǎchē lái ba.",
+    "es": "Muy bien, venid mañana. La parada está un poco lejos, así que mejor venid en taxi."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Cómo va la profesora Wang a la escuela?",
+    "lang": "py",
+    "a": [
+     "zuò gōngjiāochē",
+     "gōngjiāochē"
+    ],
+    "r": "Zuò gōngjiāochē · 坐公交车 (en autobús)."
+   },
+   {
+    "q": "¿Cuánto cuesta el autobús?",
+    "lang": "es",
+    "a": [
+     "dos yuanes",
+     "2",
+     "dos",
+     "2 yuanes"
+    ],
+    "r": "Dos yuanes (两块钱)."
+   },
+   {
+    "q": "¿Por qué no va en taxi?",
+    "lang": "es",
+    "a": [
+     "caro",
+     "muy caro",
+     "demasiado caro",
+     "es caro"
+    ],
+    "r": "Porque es demasiado caro: cincuenta y pico yuanes (太贵了)."
+   },
+   {
+    "q": "¿Cuántos estudiantes extranjeros tiene la escuela?",
+    "lang": "es",
+    "a": [
+     "mas de cien",
+     "más de cien",
+     "cien",
+     "100",
+     "ciento y pico"
+    ],
+    "r": "Más de cien (一百多名)."
+   },
+   {
+    "q": "¿Cómo les recomienda ir a su escuela?",
+    "lang": "py",
+    "a": [
+     "dǎchē"
+    ],
+    "r": "Dǎchē · 打车 (en taxi)."
+   }
+  ]
+ },
+ {
+  "id": "L03a",
+  "tema": 3,
+  "titulo": "Liu Ming vuelve al mediodía",
+  "escena": "Liu Ming llega a casa a mediodía y habla con Wang Yixue de la comida, el niño y un móvil perdido.",
+  "personajes": {
+   "刘明": "m",
+   "王一雪": "f"
+  },
+  "lineas": [
+   {
+    "sp": "刘明",
+    "zh": "我回来了！",
+    "py": "Wǒ huílái le!",
+    "es": "¡Ya estoy en casa!"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "今天怎么中午就回来了？",
+    "py": "Jīntiān zěnme zhōngwǔ jiù huílái le?",
+    "es": "¿Cómo es que hoy vuelves ya a mediodía?"
+   },
+   {
+    "sp": "刘明",
+    "zh": "医院的工作都做完了，下午我休息。",
+    "py": "Yīyuàn de gōngzuò dōu zuòwán le, xiàwǔ wǒ xiūxi.",
+    "es": "Ya he terminado todo el trabajo del hospital; por la tarde descanso."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "太好了。你吃饭了吗？",
+    "py": "Tài hǎo le. Nǐ chī fàn le ma?",
+    "es": "¡Qué bien! ¿Has comido?"
+   },
+   {
+    "sp": "刘明",
+    "zh": "还没吃呢。",
+    "py": "Hái méi chī ne.",
+    "es": "Todavía no."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "菜还没做好，你休息一下吧。",
+    "py": "Cài hái méi zuòhǎo, nǐ xiūxi yíxià ba.",
+    "es": "La comida aún no está lista; descansa un poco."
+   },
+   {
+    "sp": "刘明",
+    "zh": "好。孩子呢？",
+    "py": "Hǎo. Háizi ne?",
+    "es": "Vale. ¿Y el niño?"
+   },
+   {
+    "sp": "王一雪",
+    "zh": "在房间里写字呢，他今天的字还没写完。",
+    "py": "Zài fángjiān li xiě zì ne, tā jīntiān de zì hái méi xiěwán.",
+    "es": "Está en su habitación escribiendo caracteres; todavía no ha terminado los de hoy."
+   },
+   {
+    "sp": "刘明",
+    "zh": "我去看看。",
+    "py": "Wǒ qù kànkan.",
+    "es": "Voy a echar un vistazo."
+   },
+   {
+    "sp": "刘明",
+    "zh": "他写的字真不错，都写对了！",
+    "py": "Tā xiě de zì zhēn búcuò, dōu xiěduì le!",
+    "es": "¡Escribe muy bien! Los ha escrito todos bien."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "你看见我的手机了吗？我找了找，没找到。",
+    "py": "Nǐ kànjiàn wǒ de shǒujī le ma? Wǒ zhǎole zhǎo, méi zhǎodào.",
+    "es": "¿Has visto mi móvil? Lo he buscado un poco y no lo encuentro."
+   },
+   {
+    "sp": "刘明",
+    "zh": "在桌子上，我看见了。",
+    "py": "Zài zhuōzi shang, wǒ kànjiàn le.",
+    "es": "Está encima de la mesa, lo he visto."
+   },
+   {
+    "sp": "王一雪",
+    "zh": "谢谢！饭做好了，我们吃饭吧！",
+    "py": "Xièxie! Fàn zuòhǎo le, wǒmen chī fàn ba!",
+    "es": "¡Gracias! La comida ya está lista, ¡vamos a comer!"
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Por qué vuelve Liu Ming a mediodía?",
+    "lang": "es",
+    "a": [
+     "termino el trabajo",
+     "terminó el trabajo",
+     "acabo el trabajo",
+     "acabó el trabajo",
+     "ha terminado",
+     "termino",
+     "trabajo terminado"
+    ],
+    "r": "Porque ya ha terminado el trabajo del hospital (工作都做完了)."
+   },
+   {
+    "q": "¿Qué va a hacer por la tarde?",
+    "lang": "py",
+    "a": [
+     "xiūxi"
+    ],
+    "r": "Xiūxi · 休息 (descansar)."
+   },
+   {
+    "q": "¿Qué está haciendo el niño?",
+    "lang": "es",
+    "a": [
+     "escribir",
+     "escribiendo",
+     "escribe caracteres",
+     "escribiendo caracteres",
+     "caracteres"
+    ],
+    "r": "Está escribiendo caracteres (写字)."
+   },
+   {
+    "q": "¿Qué no encuentra Wang Yixue?",
+    "lang": "es",
+    "a": [
+     "movil",
+     "móvil",
+     "el movil",
+     "telefono",
+     "teléfono"
+    ],
+    "r": "Su móvil (手机)."
+   },
+   {
+    "q": "¿Dónde está?",
+    "lang": "py",
+    "a": [
+     "zhuōzi shang",
+     "zhuōzi"
+    ],
+    "r": "Zhuōzi shang · 桌子上 (encima de la mesa)."
+   }
+  ]
+ },
+ {
+  "id": "L03b",
+  "tema": 3,
+  "titulo": "¿Xi'an o Shanghái?",
+  "escena": "Annie y Bai Jiayue deciden adónde ir de viaje después de Pekín y compran los billetes.",
+  "personajes": {
+   "安妮": "f",
+   "白家月": "f"
+  },
+  "lineas": [
+   {
+    "sp": "安妮",
+    "zh": "家月，我们还想去哪儿旅游？",
+    "py": "Jiāyuè, wǒmen hái xiǎng qù nǎr lǚyóu?",
+    "es": "Jiayue, ¿adónde más queremos ir de viaje?"
+   },
+   {
+    "sp": "白家月",
+    "zh": "我想去上海。你呢？",
+    "py": "Wǒ xiǎng qù Shànghǎi. Nǐ ne?",
+    "es": "Yo quiero ir a Shanghái. ¿Y tú?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "我想去西安。",
+    "py": "Wǒ xiǎng qù Xī'ān.",
+    "es": "Yo quiero ir a Xi'an."
+   },
+   {
+    "sp": "白家月",
+    "zh": "为什么想去西安？",
+    "py": "Wèi shénme xiǎng qù Xī'ān?",
+    "es": "¿Por qué quieres ir a Xi'an?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "我的中国朋友说西安很不错，那儿的菜也很好吃。",
+    "py": "Wǒ de Zhōngguó péngyou shuō Xī'ān hěn búcuò, nàr de cài yě hěn hǎochī.",
+    "es": "Mi amigo chino dice que Xi'an está muy bien y que la comida de allí también es muy buena."
+   },
+   {
+    "sp": "白家月",
+    "zh": "那我们去西安吧。你想好什么时候去了吗？",
+    "py": "Nà wǒmen qù Xī'ān ba. Nǐ xiǎnghǎo shénme shíhou qù le ma?",
+    "es": "Pues vamos a Xi'an. ¿Has pensado ya cuándo ir?"
+   },
+   {
+    "sp": "安妮",
+    "zh": "还没想好。你说呢？",
+    "py": "Hái méi xiǎnghǎo. Nǐ shuō ne?",
+    "es": "Todavía no lo he decidido. ¿Tú qué dices?"
+   },
+   {
+    "sp": "白家月",
+    "zh": "我们明天就去吧！",
+    "py": "Wǒmen míngtiān jiù qù ba!",
+    "es": "¡Vamos mañana mismo!"
+   },
+   {
+    "sp": "安妮",
+    "zh": "明天？那你现在去网上看一看，还有没有票。",
+    "py": "Míngtiān? Nà nǐ xiànzài qù wǎngshang kàn yi kàn, hái yǒu méiyǒu piào.",
+    "es": "¿Mañana? Entonces mira un momento en internet si todavía quedan billetes."
+   },
+   {
+    "sp": "白家月",
+    "zh": "我看了看，还有票。我已经买好了！",
+    "py": "Wǒ kànle kàn, hái yǒu piào. Wǒ yǐjīng mǎihǎo le!",
+    "es": "Ya he mirado y quedan billetes. ¡Ya los he comprado!"
+   },
+   {
+    "sp": "安妮",
+    "zh": "太好了！是上午的还是下午的？",
+    "py": "Tài hǎo le! Shì shàngwǔ de háishi xiàwǔ de?",
+    "es": "¡Genial! ¿Son de la mañana o de la tarde?"
+   },
+   {
+    "sp": "白家月",
+    "zh": "上午的。明天早上我们就出去。",
+    "py": "Shàngwǔ de. Míngtiān zǎoshang wǒmen jiù chūqù.",
+    "es": "De la mañana. Mañana salimos temprano."
+   },
+   {
+    "sp": "安妮",
+    "zh": "好，那我回房间休息休息。",
+    "py": "Hǎo, nà wǒ huí fángjiān xiūxi xiūxi.",
+    "es": "Vale, entonces me voy a la habitación a descansar un poco."
+   }
+  ],
+  "preguntas": [
+   {
+    "q": "¿Adónde quería ir Bai Jiayue al principio?",
+    "lang": "py",
+    "a": [
+     "Shànghǎi"
+    ],
+    "r": "Shànghǎi · 上海 (a Shanghái)."
+   },
+   {
+    "q": "¿Por qué quiere ir Annie a Xi'an?",
+    "lang": "es",
+    "a": [
+     "amigo",
+     "un amigo",
+     "su amigo chino",
+     "comida",
+     "la comida",
+     "no esta mal"
+    ],
+    "r": "Porque su amigo chino dice que Xi'an está muy bien y que la comida es muy buena."
+   },
+   {
+    "q": "¿Cuándo van a ir?",
+    "lang": "es",
+    "a": [
+     "mañana",
+     "manana",
+     "mañana mismo"
+    ],
+    "r": "Mañana (明天)."
+   },
+   {
+    "q": "¿Dónde mira Jiayue si quedan billetes?",
+    "lang": "py",
+    "a": [
+     "wǎngshang"
+    ],
+    "r": "Wǎngshang · 网上 (en internet)."
+   },
+   {
+    "q": "¿Los billetes son de la mañana o de la tarde?",
+    "lang": "es",
+    "a": [
+     "mañana",
+     "manana",
+     "de la mañana",
+     "de la manana",
+     "por la mañana"
+    ],
+    "r": "De la mañana (上午的)."
+   }
+  ]
+ }
+]
