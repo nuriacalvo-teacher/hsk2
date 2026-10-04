@@ -128,7 +128,7 @@
   function wordInfo(w, override) {
     if (/^\d+$/.test(w)) return { w: w, py: w, es: w, num: true };
     var d = D.dic[w];
-    if (d) return { w: w, py: override || d[0], es: d[1], t: d[2] };
+    if (d) return { w: w, py: override || d[0], es: d[1], t: d[2], nv: d[3] };
     if (isNumZh(w)) return { w: w, py: override || numPinyin(w), es: C.hanziKey(w), num: true };
     return { w: w, py: override || "", es: "" };
   }
@@ -402,10 +402,11 @@
     if (POP) { POP.remove(); POP = null; }
     document.querySelectorAll(".w.sel").forEach(function (x) { x.classList.remove("sel"); });
   }
+  function nvLabel(nv) { return nv === "HSK1" ? "HSK 1" : nv === "HSK2" ? "HSK 2" : nv === "libro" ? "del libro" : nv; }
   function showPop(anchor, info, mode) {
     closePop();
     anchor.classList.add("sel");
-    var temaTxt = info.t && info.t < 90 ? "Lección " + info.t : info.t === 0 ? "HSK 1" : (info.num ? "Número" : "");
+    var temaTxt = info.t && info.t < 90 ? "Lección " + info.t + (info.nv ? " · " + nvLabel(info.nv) : "") : info.t === 0 ? "HSK 1" : (info.num ? "Número" : "");
     POP = h("div", { class: "pop", role: "dialog" },
       h("button", { class: "icon-btn", type: "button", "aria-label": "Escuchar", onclick: function (e) { e.stopPropagation(); speakOnce(info.w, wordAudioId(info.w)); } }, icon("speaker", 18)),
       mode === "py" ? h("div", { class: "pp", style: "font-size:24px", text: info.py }) : null,
@@ -1323,7 +1324,7 @@
           h("div", { class: "card", style: "padding:6px 14px" }, h("table", { class: "vocab-t" }, h("tbody", null, words.map(function (w) {
             var d = D.dic[w];
             return h("tr", { style: "cursor:pointer", onclick: function () { speakOnce(w, wordAudioId(w)); } },
-              h("td", { class: "zh", text: w }), h("td", { class: "py", text: d[0] }), h("td", { text: d[1] }),
+              h("td", { class: "zh", text: w }), h("td", { class: "py", text: d[0] }), h("td", null, d[1], d[3] ? h("span", { class: "nv-tag", text: nvLabel(d[3]) }) : null),
               h("td", { style: "width:1%" }, icon("speaker", 16)));
           }))))]);
       });
@@ -1343,7 +1344,7 @@
     q.addEventListener("input", paint);
     paint();
     view("vocabulario", h("div", null,
-      pageHead("词语", "Vocabulario", "Las palabras nuevas de HSK 2 por lección y, al final, el vocabulario de HSK 1. Toca una fila para oírla."),
+      pageHead("词语", "Vocabulario", "Todo el vocabulario que tienes que aprender (HSK 1 y HSK 2 según el HSK 3.0 y las palabras del libro), repartido por lecciones para ir aprendiéndolo poco a poco. Toca una fila para oírla."),
       q, box));
   }
 
@@ -1510,21 +1511,31 @@
     if (k === "espy") return { kind: "espy", w: v };
     return null;
   }
-  function ctxItems(n) {
+  /** El vocabulario de cada lección se practica por partes de 20 palabras. */
+  var VPART = 20;
+  function vParts(n) { return Math.max(1, Math.ceil(lessonWords(n).length / VPART)); }
+  function partWords(n, p) { var w = lessonWords(n); return p ? w.slice((p - 1) * VPART, p * VPART) : w; }
+  function partSents(n, p) {
+    var t = EJ[n]; if (!t) return [];
+    if (!p) return t.vocab;
+    var ws = partWords(n, p).map(function (v) { return v.zh; });
+    return t.vocab.filter(function (s) { return ws.indexOf(s.w) >= 0; });
+  }
+  function ctxItems(n, p) {
     var t = EJ[n]; if (!t) return [];
     var words = lessonWords(n);
-    return shuffle(t.vocab).map(function (s) {
+    return shuffle(partSents(n, p)).map(function (s) {
       var wrongs = pickOthers(words, { zh: s.w }, 5, function (x) { return x.zh; }).map(function (x) { return x.zh; })
         .filter(function (w) { return s.zh.indexOf(w) < 0; }).slice(0, 3);
       var c = mkChoice(s.w, wrongs);
       return { kind: "choice", tag: "Vocabulario en contexto", q: s.zh.replace(s.w, "＿＿"), opts: c.opts, ok: c.ok, zhOpts: true, sent: s };
     });
   }
-  function vocabDrill(n, k) {
-    var words = lessonWords(n);
-    if (k === "ctx") return ctxItems(n);
-    if (k === "fr") return EJ[n] ? fraseItems(EJ[n].vocab, EJ[n].vocab, ["zh_es", "es_py", "es_zh", "listen_py", "order", "listen_choice"]) : [];
-    return shuffle(words).map(function (v) { return vocabItem(k, v, words, n); }).filter(Boolean);
+  function vocabDrill(n, k, p) {
+    var words = lessonWords(n), part = partWords(n, p);
+    if (k === "ctx") return ctxItems(n, p);
+    if (k === "fr") return EJ[n] ? fraseItems(partSents(n, p), EJ[n].vocab, ["zh_es", "es_py", "es_zh", "listen_py", "order", "listen_choice"]) : [];
+    return shuffle(part).map(function (v) { return vocabItem(k, v, words, n); }).filter(Boolean);
   }
   function examItems(n) {
     var items = [];
@@ -1543,7 +1554,7 @@
     var ks = [];
     var t = EJ[n]; if (!t) return ks;
     t.puntos.forEach(function (p) { ks.push("E:" + p.id); });
-    VDRILLS.forEach(function (d) { ks.push("E:" + n + ":" + d.k); });
+    for (var p = 1; p <= vParts(n); p++) VDRILLS.forEach(function (d) { ks.push("E:" + n + ":" + d.k + ":" + p); });
     ks.push("E:" + n + ":examen");
     return ks;
   }
@@ -1558,7 +1569,7 @@
 
   function viewEjercicios() {
     view("ejercicios", h("div", null,
-      pageHead("练习", "Ejercicios", "Una zona de práctica para cada lección: <b>ejercicios de cada punto de gramática</b> (elegir, ordenar, traducir, escuchar y leer), <b>ocho ejercicios de vocabulario</b> con todas las palabras nuevas y un <b>examen de la lección</b> que lo mezcla todo."),
+      pageHead("练习", "Ejercicios", "Una zona de práctica para cada lección: <b>ejercicios de cada punto de gramática</b> (elegir, ordenar, traducir, escuchar y leer), <b>ocho ejercicios de vocabulario</b> con todas las palabras de la lección (HSK 1, HSK 2 y libro), por partes de 20 y un <b>examen de la lección</b> que lo mezcla todo."),
       h("div", { class: "note", style: "margin-bottom:18px" }, h("b", { text: "Todo el chino se puede tocar. " }),
         "Toca cualquier hanzi para ver su pinyin, su traducción y escucharlo. En las traducciones de hanzi al español, cada palabra que abras resta un 10 % de esa frase: úsalo solo si lo necesitas."),
       h("div", { class: "temas" }, D.temas.map(function (t) {
@@ -1570,9 +1581,27 @@
       }))));
   }
 
+  var ejPart = {};
   function viewEjTema(n) {
     var t = TEMA[n], e = EJ[n]; if (!t || !e) return viewEjercicios();
-    var words = lessonWords(n);
+    var words = lessonWords(n), np = vParts(n), cur = Math.min(ejPart[n] || 1, np);
+    var vbox = h("div");
+    function paintV() {
+      vbox.innerHTML = "";
+      var pw = partWords(n, cur), ns = partSents(n, cur).length;
+      add(vbox, [
+        np > 1 ? h("div", { class: "tabs" }, Array.apply(null, Array(np)).map(function (_, i) {
+          var k = i + 1, ws = partWords(n, k);
+          return h("button", { type: "button", class: "tab" + (k === cur ? " on" : ""), onclick: function () { cur = ejPart[n] = k; paintV(); } },
+            h("span", { class: "brush", style: "font-size:26px;color:var(--red)", text: CN_NUM[k] }),
+            h("span", null, "Parte " + k, h("small", { text: ws[0].zh + " … " + ws[ws.length - 1].zh + " · " + ws.length + " palabras" })));
+        })) : null,
+        h("div", { class: "grid g3" }, VDRILLS.map(function (d) {
+          var cnt = d.k === "ctx" || d.k === "fr" ? ns + " frases" : pw.length + " palabras";
+          return exRow("#/ejercicios/" + n + "/v-" + d.k + "-" + cur, d.zh, d.t, d.d + " · " + cnt, "E:" + n + ":" + d.k + ":" + cur);
+        }))]);
+    }
+    paintV();
     view("ejercicios", h("div", null,
       backLink("#/ejercicios", "Ejercicios"),
       pageHead(CN_NUM[n], "Ejercicios · Lección " + n, t.es + ' · <span class="zh">' + t.zh + "</span>"),
@@ -1582,10 +1611,7 @@
         return exRow("#/ejercicios/" + n + "/" + p.id, "法", g ? g.titulo : p.id, cnt + " ejercicios · gramática, traducción, listening y lectura", "E:" + p.id);
       })),
       h("div", { class: "group-h", text: "Vocabulario · 词语 (" + words.length + " palabras)" }),
-      h("div", { class: "grid g3" }, VDRILLS.map(function (d) {
-        var cnt = d.k === "ctx" || d.k === "fr" ? e.vocab.length + " frases" : words.length + " palabras";
-        return exRow("#/ejercicios/" + n + "/v-" + d.k, d.zh, d.t, d.d + " · " + cnt, "E:" + n + ":" + d.k);
-      })),
+      vbox,
       h("div", { class: "group-h", text: "Examen de la lección · 考试" }),
       h("div", { class: "grid g3" }, exRow("#/ejercicios/" + n + "/examen", "考", "Examen de la lección " + n, "Gramática, vocabulario, traducción, listening y lectura mezclados", "E:" + n + ":examen"))));
   }
@@ -1595,8 +1621,9 @@
     var items, title, key;
     if (id === "examen") { items = examItems(n); title = "Examen de la lección " + n; key = "E:" + n + ":examen"; }
     else if (/^v-/.test(id)) {
-      var d = VDRILLS.filter(function (x) { return "v-" + x.k === id; })[0]; if (!d) return viewEjTema(n);
-      items = vocabDrill(n, d.k); title = d.t; key = "E:" + n + ":" + d.k;
+      var mm = /^v-([a-z]+)(?:-(\d+))?$/.exec(id) || [], pp = Math.min(+mm[2] || 1, vParts(n));
+      var d = VDRILLS.filter(function (x) { return x.k === mm[1]; })[0]; if (!d) return viewEjTema(n);
+      items = vocabDrill(n, d.k, pp); title = d.t + (vParts(n) > 1 ? " · parte " + pp : ""); key = "E:" + n + ":" + d.k + ":" + pp;
     } else {
       var g = gramPoint(id); if (!ejPoint(id)) return viewEjTema(n);
       items = pointItems(id); title = g ? g.titulo : id; key = "E:" + id;
@@ -1604,7 +1631,10 @@
     runSession({ items: items, title: title, sub: "Lección " + n + " · " + t.zh, key: key, back: "#/ejercicios/" + n, backTxt: "Lección " + n, next: nextEj(n, id) });
   }
   function nextEj(n, id) {
-    var e = EJ[n], list = e.puntos.map(function (p) { return p.id; }).concat(VDRILLS.map(function (d) { return "v-" + d.k; }), ["examen"]);
+    var e = EJ[n], list = e.puntos.map(function (p) { return p.id; });
+    for (var p = 1; p <= vParts(n); p++) list = list.concat(VDRILLS.map(function (d) { return "v-" + d.k + "-" + p; }));
+    list.push("examen");
+    if (/^v-[a-z]+$/.test(id)) id += "-1";
     var i = list.indexOf(id);
     return i >= 0 && i + 1 < list.length ? "#/ejercicios/" + n + "/" + list[i + 1] : (TEMA[n + 1] && EJ[n + 1] ? "#/ejercicios/" + (n + 1) : null);
   }
@@ -1789,7 +1819,7 @@
         if (pin) pin.input.disabled = true;
         if (answerEl && answerEl.tagName === "TEXTAREA" || answerEl && answerEl.tagName === "INPUT") answerEl.disabled = true;
         var tt = level === "ok" ? "¡Correcto! 很好！" : level === "mid" ? (r.lettersOk ? "Las sílabas están bien, revisa los tonos." : "¡Casi! Compara con la respuesta.") : "No es correcto. Mira la respuesta.";
-        fb(level, tt + (hinted ? " (con pista)" : "") + helps.note(), rows, it.kind === "zh_es" || it.kind === "word_es" || it.kind === "es_zh" || it.kind === "order");
+        fb(level, tt + (hinted ? " (con pista)" : "") + helps.note(), rows, true);
       }
       function next() { if (player) player.stop(); stopAll(); idx++; if (idx < items.length) renderItem(); else finish(); }
 
